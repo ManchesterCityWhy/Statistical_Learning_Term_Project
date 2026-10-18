@@ -6,7 +6,7 @@
 \setCJKmainfont[Path=fonts/,BoldFont=NotoSerifSC-Bold.otf]{NotoSerifSC-Regular.otf}
 \setCJKsansfont[Path=fonts/,BoldFont=NotoSerifSC-Bold.otf]{NotoSerifSC-Regular.otf}
 \setCJKmonofont[Path=fonts/,BoldFont=NotoSerifSC-Bold.otf]{NotoSerifSC-Regular.otf}
-% TODO：填写四位成员姓名，并由全组核实注册、数据获取与实验进度。
+% 分工为开题阶段的建议安排，后续按小组实际工作更新。
 \usepackage[left=2.1cm,right=2.1cm,top=1.9cm,bottom=1.9cm]{geometry}
 \usepackage{amsmath,amssymb,bm}
 \usepackage{booktabs,tabularx,array}
@@ -17,7 +17,7 @@
 \hypersetup{
   pdftitle={胚胎发育时间外推中细胞组成与表达变化的统计分析},
   pdfauthor={统计学习课程项目小组},
-  pdfsubject={Virtual Embryo Challenge T1 开题报告讨论稿}
+  pdfsubject={Virtual Embryo Challenge T1 开题报告}
 }
 \linespread{1.12}
 \setlength{\parindent}{2em}
@@ -30,7 +30,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\small 2026 秋季《统计学习》课程大作业}
-\fancyhead[R]{\small 开题报告讨论稿}
+\fancyhead[R]{\small 开题报告}
 \fancyfoot[C]{\small \thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -42,7 +42,9 @@
 \vspace{5pt}
 {\normalsize NeurIPS 2026 Virtual Embryo Challenge T1 Temporal\par}
 \vspace{4pt}
-{\small 小组成员：2400010759 高景行 2400010616 王恒毅 2400010604 李凯瑞 2400010883 崔帅达 \qquad 日期：2026 年 10 月 17 日}
+{\small 小组成员：高景行\quad 王恒毅\quad 李凯瑞\quad 崔帅达\par}
+\vspace{2pt}
+{\small 日期：2026 年 10 月 18 日}
 \end{center}
 \vspace{-5pt}
 
@@ -76,34 +78,36 @@
 \end{tabularx}
 \end{center}
 
-T1 来自以心脏为中心的组织取样，阶段间取样范围与标签命名可能不同\cite{data}。分析中将先检查可比性，再解释群体比例或类别变化。本稿给出拟开展的研究设计，注册及数据获取状态由小组在提交前据实核实。
+T1 来自以心脏为中心的组织取样，阶段间取样范围与标签命名可能不同\cite{data}，因此须先检查可比性，再解释群体变化。本组已完成官方平台团队注册，并确认可下载 \texttt{E8.5\_RNA.h5ad}、\texttt{E9.5\_RNA.h5ad}；数据内容将在获取后按上述流程校验。
 
 \newpage
 \section{初步建模思路}
-\textbf{参考基线。} 使用官方 \texttt{copy\_last} 和 \texttt{pseudobulk\_shift} 作为带引用的比较对象\cite{task}，分别代表沿用最近阶段的经验分布，以及依据已观察的平均表达变化进行整体平移。复现基线用于校验流程，本组分析围绕下述改进与受控比较展开。
+\textbf{参考基线。} 复现官方 \texttt{copy\_last} 和 \texttt{pseudobulk\_shift}\cite{task}，分别沿用最近阶段分布，以及按已观察的平均表达变化整体平移。另设\textbf{全基因空间收缩外推}：在下式中将 $V_dV_d^\top$ 替换为单位矩阵，保持时间倍率、收缩强度、截断和抽样一致，以区分降维与收缩的作用。
 
-\textbf{低维收缩外推。} 设训练阶段为 $t_a<t_b$，在其数据上拟合 PCA，得到主成分基矩阵 $V_d\in\mathbb{R}^{p\times d}$。令 $\bar{\bm x}_a,\bar{\bm x}_b$ 为阶段平均表达。对最近阶段抽取的细胞 $\bm x_i(t_b)$，预测为
+\textbf{低维收缩外推。} 设训练阶段为 $t_a<t_b$，在其数据上拟合 PCA，得到基矩阵 $V_d\in\mathbb{R}^{p\times d}$。记阶段均值为 $\bar{\bm x}_a,\bar{\bm x}_b$，时间倍率 $h=(t_\star-t_b)/(t_b-t_a)$。对最近阶段抽取的细胞，预测为
 \begin{equation}
 \widehat{\bm x}_i(t_\star)=
 \left[
 \bm x_i(t_b)+
-\alpha\frac{t_\star-t_b}{t_b-t_a}
+\alpha h\,
 V_dV_d^\top(\bar{\bm x}_b-\bar{\bm x}_a)
 \right]_+ ,
 \label{eq:model}
 \end{equation}
-其中 $\alpha\in[0,1]$ 控制变化幅度，$[\cdot]_+$ 表示逐元素非负截断。该方法在低维子空间估计趋势，并保留抽样细胞原有的高维残差；$\alpha=0$ 对应最近阶段基线。将记录截断比例，检查约束处理对结果的影响。
+其中 $\alpha\in[0,1]$ 为收缩强度，$[\cdot]_+$ 为逐元素非负截断；$\alpha=0$ 对应最近阶段基线。模型保留抽样细胞的高维残差，并记录截断比例。PCA 可能遗漏时间变化方向，须与全空间收缩模型在相同 $\alpha$ 下比较。
 
-\textbf{分层扩展与消融。} 对标签能可靠对应、细胞数足够的群体，分别估计表达变化，并对群体比例作平滑、收缩及归一化后的保守调整。比较“均不调整”“仅调整表达”“仅调整比例”“同时调整”四种设置。样本少或缺乏对应的群体沿用最近阶段分布，并单独分析局限。该扩展取决于注释质量，优先保证基础模型能够完整运行。
+\textbf{分层扩展与消融。} 先依据训练资料确定可靠的共同标签或较粗分类；仅对两阶段各不少于 30 个细胞的匹配群体，在同一 PCA 基上估计群体内均值差。令 $\bm\pi_a,\bm\pi_b$ 为匹配集合内部的条件比例，按
+$\widehat{\bm\pi}=\operatorname{Normalize}([\bm\pi_b+\beta h(\bm\pi_b-\bm\pi_a)]_+)$
+更新，$\beta\in[0,1]$，Normalize 表示除以分量之和。匹配集合的总质量及其他群体比例保持为最近阶段值，再按预测比例重抽样；未匹配或样本不足群体的表达也沿用最近阶段。若无合格群体则回退至整体模型。比较“均不调整”“仅调整表达”“仅调整比例”“同时调整”四种设置。
 
-主成分数与收缩强度仅设置少量候选值，保留全部比较记录。共同均值平移不能主动学习群体内部协方差演化，因此不预设平均表达改善一定带来结构指标改善。消融用于比较建模选择的经验作用，不作因果分解。
+初设 $d\in\{10,30,50\}$，$\alpha,\beta\in\{0,1/2,1\}$，保留全部比较记录。共同均值平移不能主动学习群体内协方差演化；消融仅比较建模选择的经验作用，不作因果分解。
 
 \section{评价方案与泄漏防范}
-采用按时间留出的验证。先仅用 E8.5、E9.5 保存对 E10.5 的预测及配置；按照当前时间表，官方计划于 10 月 20 日公开验证真值\cite{timeline}。届时先评价冻结预测，再作有限模型选择，调参后的结果明确作为开发验证结果报告。同阶段随机拆分仅用于流程检查。
+采用按时间划分的\textbf{开发验证}。官方计划于 10 月 20 日公开 E10.5 真值\cite{timeline}；公开后仅用 E8.5、E9.5 拟合预测模型，在 E10.5 上评价并作有限模型选择，保存配置、预测文件及 Git 版本。E10.5 参与调参，相关结果均标记为开发验证结果，不作为独立测试。同阶段随机拆分仅用于流程检查。
 
-冻结方法与超参数后，按官方许可纳入已公开的 E10.5，并依据预定的最近两阶段变化率规则重新拟合，预测 E12.5。测试阶段的正式评分次数按规则使用，不根据评分反解任何目标信息\cite{rules}。
+冻结方法、超参数和标签映射规则后，按官方许可用 E9.5、E10.5 重新拟合 PCA 与变化率，取 $h=2$ 预测 E12.5。一步开发验证不能保证两天外推有效。正式提交前先做格式检查，并遵守测试阶段全阶段至多两次官方评分的现行限制，不根据评分反解目标信息\cite{rules}。
 
-主评价采用官方工具并固定版本，分别报告差异表达基因恢复（25\%）、变化方向（25\%）、细胞状态分布（30\%）和基因共同变化结构（20\%）\cite{task}。提交文件按规定提供完整表达与基因顺序，主评价中的细胞类型由官方冻结分类器判定。
+主评价采用固定版本的官方工具，报告 DES（差异表达恢复，25\%）、DCS（变化方向，25\%）、MMD（细胞状态分布，30\%）及 CSS（基因共同变化，20\%）的原始值与官方总分；总分按官方 skill 校准后加权，不直接加权原始指标\cite{evaluation}。提交完整表达并按目标 board 的基因清单排序；细胞类型由官方冻结分类器判定。
 
 补充分析包括群体误差、代表性基因图和参数敏感性。各方法保持一致的预测细胞抽样预算，并用固定的若干随机种子重复抽样，描述算法和抽样波动；这些重复及大量细胞均不视为独立胚胎重复。
 
@@ -117,25 +121,25 @@ V_dV_d^\top(\bar{\bm x}_b-\bar{\bm x}_a)
 \end{itemize}
 
 \section{进度安排与初步分工}
-10 月 18 日前完成开题及数据访问核实；至 11 月 19 日完成数据探索、基线和至少一种初步模型；11 月下旬完成主要消融与误差分析，并于 12 月 2 日前按规则完成至少一次有效官方提交；随后准备期末汇报，至 2027 年 1 月 5 日完成最终报告和复现材料。竞赛节点如有调整，以官方公告为准\cite{timeline}。
+开题阶段已完成团队注册与训练数据下载权限核实。10 月 20 日起在验证真值按期公开后开展开发验证，至 11 月 19 日完成数据探索、基线与初步模型；11 月下旬完成消融和误差分析，12 月 2 日前完成至少一次有效官方提交；随后准备汇报，至 2027 年 1 月 5 日完成最终报告与复现材料。竞赛节点以官方公告为准\cite{timeline}。以下为初步分工建议，后续按实际协作调整。
 
 \begin{center}
 \smalltable
-\begin{tabularx}{\linewidth}{@{}p{2.8cm}Y@{}}
+\begin{tabularx}{\linewidth}{@{}p{1.8cm}p{2.5cm}Y@{}}
 \toprule
-成员 & 初步职责\\
+成员 & 学号 & 初步职责\\
 \midrule
-组员 A（待填） & 数据获取、背景理解、预处理与探索分析\\
-组员 B（待填） & 参考基线、预测文件生成与官方提交流程\\
-组员 C（待填） & 低维外推、分层扩展与消融实验\\
-组员 D（待填） & 评价实现、稳健性检查与误差解释\\
+高景行 & 2400010759 & 数据获取、背景理解、预处理与探索分析\\
+王恒毅 & 2400010616 & 参考基线、预测文件生成与官方提交流程\\
+李凯瑞 & 2400010604 & 低维外推、分层扩展与消融实验\\
+崔帅达 & 2400010883 & 评价实现、稳健性检查与误差解释\\
 \bottomrule
 \end{tabularx}
 \end{center}
 全组共同核查方法、准备报告与答辩，并依据实际工作更新贡献。预期交付可复现的统一比较、消融与失败案例分析；即使改进未超过基线，也将据实解释适用条件和局限。
 
 \section{复现与 AI 辅助说明}
-代码拟包含 README、数据获取说明、主要分析与评价脚本、环境版本和随机种子，并记录官方工具版本、配置与预测文件。本开题讨论稿受到 ChatGPT／Codex 的资料核对、方案讨论及文字组织辅助；拟由组员主导方法设计与选择，核查引用、处理步骤和结果，并按实际工作方式遵守 Human Team／Agent Team 规则\cite{rules}。
+代码拟包含 README、数据获取说明、分析与评价脚本、环境版本和随机种子，并记录官方工具版本、配置与预测文件。本稿受到 ChatGPT／Codex 的资料核对、方案讨论及文字组织辅助。拟按 Human Team 工作方式开展实验，由组员讨论并选择方法、检查结果及决定调整，核查引用与代码，记录 AI 使用；注册赛道及后续工作须与实际方式一致\cite{rules}。
 
 \begingroup
 \small
@@ -150,11 +154,13 @@ Virtual Embryo Challenge. \href{https://virtualembryo.ai/challenge/data}{Data}.
 Virtual Embryo Challenge. \href{https://virtualembryo.ai/challenge/timeline}{Timeline}.
 \bibitem{rules}
 Virtual Embryo Challenge. \href{https://virtualembryo.ai/challenge/rules}{Official Rules}.
+\bibitem{evaluation}
+Virtual Embryo Challenge. \href{https://virtualembryo.ai/challenge/evaluation?section=scoring\&task=1}{Task 1 Evaluation}.
 \bibitem{schiebinger}
 Schiebinger G, et al. Optimal-Transport Analysis of Single-Cell Gene Expression Identifies Developmental Trajectories in Reprogramming.
 \textit{Cell}, 2019, 176: 928--943.e22.
 \href{https://doi.org/10.1016/j.cell.2019.01.006}{doi:10.1016/j.cell.2019.01.006}.
 \end{thebibliography}
 \endgroup
-{\footnotesize 官方网页核对日期：2026 年 10 月 17 日。}
+{\footnotesize 官方网页核对日期：2026 年 10 月 18 日。}
 \end{document}
