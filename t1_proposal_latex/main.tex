@@ -1,0 +1,160 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\documentclass[UTF8,zihao=-4,fontset=none,a4paper]{ctexart}
+% 编译建议：XeLaTeX 或 Tectonic。请保留同目录下的 fonts 文件夹。
+% 本地嵌入 Noto Serif SC，避免依赖阅读器额外提供 Adobe-GB1 中文映射。
+\setCJKmainfont[Path=fonts/,BoldFont=NotoSerifSC-Bold.otf]{NotoSerifSC-Regular.otf}
+\setCJKsansfont[Path=fonts/,BoldFont=NotoSerifSC-Bold.otf]{NotoSerifSC-Regular.otf}
+\setCJKmonofont[Path=fonts/,BoldFont=NotoSerifSC-Bold.otf]{NotoSerifSC-Regular.otf}
+% TODO：填写四位成员姓名，并由全组核实注册、数据获取与实验进度。
+\usepackage[left=2.1cm,right=2.1cm,top=1.9cm,bottom=1.9cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,tabularx,array}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\hypersetup{
+  pdftitle={胚胎发育时间外推中细胞组成与表达变化的统计分析},
+  pdfauthor={统计学习课程项目小组},
+  pdfsubject={Virtual Embryo Challenge T1 开题报告讨论稿}
+}
+\linespread{1.12}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{2pt}
+\setlength{\headheight}{15pt}
+\setlength{\emergencystretch}{1em}
+\setlist{nosep,leftmargin=2em}
+\ctexset{section={format=\large\bfseries,beforeskip=9pt,afterskip=4pt},
+  subsection={format=\normalsize\bfseries,beforeskip=5pt,afterskip=2pt}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 2026 秋季《统计学习》课程大作业}
+\fancyhead[R]{\small 开题报告讨论稿}
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\newcommand{\smalltable}{\small\renewcommand{\arraystretch}{1.18}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\begin{document}
+\begin{center}
+{\zihao{3}\bfseries 胚胎发育时间外推中细胞组成与表达变化的统计分析\par}
+\vspace{5pt}
+{\normalsize NeurIPS 2026 Virtual Embryo Challenge T1 Temporal\par}
+\vspace{4pt}
+{\small 小组成员：待填写（共四人）\qquad 日期：2026 年 10 月 17 日}
+\end{center}
+\vspace{-5pt}
+
+\section{问题背景与研究范围}
+胚胎发育伴随细胞分化、群体比例改变和基因表达重组。单细胞 RNA 测序能够观测不同发育阶段的表达状态，但分时采样缺少逐细胞的前后对应关系。已有研究使用最优传输分析时间快照并推断分化过程\cite{schiebinger}，也提示这类问题需要在模型假设下研究群体演化。
+
+本组拟聚焦 Virtual Embryo Challenge 的 T1：根据较早阶段数据，预测未来阶段的一组细胞表达向量\cite{task}。预测目标是细胞群体的分布，包括状态组成及表达结构；本项目不将其解释为个体细胞的真实发育轨迹。研究重点是建立可解释的统计模型，比较其外推能力并分析失败原因。
+
+\section{具体研究问题}
+核心问题是：\textbf{在观测时间点有限的条件下，低维且受约束的外推能否改善未来细胞群体预测？} 拟进一步研究：
+\begin{enumerate}[label=（\arabic*）]
+  \item 降维与收缩能否减轻高维表达变化外推时的噪声放大？
+  \item 调整细胞群体比例、调整群体内部表达分别带来哪些预测收益？
+  \item 方法的表现是否随细胞群体、降维维数和外推强度发生变化？
+\end{enumerate}
+以上均为待检验问题。主要工作定位为统一条件下的模型比较、消融与误差分析，结果将同时报告改善、退化及不稳定的情形。
+
+\section{数据来源与使用方案}
+使用官方发布的 T1 单细胞 RNA 数据。数据以 AnnData 文件组织，表达矩阵已作 log1p 归一化，包含 32,285 个基因及训练阶段的细胞类型注释\cite{data}。下载后将检查文件版本、矩阵含义、缺失值、基因顺序和注释一致性，避免重复归一化；特征处理和 PCA 仅在相应训练阶段上拟合。
+
+\begin{center}
+\smalltable
+\begin{tabularx}{\linewidth}{@{}p{2.0cm}p{2.8cm}Y@{}}
+\toprule
+角色 & 发育阶段 & 研究用途\\
+\midrule
+初期训练 & E8.5、E9.5 & 数据探索、表示学习与变化规则估计\\
+开发验证 & E10.5 & 按发布安排评价预测及选择模型\\
+隐藏测试 & E12.5 & 最终官方评价，真值不公开\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+T1 来自以心脏为中心的组织取样，阶段间取样范围与标签命名可能不同\cite{data}。分析中将先检查可比性，再解释群体比例或类别变化。本稿给出拟开展的研究设计，注册及数据获取状态由小组在提交前据实核实。
+
+\newpage
+\section{初步建模思路}
+\textbf{参考基线。} 使用官方 \texttt{copy\_last} 和 \texttt{pseudobulk\_shift} 作为带引用的比较对象\cite{task}，分别代表沿用最近阶段的经验分布，以及依据已观察的平均表达变化进行整体平移。复现基线用于校验流程，本组分析围绕下述改进与受控比较展开。
+
+\textbf{低维收缩外推。} 设训练阶段为 $t_a<t_b$，在其数据上拟合 PCA，得到主成分基矩阵 $V_d\in\mathbb{R}^{p\times d}$。令 $\bar{\bm x}_a,\bar{\bm x}_b$ 为阶段平均表达。对最近阶段抽取的细胞 $\bm x_i(t_b)$，预测为
+\begin{equation}
+\widehat{\bm x}_i(t_\star)=
+\left[
+\bm x_i(t_b)+
+\alpha\frac{t_\star-t_b}{t_b-t_a}
+V_dV_d^\top(\bar{\bm x}_b-\bar{\bm x}_a)
+\right]_+ ,
+\label{eq:model}
+\end{equation}
+其中 $\alpha\in[0,1]$ 控制变化幅度，$[\cdot]_+$ 表示逐元素非负截断。该方法在低维子空间估计趋势，并保留抽样细胞原有的高维残差；$\alpha=0$ 对应最近阶段基线。将记录截断比例，检查约束处理对结果的影响。
+
+\textbf{分层扩展与消融。} 对标签能可靠对应、细胞数足够的群体，分别估计表达变化，并对群体比例作平滑、收缩及归一化后的保守调整。比较“均不调整”“仅调整表达”“仅调整比例”“同时调整”四种设置。样本少或缺乏对应的群体沿用最近阶段分布，并单独分析局限。该扩展取决于注释质量，优先保证基础模型能够完整运行。
+
+主成分数与收缩强度仅设置少量候选值，保留全部比较记录。共同均值平移不能主动学习群体内部协方差演化，因此不预设平均表达改善一定带来结构指标改善。消融用于比较建模选择的经验作用，不作因果分解。
+
+\section{评价方案与泄漏防范}
+采用按时间留出的验证。先仅用 E8.5、E9.5 保存对 E10.5 的预测及配置；按照当前时间表，官方计划于 10 月 20 日公开验证真值\cite{timeline}。届时先评价冻结预测，再作有限模型选择，调参后的结果明确作为开发验证结果报告。同阶段随机拆分仅用于流程检查。
+
+冻结方法与超参数后，按官方许可纳入已公开的 E10.5，并依据预定的最近两阶段变化率规则重新拟合，预测 E12.5。测试阶段的正式评分次数按规则使用，不根据评分反解任何目标信息\cite{rules}。
+
+主评价采用官方工具并固定版本，分别报告差异表达基因恢复（25\%）、变化方向（25\%）、细胞状态分布（30\%）和基因共同变化结构（20\%）\cite{task}。提交文件按规定提供完整表达与基因顺序，主评价中的细胞类型由官方冻结分类器判定。
+
+补充分析包括群体误差、代表性基因图和参数敏感性。各方法保持一致的预测细胞抽样预算，并用固定的若干随机种子重复抽样，描述算法和抽样波动；这些重复及大量细胞均不视为独立胚胎重复。
+
+\newpage
+\section{可能困难与应对}
+\begin{itemize}
+  \item \textbf{时间点少与新状态出现。} 采用低自由度外推并分析失效群体；对未观察到的细胞状态保留预测局限，不声称恢复完整发育动力学。
+  \item \textbf{取样与注释差异。} 根据训练资料检查标签对应，必要时在可靠的较粗层级比较；不将所有阶段差异归因于分化。
+  \item \textbf{高维计算与输出约束。} 使用稀疏读取、适量抽样及低维计算；输出时核对非负性、有限值和官方基因顺序。
+  \item \textbf{外部信息重叠。} 初期仅使用官方允许的训练文件。后续若引入外部数据或预训练模型，将核查训练阶段、基因型与来源并完整披露，遵守 held-out data 规定\cite{rules}。
+\end{itemize}
+
+\section{进度安排与初步分工}
+10 月 18 日前完成开题及数据访问核实；至 11 月 19 日完成数据探索、基线和至少一种初步模型；11 月下旬完成主要消融与误差分析，并于 12 月 2 日前按规则完成至少一次有效官方提交；随后准备期末汇报，至 2027 年 1 月 5 日完成最终报告和复现材料。竞赛节点如有调整，以官方公告为准\cite{timeline}。
+
+\begin{center}
+\smalltable
+\begin{tabularx}{\linewidth}{@{}p{2.8cm}Y@{}}
+\toprule
+成员 & 初步职责\\
+\midrule
+组员 A（待填） & 数据获取、背景理解、预处理与探索分析\\
+组员 B（待填） & 参考基线、预测文件生成与官方提交流程\\
+组员 C（待填） & 低维外推、分层扩展与消融实验\\
+组员 D（待填） & 评价实现、稳健性检查与误差解释\\
+\bottomrule
+\end{tabularx}
+\end{center}
+全组共同核查方法、准备报告与答辩，并依据实际工作更新贡献。预期交付可复现的统一比较、消融与失败案例分析；即使改进未超过基线，也将据实解释适用条件和局限。
+
+\section{复现与 AI 辅助说明}
+代码拟包含 README、数据获取说明、主要分析与评价脚本、环境版本和随机种子，并记录官方工具版本、配置与预测文件。本开题讨论稿受到 ChatGPT／Codex 的资料核对、方案讨论及文字组织辅助；拟由组员主导方法设计与选择，核查引用、处理步骤和结果，并按实际工作方式遵守 Human Team／Agent Team 规则\cite{rules}。
+
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\begin{thebibliography}{9}
+\setlength{\itemsep}{1pt}
+\bibitem{task}
+Virtual Embryo Challenge. \href{https://virtualembryo.ai/challenge/tasks/temporal}{Task 1 Temporal}.
+\bibitem{data}
+Virtual Embryo Challenge. \href{https://virtualembryo.ai/challenge/data}{Data}.
+\bibitem{timeline}
+Virtual Embryo Challenge. \href{https://virtualembryo.ai/challenge/timeline}{Timeline}.
+\bibitem{rules}
+Virtual Embryo Challenge. \href{https://virtualembryo.ai/challenge/rules}{Official Rules}.
+\bibitem{schiebinger}
+Schiebinger G, et al. Optimal-Transport Analysis of Single-Cell Gene Expression Identifies Developmental Trajectories in Reprogramming.
+\textit{Cell}, 2019, 176: 928--943.e22.
+\href{https://doi.org/10.1016/j.cell.2019.01.006}{doi:10.1016/j.cell.2019.01.006}.
+\end{thebibliography}
+\endgroup
+{\footnotesize 官方网页核对日期：2026 年 10 月 17 日。}
+\end{document}

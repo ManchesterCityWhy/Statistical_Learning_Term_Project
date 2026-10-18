@@ -1,0 +1,64 @@
+# macOS / editors
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# LaTeX build products (the root report PDF remains tracked)
+/build/
+/_build/
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.bcf
+*.run.xml
+*.bbl
+*.blg
+/t1_proposal_latex/main.pdf
+
+# Downloaded data, model weights and generated experiment outputs
+/data/
+/datasets/
+/downloads/
+/checkpoints/
+/predictions/
+/outputs/
+/runs/
+/wandb/
+.cache/
+*.h5ad
+*.h5
+*.hdf5
+*.loom
+*.parquet
+*.pt
+*.pth
+*.ckpt
