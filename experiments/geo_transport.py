@@ -240,7 +240,7 @@ def main():
     parser.add_argument("--output", required=True)
     parser.add_argument("--config", default="configs/t1_competitive_verify.json")
     parser.add_argument("--candidate", choices=list(CANDIDATES))
-    parser.add_argument("--seeds", nargs="+", type=int, default=[0, 31])
+    parser.add_argument("--seeds", nargs="+", type=int, choices=[42], default=[42])
     args = parser.parse_args()
     if args.mode == "export" and (args.candidate is None or len(args.seeds) != 1):
         parser.error("export requires a candidate and exactly one seed")

@@ -1,0 +1,118 @@
+{
+  "seed": 42,
+  "external": {
+    "series": "GSE223237",
+    "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223237",
+    "samples": [
+      {
+        "accession": "GSM6943750",
+        "stage": "E9.5",
+        "file": "GSM6943750_E9_Rep1_counts.txt.gz",
+        "sha256": "1066de79865b42a680fe40496db5270295de5caf8ab85c976de1fdbab01f142a"
+      },
+      {
+        "accession": "GSM6943751",
+        "stage": "E9.5",
+        "file": "GSM6943751_E9_Rep2_counts.txt.gz",
+        "sha256": "6c2f06cf637c6df164c83062eef87c5ab6700598774746ae4ab17c73e3478068"
+      },
+      {
+        "accession": "GSM6943752",
+        "stage": "E9.5",
+        "file": "GSM6943752_E9_Rep3_counts.txt.gz",
+        "sha256": "fba43acf7f4bd7d12abda2eeb5569b64be12cefc22a8b6a48614cbac6c8cd21d"
+      },
+      {
+        "accession": "GSM6943761",
+        "stage": "E14.5",
+        "file": "GSM6943761_E14_Rep1_counts.txt.gz",
+        "sha256": "b9270401ca1ca36141b4fd5b727fe95e3828623b7f58c50554baaa9b47527932"
+      },
+      {
+        "accession": "GSM6943762",
+        "stage": "E14.5",
+        "file": "GSM6943762_E14_Rep2_counts.txt.gz",
+        "sha256": "c54ce395bfcfe10840fe54ef7d1f0f6ee08d88ba834633de64033cfeeb2b1433"
+      },
+      {
+        "accession": "GSM6943763",
+        "stage": "E14.5",
+        "file": "GSM6943763_E14_Rep3_counts.txt.gz",
+        "sha256": "22b70c87bfd3398b8354dffb97d4175a48460d9b87fc9be699979a1ce4920479"
+      }
+    ],
+    "symbol_map_source": "GSM6211349 E14.5 Cell Ranger gene table only",
+    "symbol_map_sha256": "86387317c0576b86b2693b88353a7c6be4affb53ae3100d2767f97aa6fd2d0f2"
+  },
+  "selected_on_development": [
+    {
+      "name": "ratio_type2_bulk5",
+      "type": 2,
+      "bulk": 5,
+      "kind": "ratio",
+      "de_score": -0.03968253968253963,
+      "de_direction": 0.2121943081192185,
+      "mmd_u": 0.06130852500220334,
+      "variogram": 0.004682942759245634,
+      "score": 54.83996524448025
+    },
+    {
+      "name": "add_type2_bulk5",
+      "type": 2,
+      "bulk": 5,
+      "kind": "add",
+      "de_score": -0.03968253968253963,
+      "de_direction": 0.20065339664096607,
+      "mmd_u": 0.061771492009713935,
+      "variogram": 0.004581273999065161,
+      "score": 54.7713565582008
+    },
+    {
+      "name": "add_type2_bulk3",
+      "type": 2,
+      "bulk": 3,
+      "kind": "add",
+      "de_score": -0.05555555555555554,
+      "de_direction": 0.18179567059723115,
+      "mmd_u": 0.05982889995933276,
+      "variogram": 0.0047036525793373585,
+      "score": 54.56974463733446
+    }
+  ],
+  "confirmation": [
+    {
+      "name": "copy_last",
+      "de_score": 0.0,
+      "de_direction": 0.0,
+      "mmd_u": 0.08730008867115417,
+      "variogram": 0.0058045769110322,
+      "score": 50.0
+    },
+    {
+      "name": "ratio_type2_bulk5",
+      "de_score": -0.09124087591240879,
+      "de_direction": 0.20259985066960393,
+      "mmd_u": 0.06924567310944717,
+      "variogram": 0.004882900509983301,
+      "score": 53.900600371473764
+    },
+    {
+      "name": "add_type2_bulk5",
+      "de_score": -0.07664233576642338,
+      "de_direction": 0.1939088064640621,
+      "mmd_u": 0.07032673114073923,
+      "variogram": 0.0047862171195447445,
+      "score": 53.89221878694509
+    },
+    {
+      "name": "add_type2_bulk3",
+      "de_score": -0.09854014598540149,
+      "de_direction": 0.17306893498298692,
+      "mmd_u": 0.06777431438522964,
+      "variogram": 0.004901126027107239,
+      "score": 53.699476260920456
+    }
+  ],
+  "status": "complete",
+  "note": "confirmation cells disjoint; same embryo stages, not independent biological replication"
+}

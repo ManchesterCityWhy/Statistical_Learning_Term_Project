@@ -5,12 +5,12 @@
     "E10.5": "data/T1/E10.5_RNA.h5ad"
   },
   "seeds": [
-    0
+    42
   ],
   "prediction_cells": 1706,
   "pca_cells_per_stage": 2500,
-  "pca_seed": 0,
-  "evaluation_seed": 0,
+  "pca_seed": 42,
+  "evaluation_seed": 42,
   "evaluation_stage_fraction": 0.1,
   "candidates": [
     {

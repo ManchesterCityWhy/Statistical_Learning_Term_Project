@@ -59,8 +59,8 @@ def test_alpha_zero_matches_copy_and_pca_preserves_cell_residuals(stages):
     (a, b), _, _ = stages
     model = Extrapolator(a, b, pca_cells_per_stage=4)
     model.fit_pca([1, 2])
-    copy, _ = model.predict({"method": "copy_last"}, 4, seed=19, h=1)
-    zero, _ = model.predict({"method": "pca_shift", "dimensions": 2, "alpha": 0}, 4, seed=19, h=2)
+    copy, _ = model.predict({"method": "copy_last"}, 4, seed=42, h=1)
+    zero, _ = model.predict({"method": "pca_shift", "dimensions": 2, "alpha": 0}, 4, seed=42, h=2)
     np.testing.assert_array_equal(copy, zero)
     assert 0 <= model.diagnostics["1"]["retained_delta_squared_norm"] <= 1 + 1e-6
 
@@ -68,8 +68,8 @@ def test_alpha_zero_matches_copy_and_pca_preserves_cell_residuals(stages):
 def test_type_baseline_does_not_move_a_newly_observed_type(stages):
     (a, b), _, _ = stages
     model = Extrapolator(a, b)
-    copy, _ = model.predict({"method": "copy_last"}, 4, 7, h=2)
-    shifted, _ = model.predict({"method": "pseudobulk_shift", "alpha": 1}, 4, 7, h=2)
+    copy, _ = model.predict({"method": "copy_last"}, 4, 42, h=2)
+    shifted, _ = model.predict({"method": "pseudobulk_shift", "alpha": 1}, 4, 42, h=2)
     novel = copy[:, 1] > 0
     np.testing.assert_array_equal(copy[novel], shifted[novel])
     np.testing.assert_array_equal(shifted[~novel, 0], copy[~novel, 0] + 2)
@@ -88,8 +88,8 @@ def test_real_veckit_metrics_and_calibration_on_synthetic_distributions():
     rng = np.random.default_rng(42)
     reference = rng.gamma(2, 1, (64, 64)).astype(np.float32)
     target = np.maximum(reference + np.linspace(-1, 2, 64), 0).astype(np.float32)
-    floor = metric_panel(reference, target, reference, seed=0)
-    perfect = metric_panel(target, target, reference, seed=0)
+    floor = metric_panel(reference, target, reference, seed=42)
+    perfect = metric_panel(target, target, reference, seed=42)
     assert all(value is not None for value in floor.values())
     assert perfect["de_score"] > floor["de_score"]
     assert perfect["de_direction"] > floor["de_direction"]
@@ -130,8 +130,8 @@ def test_final_prediction_uses_only_e95_e105_and_h2(stages, tmp_path, monkeypatc
     genes = ["a", "b", "c", "d"]
     opened = []
     frozen = {"candidate": {"name": "copy", "method": "copy_last"}, "data": {},
-              "pca_cells_per_stage": 4, "pca_seed": 0, "prediction_cells": 3,
-              "prediction_seed": 7, "input_sha256": {"E9.5": "a", "E10.5": "b"},
+              "pca_cells_per_stage": 4, "pca_seed": 42, "prediction_cells": 3,
+              "prediction_seed": 42, "input_sha256": {"E9.5": "a", "E10.5": "b"},
               "development_code_sha256": {}, "veckit_commit": cli.VECKIT_COMMIT}
     monkeypatch.setattr(cli, "load_config", lambda _: frozen)
     monkeypatch.setattr(cli, "board_spec", lambda _: ({"min_cells": 2, "max_cells": 4}, genes))
@@ -164,8 +164,8 @@ def test_synthetic_benchmark_freeze_and_export_end_to_end(tmp_path, monkeypatch)
         ad.AnnData(X=sparse.csr_matrix(matrix), var=pd.DataFrame(index=genes)).write_h5ad(path)
         paths[name] = str(path)
     config = {"data": paths, "prediction_cells": 64, "pca_cells_per_stage": 64,
-              "pca_seed": 0, "evaluation_seed": 0, "evaluation_stage_fraction": 1,
-              "seeds": [7], "candidates": [{"name": "copy", "method": "copy_last"},
+              "pca_seed": 42, "evaluation_seed": 42, "evaluation_stage_fraction": 1,
+              "seeds": [42], "candidates": [{"name": "copy", "method": "copy_last"},
                    {"name": "pca", "method": "pca_shift", "dimensions": 3, "alpha": .5}]}
     config_path = tmp_path / "config.json"
     config_path.write_text(json.dumps(config))
@@ -180,7 +180,7 @@ def test_synthetic_benchmark_freeze_and_export_end_to_end(tmp_path, monkeypatch)
     assert json.loads((run / "manifest.json").read_text())["status"] == "complete"
     assert len(pd.read_csv(run / "metrics.csv")) == 2
     selection = tmp_path / "frozen.json"
-    cli.freeze(SimpleNamespace(run=str(run), candidate="pca", seed=7, output=str(selection)))
+    cli.freeze(SimpleNamespace(run=str(run), candidate="pca", seed=42, output=str(selection)))
     out = tmp_path / "export"
     cli.predict_final(SimpleNamespace(selection=str(selection), output=str(out)))
     final = ad.read_h5ad(out / "E12.5_prediction.h5ad")
