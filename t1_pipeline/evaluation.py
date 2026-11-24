@@ -8,7 +8,7 @@ METRICS = {"de_score": (.25, True), "de_direction": (.25, True),
 VECKIT_COMMIT = "cc3859ab2a2305efc4544815d3f44f660efa77d4"
 
 
-def metric_panel(pred, target, reference, seed=0):
+def metric_panel(pred, target, reference, seed=42):
     # Import core functions, not the obsolete rbf_mmd/deg_recovery helpers.
     from common.core_metrics import de_score, de_direction, mmd_unbiased, variogram_score
 

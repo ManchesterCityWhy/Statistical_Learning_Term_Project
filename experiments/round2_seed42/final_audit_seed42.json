@@ -1,0 +1,68 @@
+{
+  "selection": {
+    "name": "deconv3_mix1_bulk3",
+    "de_score": 0.0555555555555555,
+    "de_direction": 0.4091707697328336,
+    "mmd_u": 0.0490945251550799,
+    "variogram": 0.0040646120905876,
+    "score": 60.50036467808536,
+    "run": "composition_refined_seed42"
+  },
+  "configuration": {
+    "name": "deconv3_mix1_bulk3",
+    "strength": 3,
+    "blend": 1,
+    "bulk": 3,
+    "proportions": {
+      "AVC-CM": 0.17903405549467527,
+      "BEC": 0.0,
+      "Blood": 0.05403940507677924,
+      "Endocardium": 0.2375755233259563,
+      "Epithelium": 0.08576646703739892,
+      "Foregut": 0.0,
+      "Hepatocyte": 0.01366921476807142,
+      "IFT-CM": 0.0,
+      "NCC": 0.0,
+      "NCC-derived": 0.0,
+      "OFT/RV-CM": 0.0,
+      "Pericardium": 0.0,
+      "Proepicardium": 0.0,
+      "ST": 0.42386322759136197,
+      "SV-CM": 0.0,
+      "Surface Ectoderm": 0.0,
+      "V-CM": 0.006052106705757039,
+      "aPHM": 0.0,
+      "aSHF": 0.0,
+      "pPHM": 0.0,
+      "pSHF": 0.0
+    }
+  },
+  "fresh_cell_audits": [
+    {
+      "repeat": 1,
+      "de_score": 0.011952191235059813,
+      "de_direction": 0.4040117450521511,
+      "mmd_u": 0.05432446849159095,
+      "variogram": 0.004296216648072004,
+      "score": 59.27223131003188
+    },
+    {
+      "repeat": 2,
+      "de_score": 0.036630036630036625,
+      "de_direction": 0.4117978569966091,
+      "mmd_u": 0.05379691309692576,
+      "variogram": 0.004396376665681601,
+      "score": 60.153809244229414
+    },
+    {
+      "repeat": 3,
+      "de_score": 0.041666666666666664,
+      "de_direction": 0.41685801806329287,
+      "mmd_u": 0.04898752052207787,
+      "variogram": 0.0040556988678872585,
+      "score": 60.48178365231743
+    }
+  ],
+  "mean_score": 59.969274735526234,
+  "note": "three disjoint target/ceiling pairs; same biological stage; model selected exclusively by development score"
+}

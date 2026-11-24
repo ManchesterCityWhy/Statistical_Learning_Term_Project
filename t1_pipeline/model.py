@@ -25,7 +25,7 @@ class Extrapolator:
     earlier: Stage
     last: Stage
     pca_cells_per_stage: int = 2500
-    pca_seed: int = 0
+    pca_seed: int = 42
     delta: np.ndarray = field(init=False)
     projections: dict = field(default_factory=dict, init=False)
     diagnostics: dict = field(default_factory=dict, init=False)

@@ -26,7 +26,13 @@ def resolve(path):
 
 
 def load_config(path):
-    return json.loads(resolve(path).read_text(encoding="utf-8"))
+    config = json.loads(resolve(path).read_text(encoding="utf-8"))
+    for key in ("pca_seed", "evaluation_seed"):
+        if config.get(key, 42) != 42:
+            raise ValueError(f"{key} must equal 42")
+    if config.get("seeds", [42]) != [42]:
+        raise ValueError("seeds must be [42]; repetitions need a continuous RNG stream")
+    return config
 
 
 def run_manifest(config):
@@ -38,7 +44,7 @@ def run_manifest(config):
             "code_sha256": {p.name: file_hash(p) for p in sorted((ROOT / "t1_pipeline").glob("*.py"))},
             "python": platform.python_version(), "veckit_commit": VECKIT_COMMIT,
             "veckit_core_sha256": file_hash(Path(core.__file__)),
-            "packages": {name: version(name) for name in ["numpy", "scipy", "pandas", "scikit-learn", "anndata", "h5py", "veckit"]}}
+            "packages": {name: version(name) for name in ["numpy", "scipy", "pandas", "scikit-learn", "anndata", "h5py"]}}
 
 
 def open_stages(stack, config, names, genes):
@@ -244,7 +250,7 @@ def main(argv=None):
     p = commands.add_parser("freeze", help="Record a candidate selected from a completed development run")
     p.add_argument("--run", required=True)
     p.add_argument("--candidate", required=True)
-    p.add_argument("--seed", type=int, default=7)
+    p.add_argument("--seed", type=int, choices=[42], default=42)
     p.add_argument("--output", default="configs/frozen_selection.json")
     p = commands.add_parser("predict-final", help="Refit on E9.5/E10.5; export E12.5 at h=2")
     p.add_argument("--selection", default="configs/frozen_selection.json")

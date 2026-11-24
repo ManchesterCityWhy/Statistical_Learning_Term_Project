@@ -4,23 +4,75 @@
     "E9.5": "data/T1/E9.5_RNA.h5ad",
     "E10.5": "data/T1/E10.5_RNA.h5ad"
   },
-  "seeds": [0],
+  "seeds": [
+    42
+  ],
   "prediction_cells": 1706,
   "pca_cells_per_stage": 2500,
-  "pca_seed": 0,
-  "evaluation_seed": 0,
+  "pca_seed": 42,
+  "evaluation_seed": 42,
   "evaluation_stage_fraction": 0.1,
   "candidates": [
-    {"name": "copy_last", "method": "copy_last"},
-    {"name": "pseudobulk_shift", "method": "pseudobulk_shift", "alpha": 1.0},
-    {"name": "pca10_keepzero", "method": "pca_shift", "dimensions": 10, "alpha": 0.5, "preserve_zeros": true},
-    {"name": "type_keepzero", "method": "pseudobulk_shift", "alpha": 1.0, "preserve_zeros": true},
-    {"name": "state_weight_03", "method": "copy_last", "state_weight": 0.3},
-    {"name": "state_weight_07", "method": "copy_last", "state_weight": 0.7},
-    {"name": "hurdle_global_05", "method": "hurdle", "alpha": 0.5},
-    {"name": "hurdle_global_10", "method": "hurdle", "alpha": 1.0},
-    {"name": "hurdle_local_05", "method": "hurdle", "alpha": 0.5, "local": 0.8},
-    {"name": "hurdle_local_10", "method": "hurdle", "alpha": 1.0, "local": 0.8},
-    {"name": "hurdle_weighted", "method": "hurdle", "alpha": 0.5, "local": 0.8, "state_weight": 0.3}
+    {
+      "name": "copy_last",
+      "method": "copy_last"
+    },
+    {
+      "name": "pseudobulk_shift",
+      "method": "pseudobulk_shift",
+      "alpha": 1.0
+    },
+    {
+      "name": "pca10_keepzero",
+      "method": "pca_shift",
+      "dimensions": 10,
+      "alpha": 0.5,
+      "preserve_zeros": true
+    },
+    {
+      "name": "type_keepzero",
+      "method": "pseudobulk_shift",
+      "alpha": 1.0,
+      "preserve_zeros": true
+    },
+    {
+      "name": "state_weight_03",
+      "method": "copy_last",
+      "state_weight": 0.3
+    },
+    {
+      "name": "state_weight_07",
+      "method": "copy_last",
+      "state_weight": 0.7
+    },
+    {
+      "name": "hurdle_global_05",
+      "method": "hurdle",
+      "alpha": 0.5
+    },
+    {
+      "name": "hurdle_global_10",
+      "method": "hurdle",
+      "alpha": 1.0
+    },
+    {
+      "name": "hurdle_local_05",
+      "method": "hurdle",
+      "alpha": 0.5,
+      "local": 0.8
+    },
+    {
+      "name": "hurdle_local_10",
+      "method": "hurdle",
+      "alpha": 1.0,
+      "local": 0.8
+    },
+    {
+      "name": "hurdle_weighted",
+      "method": "hurdle",
+      "alpha": 0.5,
+      "local": 0.8,
+      "state_weight": 0.3
+    }
   ]
 }
