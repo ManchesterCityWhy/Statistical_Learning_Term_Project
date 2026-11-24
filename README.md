@@ -11,6 +11,8 @@
 - [课程大作业说明](课程大作业说明.txt)：来自课程说明原文，供组内查阅。
 - [字体与编译说明](t1_proposal_latex/README.md)
 - [T1 数据检查、评价与预测流程](t1_pipeline/README.md)
+- [中期报告公开版 PDF](reports/T1_中期报告_公开版.pdf) · [LaTeX 源码](reports/T1_中期报告_公开版.tex)
+- [逐次实验结果、参数与预测校验归档](experiments/archive/2026-11-24/README.md)
 
 ```text
 .

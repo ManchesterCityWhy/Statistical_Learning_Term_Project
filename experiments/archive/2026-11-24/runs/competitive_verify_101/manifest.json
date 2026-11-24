@@ -1,0 +1,110 @@
+{
+  "created_at": "2026-11-24T08:29:40.640010+00:00",
+  "config": {
+    "data": {
+      "E8.5": "data/T1/E8.5_RNA.h5ad",
+      "E9.5": "data/T1/E9.5_RNA.h5ad",
+      "E10.5": "data/T1/E10.5_RNA.h5ad"
+    },
+    "seeds": [
+      101
+    ],
+    "prediction_cells": 1706,
+    "pca_cells_per_stage": 2500,
+    "pca_seed": 0,
+    "evaluation_seed": 101,
+    "evaluation_stage_fraction": 0.1,
+    "candidates": [
+      {
+        "name": "copy_last",
+        "method": "copy_last"
+      },
+      {
+        "name": "pca10_keepzero",
+        "method": "pca_shift",
+        "dimensions": 10,
+        "alpha": 0.5,
+        "preserve_zeros": true
+      },
+      {
+        "name": "type_keepzero",
+        "method": "pseudobulk_shift",
+        "alpha": 1,
+        "preserve_zeros": true
+      },
+      {
+        "name": "type_keepzero_a05_norm",
+        "method": "pseudobulk_shift",
+        "alpha": 0.5,
+        "preserve_zeros": true,
+        "renormalize": true
+      },
+      {
+        "name": "type_keepzero_a1_norm",
+        "method": "pseudobulk_shift",
+        "alpha": 1,
+        "preserve_zeros": true,
+        "renormalize": true
+      },
+      {
+        "name": "pca10_keepzero_norm",
+        "method": "pca_shift",
+        "dimensions": 10,
+        "alpha": 0.5,
+        "preserve_zeros": true,
+        "renormalize": true
+      },
+      {
+        "name": "type_keepzero_weighted_norm",
+        "method": "pseudobulk_shift",
+        "alpha": 1,
+        "preserve_zeros": true,
+        "renormalize": true,
+        "state_weight": 0.35
+      },
+      {
+        "name": "type_unmasked_norm",
+        "method": "pseudobulk_shift",
+        "alpha": 0.5,
+        "renormalize": true
+      },
+      {
+        "name": "hurdle_local_norm",
+        "method": "hurdle",
+        "alpha": 0.5,
+        "local": 0.8,
+        "renormalize": true
+      }
+    ]
+  },
+  "git_head": "0c3fad06759a8954dc2bdc360b3797e0be2eb6aa",
+  "code_sha256": {
+    "__init__.py": "b122e535044b4dc2b78f17d2b986f427e43fa1492d370911a26f341f42dc91ef",
+    "__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "cli.py": "66fabdfeb15d304d1568b1940e62f0669c130fc815c6dcdeb3bc00663c98bb7d",
+    "data.py": "28679fe71cbc31477cd35672224576efdb8c6fbe5fa20cf33147ca76af05c94f",
+    "distribution.py": "7baed91c8960be7e6e0e74d97380588a633b0b5ddee43e69a0dea52d349c73f7",
+    "evaluation.py": "cfe3a0c8e90159396ac4473775bbde0cde58c4d7e80acc8e5548856e5189502d",
+    "model.py": "688a33ab3e12fbef022a1551e7b716019e0e37835a7c4d8127eadccc02ac30a0"
+  },
+  "python": "3.12.14",
+  "veckit_commit": "cc3859ab2a2305efc4544815d3f44f660efa77d4",
+  "veckit_core_sha256": "3be7099a0c9a7ad5b609f86078871ed8290ed0bd8916b0cb3e14fb9831909f31",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "anndata": "0.11.4",
+    "h5py": "3.13.0",
+    "veckit": "0.1.1"
+  },
+  "status": "complete",
+  "input_sha256": {
+    "E8.5": "8eab2d0ccaa89f92861b09816b76b6a731b8ed6b5995e4af196d9ed8ff76e504",
+    "E9.5": "0296e0043842f944a663f3c11ac1542d1bbee733c1cd657bd56f75af65958361",
+    "E10.5": "974e04e7fe64fb96142f17994a9678d4cebd4f1868dec4de034eda4245b7dd6c"
+  },
+  "split": "E8.5+E9.5 -> E10.5",
+  "score_scope": "Local development only; not an official leaderboard score."
+}

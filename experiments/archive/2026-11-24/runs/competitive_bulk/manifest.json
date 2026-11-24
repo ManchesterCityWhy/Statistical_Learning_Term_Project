@@ -1,0 +1,180 @@
+{
+  "created_at": "2026-11-24T08:29:19.886376+00:00",
+  "config": {
+    "data": {
+      "E8.5": "data/T1/E8.5_RNA.h5ad",
+      "E9.5": "data/T1/E9.5_RNA.h5ad",
+      "E10.5": "data/T1/E10.5_RNA.h5ad"
+    },
+    "seeds": [
+      0
+    ],
+    "prediction_cells": 1706,
+    "pca_cells_per_stage": 2500,
+    "pca_seed": 0,
+    "evaluation_seed": 0,
+    "evaluation_stage_fraction": 0.1,
+    "candidates": [
+      {
+        "name": "copy_last",
+        "method": "copy_last"
+      },
+      {
+        "name": "pca10_keepzero",
+        "method": "pca_shift",
+        "dimensions": 10,
+        "alpha": 0.5,
+        "preserve_zeros": true
+      },
+      {
+        "name": "type_keepzero",
+        "method": "pseudobulk_shift",
+        "alpha": 1,
+        "preserve_zeros": true
+      },
+      {
+        "name": "type_keepzero_a05_norm",
+        "method": "pseudobulk_shift",
+        "alpha": 0.5,
+        "preserve_zeros": true,
+        "renormalize": true
+      },
+      {
+        "name": "type_keepzero_a1_norm",
+        "method": "pseudobulk_shift",
+        "alpha": 1,
+        "preserve_zeros": true,
+        "renormalize": true
+      },
+      {
+        "name": "pca10_keepzero_norm",
+        "method": "pca_shift",
+        "dimensions": 10,
+        "alpha": 0.5,
+        "preserve_zeros": true,
+        "renormalize": true
+      },
+      {
+        "name": "type_keepzero_weighted_norm",
+        "method": "pseudobulk_shift",
+        "alpha": 1,
+        "preserve_zeros": true,
+        "renormalize": true,
+        "state_weight": 0.35
+      },
+      {
+        "name": "type_unmasked_norm",
+        "method": "pseudobulk_shift",
+        "alpha": 0.5,
+        "renormalize": true
+      },
+      {
+        "name": "hurdle_local_norm",
+        "method": "hurdle",
+        "alpha": 0.5,
+        "local": 0.8,
+        "renormalize": true
+      }
+    ]
+  },
+  "git_head": "0c3fad06759a8954dc2bdc360b3797e0be2eb6aa",
+  "code_sha256": {
+    "__init__.py": "b122e535044b4dc2b78f17d2b986f427e43fa1492d370911a26f341f42dc91ef",
+    "__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "cli.py": "66fabdfeb15d304d1568b1940e62f0669c130fc815c6dcdeb3bc00663c98bb7d",
+    "data.py": "28679fe71cbc31477cd35672224576efdb8c6fbe5fa20cf33147ca76af05c94f",
+    "distribution.py": "7baed91c8960be7e6e0e74d97380588a633b0b5ddee43e69a0dea52d349c73f7",
+    "evaluation.py": "cfe3a0c8e90159396ac4473775bbde0cde58c4d7e80acc8e5548856e5189502d",
+    "model.py": "688a33ab3e12fbef022a1551e7b716019e0e37835a7c4d8127eadccc02ac30a0"
+  },
+  "python": "3.12.14",
+  "veckit_commit": "cc3859ab2a2305efc4544815d3f44f660efa77d4",
+  "veckit_core_sha256": "3be7099a0c9a7ad5b609f86078871ed8290ed0bd8916b0cb3e14fb9831909f31",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "anndata": "0.11.4",
+    "h5py": "3.13.0",
+    "veckit": "0.1.1"
+  },
+  "experimental_code_sha256": "585812b6efebf880d42415ae71dbcf9bafad7c4f2a8dca63d5dfb38bcfe54204",
+  "input_sha256": {
+    "E8.5": "8eab2d0ccaa89f92861b09816b76b6a731b8ed6b5995e4af196d9ed8ff76e504",
+    "E9.5": "0296e0043842f944a663f3c11ac1542d1bbee733c1cd657bd56f75af65958361",
+    "E10.5": "974e04e7fe64fb96142f17994a9678d4cebd4f1868dec4de034eda4245b7dd6c"
+  },
+  "external_data": {
+    "series": "GSE223237",
+    "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223237",
+    "samples": [
+      {
+        "accession": "GSM6943750",
+        "stage": "E9.5",
+        "file": "GSM6943750_E9_Rep1_counts.txt.gz",
+        "sha256": "1066de79865b42a680fe40496db5270295de5caf8ab85c976de1fdbab01f142a"
+      },
+      {
+        "accession": "GSM6943751",
+        "stage": "E9.5",
+        "file": "GSM6943751_E9_Rep2_counts.txt.gz",
+        "sha256": "6c2f06cf637c6df164c83062eef87c5ab6700598774746ae4ab17c73e3478068"
+      },
+      {
+        "accession": "GSM6943752",
+        "stage": "E9.5",
+        "file": "GSM6943752_E9_Rep3_counts.txt.gz",
+        "sha256": "fba43acf7f4bd7d12abda2eeb5569b64be12cefc22a8b6a48614cbac6c8cd21d"
+      },
+      {
+        "accession": "GSM6943761",
+        "stage": "E14.5",
+        "file": "GSM6943761_E14_Rep1_counts.txt.gz",
+        "sha256": "b9270401ca1ca36141b4fd5b727fe95e3828623b7f58c50554baaa9b47527932"
+      },
+      {
+        "accession": "GSM6943762",
+        "stage": "E14.5",
+        "file": "GSM6943762_E14_Rep2_counts.txt.gz",
+        "sha256": "c54ce395bfcfe10840fe54ef7d1f0f6ee08d88ba834633de64033cfeeb2b1433"
+      },
+      {
+        "accession": "GSM6943763",
+        "stage": "E14.5",
+        "file": "GSM6943763_E14_Rep3_counts.txt.gz",
+        "sha256": "22b70c87bfd3398b8354dffb97d4175a48460d9b87fc9be699979a1ce4920479"
+      }
+    ],
+    "symbol_map_source": "GSM6211349 E14.5 Cell Ranger gene table only",
+    "symbol_map_sha256": "86387317c0576b86b2693b88353a7c6be4affb53ae3100d2767f97aa6fd2d0f2"
+  },
+  "status": "complete",
+  "evaluation_seeds": [
+    0,
+    31,
+    101
+  ],
+  "candidate_settings": {
+    "bulk_075": [
+      0.75,
+      false,
+      false
+    ],
+    "bulk_150": [
+      1.5,
+      false,
+      false
+    ],
+    "bulk_support_100": [
+      1.0,
+      true,
+      false
+    ],
+    "bulk_type_075": [
+      0.75,
+      false,
+      true
+    ]
+  }
+}

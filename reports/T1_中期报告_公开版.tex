@@ -1,0 +1,93 @@
+% !TeX program = xelatex
+% Compile from the reports directory so the font path resolves.
+\documentclass[UTF8,zihao=-4,fontset=none,a4paper]{ctexart}
+\setCJKmainfont[Path=../t1_proposal_latex/fonts/,BoldFont=NotoSerifSC-Bold.otf]{NotoSerifSC-Regular.otf}
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,xcolor,fancyhdr}
+\usepackage[colorlinks=true,urlcolor=teal]{hyperref}
+\definecolor{ink}{HTML}{142A38}
+\definecolor{teal}{HTML}{00766D}
+\hypersetup{pdftitle={T1 中期报告公开版：胚胎发育中的细胞表达分布外推}}
+\setlength{\headheight}{16pt}
+\setlength{\parskip}{5pt}
+\linespread{1.17}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 2026 秋季《统计学习》}
+\fancyhead[R]{\small Virtual Embryo Challenge T1}
+\fancyfoot[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\renewcommand{\arraystretch}{1.35}
+\newcommand{\paperlink}[2]{\href{https://github.com/ManchesterCityWhy/Statistical_Learning_Term_Project/blob/main/#1}{#2}}
+
+\begin{document}
+\noindent{\small\color{teal}\bfseries 中期报告公开版 \quad 2026 年 11 月}
+
+\noindent{\zihao{3}\bfseries\color{ink}胚胎发育中的细胞表达分布外推}
+
+\noindent 统计学习课程项目组
+
+\section*{研究问题}
+
+Virtual Embryo Challenge 的 T1 任务给出以小鼠心脏为中心取样的单细胞 RNA 数据。我们研究在只观察两个早期阶段时，利用均值变化、细胞组成和低维结构，能否改善未来阶段细胞表达分布的预测。每个阶段测到的是一组不同细胞，比较对象是表达分布。
+
+\section*{实验划分}
+
+\noindent\begin{tabularx}{\linewidth}{@{}l l Y@{}}
+\toprule
+阶段 & 角色 & 使用方式 \\
+\midrule
+E8.5、E9.5 & 训练 & 从公开汇总比较细胞组成，由官方训练矩阵估计变化方向。\\
+E10.5 & 开发验证 & 用官方授权的 P3 验证数据评价一步预测。\\
+E12.5 & 隐藏测试 & 沿相同基因顺序导出未来表达，由官方评分。\\
+\bottomrule
+\end{tabularx}
+
+\noindent 表达矩阵按官方的 32,285 基因清单对齐。竞赛数据由加州大学圣迭戈分校 Neil Chi 团队生成，由 Virtual Embryo Challenge 发布。数据集的公开说明与访问限制见文末链接。
+
+\section*{用公开汇总检查细胞组成}
+
+E8.5 与 E9.5 分别有 18 和 21 个公开细胞注释标签，完全同名的标签有 11 个。根据官方公开的阶段组成，先把每个阶段内的比例归一化，再比较标签分布：
+\[
+\mathrm{TV}(p,q)=\tfrac{1}{2}\sum_c|p_c-q_c|.
+\]
+标签并集上的经验距离为 0.595，同名子集内重新归一化后的距离为 0.297。两个距离对应不同范围。各阶段取到的心脏周边组织和注释方式可能不同，因此同名匹配只用作初始对照。
+
+\newpage
+\section*{细胞比例外推}
+
+在两个阶段共有的标签中，令 $\pi_a,\pi_b$ 为重归一化后的比例。外推步长记为 $h$，比例更新强度记为 $\beta$：
+\[
+u_c=\pi_{b,c}+\beta h(\pi_{b,c}-\pi_{a,c}),\qquad
+\widehat{\pi}_c=\frac{\max(0,u_c)}{\sum_j \max(0,u_j)} .
+\]
+将晚期同名组的合计比例乘回预测结果，其余标签保留晚期比例。由于线性外推可能产生负值，步骤中同时记录被截为零的标签。使用官方公开的组成汇总时，$h=1,\beta=0.5$ 会把下降中的 NCC 比例截为零。此问题提示，对低丰度群体外推需要谨慎。
+
+\section*{表达预测}
+
+用两阶段均值差 $\Delta=\bar{x}_b-\bar{x}_a$ 估计表达变化；以较晚阶段抽取的细胞 $x_i(t_b)$ 为起点：
+\[
+\widehat{x}_i(t_\star) =
+\big[x_i(t_b)+\alpha h P_d\Delta\big]_+,
+\qquad P_d=V_d V_d^\top .
+\]
+全空间平移使用 $P_d=I$。PCA 仅作用于变化向量，预测对象仍是完整细胞表达向量。按同名群体计算均值差的版本用于比较细胞类型条件化的效果。分层消融分别调整表达、调整比例、同时调整两者，并与复制基线比较。
+
+\section*{评价与后续}
+
+中期用基因均值 RMSE、变化向量余弦和 MMD 检查一步预测，另记录预测矩阵的非零率和负值截断比例。平移可能把大量原有的零值转成小正值，所以后续同时检验保零版本和细胞状态重加权。
+
+后续的竞赛实验加入差异表达恢复（DES）、变化方向（DCS）、状态分布（MMD）以及共变结构（CSS）。两天外推使用 E9.5 和 E10.5 重新拟合。确定最终候选前，先复核多组抽样下的相对表现。\paperlink{experiments/README.md}{后续实验与复现说明}收录了完整流程与当前进展。
+
+\section*{资料与署名}
+
+\small
+\noindent
+\href{https://virtualembryo.ai/challenge/data}{挑战赛数据说明}
+\quad\href{https://virtualembryo.ai/challenge/panels/t1_composition.json}{官方公开细胞组成}
+\quad\href{https://virtualembryo.ai/challenge/evaluation?section=scoring\&task=1}{评分说明}
+\quad\href{https://virtualembryo.ai/challenge/timeline}{时间线}
+
+\noindent 本公开版保留研究设计、公开数据摘要和方法。原始课程稿、受限数据和细胞级预测存放在本地。资料查阅、实验脚本与稿件整理使用了 Codex 辅助。
+\end{document}
