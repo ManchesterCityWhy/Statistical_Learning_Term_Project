@@ -1,0 +1,20 @@
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.2.3
+scikit-learn==1.6.1
+anndata==0.11.4
+h5py==3.13.0
+pytest==8.3.5
+# Pin transitive runtime dependencies used by the verified environment.
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+joblib==1.4.2
+threadpoolctl==3.6.0
+array-api-compat==1.11.2
+natsort==8.4.0
+packaging==25.0
+iniconfig==2.1.0
+pluggy==1.5.0
+six==1.17.0
+veckit @ git+https://github.com/aristoteleo/veckit.git@cc3859ab2a2305efc4544815d3f44f660efa77d4

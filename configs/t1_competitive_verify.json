@@ -1,0 +1,77 @@
+{
+  "data": {
+    "E8.5": "data/T1/E8.5_RNA.h5ad",
+    "E9.5": "data/T1/E9.5_RNA.h5ad",
+    "E10.5": "data/T1/E10.5_RNA.h5ad"
+  },
+  "seeds": [
+    0
+  ],
+  "prediction_cells": 1706,
+  "pca_cells_per_stage": 2500,
+  "pca_seed": 0,
+  "evaluation_seed": 0,
+  "evaluation_stage_fraction": 0.1,
+  "candidates": [
+    {
+      "name": "copy_last",
+      "method": "copy_last"
+    },
+    {
+      "name": "pca10_keepzero",
+      "method": "pca_shift",
+      "dimensions": 10,
+      "alpha": 0.5,
+      "preserve_zeros": true
+    },
+    {
+      "name": "type_keepzero",
+      "method": "pseudobulk_shift",
+      "alpha": 1,
+      "preserve_zeros": true
+    },
+    {
+      "name": "type_keepzero_a05_norm",
+      "method": "pseudobulk_shift",
+      "alpha": 0.5,
+      "preserve_zeros": true,
+      "renormalize": true
+    },
+    {
+      "name": "type_keepzero_a1_norm",
+      "method": "pseudobulk_shift",
+      "alpha": 1,
+      "preserve_zeros": true,
+      "renormalize": true
+    },
+    {
+      "name": "pca10_keepzero_norm",
+      "method": "pca_shift",
+      "dimensions": 10,
+      "alpha": 0.5,
+      "preserve_zeros": true,
+      "renormalize": true
+    },
+    {
+      "name": "type_keepzero_weighted_norm",
+      "method": "pseudobulk_shift",
+      "alpha": 1,
+      "preserve_zeros": true,
+      "renormalize": true,
+      "state_weight": 0.35
+    },
+    {
+      "name": "type_unmasked_norm",
+      "method": "pseudobulk_shift",
+      "alpha": 0.5,
+      "renormalize": true
+    },
+    {
+      "name": "hurdle_local_norm",
+      "method": "hurdle",
+      "alpha": 0.5,
+      "local": 0.8,
+      "renormalize": true
+    }
+  ]
+}

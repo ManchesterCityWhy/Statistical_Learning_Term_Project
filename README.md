@@ -2,7 +2,7 @@
 
 2026 秋季《统计学习》课程大作业，四人小组共同维护。
 
-选题为 Virtual Embryo Challenge **T1 Temporal**：利用较早发育阶段的单细胞 RNA 数据，预测未来阶段的细胞表达分布。目前已完成官方平台团队注册，并确认可下载 E8.5、E9.5 训练数据；正在完善开题和实验方案，具体研究设计以开题报告为准。
+选题为 Virtual Embryo Challenge **T1 Temporal**，利用较早发育阶段的单细胞 RNA 数据预测未来阶段的细胞表达分布。已完成 E10.5 开发验证，并生成 E12.5 本地候选。[当前实验进展与复现说明](experiments/README.md)
 
 ## 现有资料
 
@@ -10,6 +10,7 @@
 - [开题报告 LaTeX 源码](t1_proposal_latex/main.tex)
 - [课程大作业说明](课程大作业说明.txt)：来自课程说明原文，供组内查阅。
 - [字体与编译说明](t1_proposal_latex/README.md)
+- [T1 数据检查、评价与预测流程](t1_pipeline/README.md)
 
 ```text
 .
