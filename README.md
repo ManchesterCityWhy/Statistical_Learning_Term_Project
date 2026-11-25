@@ -4,6 +4,12 @@
 
 选题为 Virtual Embryo Challenge **T1 Temporal**，利用较早发育阶段的单细胞 RNA 数据预测未来阶段的细胞表达分布。已完成 E10.5 开发验证，并生成 E12.5 本地候选。[当前实验进展与复现说明](experiments/README.md)
 
+## 期末报告与第三轮实验（2026-11-25）
+
+- [最终报告初稿 PDF](reports/final/T1_最终报告.pdf) · [LaTeX 源码](reports/final/T1_最终报告.tex) · 图由 `python reports/final/make_figures.py` 从仓库内评分表生成。红色【待补】处需要补实验或组内确认。
+- 新脚本：`experiments/oracle_decomposition.py`（已知真值的上限分解，只用于分析）、`experiments/round3_balance.py`（细胞级熵平衡重加权）。运行方法见 [实验说明](experiments/README.md#第三轮与上限分解)。
+- 竞赛最终提交截止为北京时间 **2026-11-26 20:00**（25 Nov 23:59 AoE），不是 12 月 2 日；P3 每个测试榜最多两次正式提交。
+
 ## 最新优化结果
 
 种子 42 的第二轮搜索完成 94 个候选配置：最佳选模分数 60.5004，三组新细胞审计均值 59.9693。没有官方提交。详见[结果、限制与复现说明](experiments/round2_seed42/README.md)。

@@ -56,3 +56,17 @@ data/external/GSE150817/perinatal_heart.h5ad
 ```
 
 候选的训练/生成步骤、输入文件校验值及配置见输出目录内的 manifest。代码开发、调试和结果汇总使用了 Codex 辅助，实验记录供组员复核。原始矩阵、评价子集和预测文件存放在授权的本地环境。
+
+## 第三轮与上限分解
+
+两个脚本都复用第二轮的细胞划分 `runs/expanded_seed42/indices.npz`（缺失时按第二轮的随机调用顺序重建），分数可以和 `round2_seed42/` 直接比较。若本地还有 `runs/composition_refined_seed42/sampled_rows.npz`，脚本会先重算第二轮最佳模型，应得到选模集 60.50、复核集 59.79，用来确认环境一致。
+
+```bash
+python -m pytest tests/test_round3.py -q
+python -m experiments.oracle_decomposition --with-confirmation   # 输出 runs/oracle_decomposition_seed42/
+python -m experiments.round3_balance benchmark                   # 输出 runs/round3_balance_seed42/
+python -m experiments.round3_balance export --config-name <选模集第一名> --h 1
+```
+
+- `oracle_decomposition` 的每个条件都使用 E10.5 真值（取自不参与任何评价的细胞），只回答“如果知道真实组成或真实表达变化，最多能得多少分”，**不得作为预测提交**。
+- `round3_balance` 在 E9.5 细胞上求熵平衡权重：权重是对 30 个细胞状态主成分的指数倾斜，岭系数由“相对有效样本量不低于 0.5、0.3 或 0.15”反解。只按选模集挑选，前三名在第一复核集上各评一次。事先约定：第一复核集超过第二轮的 59.79 至少 0.5 分才用于 E12.5。
