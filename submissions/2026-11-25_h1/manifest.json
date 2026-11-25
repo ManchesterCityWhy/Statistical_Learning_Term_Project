@@ -1,0 +1,117 @@
+{
+  "candidate": {
+    "name": "deconv3_mix1_bulk3",
+    "strength": 3,
+    "blend": 1,
+    "bulk": 3,
+    "proportions": {
+      "AVC-CM": 0.17903405549467527,
+      "BEC": 0.0,
+      "Blood": 0.05403940507677924,
+      "Endocardium": 0.2375755233259563,
+      "Epithelium": 0.08576646703739892,
+      "Foregut": 0.0,
+      "Hepatocyte": 0.01366921476807142,
+      "IFT-CM": 0.0,
+      "NCC": 0.0,
+      "NCC-derived": 0.0,
+      "OFT/RV-CM": 0.0,
+      "Pericardium": 0.0,
+      "Proepicardium": 0.0,
+      "ST": 0.42386322759136197,
+      "SV-CM": 0.0,
+      "Surface Ectoderm": 0.0,
+      "V-CM": 0.006052106705757039,
+      "aPHM": 0.0,
+      "aSHF": 0.0,
+      "pPHM": 0.0,
+      "pSHF": 0.0
+    }
+  },
+  "extrapolation_multiplier": 1,
+  "seed": 42,
+  "input_E10_5_sha256": "974e04e7fe64fb96142f17994a9678d4cebd4f1868dec4de034eda4245b7dd6c",
+  "external": {
+    "series": "GSE223237",
+    "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223237",
+    "samples": [
+      {
+        "accession": "GSM6943750",
+        "stage": "E9.5",
+        "file": "GSM6943750_E9_Rep1_counts.txt.gz",
+        "sha256": "1066de79865b42a680fe40496db5270295de5caf8ab85c976de1fdbab01f142a"
+      },
+      {
+        "accession": "GSM6943751",
+        "stage": "E9.5",
+        "file": "GSM6943751_E9_Rep2_counts.txt.gz",
+        "sha256": "6c2f06cf637c6df164c83062eef87c5ab6700598774746ae4ab17c73e3478068"
+      },
+      {
+        "accession": "GSM6943752",
+        "stage": "E9.5",
+        "file": "GSM6943752_E9_Rep3_counts.txt.gz",
+        "sha256": "fba43acf7f4bd7d12abda2eeb5569b64be12cefc22a8b6a48614cbac6c8cd21d"
+      },
+      {
+        "accession": "GSM6943761",
+        "stage": "E14.5",
+        "file": "GSM6943761_E14_Rep1_counts.txt.gz",
+        "sha256": "b9270401ca1ca36141b4fd5b727fe95e3828623b7f58c50554baaa9b47527932"
+      },
+      {
+        "accession": "GSM6943762",
+        "stage": "E14.5",
+        "file": "GSM6943762_E14_Rep2_counts.txt.gz",
+        "sha256": "c54ce395bfcfe10840fe54ef7d1f0f6ee08d88ba834633de64033cfeeb2b1433"
+      },
+      {
+        "accession": "GSM6943763",
+        "stage": "E14.5",
+        "file": "GSM6943763_E14_Rep3_counts.txt.gz",
+        "sha256": "22b70c87bfd3398b8354dffb97d4175a48460d9b87fc9be699979a1ce4920479"
+      }
+    ],
+    "symbol_map_source": "GSM6211349 E14.5 Cell Ranger gene table only",
+    "symbol_map_sha256": "86387317c0576b86b2693b88353a7c6be4affb53ae3100d2767f97aa6fd2d0f2"
+  },
+  "validation": {
+    "board": "T1:test",
+    "cells": 2000,
+    "genes": 32285,
+    "sha256": "80aac98a788a3342b69d4842aac4ea576ec60ca9312c1d49bdbd244640adaf54",
+    "bytes": 33073106,
+    "format_valid": true,
+    "normalization_verified": false
+  },
+  "normalization_sum_min": 9999.999502297858,
+  "normalization_sum_max": 10000.000455558175,
+  "sha256": "80aac98a788a3342b69d4842aac4ea576ec60ca9312c1d49bdbd244640adaf54",
+  "proportions": {
+    "AVC-CM": 0.004062282404472863,
+    "BEC": 0.0,
+    "Blood": 0.1787644526914503,
+    "Early VIC": 0.056000269878689245,
+    "EndoMT Endocardium": 0.0,
+    "Endocardium-1": 0.0,
+    "Endocardium-2": 0.2043522269733949,
+    "Epicardium": 0.09147121206291345,
+    "Gut Endoderm": 0.0,
+    "Hepatocyte": 0.0,
+    "IFT-CM": 0.0,
+    "LV-CM": 0.0,
+    "Macrophage": 0.10999596589635756,
+    "NCC": 0.036286327005023884,
+    "OFT-CM": 0.0,
+    "Pericardium": 0.18062459559003263,
+    "RV-CM": 0.08762290194594627,
+    "ST": 0.029915026413231228,
+    "SV-CM": 0.020904739138487612,
+    "Surface Ectoderm": 0.0,
+    "aPHM": 0.0,
+    "pPHM": 0.0,
+    "pSHF": 0.0
+  },
+  "status": "not_submitted",
+  "note": "h1 retains validated correction strength; h2 doubles trend for two-day horizon; neither has E12.5 performance feedback"
+}
