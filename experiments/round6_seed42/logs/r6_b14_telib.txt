@@ -1,0 +1,15 @@
+te/raw ready 39s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.46103235672467086, 'variogram': 0.03726236894726753} ceiling {'de_score': 0.9228630993745657, 'de_direction': 0.8816465773126663, 'mmd_u': 0.01073101323452797, 'variogram': 0.00022650744358543307} n_up 778 n_dn 1753
+proxy=te/raw base=heart-quota:lib3 f=0.0 split=development              61.13  DES 0.589 DCS 0.686 MMD 0.580 CSS 0.593
+proxy=te/raw base=heart-quota:lib3 f=0.375 split=development            81.90  DES 0.814 DCS 0.876 MMD 0.794 CSS 0.793
+proxy=te/raw base=heart-quota:lib12 f=0.0 split=development             63.47  DES 0.625 DCS 0.660 MMD 0.593 CSS 0.679
+proxy=te/raw base=heart-quota:lib12 f=0.375 split=development           83.31  DES 0.844 DCS 0.859 MMD 0.794 CSS 0.845
+te/dm ready 48s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.4188864422035021, 'variogram': 0.023794621229171753} ceiling {'de_score': 0.9340727048675291, 'de_direction': 0.8880684983243305, 'mmd_u': 0.01073101323452797, 'variogram': 0.00022650744358543307} n_up 1202 n_dn 1057
+proxy=te/dm base=heart-quota:lib3 f=0.0 split=development               60.44  DES 0.607 DCS 0.680 MMD 0.570 CSS 0.558
+proxy=te/dm base=heart-quota:lib3 f=0.375 split=development             81.86  DES 0.836 DCS 0.880 MMD 0.786 CSS 0.769
+proxy=te/dm base=heart-quota:lib12 f=0.0 split=development              61.03  DES 0.645 DCS 0.668 MMD 0.555 CSS 0.578
+proxy=te/dm base=heart-quota:lib12 f=0.375 split=development            82.22  DES 0.863 DCS 0.885 MMD 0.765 CSS 0.780
+proxy             te/raw         te/dm       
+f                  0.000  0.375  0.000  0.375
+base                                         
+heart-quota:lib3   61.13  81.90  60.44  81.86
+heart-quota:lib12  63.47  83.31  61.03  82.22

@@ -1,0 +1,130 @@
+[suite] gen      ready    12s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] 2d/deep  ready    20s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    26s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] raw      ready    34s  floor mmd 0.0873 vario 0.00580 | ceiling des 0.810 dcs 0.789 mmd 0.0046 vario 0.00016 | n_up 75 n_dn 399
+[suite] h3       ready    41s  floor mmd 0.1004 vario 0.00415 | ceiling des 0.855 dcs 0.846 mmd 0.0021 vario 0.00018 | n_up 211 n_dn 235
+[suite] dm       ready    51s  floor mmd 0.0713 vario 0.00279 | ceiling des 0.839 dcs 0.791 mmd 0.0046 vario 0.00016 | n_up 114 n_dn 197
+config=R5 (round-5 file) proxy=gen split=confirmation f=0.125           54.19  DES 0.588 DCS 0.636 MMD 0.512 CSS 0.412
+config=R6 (candidate) proxy=gen split=confirmation f=0.125              54.63  DES 0.548 DCS 0.588 MMD 0.560 CSS 0.471
+config=R6 raw anchor proxy=gen split=confirmation f=0.125               53.63  DES 0.528 DCS 0.579 MMD 0.565 CSS 0.451
+config=R6 at round-5 share proxy=gen split=confirmation f=0.125         54.63  DES 0.548 DCS 0.588 MMD 0.560 CSS 0.471
+config=R6 raw anchor at round-5 share proxy=gen split=confirmation f=0.125  53.63  DES 0.528 DCS 0.579 MMD 0.565 CSS 0.451
+config=R6 base only proxy=gen split=confirmation f=0.0                  51.79  DES 0.509 DCS 0.552 MMD 0.506 CSS 0.504
+config=R6 base, all libraries proxy=gen split=confirmation f=0.125      54.63  DES 0.548 DCS 0.588 MMD 0.560 CSS 0.471
+config=R5 base only proxy=gen split=confirmation f=0.0                  53.53  DES 0.576 DCS 0.631 MMD 0.467 CSS 0.468
+config=R5 base, harmonised anchor proxy=gen split=confirmation f=0.125  54.80  DES 0.600 DCS 0.642 MMD 0.504 CSS 0.432
+config=R5 base, R6 anchor rule proxy=gen split=confirmation f=0.125     54.80  DES 0.600 DCS 0.642 MMD 0.504 CSS 0.432
+config=R5 (round-5 file) proxy=2d/deep split=confirmation f=0.25        65.96  DES 0.623 DCS 0.716 MMD 0.657 CSS 0.640
+config=R6 (candidate) proxy=2d/deep split=confirmation f=0.25           63.30  DES 0.599 DCS 0.712 MMD 0.621 CSS 0.594
+config=R6 raw anchor proxy=2d/deep split=confirmation f=0.25            64.39  DES 0.617 DCS 0.729 MMD 0.627 CSS 0.598
+config=R6 at round-5 share proxy=2d/deep split=confirmation f=0.25      63.30  DES 0.599 DCS 0.712 MMD 0.621 CSS 0.594
+config=R6 raw anchor at round-5 share proxy=2d/deep split=confirmation f=0.25  64.39  DES 0.617 DCS 0.729 MMD 0.627 CSS 0.598
+config=R6 base only proxy=2d/deep split=confirmation f=0.0              53.39  DES 0.514 DCS 0.615 MMD 0.525 CSS 0.470
+config=R6 base, all libraries proxy=2d/deep split=confirmation f=0.25   63.63  DES 0.614 DCS 0.700 MMD 0.614 CSS 0.619
+config=R5 base only proxy=2d/deep split=confirmation f=0.0              55.13  DES 0.528 DCS 0.602 MMD 0.544 CSS 0.528
+config=R5 base, harmonised anchor proxy=2d/deep split=confirmation f=0.25  65.21  DES 0.623 DCS 0.706 MMD 0.644 CSS 0.632
+config=R5 base, R6 anchor rule proxy=2d/deep split=confirmation f=0.25  65.21  DES 0.623 DCS 0.706 MMD 0.644 CSS 0.632
+config=R5 (round-5 file) proxy=2d/all split=confirmation f=0.25         71.02  DES 0.647 DCS 0.756 MMD 0.708 CSS 0.736
+config=R6 (candidate) proxy=2d/all split=confirmation f=0.25            67.16  DES 0.622 DCS 0.725 MMD 0.649 CSS 0.701
+config=R6 raw anchor proxy=2d/all split=confirmation f=0.25             67.71  DES 0.629 DCS 0.724 MMD 0.659 CSS 0.705
+config=R6 at round-5 share proxy=2d/all split=confirmation f=0.25       67.16  DES 0.622 DCS 0.725 MMD 0.649 CSS 0.701
+config=R6 raw anchor at round-5 share proxy=2d/all split=confirmation f=0.25  67.71  DES 0.629 DCS 0.724 MMD 0.659 CSS 0.705
+config=R6 base only proxy=2d/all split=confirmation f=0.0               48.13  DES 0.395 DCS 0.526 MMD 0.502 CSS 0.502
+config=R6 base, all libraries proxy=2d/all split=confirmation f=0.25    67.16  DES 0.622 DCS 0.725 MMD 0.649 CSS 0.701
+config=R5 base only proxy=2d/all split=confirmation f=0.0               54.17  DES 0.475 DCS 0.605 MMD 0.555 CSS 0.527
+config=R5 base, harmonised anchor proxy=2d/all split=confirmation f=0.25  70.15  DES 0.640 DCS 0.745 MMD 0.696 CSS 0.732
+config=R5 base, R6 anchor rule proxy=2d/all split=confirmation f=0.25   70.15  DES 0.640 DCS 0.745 MMD 0.696 CSS 0.732
+config=R5 (round-5 file) proxy=raw split=confirmation f=0.15            69.89  DES 0.594 DCS 0.766 MMD 0.720 CSS 0.715
+config=R6 (candidate) proxy=raw split=confirmation f=0.15               61.48  DES 0.561 DCS 0.683 MMD 0.585 CSS 0.643
+config=R6 raw anchor proxy=raw split=confirmation f=0.15                62.89  DES 0.578 DCS 0.699 MMD 0.597 CSS 0.652
+config=R6 at round-5 share proxy=raw split=confirmation f=0.15          61.48  DES 0.561 DCS 0.683 MMD 0.585 CSS 0.643
+config=R6 raw anchor at round-5 share proxy=raw split=confirmation f=0.15  62.89  DES 0.578 DCS 0.699 MMD 0.597 CSS 0.652
+config=R6 base only proxy=raw split=confirmation f=0.0                  47.09  DES 0.379 DCS 0.521 MMD 0.487 CSS 0.497
+config=R6 base, all libraries proxy=raw split=confirmation f=0.15       61.48  DES 0.561 DCS 0.683 MMD 0.585 CSS 0.643
+config=R5 base only proxy=raw split=confirmation f=0.0                  60.16  DES 0.512 DCS 0.684 MMD 0.618 CSS 0.587
+config=R5 base, harmonised anchor proxy=raw split=confirmation f=0.15   68.95  DES 0.586 DCS 0.755 MMD 0.705 CSS 0.713
+config=R5 base, R6 anchor rule proxy=raw split=confirmation f=0.15      68.95  DES 0.586 DCS 0.755 MMD 0.705 CSS 0.713
+config=R5 (round-5 file) proxy=h3 split=confirmation f=0.15             70.67  DES 0.653 DCS 0.759 MMD 0.710 CSS 0.703
+config=R6 (candidate) proxy=h3 split=confirmation f=0.15                58.96  DES 0.557 DCS 0.678 MMD 0.563 CSS 0.560
+config=R6 raw anchor proxy=h3 split=confirmation f=0.15                 60.15  DES 0.565 DCS 0.700 MMD 0.573 CSS 0.567
+config=R6 at round-5 share proxy=h3 split=confirmation f=0.15           58.96  DES 0.557 DCS 0.678 MMD 0.563 CSS 0.560
+config=R6 raw anchor at round-5 share proxy=h3 split=confirmation f=0.15  60.15  DES 0.565 DCS 0.700 MMD 0.573 CSS 0.567
+config=R6 base only proxy=h3 split=confirmation f=0.0                   51.29  DES 0.512 DCS 0.602 MMD 0.494 CSS 0.431
+config=R6 base, all libraries proxy=h3 split=confirmation f=0.15        59.29  DES 0.577 DCS 0.659 MMD 0.555 CSS 0.587
+config=R5 base only proxy=h3 split=confirmation f=0.0                   65.17  DES 0.627 DCS 0.699 MMD 0.639 CSS 0.643
+config=R5 base, harmonised anchor proxy=h3 split=confirmation f=0.15    70.40  DES 0.668 DCS 0.751 MMD 0.697 CSS 0.700
+config=R5 base, R6 anchor rule proxy=h3 split=confirmation f=0.15       70.40  DES 0.668 DCS 0.751 MMD 0.697 CSS 0.700
+config=R5 (round-5 file) proxy=dm split=confirmation f=0.15             67.37  DES 0.584 DCS 0.774 MMD 0.686 CSS 0.642
+config=R6 (candidate) proxy=dm split=confirmation f=0.15                59.75  DES 0.537 DCS 0.700 MMD 0.563 CSS 0.598
+config=R6 raw anchor proxy=dm split=confirmation f=0.15                 61.61  DES 0.552 DCS 0.720 MMD 0.584 CSS 0.614
+config=R6 at round-5 share proxy=dm split=confirmation f=0.15           59.75  DES 0.537 DCS 0.700 MMD 0.563 CSS 0.598
+config=R6 raw anchor at round-5 share proxy=dm split=confirmation f=0.15  61.61  DES 0.552 DCS 0.720 MMD 0.584 CSS 0.614
+config=R6 base only proxy=dm split=confirmation f=0.0                   48.95  DES 0.445 DCS 0.538 MMD 0.485 CSS 0.493
+config=R6 base, all libraries proxy=dm split=confirmation f=0.15        59.75  DES 0.537 DCS 0.700 MMD 0.563 CSS 0.598
+config=R5 base only proxy=dm split=confirmation f=0.0                   61.91  DES 0.576 DCS 0.689 MMD 0.611 CSS 0.598
+config=R5 base, harmonised anchor proxy=dm split=confirmation f=0.15    66.13  DES 0.584 DCS 0.756 MMD 0.661 CSS 0.639
+config=R5 base, R6 anchor rule proxy=dm split=confirmation f=0.15       66.13  DES 0.584 DCS 0.756 MMD 0.661 CSS 0.639
+proxy                             gen  2d/deep  2d/all    raw     h3     dm
+config                                                                     
+R5 (round-5 file)               54.19    65.96   71.02  69.89  70.67  67.37
+R6 (candidate)                  54.63    63.30   67.16  61.48  58.96  59.75
+R6 raw anchor                   53.63    64.39   67.71  62.89  60.15  61.61
+R6 at round-5 share             54.63    63.30   67.16  61.48  58.96  59.75
+R6 raw anchor at round-5 share  53.63    64.39   67.71  62.89  60.15  61.61
+R6 base only                    51.79    53.39   48.13  47.09  51.29  48.95
+R6 base, all libraries          54.63    63.63   67.16  61.48  59.29  59.75
+R5 base only                    53.53    55.13   54.17  60.16  65.17  61.91
+R5 base, harmonised anchor      54.80    65.21   70.15  68.95  70.40  66.13
+R5 base, R6 anchor rule         54.80    65.21   70.15  68.95  70.40  66.13
+skill_de_score
+proxy                             gen  2d/deep  2d/all    raw     h3     dm
+config                                                                     
+R5 (round-5 file)               0.588    0.623   0.647  0.594  0.653  0.584
+R6 (candidate)                  0.548    0.599   0.622  0.561  0.557  0.537
+R6 raw anchor                   0.528    0.617   0.629  0.578  0.565  0.552
+R6 at round-5 share             0.548    0.599   0.622  0.561  0.557  0.537
+R6 raw anchor at round-5 share  0.528    0.617   0.629  0.578  0.565  0.552
+R6 base only                    0.509    0.514   0.395  0.379  0.512  0.445
+R6 base, all libraries          0.548    0.614   0.622  0.561  0.577  0.537
+R5 base only                    0.576    0.528   0.475  0.512  0.627  0.576
+R5 base, harmonised anchor      0.600    0.623   0.640  0.586  0.668  0.584
+R5 base, R6 anchor rule         0.600    0.623   0.640  0.586  0.668  0.584
+skill_de_direction
+proxy                             gen  2d/deep  2d/all    raw     h3     dm
+config                                                                     
+R5 (round-5 file)               0.636    0.716   0.756  0.766  0.759  0.774
+R6 (candidate)                  0.588    0.712   0.725  0.683  0.678  0.700
+R6 raw anchor                   0.579    0.729   0.724  0.699  0.700  0.720
+R6 at round-5 share             0.588    0.712   0.725  0.683  0.678  0.700
+R6 raw anchor at round-5 share  0.579    0.729   0.724  0.699  0.700  0.720
+R6 base only                    0.552    0.615   0.526  0.521  0.602  0.538
+R6 base, all libraries          0.588    0.700   0.725  0.683  0.659  0.700
+R5 base only                    0.631    0.602   0.605  0.684  0.699  0.689
+R5 base, harmonised anchor      0.642    0.706   0.745  0.755  0.751  0.756
+R5 base, R6 anchor rule         0.642    0.706   0.745  0.755  0.751  0.756
+skill_mmd_u
+proxy                             gen  2d/deep  2d/all    raw     h3     dm
+config                                                                     
+R5 (round-5 file)               0.512    0.657   0.708  0.720  0.710  0.686
+R6 (candidate)                  0.560    0.621   0.649  0.585  0.563  0.563
+R6 raw anchor                   0.565    0.627   0.659  0.597  0.573  0.584
+R6 at round-5 share             0.560    0.621   0.649  0.585  0.563  0.563
+R6 raw anchor at round-5 share  0.565    0.627   0.659  0.597  0.573  0.584
+R6 base only                    0.506    0.525   0.502  0.487  0.494  0.485
+R6 base, all libraries          0.560    0.614   0.649  0.585  0.555  0.563
+R5 base only                    0.467    0.544   0.555  0.618  0.639  0.611
+R5 base, harmonised anchor      0.504    0.644   0.696  0.705  0.697  0.661
+R5 base, R6 anchor rule         0.504    0.644   0.696  0.705  0.697  0.661
+skill_variogram
+proxy                             gen  2d/deep  2d/all    raw     h3     dm
+config                                                                     
+R5 (round-5 file)               0.412    0.640   0.736  0.715  0.703  0.642
+R6 (candidate)                  0.471    0.594   0.701  0.643  0.560  0.598
+R6 raw anchor                   0.451    0.598   0.705  0.652  0.567  0.614
+R6 at round-5 share             0.471    0.594   0.701  0.643  0.560  0.598
+R6 raw anchor at round-5 share  0.451    0.598   0.705  0.652  0.567  0.614
+R6 base only                    0.504    0.470   0.502  0.497  0.431  0.493
+R6 base, all libraries          0.471    0.619   0.701  0.643  0.587  0.598
+R5 base only                    0.468    0.528   0.527  0.587  0.643  0.598
+R5 base, harmonised anchor      0.432    0.632   0.732  0.713  0.700  0.639
+R5 base, R6 anchor rule         0.432    0.632   0.732  0.713  0.700  0.639

@@ -1,0 +1,400 @@
+
+=== source E10.5 (lib3): {'lineages': ['CM', 'Endo', 'Cushion', 'Epi', 'Mac'], 'anchor_lineage_share': {'Blood': 0.0007297938332421091, 'CM': 0.42090859332238645, 'Cushion': 0.07480386790731618, 'Endo': 0.3169129720853859, 'Epi': 0.06148513045064769, 'Mac': 0.03083378945447911, 'Other': 0.0943258529465426}, 'genes_shifted_0.5': 1517, 'genes_shifted_1.0': 265}
+genes by family with |shift| >= 0.5:
+           size  mean
+family               
+globin        5 -0.71
+mito          2 -0.72
+other      1389  0.33
+ribosomal    83  1.20
+unnamed      38 -0.08
+anchor LOWER in every lineage (top 40):
+    gene    family  shift  r_CM  r_Endo  r_Cushion  r_Epi  r_Mac
+ Hbb-bh1    globin   3.19  3.56    3.69       3.19   3.51   4.06
+    Xist     other   2.90  2.90    3.74       3.43   2.97   3.78
+    Rps2 ribosomal   2.20  2.25    2.31       2.20   2.29   2.27
+ Gm10260   unnamed   2.11  2.36    2.38       2.11   2.41   2.57
+   Eif5a     other   2.04  2.07    2.04       2.05   2.24   2.24
+Hsp90ab1     other   1.91  2.09    2.07       2.14   1.91   2.05
+    Rpl4 ribosomal   1.86  2.22    2.05       1.86   1.88   2.01
+     Ran     other   1.78  1.78    1.84       1.95   1.78   2.11
+   Rpl27 ribosomal   1.77  2.06    2.00       1.91   1.77   1.90
+  Tuba1b     other   1.73  1.84    1.81       1.79   1.89   1.73
+   Hba-x    globin   1.73  2.16    1.91       1.73   2.12   3.09
+    Npm1     other   1.71  1.71    1.75       1.88   1.71   1.74
+   Pdap1     other   1.69  1.94    2.00       1.94   1.92   1.69
+Hsp90aa1     other   1.67  1.67    1.68       2.05   1.80   1.92
+   Eef1g     other   1.65  1.82    1.79       1.65   1.70   1.80
+   Rpl21 ribosomal   1.64  2.27    2.00       1.94   1.71   1.64
+    Nme1     other   1.64  1.64    1.86       1.95   1.77   2.01
+   Snrpf     other   1.62  1.72    1.71       1.65   2.05   1.62
+    Rpl6 ribosomal   1.61  2.03    1.82       1.66   1.61   1.77
+   Rpl7a ribosomal   1.60  2.08    1.74       1.87   1.60   1.67
+    Rpsa ribosomal   1.58  1.84    1.83       1.58   1.79   1.75
+   Calm1     other   1.58  1.73    1.88       2.36   1.69   1.58
+  Impdh2     other   1.58  1.59    1.58       1.69   1.80   2.13
+   Rpl31 ribosomal   1.56  1.88    1.70       1.62   1.56   1.62
+Ppp1r14b     other   1.56  1.58    1.56       1.90   1.60   1.86
+    Cct2     other   1.55  1.55    1.62       1.68   1.56   1.67
+   Rpl11 ribosomal   1.54  1.93    1.77       1.71   1.74   1.54
+   Rpl14 ribosomal   1.54  1.98    1.77       1.82   1.54   1.82
+  Rpl27a ribosomal   1.53  1.97    1.84       1.58   1.71   1.53
+   Rack1     other   1.53  1.80    1.77       1.53   1.57   1.70
+    Rps8 ribosomal   1.52  2.06    1.87       1.72   1.52   1.75
+   Rps11 ribosomal   1.52  1.95    1.89       1.90   1.59   1.52
+    Cct5     other   1.52  1.58    1.52       1.56   1.60   1.55
+  Ppp1ca     other   1.51  1.97    1.66       1.53   1.51   1.71
+    Rpl7 ribosomal   1.50  1.92    1.76       1.72   1.51   1.50
+   Hspe1     other   1.50  2.04    1.53       1.63   1.80   1.50
+   Rpl18 ribosomal   1.49  1.83    1.79       1.49   1.66   1.86
+   Gapdh     other   1.47  2.78    1.47       1.88   1.73   1.72
+  Rpl10a ribosomal   1.47  1.71    1.69       1.47   1.51   1.52
+    Rpl3 ribosomal   1.46  1.84    1.69       1.60   1.56   1.46
+anchor HIGHER in every lineage (top 40):
+         gene  family  shift  r_CM  r_Endo  r_Cushion  r_Epi  r_Mac
+       Hbb-bs  globin  -4.35 -4.57   -4.35      -4.52  -4.69  -4.38
+       Hbb-bt  globin  -2.94 -3.10   -2.94      -3.32  -3.42  -3.17
+          Ckm   other  -2.04 -2.41   -2.09      -2.04  -2.07  -2.09
+           Mb   other  -1.72 -1.72   -2.30      -2.25  -2.41  -2.24
+          Mgp   other  -1.64 -1.64   -2.33      -3.29  -2.97  -1.78
+        Fabp4   other  -1.43 -1.43   -2.20      -1.79  -1.87  -1.99
+         Cd36   other  -1.39 -1.39   -2.25      -1.47  -2.30  -1.69
+     Arhgap26   other  -1.27 -1.37   -1.27      -1.65  -1.37  -2.27
+       Iqsec2   other  -1.25 -1.43   -1.25      -1.45  -1.74  -1.32
+       Hba-a2  globin  -1.18 -1.87   -1.61      -1.99  -1.96  -1.18
+       Zfp950   other  -1.16 -1.28   -1.16      -1.23  -1.36  -1.65
+        Pakap   other  -1.15 -1.15   -3.14      -2.35  -1.58  -1.53
+        Dleu2   other  -1.13 -2.01   -1.25      -1.55  -1.13  -1.15
+         Trdn   other  -1.11 -1.11   -2.29      -1.64  -1.72  -1.31
+        Nr3c1   other  -1.06 -1.38   -1.09      -1.06  -1.24  -1.34
+5430431A17Rik unnamed  -1.04 -1.26   -2.58      -1.61  -1.55  -1.04
+         Prkn   other  -1.04 -1.47   -1.43      -1.24  -1.77  -1.04
+      Col14a1   other  -1.03 -1.21   -1.61      -1.18  -1.98  -1.03
+       Rnf150   other  -1.03 -1.49   -1.04      -1.82  -1.03  -1.60
+         Wwox   other  -1.02 -1.55   -1.08      -1.23  -1.42  -1.02
+       Gpcpd1   other  -1.00 -1.21   -1.00      -1.52  -1.52  -1.22
+      Ldlrad4   other  -0.98 -1.55   -1.24      -1.30  -2.18  -0.98
+      Plekhg1   other  -0.97 -1.39   -1.33      -1.27  -1.07  -0.97
+       Ctnna3   other  -0.96 -1.51   -2.25      -1.66  -1.16  -0.96
+          Ogt   other  -0.96 -1.42   -0.96      -1.27  -1.11  -1.35
+      Retreg1   other  -0.95 -1.61   -1.21      -0.95  -1.21  -1.63
+      Ankrd12   other  -0.92 -0.92   -1.07      -1.00  -1.16  -1.49
+       Gigyf1   other  -0.92 -1.05   -0.93      -1.03  -1.15  -0.92
+       Col1a1   other  -0.91 -0.91   -2.59      -1.04  -1.61  -1.85
+        Mertk   other  -0.91 -0.91   -1.12      -1.11  -1.04  -1.49
+         Rora   other  -0.90 -0.90   -1.95      -2.23  -1.71  -1.85
+       Akap10   other  -0.90 -1.03   -1.02      -1.03  -0.90  -1.04
+        Zadh2   other  -0.90 -0.91   -1.03      -1.06  -0.90  -1.20
+        Nfat5   other  -0.89 -0.94   -0.89      -1.25  -0.95  -0.96
+      Cacna1c   other  -0.89 -1.70   -3.41      -1.47  -2.21  -0.89
+         Lmo7   other  -0.89 -1.68   -0.89      -1.52  -2.80  -1.37
+        Sfrp2   other  -0.89 -0.89   -1.13      -2.43  -2.10  -1.50
+       Trerf1   other  -0.89 -0.94   -0.89      -1.18  -1.11  -1.32
+       March3   other  -0.89 -1.95   -1.59      -1.83  -2.87  -0.89
+       Fbxl20   other  -0.89 -1.10   -0.89      -1.21  -1.10  -1.44
+correlation of lineage log-ratios across genes with mean ratio magnitude > 0.2:
+           CM  Endo  Cushion   Epi   Mac
+CM       1.00  0.74     0.71  0.65  0.52
+Endo     0.74  1.00     0.84  0.77  0.62
+Cushion  0.71  0.84     1.00  0.75  0.56
+Epi      0.65  0.77     0.75  1.00  0.55
+Mac      0.52  0.62     0.56  0.55  1.00
+
+=== source E10.5 (all): {'lineages': ['CM', 'Endo', 'Cushion', 'Epi', 'Mac'], 'anchor_lineage_share': {'Blood': 0.0005473453749315818, 'CM': 0.42966611932129173, 'Cushion': 0.08739281153074256, 'Endo': 0.321109286626528, 'Epi': 0.06951286261631089, 'Mac': 0.031198686371100164, 'Other': 0.060572888159095055}, 'genes_shifted_0.5': 1524, 'genes_shifted_1.0': 267}
+genes by family with |shift| >= 0.5:
+           size  mean
+family               
+globin        5 -0.58
+mito          2 -0.67
+other      1397  0.34
+ribosomal    81  1.23
+unnamed      39 -0.10
+anchor LOWER in every lineage (top 40):
+    gene    family  shift  r_CM  r_Endo  r_Cushion  r_Epi  r_Mac
+ Hbb-bh1    globin   3.40  3.60    3.68       3.40   3.53   3.64
+    Xist     other   3.34  3.47    3.92       3.77   3.34   4.16
+    Rps2 ribosomal   2.22  2.26    2.35       2.22   2.30   2.36
+   Eif5a     other   2.03  2.08    2.09       2.03   2.15   2.23
+Hsp90ab1     other   1.96  2.15    2.10       2.17   1.96   2.21
+   Pdap1     other   1.84  1.99    2.02       2.08   1.91   1.84
+    Rpl4 ribosomal   1.83  2.15    2.04       1.86   1.83   1.96
+     Ran     other   1.82  1.82    1.87       1.92   1.84   2.16
+ Gm10260   unnamed   1.79  2.16    2.23       1.90   2.21   1.79
+    Npm1     other   1.79  1.94    1.88       2.13   1.79   2.18
+   Rpl27 ribosomal   1.73  2.07    2.00       1.96   1.73   1.88
+Hsp90aa1     other   1.71  1.73    1.71       2.08   1.84   2.17
+   Rpl21 ribosomal   1.66  2.25    2.02       1.96   1.68   1.66
+   Eef1g     other   1.65  1.87    1.85       1.65   1.69   1.92
+    Nme1     other   1.63  1.63    1.86       1.92   1.71   1.84
+  Tuba1b     other   1.63  1.78    1.79       1.83   1.87   1.63
+    Rpsa ribosomal   1.63  1.88    1.88       1.63   1.80   1.82
+    Cct2     other   1.62  1.64    1.68       1.62   1.68   1.75
+   Rps11 ribosomal   1.61  2.00    1.91       1.93   1.62   1.61
+  Impdh2     other   1.61  1.61    1.61       1.67   1.75   2.28
+   Snrpf     other   1.60  1.67    1.73       1.60   2.05   1.65
+    Rpl6 ribosomal   1.60  2.02    1.83       1.71   1.60   1.76
+   Rpl13 ribosomal   1.59  2.05    1.87       1.67   1.59   1.60
+   Rpl7a ribosomal   1.58  2.12    1.80       1.95   1.58   1.77
+    Ppia     other   1.58  1.88    1.85       1.84   1.64   1.58
+   Rack1     other   1.57  1.85    1.80       1.58   1.57   1.74
+   Rpl18 ribosomal   1.57  1.91    1.85       1.57   1.72   2.07
+    Rpl7 ribosomal   1.57  2.02    1.82       1.77   1.57   1.70
+    Rpl3 ribosomal   1.57  1.86    1.74       1.58   1.57   1.58
+  Rpl27a ribosomal   1.56  1.94    1.86       1.56   1.70   1.64
+Hist1h4d     other   1.55  1.63    1.82       1.91   1.78   1.55
+   Rpl15 ribosomal   1.55  1.93    1.80       1.65   1.55   1.55
+   Hspe1     other   1.55  1.97    1.55       1.62   1.81   1.70
+Ppp1r14b     other   1.55  1.55    1.58       1.95   1.59   1.70
+    Rps8 ribosomal   1.55  2.11    1.91       1.78   1.55   1.88
+   Rpl11 ribosomal   1.54  1.96    1.81       1.73   1.75   1.54
+    Cct5     other   1.53  1.58    1.53       1.67   1.64   1.67
+   Rpl14 ribosomal   1.53  1.99    1.82       1.79   1.53   1.97
+     Ncl     other   1.53  1.53    1.68       1.83   1.84   2.15
+    Rpl8 ribosomal   1.53  1.96    1.86       1.77   1.69   1.53
+anchor HIGHER in every lineage (top 40):
+         gene  family  shift  r_CM  r_Endo  r_Cushion  r_Epi  r_Mac
+       Hbb-bs  globin  -4.12 -4.49   -4.36      -4.57  -4.66  -4.12
+       Hbb-bt  globin  -2.36 -2.86   -2.82      -3.22  -3.17  -2.36
+          Ckm   other  -2.05 -2.46   -2.08      -2.05  -2.17  -2.08
+           Mb   other  -1.92 -1.92   -2.33      -2.23  -2.39  -2.39
+         Cd36   other  -1.50 -1.50   -2.06      -1.50  -2.19  -1.84
+        Fabp4   other  -1.44 -1.44   -2.19      -1.91  -1.83  -1.99
+       Iqsec2   other  -1.30 -1.47   -1.30      -1.52  -1.74  -1.39
+     Arhgap26   other  -1.28 -1.35   -1.28      -1.66  -1.30  -1.67
+         Trdn   other  -1.28 -1.31   -2.29      -1.79  -1.76  -1.28
+        Dleu2   other  -1.24 -1.82   -1.26      -1.57  -1.24  -1.26
+       Hba-a2  globin  -1.22 -1.74   -1.54      -1.88  -1.86  -1.22
+         Prkn   other  -1.20 -1.55   -1.44      -1.27  -1.71  -1.20
+       Zfp950   other  -1.19 -1.26   -1.19      -1.21  -1.38  -1.46
+      Ldlrad4   other  -1.17 -1.21   -1.24      -1.32  -2.14  -1.17
+       Ctnna3   other  -1.17 -1.61   -2.29      -1.73  -1.18  -1.17
+        Pakap   other  -1.11 -1.30   -3.15      -2.35  -1.69  -1.11
+      Retreg1   other  -1.07 -1.76   -1.17      -1.07  -1.17  -1.82
+          Mgp   other  -1.06 -1.25   -2.24      -2.97  -2.67  -1.06
+         Ldb3   other  -1.02 -1.02   -2.16      -1.57  -1.45  -1.15
+        Nr3c1   other  -1.01 -1.34   -1.15      -1.01  -1.29  -1.15
+        Mertk   other  -1.00 -1.00   -1.10      -1.11  -1.02  -1.95
+      Gm26917 unnamed  -0.99 -1.72   -1.40      -1.58  -1.35  -0.99
+         Lmo7   other  -0.99 -1.84   -0.99      -1.51  -2.74  -1.43
+       Rnf150   other  -0.98 -1.38   -0.98      -1.73  -1.05  -1.85
+          Cfh   other  -0.96 -1.49   -2.23      -1.13  -1.31  -0.96
+      Col14a1   other  -0.96 -1.24   -1.53      -1.23  -2.10  -0.96
+        Rbm20   other  -0.95 -1.88   -2.16      -0.95  -1.44  -1.00
+5430431A17Rik unnamed  -0.95 -1.40   -2.56      -1.78  -1.79  -0.95
+        Postn   other  -0.95 -2.59   -1.42      -0.95  -2.14  -1.19
+        Cpeb3   other  -0.94 -2.14   -0.99      -0.94  -1.39  -0.95
+          Uty   other  -0.94 -1.29   -1.12      -1.07  -1.08  -0.94
+        Nr3c2   other  -0.94 -2.48   -1.23      -1.32  -1.25  -0.94
+        Trak1   other  -0.92 -1.28   -0.92      -1.37  -1.12  -1.13
+       Map3k5   other  -0.92 -1.03   -1.32      -1.00  -3.15  -0.92
+        Susd6   other  -0.91 -1.10   -1.15      -0.96  -0.91  -1.42
+         Wwox   other  -0.91 -1.57   -1.11      -1.30  -1.41  -0.91
+       Slc8a1   other  -0.91 -0.91   -3.66      -2.66  -1.74  -1.79
+       Trerf1   other  -0.90 -0.90   -0.94      -1.22  -1.17  -0.94
+         Mitf   other  -0.90 -0.90   -1.43      -1.19  -1.17  -2.49
+        Atxn1   other  -0.90 -0.90   -1.37      -0.91  -2.22  -1.09
+correlation of lineage log-ratios across genes with mean ratio magnitude > 0.2:
+           CM  Endo  Cushion   Epi   Mac
+CM       1.00  0.76     0.74  0.69  0.51
+Endo     0.76  1.00     0.85  0.79  0.60
+Cushion  0.74  0.85     1.00  0.78  0.55
+Epi      0.69  0.79     0.78  1.00  0.54
+Mac      0.51  0.60     0.55  0.54  1.00
+
+=== source E9.5 (all): {'lineages': ['CM', 'Endo', 'Epi'], 'anchor_lineage_share': {'Blood': 0.0040138660828316, 'CM': 0.46652070790001826, 'Endo': 0.3185550082101806, 'Epi': 0.05199781061850027, 'Other': 0.15891260718846925}, 'genes_shifted_0.5': 3304, 'genes_shifted_1.0': 886}
+genes by family with |shift| >= 0.5:
+           size  mean
+family               
+globin        6 -2.83
+mito          7 -0.71
+other      3095  0.11
+ribosomal    86  1.31
+unnamed     110 -0.26
+anchor LOWER in every lineage (top 40):
+    gene    family  shift  r_CM  r_Endo  r_Epi
+    Xist     other   3.33  3.33    3.62   3.82
+   Eif5a     other   2.56  2.56    2.72   2.81
+ Gm10260   unnamed   2.40  2.45    2.46   2.40
+    Rps2 ribosomal   2.34  2.51    2.67   2.34
+     Ran     other   2.26  2.27    2.26   2.29
+   Pdap1     other   2.15  2.20    2.18   2.15
+Hsp90ab1     other   2.14  2.38    2.26   2.14
+    Npm1     other   2.10  2.17    2.18   2.10
+   Cks1b     other   2.05  2.17    2.05   2.25
+  Tuba1b     other   2.05  2.14    2.05   2.12
+  Tuba1a     other   2.05  2.38    2.05   2.17
+    Rpl4 ribosomal   2.04  2.31    2.21   2.04
+     Jun     other   2.04  2.33    2.04   2.81
+ Pakap.1     other   2.03  3.83    2.03   2.62
+    Cfl1     other   2.00  2.31    2.28   2.00
+   Prmt1     other   1.99  2.21    1.99   2.10
+   Rpl7a ribosomal   1.99  2.36    2.06   1.99
+Hsp90aa1     other   1.99  2.11    1.99   2.08
+   Eef1g     other   1.98  2.11    2.18   1.98
+   Rpl27 ribosomal   1.98  2.22    2.10   1.98
+   Rbm8a     other   1.96  1.99    1.96   2.04
+   Hspe1     other   1.96  2.26    1.96   2.25
+   Rpl18 ribosomal   1.95  2.14    2.09   1.95
+    Txn1     other   1.94  2.03    1.94   2.01
+    Nme1     other   1.93  1.93    2.33   2.01
+     Id3     other   1.92  2.02    2.05   1.92
+    Nhp2     other   1.91  1.91    2.18   2.01
+   Psmb3     other   1.91  2.07    1.91   2.26
+    Rpl8 ribosomal   1.91  2.20    2.05   1.91
+    Cct2     other   1.90  1.93    1.90   2.05
+    Ppia     other   1.89  1.98    2.05   1.89
+   Rps11 ribosomal   1.89  2.10    1.98   1.89
+   Gapdh     other   1.87  2.73    1.87   2.39
+  Ranbp1     other   1.86  1.86    2.27   2.27
+    Rpsa ribosomal   1.86  2.11    2.08   1.86
+   Rpl11 ribosomal   1.86  2.08    1.90   1.86
+   Hmgb1     other   1.86  1.89    1.86   2.12
+   Calm1     other   1.86  1.95    2.21   1.86
+     Srm     other   1.85  1.85    2.30   2.39
+ Hnrnpab     other   1.84  1.88    1.84   1.89
+anchor HIGHER in every lineage (top 40):
+         gene  family  shift  r_CM  r_Endo  r_Epi
+       Hbb-bs  globin  -4.99 -5.08   -4.99  -5.16
+       Hbb-bt  globin  -4.29 -4.42   -4.29  -4.41
+       Hba-a1  globin  -3.60 -3.88   -3.60  -3.69
+       Hba-a2  globin  -3.46 -3.69   -3.46  -3.63
+           Mb   other  -2.47 -2.52   -2.51  -2.47
+       March3   other  -2.41 -2.57   -2.41  -3.08
+        Pde7b   other  -2.32 -2.93   -2.32  -3.60
+      Ldlrad4   other  -2.30 -2.49   -2.30  -2.65
+          Mgp   other  -2.27 -2.27   -2.93  -3.84
+        Pcdh9   other  -2.06 -2.06   -2.40  -3.05
+          Eln   other  -2.04 -2.04   -2.41  -3.19
+      Cacna1c   other  -1.99 -1.99   -2.94  -2.96
+     Arhgap18   other  -1.98 -2.42   -1.98  -2.81
+       Rbfox1   other  -1.98 -2.78   -2.42  -1.98
+          Ckm   other  -1.97 -2.51   -2.06  -1.97
+        Magi2   other  -1.97 -2.40   -1.97  -4.55
+          Pln   other  -1.97 -1.97   -2.40  -2.52
+        Hmcn1   other  -1.97 -2.64   -2.85  -1.97
+       Ctnna3   other  -1.96 -1.96   -2.68  -2.24
+         Cd36   other  -1.95 -1.95   -2.35  -2.30
+          Dcn   other  -1.94 -2.35   -2.33  -1.94
+        Cdh13   other  -1.91 -2.26   -2.02  -1.91
+9530026P05Rik unnamed  -1.89 -2.10   -1.89  -2.85
+        Fabp4   other  -1.87 -1.87   -2.26  -1.87
+         Prkn   other  -1.84 -1.97   -2.00  -1.84
+       Unc13b   other  -1.80 -1.80   -2.52  -1.94
+        Nr3c1   other  -1.80 -1.82   -1.89  -1.80
+       Tm4sf1   other  -1.80 -1.80   -1.92  -2.27
+      Clca3a1   other  -1.79 -1.79   -2.64  -2.28
+        Lrmda   other  -1.78 -1.86   -1.78  -3.01
+        Abcc9   other  -1.77 -1.77   -2.24  -1.88
+        Postn   other  -1.75 -3.08   -2.76  -1.75
+         Nfix   other  -1.71 -1.71   -1.80  -2.03
+       Sncaip   other  -1.70 -1.70   -1.91  -2.51
+         Trdn   other  -1.68 -1.78   -1.98  -1.68
+     Lncppara   other  -1.67 -1.67   -1.89  -2.47
+         Ror1   other  -1.66 -3.12   -1.66  -1.85
+       Iqsec2   other  -1.66 -1.70   -1.66  -2.12
+        Pde1a   other  -1.64 -2.07   -1.64  -2.86
+         Pid1   other  -1.63 -1.63   -1.98  -2.38
+correlation of lineage log-ratios across genes with mean ratio magnitude > 0.2:
+        CM  Endo   Epi
+CM    1.00  0.81  0.75
+Endo  0.81  1.00  0.78
+Epi   0.75  0.78  1.00
+
+=== source E8.5 (all): {'lineages': ['CM', 'Endo', 'Epi'], 'anchor_lineage_share': {'Blood': 0.005291005291005291, 'CM': 0.4634190841087393, 'Endo': 0.31600072979383326, 'Epi': 0.12205801860974275, 'Other': 0.09323116219667944}, 'genes_shifted_0.5': 3446, 'genes_shifted_1.0': 987}
+genes by family with |shift| >= 0.5:
+           size  mean
+family               
+globin        6 -2.77
+mito          5 -0.80
+other      3237  0.04
+ribosomal    87  1.48
+unnamed     111 -0.25
+anchor LOWER in every lineage (top 40):
+    gene    family  shift  r_CM  r_Endo  r_Epi
+    Xist     other   3.98  3.98    4.22   4.56
+ Gm10260   unnamed   2.85  2.85    2.88   2.96
+Tpm3-rs7     other   2.59  2.59    3.26   2.65
+  Trim71     other   2.46  2.46    2.55   2.50
+   Eif5a     other   2.43  2.78    2.88   2.43
+Hsp90ab1     other   2.39  2.54    2.39   2.44
+    Npm1     other   2.32  2.36    2.36   2.32
+ Pakap.1     other   2.30  3.92    2.30   2.38
+     Ran     other   2.30  2.38    2.39   2.30
+    Cfl1     other   2.21  2.33    2.25   2.21
+    Rpl4 ribosomal   2.18  2.35    2.21   2.18
+   Rpl27 ribosomal   2.15  2.26    2.15   2.20
+   Rpl7a ribosomal   2.15  2.41    2.15   2.27
+    Rps2 ribosomal   2.14  2.34    2.46   2.14
+   Cks1b     other   2.13  2.19    2.13   2.16
+  Tuba1b     other   2.12  2.23    2.19   2.12
+   Pdap1     other   2.12  2.28    2.12   2.25
+Hsp90aa1     other   2.12  2.36    2.12   2.39
+    Rpl8 ribosomal   2.11  2.27    2.11   2.14
+   Hspe1     other   2.11  2.27    2.11   2.32
+   Gapdh     other   2.08  2.82    2.08   2.38
+    Rpsa ribosomal   2.08  2.27    2.29   2.08
+   Rpl14 ribosomal   2.04  2.26    2.04   2.10
+   Hspa8     other   2.04  2.37    2.08   2.04
+    Bex2     other   2.03  2.40    2.03   2.32
+     Ncl     other   2.02  2.02    2.18   2.05
+   Rpl18 ribosomal   2.02  2.23    2.09   2.02
+   Rps11 ribosomal   2.02  2.09    2.02   2.10
+  Ranbp1     other   2.00  2.00    2.23   2.31
+    Rpl7 ribosomal   1.99  2.32    1.99   2.09
+    Nme1     other   1.97  1.97    2.26   2.00
+    Ccn1     other   1.97  1.98    1.97   2.09
+   Rpl15 ribosomal   1.97  2.15    2.01   1.97
+   Calm1     other   1.97  1.97    2.32   1.97
+  Impdh2     other   1.96  2.11    2.09   1.96
+  Rpl10a ribosomal   1.96  2.09    1.96   2.09
+   Rpl11 ribosomal   1.94  2.15    1.94   2.01
+    Rps8 ribosomal   1.94  2.19    1.95   1.94
+    Rpl3 ribosomal   1.93  2.16    1.93   1.95
+  Rpl27a ribosomal   1.93  2.04    1.96   1.93
+anchor HIGHER in every lineage (top 40):
+    gene  family  shift  r_CM  r_Endo  r_Epi
+  Hbb-bs  globin  -4.90 -5.08   -4.90  -4.93
+  Hbb-bt  globin  -4.33 -4.40   -4.33  -4.38
+  Hba-a2  globin  -3.55 -3.87   -3.59  -3.55
+   Postn   other  -3.07 -3.07   -3.72  -3.82
+   Pde7b   other  -3.00 -3.00   -3.27  -3.46
+  Hba-a1  globin  -2.74 -4.09   -3.27  -2.74
+  March3   other  -2.57 -2.68   -2.59  -2.57
+     Pln   other  -2.52 -2.80   -2.52  -2.54
+Mir100hg   other  -2.43 -2.61   -2.43  -2.48
+ Ldlrad4   other  -2.42 -3.25   -2.42  -4.26
+      Mb   other  -2.41 -2.46   -2.44  -2.41
+     Dcn   other  -2.37 -2.37   -2.42  -3.73
+   Plce1   other  -2.35 -2.76   -2.38  -2.35
+   Magi2   other  -2.32 -2.78   -2.32  -3.61
+  Sorbs2   other  -2.30 -2.37   -2.94  -2.30
+   Cdh13   other  -2.28 -2.28   -2.46  -2.55
+   Pcdh9   other  -2.26 -2.26   -2.29  -4.24
+     Mgp   other  -2.21 -2.21   -3.02  -4.00
+   Nr3c1   other  -2.06 -2.06   -2.42  -2.41
+     Ckm   other  -2.06 -2.47   -2.08  -2.06
+     Eln   other  -2.05 -2.05   -2.59  -3.71
+    Tns1   other  -2.04 -2.81   -2.04  -2.41
+   Pde1a   other  -2.03 -2.03   -2.13  -4.14
+   Abcc9   other  -2.01 -2.01   -2.41  -2.47
+  Ctnna3   other  -2.00 -2.00   -3.07  -2.25
+    Nfia   other  -1.98 -3.55   -1.98  -2.25
+  Col1a1   other  -1.96 -1.96   -3.12  -2.21
+  Gm4258 unnamed  -1.96 -2.53   -1.96  -2.04
+   Fabp4   other  -1.88 -1.89   -2.35  -1.88
+  Sncaip   other  -1.87 -1.87   -2.01  -3.08
+   Kat2b   other  -1.86 -1.86   -1.90  -1.88
+   Hbb-y  globin  -1.83 -3.10   -2.13  -1.83
+  Tm4sf1   other  -1.81 -1.81   -2.45  -2.17
+Adamts19   other  -1.79 -2.70   -1.79  -3.15
+ Clca3a1   other  -1.79 -1.79   -2.70  -2.57
+Arhgap26   other  -1.78 -1.89   -2.55  -1.78
+   Itpr2   other  -1.77 -2.61   -1.77  -2.46
+     Dmd   other  -1.76 -2.66   -2.61  -1.76
+    Pid1   other  -1.76 -1.76   -2.08  -2.11
+    Heg1   other  -1.73 -1.97   -1.73  -2.31
+correlation of lineage log-ratios across genes with mean ratio magnitude > 0.2:
+        CM  Endo   Epi
+CM    1.00  0.79  0.82
+Endo  0.79  1.00  0.79
+Epi   0.82  0.79  1.00

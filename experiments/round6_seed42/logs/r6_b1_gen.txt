@@ -1,0 +1,114 @@
+ready 11s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.028476565469851806, 'variogram': 0.0011311493581160903} ceiling {'de_score': 0.8253968253968254, 'de_direction': 0.7407231505074066, 'mmd_u': 0.0031201604620432867, 'variogram': 0.0001355389249511063} n_up 35 n_dn 29
+proxy=gen/E8.5->E9.5 base=unchanged f=0.0 split=development             50.00  DES 0.500 DCS 0.500 MMD 0.500 CSS 0.500
+proxy=gen/E8.5->E9.5 base=unchanged f=0.05 split=development            55.06  DES 0.536 DCS 0.580 MMD 0.557 CSS 0.522
+proxy=gen/E8.5->E9.5 base=unchanged f=0.1 split=development             54.80  DES 0.525 DCS 0.582 MMD 0.577 CSS 0.489
+proxy=gen/E8.5->E9.5 base=unchanged f=0.15 split=development            52.27  DES 0.525 DCS 0.577 MMD 0.550 CSS 0.411
+proxy=gen/E8.5->E9.5 base=unchanged f=0.2 split=development             50.13  DES 0.531 DCS 0.582 MMD 0.510 CSS 0.350
+proxy=gen/E8.5->E9.5 base=unchanged f=0.3 split=development             43.64  DES 0.531 DCS 0.585 MMD 0.373 CSS 0.228
+proxy=gen/E8.5->E9.5 base=bulk3_only f=0.0 split=development            53.66  DES 0.565 DCS 0.569 MMD 0.507 CSS 0.505
+proxy=gen/E8.5->E9.5 base=bulk3_only f=0.05 split=development           55.53  DES 0.571 DCS 0.595 MMD 0.548 CSS 0.497
+proxy=gen/E8.5->E9.5 base=bulk3_only f=0.1 split=development            54.74  DES 0.565 DCS 0.598 MMD 0.556 CSS 0.450
+proxy=gen/E8.5->E9.5 base=bulk3_only f=0.15 split=development           51.83  DES 0.559 DCS 0.594 MMD 0.520 CSS 0.371
+proxy=gen/E8.5->E9.5 base=bulk3_only f=0.2 split=development            49.19  DES 0.553 DCS 0.595 MMD 0.474 CSS 0.313
+proxy=gen/E8.5->E9.5 base=bulk3_only f=0.3 split=development            42.97  DES 0.547 DCS 0.590 MMD 0.347 CSS 0.207
+proxy=gen/E8.5->E9.5 base=bulk1.5_only f=0.0 split=development          54.58  DES 0.559 DCS 0.570 MMD 0.526 CSS 0.529
+proxy=gen/E8.5->E9.5 base=bulk1.5_only f=0.05 split=development         57.34  DES 0.578 DCS 0.593 MMD 0.578 CSS 0.536
+proxy=gen/E8.5->E9.5 base=bulk1.5_only f=0.1 split=development          56.34  DES 0.559 DCS 0.590 MMD 0.592 CSS 0.493
+proxy=gen/E8.5->E9.5 base=bulk1.5_only f=0.15 split=development         53.10  DES 0.547 DCS 0.583 MMD 0.557 CSS 0.407
+proxy=gen/E8.5->E9.5 base=bulk1.5_only f=0.2 split=development          50.43  DES 0.547 DCS 0.585 MMD 0.509 CSS 0.342
+proxy=gen/E8.5->E9.5 base=bulk1.5_only f=0.3 split=development          43.65  DES 0.542 DCS 0.586 MMD 0.367 CSS 0.222
+proxy=gen/E8.5->E9.5 base=r2_s1.5 f=0.0 split=development               51.70  DES 0.591 DCS 0.637 MMD 0.421 CSS 0.418
+proxy=gen/E8.5->E9.5 base=r2_s1.5 f=0.05 split=development              53.13  DES 0.605 DCS 0.652 MMD 0.447 CSS 0.415
+proxy=gen/E8.5->E9.5 base=r2_s1.5 f=0.1 split=development               52.71  DES 0.598 DCS 0.653 MMD 0.458 CSS 0.385
+proxy=gen/E8.5->E9.5 base=r2_s1.5 f=0.15 split=development              50.31  DES 0.584 DCS 0.644 MMD 0.439 CSS 0.323
+proxy=gen/E8.5->E9.5 base=r2_s1.5 f=0.2 split=development               47.83  DES 0.559 DCS 0.637 MMD 0.412 CSS 0.278
+proxy=gen/E8.5->E9.5 base=r2_s1.5 f=0.3 split=development               42.39  DES 0.547 DCS 0.624 MMD 0.312 CSS 0.187
+proxy=gen/E8.5->E9.5 base=r4_s1.5 f=0.0 split=development               54.16  DES 0.591 DCS 0.629 MMD 0.473 CSS 0.473
+proxy=gen/E8.5->E9.5 base=r4_s1.5 f=0.05 split=development              55.96  DES 0.591 DCS 0.647 MMD 0.510 CSS 0.484
+proxy=gen/E8.5->E9.5 base=r4_s1.5 f=0.1 split=development               55.39  DES 0.578 DCS 0.643 MMD 0.527 CSS 0.452
+proxy=gen/E8.5->E9.5 base=r4_s1.5 f=0.15 split=development              52.54  DES 0.565 DCS 0.633 MMD 0.504 CSS 0.374
+proxy=gen/E8.5->E9.5 base=r4_s1.5 f=0.2 split=development               50.14  DES 0.559 DCS 0.628 MMD 0.470 CSS 0.319
+proxy=gen/E8.5->E9.5 base=r4_s1.5 f=0.3 split=development               43.58  DES 0.547 DCS 0.616 MMD 0.346 CSS 0.207
+proxy=gen/E8.5->E9.5 base=r2_s3 f=0.0 split=development                 50.76  DES 0.591 DCS 0.633 MMD 0.403 CSS 0.403
+proxy=gen/E8.5->E9.5 base=r2_s3 f=0.05 split=development                52.26  DES 0.605 DCS 0.647 MMD 0.432 CSS 0.400
+proxy=gen/E8.5->E9.5 base=r2_s3 f=0.1 split=development                 51.52  DES 0.605 DCS 0.645 MMD 0.434 CSS 0.363
+proxy=gen/E8.5->E9.5 base=r2_s3 f=0.15 split=development                49.28  DES 0.578 DCS 0.640 MMD 0.421 CSS 0.310
+proxy=gen/E8.5->E9.5 base=r2_s3 f=0.2 split=development                 47.71  DES 0.578 DCS 0.637 MMD 0.396 CSS 0.273
+proxy=gen/E8.5->E9.5 base=r2_s3 f=0.3 split=development                 42.16  DES 0.547 DCS 0.624 MMD 0.304 CSS 0.187
+proxy=gen/E8.5->E9.5 base=r4_s3 f=0.0 split=development                 52.39  DES 0.565 DCS 0.622 MMD 0.453 CSS 0.457
+proxy=gen/E8.5->E9.5 base=r4_s3 f=0.05 split=development                55.13  DES 0.598 DCS 0.642 MMD 0.494 CSS 0.465
+proxy=gen/E8.5->E9.5 base=r4_s3 f=0.1 split=development                 53.71  DES 0.578 DCS 0.634 MMD 0.499 CSS 0.422
+proxy=gen/E8.5->E9.5 base=r4_s3 f=0.15 split=development                51.88  DES 0.578 DCS 0.630 MMD 0.484 CSS 0.358
+proxy=gen/E8.5->E9.5 base=r4_s3 f=0.2 split=development                 49.45  DES 0.559 DCS 0.626 MMD 0.453 CSS 0.312
+proxy=gen/E8.5->E9.5 base=r4_s3 f=0.3 split=development                 43.31  DES 0.547 DCS 0.614 MMD 0.338 CSS 0.207
+proxy=gen/E8.5->E9.5 base=r2_s6 f=0.0 split=development                 51.89  DES 0.598 DCS 0.637 MMD 0.426 CSS 0.412
+proxy=gen/E8.5->E9.5 base=r2_s6 f=0.05 split=development                52.44  DES 0.605 DCS 0.644 MMD 0.443 CSS 0.397
+proxy=gen/E8.5->E9.5 base=r2_s6 f=0.1 split=development                 51.73  DES 0.598 DCS 0.644 MMD 0.447 CSS 0.365
+proxy=gen/E8.5->E9.5 base=r2_s6 f=0.15 split=development                49.48  DES 0.584 DCS 0.636 MMD 0.426 CSS 0.310
+proxy=gen/E8.5->E9.5 base=r2_s6 f=0.2 split=development                 47.25  DES 0.559 DCS 0.637 MMD 0.399 CSS 0.268
+proxy=gen/E8.5->E9.5 base=r2_s6 f=0.3 split=development                 42.22  DES 0.559 DCS 0.624 MMD 0.300 CSS 0.181
+proxy=gen/E8.5->E9.5 base=r4_s6 f=0.0 split=development                 53.75  DES 0.578 DCS 0.626 MMD 0.478 CSS 0.466
+proxy=gen/E8.5->E9.5 base=r4_s6 f=0.05 split=development                54.74  DES 0.584 DCS 0.632 MMD 0.504 CSS 0.460
+proxy=gen/E8.5->E9.5 base=r4_s6 f=0.1 split=development                 54.17  DES 0.578 DCS 0.631 MMD 0.515 CSS 0.425
+proxy=gen/E8.5->E9.5 base=r4_s6 f=0.15 split=development                51.60  DES 0.565 DCS 0.625 MMD 0.489 CSS 0.358
+proxy=gen/E8.5->E9.5 base=r4_s6 f=0.2 split=development                 49.66  DES 0.565 DCS 0.627 MMD 0.457 CSS 0.308
+proxy=gen/E8.5->E9.5 base=r4_s6 f=0.3 split=development                 42.94  DES 0.542 DCS 0.616 MMD 0.333 CSS 0.201
+f              0.00   0.05   0.10   0.15   0.20   0.30
+base                                                  
+unchanged     50.00  55.06  54.80  52.27  50.13  43.64
+bulk3_only    53.66  55.53  54.74  51.83  49.19  42.97
+bulk1.5_only  54.58  57.34  56.34  53.10  50.43  43.65
+r2_s1.5       51.70  53.13  52.71  50.31  47.83  42.39
+r4_s1.5       54.16  55.96  55.39  52.54  50.14  43.58
+r2_s3         50.76  52.26  51.52  49.28  47.71  42.16
+r4_s3         52.39  55.13  53.71  51.88  49.45  43.31
+r2_s6         51.89  52.44  51.73  49.48  47.25  42.22
+r4_s6         53.75  54.74  54.17  51.60  49.66  42.94
+skill_de_score
+f              0.00   0.05   0.10   0.15   0.20   0.30
+base                                                  
+unchanged     0.500  0.536  0.525  0.525  0.531  0.531
+bulk3_only    0.565  0.571  0.565  0.559  0.553  0.547
+bulk1.5_only  0.559  0.578  0.559  0.547  0.547  0.542
+r2_s1.5       0.591  0.605  0.598  0.584  0.559  0.547
+r4_s1.5       0.591  0.591  0.578  0.565  0.559  0.547
+r2_s3         0.591  0.605  0.605  0.578  0.578  0.547
+r4_s3         0.565  0.598  0.578  0.578  0.559  0.547
+r2_s6         0.598  0.605  0.598  0.584  0.559  0.559
+r4_s6         0.578  0.584  0.578  0.565  0.565  0.542
+skill_de_direction
+f              0.00   0.05   0.10   0.15   0.20   0.30
+base                                                  
+unchanged     0.500  0.580  0.582  0.577  0.582  0.585
+bulk3_only    0.569  0.595  0.598  0.594  0.595  0.590
+bulk1.5_only  0.570  0.593  0.590  0.583  0.585  0.586
+r2_s1.5       0.637  0.652  0.653  0.644  0.637  0.624
+r4_s1.5       0.629  0.647  0.643  0.633  0.628  0.616
+r2_s3         0.633  0.647  0.645  0.640  0.637  0.624
+r4_s3         0.622  0.642  0.634  0.630  0.626  0.614
+r2_s6         0.637  0.644  0.644  0.636  0.637  0.624
+r4_s6         0.626  0.632  0.631  0.625  0.627  0.616
+skill_mmd_u
+f              0.00   0.05   0.10   0.15   0.20   0.30
+base                                                  
+unchanged     0.500  0.557  0.577  0.550  0.510  0.373
+bulk3_only    0.507  0.548  0.556  0.520  0.474  0.347
+bulk1.5_only  0.526  0.578  0.592  0.557  0.509  0.367
+r2_s1.5       0.421  0.447  0.458  0.439  0.412  0.312
+r4_s1.5       0.473  0.510  0.527  0.504  0.470  0.346
+r2_s3         0.403  0.432  0.434  0.421  0.396  0.304
+r4_s3         0.453  0.494  0.499  0.484  0.453  0.338
+r2_s6         0.426  0.443  0.447  0.426  0.399  0.300
+r4_s6         0.478  0.504  0.515  0.489  0.457  0.333
+skill_variogram
+f              0.00   0.05   0.10   0.15   0.20   0.30
+base                                                  
+unchanged     0.500  0.522  0.489  0.411  0.350  0.228
+bulk3_only    0.505  0.497  0.450  0.371  0.313  0.207
+bulk1.5_only  0.529  0.536  0.493  0.407  0.342  0.222
+r2_s1.5       0.418  0.415  0.385  0.323  0.278  0.187
+r4_s1.5       0.473  0.484  0.452  0.374  0.319  0.207
+r2_s3         0.403  0.400  0.363  0.310  0.273  0.187
+r4_s3         0.457  0.465  0.422  0.358  0.312  0.207
+r2_s6         0.412  0.397  0.365  0.310  0.268  0.181
+r4_s6         0.466  0.460  0.425  0.358  0.308  0.201

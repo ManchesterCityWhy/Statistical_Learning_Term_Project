@@ -1,0 +1,178 @@
+{'series': 'GSE272154', 'sample': 'GSM8394736 (RNA Wild Type e14.5 rep1)', 'stage': 'E14.5', 'assay': '10x Multiome nuclei, Cell Ranger ARC 2.0.2, mm10', 'called_barcodes': 8482, 'cells_after_qc': 5481, 'genes_matched': 32245, 'genes_in_file': 32291, 'median_umi': 3059.0, 'median_genes': 1729.0, 'desoup': False, 'soup_fraction': None, 'qc': {'min_umi': 1000, 'min_genes': 500, 'max_mito': 0.25}, 'sha256': {'GSM8394736_Wildtype_raw_feature_bc_matrix.h5': '684f31c2f2fdbf3eb7207439f868a076d405462b65b34155219d0249a68f3a3a', 'GSM8394736_Wildtype_per_barcode_metrics.csv.gz': '2b6e2e5e4773067c5ced9bef0efb67c5dd72140c90bd11221334c88a852bf954'}}
+{
+  "name": "round6_heartlib_anchor0.375_harm1_trend0",
+  "method": "E10.5 heart-proper library in its natural composition + real E14.5 Multiome nuclei (anchor), anchor harmonised against the E10.5 heart library (lineage-shared shift removed)",
+  "configuration": {
+    "kind": "round6",
+    "base": "heart-library",
+    "f_per_elapsed": 0.75,
+    "harmonise": 1.0,
+    "trend": 0.0
+  },
+  "configuration_name": "R6 (candidate)",
+  "elapsed_share": 0.5,
+  "seed": 42,
+  "cells_total": 4000,
+  "f": 0.375,
+  "heart_libraries": [
+    "3"
+  ],
+  "base_cells": 2500,
+  "anchor_cells": 1500,
+  "base": {
+    "rule": "libraries of E10.5 with >= 90% heart-lineage cells, cells drawn uniformly without replacement",
+    "library_shares": {
+      "3": 1.0
+    },
+    "celltype_shares": {
+      "Epicardium": 0.1936,
+      "Blood": 0.1628,
+      "Endocardium-2": 0.1104,
+      "Endocardium-1": 0.1088,
+      "EndoMT Endocardium": 0.0608,
+      "RV-CM": 0.0592,
+      "LV-CM": 0.0576,
+      "Early VIC": 0.0568,
+      "BEC": 0.0484,
+      "OFT-CM": 0.0288,
+      "pSHF": 0.0212,
+      "AVC-CM": 0.0196,
+      "SV-CM": 0.0172,
+      "IFT-CM": 0.0132,
+      "aPHM": 0.0072,
+      "Macrophage": 0.0068,
+      "pPHM": 0.0068,
+      "Hepatocyte": 0.0056,
+      "Pericardium": 0.0052,
+      "Surface Ectoderm": 0.0044,
+      "ST": 0.004,
+      "NCC": 0.0008,
+      "Gut Endoderm": 0.0008
+    },
+    "lineage_shares": {
+      "Endo": 0.2676,
+      "CM": 0.1956,
+      "Epi": 0.1936,
+      "Blood": 0.1628,
+      "Cushion": 0.1176,
+      "Other": 0.056,
+      "Mac": 0.0068
+    },
+    "median_umi": 10367.0
+  },
+  "anchor": {
+    "rule": "nuclei drawn uniformly without replacement from the QC-passing nuclei of GSM8394736",
+    "nearest_E10.5_celltype_shares": {
+      "LV-CM": 0.306,
+      "Endocardium-2": 0.242,
+      "EndoMT Endocardium": 0.0667,
+      "Epicardium": 0.066,
+      "OFT-CM": 0.0633,
+      "BEC": 0.0627,
+      "Pericardium": 0.042,
+      "Macrophage": 0.0273,
+      "pSHF": 0.024,
+      "Early VIC": 0.02,
+      "RV-CM": 0.0193,
+      "ST": 0.018,
+      "IFT-CM": 0.0167,
+      "SV-CM": 0.0147,
+      "Endocardium-1": 0.008,
+      "AVC-CM": 0.002,
+      "aPHM": 0.0007,
+      "Blood": 0.0007
+    },
+    "lineage_shares": {
+      "CM": 0.422,
+      "Endo": 0.3127,
+      "Cushion": 0.0867,
+      "Other": 0.0847,
+      "Epi": 0.066,
+      "Mac": 0.0273,
+      "Blood": 0.0007
+    },
+    "median_umi": 3034.5
+  },
+  "input_sha256": {
+    "E10.5_RNA.h5ad": "974e04e7fe64fb96142f17994a9678d4cebd4f1868dec4de034eda4245b7dd6c"
+  },
+  "external": {
+    "bulk_trend": "not used by this configuration",
+    "anchor": {
+      "series": "GSE272154",
+      "sample": "GSM8394736 (RNA Wild Type e14.5 rep1)",
+      "stage": "E14.5",
+      "assay": "10x Multiome nuclei, Cell Ranger ARC 2.0.2, mm10",
+      "called_barcodes": 8482,
+      "cells_after_qc": 5481,
+      "genes_matched": 32245,
+      "genes_in_file": 32291,
+      "median_umi": 3059.0,
+      "median_genes": 1729.0,
+      "desoup": false,
+      "soup_fraction": null,
+      "qc": {
+        "min_umi": 1000,
+        "min_genes": 500,
+        "max_mito": 0.25
+      },
+      "sha256": {
+        "GSM8394736_Wildtype_raw_feature_bc_matrix.h5": "684f31c2f2fdbf3eb7207439f868a076d405462b65b34155219d0249a68f3a3a",
+        "GSM8394736_Wildtype_per_barcode_metrics.csv.gz": "2b6e2e5e4773067c5ced9bef0efb67c5dd72140c90bd11221334c88a852bf954"
+      }
+    }
+  },
+  "code_sha256": {
+    "round6_export.py": "10b9c714a9c577e12607cba5c57a736a3f95ddae7ae708ab3b89e35e12fb6cd8",
+    "round6_final.py": "7678e02efde8cadfdce97c306e83ae46787468fa8c66e58a0538b22294a07b4f",
+    "round6_config.py": "f2addc2474cda661e3547bb108a5a793e260be507707e85b2352e5c8eafcb43d",
+    "round6_method.py": "31f736cd831aad7af3757aafa267bb2d778b11b4d9ab8f7d0614bb57c5a11d42",
+    "round6_anchor.py": "cd26cddc842b738c0851baedec20e7ef67411143c735181004e0b5d2da62a05e",
+    "round6_common.py": "1b001289f0555bb94f63150314c004f78600a2a9642e3bf37fd2392356a07389",
+    "round5_anchor.py": "b137f30f675f9f9b055743a5b36fa145a572fdb1325699554492303f12af4f40",
+    "round5_common.py": "28a932b0008cda667dc8387c413fffc1345718d04c7591de7fabdf65dd2ef59d",
+    "round5_exp4.py": "acf7c8e77c88ac486af4d6115ec93b324abfc727052bb61fafadb4ad74582685",
+    "bulk_trend.py": "d59132a9909820abac4f9770f201dafd5cc5437d78ed9464ee53ff5911112d06"
+  },
+  "validation": {
+    "board": "T1:test",
+    "cells": 4000,
+    "genes": 32285,
+    "sha256": "8c86cedc2903f3e4705ebe5004dd6c4ce3deecc853cf47bf0819338252d16778",
+    "bytes": 42374207,
+    "format_valid": true,
+    "normalization_verified": false
+  },
+  "board": {
+    "min_cells": 638,
+    "max_cells": 5118,
+    "n_genes": 32285
+  },
+  "nonzero_fraction": 0.09703146197924734,
+  "library_sum_min": 9999.999389702889,
+  "library_sum_max": 10000.00088756701,
+  "status": "not_submitted",
+  "selfcheck_same_code_path": {
+    "heart/deep": {
+      "stored": 73.71899848174438,
+      "recomputed": 73.7189945366821,
+      "abs_diff": 3.945062275079181e-06
+    },
+    "heart/mid": {
+      "stored": 81.01587125364978,
+      "recomputed": 81.01588141143347,
+      "abs_diff": 1.0157783691511213e-05
+    },
+    "heart/shallow": {
+      "stored": 80.45971475130953,
+      "recomputed": 80.45972535650274,
+      "abs_diff": 1.0605193210722064e-05
+    },
+    "all/asis": {
+      "stored": 72.41233835863643,
+      "recomputed": 72.41232568112865,
+      "abs_diff": 1.2677507783109832e-05
+    }
+  }
+}
+

@@ -1,0 +1,28 @@
+validate_prediction: {'board': 'T1:test', 'cells': 4000, 'genes': 32285, 'sha256': 'd73f82265953d878ec2e77fae7895b91c8f96f7222d1abca80c0e8459fc27bd5', 'bytes': 41325700, 'format_valid': True, 'normalization_verified': False}
+shape (4000, 32285) dtype float32 var order ok True obs cols [] obsm []
+finite True min 0.0 max 7.467267036437988
+expm1 row sums: min 9999.9994 max 10000.0009
+detected genes per cell: first 3200 (base) median 3808.5 last 800 (anchor) median 1685.5 all quantiles [1238.95 2211.5  3616.   4312.   5343.1 ]
+distinct rows 4000 of 4000
+genes detected in >=1% of E10.5 cells: 14226 of which never in prediction: 0
+corr of gene means with E10.5 (all libraries): 0.9913345741507419
+Tnnt2    E10.5 all 0.456 | prediction 0.895 | base part 0.670 | anchor part 1.796
+Myh6     E10.5 all 0.306 | prediction 0.593 | base part 0.496 | anchor part 0.982
+Nppa     E10.5 all 0.027 | prediction 0.139 | base part 0.047 | anchor part 0.508
+Col1a1   E10.5 all 0.542 | prediction 0.576 | base part 0.549 | anchor part 0.681
+Postn    E10.5 all 0.313 | prediction 0.502 | base part 0.433 | anchor part 0.775
+Pecam1   E10.5 all 0.321 | prediction 0.524 | base part 0.501 | anchor part 0.615
+Wt1      E10.5 all 0.240 | prediction 0.346 | base part 0.363 | anchor part 0.280
+Hbb-y    E10.5 all 2.734 | prediction 2.079 | base part 2.375 | anchor part 0.893
+Hba-x    E10.5 all 2.290 | prediction 1.842 | base part 2.196 | anchor part 0.428
+Hbb-bh1  E10.5 all 1.863 | prediction 1.498 | base part 1.866 | anchor part 0.027
+Hbb-bs   E10.5 all 0.207 | prediction 0.278 | base part 0.217 | anchor part 0.521
+Hba-a1   E10.5 all 1.856 | prediction 1.591 | base part 1.679 | anchor part 1.237
+Xist     E10.5 all 1.153 | prediction 0.577 | base part 0.720 | anchor part 0.004
+Rpl13    E10.5 all 3.198 | prediction 2.992 | base part 3.200 | anchor part 2.162
+Rps28    E10.5 all 1.972 | prediction 2.163 | base part 2.337 | anchor part 1.467
+Malat1   E10.5 all 3.831 | prediction 3.989 | base part 3.919 | anchor part 4.268
+Actb     E10.5 all 3.015 | prediction 2.715 | base part 2.931 | anchor part 1.850
+Top2a    E10.5 all 1.228 | prediction 1.079 | base part 1.170 | anchor part 0.714
+Ckm      E10.5 all 0.003 | prediction 0.024 | base part 0.007 | anchor part 0.092
+Mb       E10.5 all 0.020 | prediction 0.064 | base part 0.037 | anchor part 0.174

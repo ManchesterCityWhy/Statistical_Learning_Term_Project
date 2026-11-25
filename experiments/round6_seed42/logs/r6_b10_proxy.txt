@@ -1,0 +1,74 @@
+[suite] gen      ready    12s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] p8/deep  ready    19s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] D/raw    ready    24s  floor mmd 0.1004 vario 0.00409 | ceiling des 0.881 dcs 0.844 mmd 0.0026 vario 0.00016 | n_up 204 n_dn 234
+[suite] D/dm     ready    32s  floor mmd 0.1223 vario 0.01100 | ceiling des 0.804 dcs 0.787 mmd 0.0058 vario 0.00017 | n_up 101 n_dn 637
+config=R5 (round-5 file) proxy=gen split=development f=0.125 seed=42    53.19  DES 0.578 DCS 0.638 MMD 0.494 CSS 0.398
+config=R6 (candidate) proxy=gen split=development f=0.125 seed=42       54.86  DES 0.542 DCS 0.599 MMD 0.566 CSS 0.467
+config=R5 (round-5 file) proxy=gen split=development f=0.125 seed=1     52.94  DES 0.578 DCS 0.633 MMD 0.493 CSS 0.394
+config=R6 (candidate) proxy=gen split=development f=0.125 seed=1        56.24  DES 0.547 DCS 0.631 MMD 0.571 CSS 0.483
+config=R5 (round-5 file) proxy=gen split=development f=0.125 seed=2     52.39  DES 0.578 DCS 0.630 MMD 0.488 CSS 0.378
+config=R6 (candidate) proxy=gen split=development f=0.125 seed=2        57.02  DES 0.547 DCS 0.638 MMD 0.591 CSS 0.482
+config=R5 (round-5 file) proxy=gen split=development f=0.125 seed=3     52.63  DES 0.578 DCS 0.632 MMD 0.487 CSS 0.388
+config=R6 (candidate) proxy=gen split=development f=0.125 seed=3        55.73  DES 0.542 DCS 0.629 MMD 0.569 CSS 0.469
+config=R5 (round-5 file) proxy=gen split=development f=0.125 seed=4     52.30  DES 0.578 DCS 0.630 MMD 0.487 CSS 0.375
+config=R6 (candidate) proxy=gen split=development f=0.125 seed=4        57.07  DES 0.547 DCS 0.644 MMD 0.594 CSS 0.473
+config=R5 (round-5 file) proxy=p8/deep split=development f=0.15 seed=42  77.70  DES 0.726 DCS 0.804 MMD 0.790 CSS 0.789
+config=R6 (candidate) proxy=p8/deep split=development f=0.15 seed=42    67.38  DES 0.628 DCS 0.748 MMD 0.662 CSS 0.657
+config=R5 (round-5 file) proxy=p8/deep split=development f=0.15 seed=1  77.42  DES 0.720 DCS 0.801 MMD 0.790 CSS 0.785
+config=R6 (candidate) proxy=p8/deep split=development f=0.15 seed=1     67.43  DES 0.640 DCS 0.744 MMD 0.662 CSS 0.649
+config=R5 (round-5 file) proxy=p8/deep split=development f=0.15 seed=2  77.42  DES 0.720 DCS 0.801 MMD 0.789 CSS 0.786
+config=R6 (candidate) proxy=p8/deep split=development f=0.15 seed=2     67.63  DES 0.642 DCS 0.746 MMD 0.664 CSS 0.649
+config=R5 (round-5 file) proxy=p8/deep split=development f=0.15 seed=3  77.54  DES 0.720 DCS 0.803 MMD 0.790 CSS 0.789
+config=R6 (candidate) proxy=p8/deep split=development f=0.15 seed=3     67.99  DES 0.644 DCS 0.749 MMD 0.672 CSS 0.650
+config=R5 (round-5 file) proxy=p8/deep split=development f=0.15 seed=4  77.50  DES 0.722 DCS 0.802 MMD 0.789 CSS 0.787
+config=R6 (candidate) proxy=p8/deep split=development f=0.15 seed=4     66.12  DES 0.627 DCS 0.740 MMD 0.649 CSS 0.623
+config=R5 (round-5 file) proxy=D/raw split=development f=0.0 seed=42    56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+config=R6 (candidate) proxy=D/raw split=development f=0.0 seed=42       61.94  DES 0.654 DCS 0.740 MMD 0.674 CSS 0.344
+config=R5 (round-5 file) proxy=D/raw split=development f=0.0 seed=1     56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+config=R6 (candidate) proxy=D/raw split=development f=0.0 seed=1        61.72  DES 0.654 DCS 0.742 MMD 0.669 CSS 0.338
+config=R5 (round-5 file) proxy=D/raw split=development f=0.0 seed=2     56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+config=R6 (candidate) proxy=D/raw split=development f=0.0 seed=2        62.32  DES 0.663 DCS 0.745 MMD 0.678 CSS 0.341
+config=R5 (round-5 file) proxy=D/raw split=development f=0.0 seed=3     56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+config=R6 (candidate) proxy=D/raw split=development f=0.0 seed=3        61.31  DES 0.657 DCS 0.739 MMD 0.659 CSS 0.332
+config=R5 (round-5 file) proxy=D/raw split=development f=0.0 seed=4     56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+config=R6 (candidate) proxy=D/raw split=development f=0.0 seed=4        61.44  DES 0.652 DCS 0.741 MMD 0.667 CSS 0.329
+config=R5 (round-5 file) proxy=D/dm split=development f=0.0 seed=42     72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+config=R6 (candidate) proxy=D/dm split=development f=0.0 seed=42        79.02  DES 0.647 DCS 0.807 MMD 0.828 CSS 0.892
+config=R5 (round-5 file) proxy=D/dm split=development f=0.0 seed=1      72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+config=R6 (candidate) proxy=D/dm split=development f=0.0 seed=1         78.47  DES 0.639 DCS 0.805 MMD 0.820 CSS 0.888
+config=R5 (round-5 file) proxy=D/dm split=development f=0.0 seed=2      72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+config=R6 (candidate) proxy=D/dm split=development f=0.0 seed=2         79.26  DES 0.643 DCS 0.811 MMD 0.833 CSS 0.896
+config=R5 (round-5 file) proxy=D/dm split=development f=0.0 seed=3      72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+config=R6 (candidate) proxy=D/dm split=development f=0.0 seed=3         78.59  DES 0.648 DCS 0.804 MMD 0.816 CSS 0.890
+config=R5 (round-5 file) proxy=D/dm split=development f=0.0 seed=4      72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+config=R6 (candidate) proxy=D/dm split=development f=0.0 seed=4         78.84  DES 0.647 DCS 0.807 MMD 0.825 CSS 0.886
+resampling sd over seeds [42, 1, 2, 3, 4]
+                    mean                         std                    
+proxy                gen p8/deep  D/raw   D/dm   gen p8/deep D/raw  D/dm
+config                                                                  
+R5 (round-5 file)  52.69   77.52  56.97  72.32  0.37    0.12   0.0  0.00
+R6 (candidate)     56.18   67.31  61.75  78.84  0.93    0.71   0.4  0.32
+proxy                gen  p8/deep  D/raw   D/dm
+config                                         
+R5 (round-5 file)  52.69    77.52  56.97  72.32
+R6 (candidate)     56.18    67.31  61.75  78.84
+skill_de_score
+proxy                gen  p8/deep  D/raw   D/dm
+config                                         
+R5 (round-5 file)  0.578    0.722  0.619  0.590
+R6 (candidate)     0.545    0.636  0.656  0.645
+skill_de_direction
+proxy                gen  p8/deep  D/raw   D/dm
+config                                         
+R5 (round-5 file)  0.633    0.802  0.695  0.741
+R6 (candidate)     0.628    0.745  0.741  0.807
+skill_mmd_u
+proxy                gen  p8/deep  D/raw   D/dm
+config                                         
+R5 (round-5 file)  0.490    0.789  0.585  0.733
+R6 (candidate)     0.578    0.662  0.669  0.825
+skill_variogram
+proxy                gen  p8/deep  D/raw   D/dm
+config                                         
+R5 (round-5 file)  0.387    0.787  0.328  0.853
+R6 (candidate)     0.475    0.646  0.337  0.890

@@ -1,0 +1,264 @@
+[suite] D/raw    ready    10s  floor mmd 0.1004 vario 0.00409 | ceiling des 0.881 dcs 0.844 mmd 0.0026 vario 0.00016 | n_up 204 n_dn 234
+[suite] D/dm     ready    20s  floor mmd 0.1223 vario 0.01100 | ceiling des 0.804 dcs 0.787 mmd 0.0058 vario 0.00017 | n_up 101 n_dn 637
+D/raw oracle quotas {'CM': 0.184, 'Endo': 0.288, 'Cushion': 0.126, 'Epi': 0.175, 'Blood': 0.159, 'Mac': 0.006, 'Other': 0.062} target {'CM': 0.184, 'Endo': 0.288, 'Cushion': 0.126, 'Epi': 0.175, 'Blood': 0.159, 'Mac': 0.006, 'Other': 0.062}
+base=nat f=0.0 h=0.0 proxy=D/raw split=development elapsed=0.0          53.19  DES 0.576 DCS 0.644 MMD 0.526 CSS 0.345
+base=oracle f=0.0 h=0.0 proxy=D/raw split=development elapsed=0.0       68.51  DES 0.728 DCS 0.769 MMD 0.755 CSS 0.423
+base=r4 f=0.0 h=0.0 proxy=D/raw split=development elapsed=0.0           56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+base=heart f=0.0 h=0.0 proxy=D/raw split=development elapsed=0.0        61.94  DES 0.654 DCS 0.740 MMD 0.674 CSS 0.344
+base=nat f=0.05 h=0.0 proxy=D/raw split=development elapsed=0.0         54.50  DES 0.589 DCS 0.664 MMD 0.541 CSS 0.348
+base=oracle f=0.05 h=0.0 proxy=D/raw split=development elapsed=0.0      68.34  DES 0.721 DCS 0.779 MMD 0.750 CSS 0.416
+base=r4 f=0.05 h=0.0 proxy=D/raw split=development elapsed=0.0          57.53  DES 0.624 DCS 0.712 MMD 0.591 CSS 0.321
+base=nat f=0.05 h=0.5 proxy=D/raw split=development elapsed=0.0         54.45  DES 0.589 DCS 0.663 MMD 0.540 CSS 0.349
+base=oracle f=0.05 h=0.5 proxy=D/raw split=development elapsed=0.0      68.24  DES 0.719 DCS 0.778 MMD 0.749 CSS 0.417
+base=r4 f=0.05 h=0.5 proxy=D/raw split=development elapsed=0.0          57.51  DES 0.624 DCS 0.712 MMD 0.590 CSS 0.321
+base=nat f=0.05 h=1.0 proxy=D/raw split=development elapsed=0.0         54.27  DES 0.587 DCS 0.660 MMD 0.538 CSS 0.348
+base=oracle f=0.05 h=1.0 proxy=D/raw split=development elapsed=0.0      68.14  DES 0.721 DCS 0.776 MMD 0.746 CSS 0.417
+base=r4 f=0.05 h=1.0 proxy=D/raw split=development elapsed=0.0          57.40  DES 0.622 DCS 0.709 MMD 0.589 CSS 0.321
+base=heart f=0.05 h=0.0 proxy=D/raw split=development elapsed=0.0       61.91  DES 0.660 DCS 0.753 MMD 0.667 CSS 0.328
+base=nat f=0.1 h=0.0 proxy=D/raw split=development elapsed=0.0          54.94  DES 0.591 DCS 0.678 MMD 0.546 CSS 0.342
+base=oracle f=0.1 h=0.0 proxy=D/raw split=development elapsed=0.0       68.40  DES 0.718 DCS 0.790 MMD 0.749 CSS 0.411
+base=r4 f=0.1 h=0.0 proxy=D/raw split=development elapsed=0.0           57.72  DES 0.631 DCS 0.720 MMD 0.587 CSS 0.317
+base=nat f=0.1 h=0.5 proxy=D/raw split=development elapsed=0.0          54.79  DES 0.588 DCS 0.675 MMD 0.545 CSS 0.343
+base=oracle f=0.1 h=0.5 proxy=D/raw split=development elapsed=0.0       68.44  DES 0.721 DCS 0.789 MMD 0.748 CSS 0.413
+base=r4 f=0.1 h=0.5 proxy=D/raw split=development elapsed=0.0           57.75  DES 0.632 DCS 0.719 MMD 0.587 CSS 0.318
+base=nat f=0.1 h=1.0 proxy=D/raw split=development elapsed=0.0          54.69  DES 0.590 DCS 0.672 MMD 0.542 CSS 0.343
+base=oracle f=0.1 h=1.0 proxy=D/raw split=development elapsed=0.0       68.21  DES 0.719 DCS 0.785 MMD 0.744 CSS 0.413
+base=r4 f=0.1 h=1.0 proxy=D/raw split=development elapsed=0.0           57.70  DES 0.635 DCS 0.716 MMD 0.586 CSS 0.318
+base=heart f=0.1 h=0.0 proxy=D/raw split=development elapsed=0.0        62.50  DES 0.671 DCS 0.764 MMD 0.673 CSS 0.323
+base=nat f=0.15 h=0.0 proxy=D/raw split=development elapsed=0.0         55.03  DES 0.589 DCS 0.689 MMD 0.548 CSS 0.332
+base=oracle f=0.15 h=0.0 proxy=D/raw split=development elapsed=0.0      67.21  DES 0.700 DCS 0.793 MMD 0.730 CSS 0.399
+base=r4 f=0.15 h=0.0 proxy=D/raw split=development elapsed=0.0          57.44  DES 0.624 DCS 0.729 MMD 0.581 CSS 0.309
+base=nat f=0.15 h=0.5 proxy=D/raw split=development elapsed=0.0         55.03  DES 0.589 DCS 0.687 MMD 0.548 CSS 0.335
+base=oracle f=0.15 h=0.5 proxy=D/raw split=development elapsed=0.0      67.42  DES 0.705 DCS 0.792 MMD 0.731 CSS 0.403
+base=r4 f=0.15 h=0.5 proxy=D/raw split=development elapsed=0.0          57.60  DES 0.626 DCS 0.728 MMD 0.584 CSS 0.312
+base=nat f=0.15 h=1.0 proxy=D/raw split=development elapsed=0.0         54.92  DES 0.591 DCS 0.683 MMD 0.545 CSS 0.335
+base=oracle f=0.15 h=1.0 proxy=D/raw split=development elapsed=0.0      67.42  DES 0.710 DCS 0.788 MMD 0.730 CSS 0.404
+base=r4 f=0.15 h=1.0 proxy=D/raw split=development elapsed=0.0          57.55  DES 0.626 DCS 0.724 MMD 0.584 CSS 0.313
+base=heart f=0.15 h=0.0 proxy=D/raw split=development elapsed=0.0       62.15  DES 0.658 DCS 0.774 MMD 0.663 CSS 0.321
+base=nat f=0.2 h=0.0 proxy=D/raw split=development elapsed=0.0          55.02  DES 0.593 DCS 0.699 MMD 0.545 CSS 0.318
+base=oracle f=0.2 h=0.0 proxy=D/raw split=development elapsed=0.0       65.23  DES 0.677 DCS 0.790 MMD 0.702 CSS 0.376
+base=r4 f=0.2 h=0.0 proxy=D/raw split=development elapsed=0.0           57.07  DES 0.622 DCS 0.732 MMD 0.566 CSS 0.311
+base=nat f=0.2 h=0.5 proxy=D/raw split=development elapsed=0.0          55.07  DES 0.592 DCS 0.696 MMD 0.547 CSS 0.323
+base=oracle f=0.2 h=0.5 proxy=D/raw split=development elapsed=0.0       65.62  DES 0.682 DCS 0.790 MMD 0.707 CSS 0.381
+base=r4 f=0.2 h=0.5 proxy=D/raw split=development elapsed=0.0           57.42  DES 0.627 DCS 0.732 MMD 0.571 CSS 0.316
+base=nat f=0.2 h=1.0 proxy=D/raw split=development elapsed=0.0          54.91  DES 0.590 DCS 0.692 MMD 0.546 CSS 0.324
+base=oracle f=0.2 h=1.0 proxy=D/raw split=development elapsed=0.0       65.80  DES 0.690 DCS 0.787 MMD 0.707 CSS 0.383
+base=r4 f=0.2 h=1.0 proxy=D/raw split=development elapsed=0.0           57.39  DES 0.626 DCS 0.728 MMD 0.573 CSS 0.318
+base=heart f=0.2 h=0.0 proxy=D/raw split=development elapsed=0.0        61.42  DES 0.664 DCS 0.776 MMD 0.642 CSS 0.308
+base=nat f=0.25 h=0.0 proxy=D/raw split=development elapsed=0.0         54.67  DES 0.588 DCS 0.705 MMD 0.536 CSS 0.314
+base=oracle f=0.25 h=0.0 proxy=D/raw split=development elapsed=0.0      63.16  DES 0.664 DCS 0.783 MMD 0.667 CSS 0.349
+base=r4 f=0.25 h=0.0 proxy=D/raw split=development elapsed=0.0          56.59  DES 0.620 DCS 0.736 MMD 0.554 CSS 0.304
+base=nat f=0.25 h=0.5 proxy=D/raw split=development elapsed=0.0         54.99  DES 0.591 DCS 0.704 MMD 0.541 CSS 0.320
+base=oracle f=0.25 h=0.5 proxy=D/raw split=development elapsed=0.0      63.82  DES 0.674 DCS 0.783 MMD 0.676 CSS 0.356
+base=r4 f=0.25 h=0.5 proxy=D/raw split=development elapsed=0.0          57.12  DES 0.627 DCS 0.735 MMD 0.562 CSS 0.310
+base=nat f=0.25 h=1.0 proxy=D/raw split=development elapsed=0.0         55.00  DES 0.592 DCS 0.700 MMD 0.542 CSS 0.322
+base=oracle f=0.25 h=1.0 proxy=D/raw split=development elapsed=0.0      64.15  DES 0.681 DCS 0.780 MMD 0.681 CSS 0.359
+base=r4 f=0.25 h=1.0 proxy=D/raw split=development elapsed=0.0          57.40  DES 0.633 DCS 0.732 MMD 0.567 CSS 0.313
+base=heart f=0.25 h=0.0 proxy=D/raw split=development elapsed=0.0       60.15  DES 0.652 DCS 0.773 MMD 0.615 CSS 0.304
+base=nat f=0.3 h=0.0 proxy=D/raw split=development elapsed=0.0          54.08  DES 0.583 DCS 0.710 MMD 0.521 CSS 0.306
+base=oracle f=0.3 h=0.0 proxy=D/raw split=development elapsed=0.0       61.57  DES 0.650 DCS 0.777 MMD 0.633 CSS 0.345
+base=r4 f=0.3 h=0.0 proxy=D/raw split=development elapsed=0.0           54.97  DES 0.612 DCS 0.735 MMD 0.523 CSS 0.281
+base=nat f=0.3 h=0.5 proxy=D/raw split=development elapsed=0.0          54.70  DES 0.592 DCS 0.709 MMD 0.529 CSS 0.314
+base=oracle f=0.3 h=0.5 proxy=D/raw split=development elapsed=0.0       62.53  DES 0.661 DCS 0.778 MMD 0.648 CSS 0.356
+base=r4 f=0.3 h=0.5 proxy=D/raw split=development elapsed=0.0           55.84  DES 0.626 DCS 0.736 MMD 0.535 CSS 0.288
+base=nat f=0.3 h=1.0 proxy=D/raw split=development elapsed=0.0          54.81  DES 0.592 DCS 0.706 MMD 0.534 CSS 0.317
+base=oracle f=0.3 h=1.0 proxy=D/raw split=development elapsed=0.0       63.12  DES 0.669 DCS 0.776 MMD 0.658 CSS 0.361
+base=r4 f=0.3 h=1.0 proxy=D/raw split=development elapsed=0.0           56.20  DES 0.630 DCS 0.733 MMD 0.543 CSS 0.292
+base=heart f=0.3 h=0.0 proxy=D/raw split=development elapsed=0.0        58.11  DES 0.640 DCS 0.766 MMD 0.578 CSS 0.281
+base=nat f=0.375 h=0.0 proxy=D/raw split=development elapsed=0.0        52.72  DES 0.587 DCS 0.712 MMD 0.489 CSS 0.279
+base=oracle f=0.375 h=0.0 proxy=D/raw split=development elapsed=0.0     58.56  DES 0.635 DCS 0.768 MMD 0.573 CSS 0.314
+base=r4 f=0.375 h=0.0 proxy=D/raw split=development elapsed=0.0         53.89  DES 0.607 DCS 0.741 MMD 0.495 CSS 0.267
+base=nat f=0.375 h=0.5 proxy=D/raw split=development elapsed=0.0        53.45  DES 0.591 DCS 0.713 MMD 0.503 CSS 0.288
+base=oracle f=0.375 h=0.5 proxy=D/raw split=development elapsed=0.0     60.01  DES 0.654 DCS 0.770 MMD 0.595 CSS 0.327
+base=r4 f=0.375 h=0.5 proxy=D/raw split=development elapsed=0.0         55.02  DES 0.622 DCS 0.742 MMD 0.512 CSS 0.278
+base=nat f=0.375 h=1.0 proxy=D/raw split=development elapsed=0.0        53.71  DES 0.588 DCS 0.710 MMD 0.513 CSS 0.293
+base=oracle f=0.375 h=1.0 proxy=D/raw split=development elapsed=0.0     60.77  DES 0.658 DCS 0.769 MMD 0.613 CSS 0.334
+base=r4 f=0.375 h=1.0 proxy=D/raw split=development elapsed=0.0         55.69  DES 0.630 DCS 0.739 MMD 0.527 CSS 0.283
+base=heart f=0.375 h=0.0 proxy=D/raw split=development elapsed=0.0      56.20  DES 0.637 DCS 0.763 MMD 0.526 CSS 0.271
+base=nat f=0.45 h=0.0 proxy=D/raw split=development elapsed=0.0         51.33  DES 0.588 DCS 0.714 MMD 0.453 CSS 0.259
+base=oracle f=0.45 h=0.0 proxy=D/raw split=development elapsed=0.0      55.26  DES 0.621 DCS 0.760 MMD 0.505 CSS 0.278
+base=r4 f=0.45 h=0.0 proxy=D/raw split=development elapsed=0.0          51.76  DES 0.598 DCS 0.733 MMD 0.449 CSS 0.252
+base=nat f=0.45 h=0.5 proxy=D/raw split=development elapsed=0.0         52.15  DES 0.585 DCS 0.717 MMD 0.473 CSS 0.271
+base=oracle f=0.45 h=0.5 proxy=D/raw split=development elapsed=0.0      56.76  DES 0.636 DCS 0.762 MMD 0.532 CSS 0.293
+base=r4 f=0.45 h=0.5 proxy=D/raw split=development elapsed=0.0          53.05  DES 0.610 DCS 0.735 MMD 0.471 CSS 0.264
+base=nat f=0.45 h=1.0 proxy=D/raw split=development elapsed=0.0         52.91  DES 0.592 DCS 0.714 MMD 0.490 CSS 0.278
+base=oracle f=0.45 h=1.0 proxy=D/raw split=development elapsed=0.0      57.85  DES 0.644 DCS 0.762 MMD 0.556 CSS 0.301
+base=r4 f=0.45 h=1.0 proxy=D/raw split=development elapsed=0.0          53.96  DES 0.616 DCS 0.734 MMD 0.492 CSS 0.272
+base=heart f=0.45 h=0.0 proxy=D/raw split=development elapsed=0.0       53.32  DES 0.621 DCS 0.754 MMD 0.471 CSS 0.240
+base=nat f=0.0 h=0.0 noise_seed=1 proxy=D/raw split=development elapsed=0.0  52.66  DES 0.575 DCS 0.640 MMD 0.519 CSS 0.337
+base=nat f=0.2 h=0.0 noise_seed=1 proxy=D/raw split=development elapsed=0.0  54.73  DES 0.586 DCS 0.698 MMD 0.537 CSS 0.327
+base=nat f=0.0 h=0.0 noise_seed=2 proxy=D/raw split=development elapsed=0.0  53.09  DES 0.576 DCS 0.646 MMD 0.521 CSS 0.344
+base=nat f=0.2 h=0.0 noise_seed=2 proxy=D/raw split=development elapsed=0.0  55.04  DES 0.592 DCS 0.701 MMD 0.544 CSS 0.321
+base=nat f=0.0 h=0.0 noise_seed=3 proxy=D/raw split=development elapsed=0.0  52.64  DES 0.575 DCS 0.642 MMD 0.514 CSS 0.340
+base=nat f=0.2 h=0.0 noise_seed=3 proxy=D/raw split=development elapsed=0.0  54.62  DES 0.590 DCS 0.697 MMD 0.538 CSS 0.316
+base=nat f=0.0 h=0.0 noise_seed=4 proxy=D/raw split=development elapsed=0.0  53.02  DES 0.576 DCS 0.643 MMD 0.518 CSS 0.351
+base=nat f=0.2 h=0.0 noise_seed=4 proxy=D/raw split=development elapsed=0.0  55.01  DES 0.592 DCS 0.699 MMD 0.539 CSS 0.328
+D/dm oracle quotas {'CM': 0.184, 'Endo': 0.288, 'Cushion': 0.126, 'Epi': 0.175, 'Blood': 0.159, 'Mac': 0.006, 'Other': 0.062} target {'CM': 0.184, 'Endo': 0.288, 'Cushion': 0.126, 'Epi': 0.175, 'Blood': 0.159, 'Mac': 0.006, 'Other': 0.062}
+base=nat f=0.0 h=0.0 proxy=D/dm split=development elapsed=0.0           65.94  DES 0.536 DCS 0.677 MMD 0.635 CSS 0.828
+base=oracle f=0.0 h=0.0 proxy=D/dm split=development elapsed=0.0        83.94  DES 0.695 DCS 0.856 MMD 0.883 CSS 0.933
+base=r4 f=0.0 h=0.0 proxy=D/dm split=development elapsed=0.0            72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+base=heart f=0.0 h=0.0 proxy=D/dm split=development elapsed=0.0         79.02  DES 0.647 DCS 0.807 MMD 0.828 CSS 0.892
+base=nat f=0.05 h=0.0 proxy=D/dm split=development elapsed=0.0          67.99  DES 0.556 DCS 0.701 MMD 0.656 CSS 0.844
+base=oracle f=0.05 h=0.0 proxy=D/dm split=development elapsed=0.0       83.88  DES 0.685 DCS 0.862 MMD 0.885 CSS 0.934
+base=r4 f=0.05 h=0.0 proxy=D/dm split=development elapsed=0.0           73.05  DES 0.593 DCS 0.759 MMD 0.741 CSS 0.851
+base=nat f=0.05 h=0.5 proxy=D/dm split=development elapsed=0.0          67.92  DES 0.556 DCS 0.700 MMD 0.655 CSS 0.844
+base=oracle f=0.05 h=0.5 proxy=D/dm split=development elapsed=0.0       83.86  DES 0.686 DCS 0.862 MMD 0.882 CSS 0.934
+base=r4 f=0.05 h=0.5 proxy=D/dm split=development elapsed=0.0           72.98  DES 0.591 DCS 0.758 MMD 0.741 CSS 0.852
+base=nat f=0.05 h=1.0 proxy=D/dm split=development elapsed=0.0          67.78  DES 0.555 DCS 0.698 MMD 0.653 CSS 0.844
+base=oracle f=0.05 h=1.0 proxy=D/dm split=development elapsed=0.0       83.80  DES 0.688 DCS 0.861 MMD 0.879 CSS 0.935
+base=r4 f=0.05 h=1.0 proxy=D/dm split=development elapsed=0.0           72.96  DES 0.592 DCS 0.757 MMD 0.739 CSS 0.853
+base=heart f=0.05 h=0.0 proxy=D/dm split=development elapsed=0.0        79.61  DES 0.656 DCS 0.823 MMD 0.830 CSS 0.886
+base=nat f=0.1 h=0.0 proxy=D/dm split=development elapsed=0.0           68.79  DES 0.568 DCS 0.715 MMD 0.666 CSS 0.838
+base=oracle f=0.1 h=0.0 proxy=D/dm split=development elapsed=0.0        83.78  DES 0.682 DCS 0.863 MMD 0.887 CSS 0.927
+base=r4 f=0.1 h=0.0 proxy=D/dm split=development elapsed=0.0            73.51  DES 0.605 DCS 0.767 MMD 0.742 CSS 0.849
+base=nat f=0.1 h=0.5 proxy=D/dm split=development elapsed=0.0           68.68  DES 0.566 DCS 0.713 MMD 0.664 CSS 0.839
+base=oracle f=0.1 h=0.5 proxy=D/dm split=development elapsed=0.0        83.83  DES 0.683 DCS 0.864 MMD 0.885 CSS 0.929
+base=r4 f=0.1 h=0.5 proxy=D/dm split=development elapsed=0.0            73.51  DES 0.602 DCS 0.767 MMD 0.742 CSS 0.851
+base=nat f=0.1 h=1.0 proxy=D/dm split=development elapsed=0.0           68.51  DES 0.562 DCS 0.712 MMD 0.661 CSS 0.841
+base=oracle f=0.1 h=1.0 proxy=D/dm split=development elapsed=0.0        83.74  DES 0.680 DCS 0.866 MMD 0.882 CSS 0.931
+base=r4 f=0.1 h=1.0 proxy=D/dm split=development elapsed=0.0            73.38  DES 0.598 DCS 0.766 MMD 0.741 CSS 0.854
+base=heart f=0.1 h=0.0 proxy=D/dm split=development elapsed=0.0         80.68  DES 0.669 DCS 0.839 MMD 0.841 CSS 0.888
+base=nat f=0.15 h=0.0 proxy=D/dm split=development elapsed=0.0          69.31  DES 0.576 DCS 0.725 MMD 0.670 CSS 0.834
+base=oracle f=0.15 h=0.0 proxy=D/dm split=development elapsed=0.0       82.91  DES 0.683 DCS 0.855 MMD 0.874 CSS 0.912
+base=r4 f=0.15 h=0.0 proxy=D/dm split=development elapsed=0.0           73.20  DES 0.609 DCS 0.771 MMD 0.735 CSS 0.831
+base=nat f=0.15 h=0.5 proxy=D/dm split=development elapsed=0.0          69.38  DES 0.575 DCS 0.726 MMD 0.670 CSS 0.838
+base=oracle f=0.15 h=0.5 proxy=D/dm split=development elapsed=0.0       83.22  DES 0.688 DCS 0.858 MMD 0.875 CSS 0.916
+base=r4 f=0.15 h=0.5 proxy=D/dm split=development elapsed=0.0           73.43  DES 0.609 DCS 0.773 MMD 0.738 CSS 0.837
+base=nat f=0.15 h=1.0 proxy=D/dm split=development elapsed=0.0          69.31  DES 0.574 DCS 0.725 MMD 0.668 CSS 0.841
+base=oracle f=0.15 h=1.0 proxy=D/dm split=development elapsed=0.0       83.48  DES 0.692 DCS 0.861 MMD 0.874 CSS 0.921
+base=r4 f=0.15 h=1.0 proxy=D/dm split=development elapsed=0.0           73.67  DES 0.613 DCS 0.773 MMD 0.739 CSS 0.842
+base=heart f=0.15 h=0.0 proxy=D/dm split=development elapsed=0.0        79.65  DES 0.658 DCS 0.839 MMD 0.824 CSS 0.875
+base=nat f=0.2 h=0.0 proxy=D/dm split=development elapsed=0.0           69.33  DES 0.581 DCS 0.731 MMD 0.670 CSS 0.821
+base=oracle f=0.2 h=0.0 proxy=D/dm split=development elapsed=0.0        81.03  DES 0.667 DCS 0.846 MMD 0.844 CSS 0.892
+base=r4 f=0.2 h=0.0 proxy=D/dm split=development elapsed=0.0            72.49  DES 0.612 DCS 0.770 MMD 0.715 CSS 0.824
+base=nat f=0.2 h=0.5 proxy=D/dm split=development elapsed=0.0           69.50  DES 0.579 DCS 0.732 MMD 0.672 CSS 0.828
+base=oracle f=0.2 h=0.5 proxy=D/dm split=development elapsed=0.0        81.60  DES 0.673 DCS 0.851 MMD 0.850 CSS 0.901
+base=r4 f=0.2 h=0.5 proxy=D/dm split=development elapsed=0.0            72.96  DES 0.613 DCS 0.774 MMD 0.721 CSS 0.833
+base=nat f=0.2 h=1.0 proxy=D/dm split=development elapsed=0.0           69.74  DES 0.582 DCS 0.734 MMD 0.672 CSS 0.834
+base=oracle f=0.2 h=1.0 proxy=D/dm split=development elapsed=0.0        82.13  DES 0.679 DCS 0.857 MMD 0.853 CSS 0.908
+base=r4 f=0.2 h=1.0 proxy=D/dm split=development elapsed=0.0            73.32  DES 0.614 DCS 0.776 MMD 0.725 CSS 0.841
+base=heart f=0.2 h=0.0 proxy=D/dm split=development elapsed=0.0         78.35  DES 0.660 DCS 0.828 MMD 0.802 CSS 0.854
+base=nat f=0.25 h=0.0 proxy=D/dm split=development elapsed=0.0          68.78  DES 0.578 DCS 0.733 MMD 0.660 CSS 0.810
+base=oracle f=0.25 h=0.0 proxy=D/dm split=development elapsed=0.0       79.24  DES 0.672 DCS 0.833 MMD 0.811 CSS 0.865
+base=r4 f=0.25 h=0.0 proxy=D/dm split=development elapsed=0.0           71.71  DES 0.615 DCS 0.769 MMD 0.698 CSS 0.808
+base=nat f=0.25 h=0.5 proxy=D/dm split=development elapsed=0.0          69.27  DES 0.580 DCS 0.735 MMD 0.666 CSS 0.821
+base=oracle f=0.25 h=0.5 proxy=D/dm split=development elapsed=0.0       79.99  DES 0.675 DCS 0.837 MMD 0.822 CSS 0.877
+base=r4 f=0.25 h=0.5 proxy=D/dm split=development elapsed=0.0           72.26  DES 0.610 DCS 0.773 MMD 0.709 CSS 0.821
+base=nat f=0.25 h=1.0 proxy=D/dm split=development elapsed=0.0          69.64  DES 0.581 DCS 0.738 MMD 0.669 CSS 0.829
+base=oracle f=0.25 h=1.0 proxy=D/dm split=development elapsed=0.0       80.74  DES 0.677 DCS 0.845 MMD 0.831 CSS 0.888
+base=r4 f=0.25 h=1.0 proxy=D/dm split=development elapsed=0.0           72.83  DES 0.609 DCS 0.778 MMD 0.717 CSS 0.831
+base=heart f=0.25 h=0.0 proxy=D/dm split=development elapsed=0.0        76.65  DES 0.660 DCS 0.817 MMD 0.768 CSS 0.833
+base=nat f=0.3 h=0.0 proxy=D/dm split=development elapsed=0.0           67.97  DES 0.578 DCS 0.734 MMD 0.643 CSS 0.793
+base=oracle f=0.3 h=0.0 proxy=D/dm split=development elapsed=0.0        76.73  DES 0.659 DCS 0.817 MMD 0.768 CSS 0.839
+base=r4 f=0.3 h=0.0 proxy=D/dm split=development elapsed=0.0            69.54  DES 0.609 DCS 0.764 MMD 0.660 CSS 0.771
+base=nat f=0.3 h=0.5 proxy=D/dm split=development elapsed=0.0           68.68  DES 0.578 DCS 0.739 MMD 0.654 CSS 0.808
+base=oracle f=0.3 h=0.5 proxy=D/dm split=development elapsed=0.0        77.92  DES 0.665 DCS 0.823 MMD 0.786 CSS 0.857
+base=r4 f=0.3 h=0.5 proxy=D/dm split=development elapsed=0.0            70.57  DES 0.614 DCS 0.768 MMD 0.675 CSS 0.788
+base=nat f=0.3 h=1.0 proxy=D/dm split=development elapsed=0.0           69.31  DES 0.580 DCS 0.743 MMD 0.661 CSS 0.820
+base=oracle f=0.3 h=1.0 proxy=D/dm split=development elapsed=0.0        78.91  DES 0.663 DCS 0.834 MMD 0.802 CSS 0.872
+base=r4 f=0.3 h=1.0 proxy=D/dm split=development elapsed=0.0            71.49  DES 0.616 DCS 0.774 MMD 0.689 CSS 0.802
+base=heart f=0.3 h=0.0 proxy=D/dm split=development elapsed=0.0         73.76  DES 0.648 DCS 0.801 MMD 0.722 CSS 0.794
+base=nat f=0.375 h=0.0 proxy=D/dm split=development elapsed=0.0         66.23  DES 0.589 DCS 0.733 MMD 0.606 CSS 0.750
+base=oracle f=0.375 h=0.0 proxy=D/dm split=development elapsed=0.0      72.84  DES 0.643 DCS 0.800 MMD 0.700 CSS 0.788
+base=r4 f=0.375 h=0.0 proxy=D/dm split=development elapsed=0.0          67.98  DES 0.616 DCS 0.766 MMD 0.623 CSS 0.737
+base=nat f=0.375 h=0.5 proxy=D/dm split=development elapsed=0.0         67.27  DES 0.588 DCS 0.738 MMD 0.624 CSS 0.771
+base=oracle f=0.375 h=0.5 proxy=D/dm split=development elapsed=0.0      74.47  DES 0.648 DCS 0.808 MMD 0.727 CSS 0.812
+base=r4 f=0.375 h=0.5 proxy=D/dm split=development elapsed=0.0          69.18  DES 0.613 DCS 0.771 MMD 0.647 CSS 0.760
+base=nat f=0.375 h=1.0 proxy=D/dm split=development elapsed=0.0         68.19  DES 0.586 DCS 0.744 MMD 0.639 CSS 0.789
+base=oracle f=0.375 h=1.0 proxy=D/dm split=development elapsed=0.0      76.01  DES 0.651 DCS 0.819 MMD 0.753 CSS 0.834
+base=r4 f=0.375 h=1.0 proxy=D/dm split=development elapsed=0.0          70.72  DES 0.623 DCS 0.780 MMD 0.669 CSS 0.780
+base=heart f=0.375 h=0.0 proxy=D/dm split=development elapsed=0.0       70.69  DES 0.643 DCS 0.790 MMD 0.659 CSS 0.755
+base=nat f=0.45 h=0.0 proxy=D/dm split=development elapsed=0.0          64.07  DES 0.590 DCS 0.730 MMD 0.562 CSS 0.710
+base=oracle f=0.45 h=0.0 proxy=D/dm split=development elapsed=0.0       68.44  DES 0.629 DCS 0.783 MMD 0.619 CSS 0.729
+base=r4 f=0.45 h=0.0 proxy=D/dm split=development elapsed=0.0           64.57  DES 0.605 DCS 0.750 MMD 0.563 CSS 0.692
+base=nat f=0.45 h=0.5 proxy=D/dm split=development elapsed=0.0          65.71  DES 0.595 DCS 0.737 MMD 0.589 CSS 0.736
+base=oracle f=0.45 h=0.5 proxy=D/dm split=development elapsed=0.0       70.54  DES 0.642 DCS 0.790 MMD 0.653 CSS 0.758
+base=r4 f=0.45 h=0.5 proxy=D/dm split=development elapsed=0.0           66.24  DES 0.606 DCS 0.756 MMD 0.593 CSS 0.720
+base=nat f=0.45 h=1.0 proxy=D/dm split=development elapsed=0.0          67.02  DES 0.592 DCS 0.745 MMD 0.613 CSS 0.760
+base=oracle f=0.45 h=1.0 proxy=D/dm split=development elapsed=0.0       72.55  DES 0.647 DCS 0.802 MMD 0.688 CSS 0.785
+base=r4 f=0.45 h=1.0 proxy=D/dm split=development elapsed=0.0           67.93  DES 0.607 DCS 0.765 MMD 0.624 CSS 0.746
+base=heart f=0.45 h=0.0 proxy=D/dm split=development elapsed=0.0        66.75  DES 0.624 DCS 0.778 MMD 0.591 CSS 0.699
+base=nat f=0.0 h=0.0 noise_seed=1 proxy=D/dm split=development elapsed=0.0  65.51  DES 0.533 DCS 0.673 MMD 0.628 CSS 0.826
+base=nat f=0.2 h=0.0 noise_seed=1 proxy=D/dm split=development elapsed=0.0  68.80  DES 0.573 DCS 0.728 MMD 0.661 CSS 0.823
+base=nat f=0.0 h=0.0 noise_seed=2 proxy=D/dm split=development elapsed=0.0  65.77  DES 0.538 DCS 0.678 MMD 0.629 CSS 0.826
+base=nat f=0.2 h=0.0 noise_seed=2 proxy=D/dm split=development elapsed=0.0  69.40  DES 0.579 DCS 0.733 MMD 0.668 CSS 0.827
+base=nat f=0.0 h=0.0 noise_seed=3 proxy=D/dm split=development elapsed=0.0  65.28  DES 0.533 DCS 0.677 MMD 0.622 CSS 0.819
+base=nat f=0.2 h=0.0 noise_seed=3 proxy=D/dm split=development elapsed=0.0  69.29  DES 0.586 DCS 0.732 MMD 0.665 CSS 0.821
+base=nat f=0.0 h=0.0 noise_seed=4 proxy=D/dm split=development elapsed=0.0  65.24  DES 0.529 DCS 0.676 MMD 0.624 CSS 0.821
+base=nat f=0.2 h=0.0 noise_seed=4 proxy=D/dm split=development elapsed=0.0  69.26  DES 0.579 DCS 0.734 MMD 0.664 CSS 0.825
+
+=== base nat: score by proxy (rows) and anchor fraction (columns), h = 0 / 0.5 / 1
+h=0.0
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  53.19  54.50  54.94  55.03  55.02  54.67  54.08  52.72  51.33
+D/dm   65.94  67.99  68.79  69.31  69.33  68.78  67.97  66.23  64.07
+h=0.5
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  53.19  54.45  54.79  55.03  55.07  54.99  54.70  53.45  52.15
+D/dm   65.94  67.92  68.68  69.38  69.50  69.27  68.68  67.27  65.71
+h=1.0
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  53.19  54.27  54.69  54.92  54.91  55.00  54.81  53.71  52.91
+D/dm   65.94  67.78  68.51  69.31  69.74  69.64  69.31  68.19  67.02
+
+=== base oracle: score by proxy (rows) and anchor fraction (columns), h = 0 / 0.5 / 1
+h=0.0
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  68.51  68.34  68.40  67.21  65.23  63.16  61.57  58.56  55.26
+D/dm   83.94  83.88  83.78  82.91  81.03  79.24  76.73  72.84  68.44
+h=0.5
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  68.51  68.24  68.44  67.42  65.62  63.82  62.53  60.01  56.76
+D/dm   83.94  83.86  83.83  83.22  81.60  79.99  77.92  74.47  70.54
+h=1.0
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  68.51  68.14  68.21  67.42  65.80  64.15  63.12  60.77  57.85
+D/dm   83.94  83.80  83.74  83.48  82.13  80.74  78.91  76.01  72.55
+
+=== base r4: score by proxy (rows) and anchor fraction (columns), h = 0 / 0.5 / 1
+h=0.0
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  56.97  57.53  57.72  57.44  57.07  56.59  54.97  53.89  51.76
+D/dm   72.32  73.05  73.51  73.20  72.49  71.71  69.54  67.98  64.57
+h=0.5
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  56.97  57.51  57.75  57.60  57.42  57.12  55.84  55.02  53.05
+D/dm   72.32  72.98  73.51  73.43  72.96  72.26  70.57  69.18  66.24
+h=1.0
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  56.97  57.40  57.70  57.55  57.39  57.40  56.20  55.69  53.96
+D/dm   72.32  72.96  73.38  73.67  73.32  72.83  71.49  70.72  67.93
+
+=== base heart: score by proxy (rows) and anchor fraction (columns), h = 0 / 0.5 / 1
+h=0.0
+f      0.000  0.050  0.100  0.150  0.200  0.250  0.300  0.375  0.450
+proxy                                                               
+D/raw  61.94  61.91  62.50  62.15  61.42  60.15  58.11  56.20  53.32
+D/dm   79.02  79.61  80.68  79.65  78.35  76.65  73.76  70.69  66.75
+h=0.5
+f        0.0
+proxy       
+D/raw  61.94
+D/dm   79.02
+h=1.0
+f        0.0
+proxy       
+D/raw  61.94
+D/dm   79.02
+
+resampling sd (nat base, 5 seeds incl. 42):
+             std  count
+proxy f                
+D/dm  0.0  0.303      5
+      0.2  0.238      5
+D/raw 0.0  0.253      5
+      0.2  0.197      5

@@ -1,0 +1,70 @@
+te/raw ready 57s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.4628200916802765, 'variogram': 0.03695197030901909} ceiling {'de_score': 0.917655268667132, 'de_direction': 0.8800037537805365, 'mmd_u': 0.011071073757206017, 'variogram': 0.0002230689424322918} n_up 787 n_dn 1743
+proxy=te/raw base=natural:all f=0.0 split=confirmation                  63.99  DES 0.644 DCS 0.693 MMD 0.587 CSS 0.647
+proxy=te/raw base=natural:all f=0.375 split=confirmation                84.93  DES 0.886 DCS 0.894 MMD 0.795 CSS 0.830
+proxy=te/raw base=natural:lib12 f=0.0 split=confirmation                61.37  DES 0.613 DCS 0.629 MMD 0.571 CSS 0.659
+proxy=te/raw base=natural:lib12 f=0.375 split=confirmation              83.22  DES 0.865 DCS 0.857 MMD 0.781 CSS 0.837
+proxy=te/raw base=natural:lib3 f=0.0 split=confirmation                 61.28  DES 0.589 DCS 0.691 MMD 0.581 CSS 0.593
+proxy=te/raw base=natural:lib3 f=0.375 split=confirmation               82.18  DES 0.820 DCS 0.878 MMD 0.794 CSS 0.796
+proxy=te/raw base=natural:heart_all f=0.0 split=confirmation            63.23  DES 0.610 DCS 0.689 MMD 0.598 CSS 0.639
+proxy=te/raw base=natural:heart_all f=0.375 split=confirmation          83.39  DES 0.832 DCS 0.879 MMD 0.805 CSS 0.825
+proxy=te/raw base=natural:heart_lib3 f=0.0 split=confirmation           60.97  DES 0.579 DCS 0.687 MMD 0.581 CSS 0.594
+proxy=te/raw base=natural:heart_lib3 f=0.375 split=confirmation         81.96  DES 0.813 DCS 0.873 MMD 0.796 CSS 0.798
+proxy=te/raw base=r2:all f=0.0 split=confirmation                       66.37  DES 0.642 DCS 0.709 MMD 0.631 CSS 0.684
+proxy=te/raw base=r2:all f=0.375 split=confirmation                     84.98  DES 0.846 DCS 0.880 MMD 0.825 CSS 0.853
+proxy=te/raw base=r4:all f=0.0 split=confirmation                       66.10  DES 0.651 DCS 0.711 MMD 0.622 CSS 0.670
+proxy=te/raw base=r4:all f=0.375 split=confirmation                     85.35  DES 0.863 DCS 0.891 MMD 0.820 CSS 0.845
+proxy=te/raw base=r2:lib3 f=0.0 split=confirmation                      63.44  DES 0.602 DCS 0.697 MMD 0.613 CSS 0.629
+proxy=te/raw base=r2:lib3 f=0.375 split=confirmation                    82.25  DES 0.792 DCS 0.864 MMD 0.815 CSS 0.819
+proxy=te/raw base=r4:lib3 f=0.0 split=confirmation                      63.44  DES 0.612 DCS 0.703 MMD 0.605 CSS 0.620
+proxy=te/raw base=r4:lib3 f=0.375 split=confirmation                    83.08  DES 0.825 DCS 0.876 MMD 0.810 CSS 0.814
+proxy=te/raw base=r2:heart_all f=0.0 split=confirmation                 64.91  DES 0.613 DCS 0.688 MMD 0.628 CSS 0.676
+proxy=te/raw base=r2:heart_all f=0.375 split=confirmation               83.32  DES 0.800 DCS 0.863 MMD 0.826 CSS 0.848
+proxy=te/raw base=r4:heart_all f=0.0 split=confirmation                 64.81  DES 0.623 DCS 0.692 MMD 0.622 CSS 0.664
+proxy=te/raw base=r4:heart_all f=0.375 split=confirmation               84.08  DES 0.830 DCS 0.874 MMD 0.822 CSS 0.841
+proxy=te/raw base=natural:lib3+bulk3 f=0.0 split=confirmation           62.13  DES 0.591 DCS 0.694 MMD 0.593 CSS 0.610
+proxy=te/raw base=natural:lib3+bulk3 f=0.375 split=confirmation         81.94  DES 0.801 DCS 0.868 MMD 0.802 CSS 0.808
+proxy=te/raw base=natural:lib3+bulk6 f=0.0 split=confirmation           62.82  DES 0.587 DCS 0.683 MMD 0.610 CSS 0.638
+proxy=te/raw base=natural:lib3+bulk6 f=0.375 split=confirmation         81.29  DES 0.769 DCS 0.848 MMD 0.813 CSS 0.825
+te/dm ready 100s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.42083663670712956, 'variogram': 0.0237993523478508} ceiling {'de_score': 0.9295950155763237, 'de_direction': 0.8884239397819936, 'mmd_u': 0.011071073757206017, 'variogram': 0.0002230689424322918} n_up 1187 n_dn 1057
+proxy=te/dm base=natural:all f=0.0 split=confirmation                   63.12  DES 0.664 DCS 0.711 MMD 0.567 CSS 0.587
+proxy=te/dm base=natural:all f=0.375 split=confirmation                 84.43  DES 0.897 DCS 0.913 MMD 0.779 CSS 0.789
+proxy=te/dm base=natural:lib12 f=0.0 split=confirmation                 58.96  DES 0.627 DCS 0.644 MMD 0.535 CSS 0.558
+proxy=te/dm base=natural:lib12 f=0.375 split=confirmation               81.95  DES 0.881 DCS 0.881 MMD 0.752 CSS 0.767
+proxy=te/dm base=natural:lib3 f=0.0 split=confirmation                  60.85  DES 0.613 DCS 0.688 MMD 0.571 CSS 0.559
+proxy=te/dm base=natural:lib3 f=0.375 split=confirmation                82.32  DES 0.844 DCS 0.888 MMD 0.786 CSS 0.772
+proxy=te/dm base=natural:heart_all f=0.0 split=confirmation             62.62  DES 0.639 DCS 0.699 MMD 0.581 CSS 0.587
+proxy=te/dm base=natural:heart_all f=0.375 split=confirmation           83.43  DES 0.856 DCS 0.899 MMD 0.792 CSS 0.789
+proxy=te/dm base=natural:heart_lib3 f=0.0 split=confirmation            60.64  DES 0.610 DCS 0.682 MMD 0.572 CSS 0.559
+proxy=te/dm base=natural:heart_lib3 f=0.375 split=confirmation          82.24  DES 0.842 DCS 0.884 MMD 0.788 CSS 0.773
+proxy=te/dm base=r2:all f=0.0 split=confirmation                        64.94  DES 0.662 DCS 0.719 MMD 0.600 CSS 0.620
+proxy=te/dm base=r2:all f=0.375 split=confirmation                      84.37  DES 0.859 DCS 0.901 MMD 0.804 CSS 0.813
+proxy=te/dm base=r4:all f=0.0 split=confirmation                        65.09  DES 0.675 DCS 0.727 MMD 0.595 CSS 0.610
+proxy=te/dm base=r4:all f=0.375 split=confirmation                      84.81  DES 0.877 DCS 0.910 MMD 0.801 CSS 0.806
+proxy=te/dm base=r2:lib3 f=0.0 split=confirmation                       63.07  DES 0.629 DCS 0.700 MMD 0.599 CSS 0.594
+proxy=te/dm base=r2:lib3 f=0.375 split=confirmation                     82.63  DES 0.824 DCS 0.881 MMD 0.804 CSS 0.795
+proxy=te/dm base=r4:lib3 f=0.0 split=confirmation                       63.17  DES 0.638 DCS 0.709 MMD 0.591 CSS 0.586
+proxy=te/dm base=r4:lib3 f=0.375 split=confirmation                     83.10  DES 0.842 DCS 0.892 MMD 0.799 CSS 0.790
+proxy=te/dm base=r2:heart_all f=0.0 split=confirmation                  64.07  DES 0.640 DCS 0.705 MMD 0.605 CSS 0.615
+proxy=te/dm base=r2:heart_all f=0.375 split=confirmation                83.41  DES 0.834 DCS 0.887 MMD 0.808 CSS 0.807
+proxy=te/dm base=r4:heart_all f=0.0 split=confirmation                  64.20  DES 0.650 DCS 0.714 MMD 0.600 CSS 0.606
+proxy=te/dm base=r4:heart_all f=0.375 split=confirmation                84.08  DES 0.858 DCS 0.899 MMD 0.804 CSS 0.801
+proxy=te/dm base=natural:lib3+bulk3 f=0.0 split=confirmation            61.93  DES 0.622 DCS 0.698 MMD 0.581 CSS 0.576
+proxy=te/dm base=natural:lib3+bulk3 f=0.375 split=confirmation          82.22  DES 0.827 DCS 0.884 MMD 0.793 CSS 0.783
+proxy=te/dm base=natural:lib3+bulk6 f=0.0 split=confirmation            62.32  DES 0.618 DCS 0.689 MMD 0.591 CSS 0.596
+proxy=te/dm base=natural:lib3+bulk6 f=0.375 split=confirmation          81.55  DES 0.796 DCS 0.870 MMD 0.799 CSS 0.797
+proxy              te/raw         te/dm       
+f                   0.000  0.375  0.000  0.375
+base                                          
+natural:all         63.99  84.93  63.12  84.43
+natural:lib12       61.37  83.22  58.96  81.95
+natural:lib3        61.28  82.18  60.85  82.32
+natural:heart_all   63.23  83.39  62.62  83.43
+natural:heart_lib3  60.97  81.96  60.64  82.24
+r2:all              66.37  84.98  64.94  84.37
+r4:all              66.10  85.35  65.09  84.81
+r2:lib3             63.44  82.25  63.07  82.63
+r4:lib3             63.44  83.08  63.17  83.10
+r2:heart_all        64.91  83.32  64.07  83.41
+r4:heart_all        64.81  84.08  64.20  84.08
+natural:lib3+bulk3  62.13  81.94  61.93  82.22
+natural:lib3+bulk6  62.82  81.29  62.32  81.55
