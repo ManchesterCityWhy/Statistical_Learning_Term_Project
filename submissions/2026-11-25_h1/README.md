@@ -45,5 +45,21 @@ ground truth were used.
 
 ## Official submission
 
-Status: pending. Update this section with the submission ID, timestamp and
-score after the final P3 submission is accepted.
+- Board: `T1:test`
+- Model: `deconv3_mix1_bulk3_h1`
+- Status: `scored`
+- Headline score: **70.62** (floor 50, attainable ceiling 100)
+- Rank on this board: **345 / 468** (best score per team)
+- Submitted: 2026-11-25 09:38 (site time)
+- File: `E12.5_prediction_h1.h5ad` (32 MB)
+- Submission ID: `fd89fe362d70498182481745eced26c9`
+- Submission page:
+  https://virtualembryo.ai/challenge/account/submissions/fd89fe362d70498182481745eced26c9
+- T1:test attempts used: **1 / 2**
+
+Per-metric skill: `de_score` 66.3, `de_direction` 76.9, `mmd_u` 69.0,
+`variogram` 70.5.
+
+The submitted file is this regenerated h1 (SHA-256
+`80aac98a788a3342b69d4842aac4ea576ec60ca9312c1d49bdbd244640adaf54`),
+not the earlier local file with SHA-256 `d6f5ac...`.
