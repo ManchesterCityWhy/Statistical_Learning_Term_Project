@@ -1,0 +1,114 @@
+export start 15:05:29
+export done 15:06:34
+cb227c26335911b9b51547ed2f5d55c00ca9f05cfa6f53d92daa383797c74e01  predictions/round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3_thin0.85/E12.5_prediction.h5ad
+total 93384
+drwxr-xr-x  2 andreib180 andreib180     4096 Nov 26 15:06 .
+drwxr-xr-x 25 andreib180 andreib180     4096 Nov 26 15:05 ..
+-rw-r--r--  1 andreib180 andreib180 95491702 Nov 26 15:06 E12.5_prediction.h5ad
+-rw-r--r--  1 andreib180 andreib180    16540 Nov 26 15:06 manifest.json
+-rw-r--r--  1 andreib180 andreib180    99304 Nov 26 15:06 provenance.npz
+{'name': 'round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3_thin0.85', 'cells_total': 5000, 'base_cells': 2750, 'stand_in_cells': 2250, 'real_cells_total': 5000, 'anchor_cells': 0, 'file_sha256': 'cb227c26335911b9b51547ed2f5d55c00ca9f05cfa6f53d92daa383797c74e01', 'file_bytes': 95491702, 'prediction_cells_sha256': 'e6b9b65bcbf8e47e2d54f802b317f05f903aec033922409ffc4000c5996b3b73'}
+{'f': 0.45, 'pos': 0.0, 'fwd': 0.0, 'bwd': 1.0, 'harmonise': 1.0, 'mode': 'min', 'level': 'type', 'dev': 0.5, 'days_to_anchor': 4.0, 'previous_stage': 'E9.5 (all cells)', 'bulk_trend_share': 0.4, 'real_share': 1.0, 'shared_forward_share': 0.0, 'two_witness_on': 'lineage-specific part of the ratio', 'shift_mode': 'scale', 'mixture_share': 0.25, 'mixture_low_gene_threshold_per_10k': 0.3, 'mixture_partner_profile': '20', 'anchor_form': 'resample (k_prof = 20, multinomial at source-lineage depth)', 'thin': 0.85}
+{'share_of_molecules_kept': 0.85, 'libraries': ['3'], 'cells_thinned': 11818, 'seed': 985, 'median_umi_before': 10384.5, 'median_umi_after': 8825.5, 'median_genes_detected_before': 3819.5, 'median_genes_detected_after': 3485.0}
+{'cells_mixed': 4193, 'cells_left_unmixed': 807, 'unmixed_by_lineage': {'Blood': 445, 'Other': 362}, 'distinct_partner_nuclei': 2519, 'genes_in_the_mixture_by_cell_type': {'AVC-CM': 17210, 'BEC': 18534, 'Early VIC': 19015, 'EndoMT Endocardium': 19018, 'Endocardium-1': 19761, 'Endocardium-2': 19223, 'Epicardium': 20962, 'IFT-CM': 15991, 'LV-CM': 18656, 'Macrophage': 14765, 'OFT-CM': 17685, 'RV-CM': 19016, 'SV-CM': 16862}}
+{'lineage_shares_total': {'CM': 0.296, 'Endo': 0.2884, 'Epi': 0.1382, 'Cushion': 0.0986, 'Blood': 0.089, 'Other': 0.0724, 'Mac': 0.0174}, 'median_genes_detected': 3611.5, 'median_genes_detected_base': 3549.0, 'median_genes_detected_real_cells': 3611.5, 'nonzero_fraction': 0.11081981105776677, 'distinct_rows': 5000, 'library_sum_min': 9999.999508126939, 'library_sum_max': 10000.000568321468}
+{'board': 'T1:test', 'cells': 5000, 'genes': 32285, 'sha256': 'cb227c26335911b9b51547ed2f5d55c00ca9f05cfa6f53d92daa383797c74e01', 'bytes': 95491702, 'format_valid': True, 'normalization_verified': False}
+real_cells {'drawn_in_natural_composition': 2750, 'stand_ins_for_anchor_nuclei': 2250, 'distinct_E10.5_rows': 4997, 'synthetic_nuclei': 0, 'stand_ins_of_another_type_than_requested': 159, 'median_genes_detected_stand_ins': 3678.0, 'median_umi_of_stand_in_source_rows': 9593.5, 'median_umi_of_all_real_source_rows': 9136.5}
+are of the gene in the partner's profile); genes whose mean in the cell type is below one twentieth of the largest lineage mean at E10.5 (mostly markers of other lineages) are removed from the profile first and are not received; before all of this, every cell of the heart library is thinned: each of its molecules is kept with probability `thin` (the E12.5 cells are assumed to be somewhat sparser than E10.5 library 3)
+verify start 15:06:34
+{
+ "sha256_matches_manifest": true,
+ "sha256": "cb227c26335911b9b51547ed2f5d55c00ca9f05cfa6f53d92daa383797c74e01",
+ "bytes": 95491702,
+ "bytes_match_manifest": true,
+ "shape": [
+  5000,
+  32285
+ ],
+ "gene_order_official": true,
+ "finite_nonnegative": true,
+ "row_sum_min_max": [
+  9999.999508126939,
+  10000.000568321468
+ ],
+ "distinct_rows": 5000,
+ "max_value": 7.488491535186768,
+ "validation": {
+  "board": "T1:test",
+  "cells": 5000,
+  "genes": 32285,
+  "sha256": "cb227c26335911b9b51547ed2f5d55c00ca9f05cfa6f53d92daa383797c74e01",
+  "bytes": 95491702,
+  "format_valid": true,
+  "normalization_verified": false
+ },
+ "cells_sha256_matches_manifest": true,
+ "all_rows_from_library_3": true,
+ "distinct_source_rows": 4997,
+ "lineage_shares": {
+  "CM": 0.296,
+  "Endo": 0.2884,
+  "Epi": 0.1382,
+  "Cushion": 0.0986,
+  "Blood": 0.089,
+  "Other": 0.0724,
+  "Mac": 0.0174
+ },
+ "unmixed_cells": 807,
+ "thinning_info_matches_manifest": true,
+ "thinning_info": {
+  "share_of_molecules_kept": 0.85,
+  "libraries": [
+   "3"
+  ],
+  "cells_thinned": 11818,
+  "seed": 985,
+  "median_umi_before": 10384.5,
+  "median_umi_after": 8825.5,
+  "median_genes_detected_before": 3819.5,
+  "median_genes_detected_after": 3485.0
+ },
+ "fresh_rebuild_identical": true,
+ "unmixed_pattern_equals_thinned_source": true,
+ "unmixed_pattern_subset_of_original": true,
+ "unmixed_genes_detected_ratio_file_over_original": 0.90663349602318,
+ "median_umi_original_rows": 10750.0,
+ "median_umi_thinned_rows": 9136.5,
+ "umi_ratio_quantiles_5_50_95": [
+  0.8437527149915696,
+  0.8498840630054474,
+  0.8563585251569747
+ ],
+ "median_genes_detected_file": 3611.5,
+ "same_base_rows_as_round8": true,
+ "stand_in_rows_shared_with_round8": 2139,
+ "rows_shared_with_round8_total": 4889,
+ "median_genes_detected_round8": 3958.0,
+ "rows_identical_to_round8_file": 0,
+ "manifest_fields_differing_from_round8": [
+  "base",
+  "code_sha256",
+  "configuration",
+  "file",
+  "file_bytes",
+  "file_sha256",
+  "harmonisation",
+  "method",
+  "molecular_mixture",
+  "name",
+  "prediction_cells_sha256",
+  "provenance_sha256",
+  "real_cells",
+  "selfcheck_same_code_path",
+  "thinning",
+  "two_witness_shift",
+  "validation"
+ ],
+ "code_hashes_differing_from_round8": [
+  "round7_export.py"
+ ]
+}
+verify done 15:07:18
+BATCH60 DONE
+
+[exited with code 0]

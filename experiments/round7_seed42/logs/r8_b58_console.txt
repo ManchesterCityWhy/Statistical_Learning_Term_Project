@@ -1,0 +1,13 @@
+export start 15:03:14
+export done 15:05:01
+26be7ed5f49a3e4cf21c8b5e188212e435698a7b15b152df9826a71af2cd7053  predictions/round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3/E12.5_prediction.h5ad
+26be7ed5f49a3e4cf21c8b5e188212e435698a7b15b152df9826a71af2cd7053  predictions/round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3_keep_b49/E12.5_prediction.h5ad
+FILE_IDENTICAL
+PROVENANCE_IDENTICAL
+manifest fields that differ: ['code_sha256/round7_export.py', 'selfcheck_same_code_path/all/asis/abs_diff', 'selfcheck_same_code_path/all/asis/recomputed', 'selfcheck_same_code_path/heart/deep/abs_diff', 'selfcheck_same_code_path/heart/deep/recomputed', 'selfcheck_same_code_path/heart/mid/abs_diff', 'selfcheck_same_code_path/heart/mid/recomputed', 'selfcheck_same_code_path/heart/shallow/abs_diff', 'selfcheck_same_code_path/heart/shallow/recomputed']
+predictions/round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3
+predictions/round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3_export_b47
+predictions/round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3_regress_b58
+BATCH58 DONE
+
+[exited with code 0]
