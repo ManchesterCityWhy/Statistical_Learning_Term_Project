@@ -1,0 +1,27 @@
+round-6 base rows matched: 3200 of 3200 | distinct 3200
+library-3 cells free for the hypothetical truths: 8618 | anchor nuclei free: 3231
+T0 done
+T1 done
+T2 done
+T3 done
+T4 done
+                                                            score    DES    DCS    MMD    CSS
+truth                                        file                                            
+library 3 as it is                           round 7 file  80.311  0.758  0.913  0.796  0.732
+                                             round 6 file  90.602  0.852  0.995  0.926  0.832
+real cells, expression moved                 round 7 file  89.385  0.864  0.959  0.888  0.858
+                                             round 6 file  91.182  0.819  0.987  0.944  0.886
+real cells, composition moved (0.45)         round 7 file  84.574  0.818  0.956  0.827  0.771
+                                             round 6 file  87.667  0.877  0.981  0.877  0.745
+real cells, composition and expression moved round 7 file  94.912  0.949  0.987  0.938  0.919
+                                             round 6 file  87.644  0.805  0.957  0.910  0.815
+round-7 construction, other seed             round 7 file  99.834  1.000  1.000  0.994  1.000
+                                             round 6 file  88.009  0.818  0.954  0.898  0.839
+round 7 minus round 6:
+                                               mean   std
+truth                                                    
+library 3 as it is                           -10.29  0.31
+real cells, expression moved                  -1.80  0.81
+real cells, composition moved (0.45)          -3.09  1.03
+real cells, composition and expression moved   7.27  1.32
+round-7 construction, other seed              11.83  0.94

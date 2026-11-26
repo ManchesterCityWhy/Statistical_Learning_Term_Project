@@ -1,6 +1,6 @@
 total 668
 drwxr-xr-x  2 andreib180 andreib180  4096 2026-11-26 07:33:22.222317125 +0800 .
-drwxr-xr-x 32 andreib180 andreib180  4096 2026-11-26 07:20:44.575643795 +0800 ..
+drwxr-xr-x 33 andreib180 andreib180  4096 2026-11-26 08:14:59.261412649 +0800 ..
 -rw-r--r--  1 andreib180 andreib180 11822 2026-11-26 06:03:43.370745841 +0800 proxy_g10_confirmation_conf.csv
 -rw-r--r--  1 andreib180 andreib180 11864 2026-11-26 06:03:38.750021582 +0800 proxy_g10_development_dev.csv
 -rw-r--r--  1 andreib180 andreib180 15890 2026-11-26 06:12:48.348542817 +0800 proxy_g11_confirmation_conf.csv

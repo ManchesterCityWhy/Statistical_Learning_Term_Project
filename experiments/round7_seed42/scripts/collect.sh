@@ -3,7 +3,7 @@ set -e
 out=/mnt/d/statlearn/r7out
 rm -rf $out; mkdir -p $out/scores $out/logs $out/submit $out/scripts
 cd ~/statlearn_real
-for d in runs/round7_eval runs/round7_probe runs/round7_nb runs/round7_clean runs/round7_clean2 runs/round7_regime; do
+for d in runs/round7_eval runs/round7_probe runs/round7_nb runs/round7_clean runs/round7_clean2 runs/round7_regime runs/round7_payoff; do
   for f in $d/*.csv $d/*.json; do [ -e "$f" ] && cp $f $out/scores/$(basename $d)__$(basename $f); done
 done
 cp runs/round7_h1/info.json $out/scores/round7_h1__info.json
