@@ -158,10 +158,13 @@ def main():
                   + ("; base additionally moved forward along the lineage log-ratio (pos > 0)" if args.pos else "")
                   + ("; all cells of the lineages present in the anchor additionally moved forward along the part of the anchor / E10.5 "
                      "log-ratio that all lineages share (share `shared` of it, only in genes the cell type expresses itself)" if args.shared else "")
-                  + ("; molecular mixture: every real cell of a lineage present in the anchor is paired with an anchor nucleus of its cell type; "
+                  + ("; molecular mixture: every real cell is paired with an anchor nucleus assigned to its cell type (to its lineage where fewer "
+                     "than 50 anchor nuclei are assigned to the type; cells of the lineage 'Other', cells whose lineage also has fewer than 50 "
+                     "anchor nuclei, and cells of a type and lineage with fewer than 50 E10.5 cells are left unmixed); "
                      + ("for the genes its cell type has below `mix_low` counts per 10k at E10.5, " if args.mix_low is not None else "")
                      + "the cell keeps each of its molecules with probability 1 - mix and receives anchor molecules at the rate mix x depth x "
-                       "(share of the gene in the partner's profile); markers of other lineages are not received" if args.mix else ""),
+                       "(share of the gene in the partner's profile); genes whose mean in the cell type is below one twentieth of the largest "
+                       "lineage mean at E10.5 (mostly markers of other lineages) are removed from the profile first and are not received" if args.mix else ""),
         "configuration": {"f": args.f, "pos": args.pos, "fwd": args.pos, "bwd": 1.0 - args.pos, "harmonise": 1.0, "mode": "min",
                           "level": args.level, "dev": args.dev, "days_to_anchor": 4.0, "previous_stage": "E9.5 (all cells)" if args.dev else None,
                           "bulk_trend_share": args.trend, "real_share": args.real_share, "shared_forward_share": args.shared,

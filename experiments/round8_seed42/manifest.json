@@ -1,6 +1,6 @@
 {
   "name": "round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3",
-  "method": "E10.5 heart-proper library in its natural composition, plus E14.5 Multiome nuclei re-sequenced at E10.5 depth, harmonised and moved back to the E10.5 cell-type means (share bwd); both parts moved by the two-witness developmental shift (share dev of the E10.5 -> E14.5 path) and the within-cell bulk trend (share of its five days); a share real_share of the nuclei is not synthesised but represented by a real E10.5 cell of the assigned cell type (same cell-type composition; with real_share = 1 the file holds real E10.5 cells only); molecular mixture: every real cell of a lineage present in the anchor is paired with an anchor nucleus of its cell type; for the genes its cell type has below `mix_low` counts per 10k at E10.5, the cell keeps each of its molecules with probability 1 - mix and receives anchor molecules at the rate mix x depth x (share of the gene in the partner's profile); markers of other lineages are not received",
+  "method": "E10.5 heart-proper library in its natural composition, plus E14.5 Multiome nuclei re-sequenced at E10.5 depth, harmonised and moved back to the E10.5 cell-type means (share bwd); both parts moved by the two-witness developmental shift (share dev of the E10.5 -> E14.5 path) and the within-cell bulk trend (share of its five days); a share real_share of the nuclei is not synthesised but represented by a real E10.5 cell of the assigned cell type (same cell-type composition; with real_share = 1 the file holds real E10.5 cells only); molecular mixture: every real cell is paired with an anchor nucleus assigned to its cell type (to its lineage where fewer than 50 anchor nuclei are assigned to the type; cells of the lineage 'Other', cells whose lineage also has fewer than 50 anchor nuclei, and cells of a type and lineage with fewer than 50 E10.5 cells are left unmixed); for the genes its cell type has below `mix_low` counts per 10k at E10.5, the cell keeps each of its molecules with probability 1 - mix and receives anchor molecules at the rate mix x depth x (share of the gene in the partner's profile); genes whose mean in the cell type is below one twentieth of the largest lineage mean at E10.5 (mostly markers of other lineages) are removed from the profile first and are not received",
   "configuration": {
     "f": 0.45,
     "pos": 0.0,
@@ -457,7 +457,7 @@
     "E9.5_RNA.h5ad": "0296e0043842f944a663f3c11ac1542d1bbee733c1cd657bd56f75af65958361"
   },
   "code_sha256": {
-    "round7_export.py": "e41bc9ecd0fa88a21bf6118cb653b25286d29023863785af1021c750b74d033c",
+    "round7_export.py": "1e59b3c1882fc04196a69bc486cdd56ea3c589bec3f53361b38e86a4d39c6c32",
     "round7_method.py": "b8b14c2a0cb8f5a1f018eb7c4e494aff863bb45e5d0c4613463f803c940503ff",
     "round7_eval.py": "a39f8a6dc29d39e528f5616c4678266bbdb08d8593b44e2b9b02c4ace8c79b09",
     "round7_probe.py": "12659e8c141177f062f34587280c6b2b6060333572f39744dbea4dd43a4f0901",

@@ -1,0 +1,59 @@
+{'series': 'GSE272154', 'sample': 'GSM8394736 (RNA Wild Type e14.5 rep1)', 'stage': 'E14.5', 'assay': '10x Multiome nuclei, Cell Ranger ARC 2.0.2, mm10', 'called_barcodes': 8482, 'cells_after_qc': 5481, 'genes_matched': 32245, 'genes_in_file': 32291, 'median_umi': 3059.0, 'median_genes': 1729.0, 'desoup': False, 'soup_fraction': None, 'qc': {'min_umi': 1000, 'min_genes': 500, 'max_mito': 0.25}, 'sha256': {'GSM8394736_Wildtype_raw_feature_bc_matrix.h5': '684f31c2f2fdbf3eb7207439f868a076d405462b65b34155219d0249a68f3a3a', 'GSM8394736_Wildtype_per_barcode_metrics.csv.gz': '2b6e2e5e4773067c5ced9bef0efb67c5dd72140c90bd11221334c88a852bf954'}}
+{
+ "name": "round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4_real1_mix0.25low0.3",
+ "configuration": {
+  "f": 0.45,
+  "pos": 0.0,
+  "fwd": 0.0,
+  "bwd": 1.0,
+  "harmonise": 1.0,
+  "mode": "min",
+  "level": "type",
+  "dev": 0.5,
+  "days_to_anchor": 4.0,
+  "previous_stage": "E9.5 (all cells)",
+  "bulk_trend_share": 0.4,
+  "real_share": 1.0,
+  "shared_forward_share": 0.0,
+  "two_witness_on": "lineage-specific part of the ratio",
+  "shift_mode": "scale",
+  "mixture_share": 0.25,
+  "mixture_low_gene_threshold_per_10k": 0.3,
+  "mixture_partner_profile": "20",
+  "anchor_form": "resample (k_prof = 20, multinomial at source-lineage depth)"
+ },
+ "cells_total": 5000,
+ "base_cells": 2750,
+ "stand_in_cells": 2250,
+ "anchor_cells": 0,
+ "file": {
+  "lineage_shares_total": {
+   "CM": 0.298,
+   "Endo": 0.2892,
+   "Epi": 0.1376,
+   "Cushion": 0.0974,
+   "Blood": 0.089,
+   "Other": 0.0714,
+   "Mac": 0.0174
+  },
+  "median_genes_detected": 3958.0,
+  "median_genes_detected_base": 3898.0,
+  "median_genes_detected_real_cells": 3958.0,
+  "nonzero_fraction": 0.12109653399411491,
+  "distinct_rows": 5000,
+  "library_sum_min": 9999.999490837927,
+  "library_sum_max": 10000.00055679286
+ },
+ "validation": {
+  "board": "T1:test",
+  "cells": 5000,
+  "genes": 32285,
+  "sha256": "26be7ed5f49a3e4cf21c8b5e188212e435698a7b15b152df9826a71af2cd7053",
+  "bytes": 103166817,
+  "format_valid": true,
+  "normalization_verified": false
+ },
+ "prediction_cells_sha256": "e6ac54064c70b64096eaec3a3494a1447fe4fd520fae4ab08665563378c6bf93",
+ "file_sha256": "26be7ed5f49a3e4cf21c8b5e188212e435698a7b15b152df9826a71af2cd7053",
+ "file_bytes": 103166817
+}

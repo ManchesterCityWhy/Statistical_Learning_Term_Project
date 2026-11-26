@@ -1,0 +1,27 @@
+              type lineage  file cells  mixed  anchor nuclei of the type  anchor nuclei of the lineage  partners of the same type partner pool
+            AVC-CM      CM          97     97                         25                          2307                          0      lineage
+               BEC    Endo         291    291                        387                          1737                        291         type
+             Blood   Blood         445      0                          4                             4                          0         none
+         Early VIC Cushion         179    179                         76                           410                        179         type
+EndoMT Endocardium Cushion         308    308                        334                           410                        308         type
+     Endocardium-1    Endo         324    324                         54                          1737                        324         type
+     Endocardium-2    Endo         831    831                       1296                          1737                        831         type
+        Epicardium     Epi         688    688                        337                           337                        688         type
+      Gut Endoderm   Other           4      0                          2                           517                          0         none
+        Hepatocyte   Other          16      0                          0                           517                          0         none
+            IFT-CM      CM          95     95                        114                          2307                         95         type
+             LV-CM      CM         648    648                       1589                          2307                        648         type
+        Macrophage     Mac          87     87                        169                           169                         87         type
+               NCC   Other           4      0                          7                           517                          0         none
+            OFT-CM      CM         256    256                        362                          2307                        256         type
+       Pericardium   Other          54      0                         98                           517                          0         none
+             RV-CM      CM         312    312                        176                          2307                        312         type
+                ST   Other          33      0                         57                           517                          0         none
+             SV-CM      CM          82     82                         41                          2307                          3      lineage
+  Surface Ectoderm   Other          12      0                          0                           517                          0         none
+              aPHM   Other          20      0                          3                           517                          0         none
+              pPHM   Other          22      0                          2                           517                          0         none
+              pSHF   Other         192      0                        348                           517                          0         none
+anchor nuclei in total 5481 | assigned to Blood 4 | to Other 517
+mixed cells with a partner of the same type: 4022 of 4198
+library-3 macrophages: 84
