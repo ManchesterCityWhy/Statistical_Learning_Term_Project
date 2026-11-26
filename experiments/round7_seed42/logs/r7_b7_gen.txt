@@ -1,0 +1,124 @@
+[suite] gen      ready    16s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  52.24  DES 0.525 DCS 0.554 MMD 0.506 CSS 0.503
+config=back-resample rho0.4 k3 proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  57.71  DES 0.598 DCS 0.624 MMD 0.546 CSS 0.538
+config=back-resample rho0.4 k5 proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  57.83  DES 0.598 DCS 0.628 MMD 0.545 CSS 0.542
+config=back-resample rho0.4 k10 proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  57.87  DES 0.598 DCS 0.630 MMD 0.544 CSS 0.543
+config=back-resample rho0.4 k20 proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  58.30  DES 0.612 DCS 0.631 MMD 0.544 CSS 0.545
+config=back-resample rho0.4 k10 type proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  58.04  DES 0.598 DCS 0.631 MMD 0.547 CSS 0.545
+config=back-resample rho0.4 k5 type proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  57.75  DES 0.591 DCS 0.628 MMD 0.548 CSS 0.543
+config=back-resample rho0.4 k10 median proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  57.85  DES 0.598 DCS 0.630 MMD 0.543 CSS 0.543
+config=back-resample rho0.75 k3 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  57.63  DES 0.565 DCS 0.624 MMD 0.573 CSS 0.536
+config=back-resample rho0.75 k5 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  58.90  DES 0.598 DCS 0.630 MMD 0.573 CSS 0.551
+config=back-resample rho0.75 k10 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.16  DES 0.598 DCS 0.635 MMD 0.573 CSS 0.558
+config=back-resample rho0.75 k20 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.50  DES 0.605 DCS 0.639 MMD 0.573 CSS 0.561
+config=back-resample rho0.75 k10 type proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.43  DES 0.598 DCS 0.637 MMD 0.579 CSS 0.560
+config=back-resample rho0.75 k5 type proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  58.78  DES 0.584 DCS 0.631 MMD 0.578 CSS 0.552
+config=back-resample rho0.75 k10 median proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.10  DES 0.598 DCS 0.635 MMD 0.571 CSS 0.557
+config=back-resample rho0.2 k10 proxy=gen split=development f=0.0333 t=0.0 bwd=1.0 seed=42  56.01  DES 0.591 DCS 0.609 MMD 0.527 CSS 0.510
+config=back-resample rho0.6 k10 proxy=gen split=development f=0.1 t=0.0 bwd=1.0 seed=42  58.75  DES 0.598 DCS 0.637 MMD 0.564 CSS 0.549
+config=back-resample rho0.9 k10 proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42  59.89  DES 0.605 DCS 0.638 MMD 0.581 CSS 0.570
+done 61s
+proxy                               gen
+config                                 
+base only                         52.24
+back-resample rho0.4 k3           57.71
+back-resample rho0.4 k5           57.83
+back-resample rho0.4 k10          57.87
+back-resample rho0.4 k20          58.30
+back-resample rho0.4 k10 type     58.04
+back-resample rho0.4 k5 type      57.75
+back-resample rho0.4 k10 median   57.85
+back-resample rho0.75 k3          57.63
+back-resample rho0.75 k5          58.90
+back-resample rho0.75 k10         59.16
+back-resample rho0.75 k20         59.50
+back-resample rho0.75 k10 type    59.43
+back-resample rho0.75 k5 type     58.78
+back-resample rho0.75 k10 median  59.10
+back-resample rho0.2 k10          56.01
+back-resample rho0.6 k10          58.75
+back-resample rho0.9 k10          59.89
+skill_de_score
+proxy                               gen
+config                                 
+base only                         0.525
+back-resample rho0.4 k3           0.598
+back-resample rho0.4 k5           0.598
+back-resample rho0.4 k10          0.598
+back-resample rho0.4 k20          0.612
+back-resample rho0.4 k10 type     0.598
+back-resample rho0.4 k5 type      0.591
+back-resample rho0.4 k10 median   0.598
+back-resample rho0.75 k3          0.565
+back-resample rho0.75 k5          0.598
+back-resample rho0.75 k10         0.598
+back-resample rho0.75 k20         0.605
+back-resample rho0.75 k10 type    0.598
+back-resample rho0.75 k5 type     0.584
+back-resample rho0.75 k10 median  0.598
+back-resample rho0.2 k10          0.591
+back-resample rho0.6 k10          0.598
+back-resample rho0.9 k10          0.605
+skill_de_direction
+proxy                               gen
+config                                 
+base only                         0.554
+back-resample rho0.4 k3           0.624
+back-resample rho0.4 k5           0.628
+back-resample rho0.4 k10          0.630
+back-resample rho0.4 k20          0.631
+back-resample rho0.4 k10 type     0.631
+back-resample rho0.4 k5 type      0.628
+back-resample rho0.4 k10 median   0.630
+back-resample rho0.75 k3          0.624
+back-resample rho0.75 k5          0.630
+back-resample rho0.75 k10         0.635
+back-resample rho0.75 k20         0.639
+back-resample rho0.75 k10 type    0.637
+back-resample rho0.75 k5 type     0.631
+back-resample rho0.75 k10 median  0.635
+back-resample rho0.2 k10          0.609
+back-resample rho0.6 k10          0.637
+back-resample rho0.9 k10          0.638
+skill_mmd_u
+proxy                               gen
+config                                 
+base only                         0.506
+back-resample rho0.4 k3           0.546
+back-resample rho0.4 k5           0.545
+back-resample rho0.4 k10          0.544
+back-resample rho0.4 k20          0.544
+back-resample rho0.4 k10 type     0.547
+back-resample rho0.4 k5 type      0.548
+back-resample rho0.4 k10 median   0.543
+back-resample rho0.75 k3          0.573
+back-resample rho0.75 k5          0.573
+back-resample rho0.75 k10         0.573
+back-resample rho0.75 k20         0.573
+back-resample rho0.75 k10 type    0.579
+back-resample rho0.75 k5 type     0.578
+back-resample rho0.75 k10 median  0.571
+back-resample rho0.2 k10          0.527
+back-resample rho0.6 k10          0.564
+back-resample rho0.9 k10          0.581
+skill_variogram
+proxy                               gen
+config                                 
+base only                         0.503
+back-resample rho0.4 k3           0.538
+back-resample rho0.4 k5           0.542
+back-resample rho0.4 k10          0.543
+back-resample rho0.4 k20          0.545
+back-resample rho0.4 k10 type     0.545
+back-resample rho0.4 k5 type      0.543
+back-resample rho0.4 k10 median   0.543
+back-resample rho0.75 k3          0.536
+back-resample rho0.75 k5          0.551
+back-resample rho0.75 k10         0.558
+back-resample rho0.75 k20         0.561
+back-resample rho0.75 k10 type    0.560
+back-resample rho0.75 k5 type     0.552
+back-resample rho0.75 k10 median  0.557
+back-resample rho0.2 k10          0.510
+back-resample rho0.6 k10          0.549
+back-resample rho0.9 k10          0.570

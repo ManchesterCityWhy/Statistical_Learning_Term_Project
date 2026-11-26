@@ -1,0 +1,133 @@
+scenario pool 11486 42s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/deep split=development f=0.2 t=0.0 bwd=0.0 seed=42  88.45  DES 0.835 DCS 0.952 MMD 0.921 CSS 0.808
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/mid split=development f=0.2 t=0.0 bwd=0.0 seed=42  92.21  DES 0.880 DCS 0.952 MMD 0.952 CSS 0.893
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/shallow split=development f=0.2 t=0.0 bwd=0.0 seed=42  86.05  DES 0.869 DCS 0.886 MMD 0.903 CSS 0.754
+config=round 6 file (raw anchor, rho 0.4) scenario=all/asis split=development f=0.2 t=0.0 bwd=0.0 seed=42  79.16  DES 0.703 DCS 0.889 MMD 0.774 CSS 0.806
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/deep split=development f=0.375 t=0.0 bwd=0.0 seed=42  73.72  DES 0.734 DCS 0.878 MMD 0.740 CSS 0.561
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/mid split=development f=0.375 t=0.0 bwd=0.0 seed=42  81.02  DES 0.755 DCS 0.890 MMD 0.797 CSS 0.799
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/shallow split=development f=0.375 t=0.0 bwd=0.0 seed=42  80.46  DES 0.761 DCS 0.857 MMD 0.818 CSS 0.772
+config=round 6 first version (raw anchor, rho 0.75) scenario=all/asis split=development f=0.375 t=0.0 bwd=0.0 seed=42  72.41  DES 0.672 DCS 0.870 MMD 0.655 CSS 0.711
+config=R7 anchor only (rho 0.9) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  86.18  DES 0.822 DCS 0.905 MMD 0.869 CSS 0.846
+config=R7 anchor only (rho 0.9) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  81.97  DES 0.802 DCS 0.878 MMD 0.853 CSS 0.719
+config=R7 anchor only (rho 0.9) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  74.36  DES 0.732 DCS 0.819 MMD 0.776 CSS 0.615
+config=R7 anchor only (rho 0.9) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  68.19  DES 0.626 DCS 0.834 MMD 0.638 CSS 0.628
+config=R7 anchor + two-witness scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.45  DES 0.783 DCS 0.895 MMD 0.827 CSS 0.784
+config=R7 anchor + two-witness scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  79.92  DES 0.793 DCS 0.868 MMD 0.820 CSS 0.689
+config=R7 anchor + two-witness scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.05  DES 0.715 DCS 0.817 MMD 0.757 CSS 0.602
+config=R7 anchor + two-witness scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  66.69  DES 0.630 DCS 0.830 MMD 0.608 CSS 0.597
+config=R7 anchor + trend scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  81.49  DES 0.752 DCS 0.884 MMD 0.830 CSS 0.785
+config=R7 anchor + trend scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.50  DES 0.770 DCS 0.875 MMD 0.845 CSS 0.701
+config=R7 anchor + trend scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  74.50  DES 0.715 DCS 0.821 MMD 0.796 CSS 0.611
+config=R7 anchor + trend scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.31  DES 0.632 DCS 0.836 MMD 0.616 CSS 0.605
+config=R7 anchor + two-witness + trend x0.5 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.59  DES 0.759 DCS 0.888 MMD 0.809 CSS 0.756
+config=R7 anchor + two-witness + trend x0.5 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  79.34  DES 0.783 DCS 0.869 MMD 0.815 CSS 0.679
+config=R7 anchor + two-witness + trend x0.5 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.15  DES 0.710 DCS 0.818 MMD 0.765 CSS 0.600
+config=R7 anchor + two-witness + trend x0.5 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  66.45  DES 0.638 DCS 0.834 MMD 0.598 CSS 0.585
+config=R7 (candidate): anchor + two-witness + trend scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  78.17  DES 0.734 DCS 0.878 MMD 0.782 CSS 0.720
+config=R7 (candidate): anchor + two-witness + trend scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  78.09  DES 0.755 DCS 0.868 MMD 0.804 CSS 0.670
+config=R7 (candidate): anchor + two-witness + trend scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.07  DES 0.698 DCS 0.820 MMD 0.770 CSS 0.600
+config=R7 (candidate): anchor + two-witness + trend scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  65.71  DES 0.634 DCS 0.834 MMD 0.584 CSS 0.574
+config=R7 anchor + two-witness + trend x1.5 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  75.18  DES 0.710 DCS 0.863 MMD 0.744 CSS 0.677
+config=R7 anchor + two-witness + trend x1.5 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  76.10  DES 0.712 DCS 0.862 MMD 0.785 CSS 0.660
+config=R7 anchor + two-witness + trend x1.5 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  72.87  DES 0.686 DCS 0.821 MMD 0.773 CSS 0.601
+config=R7 anchor + two-witness + trend x1.5 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  64.47  DES 0.620 DCS 0.831 MMD 0.565 CSS 0.562
+config=R7 with rho 0.6 scenario=heart/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42  83.72  DES 0.752 DCS 0.915 MMD 0.858 CSS 0.816
+config=R7 with rho 0.6 scenario=heart/mid split=development f=0.3 t=0.0 bwd=1.0 seed=42  82.65  DES 0.785 DCS 0.898 MMD 0.873 CSS 0.720
+config=R7 with rho 0.6 scenario=heart/shallow split=development f=0.3 t=0.0 bwd=1.0 seed=42  76.04  DES 0.723 DCS 0.838 MMD 0.819 CSS 0.621
+config=R7 with rho 0.6 scenario=all/asis split=development f=0.3 t=0.0 bwd=1.0 seed=42  69.21  DES 0.650 DCS 0.851 MMD 0.638 CSS 0.626
+config=R7 with rho 1.2 scenario=heart/deep split=development f=0.6 t=0.0 bwd=1.0 seed=42  73.27  DES 0.719 DCS 0.846 MMD 0.708 CSS 0.644
+config=R7 with rho 1.2 scenario=heart/mid split=development f=0.6 t=0.0 bwd=1.0 seed=42  73.94  DES 0.741 DCS 0.835 MMD 0.733 CSS 0.627
+config=R7 with rho 1.2 scenario=heart/shallow split=development f=0.6 t=0.0 bwd=1.0 seed=42  69.93  DES 0.680 DCS 0.795 MMD 0.715 CSS 0.580
+config=R7 with rho 1.2 scenario=all/asis split=development f=0.6 t=0.0 bwd=1.0 seed=42  62.27  DES 0.617 DCS 0.813 MMD 0.530 CSS 0.531
+config=R7 two-witness + trend, no anchor scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  92.04  DES 0.820 DCS 0.972 MMD 0.949 CSS 0.939
+config=R7 two-witness + trend, no anchor scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  89.05  DES 0.834 DCS 0.949 MMD 0.957 CSS 0.788
+config=R7 two-witness + trend, no anchor scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  80.34  DES 0.758 DCS 0.873 MMD 0.885 CSS 0.652
+config=R7 two-witness + trend, no anchor scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  75.08  DES 0.679 DCS 0.885 MMD 0.728 CSS 0.707
+config=R7 with lineage-level back shift scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  77.35  DES 0.738 DCS 0.875 MMD 0.761 CSS 0.711
+config=R7 with lineage-level back shift scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  76.88  DES 0.745 DCS 0.863 MMD 0.781 CSS 0.662
+config=R7 with lineage-level back shift scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  72.28  DES 0.701 DCS 0.815 MMD 0.750 CSS 0.594
+config=R7 with lineage-level back shift scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  64.82  DES 0.630 DCS 0.833 MMD 0.565 CSS 0.565
+done 161s
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                         100.00      93.26          81.26     77.20
+round 6 file (raw anchor, rho 0.4)                 88.45      92.21          86.05     79.16
+round 6 first version (raw anchor, rho 0.75)       73.72      81.02          80.46     72.41
+R7 anchor only (rho 0.9)                           86.18      81.97          74.36     68.19
+R7 anchor + two-witness                            82.45      79.92          73.05     66.69
+R7 anchor + trend                                  81.49      80.50          74.50     67.31
+R7 anchor + two-witness + trend x0.5               80.59      79.34          73.15     66.45
+R7 (candidate): anchor + two-witness + trend       78.17      78.09          73.07     65.71
+R7 anchor + two-witness + trend x1.5               75.18      76.10          72.87     64.47
+R7 with rho 0.6                                    83.72      82.65          76.04     69.21
+R7 with rho 1.2                                    73.27      73.94          69.93     62.27
+R7 two-witness + trend, no anchor                  92.04      89.05          80.34     75.08
+R7 with lineage-level back shift                   77.35      76.88          72.28     64.82
+skill_de_score
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.973          0.829     0.713
+round 6 file (raw anchor, rho 0.4)                 0.835      0.880          0.869     0.703
+round 6 first version (raw anchor, rho 0.75)       0.734      0.755          0.761     0.672
+R7 anchor only (rho 0.9)                           0.822      0.802          0.732     0.626
+R7 anchor + two-witness                            0.783      0.793          0.715     0.630
+R7 anchor + trend                                  0.752      0.770          0.715     0.632
+R7 anchor + two-witness + trend x0.5               0.759      0.783          0.710     0.638
+R7 (candidate): anchor + two-witness + trend       0.734      0.755          0.698     0.634
+R7 anchor + two-witness + trend x1.5               0.710      0.712          0.686     0.620
+R7 with rho 0.6                                    0.752      0.785          0.723     0.650
+R7 with rho 1.2                                    0.719      0.741          0.680     0.617
+R7 two-witness + trend, no anchor                  0.820      0.834          0.758     0.679
+R7 with lineage-level back shift                   0.738      0.745          0.701     0.630
+skill_de_direction
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.962          0.876     0.879
+round 6 file (raw anchor, rho 0.4)                 0.952      0.952          0.886     0.889
+round 6 first version (raw anchor, rho 0.75)       0.878      0.890          0.857     0.870
+R7 anchor only (rho 0.9)                           0.905      0.878          0.819     0.834
+R7 anchor + two-witness                            0.895      0.868          0.817     0.830
+R7 anchor + trend                                  0.884      0.875          0.821     0.836
+R7 anchor + two-witness + trend x0.5               0.888      0.869          0.818     0.834
+R7 (candidate): anchor + two-witness + trend       0.878      0.868          0.820     0.834
+R7 anchor + two-witness + trend x1.5               0.863      0.862          0.821     0.831
+R7 with rho 0.6                                    0.915      0.898          0.838     0.851
+R7 with rho 1.2                                    0.846      0.835          0.795     0.813
+R7 two-witness + trend, no anchor                  0.972      0.949          0.873     0.885
+R7 with lineage-level back shift                   0.875      0.863          0.815     0.833
+skill_mmd_u
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.964          0.855     0.761
+round 6 file (raw anchor, rho 0.4)                 0.921      0.952          0.903     0.774
+round 6 first version (raw anchor, rho 0.75)       0.740      0.797          0.818     0.655
+R7 anchor only (rho 0.9)                           0.869      0.853          0.776     0.638
+R7 anchor + two-witness                            0.827      0.820          0.757     0.608
+R7 anchor + trend                                  0.830      0.845          0.796     0.616
+R7 anchor + two-witness + trend x0.5               0.809      0.815          0.765     0.598
+R7 (candidate): anchor + two-witness + trend       0.782      0.804          0.770     0.584
+R7 anchor + two-witness + trend x1.5               0.744      0.785          0.773     0.565
+R7 with rho 0.6                                    0.858      0.873          0.819     0.638
+R7 with rho 1.2                                    0.708      0.733          0.715     0.530
+R7 two-witness + trend, no anchor                  0.949      0.957          0.885     0.728
+R7 with lineage-level back shift                   0.761      0.781          0.750     0.565
+skill_variogram
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.798          0.650     0.729
+round 6 file (raw anchor, rho 0.4)                 0.808      0.893          0.754     0.806
+round 6 first version (raw anchor, rho 0.75)       0.561      0.799          0.772     0.711
+R7 anchor only (rho 0.9)                           0.846      0.719          0.615     0.628
+R7 anchor + two-witness                            0.784      0.689          0.602     0.597
+R7 anchor + trend                                  0.785      0.701          0.611     0.605
+R7 anchor + two-witness + trend x0.5               0.756      0.679          0.600     0.585
+R7 (candidate): anchor + two-witness + trend       0.720      0.670          0.600     0.574
+R7 anchor + two-witness + trend x1.5               0.677      0.660          0.601     0.562
+R7 with rho 0.6                                    0.816      0.720          0.621     0.626
+R7 with rho 1.2                                    0.644      0.627          0.580     0.531
+R7 two-witness + trend, no anchor                  0.939      0.788          0.652     0.707
+R7 with lineage-level back shift                   0.711      0.662          0.594     0.565

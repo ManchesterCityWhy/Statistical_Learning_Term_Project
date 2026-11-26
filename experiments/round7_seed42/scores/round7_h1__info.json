@@ -1,0 +1,33 @@
+{
+ "sha256_rebuilt": "89fbad570dbb4ab1d6f6005e1276886011a5616ed770b84bbb9d8a6f9d38b1e6",
+ "sha256_submitted": "d6f5ac379e31919494367552a40b376ff2f735d80135ea2a7a22dfec0aa34ed1",
+ "identical": false,
+ "bytes": 33073433,
+ "proportions": {
+  "AVC-CM": 0.0041,
+  "Blood": 0.1788,
+  "Early VIC": 0.056,
+  "Endocardium-2": 0.2044,
+  "Epicardium": 0.0915,
+  "Macrophage": 0.11,
+  "NCC": 0.0363,
+  "Pericardium": 0.1806,
+  "RV-CM": 0.0876,
+  "ST": 0.0299,
+  "SV-CM": 0.0209
+ },
+ "library_share": {
+  "1": 0.3325,
+  "2": 0.165,
+  "3": 0.5025
+ },
+ "validation": {
+  "board": "T1:test",
+  "cells": 2000,
+  "genes": 32285,
+  "sha256": "89fbad570dbb4ab1d6f6005e1276886011a5616ed770b84bbb9d8a6f9d38b1e6",
+  "bytes": 33073433,
+  "format_valid": true,
+  "normalization_verified": false
+ }
+}

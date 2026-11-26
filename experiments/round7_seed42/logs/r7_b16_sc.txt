@@ -1,0 +1,97 @@
+scenario pool 11486 37s
+config=base only scenario=heart/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  99.84  DES 1.000 DCS 1.000 MMD 0.995 CSS 1.000
+config=base only scenario=heart/mid split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  92.89  DES 0.950 DCS 0.974 MMD 0.956 CSS 0.805
+config=base only scenario=heart/shallow split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  81.11  DES 0.832 DCS 0.876 MMD 0.845 CSS 0.653
+config=base only scenario=all/asis split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  77.73  DES 0.700 DCS 0.876 MMD 0.787 CSS 0.735
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/deep split=confirmation f=0.2 t=0.0 bwd=0.0 seed=42  88.78  DES 0.872 DCS 0.950 MMD 0.914 CSS 0.791
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/mid split=confirmation f=0.2 t=0.0 bwd=0.0 seed=42  92.67  DES 0.886 DCS 0.963 MMD 0.948 CSS 0.900
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/shallow split=confirmation f=0.2 t=0.0 bwd=0.0 seed=42  85.87  DES 0.867 DCS 0.884 MMD 0.898 CSS 0.758
+config=round 6 file (raw anchor, rho 0.4) scenario=all/asis split=confirmation f=0.2 t=0.0 bwd=0.0 seed=42  79.65  DES 0.685 DCS 0.888 MMD 0.801 CSS 0.814
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/deep split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  74.11  DES 0.768 DCS 0.873 MMD 0.735 CSS 0.551
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/mid split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  81.75  DES 0.772 DCS 0.896 MMD 0.798 CSS 0.806
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/shallow split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  80.55  DES 0.762 DCS 0.855 MMD 0.819 CSS 0.777
+config=round 6 first version (raw anchor, rho 0.75) scenario=all/asis split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  73.60  DES 0.679 DCS 0.867 MMD 0.682 CSS 0.724
+config=R7 (final): anchor + two-witness + trend scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  79.48  DES 0.761 DCS 0.877 MMD 0.789 CSS 0.744
+config=R7 (final): anchor + two-witness + trend scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  78.40  DES 0.779 DCS 0.870 MMD 0.801 CSS 0.656
+config=R7 (final): anchor + two-witness + trend scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  72.07  DES 0.699 DCS 0.811 MMD 0.756 CSS 0.582
+config=R7 (final): anchor + two-witness + trend scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  64.97  DES 0.608 DCS 0.823 MMD 0.599 CSS 0.560
+config=R7 without two-witness scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  83.09  DES 0.794 DCS 0.886 MMD 0.833 CSS 0.805
+config=R7 without two-witness scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  79.98  DES 0.772 DCS 0.879 MMD 0.836 CSS 0.682
+config=R7 without two-witness scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  73.38  DES 0.716 DCS 0.815 MMD 0.777 CSS 0.591
+config=R7 without two-witness scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  65.98  DES 0.597 DCS 0.822 MMD 0.627 CSS 0.585
+config=R7 without trend scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  83.95  DES 0.823 DCS 0.894 MMD 0.830 CSS 0.805
+config=R7 without trend scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  79.77  DES 0.809 DCS 0.872 MMD 0.811 CSS 0.671
+config=R7 without trend scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  71.66  DES 0.706 DCS 0.807 MMD 0.739 CSS 0.583
+config=R7 without trend scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  65.89  DES 0.607 DCS 0.822 MMD 0.620 CSS 0.580
+config=R7 without both scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  87.23  DES 0.852 DCS 0.907 MMD 0.867 CSS 0.861
+config=R7 without both scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  81.83  DES 0.828 DCS 0.883 MMD 0.838 CSS 0.695
+config=R7 without both scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  72.60  DES 0.712 DCS 0.813 MMD 0.754 CSS 0.593
+config=R7 without both scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  67.06  DES 0.605 DCS 0.822 MMD 0.643 CSS 0.605
+config=R7 without anchor scenario=heart/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  93.09  DES 0.855 DCS 0.978 MMD 0.946 CSS 0.945
+config=R7 without anchor scenario=heart/mid split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  89.64  DES 0.842 DCS 0.960 MMD 0.955 CSS 0.797
+config=R7 without anchor scenario=heart/shallow split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  81.01  DES 0.792 DCS 0.872 MMD 0.877 CSS 0.655
+config=R7 without anchor scenario=all/asis split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  75.19  DES 0.649 DCS 0.879 MMD 0.757 CSS 0.714
+config=R7 with raw anchor instead (rho 0.9) scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  65.57  DES 0.712 DCS 0.844 MMD 0.603 CSS 0.429
+config=R7 with raw anchor instead (rho 0.9) scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  74.15  DES 0.726 DCS 0.874 MMD 0.675 CSS 0.696
+config=R7 with raw anchor instead (rho 0.9) scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  76.68  DES 0.741 DCS 0.841 MMD 0.738 CSS 0.749
+config=R7 with raw anchor instead (rho 0.9) scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  66.38  DES 0.640 DCS 0.853 MMD 0.562 CSS 0.610
+done 110s
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          99.84      92.89          81.11     77.73
+round 6 file (raw anchor, rho 0.4)                 88.78      92.67          85.87     79.65
+round 6 first version (raw anchor, rho 0.75)       74.11      81.75          80.55     73.60
+R7 (final): anchor + two-witness + trend           79.48      78.40          72.07     64.97
+R7 without two-witness                             83.09      79.98          73.38     65.98
+R7 without trend                                   83.95      79.77          71.66     65.89
+R7 without both                                    87.23      81.83          72.60     67.06
+R7 without anchor                                  93.09      89.64          81.01     75.19
+R7 with raw anchor instead (rho 0.9)               65.57      74.15          76.68     66.38
+skill_de_score
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.950          0.832     0.700
+round 6 file (raw anchor, rho 0.4)                 0.872      0.886          0.867     0.685
+round 6 first version (raw anchor, rho 0.75)       0.768      0.772          0.762     0.679
+R7 (final): anchor + two-witness + trend           0.761      0.779          0.699     0.608
+R7 without two-witness                             0.794      0.772          0.716     0.597
+R7 without trend                                   0.823      0.809          0.706     0.607
+R7 without both                                    0.852      0.828          0.712     0.605
+R7 without anchor                                  0.855      0.842          0.792     0.649
+R7 with raw anchor instead (rho 0.9)               0.712      0.726          0.741     0.640
+skill_de_direction
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.974          0.876     0.876
+round 6 file (raw anchor, rho 0.4)                 0.950      0.963          0.884     0.888
+round 6 first version (raw anchor, rho 0.75)       0.873      0.896          0.855     0.867
+R7 (final): anchor + two-witness + trend           0.877      0.870          0.811     0.823
+R7 without two-witness                             0.886      0.879          0.815     0.822
+R7 without trend                                   0.894      0.872          0.807     0.822
+R7 without both                                    0.907      0.883          0.813     0.822
+R7 without anchor                                  0.978      0.960          0.872     0.879
+R7 with raw anchor instead (rho 0.9)               0.844      0.874          0.841     0.853
+skill_mmd_u
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          0.995      0.956          0.845     0.787
+round 6 file (raw anchor, rho 0.4)                 0.914      0.948          0.898     0.801
+round 6 first version (raw anchor, rho 0.75)       0.735      0.798          0.819     0.682
+R7 (final): anchor + two-witness + trend           0.789      0.801          0.756     0.599
+R7 without two-witness                             0.833      0.836          0.777     0.627
+R7 without trend                                   0.830      0.811          0.739     0.620
+R7 without both                                    0.867      0.838          0.754     0.643
+R7 without anchor                                  0.946      0.955          0.877     0.757
+R7 with raw anchor instead (rho 0.9)               0.603      0.675          0.738     0.562
+skill_variogram
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.805          0.653     0.735
+round 6 file (raw anchor, rho 0.4)                 0.791      0.900          0.758     0.814
+round 6 first version (raw anchor, rho 0.75)       0.551      0.806          0.777     0.724
+R7 (final): anchor + two-witness + trend           0.744      0.656          0.582     0.560
+R7 without two-witness                             0.805      0.682          0.591     0.585
+R7 without trend                                   0.805      0.671          0.583     0.580
+R7 without both                                    0.861      0.695          0.593     0.605
+R7 without anchor                                  0.945      0.797          0.655     0.714
+R7 with raw anchor instead (rho 0.9)               0.429      0.696          0.749     0.610

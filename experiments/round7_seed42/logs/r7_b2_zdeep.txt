@@ -1,0 +1,50 @@
+probe library shares {'1': 0.319, '2': 0.166, '3': 0.515}
+[zero/heart/deep] probe actual 71.88  de_score 0.704 de_direction 0.831 mmd_u 0.737 variogram 0.570 47s
+[zero/heart/deep] heartlib                                      actual 100.00  D 0.00078  probe-if-true  69.47
+[zero/heart/deep] heartlib blood.5                              actual  96.32  D 0.00586  probe-if-true  65.23
+[zero/heart/deep] all libraries                                 actual  75.16  D 0.01948  probe-if-true  81.57
+[zero/heart/deep] heart cells, all libraries                    actual  90.57  D 0.01402  probe-if-true  80.05
+[zero/heart/deep] heartlib + 0.2 raw                            actual  88.45  D 0.00953  probe-if-true  77.48
+[zero/heart/deep] heartlib + 0.2 pooled                         actual  91.41  D 0.00029  probe-if-true  70.48
+[zero/heart/deep] heartlib + 0.2 pooled back                    actual  93.42  D 0.00032  probe-if-true  70.29
+[zero/heart/deep] heartlib fwd + 0.2 pooled back                actual  86.59  D 0.00050  probe-if-true  70.71
+[zero/heart/deep] heartlib blood.5 + 0.2 raw                    actual  87.52  D 0.00362  probe-if-true  71.72
+[zero/heart/deep] heartlib blood.5 fwd + 0.2 pooled back        actual  81.98  D 0.00345  probe-if-true  66.13
+[zero/heart/deep] heartlib + 0.375 raw                          actual  73.72  D 0.01509  probe-if-true  78.52
+[zero/heart/deep] heartlib + 0.375 pooled                       actual  77.26  D 0.00163  probe-if-true  68.25
+[zero/heart/deep] heartlib + 0.375 pooled back                  actual  80.94  D 0.00147  probe-if-true  68.35
+[zero/heart/deep] heartlib fwd + 0.375 pooled back              actual  76.11  D 0.00166  probe-if-true  68.37
+[zero/heart/deep] heartlib blood.5 + 0.375 raw                  actual  73.54  D 0.01184  probe-if-true  76.10
+[zero/heart/deep] heartlib blood.5 fwd + 0.375 pooled back      actual  73.40  D 0.00344  probe-if-true  66.17
+[zero/heart/deep] heartlib fwd                                  actual  94.32  D 0.00008  probe-if-true  71.48
+[zero/heart/deep] all libraries + 0.375 raw                     actual  64.52  D 0.02134  probe-if-true  81.01
+[zero/heart/deep] heart cells, all libraries + 0.2 raw          actual  81.35  D 0.02618  probe-if-true  83.15
+[zero/heart/deep] heartlib + 0.5 raw                            actual  65.66  D 0.01353  probe-if-true  77.52
+[zero/heart/deep] heartlib fwd + 0.5 pooled back                actual  70.91  D 0.00291  probe-if-true  67.03
+
+=== zero/heart/deep
+                                            actual       D  probe_total  skill_de_score  skill_de_direction  skill_mmd_u  skill_variogram
+recipe                                                                                                                                   
+heartlib fwd                               94.3200  0.0001      71.4769          0.7048              0.8145       0.7401           0.5646
+heartlib + 0.2 pooled back                 93.4246  0.0003      70.2925          0.6989              0.8028       0.7222           0.5541
+heartlib + 0.2 pooled                      91.4127  0.0003      70.4833          0.6974              0.8002       0.7271           0.5616
+heartlib fwd + 0.2 pooled back             86.5904  0.0005      70.7102          0.6937              0.7894       0.7456           0.5632
+heartlib                                  100.0000  0.0008      69.4722          0.6912              0.8207       0.6925           0.5450
+heartlib + 0.375 pooled back               80.9441  0.0015      68.3525          0.6780              0.7703       0.7108           0.5411
+heartlib + 0.375 pooled                    77.2552  0.0016      68.2534          0.6720              0.7648       0.7114           0.5495
+heartlib fwd + 0.375 pooled back           76.1120  0.0017      68.3668          0.6718              0.7617       0.7206           0.5456
+heartlib fwd + 0.5 pooled back             70.9056  0.0029      67.0271          0.6622              0.7426       0.7032           0.5405
+heartlib blood.5 fwd + 0.375 pooled back   73.4008  0.0034      66.1688          0.6582              0.7513       0.6842           0.5202
+heartlib blood.5 fwd + 0.2 pooled back     81.9795  0.0035      66.1251          0.6641              0.7699       0.6787           0.4958
+heartlib blood.5 + 0.2 raw                 87.5224  0.0036      71.7242          0.6545              0.8161       0.7075           0.6867
+heartlib blood.5                           96.3202  0.0059      65.2313          0.6763              0.8013       0.6343           0.4631
+heartlib + 0.2 raw                         88.4538  0.0095      77.4757          0.6976              0.8422       0.7777           0.7825
+heartlib blood.5 + 0.375 raw               73.5428  0.0118      76.1030          0.6698              0.8143       0.7612           0.8082
+heartlib + 0.5 raw                         65.6558  0.0135      77.5173          0.6935              0.8104       0.7818           0.8233
+heart cells, all libraries                 90.5726  0.0140      80.0519          0.7101              0.8858       0.7927           0.8187
+heartlib + 0.375 raw                       73.7190  0.0151      78.5160          0.6913              0.8282       0.7938           0.8358
+all libraries                              75.1612  0.0195      81.5672          0.7067              0.9287       0.7848           0.8569
+all libraries + 0.375 raw                  64.5183  0.0213      81.0137          0.6908              0.8514       0.8324           0.8742
+heart cells, all libraries + 0.2 raw       81.3463  0.0262      83.1546          0.7110              0.8796       0.8443           0.9030
+rule picks 'heartlib fwd': actual 94.32, rank 3/21, best 100.00, regret 5.68, median 81.35; Spearman(actual, D) = -0.496
+done 524s

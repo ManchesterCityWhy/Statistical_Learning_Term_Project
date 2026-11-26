@@ -1,0 +1,9 @@
+total 32
+drwxr-xr-x  2 andreib180 andreib180 4096 2026-11-26 07:11:41.204438969 +0800 .
+drwxr-xr-x 32 andreib180 andreib180 4096 2026-11-26 07:20:44.575643795 +0800 ..
+-rw-r--r--  1 andreib180 andreib180 2699 2026-11-26 07:00:02.673222409 +0800 scores_E8.5_confirmation.csv
+-rw-r--r--  1 andreib180 andreib180 2702 2026-11-26 06:59:57.822506777 +0800 scores_E8.5_development.csv
+-rw-r--r--  1 andreib180 andreib180 2688 2026-11-26 06:58:58.028892129 +0800 scores_E9.5_confirmation.csv
+-rw-r--r--  1 andreib180 andreib180 2705 2026-11-26 06:58:57.556884218 +0800 scores_E9.5_development.csv
+-rw-r--r--  1 andreib180 andreib180 3234 2026-11-26 07:12:24.215077977 +0800 scores_tilt_E9.5_confirmation.csv
+-rw-r--r--  1 andreib180 andreib180 3255 2026-11-26 07:12:18.018656144 +0800 scores_tilt_E9.5_development.csv

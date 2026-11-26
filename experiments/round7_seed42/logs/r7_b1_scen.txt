@@ -1,0 +1,250 @@
+scenario pool 11486 40s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=R6b mix rho.4 scenario=heart/deep split=development f=0.2 t=0.0 bwd=0.0 seed=42  88.45  DES 0.835 DCS 0.952 MMD 0.921 CSS 0.808
+config=R6b mix rho.4 scenario=heart/mid split=development f=0.2 t=0.0 bwd=0.0 seed=42  92.21  DES 0.880 DCS 0.952 MMD 0.952 CSS 0.893
+config=R6b mix rho.4 scenario=heart/shallow split=development f=0.2 t=0.0 bwd=0.0 seed=42  86.05  DES 0.869 DCS 0.886 MMD 0.903 CSS 0.754
+config=R6b mix rho.4 scenario=all/asis split=development f=0.2 t=0.0 bwd=0.0 seed=42  79.16  DES 0.703 DCS 0.889 MMD 0.774 CSS 0.806
+config=R6v1 mix rho.75 scenario=heart/deep split=development f=0.375 t=0.0 bwd=0.0 seed=42  73.72  DES 0.734 DCS 0.878 MMD 0.740 CSS 0.561
+config=R6v1 mix rho.75 scenario=heart/mid split=development f=0.375 t=0.0 bwd=0.0 seed=42  81.02  DES 0.755 DCS 0.890 MMD 0.797 CSS 0.799
+config=R6v1 mix rho.75 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=0.0 seed=42  80.46  DES 0.761 DCS 0.857 MMD 0.818 CSS 0.772
+config=R6v1 mix rho.75 scenario=all/asis split=development f=0.375 t=0.0 bwd=0.0 seed=42  72.41  DES 0.672 DCS 0.870 MMD 0.655 CSS 0.711
+config=mix rho1 scenario=heart/deep split=development f=0.5 t=0.0 bwd=0.0 seed=42  65.66  DES 0.696 DCS 0.840 MMD 0.617 CSS 0.437
+config=mix rho1 scenario=heart/mid split=development f=0.5 t=0.0 bwd=0.0 seed=42  73.40  DES 0.710 DCS 0.853 MMD 0.676 CSS 0.702
+config=mix rho1 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=0.0 seed=42  75.73  DES 0.717 DCS 0.831 MMD 0.728 CSS 0.760
+config=mix rho1 scenario=all/asis split=development f=0.5 t=0.0 bwd=0.0 seed=42  66.98  DES 0.668 DCS 0.849 MMD 0.556 CSS 0.618
+config=bwd1 rho0.4 scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  90.13  DES 0.866 DCS 0.963 MMD 0.935 CSS 0.817
+config=bwd1 rho0.4 scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  94.56  DES 0.915 DCS 0.972 MMD 0.972 CSS 0.911
+config=bwd1 rho0.4 scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  87.87  DES 0.894 DCS 0.901 MMD 0.924 CSS 0.764
+config=bwd1 rho0.4 scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  79.70  DES 0.698 DCS 0.893 MMD 0.783 CSS 0.821
+config=bwd.5 rho0.4 scenario=heart/deep split=development f=0.2 t=0.0 bwd=0.5 seed=42  89.40  DES 0.850 DCS 0.958 MMD 0.930 CSS 0.815
+config=bwd.5 rho0.4 scenario=heart/mid split=development f=0.2 t=0.0 bwd=0.5 seed=42  93.43  DES 0.901 DCS 0.960 MMD 0.962 CSS 0.901
+config=bwd.5 rho0.4 scenario=heart/shallow split=development f=0.2 t=0.0 bwd=0.5 seed=42  86.80  DES 0.879 DCS 0.892 MMD 0.913 CSS 0.758
+config=bwd.5 rho0.4 scenario=all/asis split=development f=0.2 t=0.0 bwd=0.5 seed=42  79.41  DES 0.700 DCS 0.890 MMD 0.779 CSS 0.813
+config=bwd1 rho0.75 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  76.88  DES 0.774 DCS 0.895 MMD 0.784 CSS 0.582
+config=bwd1 rho0.75 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  85.54  DES 0.798 DCS 0.926 MMD 0.853 CSS 0.842
+config=bwd1 rho0.75 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  84.63  DES 0.804 DCS 0.887 MMD 0.879 CSS 0.801
+config=bwd1 rho0.75 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  74.63  DES 0.677 DCS 0.879 MMD 0.692 CSS 0.748
+config=bwd.5 rho0.75 scenario=heart/deep split=development f=0.375 t=0.0 bwd=0.5 seed=42  75.62  DES 0.757 DCS 0.889 MMD 0.766 CSS 0.575
+config=bwd.5 rho0.75 scenario=heart/mid split=development f=0.375 t=0.0 bwd=0.5 seed=42  83.24  DES 0.772 DCS 0.907 MMD 0.828 CSS 0.821
+config=bwd.5 rho0.75 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=0.5 seed=42  82.27  DES 0.774 DCS 0.870 MMD 0.849 CSS 0.785
+config=bwd.5 rho0.75 scenario=all/asis split=development f=0.375 t=0.0 bwd=0.5 seed=42  73.62  DES 0.674 DCS 0.875 MMD 0.676 CSS 0.730
+config=bwd1 rho1 scenario=heart/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  69.32  DES 0.731 DCS 0.863 MMD 0.676 CSS 0.460
+config=bwd1 rho1 scenario=heart/mid split=development f=0.5 t=0.0 bwd=1.0 seed=42  78.72  DES 0.749 DCS 0.896 MMD 0.749 CSS 0.756
+config=bwd1 rho1 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=1.0 seed=42  80.83  DES 0.747 DCS 0.871 MMD 0.812 CSS 0.802
+config=bwd1 rho1 scenario=all/asis split=development f=0.5 t=0.0 bwd=1.0 seed=42  69.89  DES 0.663 DCS 0.868 MMD 0.610 CSS 0.665
+config=bwd.5 rho1 scenario=heart/deep split=development f=0.5 t=0.0 bwd=0.5 seed=42  67.69  DES 0.711 DCS 0.853 MMD 0.651 CSS 0.452
+config=bwd.5 rho1 scenario=heart/mid split=development f=0.5 t=0.0 bwd=0.5 seed=42  76.24  DES 0.734 DCS 0.872 MMD 0.716 CSS 0.730
+config=bwd.5 rho1 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=0.5 seed=42  78.19  DES 0.732 DCS 0.847 MMD 0.771 CSS 0.779
+config=bwd.5 rho1 scenario=all/asis split=development f=0.5 t=0.0 bwd=0.5 seed=42  68.41  DES 0.659 DCS 0.858 MMD 0.587 CSS 0.644
+config=fwd only t0.5 scenario=heart/deep split=development f=0.0 t=0.25 bwd=0.0 seed=42  98.35  DES 0.961 DCS 1.000 MMD 0.982 CSS 0.994
+config=fwd only t0.5 scenario=heart/mid split=development f=0.0 t=0.25 bwd=0.0 seed=42  90.53  DES 0.924 DCS 0.944 MMD 0.941 CSS 0.780
+config=fwd only t0.5 scenario=heart/shallow split=development f=0.0 t=0.25 bwd=0.0 seed=42  79.71  DES 0.812 DCS 0.863 MMD 0.835 CSS 0.639
+config=fwd only t0.5 scenario=all/asis split=development f=0.0 t=0.25 bwd=0.0 seed=42  77.59  DES 0.742 DCS 0.882 MMD 0.756 CSS 0.716
+config=fwd only t1 scenario=heart/deep split=development f=0.0 t=0.5 bwd=0.0 seed=42  94.32  DES 0.891 DCS 0.977 MMD 0.941 CSS 0.969
+config=fwd only t1 scenario=heart/mid split=development f=0.0 t=0.5 bwd=0.0 seed=42  87.24  DES 0.864 DCS 0.924 MMD 0.907 CSS 0.768
+config=fwd only t1 scenario=heart/shallow split=development f=0.0 t=0.5 bwd=0.0 seed=42  77.97  DES 0.788 DCS 0.849 MMD 0.812 CSS 0.634
+config=fwd only t1 scenario=all/asis split=development f=0.0 t=0.5 bwd=0.0 seed=42  76.75  DES 0.734 DCS 0.879 MMD 0.742 CSS 0.709
+config=fwd only t1.5 scenario=heart/deep split=development f=0.0 t=0.75 bwd=0.0 seed=42  89.82  DES 0.837 DCS 0.945 MMD 0.887 CSS 0.934
+config=fwd only t1.5 scenario=heart/mid split=development f=0.0 t=0.75 bwd=0.0 seed=42  84.09  DES 0.820 DCS 0.900 MMD 0.864 CSS 0.758
+config=fwd only t1.5 scenario=heart/shallow split=development f=0.0 t=0.75 bwd=0.0 seed=42  75.87  DES 0.749 DCS 0.837 MMD 0.787 CSS 0.632
+config=fwd only t1.5 scenario=all/asis split=development f=0.0 t=0.75 bwd=0.0 seed=42  75.27  DES 0.710 DCS 0.874 MMD 0.720 CSS 0.704
+config=interp rho0.4 t0.5 scenario=heart/deep split=development f=0.2 t=0.25 bwd=0.75 seed=42  87.73  DES 0.832 DCS 0.947 MMD 0.905 CSS 0.806
+config=interp rho0.4 t0.5 scenario=heart/mid split=development f=0.2 t=0.25 bwd=0.75 seed=42  91.08  DES 0.872 DCS 0.941 MMD 0.936 CSS 0.883
+config=interp rho0.4 t0.5 scenario=heart/shallow split=development f=0.2 t=0.25 bwd=0.75 seed=42  84.54  DES 0.837 DCS 0.878 MMD 0.891 CSS 0.747
+config=interp rho0.4 t0.5 scenario=all/asis split=development f=0.2 t=0.25 bwd=0.75 seed=42  78.67  DES 0.700 DCS 0.886 MMD 0.767 CSS 0.801
+config=interp rho0.4 t1 scenario=heart/deep split=development f=0.2 t=0.5 bwd=0.5 seed=42  84.52  DES 0.807 DCS 0.924 MMD 0.857 CSS 0.777
+config=interp rho0.4 t1 scenario=heart/mid split=development f=0.2 t=0.5 bwd=0.5 seed=42  86.90  DES 0.813 DCS 0.912 MMD 0.888 CSS 0.856
+config=interp rho0.4 t1 scenario=heart/shallow split=development f=0.2 t=0.5 bwd=0.5 seed=42  81.48  DES 0.792 DCS 0.857 MMD 0.852 CSS 0.735
+config=interp rho0.4 t1 scenario=all/asis split=development f=0.2 t=0.5 bwd=0.5 seed=42  77.13  DES 0.698 DCS 0.877 MMD 0.739 CSS 0.780
+config=interp rho0.75 t0.5 scenario=heart/deep split=development f=0.375 t=0.25 bwd=0.75 seed=42  74.98  DES 0.754 DCS 0.885 MMD 0.752 CSS 0.572
+config=interp rho0.75 t0.5 scenario=heart/mid split=development f=0.375 t=0.25 bwd=0.75 seed=42  82.29  DES 0.766 DCS 0.898 MMD 0.815 CSS 0.812
+config=interp rho0.75 t0.5 scenario=heart/shallow split=development f=0.375 t=0.25 bwd=0.75 seed=42  81.47  DES 0.769 DCS 0.862 MMD 0.837 CSS 0.779
+config=interp rho0.75 t0.5 scenario=all/asis split=development f=0.375 t=0.25 bwd=0.75 seed=42  73.35  DES 0.679 DCS 0.872 MMD 0.669 CSS 0.725
+config=interp rho0.75 t1 scenario=heart/deep split=development f=0.375 t=0.5 bwd=0.5 seed=42  72.11  DES 0.728 DCS 0.866 MMD 0.709 CSS 0.551
+config=interp rho0.75 t1 scenario=heart/mid split=development f=0.375 t=0.5 bwd=0.5 seed=42  78.97  DES 0.747 DCS 0.869 MMD 0.766 CSS 0.780
+config=interp rho0.75 t1 scenario=heart/shallow split=development f=0.375 t=0.5 bwd=0.5 seed=42  78.53  DES 0.747 DCS 0.837 MMD 0.791 CSS 0.760
+config=interp rho0.75 t1 scenario=all/asis split=development f=0.375 t=0.5 bwd=0.5 seed=42  71.29  DES 0.672 DCS 0.858 MMD 0.636 CSS 0.698
+config=interp rho1 t0.5 scenario=heart/deep split=development f=0.5 t=0.25 bwd=0.75 seed=42  67.66  DES 0.713 DCS 0.854 MMD 0.648 CSS 0.453
+config=interp rho1 t0.5 scenario=heart/mid split=development f=0.5 t=0.25 bwd=0.75 seed=42  76.17  DES 0.734 DCS 0.871 MMD 0.715 CSS 0.730
+config=interp rho1 t0.5 scenario=heart/shallow split=development f=0.5 t=0.25 bwd=0.75 seed=42  78.12  DES 0.730 DCS 0.845 MMD 0.772 CSS 0.779
+config=interp rho1 t0.5 scenario=all/asis split=development f=0.5 t=0.25 bwd=0.75 seed=42  68.58  DES 0.666 DCS 0.857 MMD 0.587 CSS 0.645
+config=interp rho1 t1 scenario=heart/deep split=development f=0.5 t=0.5 bwd=0.5 seed=42  65.51  DES 0.699 DCS 0.838 MMD 0.611 CSS 0.438
+config=interp rho1 t1 scenario=heart/mid split=development f=0.5 t=0.5 bwd=0.5 seed=42  73.11  DES 0.710 DCS 0.845 MMD 0.673 CSS 0.701
+config=interp rho1 t1 scenario=heart/shallow split=development f=0.5 t=0.5 bwd=0.5 seed=42  75.16  DES 0.706 DCS 0.821 MMD 0.727 CSS 0.758
+config=interp rho1 t1 scenario=all/asis split=development f=0.5 t=0.5 bwd=0.5 seed=42  67.04  DES 0.674 DCS 0.842 MMD 0.557 CSS 0.620
+config=interp rho.75 t1 pool3 scenario=heart/deep split=development f=0.375 t=0.5 bwd=0.5 seed=42  76.12  DES 0.746 DCS 0.856 MMD 0.760 CSS 0.663
+config=interp rho.75 t1 pool3 scenario=heart/mid split=development f=0.375 t=0.5 bwd=0.5 seed=42  74.43  DES 0.768 DCS 0.827 MMD 0.754 CSS 0.596
+config=interp rho.75 t1 pool3 scenario=heart/shallow split=development f=0.375 t=0.5 bwd=0.5 seed=42  69.56  DES 0.709 DCS 0.785 MMD 0.707 CSS 0.551
+config=interp rho.75 t1 pool3 scenario=all/asis split=development f=0.375 t=0.5 bwd=0.5 seed=42  65.42  DES 0.659 DCS 0.817 MMD 0.597 CSS 0.530
+config=interp rho.75 t1 poolM scenario=heart/deep split=development f=0.375 t=0.5 bwd=0.5 seed=42  76.11  DES 0.754 DCS 0.854 MMD 0.762 CSS 0.652
+config=interp rho.75 t1 poolM scenario=heart/mid split=development f=0.375 t=0.5 bwd=0.5 seed=42  73.72  DES 0.770 DCS 0.822 MMD 0.750 CSS 0.570
+config=interp rho.75 t1 poolM scenario=heart/shallow split=development f=0.375 t=0.5 bwd=0.5 seed=42  68.58  DES 0.701 DCS 0.781 MMD 0.698 CSS 0.530
+config=interp rho.75 t1 poolM scenario=all/asis split=development f=0.375 t=0.5 bwd=0.5 seed=42  64.51  DES 0.655 DCS 0.813 MMD 0.591 CSS 0.505
+config=mix rho.75 poolM scenario=heart/deep split=development f=0.375 t=0.0 bwd=0.0 seed=42  77.26  DES 0.757 DCS 0.864 MMD 0.788 CSS 0.655
+config=mix rho.75 poolM scenario=heart/mid split=development f=0.375 t=0.0 bwd=0.0 seed=42  75.29  DES 0.787 DCS 0.832 MMD 0.777 CSS 0.575
+config=mix rho.75 poolM scenario=heart/shallow split=development f=0.375 t=0.0 bwd=0.0 seed=42  70.07  DES 0.722 DCS 0.788 MMD 0.721 CSS 0.534
+config=mix rho.75 poolM scenario=all/asis split=development f=0.375 t=0.0 bwd=0.0 seed=42  65.46  DES 0.659 DCS 0.819 MMD 0.611 CSS 0.509
+config=bwd1 rho.75 poolM scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  84.16  DES 0.803 DCS 0.908 MMD 0.877 CSS 0.753
+config=bwd1 rho.75 poolM scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  80.37  DES 0.813 DCS 0.867 MMD 0.859 CSS 0.629
+config=bwd1 rho.75 poolM scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  73.36  DES 0.735 DCS 0.811 MMD 0.782 CSS 0.562
+config=bwd1 rho.75 poolM scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  67.86  DES 0.657 DCS 0.831 MMD 0.652 CSS 0.555
+config=interp rho.75 t1 median scenario=heart/deep split=development f=0.375 t=0.5 bwd=0.5 seed=42  75.77  DES 0.754 DCS 0.888 MMD 0.764 CSS 0.590
+config=interp rho.75 t1 median scenario=heart/mid split=development f=0.375 t=0.5 bwd=0.5 seed=42  83.57  DES 0.787 DCS 0.904 MMD 0.824 CSS 0.828
+config=interp rho.75 t1 median scenario=heart/shallow split=development f=0.375 t=0.5 bwd=0.5 seed=42  81.56  DES 0.761 DCS 0.866 MMD 0.841 CSS 0.783
+config=interp rho.75 t1 median scenario=all/asis split=development f=0.375 t=0.5 bwd=0.5 seed=42  74.09  DES 0.681 DCS 0.869 MMD 0.684 CSS 0.741
+config=interp rho.75 t1 type scenario=heart/deep split=development f=0.375 t=0.5 bwd=0.5 seed=42  72.23  DES 0.728 DCS 0.866 MMD 0.712 CSS 0.552
+config=interp rho.75 t1 type scenario=heart/mid split=development f=0.375 t=0.5 bwd=0.5 seed=42  79.22  DES 0.751 DCS 0.869 MMD 0.769 CSS 0.782
+config=interp rho.75 t1 type scenario=heart/shallow split=development f=0.375 t=0.5 bwd=0.5 seed=42  78.56  DES 0.744 DCS 0.838 MMD 0.793 CSS 0.761
+config=interp rho.75 t1 type scenario=all/asis split=development f=0.375 t=0.5 bwd=0.5 seed=42  71.55  DES 0.677 DCS 0.858 MMD 0.639 CSS 0.700
+config=interp rho.75 t1 h0 scenario=heart/deep split=development f=0.375 t=0.5 bwd=0.5 seed=42  66.82  DES 0.675 DCS 0.840 MMD 0.638 CSS 0.490
+config=interp rho.75 t1 h0 scenario=heart/mid split=development f=0.375 t=0.5 bwd=0.5 seed=42  72.31  DES 0.673 DCS 0.837 MMD 0.685 CSS 0.701
+config=interp rho.75 t1 h0 scenario=heart/shallow split=development f=0.375 t=0.5 bwd=0.5 seed=42  73.95  DES 0.717 DCS 0.811 MMD 0.714 CSS 0.717
+config=interp rho.75 t1 h0 scenario=all/asis split=development f=0.375 t=0.5 bwd=0.5 seed=42  66.82  DES 0.653 DCS 0.840 MMD 0.568 CSS 0.624
+done 112s
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                    100.00      93.26          81.26     77.20
+R6b mix rho.4                 88.45      92.21          86.05     79.16
+R6v1 mix rho.75               73.72      81.02          80.46     72.41
+mix rho1                      65.66      73.40          75.73     66.98
+bwd1 rho0.4                   90.13      94.56          87.87     79.70
+bwd.5 rho0.4                  89.40      93.43          86.80     79.41
+bwd1 rho0.75                  76.88      85.54          84.63     74.63
+bwd.5 rho0.75                 75.62      83.24          82.27     73.62
+bwd1 rho1                     69.32      78.72          80.83     69.89
+bwd.5 rho1                    67.69      76.24          78.19     68.41
+fwd only t0.5                 98.35      90.53          79.71     77.59
+fwd only t1                   94.32      87.24          77.97     76.75
+fwd only t1.5                 89.82      84.09          75.87     75.27
+interp rho0.4 t0.5            87.73      91.08          84.54     78.67
+interp rho0.4 t1              84.52      86.90          81.48     77.13
+interp rho0.75 t0.5           74.98      82.29          81.47     73.35
+interp rho0.75 t1             72.11      78.97          78.53     71.29
+interp rho1 t0.5              67.66      76.17          78.12     68.58
+interp rho1 t1                65.51      73.11          75.16     67.04
+interp rho.75 t1 pool3        76.12      74.43          69.56     65.42
+interp rho.75 t1 poolM        76.11      73.72          68.58     64.51
+mix rho.75 poolM              77.26      75.29          70.07     65.46
+bwd1 rho.75 poolM             84.16      80.37          73.36     67.86
+interp rho.75 t1 median       75.77      83.57          81.56     74.09
+interp rho.75 t1 type         72.23      79.22          78.56     71.55
+interp rho.75 t1 h0           66.82      72.31          73.95     66.82
+skill_de_score
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     1.000      0.973          0.829     0.713
+R6b mix rho.4                 0.835      0.880          0.869     0.703
+R6v1 mix rho.75               0.734      0.755          0.761     0.672
+mix rho1                      0.696      0.710          0.717     0.668
+bwd1 rho0.4                   0.866      0.915          0.894     0.698
+bwd.5 rho0.4                  0.850      0.901          0.879     0.700
+bwd1 rho0.75                  0.774      0.798          0.804     0.677
+bwd.5 rho0.75                 0.757      0.772          0.774     0.674
+bwd1 rho1                     0.731      0.749          0.747     0.663
+bwd.5 rho1                    0.711      0.734          0.732     0.659
+fwd only t0.5                 0.961      0.924          0.812     0.742
+fwd only t1                   0.891      0.864          0.788     0.734
+fwd only t1.5                 0.837      0.820          0.749     0.710
+interp rho0.4 t0.5            0.832      0.872          0.837     0.700
+interp rho0.4 t1              0.807      0.813          0.792     0.698
+interp rho0.75 t0.5           0.754      0.766          0.769     0.679
+interp rho0.75 t1             0.728      0.747          0.747     0.672
+interp rho1 t0.5              0.713      0.734          0.730     0.666
+interp rho1 t1                0.699      0.710          0.706     0.674
+interp rho.75 t1 pool3        0.746      0.768          0.709     0.659
+interp rho.75 t1 poolM        0.754      0.770          0.701     0.655
+mix rho.75 poolM              0.757      0.787          0.722     0.659
+bwd1 rho.75 poolM             0.803      0.813          0.735     0.657
+interp rho.75 t1 median       0.754      0.787          0.761     0.681
+interp rho.75 t1 type         0.728      0.751          0.744     0.677
+interp rho.75 t1 h0           0.675      0.673          0.717     0.653
+skill_de_direction
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     1.000      0.962          0.876     0.879
+R6b mix rho.4                 0.952      0.952          0.886     0.889
+R6v1 mix rho.75               0.878      0.890          0.857     0.870
+mix rho1                      0.840      0.853          0.831     0.849
+bwd1 rho0.4                   0.963      0.972          0.901     0.893
+bwd.5 rho0.4                  0.958      0.960          0.892     0.890
+bwd1 rho0.75                  0.895      0.926          0.887     0.879
+bwd.5 rho0.75                 0.889      0.907          0.870     0.875
+bwd1 rho1                     0.863      0.896          0.871     0.868
+bwd.5 rho1                    0.853      0.872          0.847     0.858
+fwd only t0.5                 1.000      0.944          0.863     0.882
+fwd only t1                   0.977      0.924          0.849     0.879
+fwd only t1.5                 0.945      0.900          0.837     0.874
+interp rho0.4 t0.5            0.947      0.941          0.878     0.886
+interp rho0.4 t1              0.924      0.912          0.857     0.877
+interp rho0.75 t0.5           0.885      0.898          0.862     0.872
+interp rho0.75 t1             0.866      0.869          0.837     0.858
+interp rho1 t0.5              0.854      0.871          0.845     0.857
+interp rho1 t1                0.838      0.845          0.821     0.842
+interp rho.75 t1 pool3        0.856      0.827          0.785     0.817
+interp rho.75 t1 poolM        0.854      0.822          0.781     0.813
+mix rho.75 poolM              0.864      0.832          0.788     0.819
+bwd1 rho.75 poolM             0.908      0.867          0.811     0.831
+interp rho.75 t1 median       0.888      0.904          0.866     0.869
+interp rho.75 t1 type         0.866      0.869          0.838     0.858
+interp rho.75 t1 h0           0.840      0.837          0.811     0.840
+skill_mmd_u
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     1.000      0.964          0.855     0.761
+R6b mix rho.4                 0.921      0.952          0.903     0.774
+R6v1 mix rho.75               0.740      0.797          0.818     0.655
+mix rho1                      0.617      0.676          0.728     0.556
+bwd1 rho0.4                   0.935      0.972          0.924     0.783
+bwd.5 rho0.4                  0.930      0.962          0.913     0.779
+bwd1 rho0.75                  0.784      0.853          0.879     0.692
+bwd.5 rho0.75                 0.766      0.828          0.849     0.676
+bwd1 rho1                     0.676      0.749          0.812     0.610
+bwd.5 rho1                    0.651      0.716          0.771     0.587
+fwd only t0.5                 0.982      0.941          0.835     0.756
+fwd only t1                   0.941      0.907          0.812     0.742
+fwd only t1.5                 0.887      0.864          0.787     0.720
+interp rho0.4 t0.5            0.905      0.936          0.891     0.767
+interp rho0.4 t1              0.857      0.888          0.852     0.739
+interp rho0.75 t0.5           0.752      0.815          0.837     0.669
+interp rho0.75 t1             0.709      0.766          0.791     0.636
+interp rho1 t0.5              0.648      0.715          0.772     0.587
+interp rho1 t1                0.611      0.673          0.727     0.557
+interp rho.75 t1 pool3        0.760      0.754          0.707     0.597
+interp rho.75 t1 poolM        0.762      0.750          0.698     0.591
+mix rho.75 poolM              0.788      0.777          0.721     0.611
+bwd1 rho.75 poolM             0.877      0.859          0.782     0.652
+interp rho.75 t1 median       0.764      0.824          0.841     0.684
+interp rho.75 t1 type         0.712      0.769          0.793     0.639
+interp rho.75 t1 h0           0.638      0.685          0.714     0.568
+skill_variogram
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     1.000      0.798          0.650     0.729
+R6b mix rho.4                 0.808      0.893          0.754     0.806
+R6v1 mix rho.75               0.561      0.799          0.772     0.711
+mix rho1                      0.437      0.702          0.760     0.618
+bwd1 rho0.4                   0.817      0.911          0.764     0.821
+bwd.5 rho0.4                  0.815      0.901          0.758     0.813
+bwd1 rho0.75                  0.582      0.842          0.801     0.748
+bwd.5 rho0.75                 0.575      0.821          0.785     0.730
+bwd1 rho1                     0.460      0.756          0.802     0.665
+bwd.5 rho1                    0.452      0.730          0.779     0.644
+fwd only t0.5                 0.994      0.780          0.639     0.716
+fwd only t1                   0.969      0.768          0.634     0.709
+fwd only t1.5                 0.934      0.758          0.632     0.704
+interp rho0.4 t0.5            0.806      0.883          0.747     0.801
+interp rho0.4 t1              0.777      0.856          0.735     0.780
+interp rho0.75 t0.5           0.572      0.812          0.779     0.725
+interp rho0.75 t1             0.551      0.780          0.760     0.698
+interp rho1 t0.5              0.453      0.730          0.779     0.645
+interp rho1 t1                0.438      0.701          0.758     0.620
+interp rho.75 t1 pool3        0.663      0.596          0.551     0.530
+interp rho.75 t1 poolM        0.652      0.570          0.530     0.505
+mix rho.75 poolM              0.655      0.575          0.534     0.509
+bwd1 rho.75 poolM             0.753      0.629          0.562     0.555
+interp rho.75 t1 median       0.590      0.828          0.783     0.741
+interp rho.75 t1 type         0.552      0.782          0.761     0.700
+interp rho.75 t1 h0           0.490      0.701          0.717     0.624

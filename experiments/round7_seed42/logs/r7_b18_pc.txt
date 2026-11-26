@@ -1,0 +1,130 @@
+[suite] gen      ready    12s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] p8/deep  ready    20s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] p8/all   ready    27s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] 2d/deep  ready    33s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    42s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  51.79  DES 0.509 DCS 0.552 MMD 0.506 CSS 0.504
+config=round 6 file (raw anchor, rho 0.4) proxy=gen split=confirmation f=0.0667 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  55.49  DES 0.553 DCS 0.589 MMD 0.550 CSS 0.520
+config=round 6 first version (raw anchor, rho 0.75) proxy=gen split=confirmation f=0.125 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  54.63  DES 0.548 DCS 0.588 MMD 0.560 CSS 0.471
+config=raw anchor rho 0.9; two-witness + trend on the base only proxy=gen split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  54.52  DES 0.553 DCS 0.598 MMD 0.560 CSS 0.448
+config=raw anchor rho 0.75; two-witness + trend on the base only proxy=gen split=confirmation f=0.125 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  55.77  DES 0.559 DCS 0.602 MMD 0.572 CSS 0.479
+config=R7 (final): moved back 1 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.38  DES 0.600 DCS 0.642 MMD 0.596 CSS 0.573
+config=R7, moved back 0.75, position-consistent shifts proxy=gen split=confirmation f=0.15 t=0.0 bwd=0.75 seed=42 two_witness=False trend_days=1.0  59.60  DES 0.600 DCS 0.635 MMD 0.581 CSS 0.565
+config=R7, moved back 0.5, position-consistent shifts proxy=gen split=confirmation f=0.15 t=0.0 bwd=0.5 seed=42 two_witness=False trend_days=1.0  58.93  DES 0.600 DCS 0.628 MMD 0.568 CSS 0.559
+config=R7, moved back 0.25, position-consistent shifts proxy=gen split=confirmation f=0.15 t=0.0 bwd=0.25 seed=42 two_witness=False trend_days=1.0  58.18  DES 0.600 DCS 0.619 MMD 0.556 CSS 0.551
+config=R7, moved back 0, position-consistent shifts proxy=gen split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  57.24  DES 0.588 DCS 0.614 MMD 0.546 CSS 0.541
+config=R7, moved back 0.5, no shift on the anchor proxy=gen split=confirmation f=0.15 t=0.0 bwd=0.5 seed=42 two_witness=False trend_days=1.0  58.93  DES 0.600 DCS 0.628 MMD 0.568 CSS 0.559
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  60.34  DES 0.579 DCS 0.690 MMD 0.597 CSS 0.534
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/deep split=confirmation f=0.08 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  64.97  DES 0.617 DCS 0.727 MMD 0.641 CSS 0.608
+config=round 6 first version (raw anchor, rho 0.75) proxy=p8/deep split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  67.49  DES 0.630 DCS 0.749 MMD 0.661 CSS 0.659
+config=raw anchor rho 0.9; two-witness + trend on the base only proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=True trend_days=1.0  69.77  DES 0.655 DCS 0.769 MMD 0.686 CSS 0.679
+config=raw anchor rho 0.75; two-witness + trend on the base only proxy=p8/deep split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=True trend_days=1.0  68.63  DES 0.643 DCS 0.760 MMD 0.672 CSS 0.671
+config=R7 (final): moved back 1 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  65.04  DES 0.620 DCS 0.748 MMD 0.634 CSS 0.592
+config=R7, moved back 0.75, position-consistent shifts proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=0.75 seed=42 two_witness=True trend_days=1.0  64.90  DES 0.617 DCS 0.746 MMD 0.633 CSS 0.591
+config=R7, moved back 0.5, position-consistent shifts proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=0.5 seed=42 two_witness=True trend_days=1.0  65.28  DES 0.623 DCS 0.750 MMD 0.637 CSS 0.593
+config=R7, moved back 0.25, position-consistent shifts proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=0.25 seed=42 two_witness=True trend_days=1.0  65.71  DES 0.629 DCS 0.752 MMD 0.642 CSS 0.596
+config=R7, moved back 0, position-consistent shifts proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=True trend_days=1.0  66.04  DES 0.631 DCS 0.755 MMD 0.647 CSS 0.598
+config=R7, moved back 0.5, no shift on the anchor proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=0.5 seed=42 two_witness=True trend_days=1.0  65.28  DES 0.623 DCS 0.750 MMD 0.637 CSS 0.593
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  57.53  DES 0.495 DCS 0.656 MMD 0.587 CSS 0.558
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/all split=confirmation f=0.08 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  64.05  DES 0.575 DCS 0.714 MMD 0.639 CSS 0.633
+config=round 6 first version (raw anchor, rho 0.75) proxy=p8/all split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  68.87  DES 0.631 DCS 0.753 MMD 0.678 CSS 0.696
+config=raw anchor rho 0.9; two-witness + trend on the base only proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=True trend_days=1.0  70.96  DES 0.651 DCS 0.765 MMD 0.704 CSS 0.722
+config=raw anchor rho 0.75; two-witness + trend on the base only proxy=p8/all split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=True trend_days=1.0  69.47  DES 0.635 DCS 0.755 MMD 0.690 CSS 0.700
+config=R7 (final): moved back 1 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  61.75  DES 0.546 DCS 0.726 MMD 0.621 CSS 0.567
+config=R7, moved back 0.75, position-consistent shifts proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=0.75 seed=42 two_witness=True trend_days=1.0  61.80  DES 0.549 DCS 0.728 MMD 0.619 CSS 0.565
+config=R7, moved back 0.5, position-consistent shifts proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=0.5 seed=42 two_witness=True trend_days=1.0  62.30  DES 0.563 DCS 0.730 MMD 0.623 CSS 0.565
+config=R7, moved back 0.25, position-consistent shifts proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=0.25 seed=42 two_witness=True trend_days=1.0  62.85  DES 0.576 DCS 0.733 MMD 0.627 CSS 0.565
+config=R7, moved back 0, position-consistent shifts proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=True trend_days=1.0  63.37  DES 0.582 DCS 0.739 MMD 0.633 CSS 0.568
+config=R7, moved back 0.5, no shift on the anchor proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=0.5 seed=42 two_witness=True trend_days=1.0  62.30  DES 0.563 DCS 0.730 MMD 0.623 CSS 0.565
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  53.39  DES 0.514 DCS 0.615 MMD 0.525 CSS 0.470
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/deep split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  59.71  DES 0.565 DCS 0.681 MMD 0.582 CSS 0.555
+config=round 6 first version (raw anchor, rho 0.75) proxy=2d/deep split=confirmation f=0.25 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  63.30  DES 0.599 DCS 0.712 MMD 0.621 CSS 0.594
+config=raw anchor rho 0.9; two-witness + trend on the base only proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  64.86  DES 0.618 DCS 0.727 MMD 0.637 CSS 0.607
+config=raw anchor rho 0.75; two-witness + trend on the base only proxy=2d/deep split=confirmation f=0.25 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  64.61  DES 0.611 DCS 0.727 MMD 0.631 CSS 0.611
+config=R7 (final): moved back 1 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.32  DES 0.580 DCS 0.714 MMD 0.572 CSS 0.540
+config=R7, moved back 0.75, position-consistent shifts proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=0.75 seed=42 two_witness=False trend_days=1.0  60.26  DES 0.580 DCS 0.714 MMD 0.572 CSS 0.538
+config=R7, moved back 0.5, position-consistent shifts proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=0.5 seed=42 two_witness=False trend_days=1.0  60.58  DES 0.584 DCS 0.715 MMD 0.576 CSS 0.540
+config=R7, moved back 0.25, position-consistent shifts proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=0.25 seed=42 two_witness=False trend_days=1.0  61.19  DES 0.592 DCS 0.719 MMD 0.583 CSS 0.545
+config=R7, moved back 0, position-consistent shifts proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  61.58  DES 0.596 DCS 0.722 MMD 0.590 CSS 0.547
+config=R7, moved back 0.5, no shift on the anchor proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=0.5 seed=42 two_witness=False trend_days=1.0  60.58  DES 0.584 DCS 0.715 MMD 0.576 CSS 0.540
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  48.13  DES 0.395 DCS 0.526 MMD 0.502 CSS 0.502
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/all split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  63.30  DES 0.622 DCS 0.715 MMD 0.587 CSS 0.615
+config=round 6 first version (raw anchor, rho 0.75) proxy=2d/all split=confirmation f=0.25 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  67.16  DES 0.622 DCS 0.725 MMD 0.649 CSS 0.701
+config=raw anchor rho 0.9; two-witness + trend on the base only proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  69.58  DES 0.628 DCS 0.738 MMD 0.686 CSS 0.743
+config=raw anchor rho 0.75; two-witness + trend on the base only proxy=2d/all split=confirmation f=0.25 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  68.29  DES 0.623 DCS 0.734 MMD 0.670 CSS 0.713
+config=R7 (final): moved back 1 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.50  DES 0.547 DCS 0.701 MMD 0.584 CSS 0.540
+config=R7, moved back 0.75, position-consistent shifts proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=0.75 seed=42 two_witness=False trend_days=1.0  59.41  DES 0.553 DCS 0.704 MMD 0.576 CSS 0.534
+config=R7, moved back 0.5, position-consistent shifts proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=0.5 seed=42 two_witness=False trend_days=1.0  59.53  DES 0.557 DCS 0.706 MMD 0.576 CSS 0.534
+config=R7, moved back 0.25, position-consistent shifts proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=0.25 seed=42 two_witness=False trend_days=1.0  59.76  DES 0.561 DCS 0.706 MMD 0.579 CSS 0.535
+config=R7, moved back 0, position-consistent shifts proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=1.0  60.35  DES 0.574 DCS 0.709 MMD 0.584 CSS 0.537
+config=R7, moved back 0.5, no shift on the anchor proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=0.5 seed=42 two_witness=False trend_days=1.0  59.53  DES 0.557 DCS 0.706 MMD 0.576 CSS 0.534
+done 233s
+proxy                                                        gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                            
+base only                                                  51.79    60.34   57.53    53.39   48.13
+round 6 file (raw anchor, rho 0.4)                         55.49    64.97   64.05    59.71   63.30
+round 6 first version (raw anchor, rho 0.75)               54.63    67.49   68.87    63.30   67.16
+raw anchor rho 0.9; two-witness + trend on the base only   54.52    69.77   70.96    64.86   69.58
+raw anchor rho 0.75; two-witness + trend on the base only  55.77    68.63   69.47    64.61   68.29
+R7 (final): moved back 1                                   60.38    65.04   61.75    60.32   59.50
+R7, moved back 0.75, position-consistent shifts            59.60    64.90   61.80    60.26   59.41
+R7, moved back 0.5, position-consistent shifts             58.93    65.28   62.30    60.58   59.53
+R7, moved back 0.25, position-consistent shifts            58.18    65.71   62.85    61.19   59.76
+R7, moved back 0, position-consistent shifts               57.24    66.04   63.37    61.58   60.35
+R7, moved back 0.5, no shift on the anchor                 58.93    65.28   62.30    60.58   59.53
+skill_de_score
+proxy                                                        gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                            
+base only                                                  0.509    0.579   0.495    0.514   0.395
+round 6 file (raw anchor, rho 0.4)                         0.553    0.617   0.575    0.565   0.622
+round 6 first version (raw anchor, rho 0.75)               0.548    0.630   0.631    0.599   0.622
+raw anchor rho 0.9; two-witness + trend on the base only   0.553    0.655   0.651    0.618   0.628
+raw anchor rho 0.75; two-witness + trend on the base only  0.559    0.643   0.635    0.611   0.623
+R7 (final): moved back 1                                   0.600    0.620   0.546    0.580   0.547
+R7, moved back 0.75, position-consistent shifts            0.600    0.617   0.549    0.580   0.553
+R7, moved back 0.5, position-consistent shifts             0.600    0.623   0.563    0.584   0.557
+R7, moved back 0.25, position-consistent shifts            0.600    0.629   0.576    0.592   0.561
+R7, moved back 0, position-consistent shifts               0.588    0.631   0.582    0.596   0.574
+R7, moved back 0.5, no shift on the anchor                 0.600    0.623   0.563    0.584   0.557
+skill_de_direction
+proxy                                                        gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                            
+base only                                                  0.552    0.690   0.656    0.615   0.526
+round 6 file (raw anchor, rho 0.4)                         0.589    0.727   0.714    0.681   0.715
+round 6 first version (raw anchor, rho 0.75)               0.588    0.749   0.753    0.712   0.725
+raw anchor rho 0.9; two-witness + trend on the base only   0.598    0.769   0.765    0.727   0.738
+raw anchor rho 0.75; two-witness + trend on the base only  0.602    0.760   0.755    0.727   0.734
+R7 (final): moved back 1                                   0.642    0.748   0.726    0.714   0.701
+R7, moved back 0.75, position-consistent shifts            0.635    0.746   0.728    0.714   0.704
+R7, moved back 0.5, position-consistent shifts             0.628    0.750   0.730    0.715   0.706
+R7, moved back 0.25, position-consistent shifts            0.619    0.752   0.733    0.719   0.706
+R7, moved back 0, position-consistent shifts               0.614    0.755   0.739    0.722   0.709
+R7, moved back 0.5, no shift on the anchor                 0.628    0.750   0.730    0.715   0.706
+skill_mmd_u
+proxy                                                        gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                            
+base only                                                  0.506    0.597   0.587    0.525   0.502
+round 6 file (raw anchor, rho 0.4)                         0.550    0.641   0.639    0.582   0.587
+round 6 first version (raw anchor, rho 0.75)               0.560    0.661   0.678    0.621   0.649
+raw anchor rho 0.9; two-witness + trend on the base only   0.560    0.686   0.704    0.637   0.686
+raw anchor rho 0.75; two-witness + trend on the base only  0.572    0.672   0.690    0.631   0.670
+R7 (final): moved back 1                                   0.596    0.634   0.621    0.572   0.584
+R7, moved back 0.75, position-consistent shifts            0.581    0.633   0.619    0.572   0.576
+R7, moved back 0.5, position-consistent shifts             0.568    0.637   0.623    0.576   0.576
+R7, moved back 0.25, position-consistent shifts            0.556    0.642   0.627    0.583   0.579
+R7, moved back 0, position-consistent shifts               0.546    0.647   0.633    0.590   0.584
+R7, moved back 0.5, no shift on the anchor                 0.568    0.637   0.623    0.576   0.576
+skill_variogram
+proxy                                                        gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                            
+base only                                                  0.504    0.534   0.558    0.470   0.502
+round 6 file (raw anchor, rho 0.4)                         0.520    0.608   0.633    0.555   0.615
+round 6 first version (raw anchor, rho 0.75)               0.471    0.659   0.696    0.594   0.701
+raw anchor rho 0.9; two-witness + trend on the base only   0.448    0.679   0.722    0.607   0.743
+raw anchor rho 0.75; two-witness + trend on the base only  0.479    0.671   0.700    0.611   0.713
+R7 (final): moved back 1                                   0.573    0.592   0.567    0.540   0.540
+R7, moved back 0.75, position-consistent shifts            0.565    0.591   0.565    0.538   0.534
+R7, moved back 0.5, position-consistent shifts             0.559    0.593   0.565    0.540   0.534
+R7, moved back 0.25, position-consistent shifts            0.551    0.596   0.565    0.545   0.535
+R7, moved back 0, position-consistent shifts               0.541    0.598   0.568    0.547   0.537
+R7, moved back 0.5, no shift on the anchor                 0.559    0.593   0.565    0.540   0.534

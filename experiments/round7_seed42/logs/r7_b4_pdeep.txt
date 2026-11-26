@@ -1,0 +1,37 @@
+pseudo-library source: library 3 share 0.4 heart share in 3 / 1 0.94 0.173 median depth 3 / 1 13721.0 4406.5
+probe library shares {'1': 0.556, '3': 0.444}
+[p8s/deep] probe actual 69.76  de_score 0.681 de_direction 0.743 mmd_u 0.717 variogram 0.631 68s
+[p8s/deep] f0 pos0                                       actual  61.35  D 0.04242  probe-if-true  51.97
+[p8s/deep] f0 pos0.25                                    actual  62.51  D 0.04300  probe-if-true  52.06
+[p8s/deep] f0 pos0.5                                     actual  63.49  D 0.04163  probe-if-true  52.31
+[p8s/deep] f0.15 pos0                                    actual  63.76  D 0.03577  probe-if-true  53.91
+[p8s/deep] f0.15 pos0.25                                 actual  64.63  D 0.03597  probe-if-true  53.85
+[p8s/deep] f0.15 pos0.5                                  actual  65.02  D 0.03429  probe-if-true  54.10
+[p8s/deep] f0.3 pos0                                     actual  65.39  D 0.02972  probe-if-true  55.35
+[p8s/deep] f0.3 pos0.25                                  actual  65.85  D 0.02968  probe-if-true  55.25
+[p8s/deep] f0.3 pos0.5                                   actual  65.86  D 0.02829  probe-if-true  55.33
+[p8s/deep] f0.45 pos0                                    actual  67.23  D 0.02096  probe-if-true  57.76
+[p8s/deep] f0.45 pos0.25                                 actual  67.15  D 0.02164  probe-if-true  57.32
+[p8s/deep] f0.45 pos0.5                                  actual  66.84  D 0.02104  probe-if-true  57.10
+[p8s/deep] ref round 6 file (0.2 raw)                    actual  70.25  D 0.01840  probe-if-true  58.28
+[p8s/deep] ref round 6 first version (0.375 raw)         actual  70.34  D 0.00759  probe-if-true  62.95
+
+=== p8s/deep
+                                        actual       D  D_seed_se  probe_total  skill_de_score  skill_de_direction  skill_mmd_u  skill_variogram
+recipe                                                                                                                                          
+ref round 6 first version (0.375 raw)  70.3423  0.0076     0.0007      62.9542          0.5700              0.7248       0.5960           0.6351
+ref round 6 file (0.2 raw)             70.2523  0.0184     0.0002      58.2815          0.5756              0.7424       0.5318           0.4689
+f0.45 pos0.5                           66.8411  0.0210     0.0008      57.1038          0.6220              0.6841       0.5491           0.3990
+f0.45 pos0                             67.2280  0.0210     0.0010      57.7649          0.6267              0.7113       0.5495           0.3915
+f0.45 pos0.25                          67.1534  0.0216     0.0008      57.3179          0.6274              0.6979       0.5455           0.3911
+f0.3 pos0.5                            65.8599  0.0283     0.0006      55.3325          0.6074              0.6935       0.5191           0.3620
+f0.3 pos0                              65.3945  0.0297     0.0007      55.3451          0.5989              0.7155       0.5132           0.3545
+f0.3 pos0.25                           65.8466  0.0297     0.0007      55.2451          0.6064              0.7047       0.5127           0.3544
+f0.15 pos0.5                           65.0213  0.0343     0.0007      54.0970          0.6001              0.6996       0.4973           0.3344
+f0.15 pos0                             63.7610  0.0358     0.0008      53.9144          0.5851              0.7161       0.4926           0.3303
+f0.15 pos0.25                          64.6256  0.0360     0.0008      53.8495          0.5955              0.7074       0.4900           0.3288
+f0 pos0.5                              63.4931  0.0416     0.0008      52.3133          0.5920              0.6877       0.4700           0.3111
+f0 pos0                                61.3478  0.0424     0.0007      51.9661          0.5725              0.6932       0.4696           0.3117
+f0 pos0.25                             62.5092  0.0430     0.0007      52.0559          0.5877              0.6911       0.4643           0.3079
+rule picks 'f0.45 pos0': actual 67.23, rank 1/12, best 67.23, regret 0.00, median 65.21; Spearman(actual, D) = -0.979
+done 554s

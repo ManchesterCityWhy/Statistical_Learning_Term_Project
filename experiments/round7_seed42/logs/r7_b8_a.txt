@@ -1,0 +1,122 @@
+[suite] gen      ready    17s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] p8/deep  ready    25s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] 2d/deep  ready    34s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  52.24  DES 0.525 DCS 0.554 MMD 0.506 CSS 0.503
+config=composition rho0.4 proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  56.32  DES 0.536 DCS 0.625 MMD 0.559 CSS 0.527
+config=back-resample rho0.4 type proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  58.04  DES 0.598 DCS 0.631 MMD 0.547 CSS 0.545
+config=composition rho0.4 + half as anchor proxy=gen split=development f=0.0333 t=0.0 bwd=1.0 seed=42  57.09  DES 0.559 DCS 0.633 MMD 0.552 CSS 0.536
+config=composition rho0.75 proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  58.38  DES 0.559 DCS 0.639 MMD 0.586 CSS 0.543
+config=back-resample rho0.75 type proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.43  DES 0.598 DCS 0.637 MMD 0.579 CSS 0.560
+config=composition rho0.75 + half as anchor proxy=gen split=development f=0.0625 t=0.0 bwd=1.0 seed=42  59.54  DES 0.571 DCS 0.659 MMD 0.583 CSS 0.564
+config=composition rho1 proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  59.68  DES 0.559 DCS 0.649 MMD 0.612 CSS 0.556
+config=back-resample rho1 type proxy=gen split=development f=0.1667 t=0.0 bwd=1.0 seed=42  59.96  DES 0.591 DCS 0.636 MMD 0.593 CSS 0.575
+config=composition rho1 + half as anchor proxy=gen split=development f=0.0833 t=0.0 bwd=1.0 seed=42  59.92  DES 0.565 DCS 0.658 MMD 0.601 CSS 0.565
+config=composition rho1.5 proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.76  DES 0.553 DCS 0.658 MMD 0.637 CSS 0.569
+config=back-resample rho1.5 type proxy=gen split=development f=0.25 t=0.0 bwd=1.0 seed=42  60.19  DES 0.591 DCS 0.637 MMD 0.607 CSS 0.564
+config=composition rho1.5 + half as anchor proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  62.26  DES 0.565 DCS 0.682 MMD 0.645 CSS 0.587
+config=base only proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+config=composition rho0.4 proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.89  DES 0.587 DCS 0.694 MMD 0.606 CSS 0.534
+config=back-resample rho0.4 type proxy=p8/deep split=development f=0.08 t=0.0 bwd=1.0 seed=42  62.15  DES 0.593 DCS 0.713 MMD 0.612 CSS 0.556
+config=composition rho0.4 + half as anchor proxy=p8/deep split=development f=0.04 t=0.0 bwd=1.0 seed=42  60.96  DES 0.583 DCS 0.701 MMD 0.603 CSS 0.538
+config=composition rho0.75 proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.64  DES 0.583 DCS 0.692 MMD 0.601 CSS 0.536
+config=back-resample rho0.75 type proxy=p8/deep split=development f=0.15 t=0.0 bwd=1.0 seed=42  62.89  DES 0.596 DCS 0.724 MMD 0.612 CSS 0.577
+config=composition rho0.75 + half as anchor proxy=p8/deep split=development f=0.075 t=0.0 bwd=1.0 seed=42  61.86  DES 0.590 DCS 0.710 MMD 0.612 CSS 0.550
+config=composition rho1 proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.94  DES 0.583 DCS 0.692 MMD 0.609 CSS 0.538
+config=back-resample rho1 type proxy=p8/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  63.58  DES 0.603 DCS 0.732 MMD 0.620 CSS 0.580
+config=composition rho1 + half as anchor proxy=p8/deep split=development f=0.1 t=0.0 bwd=1.0 seed=42  62.48  DES 0.598 DCS 0.719 MMD 0.620 CSS 0.548
+config=composition rho1.5 proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  61.70  DES 0.593 DCS 0.694 MMD 0.615 CSS 0.553
+config=back-resample rho1.5 type proxy=p8/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42  64.28  DES 0.610 DCS 0.742 MMD 0.624 CSS 0.587
+config=composition rho1.5 + half as anchor proxy=p8/deep split=development f=0.15 t=0.0 bwd=1.0 seed=42  63.44  DES 0.605 DCS 0.725 MMD 0.622 CSS 0.576
+config=base only proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  53.31  DES 0.514 DCS 0.614 MMD 0.526 CSS 0.466
+config=composition rho0.4 proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  53.81  DES 0.518 DCS 0.620 MMD 0.535 CSS 0.467
+config=back-resample rho0.4 type proxy=2d/deep split=development f=0.1333 t=0.0 bwd=1.0 seed=42  55.90  DES 0.530 DCS 0.659 MMD 0.542 CSS 0.496
+config=composition rho0.4 + half as anchor proxy=2d/deep split=development f=0.0667 t=0.0 bwd=1.0 seed=42  54.91  DES 0.522 DCS 0.642 MMD 0.538 CSS 0.484
+config=composition rho0.75 proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  54.39  DES 0.519 DCS 0.623 MMD 0.541 CSS 0.480
+config=back-resample rho0.75 type proxy=2d/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  57.97  DES 0.553 DCS 0.683 MMD 0.557 CSS 0.518
+config=composition rho0.75 + half as anchor proxy=2d/deep split=development f=0.125 t=0.0 bwd=1.0 seed=42  56.49  DES 0.538 DCS 0.660 MMD 0.553 CSS 0.499
+config=composition rho1 proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  54.39  DES 0.519 DCS 0.622 MMD 0.542 CSS 0.479
+config=back-resample rho1 type proxy=2d/deep split=development f=0.3333 t=0.0 bwd=1.0 seed=42  59.45  DES 0.559 DCS 0.696 MMD 0.574 CSS 0.542
+config=composition rho1 + half as anchor proxy=2d/deep split=development f=0.1667 t=0.0 bwd=1.0 seed=42  56.69  DES 0.539 DCS 0.665 MMD 0.553 CSS 0.499
+config=composition rho1.5 proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  55.10  DES 0.525 DCS 0.624 MMD 0.552 CSS 0.491
+config=back-resample rho1.5 type proxy=2d/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  60.99  DES 0.570 DCS 0.714 MMD 0.582 CSS 0.572
+config=composition rho1.5 + half as anchor proxy=2d/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  58.52  DES 0.554 DCS 0.686 MMD 0.566 CSS 0.527
+done 129s
+proxy                                   gen  p8/deep  2d/deep
+config                                                       
+base only                             52.24    60.22    53.31
+composition rho0.4                    56.32    60.89    53.81
+back-resample rho0.4 type             58.04    62.15    55.90
+composition rho0.4 + half as anchor   57.09    60.96    54.91
+composition rho0.75                   58.38    60.64    54.39
+back-resample rho0.75 type            59.43    62.89    57.97
+composition rho0.75 + half as anchor  59.54    61.86    56.49
+composition rho1                      59.68    60.94    54.39
+back-resample rho1 type               59.96    63.58    59.45
+composition rho1 + half as anchor     59.92    62.48    56.69
+composition rho1.5                    60.76    61.70    55.10
+back-resample rho1.5 type             60.19    64.28    60.99
+composition rho1.5 + half as anchor   62.26    63.44    58.52
+skill_de_score
+proxy                                   gen  p8/deep  2d/deep
+config                                                       
+base only                             0.525    0.581    0.514
+composition rho0.4                    0.536    0.587    0.518
+back-resample rho0.4 type             0.598    0.593    0.530
+composition rho0.4 + half as anchor   0.559    0.583    0.522
+composition rho0.75                   0.559    0.583    0.519
+back-resample rho0.75 type            0.598    0.596    0.553
+composition rho0.75 + half as anchor  0.571    0.590    0.538
+composition rho1                      0.559    0.583    0.519
+back-resample rho1 type               0.591    0.603    0.559
+composition rho1 + half as anchor     0.565    0.598    0.539
+composition rho1.5                    0.553    0.593    0.525
+back-resample rho1.5 type             0.591    0.610    0.570
+composition rho1.5 + half as anchor   0.565    0.605    0.554
+skill_de_direction
+proxy                                   gen  p8/deep  2d/deep
+config                                                       
+base only                             0.554    0.690    0.614
+composition rho0.4                    0.625    0.694    0.620
+back-resample rho0.4 type             0.631    0.713    0.659
+composition rho0.4 + half as anchor   0.633    0.701    0.642
+composition rho0.75                   0.639    0.692    0.623
+back-resample rho0.75 type            0.637    0.724    0.683
+composition rho0.75 + half as anchor  0.659    0.710    0.660
+composition rho1                      0.649    0.692    0.622
+back-resample rho1 type               0.636    0.732    0.696
+composition rho1 + half as anchor     0.658    0.719    0.665
+composition rho1.5                    0.658    0.694    0.624
+back-resample rho1.5 type             0.637    0.742    0.714
+composition rho1.5 + half as anchor   0.682    0.725    0.686
+skill_mmd_u
+proxy                                   gen  p8/deep  2d/deep
+config                                                       
+base only                             0.506    0.597    0.526
+composition rho0.4                    0.559    0.606    0.535
+back-resample rho0.4 type             0.547    0.612    0.542
+composition rho0.4 + half as anchor   0.552    0.603    0.538
+composition rho0.75                   0.586    0.601    0.541
+back-resample rho0.75 type            0.579    0.612    0.557
+composition rho0.75 + half as anchor  0.583    0.612    0.553
+composition rho1                      0.612    0.609    0.542
+back-resample rho1 type               0.593    0.620    0.574
+composition rho1 + half as anchor     0.601    0.620    0.553
+composition rho1.5                    0.637    0.615    0.552
+back-resample rho1.5 type             0.607    0.624    0.582
+composition rho1.5 + half as anchor   0.645    0.622    0.566
+skill_variogram
+proxy                                   gen  p8/deep  2d/deep
+config                                                       
+base only                             0.503    0.527    0.466
+composition rho0.4                    0.527    0.534    0.467
+back-resample rho0.4 type             0.545    0.556    0.496
+composition rho0.4 + half as anchor   0.536    0.538    0.484
+composition rho0.75                   0.543    0.536    0.480
+back-resample rho0.75 type            0.560    0.577    0.518
+composition rho0.75 + half as anchor  0.564    0.550    0.499
+composition rho1                      0.556    0.538    0.479
+back-resample rho1 type               0.575    0.580    0.542
+composition rho1 + half as anchor     0.565    0.548    0.499
+composition rho1.5                    0.569    0.553    0.491
+back-resample rho1.5 type             0.564    0.587    0.572
+composition rho1.5 + half as anchor   0.587    0.576    0.527

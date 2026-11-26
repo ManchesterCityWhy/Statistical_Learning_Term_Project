@@ -1,0 +1,110 @@
+[suite] gen      ready    10s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] p8/deep  ready    17s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] p8/all   ready    23s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] 2d/deep  ready    30s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    38s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  51.79  DES 0.509 DCS 0.552 MMD 0.506 CSS 0.504
+config=round 6 file (raw anchor, rho 0.4) proxy=gen split=confirmation f=0.0667 t=0.0 bwd=0.0 seed=42  55.49  DES 0.553 DCS 0.589 MMD 0.550 CSS 0.520
+config=round 6 first version (raw anchor, rho 0.75) proxy=gen split=confirmation f=0.125 t=0.0 bwd=0.0 seed=42  54.63  DES 0.548 DCS 0.588 MMD 0.560 CSS 0.471
+config=R7 (final): anchor + two-witness + trend proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42  60.38  DES 0.600 DCS 0.642 MMD 0.596 CSS 0.573
+config=R7 without two-witness proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42  60.38  DES 0.600 DCS 0.642 MMD 0.596 CSS 0.573
+config=R7 without trend proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42  58.39  DES 0.582 DCS 0.623 MMD 0.573 CSS 0.554
+config=R7 without both proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42  58.39  DES 0.582 DCS 0.623 MMD 0.573 CSS 0.554
+config=R7 without anchor proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  55.98  DES 0.570 DCS 0.606 MMD 0.533 CSS 0.529
+config=R7 with raw anchor instead (rho 0.9) proxy=gen split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42  54.57  DES 0.553 DCS 0.599 MMD 0.561 CSS 0.447
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  60.34  DES 0.579 DCS 0.690 MMD 0.597 CSS 0.534
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/deep split=confirmation f=0.08 t=0.0 bwd=0.0 seed=42  64.97  DES 0.617 DCS 0.727 MMD 0.641 CSS 0.608
+config=round 6 first version (raw anchor, rho 0.75) proxy=p8/deep split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42  67.49  DES 0.630 DCS 0.749 MMD 0.661 CSS 0.659
+config=R7 (final): anchor + two-witness + trend proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42  65.04  DES 0.620 DCS 0.748 MMD 0.634 CSS 0.592
+config=R7 without two-witness proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42  64.45  DES 0.611 DCS 0.742 MMD 0.628 CSS 0.587
+config=R7 without trend proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42  63.92  DES 0.604 DCS 0.737 MMD 0.624 CSS 0.583
+config=R7 without both proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42  63.33  DES 0.596 DCS 0.731 MMD 0.619 CSS 0.579
+config=R7 without anchor proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  61.93  DES 0.595 DCS 0.710 MMD 0.612 CSS 0.548
+config=R7 with raw anchor instead (rho 0.9) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=0.0 seed=42  69.83  DES 0.655 DCS 0.769 MMD 0.687 CSS 0.680
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  57.53  DES 0.495 DCS 0.656 MMD 0.587 CSS 0.558
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/all split=confirmation f=0.08 t=0.0 bwd=0.0 seed=42  64.05  DES 0.575 DCS 0.714 MMD 0.639 CSS 0.633
+config=round 6 first version (raw anchor, rho 0.75) proxy=p8/all split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42  68.87  DES 0.631 DCS 0.753 MMD 0.678 CSS 0.696
+config=R7 (final): anchor + two-witness + trend proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42  61.75  DES 0.546 DCS 0.726 MMD 0.621 CSS 0.567
+config=R7 without two-witness proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42  61.47  DES 0.540 DCS 0.724 MMD 0.618 CSS 0.566
+config=R7 without trend proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42  60.69  DES 0.533 DCS 0.716 MMD 0.607 CSS 0.562
+config=R7 without both proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42  60.27  DES 0.523 DCS 0.713 MMD 0.605 CSS 0.562
+config=R7 without anchor proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  59.38  DES 0.527 DCS 0.674 MMD 0.603 CSS 0.563
+config=R7 with raw anchor instead (rho 0.9) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=0.0 seed=42  71.06  DES 0.652 DCS 0.766 MMD 0.705 CSS 0.722
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  53.39  DES 0.514 DCS 0.615 MMD 0.525 CSS 0.470
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/deep split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=42  59.71  DES 0.565 DCS 0.681 MMD 0.582 CSS 0.555
+config=round 6 first version (raw anchor, rho 0.75) proxy=2d/deep split=confirmation f=0.25 t=0.0 bwd=0.0 seed=42  63.30  DES 0.599 DCS 0.712 MMD 0.621 CSS 0.594
+config=R7 (final): anchor + two-witness + trend proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42  60.32  DES 0.580 DCS 0.714 MMD 0.572 CSS 0.540
+config=R7 without two-witness proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42  60.32  DES 0.580 DCS 0.714 MMD 0.572 CSS 0.540
+config=R7 without trend proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42  57.82  DES 0.546 DCS 0.690 MMD 0.553 CSS 0.516
+config=R7 without both proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42  57.82  DES 0.546 DCS 0.690 MMD 0.553 CSS 0.516
+config=R7 without anchor proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  56.10  DES 0.551 DCS 0.645 MMD 0.544 CSS 0.494
+config=R7 with raw anchor instead (rho 0.9) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=0.0 seed=42  65.00  DES 0.618 DCS 0.728 MMD 0.639 CSS 0.609
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  48.13  DES 0.395 DCS 0.526 MMD 0.502 CSS 0.502
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/all split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=42  63.30  DES 0.622 DCS 0.715 MMD 0.587 CSS 0.615
+config=round 6 first version (raw anchor, rho 0.75) proxy=2d/all split=confirmation f=0.25 t=0.0 bwd=0.0 seed=42  67.16  DES 0.622 DCS 0.725 MMD 0.649 CSS 0.701
+config=R7 (final): anchor + two-witness + trend proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42  59.50  DES 0.547 DCS 0.701 MMD 0.584 CSS 0.540
+config=R7 without two-witness proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42  59.50  DES 0.547 DCS 0.701 MMD 0.584 CSS 0.540
+config=R7 without trend proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42  56.83  DES 0.500 DCS 0.688 MMD 0.554 CSS 0.525
+config=R7 without both proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42  56.83  DES 0.500 DCS 0.688 MMD 0.554 CSS 0.525
+config=R7 without anchor proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  53.64  DES 0.495 DCS 0.596 MMD 0.532 CSS 0.520
+config=R7 with raw anchor instead (rho 0.9) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=0.0 seed=42  69.73  DES 0.628 DCS 0.737 MMD 0.691 CSS 0.745
+done 172s
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     51.79    60.34   57.53    53.39   48.13
+round 6 file (raw anchor, rho 0.4)            55.49    64.97   64.05    59.71   63.30
+round 6 first version (raw anchor, rho 0.75)  54.63    67.49   68.87    63.30   67.16
+R7 (final): anchor + two-witness + trend      60.38    65.04   61.75    60.32   59.50
+R7 without two-witness                        60.38    64.45   61.47    60.32   59.50
+R7 without trend                              58.39    63.92   60.69    57.82   56.83
+R7 without both                               58.39    63.33   60.27    57.82   56.83
+R7 without anchor                             55.98    61.93   59.38    56.10   53.64
+R7 with raw anchor instead (rho 0.9)          54.57    69.83   71.06    65.00   69.73
+skill_de_score
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.509    0.579   0.495    0.514   0.395
+round 6 file (raw anchor, rho 0.4)            0.553    0.617   0.575    0.565   0.622
+round 6 first version (raw anchor, rho 0.75)  0.548    0.630   0.631    0.599   0.622
+R7 (final): anchor + two-witness + trend      0.600    0.620   0.546    0.580   0.547
+R7 without two-witness                        0.600    0.611   0.540    0.580   0.547
+R7 without trend                              0.582    0.604   0.533    0.546   0.500
+R7 without both                               0.582    0.596   0.523    0.546   0.500
+R7 without anchor                             0.570    0.595   0.527    0.551   0.495
+R7 with raw anchor instead (rho 0.9)          0.553    0.655   0.652    0.618   0.628
+skill_de_direction
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.552    0.690   0.656    0.615   0.526
+round 6 file (raw anchor, rho 0.4)            0.589    0.727   0.714    0.681   0.715
+round 6 first version (raw anchor, rho 0.75)  0.588    0.749   0.753    0.712   0.725
+R7 (final): anchor + two-witness + trend      0.642    0.748   0.726    0.714   0.701
+R7 without two-witness                        0.642    0.742   0.724    0.714   0.701
+R7 without trend                              0.623    0.737   0.716    0.690   0.688
+R7 without both                               0.623    0.731   0.713    0.690   0.688
+R7 without anchor                             0.606    0.710   0.674    0.645   0.596
+R7 with raw anchor instead (rho 0.9)          0.599    0.769   0.766    0.728   0.737
+skill_mmd_u
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.506    0.597   0.587    0.525   0.502
+round 6 file (raw anchor, rho 0.4)            0.550    0.641   0.639    0.582   0.587
+round 6 first version (raw anchor, rho 0.75)  0.560    0.661   0.678    0.621   0.649
+R7 (final): anchor + two-witness + trend      0.596    0.634   0.621    0.572   0.584
+R7 without two-witness                        0.596    0.628   0.618    0.572   0.584
+R7 without trend                              0.573    0.624   0.607    0.553   0.554
+R7 without both                               0.573    0.619   0.605    0.553   0.554
+R7 without anchor                             0.533    0.612   0.603    0.544   0.532
+R7 with raw anchor instead (rho 0.9)          0.561    0.687   0.705    0.639   0.691
+skill_variogram
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.504    0.534   0.558    0.470   0.502
+round 6 file (raw anchor, rho 0.4)            0.520    0.608   0.633    0.555   0.615
+round 6 first version (raw anchor, rho 0.75)  0.471    0.659   0.696    0.594   0.701
+R7 (final): anchor + two-witness + trend      0.573    0.592   0.567    0.540   0.540
+R7 without two-witness                        0.573    0.587   0.566    0.540   0.540
+R7 without trend                              0.554    0.583   0.562    0.516   0.525
+R7 without both                               0.554    0.579   0.562    0.516   0.525
+R7 without anchor                             0.529    0.548   0.563    0.494   0.520
+R7 with raw anchor instead (rho 0.9)          0.447    0.680   0.722    0.609   0.745

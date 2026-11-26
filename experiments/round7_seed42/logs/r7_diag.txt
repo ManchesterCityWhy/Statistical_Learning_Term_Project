@@ -1,0 +1,76 @@
+anchor: {'cells_after_qc': 5481, 'median_umi': 3059.0, 'desoup': False, 'soup_fraction': None}
+soup: None 
+ambient fraction per lineage: {} genes used {}
+matched lineages ['CM', 'Endo', 'Cushion', 'Epi'] | anchor lineage shares {'Blood': 0.001, 'CM': 0.421, 'Cushion': 0.075, 'Endo': 0.317, 'Epi': 0.061, 'Mac': 0.031, 'Other': 0.094}
+pooling size per lineage (match_k) {'Blood': 4, 'CM': 4, 'Cushion': 5, 'Endo': 3, 'Epi': 4, 'Mac': 5, 'Other': 3}
+shared shift c: genes != 0: 10629  |c|>=0.5: 2055  |c|>=1: 391
+bulk E9.5->E14.5 trend available for 18657 genes; corr(-c, trend) over genes with both: 0.351 n 9320
+marker genes: shared shift c (source/anchor, removed from the anchor), bulk trend, lineage log-ratios d (anchor'/source):
+         c(shared)  bulk_trend    CM  Cushion  Endo   Epi   Mac
+Tnnt2         0.00        0.67 -0.75     3.54  2.68  2.77  3.39
+Myl2          0.00        0.96 -0.73     4.16  3.15  4.20  3.89
+Myl3          0.00        0.70 -1.40     3.68  3.09  3.73  2.83
+Myl7          0.00       -0.86 -4.14     1.85  0.38 -1.66  0.48
+Myl4          0.00       -0.10 -2.59     2.92  2.20  2.68  2.19
+Myh6          0.00       -0.92 -0.88     2.44  2.60  2.24  2.24
+Myh7          0.00        0.18 -0.47     3.70  4.15  3.99  3.88
+Nppa         -0.20        1.41 -0.00     2.54  2.54  2.30  2.06
+Nppb         -0.31       -0.00 -0.00     0.33  0.20  0.01  0.55
+Ttn          -0.43       -0.71 -0.00     2.85  3.59  1.92  2.49
+Ryr2         -0.57       -0.51  0.31    -0.00  1.70  0.38  0.62
+Actc1         0.00       -0.24 -2.03     1.63  3.74  3.95  2.99
+Hcn4          0.00       -1.09 -1.03     0.15  0.22  0.13 -0.00
+Top2a         0.00       -0.51  0.57    -0.49 -0.77 -1.13 -0.84
+Mki67         0.00       -0.30  0.88    -0.13 -0.55 -0.82 -1.13
+Hba-x         1.73       -1.11 -0.43    -0.00 -0.18 -0.39 -1.36
+Hbb-y         0.19        0.07 -0.88    -0.00 -0.95 -0.61 -1.57
+Hbb-bh1       3.19       -2.00 -0.38    -0.00 -0.50 -0.32 -0.87
+Hba-a1       -0.55        1.99  0.34     0.44 -0.00  0.43 -0.40
+Hbb-bs       -4.35        2.00  0.22     0.17 -0.00  0.34  0.03
+Col1a1       -0.91        2.00 -0.00     0.12  1.68  0.70  0.93
+Col3a1        0.00        2.00  1.24     0.56 -0.53  1.88  1.41
+Postn        -0.86        2.00  1.77    -0.00  0.46  1.10  0.40
+Wt1          -0.04        0.00  0.58     1.20  1.91 -0.00 -1.06
+Tbx18         0.00        0.01  0.82     2.33  1.03 -0.02 -0.45
+Upk3b         0.00        1.52  0.08     0.51  0.74 -0.95 -0.92
+Tcf21         0.00        1.17 -0.19     1.02 -0.30 -1.37 -0.50
+Pecam1        0.00        0.61  1.52    -0.19  0.06  1.52  0.31
+Npr3         -0.40        0.16  1.27     0.50 -0.00  0.30  0.01
+Cdh5          0.00        0.36  1.54     0.55 -0.44  1.46  0.57
+Fabp4        -1.43        2.00 -0.00     0.36  0.77  0.44  0.56
+Cd36         -1.39        1.74 -0.00     0.08  0.86  0.91  0.30
+Sox9          0.22       -0.00 -0.00    -0.75 -0.83 -1.55 -0.31
+Twist1        0.61       -0.03 -0.00    -1.64 -1.14 -0.36 -0.03
+Malat1       -0.76        0.23  0.30     0.26 -0.00  0.29 -0.10
+Xist          2.90        0.30 -0.00    -0.53 -0.84 -0.08 -0.88
+Rps2          2.20       -0.16 -0.05    -0.00 -0.11 -0.09 -0.07
+Rpl4          1.86       -0.29 -0.36    -0.00 -0.19 -0.02 -0.15
+mt-Co1       -0.34        0.78  0.00     0.29 -0.00  0.54 -0.02
+
+CM: |d|>=0.5: 2326, |d|>=1: 414; corr with bulk trend 0.217
+  up  : Ebf1 2.6, Gja1 2.3, Pde1c 2.3, Gm30382 2.2, Ddc 2.0, Hmcn1 2.0, Myh7b 2.0, Asb11 2.0, Ncam1 2.0, Nckap5 2.0, Gm42047 2.0, Lrrc4c 1.9, D830005E20Rik 1.9, Phldb2 1.9, Hectd2os 1.9, Mir133a-1hg 1.9, Kcnq1 1.8, Gm12295 1.8, Zfp536 1.8, Rnf207 1.8, Eng 1.8, Flt1 1.8, Akap6 1.8, Gm36723 1.8, Itpr2 1.8, Postn 1.8, Plppr1 1.8, Creb5 1.8, Sept6 1.8, Ppip5k2 1.7
+  down: Myl7 -4.1, Col2a1 -3.4, Acta1 -3.3, Acta2 -3.0, Hspb1 -2.9, Tagln -2.8, Myl9 -2.7, Bmp4 -2.6, Myl4 -2.6, Cnn1 -2.3, Gpx3 -2.3, Csrp2 -2.2, Ckb -2.1, Myl1 -2.1, Chchd10 -2.1, Actc1 -2.0, Slc2a1 -2.0, Pgam2 -2.0, Shox2 -1.9, Sema3c -1.8, Isl1 -1.8, Hspb2 -1.8, Cryab -1.8, Itm2a -1.8, Crip1 -1.8, Hcfc1r1 -1.8, Nkx2-5 -1.8, Hrc -1.8, Hand1 -1.8, Sh3bgr -1.7
+
+Cushion: |d|>=0.5: 1621, |d|>=1: 350; corr with bulk trend 0.233
+  up  : Myl2 4.2, Myh7 3.7, Myl3 3.7, Tnnt2 3.5, Tnnc1 3.1, Adamts19 3.0, Myl4 2.9, Ttn 2.9, Dcn 2.8, Tnni3 2.7, Kirrel3 2.6, Slit2 2.6, Rgs6 2.6, Cacna1d 2.5, Nppa 2.5, Myh6 2.4, Vav3 2.4, Ctnna2 2.4, Abi3bp 2.4, Plxdc2 2.4, Tbx18 2.3, Pln 2.3, Csrp3 2.3, Fabp3 2.3, Frem1 2.2, Mybpc3 2.2, Slc8a1 2.2, Trabd2b 2.2, Abca8a 2.1, Col1a2 2.1
+  down: Hapln1 -2.5, Cd24a -2.3, Stmn4 -2.1, Erbb3 -2.1, Gata3 -2.0, Actg1 -1.9, L1cam -1.9, Ttc23l -1.8, Tubb3 -1.8, Akr1b8 -1.7, Tagln -1.7, Serpinf1 -1.7, Flrt3 -1.6, Twist1 -1.6, Grid2 -1.6, Crmp1 -1.6, Itga4 -1.6, Slitrk4 -1.5, Kif26a -1.5, Luzp2 -1.4, Gsta4 -1.4, Flnb -1.4, Gpc1 -1.4, Sox11 -1.4, Tagln2 -1.4, Ckb -1.4, Dkk1 -1.4, Ak1 -1.4, Actb -1.4, Tgfbi -1.4
+
+Endo: |d|>=0.5: 1176, |d|>=1: 229; corr with bulk trend 0.179
+  up  : Myh7 4.2, Actc1 3.7, Ttn 3.6, Slc8a1 3.3, Myl2 3.1, Tnnc1 3.1, Myl3 3.1, Pgm5 2.9, Tnnt2 2.7, Tnni3 2.7, Myh6 2.6, Mybpc3 2.6, Nppa 2.5, Actn2 2.3, Glis3 2.3, Pde3a 2.2, Myl4 2.2, Fabp3 2.2, Hmcn1 2.2, Pln 2.1, Flnc 2.1, Sorbs2 2.1, Csrp3 2.1, Smoc1 2.1, Ankrd1 2.0, Rassf9 2.0, Cdh2 2.0, Pakap 2.0, D5Ertd615e 1.9, Cacna1c 1.9
+  down: Hapln1 -3.2, Wnt4 -1.8, Thbs1 -1.7, Car4 -1.7, Tagln2 -1.6, Ano1 -1.5, Bmper -1.5, Actg1 -1.5, Has2 -1.4, Igfbp7 -1.4, Stmn2 -1.4, Gngt2 -1.4, Plvap -1.4, Tinagl1 -1.4, Gsta4 -1.4, Cyp26b1 -1.4, Cd24a -1.3, Sost -1.3, Crip1 -1.3, Tkt -1.2, Ptgis -1.2, Tnfaip2 -1.2, Ttc23l -1.2, Cdo1 -1.2, Tspo -1.1, Twist1 -1.1, Edil3 -1.1, Pappa -1.1, Krt79 -1.1, 5330416C01Rik -1.1
+
+Epi: |d|>=0.5: 1881, |d|>=1: 450; corr with bulk trend 0.277
+  up  : Myl2 4.2, Myh7 4.0, Actc1 3.9, Myl3 3.7, Khdrbs2 3.4, Tnnc1 3.3, Eln 3.0, Hs3st5 2.9, Megf6 2.8, Tnnt2 2.8, Kcnb2 2.8, Ptprz1 2.7, Dnajc6 2.7, Grik1 2.7, Pcdh15 2.7, Myl4 2.7, Tnni3 2.7, Smoc2 2.6, Gabrb1 2.6, Cadm1 2.5, Lvrn 2.5, Fabp3 2.5, Thsd7a 2.5, Aqp1 2.5, Mybpc3 2.4, Msln 2.4, Il1rapl1 2.4, Galntl6 2.4, Lrmda 2.4, Meg3 2.4
+  down: Hapln1 -3.1, Itga4 -3.0, Kcne1l -2.8, Tmem255a -2.4, Plppr5 -2.2, Zdhhc2 -2.0, Aif1l -1.9, Emilin2 -1.9, Ccnd1 -1.8, Aqp5 -1.8, Prkcb -1.8, Mest -1.8, Podxl -1.7, Kirrel2 -1.7, Lama1 -1.7, Myl7 -1.7, Aplp1 -1.6, Zmat4 -1.6, Lipg -1.6, Hsd11b2 -1.6, Sox9 -1.6, Tagln -1.5, Car4 -1.5, Dsc2 -1.5, Uhrf1 -1.5, Actg1 -1.4, Dusp6 -1.4, Ripor2 -1.4, Tyms -1.4, 6030498E09Rik -1.4
+
+Mac: |d|>=0.5: 3836, |d|>=1: 881; corr with bulk trend 0.103
+  up  : Myl2 3.9, Myh7 3.9, Spp1 3.9, Gpnmb 3.7, Ccr2 3.5, Tnnt2 3.4, Fgr 3.1, Slc7a11 3.0, Actc1 3.0, Ifi203 2.9, St18 2.9, Pla2g7 2.9, Myl3 2.8, Epsti1 2.8, Csf1 2.8, Adgre4 2.8, Klra2 2.7, Kcnip4 2.7, Pparg 2.7, Mndal 2.7, Parp14 2.7, Tnnc1 2.6, Negr1 2.6, Clec4n 2.6, Slc7a2 2.6, Cd200r3 2.5, Gm15987 2.5, Ttn 2.5, Fam20c 2.5, Tmcc3 2.4
+  down: Pf4 -3.2, Ppbp -2.8, Angpt1 -2.7, Ank3 -2.7, Egr1 -2.6, Trpc6 -2.6, Shank3 -2.6, Timp3 -2.6, Gp1ba -2.5, Slc35d3 -2.4, Lat -2.4, F2r -2.4, Chsy3 -2.4, Gp5 -2.3, Slc14a1 -2.3, Myom1 -2.2, Treml1 -2.2, Arsb -2.2, Pkd1l3 -2.1, Tuba4a -2.1, Prkca -2.0, F2rl2 -2.0, Adgrg1 -2.0, Itgb3 -2.0, Phgdh -2.0, F2rl3 -1.9, Fosb -1.9, Gp1bb -1.9, Dtl -1.9, Pde3a -1.9
+
+correlation between lineage log-ratios (genes with mean |d| > 0.3):
+           CM  Cushion  Endo   Epi   Mac
+CM       1.00     0.17  0.18  0.07  0.07
+Cushion  0.17     1.00  0.55  0.35  0.18
+Endo     0.18     0.55  1.00  0.37  0.31
+Epi      0.07     0.35  0.37  1.00  0.18
+Mac      0.07     0.18  0.31  0.18  1.00

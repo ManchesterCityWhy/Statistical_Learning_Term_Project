@@ -1,0 +1,136 @@
+[suite] gen      ready    14s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  52.24  DES 0.525 DCS 0.554 MMD 0.506 CSS 0.503
+config=R6b mix rho.4 proxy=gen split=development f=0.0667 t=0.0 bwd=0.0 seed=42  55.83  DES 0.553 DCS 0.601 MMD 0.553 CSS 0.519
+config=R6v1 mix rho.75 proxy=gen split=development f=0.125 t=0.0 bwd=0.0 seed=42  54.86  DES 0.542 DCS 0.599 MMD 0.566 CSS 0.467
+config=bwd1 poolM rho0.4 proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  58.33  DES 0.598 DCS 0.634 MMD 0.549 CSS 0.553
+config=bwd1 resample rho0.4 proxy=gen split=development f=0.0667 t=0.0 bwd=1.0 seed=42  57.87  DES 0.598 DCS 0.630 MMD 0.544 CSS 0.543
+config=resample rho0.4 proxy=gen split=development f=0.0667 t=0.0 bwd=0.0 seed=42  56.84  DES 0.578 DCS 0.616 MMD 0.536 CSS 0.546
+config=interp t1 resample rho0.4 proxy=gen split=development f=0.0667 t=0.1667 bwd=0.8333 seed=42  56.40  DES 0.571 DCS 0.615 MMD 0.527 CSS 0.546
+config=interp t1 poolM rho0.4 proxy=gen split=development f=0.0667 t=0.1667 bwd=0.8333 seed=42  56.75  DES 0.578 DCS 0.613 MMD 0.532 CSS 0.551
+config=bwd1 poolM rho0.75 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.33  DES 0.598 DCS 0.634 MMD 0.581 CSS 0.556
+config=bwd1 resample rho0.75 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.16  DES 0.598 DCS 0.635 MMD 0.573 CSS 0.558
+config=resample rho0.75 proxy=gen split=development f=0.125 t=0.0 bwd=0.0 seed=42  57.12  DES 0.578 DCS 0.608 MMD 0.551 CSS 0.547
+config=interp t1 resample rho0.75 proxy=gen split=development f=0.125 t=0.1667 bwd=0.8333 seed=42  58.14  DES 0.598 DCS 0.621 MMD 0.552 CSS 0.556
+config=interp t1 poolM rho0.75 proxy=gen split=development f=0.125 t=0.1667 bwd=0.8333 seed=42  57.75  DES 0.584 DCS 0.617 MMD 0.559 CSS 0.547
+config=bwd1 poolM rho1 proxy=gen split=development f=0.1667 t=0.0 bwd=1.0 seed=42  59.41  DES 0.591 DCS 0.630 MMD 0.593 CSS 0.556
+config=bwd1 resample rho1 proxy=gen split=development f=0.1667 t=0.0 bwd=1.0 seed=42  59.63  DES 0.591 DCS 0.633 MMD 0.586 CSS 0.573
+config=resample rho1 proxy=gen split=development f=0.1667 t=0.0 bwd=0.0 seed=42  57.01  DES 0.578 DCS 0.607 MMD 0.547 CSS 0.550
+config=interp t1 resample rho1 proxy=gen split=development f=0.1667 t=0.1667 bwd=0.8333 seed=42  58.53  DES 0.591 DCS 0.620 MMD 0.561 CSS 0.571
+config=interp t1 poolM rho1 proxy=gen split=development f=0.1667 t=0.1667 bwd=0.8333 seed=42  57.91  DES 0.584 DCS 0.616 MMD 0.567 CSS 0.543
+config=bwd1 resample rho.75 median proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.10  DES 0.598 DCS 0.635 MMD 0.571 CSS 0.557
+config=bwd1 resample rho.75 type proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.43  DES 0.598 DCS 0.637 MMD 0.579 CSS 0.560
+done 63s
+proxy                          gen
+config                            
+base only                    52.24
+R6b mix rho.4                55.83
+R6v1 mix rho.75              54.86
+bwd1 poolM rho0.4            58.33
+bwd1 resample rho0.4         57.87
+resample rho0.4              56.84
+interp t1 resample rho0.4    56.40
+interp t1 poolM rho0.4       56.75
+bwd1 poolM rho0.75           59.33
+bwd1 resample rho0.75        59.16
+resample rho0.75             57.12
+interp t1 resample rho0.75   58.14
+interp t1 poolM rho0.75      57.75
+bwd1 poolM rho1              59.41
+bwd1 resample rho1           59.63
+resample rho1                57.01
+interp t1 resample rho1      58.53
+interp t1 poolM rho1         57.91
+bwd1 resample rho.75 median  59.10
+bwd1 resample rho.75 type    59.43
+skill_de_score
+proxy                          gen
+config                            
+base only                    0.525
+R6b mix rho.4                0.553
+R6v1 mix rho.75              0.542
+bwd1 poolM rho0.4            0.598
+bwd1 resample rho0.4         0.598
+resample rho0.4              0.578
+interp t1 resample rho0.4    0.571
+interp t1 poolM rho0.4       0.578
+bwd1 poolM rho0.75           0.598
+bwd1 resample rho0.75        0.598
+resample rho0.75             0.578
+interp t1 resample rho0.75   0.598
+interp t1 poolM rho0.75      0.584
+bwd1 poolM rho1              0.591
+bwd1 resample rho1           0.591
+resample rho1                0.578
+interp t1 resample rho1      0.591
+interp t1 poolM rho1         0.584
+bwd1 resample rho.75 median  0.598
+bwd1 resample rho.75 type    0.598
+skill_de_direction
+proxy                          gen
+config                            
+base only                    0.554
+R6b mix rho.4                0.601
+R6v1 mix rho.75              0.599
+bwd1 poolM rho0.4            0.634
+bwd1 resample rho0.4         0.630
+resample rho0.4              0.616
+interp t1 resample rho0.4    0.615
+interp t1 poolM rho0.4       0.613
+bwd1 poolM rho0.75           0.634
+bwd1 resample rho0.75        0.635
+resample rho0.75             0.608
+interp t1 resample rho0.75   0.621
+interp t1 poolM rho0.75      0.617
+bwd1 poolM rho1              0.630
+bwd1 resample rho1           0.633
+resample rho1                0.607
+interp t1 resample rho1      0.620
+interp t1 poolM rho1         0.616
+bwd1 resample rho.75 median  0.635
+bwd1 resample rho.75 type    0.637
+skill_mmd_u
+proxy                          gen
+config                            
+base only                    0.506
+R6b mix rho.4                0.553
+R6v1 mix rho.75              0.566
+bwd1 poolM rho0.4            0.549
+bwd1 resample rho0.4         0.544
+resample rho0.4              0.536
+interp t1 resample rho0.4    0.527
+interp t1 poolM rho0.4       0.532
+bwd1 poolM rho0.75           0.581
+bwd1 resample rho0.75        0.573
+resample rho0.75             0.551
+interp t1 resample rho0.75   0.552
+interp t1 poolM rho0.75      0.559
+bwd1 poolM rho1              0.593
+bwd1 resample rho1           0.586
+resample rho1                0.547
+interp t1 resample rho1      0.561
+interp t1 poolM rho1         0.567
+bwd1 resample rho.75 median  0.571
+bwd1 resample rho.75 type    0.579
+skill_variogram
+proxy                          gen
+config                            
+base only                    0.503
+R6b mix rho.4                0.519
+R6v1 mix rho.75              0.467
+bwd1 poolM rho0.4            0.553
+bwd1 resample rho0.4         0.543
+resample rho0.4              0.546
+interp t1 resample rho0.4    0.546
+interp t1 poolM rho0.4       0.551
+bwd1 poolM rho0.75           0.556
+bwd1 resample rho0.75        0.558
+resample rho0.75             0.547
+interp t1 resample rho0.75   0.556
+interp t1 poolM rho0.75      0.547
+bwd1 poolM rho1              0.556
+bwd1 resample rho1           0.573
+resample rho1                0.550
+interp t1 resample rho1      0.571
+interp t1 poolM rho1         0.543
+bwd1 resample rho.75 median  0.557
+bwd1 resample rho.75 type    0.560

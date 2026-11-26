@@ -1,0 +1,133 @@
+scenario pool 11486 50s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=composition rho0.4 scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  99.08  DES 0.967 DCS 1.000 MMD 0.999 CSS 0.997
+config=composition rho0.4 scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  92.06  DES 0.957 DCS 0.950 MMD 0.960 CSS 0.779
+config=composition rho0.4 scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  80.01  DES 0.804 DCS 0.868 MMD 0.849 CSS 0.637
+config=composition rho0.4 scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  74.36  DES 0.663 DCS 0.858 MMD 0.743 CSS 0.702
+config=back-resample rho0.4 type scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  96.98  DES 0.949 DCS 0.981 MMD 0.977 CSS 0.970
+config=back-resample rho0.4 type scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  91.82  DES 0.954 DCS 0.940 MMD 0.951 CSS 0.797
+config=back-resample rho0.4 type scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  80.47  DES 0.814 DCS 0.862 MMD 0.850 CSS 0.653
+config=back-resample rho0.4 type scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  74.34  DES 0.666 DCS 0.866 MMD 0.729 CSS 0.708
+config=composition rho0.4 + half as anchor scenario=heart/deep split=development f=0.1 t=0.0 bwd=1.0 seed=42  98.31  DES 0.949 DCS 1.000 MMD 0.992 CSS 0.991
+config=composition rho0.4 + half as anchor scenario=heart/mid split=development f=0.1 t=0.0 bwd=1.0 seed=42  92.55  DES 0.961 DCS 0.952 MMD 0.960 CSS 0.797
+config=composition rho0.4 + half as anchor scenario=heart/shallow split=development f=0.1 t=0.0 bwd=1.0 seed=42  80.96  DES 0.824 DCS 0.871 MMD 0.852 CSS 0.650
+config=composition rho0.4 + half as anchor scenario=all/asis split=development f=0.1 t=0.0 bwd=1.0 seed=42  74.40  DES 0.659 DCS 0.867 MMD 0.734 CSS 0.711
+config=composition rho0.75 scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  95.40  DES 0.898 DCS 0.984 MMD 0.968 CSS 0.965
+config=composition rho0.75 scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  88.72  DES 0.901 DCS 0.933 MMD 0.931 CSS 0.748
+config=composition rho0.75 scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.92  DES 0.774 DCS 0.857 MMD 0.825 CSS 0.619
+config=composition rho0.75 scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  71.63  DES 0.636 DCS 0.842 MMD 0.714 CSS 0.663
+config=back-resample rho0.75 type scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  88.79  DES 0.837 DCS 0.924 MMD 0.903 CSS 0.885
+config=back-resample rho0.75 type scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  84.33  DES 0.830 DCS 0.890 MMD 0.885 CSS 0.740
+config=back-resample rho0.75 type scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  76.00  DES 0.751 DCS 0.829 MMD 0.801 CSS 0.624
+config=back-resample rho0.75 type scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  69.78  DES 0.632 DCS 0.840 MMD 0.666 CSS 0.650
+config=composition rho0.75 + half as anchor scenario=heart/deep split=development f=0.1875 t=0.0 bwd=1.0 seed=42  93.40  DES 0.876 DCS 0.967 MMD 0.949 CSS 0.944
+config=composition rho0.75 + half as anchor scenario=heart/mid split=development f=0.1875 t=0.0 bwd=1.0 seed=42  87.97  DES 0.890 DCS 0.920 MMD 0.918 CSS 0.758
+config=composition rho0.75 + half as anchor scenario=heart/shallow split=development f=0.1875 t=0.0 bwd=1.0 seed=42  78.03  DES 0.788 DCS 0.848 MMD 0.818 CSS 0.630
+config=composition rho0.75 + half as anchor scenario=all/asis split=development f=0.1875 t=0.0 bwd=1.0 seed=42  71.68  DES 0.644 DCS 0.850 MMD 0.698 CSS 0.670
+config=composition rho1 scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  91.55  DES 0.853 DCS 0.955 MMD 0.928 CSS 0.926
+config=composition rho1 scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  86.09  DES 0.864 DCS 0.918 MMD 0.898 CSS 0.730
+config=composition rho1 scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  75.89  DES 0.735 DCS 0.847 MMD 0.804 CSS 0.611
+config=composition rho1 scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  68.92  DES 0.600 DCS 0.823 MMD 0.683 CSS 0.643
+config=back-resample rho1 type scenario=heart/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  84.69  DES 0.805 DCS 0.897 MMD 0.852 CSS 0.829
+config=back-resample rho1 type scenario=heart/mid split=development f=0.5 t=0.0 bwd=1.0 seed=42  81.18  DES 0.793 DCS 0.870 MMD 0.839 CSS 0.722
+config=back-resample rho1 type scenario=heart/shallow split=development f=0.5 t=0.0 bwd=1.0 seed=42  73.97  DES 0.727 DCS 0.816 MMD 0.767 CSS 0.620
+config=back-resample rho1 type scenario=all/asis split=development f=0.5 t=0.0 bwd=1.0 seed=42  67.78  DES 0.622 DCS 0.829 MMD 0.629 CSS 0.632
+config=composition rho1 + half as anchor scenario=heart/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  89.74  DES 0.839 DCS 0.937 MMD 0.904 CSS 0.912
+config=composition rho1 + half as anchor scenario=heart/mid split=development f=0.25 t=0.0 bwd=1.0 seed=42  84.77  DES 0.837 DCS 0.899 MMD 0.882 CSS 0.745
+config=composition rho1 + half as anchor scenario=heart/shallow split=development f=0.25 t=0.0 bwd=1.0 seed=42  76.15  DES 0.758 DCS 0.834 MMD 0.796 CSS 0.625
+config=composition rho1 + half as anchor scenario=all/asis split=development f=0.25 t=0.0 bwd=1.0 seed=42  69.70  DES 0.626 DCS 0.837 MMD 0.666 CSS 0.657
+config=composition rho1.5 scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  83.40  DES 0.770 DCS 0.905 MMD 0.835 CSS 0.824
+config=composition rho1.5 scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  79.70  DES 0.796 DCS 0.878 MMD 0.816 CSS 0.670
+config=composition rho1.5 scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  71.61  DES 0.685 DCS 0.822 MMD 0.745 CSS 0.580
+config=composition rho1.5 scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  63.80  DES 0.569 DCS 0.791 MMD 0.608 CSS 0.578
+config=back-resample rho1.5 type scenario=heart/deep split=development f=0.75 t=0.0 bwd=1.0 seed=42  73.95  DES 0.736 DCS 0.832 MMD 0.708 CSS 0.674
+config=back-resample rho1.5 type scenario=heart/mid split=development f=0.75 t=0.0 bwd=1.0 seed=42  72.19  DES 0.723 DCS 0.811 MMD 0.710 CSS 0.628
+config=back-resample rho1.5 type scenario=heart/shallow split=development f=0.75 t=0.0 bwd=1.0 seed=42  67.26  DES 0.654 DCS 0.771 MMD 0.672 CSS 0.574
+config=back-resample rho1.5 type scenario=all/asis split=development f=0.75 t=0.0 bwd=1.0 seed=42  60.84  DES 0.588 DCS 0.790 MMD 0.521 CSS 0.538
+config=composition rho1.5 + half as anchor scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  80.52  DES 0.772 DCS 0.880 MMD 0.787 CSS 0.780
+config=composition rho1.5 + half as anchor scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  76.96  DES 0.760 DCS 0.856 MMD 0.777 CSS 0.662
+config=composition rho1.5 + half as anchor scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  70.55  DES 0.690 DCS 0.804 MMD 0.719 CSS 0.581
+config=composition rho1.5 + half as anchor scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  63.57  DES 0.591 DCS 0.804 MMD 0.575 CSS 0.572
+done 130s
+scenario                              heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                              
+base only                                 100.00      93.26          81.26     77.20
+composition rho0.4                         99.08      92.06          80.01     74.36
+back-resample rho0.4 type                  96.98      91.82          80.47     74.34
+composition rho0.4 + half as anchor        98.31      92.55          80.96     74.40
+composition rho0.75                        95.40      88.72          77.92     71.63
+back-resample rho0.75 type                 88.79      84.33          76.00     69.78
+composition rho0.75 + half as anchor       93.40      87.97          78.03     71.68
+composition rho1                           91.55      86.09          75.89     68.92
+back-resample rho1 type                    84.69      81.18          73.97     67.78
+composition rho1 + half as anchor          89.74      84.77          76.15     69.70
+composition rho1.5                         83.40      79.70          71.61     63.80
+back-resample rho1.5 type                  73.95      72.19          67.26     60.84
+composition rho1.5 + half as anchor        80.52      76.96          70.55     63.57
+skill_de_score
+scenario                              heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                              
+base only                                  1.000      0.973          0.829     0.713
+composition rho0.4                         0.967      0.957          0.804     0.663
+back-resample rho0.4 type                  0.949      0.954          0.814     0.666
+composition rho0.4 + half as anchor        0.949      0.961          0.824     0.659
+composition rho0.75                        0.898      0.901          0.774     0.636
+back-resample rho0.75 type                 0.837      0.830          0.751     0.632
+composition rho0.75 + half as anchor       0.876      0.890          0.788     0.644
+composition rho1                           0.853      0.864          0.735     0.600
+back-resample rho1 type                    0.805      0.793          0.727     0.622
+composition rho1 + half as anchor          0.839      0.837          0.758     0.626
+composition rho1.5                         0.770      0.796          0.685     0.569
+back-resample rho1.5 type                  0.736      0.723          0.654     0.588
+composition rho1.5 + half as anchor        0.772      0.760          0.690     0.591
+skill_de_direction
+scenario                              heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                              
+base only                                  1.000      0.962          0.876     0.879
+composition rho0.4                         1.000      0.950          0.868     0.858
+back-resample rho0.4 type                  0.981      0.940          0.862     0.866
+composition rho0.4 + half as anchor        1.000      0.952          0.871     0.867
+composition rho0.75                        0.984      0.933          0.857     0.842
+back-resample rho0.75 type                 0.924      0.890          0.829     0.840
+composition rho0.75 + half as anchor       0.967      0.920          0.848     0.850
+composition rho1                           0.955      0.918          0.847     0.823
+back-resample rho1 type                    0.897      0.870          0.816     0.829
+composition rho1 + half as anchor          0.937      0.899          0.834     0.837
+composition rho1.5                         0.905      0.878          0.822     0.791
+back-resample rho1.5 type                  0.832      0.811          0.771     0.790
+composition rho1.5 + half as anchor        0.880      0.856          0.804     0.804
+skill_mmd_u
+scenario                              heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                              
+base only                                  1.000      0.964          0.855     0.761
+composition rho0.4                         0.999      0.960          0.849     0.743
+back-resample rho0.4 type                  0.977      0.951          0.850     0.729
+composition rho0.4 + half as anchor        0.992      0.960          0.852     0.734
+composition rho0.75                        0.968      0.931          0.825     0.714
+back-resample rho0.75 type                 0.903      0.885          0.801     0.666
+composition rho0.75 + half as anchor       0.949      0.918          0.818     0.698
+composition rho1                           0.928      0.898          0.804     0.683
+back-resample rho1 type                    0.852      0.839          0.767     0.629
+composition rho1 + half as anchor          0.904      0.882          0.796     0.666
+composition rho1.5                         0.835      0.816          0.745     0.608
+back-resample rho1.5 type                  0.708      0.710          0.672     0.521
+composition rho1.5 + half as anchor        0.787      0.777          0.719     0.575
+skill_variogram
+scenario                              heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                              
+base only                                  1.000      0.798          0.650     0.729
+composition rho0.4                         0.997      0.779          0.637     0.702
+back-resample rho0.4 type                  0.970      0.797          0.653     0.708
+composition rho0.4 + half as anchor        0.991      0.797          0.650     0.711
+composition rho0.75                        0.965      0.748          0.619     0.663
+back-resample rho0.75 type                 0.885      0.740          0.624     0.650
+composition rho0.75 + half as anchor       0.944      0.758          0.630     0.670
+composition rho1                           0.926      0.730          0.611     0.643
+back-resample rho1 type                    0.829      0.722          0.620     0.632
+composition rho1 + half as anchor          0.912      0.745          0.625     0.657
+composition rho1.5                         0.824      0.670          0.580     0.578
+back-resample rho1.5 type                  0.674      0.628          0.574     0.538
+composition rho1.5 + half as anchor        0.780      0.662          0.581     0.572

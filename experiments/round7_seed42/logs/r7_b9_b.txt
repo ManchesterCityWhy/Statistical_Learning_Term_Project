@@ -1,0 +1,13 @@
+[test] f0.45 dev0                                       D 0.00393 (se 0.00015)  h1-if-true  70.41  de_score 0.690 de_direction 0.811 mmd_u 0.710 variogram 0.579  verbatim-if-true 71.31
+[test] f0.45 dev0.5                                     D 0.00315 (se 0.00008)  h1-if-true  71.40  de_score 0.690 de_direction 0.805 mmd_u 0.733 variogram 0.603  verbatim-if-true 71.05
+[test] f0.6 dev0                                        D 0.00414 (se 0.00025)  h1-if-true  68.35  de_score 0.680 de_direction 0.786 mmd_u 0.680 variogram 0.564  verbatim-if-true 68.32
+[test] f0.6 dev0.5                                      D 0.00300 (se 0.00016)  h1-if-true  69.37  de_score 0.682 de_direction 0.783 mmd_u 0.701 variogram 0.586  verbatim-if-true 68.17
+
+=== test
+                   D  D_seed_se  probe_total  skill_de_score  skill_de_direction  skill_mmd_u  skill_variogram  extra_total
+recipe                                                                                                                     
+f0.6 dev0.5   0.0030     0.0002      69.3748          0.6818              0.7830       0.7011           0.5861      68.1680
+f0.45 dev0.5  0.0032     0.0001      71.4021          0.6896              0.8046       0.7332           0.6025      71.0511
+f0.45 dev0    0.0039     0.0001      70.4070          0.6896              0.8112       0.7103           0.5789      71.3056
+f0.6 dev0     0.0041     0.0003      68.3548          0.6804              0.7862       0.6801           0.5643      68.3246
+done 249s

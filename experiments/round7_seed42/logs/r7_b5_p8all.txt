@@ -1,0 +1,118 @@
+[suite] p8/all   ready    14s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+config=base only proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  58.48  DES 0.512 DCS 0.665 MMD 0.595 CSS 0.560
+config=dev 0.5 proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  58.63  DES 0.515 DCS 0.667 MMD 0.597 CSS 0.560
+config=dev 1 proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  58.83  DES 0.519 DCS 0.669 MMD 0.598 CSS 0.560
+config=dev 1.5 proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  59.03  DES 0.523 DCS 0.671 MMD 0.599 CSS 0.560
+config=dev 2 proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  59.21  DES 0.527 DCS 0.673 MMD 0.600 CSS 0.561
+config=back-resample rho0.4 proxy=p8/all split=development f=0.08 t=0.0 bwd=1.0 seed=42  60.61  DES 0.533 DCS 0.701 MMD 0.610 CSS 0.575
+config=back-resample rho0.4 dev 0.5 proxy=p8/all split=development f=0.08 t=0.0 bwd=1.0 seed=42  60.74  DES 0.535 DCS 0.703 MMD 0.611 CSS 0.574
+config=back-resample rho0.4 dev 1 proxy=p8/all split=development f=0.08 t=0.0 bwd=1.0 seed=42  60.83  DES 0.536 DCS 0.703 MMD 0.612 CSS 0.575
+config=back-resample rho0.4 dev 1.5 proxy=p8/all split=development f=0.08 t=0.0 bwd=1.0 seed=42  61.13  DES 0.544 DCS 0.706 MMD 0.613 CSS 0.575
+config=raw rho0.4 proxy=p8/all split=development f=0.08 t=0.0 bwd=0.0 seed=42  64.94  DES 0.590 DCS 0.722 MMD 0.647 CSS 0.636
+config=raw rho0.4 dev 1 proxy=p8/all split=development f=0.08 t=0.0 bwd=0.0 seed=42  65.30  DES 0.600 DCS 0.724 MMD 0.649 CSS 0.636
+config=back-resample rho0.75 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  62.00  DES 0.551 DCS 0.722 MMD 0.619 CSS 0.580
+config=back-resample rho0.75 dev 0.5 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  62.13  DES 0.554 DCS 0.724 MMD 0.620 CSS 0.579
+config=back-resample rho0.75 dev 1 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  62.23  DES 0.555 DCS 0.725 MMD 0.621 CSS 0.580
+config=back-resample rho0.75 dev 1.5 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  62.40  DES 0.560 DCS 0.725 MMD 0.623 CSS 0.580
+config=raw rho0.75 proxy=p8/all split=development f=0.15 t=0.0 bwd=0.0 seed=42  69.65  DES 0.642 DCS 0.760 MMD 0.686 CSS 0.701
+config=raw rho0.75 dev 1 proxy=p8/all split=development f=0.15 t=0.0 bwd=0.0 seed=42  69.78  DES 0.645 DCS 0.761 MMD 0.688 CSS 0.700
+done 56s
+proxy                          p8/all
+config                               
+base only                       58.48
+dev 0.5                         58.63
+dev 1                           58.83
+dev 1.5                         59.03
+dev 2                           59.21
+back-resample rho0.4            60.61
+back-resample rho0.4 dev 0.5    60.74
+back-resample rho0.4 dev 1      60.83
+back-resample rho0.4 dev 1.5    61.13
+raw rho0.4                      64.94
+raw rho0.4 dev 1                65.30
+back-resample rho0.75           62.00
+back-resample rho0.75 dev 0.5   62.13
+back-resample rho0.75 dev 1     62.23
+back-resample rho0.75 dev 1.5   62.40
+raw rho0.75                     69.65
+raw rho0.75 dev 1               69.78
+skill_de_score
+proxy                          p8/all
+config                               
+base only                       0.512
+dev 0.5                         0.515
+dev 1                           0.519
+dev 1.5                         0.523
+dev 2                           0.527
+back-resample rho0.4            0.533
+back-resample rho0.4 dev 0.5    0.535
+back-resample rho0.4 dev 1      0.536
+back-resample rho0.4 dev 1.5    0.544
+raw rho0.4                      0.590
+raw rho0.4 dev 1                0.600
+back-resample rho0.75           0.551
+back-resample rho0.75 dev 0.5   0.554
+back-resample rho0.75 dev 1     0.555
+back-resample rho0.75 dev 1.5   0.560
+raw rho0.75                     0.642
+raw rho0.75 dev 1               0.645
+skill_de_direction
+proxy                          p8/all
+config                               
+base only                       0.665
+dev 0.5                         0.667
+dev 1                           0.669
+dev 1.5                         0.671
+dev 2                           0.673
+back-resample rho0.4            0.701
+back-resample rho0.4 dev 0.5    0.703
+back-resample rho0.4 dev 1      0.703
+back-resample rho0.4 dev 1.5    0.706
+raw rho0.4                      0.722
+raw rho0.4 dev 1                0.724
+back-resample rho0.75           0.722
+back-resample rho0.75 dev 0.5   0.724
+back-resample rho0.75 dev 1     0.725
+back-resample rho0.75 dev 1.5   0.725
+raw rho0.75                     0.760
+raw rho0.75 dev 1               0.761
+skill_mmd_u
+proxy                          p8/all
+config                               
+base only                       0.595
+dev 0.5                         0.597
+dev 1                           0.598
+dev 1.5                         0.599
+dev 2                           0.600
+back-resample rho0.4            0.610
+back-resample rho0.4 dev 0.5    0.611
+back-resample rho0.4 dev 1      0.612
+back-resample rho0.4 dev 1.5    0.613
+raw rho0.4                      0.647
+raw rho0.4 dev 1                0.649
+back-resample rho0.75           0.619
+back-resample rho0.75 dev 0.5   0.620
+back-resample rho0.75 dev 1     0.621
+back-resample rho0.75 dev 1.5   0.623
+raw rho0.75                     0.686
+raw rho0.75 dev 1               0.688
+skill_variogram
+proxy                          p8/all
+config                               
+base only                       0.560
+dev 0.5                         0.560
+dev 1                           0.560
+dev 1.5                         0.560
+dev 2                           0.561
+back-resample rho0.4            0.575
+back-resample rho0.4 dev 0.5    0.574
+back-resample rho0.4 dev 1      0.575
+back-resample rho0.4 dev 1.5    0.575
+raw rho0.4                      0.636
+raw rho0.4 dev 1                0.636
+back-resample rho0.75           0.580
+back-resample rho0.75 dev 0.5   0.579
+back-resample rho0.75 dev 1     0.580
+back-resample rho0.75 dev 1.5   0.580
+raw rho0.75                     0.701
+raw rho0.75 dev 1               0.700

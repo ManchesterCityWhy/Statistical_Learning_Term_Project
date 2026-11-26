@@ -1,0 +1,130 @@
+{'series': 'GSE272154', 'sample': 'GSM8394736 (RNA Wild Type e14.5 rep1)', 'stage': 'E14.5', 'assay': '10x Multiome nuclei, Cell Ranger ARC 2.0.2, mm10', 'called_barcodes': 8482, 'cells_after_qc': 5481, 'genes_matched': 32245, 'genes_in_file': 32291, 'median_umi': 3059.0, 'median_genes': 1729.0, 'desoup': False, 'soup_fraction': None, 'qc': {'min_umi': 1000, 'min_genes': 500, 'max_mito': 0.25}, 'sha256': {'GSM8394736_Wildtype_raw_feature_bc_matrix.h5': '684f31c2f2fdbf3eb7207439f868a076d405462b65b34155219d0249a68f3a3a', 'GSM8394736_Wildtype_per_barcode_metrics.csv.gz': '2b6e2e5e4773067c5ced9bef0efb67c5dd72140c90bd11221334c88a852bf954'}}
+cells sha256 90c6e482a77c2e3e7f5e2e90b707a72156ef31c84fd7c37f75682e81c06928fa
+
+=== alignment only (no developmental shifts)
+              type lineage  nuclei  lib3_cells  genes  corr_log  median_abs_logratio  q90_abs_logratio  share_within_20pct
+             LV-CM      CM     647         648   3501     0.974                0.095             0.245               0.822
+     Endocardium-2    Endo     529        1251   3996     0.981                0.067             0.202               0.882
+            OFT-CM      CM     163         321   4045     0.964                0.094             0.279               0.786
+               BEC    Endo     154         555   4047     0.972                0.087             0.251               0.802
+        Epicardium     Epi     148        2241   4106     0.966                0.098             0.284               0.768
+EndoMT Endocardium Cushion     141         806   4203     0.968                0.098             0.286               0.745
+              pSHF   Other     132         229   4076     0.824                0.250             0.697               0.386
+             RV-CM      CM      76         650   3459     0.951                0.129             0.380               0.648
+        Macrophage     Mac      67          84   4112     0.932                0.134             0.406               0.640
+            IFT-CM      CM      49         135   3799     0.940                0.148             0.410               0.579
+       Pericardium   Other      40          68   4159     0.785                0.300             0.887               0.321
+lineage  nuclei  genes  corr_log  median_abs_logratio  q90_abs_logratio
+     CM     963   3713     0.968                0.086             0.271
+   Endo     703   4096     0.955                0.116             0.331
+  Other     201   4190     0.812                0.267             0.728
+Cushion     166   4203     0.961                0.110             0.318
+    Epi     148   4106     0.966                0.098             0.284
+    Mac      67   4112     0.932                0.134             0.406
+raw anchor nuclei (no alignment), lineage level:
+lineage  corr_log  median_abs_logratio  q90_abs_logratio
+     CM     0.515                0.670             1.447
+   Endo     0.638                0.502             1.179
+  Other     0.560                0.540             1.363
+Cushion     0.605                0.527             1.314
+    Epi     0.633                0.514             1.262
+    Mac     0.580                0.586             1.403
+cells sha256 56ff2c90bef28f7fa3f089b0846a12d7a8c11a6b354a23eafe539e5247640e05
+
+=== as exported (dev 0.5, trend share 0.4)
+              type lineage  nuclei  lib3_cells  genes  corr_log  median_abs_logratio  q90_abs_logratio  share_within_20pct
+             LV-CM      CM     647         648   3501     0.932                0.162             0.482               0.536
+     Endocardium-2    Endo     529        1251   3996     0.941                0.153             0.434               0.572
+            OFT-CM      CM     163         321   4045     0.918                0.157             0.492               0.555
+               BEC    Endo     154         555   4047     0.936                0.160             0.439               0.558
+        Epicardium     Epi     148        2241   4106     0.927                0.168             0.501               0.531
+EndoMT Endocardium Cushion     141         806   4203     0.949                0.138             0.401               0.620
+              pSHF   Other     132         229   4076     0.802                0.283             0.769               0.347
+             RV-CM      CM      76         650   3459     0.909                0.192             0.570               0.480
+        Macrophage     Mac      67          84   4112     0.919                0.163             0.485               0.548
+            IFT-CM      CM      49         135   3799     0.898                0.203             0.585               0.461
+       Pericardium   Other      40          68   4159     0.771                0.330             0.942               0.294
+lineage  nuclei  genes  corr_log  median_abs_logratio  q90_abs_logratio
+     CM     963   3713     0.927                0.141             0.471
+   Endo     703   4096     0.913                0.188             0.518
+  Other     201   4190     0.787                0.303             0.806
+Cushion     166   4203     0.942                0.144             0.414
+    Epi     148   4106     0.927                0.168             0.501
+    Mac      67   4112     0.919                0.163             0.485
+
+=== cardiomyocyte genes, counts per 10k (alignment only, no developmental shifts)
+lineage   gene   lib3  raw_anchor  resampled  ln_raw_over_lib3  ln_resampled_over_lib3
+   Endo   Myl2  0.237       7.683      0.456             3.141                   0.502
+   Endo   Myl3  0.084       3.890      0.214             3.078                   0.537
+   Endo   Myh7  0.000       6.164      0.337             4.137                   1.474
+   Endo   Myh6  0.000       1.161      0.092             2.535                   0.651
+   Endo  Tnnt2  0.177       4.177      0.184             2.737                   0.024
+   Endo  Actc1  0.014       4.421      0.257             3.678                   1.139
+   Endo    Ttn  0.092      10.579      0.611             4.020                   1.311
+   Endo   Ryr2  0.192       2.736      0.245             2.273                   0.167
+   Endo   Myl7  0.487       0.782      0.734             0.408                   0.352
+   Endo   Myl4  0.110       1.838      0.252             2.223                   0.518
+   Endo Slc8a1  0.084      11.630      0.655             4.154                   1.411
+   Endo   Nppa  0.000       1.528      0.105             2.790                   0.719
+Cushion   Myl2  0.025       8.773      0.407             4.260                   1.398
+Cushion   Myl3  0.006       4.180      0.154             3.700                   0.875
+Cushion   Myh7  0.009       4.723      0.348             3.786                   1.410
+Cushion   Myh6  0.000       1.163      0.072             2.536                   0.542
+Cushion  Tnnt2  0.012       3.658      0.183             3.513                   0.926
+Cushion  Actc1  0.797       4.774      0.492             1.692                  -0.416
+Cushion    Ttn  0.043       4.307      0.235             3.431                   0.855
+Cushion   Ryr2  0.407       0.832      0.730             0.609                   0.493
+Cushion   Myl7  0.056       1.028      0.127             1.978                   0.375
+Cushion   Myl4  0.021       2.418      0.161             3.034                   0.768
+Cushion Slc8a1  0.477      11.565      0.637             3.006                   0.245
+Cushion   Nppa  0.000       1.692      0.106             2.886                   0.724
+    Epi   Myl2  0.020       7.600      0.317             4.164                   1.249
+    Epi   Myl3  0.004       4.155      0.165             3.709                   0.934
+    Epi   Myh7  0.000       5.276      0.271             3.985                   1.310
+    Epi   Myh6  0.000       0.515      0.074             1.816                   0.556
+    Epi  Tnnt2  0.153       4.437      0.233             2.886                   0.275
+    Epi  Actc1  0.002       4.633      0.219             3.839                   1.141
+    Epi    Ttn  0.228       2.563      0.313             2.095                   0.231
+    Epi   Ryr2  0.251       0.535      0.317             0.592                   0.172
+    Epi   Myl7  8.639       1.653      7.440            -1.606                  -0.148
+    Epi   Myl4  0.044       1.615      0.152             2.474                   0.558
+    Epi Slc8a1  1.299       6.749      1.636             1.588                   0.215
+    Epi   Nppa  0.000       1.306      0.073             2.643                   0.548
+    Mac   Myl2  0.063       7.915      0.202             3.897                   0.619
+    Mac   Myl3  0.139       4.301      0.226             2.912                   0.309
+    Mac   Myh7  0.000       5.131      0.270             3.957                   1.309
+    Mac   Myh6  0.000       1.031      0.207             2.426                   1.121
+    Mac  Tnnt2  0.000       3.255      0.202             3.513                   1.105
+    Mac  Actc1  0.141       5.818      0.331             3.201                   0.581
+    Mac    Ttn  0.080       3.017      0.189             2.853                   0.476
+    Mac   Ryr2  0.064       0.539      0.148             1.361                   0.413
+    Mac   Myl7  0.584       1.008      0.397             0.483                  -0.319
+    Mac   Myl4  0.155       2.085      0.295             2.147                   0.437
+    Mac Slc8a1  5.412      25.956      6.244             1.553                   0.141
+    Mac   Nppa  0.013       1.122      0.171             2.384                   0.878
+  Other   Myl2  0.552       7.441      6.884             2.448                   2.372
+  Other   Myl3  0.349       4.182      3.866             2.256                   2.179
+  Other   Myh7  0.025       5.502      6.162             3.799                   3.911
+  Other   Myh6  0.080       1.541      1.657             2.209                   2.277
+  Other  Tnnt2  1.467       4.474      4.447             1.071                   1.065
+  Other  Actc1  1.160       4.507      4.214             1.296                   1.231
+  Other    Ttn  0.758      10.586      7.577             2.522                   2.192
+  Other   Ryr2  3.347       2.584      2.017            -0.250                  -0.487
+  Other   Myl7  3.670       1.135      1.042            -1.116                  -1.194
+  Other   Myl4  2.089       1.733      1.956            -0.178                  -0.063
+  Other Slc8a1  6.134      21.156     10.510             1.227                   0.532
+  Other   Nppa  0.002       1.033      1.068             2.409                   2.440
+     CM   Myl2 30.865      14.518     55.663            -0.751                   0.588
+     CM   Myl3 27.959       6.504     30.801            -1.447                   0.096
+     CM   Myh7 49.044      30.282     52.216            -0.481                   0.063
+     CM   Myh6 24.168       9.933     17.914            -0.883                  -0.298
+     CM  Tnnt2 32.681      14.787     31.894            -0.789                  -0.024
+     CM  Actc1 71.871       9.072     67.404            -2.060                  -0.064
+     CM    Ttn 84.639     127.705     78.973             0.411                  -0.069
+     CM   Ryr2 14.985      36.029     17.157             0.873                   0.135
+     CM   Myl7 90.039       1.328     24.545            -4.145                  -1.297
+     CM   Myl4 46.714       3.299     41.437            -2.623                  -0.120
+     CM Slc8a1 59.816     127.762     59.852             0.758                   0.001
+     CM   Nppa  2.034       2.678      3.391             0.264                   0.492
+non-CM lineages: median ln(raw/lib3) 2.54, median ln(resampled/lib3) 0.60, max ln(resampled/lib3) 3.91
+split_rows call failed: TypeError("split_rows() missing 1 required positional argument: 'future'")

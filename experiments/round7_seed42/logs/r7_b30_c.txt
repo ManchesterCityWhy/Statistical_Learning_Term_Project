@@ -1,0 +1,88 @@
+free library-3 cells without blood 5654, E9.5 heart cells 7972 (median UMI 12634), target 1075 cells (median UMI 11550)  18s
+w=0.0 config=base only f=0.0                                            63.20  DES 0.608 DCS 0.700 MMD 0.617 CSS 0.600
+w=0.0 config=raw nuclei f=0.45                                          66.86  DES 0.669 DCS 0.769 MMD 0.673 CSS 0.535
+w=0.0 config=re-sequenced, moved back 1, k_prof 3 f=0.45                69.60  DES 0.671 DCS 0.771 MMD 0.683 CSS 0.653
+w=0.0 config=re-sequenced, moved back 1, k_prof 5 f=0.45                69.39  DES 0.658 DCS 0.773 MMD 0.672 CSS 0.672
+w=0.0 config=re-sequenced, moved back 1, k_prof 10 f=0.45               68.40  DES 0.645 DCS 0.769 MMD 0.658 CSS 0.666
+w=0.0 config=re-sequenced, moved back 1, k_prof 20 f=0.45               67.60  DES 0.639 DCS 0.763 MMD 0.648 CSS 0.655
+w 0 done 38s
+w=0.2 config=base only f=0.0                                            71.48  DES 0.668 DCS 0.779 MMD 0.710 CSS 0.699
+w=0.2 config=raw nuclei f=0.45                                          69.96  DES 0.710 DCS 0.800 MMD 0.706 CSS 0.552
+w=0.2 config=re-sequenced, moved back 1, k_prof 3 f=0.45                77.81  DES 0.757 DCS 0.835 MMD 0.778 CSS 0.733
+w=0.2 config=re-sequenced, moved back 1, k_prof 5 f=0.45                79.07  DES 0.757 DCS 0.844 MMD 0.784 CSS 0.776
+w=0.2 config=re-sequenced, moved back 1, k_prof 10 f=0.45               79.39  DES 0.754 DCS 0.847 MMD 0.782 CSS 0.794
+w=0.2 config=re-sequenced, moved back 1, k_prof 20 f=0.45               79.32  DES 0.754 DCS 0.848 MMD 0.779 CSS 0.794
+w 0.2 done 59s
+w=0.4 config=base only f=0.0                                            80.66  DES 0.749 DCS 0.862 MMD 0.814 CSS 0.798
+w=0.4 config=raw nuclei f=0.45                                          72.15  DES 0.732 DCS 0.819 MMD 0.733 CSS 0.568
+w=0.4 config=re-sequenced, moved back 1, k_prof 3 f=0.45                81.80  DES 0.802 DCS 0.865 MMD 0.824 CSS 0.772
+w=0.4 config=re-sequenced, moved back 1, k_prof 5 f=0.45                83.40  DES 0.806 DCS 0.874 MMD 0.832 CSS 0.822
+w=0.4 config=re-sequenced, moved back 1, k_prof 10 f=0.45               83.98  DES 0.804 DCS 0.879 MMD 0.833 CSS 0.845
+w=0.4 config=re-sequenced, moved back 1, k_prof 20 f=0.45               83.89  DES 0.801 DCS 0.879 MMD 0.831 CSS 0.848
+w 0.4 done 77s
+w=0.6 config=base only f=0.0                                            90.26  DES 0.862 DCS 0.933 MMD 0.912 CSS 0.901
+w=0.6 config=raw nuclei f=0.45                                          73.53  DES 0.753 DCS 0.837 MMD 0.745 CSS 0.571
+w=0.6 config=re-sequenced, moved back 1, k_prof 3 f=0.45                84.07  DES 0.827 DCS 0.882 MMD 0.852 CSS 0.790
+w=0.6 config=re-sequenced, moved back 1, k_prof 5 f=0.45                86.09  DES 0.837 DCS 0.894 MMD 0.864 CSS 0.845
+w=0.6 config=re-sequenced, moved back 1, k_prof 10 f=0.45               86.93  DES 0.842 DCS 0.898 MMD 0.868 CSS 0.870
+w=0.6 config=re-sequenced, moved back 1, k_prof 20 f=0.45               87.02  DES 0.842 DCS 0.900 MMD 0.867 CSS 0.874
+w 0.6 done 97s
+w=0.8 config=base only f=0.0                                            97.57  DES 0.967 DCS 0.988 MMD 0.976 CSS 0.971
+w=0.8 config=raw nuclei f=0.45                                          74.65  DES 0.770 DCS 0.851 MMD 0.755 CSS 0.574
+w=0.8 config=re-sequenced, moved back 1, k_prof 3 f=0.45                86.07  DES 0.856 DCS 0.897 MMD 0.876 CSS 0.799
+w=0.8 config=re-sequenced, moved back 1, k_prof 5 f=0.45                88.62  DES 0.877 DCS 0.908 MMD 0.892 CSS 0.861
+w=0.8 config=re-sequenced, moved back 1, k_prof 10 f=0.45               89.68  DES 0.879 DCS 0.914 MMD 0.899 CSS 0.895
+w=0.8 config=re-sequenced, moved back 1, k_prof 20 f=0.45               89.97  DES 0.879 DCS 0.917 MMD 0.899 CSS 0.904
+w 0.8 done 116s
+w=1.0 config=base only f=0.0                                            99.92  DES 1.000 DCS 1.000 MMD 0.997 CSS 1.000
+w=1.0 config=raw nuclei f=0.45                                          74.91  DES 0.784 DCS 0.860 MMD 0.750 CSS 0.565
+w=1.0 config=re-sequenced, moved back 1, k_prof 3 f=0.45                87.38  DES 0.877 DCS 0.910 MMD 0.887 CSS 0.804
+w=1.0 config=re-sequenced, moved back 1, k_prof 5 f=0.45                89.82  DES 0.889 DCS 0.919 MMD 0.906 CSS 0.871
+w=1.0 config=re-sequenced, moved back 1, k_prof 10 f=0.45               91.30  DES 0.897 DCS 0.926 MMD 0.917 CSS 0.911
+w=1.0 config=re-sequenced, moved back 1, k_prof 20 f=0.45               91.84  DES 0.903 DCS 0.928 MMD 0.920 CSS 0.923
+w 1 done 134s
+w                                        0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                         
+base only                              63.20  71.48  80.66  90.26  97.57  99.92
+raw nuclei                             66.86  69.96  72.15  73.53  74.65  74.91
+re-sequenced, moved back 1, k_prof 3   69.60  77.81  81.80  84.07  86.07  87.38
+re-sequenced, moved back 1, k_prof 5   69.39  79.07  83.40  86.09  88.62  89.82
+re-sequenced, moved back 1, k_prof 10  68.40  79.39  83.98  86.93  89.68  91.30
+re-sequenced, moved back 1, k_prof 20  67.60  79.32  83.89  87.02  89.97  91.84
+skill_de_score
+w                                        0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                         
+base only                              0.608  0.668  0.749  0.862  0.967  1.000
+raw nuclei                             0.669  0.710  0.732  0.753  0.770  0.784
+re-sequenced, moved back 1, k_prof 3   0.671  0.757  0.802  0.827  0.856  0.877
+re-sequenced, moved back 1, k_prof 5   0.658  0.757  0.806  0.837  0.877  0.889
+re-sequenced, moved back 1, k_prof 10  0.645  0.754  0.804  0.842  0.879  0.897
+re-sequenced, moved back 1, k_prof 20  0.639  0.754  0.801  0.842  0.879  0.903
+skill_de_direction
+w                                        0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                         
+base only                              0.700  0.779  0.862  0.933  0.988  1.000
+raw nuclei                             0.769  0.800  0.819  0.837  0.851  0.860
+re-sequenced, moved back 1, k_prof 3   0.771  0.835  0.865  0.882  0.897  0.910
+re-sequenced, moved back 1, k_prof 5   0.773  0.844  0.874  0.894  0.908  0.919
+re-sequenced, moved back 1, k_prof 10  0.769  0.847  0.879  0.898  0.914  0.926
+re-sequenced, moved back 1, k_prof 20  0.763  0.848  0.879  0.900  0.917  0.928
+skill_mmd_u
+w                                        0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                         
+base only                              0.617  0.710  0.814  0.912  0.976  0.997
+raw nuclei                             0.673  0.706  0.733  0.745  0.755  0.750
+re-sequenced, moved back 1, k_prof 3   0.683  0.778  0.824  0.852  0.876  0.887
+re-sequenced, moved back 1, k_prof 5   0.672  0.784  0.832  0.864  0.892  0.906
+re-sequenced, moved back 1, k_prof 10  0.658  0.782  0.833  0.868  0.899  0.917
+re-sequenced, moved back 1, k_prof 20  0.648  0.779  0.831  0.867  0.899  0.920
+skill_variogram
+w                                        0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                         
+base only                              0.600  0.699  0.798  0.901  0.971  1.000
+raw nuclei                             0.535  0.552  0.568  0.571  0.574  0.565
+re-sequenced, moved back 1, k_prof 3   0.653  0.733  0.772  0.790  0.799  0.804
+re-sequenced, moved back 1, k_prof 5   0.672  0.776  0.822  0.845  0.861  0.871
+re-sequenced, moved back 1, k_prof 10  0.666  0.794  0.845  0.870  0.895  0.911
+re-sequenced, moved back 1, k_prof 20  0.655  0.794  0.848  0.874  0.904  0.923
+done 134s

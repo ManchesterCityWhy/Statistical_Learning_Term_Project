@@ -1,0 +1,61 @@
+scenario pool 11486 38s
+config=base only scenario=heart/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  99.84  DES 1.000 DCS 1.000 MMD 0.995 CSS 1.000
+config=base only scenario=heart/mid split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  92.89  DES 0.950 DCS 0.974 MMD 0.956 CSS 0.805
+config=base only scenario=heart/shallow split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  81.11  DES 0.832 DCS 0.876 MMD 0.845 CSS 0.653
+config=base only scenario=all/asis split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  77.73  DES 0.700 DCS 0.876 MMD 0.787 CSS 0.735
+config=R7 candidate, k_prof 3 scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  75.92  DES 0.757 DCS 0.874 MMD 0.741 CSS 0.646
+config=R7 candidate, k_prof 3 scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  80.48  DES 0.764 DCS 0.890 MMD 0.798 CSS 0.760
+config=R7 candidate, k_prof 3 scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  77.15  DES 0.730 DCS 0.837 MMD 0.805 CSS 0.691
+config=R7 candidate, k_prof 3 scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  68.59  DES 0.631 DCS 0.846 MMD 0.619 CSS 0.655
+config=R7 candidate, k_prof 5 scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  78.07  DES 0.765 DCS 0.879 MMD 0.765 CSS 0.702
+config=R7 candidate, k_prof 5 scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  79.88  DES 0.770 DCS 0.882 MMD 0.804 CSS 0.723
+config=R7 candidate, k_prof 5 scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  74.97  DES 0.716 DCS 0.824 MMD 0.786 CSS 0.644
+config=R7 candidate, k_prof 5 scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  67.12  DES 0.617 DCS 0.837 MMD 0.613 CSS 0.620
+config=R7 candidate, k_prof 10 scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  79.13  DES 0.761 DCS 0.879 MMD 0.782 CSS 0.734
+config=R7 candidate, k_prof 10 scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  79.19  DES 0.781 DCS 0.877 MMD 0.804 CSS 0.681
+config=R7 candidate, k_prof 10 scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  73.23  DES 0.708 DCS 0.818 MMD 0.768 CSS 0.603
+config=R7 candidate, k_prof 10 scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  65.72  DES 0.610 DCS 0.828 MMD 0.605 CSS 0.581
+config=R7 candidate, k_prof 20 scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  79.41  DES 0.761 DCS 0.877 MMD 0.787 CSS 0.741
+config=R7 candidate, k_prof 20 scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  78.21  DES 0.774 DCS 0.871 MMD 0.800 CSS 0.655
+config=R7 candidate, k_prof 20 scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  72.15  DES 0.703 DCS 0.811 MMD 0.756 CSS 0.581
+config=R7 candidate, k_prof 20 scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  64.88  DES 0.607 DCS 0.823 MMD 0.598 CSS 0.559
+done 83s
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     99.84      92.89          81.11     77.73
+R7 candidate, k_prof 3        75.92      80.48          77.15     68.59
+R7 candidate, k_prof 5        78.07      79.88          74.97     67.12
+R7 candidate, k_prof 10       79.13      79.19          73.23     65.72
+R7 candidate, k_prof 20       79.41      78.21          72.15     64.88
+skill_de_score
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     1.000      0.950          0.832     0.700
+R7 candidate, k_prof 3        0.757      0.764          0.730     0.631
+R7 candidate, k_prof 5        0.765      0.770          0.716     0.617
+R7 candidate, k_prof 10       0.761      0.781          0.708     0.610
+R7 candidate, k_prof 20       0.761      0.774          0.703     0.607
+skill_de_direction
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     1.000      0.974          0.876     0.876
+R7 candidate, k_prof 3        0.874      0.890          0.837     0.846
+R7 candidate, k_prof 5        0.879      0.882          0.824     0.837
+R7 candidate, k_prof 10       0.879      0.877          0.818     0.828
+R7 candidate, k_prof 20       0.877      0.871          0.811     0.823
+skill_mmd_u
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     0.995      0.956          0.845     0.787
+R7 candidate, k_prof 3        0.741      0.798          0.805     0.619
+R7 candidate, k_prof 5        0.765      0.804          0.786     0.613
+R7 candidate, k_prof 10       0.782      0.804          0.768     0.605
+R7 candidate, k_prof 20       0.787      0.800          0.756     0.598
+skill_variogram
+scenario                 heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                 
+base only                     1.000      0.805          0.653     0.735
+R7 candidate, k_prof 3        0.646      0.760          0.691     0.655
+R7 candidate, k_prof 5        0.702      0.723          0.644     0.620
+R7 candidate, k_prof 10       0.734      0.681          0.603     0.581
+R7 candidate, k_prof 20       0.741      0.655          0.581     0.559

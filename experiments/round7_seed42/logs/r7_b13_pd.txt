@@ -1,0 +1,150 @@
+[suite] gen      ready    13s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] p8/deep  ready    20s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] p8/all   ready    28s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+[suite] 2d/deep  ready    36s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] 2d/all   ready    44s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  52.24  DES 0.525 DCS 0.554 MMD 0.506 CSS 0.503
+config=round 6 first version (raw anchor, rho 0.75) proxy=gen split=development f=0.125 t=0.0 bwd=0.0 seed=42  54.86  DES 0.542 DCS 0.599 MMD 0.566 CSS 0.467
+config=raw anchor rho 0.9 + trend proxy=gen split=development f=0.15 t=0.0 bwd=0.0 seed=42  54.78  DES 0.553 DCS 0.607 MMD 0.565 CSS 0.442
+config=R7 rho 0.9, anchor moved back 1 proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42  61.45  DES 0.612 DCS 0.648 MMD 0.605 CSS 0.590
+config=R7 rho 0.9, anchor moved back 0.75 proxy=gen split=development f=0.15 t=0.0 bwd=0.75 seed=42  60.55  DES 0.598 DCS 0.643 MMD 0.594 CSS 0.586
+config=R7 rho 0.9, anchor moved back 0.5 proxy=gen split=development f=0.15 t=0.0 bwd=0.5 seed=42  60.09  DES 0.605 DCS 0.637 MMD 0.581 CSS 0.580
+config=R7 rho 0.9, anchor moved back 0.25 proxy=gen split=development f=0.15 t=0.0 bwd=0.25 seed=42  58.97  DES 0.591 DCS 0.629 MMD 0.570 CSS 0.570
+config=R7 rho 0.9, anchor moved back 0 proxy=gen split=development f=0.15 t=0.0 bwd=0.0 seed=42  58.15  DES 0.584 DCS 0.623 MMD 0.560 CSS 0.558
+config=R7 rho 0.9, anchor moved back 0.5, lineage level proxy=gen split=development f=0.15 t=0.0 bwd=0.5 seed=42  59.89  DES 0.605 DCS 0.636 MMD 0.578 CSS 0.578
+config=R7 rho 0.6, anchor moved back 0.5 proxy=gen split=development f=0.1 t=0.0 bwd=0.5 seed=42  59.21  DES 0.584 DCS 0.640 MMD 0.575 CSS 0.568
+config=R7 rho 1.2, anchor moved back 0.5 proxy=gen split=development f=0.2 t=0.0 bwd=0.5 seed=42  60.06  DES 0.612 DCS 0.636 MMD 0.583 CSS 0.570
+config=R7 rho 0.9, anchor moved back 0.5, no two-witness proxy=gen split=development f=0.15 t=0.0 bwd=0.5 seed=42  60.09  DES 0.605 DCS 0.637 MMD 0.581 CSS 0.580
+config=R7 rho 0.9, anchor moved back 0.5, k5 proxy=gen split=development f=0.15 t=0.0 bwd=0.5 seed=42  59.54  DES 0.598 DCS 0.633 MMD 0.580 CSS 0.568
+config=base only proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+config=round 6 first version (raw anchor, rho 0.75) proxy=p8/deep split=development f=0.15 t=0.0 bwd=0.0 seed=42  67.38  DES 0.628 DCS 0.748 MMD 0.662 CSS 0.657
+config=raw anchor rho 0.9 + trend proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.0 seed=42  69.27  DES 0.647 DCS 0.765 MMD 0.684 CSS 0.673
+config=R7 rho 0.9, anchor moved back 1 proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=42  65.31  DES 0.625 DCS 0.747 MMD 0.638 CSS 0.594
+config=R7 rho 0.9, anchor moved back 0.75 proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.75 seed=42  65.53  DES 0.627 DCS 0.750 MMD 0.641 CSS 0.594
+config=R7 rho 0.9, anchor moved back 0.5 proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.5 seed=42  65.80  DES 0.631 DCS 0.751 MMD 0.645 CSS 0.595
+config=R7 rho 0.9, anchor moved back 0.25 proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.25 seed=42  66.17  DES 0.636 DCS 0.753 MMD 0.650 CSS 0.597
+config=R7 rho 0.9, anchor moved back 0 proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.0 seed=42  66.58  DES 0.642 DCS 0.756 MMD 0.655 CSS 0.599
+config=R7 rho 0.9, anchor moved back 0.5, lineage level proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.5 seed=42  65.77  DES 0.628 DCS 0.753 MMD 0.644 CSS 0.595
+config=R7 rho 0.6, anchor moved back 0.5 proxy=p8/deep split=development f=0.12 t=0.0 bwd=0.5 seed=42  63.61  DES 0.611 DCS 0.736 MMD 0.622 CSS 0.563
+config=R7 rho 1.2, anchor moved back 0.5 proxy=p8/deep split=development f=0.24 t=0.0 bwd=0.5 seed=42  66.66  DES 0.644 DCS 0.759 MMD 0.653 CSS 0.599
+config=R7 rho 0.9, anchor moved back 0.5, no two-witness proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.5 seed=42  65.32  DES 0.622 DCS 0.749 MMD 0.640 CSS 0.592
+config=R7 rho 0.9, anchor moved back 0.5, k5 proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.5 seed=42  66.61  DES 0.634 DCS 0.754 MMD 0.652 CSS 0.616
+config=base only proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  58.48  DES 0.512 DCS 0.665 MMD 0.595 CSS 0.560
+config=round 6 first version (raw anchor, rho 0.75) proxy=p8/all split=development f=0.15 t=0.0 bwd=0.0 seed=42  69.65  DES 0.642 DCS 0.760 MMD 0.686 CSS 0.701
+config=raw anchor rho 0.9 + trend proxy=p8/all split=development f=0.18 t=0.0 bwd=0.0 seed=42  71.64  DES 0.656 DCS 0.773 MMD 0.713 CSS 0.727
+config=R7 rho 0.9, anchor moved back 1 proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=42  63.79  DES 0.579 DCS 0.739 MMD 0.638 CSS 0.585
+config=R7 rho 0.9, anchor moved back 0.75 proxy=p8/all split=development f=0.18 t=0.0 bwd=0.75 seed=42  64.09  DES 0.585 DCS 0.742 MMD 0.641 CSS 0.583
+config=R7 rho 0.9, anchor moved back 0.5 proxy=p8/all split=development f=0.18 t=0.0 bwd=0.5 seed=42  64.56  DES 0.598 DCS 0.744 MMD 0.645 CSS 0.583
+config=R7 rho 0.9, anchor moved back 0.25 proxy=p8/all split=development f=0.18 t=0.0 bwd=0.25 seed=42  65.04  DES 0.608 DCS 0.747 MMD 0.650 CSS 0.583
+config=R7 rho 0.9, anchor moved back 0 proxy=p8/all split=development f=0.18 t=0.0 bwd=0.0 seed=42  65.46  DES 0.614 DCS 0.750 MMD 0.656 CSS 0.585
+config=R7 rho 0.9, anchor moved back 0.5, lineage level proxy=p8/all split=development f=0.18 t=0.0 bwd=0.5 seed=42  64.67  DES 0.601 DCS 0.745 MMD 0.646 CSS 0.582
+config=R7 rho 0.6, anchor moved back 0.5 proxy=p8/all split=development f=0.12 t=0.0 bwd=0.5 seed=42  63.74  DES 0.585 DCS 0.731 MMD 0.639 CSS 0.584
+config=R7 rho 1.2, anchor moved back 0.5 proxy=p8/all split=development f=0.24 t=0.0 bwd=0.5 seed=42  65.20  DES 0.612 DCS 0.752 MMD 0.648 CSS 0.582
+config=R7 rho 0.9, anchor moved back 0.5, no two-witness proxy=p8/all split=development f=0.18 t=0.0 bwd=0.5 seed=42  64.20  DES 0.588 DCS 0.743 MMD 0.642 CSS 0.583
+config=R7 rho 0.9, anchor moved back 0.5, k5 proxy=p8/all split=development f=0.18 t=0.0 bwd=0.5 seed=42  66.03  DES 0.612 DCS 0.750 MMD 0.658 CSS 0.612
+config=base only proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  53.31  DES 0.514 DCS 0.614 MMD 0.526 CSS 0.466
+config=round 6 first version (raw anchor, rho 0.75) proxy=2d/deep split=development f=0.25 t=0.0 bwd=0.0 seed=42  63.30  DES 0.597 DCS 0.711 MMD 0.621 CSS 0.598
+config=raw anchor rho 0.9 + trend proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.0 seed=42  64.95  DES 0.612 DCS 0.727 MMD 0.640 CSS 0.613
+config=R7 rho 0.9, anchor moved back 1 proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42  60.78  DES 0.585 DCS 0.713 MMD 0.579 CSS 0.548
+config=R7 rho 0.9, anchor moved back 0.75 proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.75 seed=42  61.12  DES 0.587 DCS 0.716 MMD 0.584 CSS 0.551
+config=R7 rho 0.9, anchor moved back 0.5 proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.5 seed=42  61.44  DES 0.587 DCS 0.720 MMD 0.590 CSS 0.553
+config=R7 rho 0.9, anchor moved back 0.25 proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.25 seed=42  61.87  DES 0.593 DCS 0.722 MMD 0.596 CSS 0.555
+config=R7 rho 0.9, anchor moved back 0 proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.0 seed=42  62.16  DES 0.593 DCS 0.725 MMD 0.603 CSS 0.556
+config=R7 rho 0.9, anchor moved back 0.5, lineage level proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.5 seed=42  61.36  DES 0.587 DCS 0.719 MMD 0.589 CSS 0.552
+config=R7 rho 0.6, anchor moved back 0.5 proxy=2d/deep split=development f=0.2 t=0.0 bwd=0.5 seed=42  60.48  DES 0.577 DCS 0.707 MMD 0.585 CSS 0.542
+config=R7 rho 1.2, anchor moved back 0.5 proxy=2d/deep split=development f=0.4 t=0.0 bwd=0.5 seed=42  63.15  DES 0.602 DCS 0.732 MMD 0.608 CSS 0.578
+config=R7 rho 0.9, anchor moved back 0.5, no two-witness proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.5 seed=42  61.44  DES 0.587 DCS 0.720 MMD 0.590 CSS 0.553
+config=R7 rho 0.9, anchor moved back 0.5, k5 proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.5 seed=42  62.37  DES 0.592 DCS 0.721 MMD 0.600 CSS 0.577
+config=base only proxy=2d/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  48.44  DES 0.407 DCS 0.527 MMD 0.502 CSS 0.502
+config=round 6 first version (raw anchor, rho 0.75) proxy=2d/all split=development f=0.25 t=0.0 bwd=0.0 seed=42  67.06  DES 0.620 DCS 0.721 MMD 0.650 CSS 0.702
+config=raw anchor rho 0.9 + trend proxy=2d/all split=development f=0.3 t=0.0 bwd=0.0 seed=42  69.82  DES 0.629 DCS 0.734 MMD 0.693 CSS 0.747
+config=R7 rho 0.9, anchor moved back 1 proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=42  61.04  DES 0.567 DCS 0.706 MMD 0.598 CSS 0.563
+config=R7 rho 0.9, anchor moved back 0.75 proxy=2d/all split=development f=0.3 t=0.0 bwd=0.75 seed=42  61.37  DES 0.577 DCS 0.709 MMD 0.600 CSS 0.561
+config=R7 rho 0.9, anchor moved back 0.5 proxy=2d/all split=development f=0.3 t=0.0 bwd=0.5 seed=42  61.64  DES 0.586 DCS 0.708 MMD 0.603 CSS 0.560
+config=R7 rho 0.9, anchor moved back 0.25 proxy=2d/all split=development f=0.3 t=0.0 bwd=0.25 seed=42  61.88  DES 0.591 DCS 0.709 MMD 0.606 CSS 0.560
+config=R7 rho 0.9, anchor moved back 0 proxy=2d/all split=development f=0.3 t=0.0 bwd=0.0 seed=42  62.29  DES 0.596 DCS 0.711 MMD 0.613 CSS 0.561
+config=R7 rho 0.9, anchor moved back 0.5, lineage level proxy=2d/all split=development f=0.3 t=0.0 bwd=0.5 seed=42  61.73  DES 0.590 DCS 0.709 MMD 0.602 CSS 0.560
+config=R7 rho 0.6, anchor moved back 0.5 proxy=2d/all split=development f=0.2 t=0.0 bwd=0.5 seed=42  60.18  DES 0.566 DCS 0.699 MMD 0.586 CSS 0.548
+config=R7 rho 1.2, anchor moved back 0.5 proxy=2d/all split=development f=0.4 t=0.0 bwd=0.5 seed=42  62.09  DES 0.595 DCS 0.714 MMD 0.609 CSS 0.555
+config=R7 rho 0.9, anchor moved back 0.5, no two-witness proxy=2d/all split=development f=0.3 t=0.0 bwd=0.5 seed=42  61.64  DES 0.586 DCS 0.708 MMD 0.603 CSS 0.560
+config=R7 rho 0.9, anchor moved back 0.5, k5 proxy=2d/all split=development f=0.3 t=0.0 bwd=0.5 seed=42  63.50  DES 0.600 DCS 0.715 MMD 0.620 CSS 0.602
+done 263s
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          52.24    60.22   58.48    53.31   48.44
+round 6 first version (raw anchor, rho 0.75)       54.86    67.38   69.65    63.30   67.06
+raw anchor rho 0.9 + trend                         54.78    69.27   71.64    64.95   69.82
+R7 rho 0.9, anchor moved back 1                    61.45    65.31   63.79    60.78   61.04
+R7 rho 0.9, anchor moved back 0.75                 60.55    65.53   64.09    61.12   61.37
+R7 rho 0.9, anchor moved back 0.5                  60.09    65.80   64.56    61.44   61.64
+R7 rho 0.9, anchor moved back 0.25                 58.97    66.17   65.04    61.87   61.88
+R7 rho 0.9, anchor moved back 0                    58.15    66.58   65.46    62.16   62.29
+R7 rho 0.9, anchor moved back 0.5, lineage level   59.89    65.77   64.67    61.36   61.73
+R7 rho 0.6, anchor moved back 0.5                  59.21    63.61   63.74    60.48   60.18
+R7 rho 1.2, anchor moved back 0.5                  60.06    66.66   65.20    63.15   62.09
+R7 rho 0.9, anchor moved back 0.5, no two-witness  60.09    65.32   64.20    61.44   61.64
+R7 rho 0.9, anchor moved back 0.5, k5              59.54    66.61   66.03    62.37   63.50
+skill_de_score
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          0.525    0.581   0.512    0.514   0.407
+round 6 first version (raw anchor, rho 0.75)       0.542    0.628   0.642    0.597   0.620
+raw anchor rho 0.9 + trend                         0.553    0.647   0.656    0.612   0.629
+R7 rho 0.9, anchor moved back 1                    0.612    0.625   0.579    0.585   0.567
+R7 rho 0.9, anchor moved back 0.75                 0.598    0.627   0.585    0.587   0.577
+R7 rho 0.9, anchor moved back 0.5                  0.605    0.631   0.598    0.587   0.586
+R7 rho 0.9, anchor moved back 0.25                 0.591    0.636   0.608    0.593   0.591
+R7 rho 0.9, anchor moved back 0                    0.584    0.642   0.614    0.593   0.596
+R7 rho 0.9, anchor moved back 0.5, lineage level   0.605    0.628   0.601    0.587   0.590
+R7 rho 0.6, anchor moved back 0.5                  0.584    0.611   0.585    0.577   0.566
+R7 rho 1.2, anchor moved back 0.5                  0.612    0.644   0.612    0.602   0.595
+R7 rho 0.9, anchor moved back 0.5, no two-witness  0.605    0.622   0.588    0.587   0.586
+R7 rho 0.9, anchor moved back 0.5, k5              0.598    0.634   0.612    0.592   0.600
+skill_de_direction
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          0.554    0.690   0.665    0.614   0.527
+round 6 first version (raw anchor, rho 0.75)       0.599    0.748   0.760    0.711   0.721
+raw anchor rho 0.9 + trend                         0.607    0.765   0.773    0.727   0.734
+R7 rho 0.9, anchor moved back 1                    0.648    0.747   0.739    0.713   0.706
+R7 rho 0.9, anchor moved back 0.75                 0.643    0.750   0.742    0.716   0.709
+R7 rho 0.9, anchor moved back 0.5                  0.637    0.751   0.744    0.720   0.708
+R7 rho 0.9, anchor moved back 0.25                 0.629    0.753   0.747    0.722   0.709
+R7 rho 0.9, anchor moved back 0                    0.623    0.756   0.750    0.725   0.711
+R7 rho 0.9, anchor moved back 0.5, lineage level   0.636    0.753   0.745    0.719   0.709
+R7 rho 0.6, anchor moved back 0.5                  0.640    0.736   0.731    0.707   0.699
+R7 rho 1.2, anchor moved back 0.5                  0.636    0.759   0.752    0.732   0.714
+R7 rho 0.9, anchor moved back 0.5, no two-witness  0.637    0.749   0.743    0.720   0.708
+R7 rho 0.9, anchor moved back 0.5, k5              0.633    0.754   0.750    0.721   0.715
+skill_mmd_u
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          0.506    0.597   0.595    0.526   0.502
+round 6 first version (raw anchor, rho 0.75)       0.566    0.662   0.686    0.621   0.650
+raw anchor rho 0.9 + trend                         0.565    0.684   0.713    0.640   0.693
+R7 rho 0.9, anchor moved back 1                    0.605    0.638   0.638    0.579   0.598
+R7 rho 0.9, anchor moved back 0.75                 0.594    0.641   0.641    0.584   0.600
+R7 rho 0.9, anchor moved back 0.5                  0.581    0.645   0.645    0.590   0.603
+R7 rho 0.9, anchor moved back 0.25                 0.570    0.650   0.650    0.596   0.606
+R7 rho 0.9, anchor moved back 0                    0.560    0.655   0.656    0.603   0.613
+R7 rho 0.9, anchor moved back 0.5, lineage level   0.578    0.644   0.646    0.589   0.602
+R7 rho 0.6, anchor moved back 0.5                  0.575    0.622   0.639    0.585   0.586
+R7 rho 1.2, anchor moved back 0.5                  0.583    0.653   0.648    0.608   0.609
+R7 rho 0.9, anchor moved back 0.5, no two-witness  0.581    0.640   0.642    0.590   0.603
+R7 rho 0.9, anchor moved back 0.5, k5              0.580    0.652   0.658    0.600   0.620
+skill_variogram
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          0.503    0.527   0.560    0.466   0.502
+round 6 first version (raw anchor, rho 0.75)       0.467    0.657   0.701    0.598   0.702
+raw anchor rho 0.9 + trend                         0.442    0.673   0.727    0.613   0.747
+R7 rho 0.9, anchor moved back 1                    0.590    0.594   0.585    0.548   0.563
+R7 rho 0.9, anchor moved back 0.75                 0.586    0.594   0.583    0.551   0.561
+R7 rho 0.9, anchor moved back 0.5                  0.580    0.595   0.583    0.553   0.560
+R7 rho 0.9, anchor moved back 0.25                 0.570    0.597   0.583    0.555   0.560
+R7 rho 0.9, anchor moved back 0                    0.558    0.599   0.585    0.556   0.561
+R7 rho 0.9, anchor moved back 0.5, lineage level   0.578    0.595   0.582    0.552   0.560
+R7 rho 0.6, anchor moved back 0.5                  0.568    0.563   0.584    0.542   0.548
+R7 rho 1.2, anchor moved back 0.5                  0.570    0.599   0.582    0.578   0.555
+R7 rho 0.9, anchor moved back 0.5, no two-witness  0.580    0.592   0.583    0.553   0.560
+R7 rho 0.9, anchor moved back 0.5, k5              0.568    0.616   0.612    0.577   0.602

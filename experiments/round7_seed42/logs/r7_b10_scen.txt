@@ -1,0 +1,151 @@
+scenario pool 11486 59s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=base + trend x1 scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  94.07  DES 0.853 DCS 0.976 MMD 0.972 CSS 0.960
+config=base + trend x1 scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  89.60  DES 0.830 DCS 0.956 MMD 0.971 CSS 0.792
+config=base + trend x1 scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  80.74  DES 0.765 DCS 0.878 MMD 0.888 CSS 0.652
+config=base + trend x1 scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  75.46  DES 0.670 DCS 0.883 MMD 0.745 CSS 0.714
+config=base + trend x1.5 scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  89.06  DES 0.770 DCS 0.946 MMD 0.932 CSS 0.910
+config=base + trend x1.5 scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  87.37  DES 0.770 DCS 0.943 MMD 0.959 CSS 0.788
+config=base + trend x1.5 scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  80.22  DES 0.725 DCS 0.877 MMD 0.901 CSS 0.656
+config=base + trend x1.5 scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  74.19  DES 0.653 DCS 0.878 MMD 0.727 CSS 0.706
+config=anchor rho0.75 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  88.79  DES 0.837 DCS 0.924 MMD 0.903 CSS 0.885
+config=anchor rho0.75 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  84.33  DES 0.830 DCS 0.890 MMD 0.885 CSS 0.740
+config=anchor rho0.75 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  76.00  DES 0.751 DCS 0.829 MMD 0.801 CSS 0.624
+config=anchor rho0.75 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  69.78  DES 0.632 DCS 0.840 MMD 0.666 CSS 0.650
+config=anchor rho0.75 + dev 1 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  85.44  DES 0.805 DCS 0.911 MMD 0.864 CSS 0.831
+config=anchor rho0.75 + dev 1 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  82.24  DES 0.813 DCS 0.881 MMD 0.854 CSS 0.714
+config=anchor rho0.75 + dev 1 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  74.52  DES 0.727 DCS 0.824 MMD 0.783 CSS 0.613
+config=anchor rho0.75 + dev 1 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  68.64  DES 0.644 DCS 0.839 MMD 0.637 CSS 0.622
+config=anchor rho0.75 + trend x0.5 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  86.84  DES 0.807 DCS 0.915 MMD 0.888 CSS 0.858
+config=anchor rho0.75 + trend x0.5 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  83.74  DES 0.813 DCS 0.891 MMD 0.885 CSS 0.730
+config=anchor rho0.75 + trend x0.5 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  75.83  DES 0.732 DCS 0.831 MMD 0.812 CSS 0.621
+config=anchor rho0.75 + trend x0.5 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  69.30  DES 0.630 DCS 0.844 MMD 0.657 CSS 0.638
+config=anchor rho0.75 + trend x1 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  83.51  DES 0.754 DCS 0.899 MMD 0.860 CSS 0.820
+config=anchor rho0.75 + trend x1 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  82.00  DES 0.764 DCS 0.887 MMD 0.876 CSS 0.722
+config=anchor rho0.75 + trend x1 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  75.71  DES 0.715 DCS 0.832 MMD 0.821 CSS 0.621
+config=anchor rho0.75 + trend x1 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  68.82  DES 0.638 DCS 0.842 MMD 0.643 CSS 0.627
+config=anchor rho0.75 + trend x1.5 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  79.89  DES 0.715 DCS 0.879 MMD 0.821 CSS 0.771
+config=anchor rho0.75 + trend x1.5 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  80.17  DES 0.728 DCS 0.878 MMD 0.859 CSS 0.712
+config=anchor rho0.75 + trend x1.5 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  75.19  DES 0.686 DCS 0.832 MMD 0.826 CSS 0.623
+config=anchor rho0.75 + trend x1.5 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  67.22  DES 0.611 DCS 0.839 MMD 0.623 CSS 0.614
+config=anchor rho0.75 + dev 1 + trend x1 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  80.41  DES 0.740 DCS 0.890 MMD 0.814 CSS 0.762
+config=anchor rho0.75 + dev 1 + trend x1 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  79.98  DES 0.760 DCS 0.877 MMD 0.838 CSS 0.695
+config=anchor rho0.75 + dev 1 + trend x1 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  74.35  DES 0.701 DCS 0.826 MMD 0.798 CSS 0.611
+config=anchor rho0.75 + dev 1 + trend x1 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  67.22  DES 0.636 DCS 0.840 MMD 0.611 CSS 0.599
+config=anchor rho1 scenario=heart/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  84.69  DES 0.805 DCS 0.897 MMD 0.852 CSS 0.829
+config=anchor rho1 scenario=heart/mid split=development f=0.5 t=0.0 bwd=1.0 seed=42  81.18  DES 0.793 DCS 0.870 MMD 0.839 CSS 0.722
+config=anchor rho1 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=1.0 seed=42  73.97  DES 0.727 DCS 0.816 MMD 0.767 CSS 0.620
+config=anchor rho1 scenario=all/asis split=development f=0.5 t=0.0 bwd=1.0 seed=42  67.78  DES 0.622 DCS 0.829 MMD 0.629 CSS 0.632
+config=anchor rho1 + dev 1 scenario=heart/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  81.12  DES 0.779 DCS 0.883 MMD 0.808 CSS 0.767
+config=anchor rho1 + dev 1 scenario=heart/mid split=development f=0.5 t=0.0 bwd=1.0 seed=42  79.02  DES 0.789 DCS 0.856 MMD 0.803 CSS 0.689
+config=anchor rho1 + dev 1 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=1.0 seed=42  72.55  DES 0.715 DCS 0.807 MMD 0.746 CSS 0.606
+config=anchor rho1 + dev 1 scenario=all/asis split=development f=0.5 t=0.0 bwd=1.0 seed=42  66.22  DES 0.626 DCS 0.826 MMD 0.598 CSS 0.598
+config=anchor rho1 + trend x0.5 scenario=heart/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  83.04  DES 0.783 DCS 0.891 MMD 0.837 CSS 0.804
+config=anchor rho1 + trend x0.5 scenario=heart/mid split=development f=0.5 t=0.0 bwd=1.0 seed=42  80.88  DES 0.791 DCS 0.869 MMD 0.838 CSS 0.711
+config=anchor rho1 + trend x0.5 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=1.0 seed=42  73.98  DES 0.717 DCS 0.817 MMD 0.777 CSS 0.616
+config=anchor rho1 + trend x0.5 scenario=all/asis split=development f=0.5 t=0.0 bwd=1.0 seed=42  67.52  DES 0.630 DCS 0.832 MMD 0.620 CSS 0.619
+config=anchor rho1 + trend x1 scenario=heart/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  80.51  DES 0.755 DCS 0.877 MMD 0.811 CSS 0.768
+config=anchor rho1 + trend x1 scenario=heart/mid split=development f=0.5 t=0.0 bwd=1.0 seed=42  79.56  DES 0.758 DCS 0.867 MMD 0.829 CSS 0.703
+config=anchor rho1 + trend x1 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=1.0 seed=42  73.96  DES 0.706 DCS 0.818 MMD 0.785 CSS 0.616
+config=anchor rho1 + trend x1 scenario=all/asis split=development f=0.5 t=0.0 bwd=1.0 seed=42  66.87  DES 0.630 DCS 0.831 MMD 0.606 CSS 0.608
+config=anchor rho1 + trend x1.5 scenario=heart/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  77.07  DES 0.715 DCS 0.860 MMD 0.775 CSS 0.723
+config=anchor rho1 + trend x1.5 scenario=heart/mid split=development f=0.5 t=0.0 bwd=1.0 seed=42  77.39  DES 0.707 DCS 0.859 MMD 0.813 CSS 0.692
+config=anchor rho1 + trend x1.5 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=1.0 seed=42  73.72  DES 0.689 DCS 0.818 MMD 0.790 CSS 0.617
+config=anchor rho1 + trend x1.5 scenario=all/asis split=development f=0.5 t=0.0 bwd=1.0 seed=42  65.37  DES 0.605 DCS 0.827 MMD 0.588 CSS 0.596
+config=anchor rho1 + dev 1 + trend x1 scenario=heart/deep split=development f=0.5 t=0.0 bwd=1.0 seed=42  76.73  DES 0.726 DCS 0.867 MMD 0.762 CSS 0.702
+config=anchor rho1 + dev 1 + trend x1 scenario=heart/mid split=development f=0.5 t=0.0 bwd=1.0 seed=42  77.24  DES 0.755 DCS 0.856 MMD 0.786 CSS 0.669
+config=anchor rho1 + dev 1 + trend x1 scenario=heart/shallow split=development f=0.5 t=0.0 bwd=1.0 seed=42  72.48  DES 0.697 DCS 0.811 MMD 0.758 CSS 0.603
+config=anchor rho1 + dev 1 + trend x1 scenario=all/asis split=development f=0.5 t=0.0 bwd=1.0 seed=42  65.28  DES 0.634 DCS 0.830 MMD 0.573 CSS 0.574
+done 208s
+scenario                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                           
+base only                              100.00      93.26          81.26     77.20
+base + trend x1                         94.07      89.60          80.74     75.46
+base + trend x1.5                       89.06      87.37          80.22     74.19
+anchor rho0.75                          88.79      84.33          76.00     69.78
+anchor rho0.75 + dev 1                  85.44      82.24          74.52     68.64
+anchor rho0.75 + trend x0.5             86.84      83.74          75.83     69.30
+anchor rho0.75 + trend x1               83.51      82.00          75.71     68.82
+anchor rho0.75 + trend x1.5             79.89      80.17          75.19     67.22
+anchor rho0.75 + dev 1 + trend x1       80.41      79.98          74.35     67.22
+anchor rho1                             84.69      81.18          73.97     67.78
+anchor rho1 + dev 1                     81.12      79.02          72.55     66.22
+anchor rho1 + trend x0.5                83.04      80.88          73.98     67.52
+anchor rho1 + trend x1                  80.51      79.56          73.96     66.87
+anchor rho1 + trend x1.5                77.07      77.39          73.72     65.37
+anchor rho1 + dev 1 + trend x1          76.73      77.24          72.48     65.28
+skill_de_score
+scenario                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                           
+base only                               1.000      0.973          0.829     0.713
+base + trend x1                         0.853      0.830          0.765     0.670
+base + trend x1.5                       0.770      0.770          0.725     0.653
+anchor rho0.75                          0.837      0.830          0.751     0.632
+anchor rho0.75 + dev 1                  0.805      0.813          0.727     0.644
+anchor rho0.75 + trend x0.5             0.807      0.813          0.732     0.630
+anchor rho0.75 + trend x1               0.754      0.764          0.715     0.638
+anchor rho0.75 + trend x1.5             0.715      0.728          0.686     0.611
+anchor rho0.75 + dev 1 + trend x1       0.740      0.760          0.701     0.636
+anchor rho1                             0.805      0.793          0.727     0.622
+anchor rho1 + dev 1                     0.779      0.789          0.715     0.626
+anchor rho1 + trend x0.5                0.783      0.791          0.717     0.630
+anchor rho1 + trend x1                  0.755      0.758          0.706     0.630
+anchor rho1 + trend x1.5                0.715      0.707          0.689     0.605
+anchor rho1 + dev 1 + trend x1          0.726      0.755          0.697     0.634
+skill_de_direction
+scenario                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                           
+base only                               1.000      0.962          0.876     0.879
+base + trend x1                         0.976      0.956          0.878     0.883
+base + trend x1.5                       0.946      0.943          0.877     0.878
+anchor rho0.75                          0.924      0.890          0.829     0.840
+anchor rho0.75 + dev 1                  0.911      0.881          0.824     0.839
+anchor rho0.75 + trend x0.5             0.915      0.891          0.831     0.844
+anchor rho0.75 + trend x1               0.899      0.887          0.832     0.842
+anchor rho0.75 + trend x1.5             0.879      0.878          0.832     0.839
+anchor rho0.75 + dev 1 + trend x1       0.890      0.877          0.826     0.840
+anchor rho1                             0.897      0.870          0.816     0.829
+anchor rho1 + dev 1                     0.883      0.856          0.807     0.826
+anchor rho1 + trend x0.5                0.891      0.869          0.817     0.832
+anchor rho1 + trend x1                  0.877      0.867          0.818     0.831
+anchor rho1 + trend x1.5                0.860      0.859          0.818     0.827
+anchor rho1 + dev 1 + trend x1          0.867      0.856          0.811     0.830
+skill_mmd_u
+scenario                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                           
+base only                               1.000      0.964          0.855     0.761
+base + trend x1                         0.972      0.971          0.888     0.745
+base + trend x1.5                       0.932      0.959          0.901     0.727
+anchor rho0.75                          0.903      0.885          0.801     0.666
+anchor rho0.75 + dev 1                  0.864      0.854          0.783     0.637
+anchor rho0.75 + trend x0.5             0.888      0.885          0.812     0.657
+anchor rho0.75 + trend x1               0.860      0.876          0.821     0.643
+anchor rho0.75 + trend x1.5             0.821      0.859          0.826     0.623
+anchor rho0.75 + dev 1 + trend x1       0.814      0.838          0.798     0.611
+anchor rho1                             0.852      0.839          0.767     0.629
+anchor rho1 + dev 1                     0.808      0.803          0.746     0.598
+anchor rho1 + trend x0.5                0.837      0.838          0.777     0.620
+anchor rho1 + trend x1                  0.811      0.829          0.785     0.606
+anchor rho1 + trend x1.5                0.775      0.813          0.790     0.588
+anchor rho1 + dev 1 + trend x1          0.762      0.786          0.758     0.573
+skill_variogram
+scenario                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                           
+base only                               1.000      0.798          0.650     0.729
+base + trend x1                         0.960      0.792          0.652     0.714
+base + trend x1.5                       0.910      0.788          0.656     0.706
+anchor rho0.75                          0.885      0.740          0.624     0.650
+anchor rho0.75 + dev 1                  0.831      0.714          0.613     0.622
+anchor rho0.75 + trend x0.5             0.858      0.730          0.621     0.638
+anchor rho0.75 + trend x1               0.820      0.722          0.621     0.627
+anchor rho0.75 + trend x1.5             0.771      0.712          0.623     0.614
+anchor rho0.75 + dev 1 + trend x1       0.762      0.695          0.611     0.599
+anchor rho1                             0.829      0.722          0.620     0.632
+anchor rho1 + dev 1                     0.767      0.689          0.606     0.598
+anchor rho1 + trend x0.5                0.804      0.711          0.616     0.619
+anchor rho1 + trend x1                  0.768      0.703          0.616     0.608
+anchor rho1 + trend x1.5                0.723      0.692          0.617     0.596
+anchor rho1 + dev 1 + trend x1          0.702      0.669          0.603     0.574
