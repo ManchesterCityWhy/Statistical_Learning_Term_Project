@@ -1,0 +1,79 @@
+scenario pool 11486 38s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=base, a share of its cells thinned to the anchor depth (no anchor) scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  88.90  DES 0.958 DCS 0.926 MMD 0.931 CSS 0.695
+config=base, a share of its cells thinned to the anchor depth (no anchor) scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base, a share of its cells thinned to the anchor depth (no anchor) scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  95.29  DES 0.947 DCS 0.981 MMD 0.987 CSS 0.874
+config=base, a share of its cells thinned to the anchor depth (no anchor) scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  83.25  DES 0.705 DCS 0.918 MMD 0.820 CSS 0.903
+config=raw nuclei scenario=heart/deep split=development f=0.45 t=0.0 bwd=0.0 seed=42  68.42  DES 0.707 DCS 0.851 MMD 0.663 CSS 0.479
+config=raw nuclei scenario=heart/mid split=development f=0.45 t=0.0 bwd=0.0 seed=42  76.39  DES 0.728 DCS 0.870 MMD 0.721 CSS 0.739
+config=raw nuclei scenario=heart/shallow split=development f=0.45 t=0.0 bwd=0.0 seed=42  78.04  DES 0.749 DCS 0.844 MMD 0.763 CSS 0.767
+config=raw nuclei scenario=all/asis split=development f=0.45 t=0.0 bwd=0.0 seed=42  69.18  DES 0.674 DCS 0.861 MMD 0.592 CSS 0.652
+config=re-sequenced at source depth, moved back 1 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  86.25  DES 0.822 DCS 0.906 MMD 0.871 CSS 0.846
+config=re-sequenced at source depth, moved back 1 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.76  DES 0.796 DCS 0.872 MMD 0.844 CSS 0.688
+config=re-sequenced at source depth, moved back 1 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  72.87  DES 0.715 DCS 0.815 MMD 0.760 CSS 0.591
+config=re-sequenced at source depth, moved back 1 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  66.75  DES 0.611 DCS 0.828 MMD 0.626 CSS 0.599
+config=re-sequenced at source depth, not moved back scenario=heart/deep split=development f=0.45 t=0.0 bwd=0.0 seed=42  75.19  DES 0.755 DCS 0.849 MMD 0.724 CSS 0.669
+config=re-sequenced at source depth, not moved back scenario=heart/mid split=development f=0.45 t=0.0 bwd=0.0 seed=42  73.18  DES 0.772 DCS 0.825 MMD 0.712 CSS 0.593
+config=re-sequenced at source depth, not moved back scenario=heart/shallow split=development f=0.45 t=0.0 bwd=0.0 seed=42  67.82  DES 0.693 DCS 0.784 MMD 0.665 CSS 0.546
+config=re-sequenced at source depth, not moved back scenario=all/asis split=development f=0.45 t=0.0 bwd=0.0 seed=42  63.73  DES 0.650 DCS 0.816 MMD 0.555 CSS 0.521
+config=re-sequenced at the nuclei's own depth, moved back 1 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.40  DES 0.817 DCS 0.879 MMD 0.833 CSS 0.651
+config=re-sequenced at the nuclei's own depth, moved back 1 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  91.18  DES 0.861 DCS 0.943 MMD 0.902 CSS 0.951
+config=re-sequenced at the nuclei's own depth, moved back 1 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  87.85  DES 0.833 DCS 0.910 MMD 0.905 CSS 0.856
+config=re-sequenced at the nuclei's own depth, moved back 1 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  75.44  DES 0.646 DCS 0.872 MMD 0.701 CSS 0.822
+config=re-sequenced at the nuclei's own depth, not moved back scenario=heart/deep split=development f=0.45 t=0.0 bwd=0.0 seed=42  73.88  DES 0.757 DCS 0.861 MMD 0.719 CSS 0.592
+config=re-sequenced at the nuclei's own depth, not moved back scenario=heart/mid split=development f=0.45 t=0.0 bwd=0.0 seed=42  82.32  DES 0.787 DCS 0.888 MMD 0.779 CSS 0.854
+config=re-sequenced at the nuclei's own depth, not moved back scenario=heart/shallow split=development f=0.45 t=0.0 bwd=0.0 seed=42  80.72  DES 0.765 DCS 0.860 MMD 0.801 CSS 0.803
+config=re-sequenced at the nuclei's own depth, not moved back scenario=all/asis split=development f=0.45 t=0.0 bwd=0.0 seed=42  72.47  DES 0.672 DCS 0.864 MMD 0.634 CSS 0.753
+done 102s
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                               100.00      93.26          81.26     77.20
+base, a share of its cells thinned to the anchor depth (no anchor)       88.90     100.00          95.29     83.25
+raw nuclei                                                               68.42      76.39          78.04     69.18
+re-sequenced at source depth, moved back 1                               86.25      80.76          72.87     66.75
+re-sequenced at source depth, not moved back                             75.19      73.18          67.82     63.73
+re-sequenced at the nuclei's own depth, moved back 1                     80.40      91.18          87.85     75.44
+re-sequenced at the nuclei's own depth, not moved back                   73.88      82.32          80.72     72.47
+skill_de_score
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                1.000      0.973          0.829     0.713
+base, a share of its cells thinned to the anchor depth (no anchor)       0.958      1.000          0.947     0.705
+raw nuclei                                                               0.707      0.728          0.749     0.674
+re-sequenced at source depth, moved back 1                               0.822      0.796          0.715     0.611
+re-sequenced at source depth, not moved back                             0.755      0.772          0.693     0.650
+re-sequenced at the nuclei's own depth, moved back 1                     0.817      0.861          0.833     0.646
+re-sequenced at the nuclei's own depth, not moved back                   0.757      0.787          0.765     0.672
+skill_de_direction
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                1.000      0.962          0.876     0.879
+base, a share of its cells thinned to the anchor depth (no anchor)       0.926      1.000          0.981     0.918
+raw nuclei                                                               0.851      0.870          0.844     0.861
+re-sequenced at source depth, moved back 1                               0.906      0.872          0.815     0.828
+re-sequenced at source depth, not moved back                             0.849      0.825          0.784     0.816
+re-sequenced at the nuclei's own depth, moved back 1                     0.879      0.943          0.910     0.872
+re-sequenced at the nuclei's own depth, not moved back                   0.861      0.888          0.860     0.864
+skill_mmd_u
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                1.000      0.964          0.855     0.761
+base, a share of its cells thinned to the anchor depth (no anchor)       0.931      1.000          0.987     0.820
+raw nuclei                                                               0.663      0.721          0.763     0.592
+re-sequenced at source depth, moved back 1                               0.871      0.844          0.760     0.626
+re-sequenced at source depth, not moved back                             0.724      0.712          0.665     0.555
+re-sequenced at the nuclei's own depth, moved back 1                     0.833      0.902          0.905     0.701
+re-sequenced at the nuclei's own depth, not moved back                   0.719      0.779          0.801     0.634
+skill_variogram
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                1.000      0.798          0.650     0.729
+base, a share of its cells thinned to the anchor depth (no anchor)       0.695      1.000          0.874     0.903
+raw nuclei                                                               0.479      0.739          0.767     0.652
+re-sequenced at source depth, moved back 1                               0.846      0.688          0.591     0.599
+re-sequenced at source depth, not moved back                             0.669      0.593          0.546     0.521
+re-sequenced at the nuclei's own depth, moved back 1                     0.651      0.951          0.856     0.822
+re-sequenced at the nuclei's own depth, not moved back                   0.592      0.854          0.803     0.753

@@ -1,0 +1,70 @@
+[suite] gen      ready    12s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] p8/deep  ready    19s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] p8/all   ready    26s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] 2d/deep  ready    32s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    40s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  51.79  DES 0.509 DCS 0.552 MMD 0.506 CSS 0.504
+config=R7 (final): tilt 0 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.38  DES 0.600 DCS 0.642 MMD 0.596 CSS 0.573
+config=R7 + tilt 1.5 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.04  DES 0.620 DCS 0.644 MMD 0.600 CSS 0.573
+config=R7 + tilt 3 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.27  DES 0.626 DCS 0.644 MMD 0.601 CSS 0.573
+config=round 6 first version (raw anchor, rho 0.75) proxy=gen split=confirmation f=0.125 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  54.63  DES 0.548 DCS 0.588 MMD 0.560 CSS 0.471
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  60.34  DES 0.579 DCS 0.690 MMD 0.597 CSS 0.534
+config=R7 (final): tilt 0 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  65.04  DES 0.620 DCS 0.748 MMD 0.634 CSS 0.592
+config=R7 + tilt 1.5 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.85  DES 0.617 DCS 0.745 MMD 0.634 CSS 0.589
+config=R7 + tilt 3 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.77  DES 0.616 DCS 0.744 MMD 0.634 CSS 0.587
+config=round 6 first version (raw anchor, rho 0.75) proxy=p8/deep split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  67.49  DES 0.630 DCS 0.749 MMD 0.661 CSS 0.659
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  57.53  DES 0.495 DCS 0.656 MMD 0.587 CSS 0.558
+config=R7 (final): tilt 0 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  61.75  DES 0.546 DCS 0.726 MMD 0.621 CSS 0.567
+config=R7 + tilt 1.5 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  61.62  DES 0.546 DCS 0.723 MMD 0.621 CSS 0.564
+config=R7 + tilt 3 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  61.48  DES 0.544 DCS 0.719 MMD 0.622 CSS 0.563
+config=round 6 first version (raw anchor, rho 0.75) proxy=p8/all split=confirmation f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  68.87  DES 0.631 DCS 0.753 MMD 0.678 CSS 0.696
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  53.39  DES 0.514 DCS 0.615 MMD 0.525 CSS 0.470
+config=R7 (final): tilt 0 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.32  DES 0.580 DCS 0.714 MMD 0.572 CSS 0.540
+config=R7 + tilt 1.5 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.18  DES 0.576 DCS 0.712 MMD 0.575 CSS 0.537
+config=R7 + tilt 3 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.18  DES 0.576 DCS 0.709 MMD 0.578 CSS 0.536
+config=round 6 first version (raw anchor, rho 0.75) proxy=2d/deep split=confirmation f=0.25 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  63.30  DES 0.599 DCS 0.712 MMD 0.621 CSS 0.594
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  48.13  DES 0.395 DCS 0.526 MMD 0.502 CSS 0.502
+config=R7 (final): tilt 0 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.50  DES 0.547 DCS 0.701 MMD 0.584 CSS 0.540
+config=R7 + tilt 1.5 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.19  DES 0.547 DCS 0.692 MMD 0.584 CSS 0.535
+config=R7 + tilt 3 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.88  DES 0.542 DCS 0.686 MMD 0.585 CSS 0.531
+config=round 6 first version (raw anchor, rho 0.75) proxy=2d/all split=confirmation f=0.25 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  67.16  DES 0.622 DCS 0.725 MMD 0.649 CSS 0.701
+done 155s
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     51.79    60.34   57.53    53.39   48.13
+R7 (final): tilt 0                            60.38    65.04   61.75    60.32   59.50
+R7 + tilt 1.5                                 61.04    64.85   61.62    60.18   59.19
+R7 + tilt 3                                   61.27    64.77   61.48    60.18   58.88
+round 6 first version (raw anchor, rho 0.75)  54.63    67.49   68.87    63.30   67.16
+skill_de_score
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.509    0.579   0.495    0.514   0.395
+R7 (final): tilt 0                            0.600    0.620   0.546    0.580   0.547
+R7 + tilt 1.5                                 0.620    0.617   0.546    0.576   0.547
+R7 + tilt 3                                   0.626    0.616   0.544    0.576   0.542
+round 6 first version (raw anchor, rho 0.75)  0.548    0.630   0.631    0.599   0.622
+skill_de_direction
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.552    0.690   0.656    0.615   0.526
+R7 (final): tilt 0                            0.642    0.748   0.726    0.714   0.701
+R7 + tilt 1.5                                 0.644    0.745   0.723    0.712   0.692
+R7 + tilt 3                                   0.644    0.744   0.719    0.709   0.686
+round 6 first version (raw anchor, rho 0.75)  0.588    0.749   0.753    0.712   0.725
+skill_mmd_u
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.506    0.597   0.587    0.525   0.502
+R7 (final): tilt 0                            0.596    0.634   0.621    0.572   0.584
+R7 + tilt 1.5                                 0.600    0.634   0.621    0.575   0.584
+R7 + tilt 3                                   0.601    0.634   0.622    0.578   0.585
+round 6 first version (raw anchor, rho 0.75)  0.560    0.661   0.678    0.621   0.649
+skill_variogram
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.504    0.534   0.558    0.470   0.502
+R7 (final): tilt 0                            0.573    0.592   0.567    0.540   0.540
+R7 + tilt 1.5                                 0.573    0.589   0.564    0.537   0.535
+R7 + tilt 3                                   0.573    0.587   0.563    0.536   0.531
+round 6 first version (raw anchor, rho 0.75)  0.471    0.659   0.696    0.594   0.701

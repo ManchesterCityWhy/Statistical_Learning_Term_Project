@@ -1,0 +1,9 @@
+[test] ref round 6 file (0.2 raw)                       D 0.00535 (se 0.00135)  h1-if-true  77.64  de_score 0.702 de_direction 0.861 mmd_u 0.762 variogram 0.785  verbatim-if-true 79.68
+[test] ref round 6 first version (0.375 raw)            D 0.00887 (se 0.00072)  h1-if-true  79.27  de_score 0.697 de_direction 0.847 mmd_u 0.792 variogram 0.846  verbatim-if-true 77.71
+
+=== test
+                                            D  D_seed_se  probe_total  skill_de_score  skill_de_direction  skill_mmd_u  skill_variogram  extra_total
+recipe                                                                                                                                              
+ref round 6 file (0.2 raw)             0.0053     0.0014      77.6416          0.7017              0.8608       0.7624           0.7854      79.6783
+ref round 6 first version (0.375 raw)  0.0089     0.0007      79.2670          0.6972              0.8469       0.7918           0.8457      77.7066
+done 81s

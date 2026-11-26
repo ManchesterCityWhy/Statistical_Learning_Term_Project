@@ -1,0 +1,92 @@
+{
+ "sha256_matches_manifest": true,
+ "sha256": "cb227c26335911b9b51547ed2f5d55c00ca9f05cfa6f53d92daa383797c74e01",
+ "bytes": 95491702,
+ "bytes_match_manifest": true,
+ "shape": [
+  5000,
+  32285
+ ],
+ "gene_order_official": true,
+ "finite_nonnegative": true,
+ "row_sum_min_max": [
+  9999.999508126939,
+  10000.000568321468
+ ],
+ "distinct_rows": 5000,
+ "max_value": 7.488491535186768,
+ "validation": {
+  "board": "T1:test",
+  "cells": 5000,
+  "genes": 32285,
+  "sha256": "cb227c26335911b9b51547ed2f5d55c00ca9f05cfa6f53d92daa383797c74e01",
+  "bytes": 95491702,
+  "format_valid": true,
+  "normalization_verified": false
+ },
+ "cells_sha256_matches_manifest": true,
+ "all_rows_from_library_3": true,
+ "distinct_source_rows": 4997,
+ "lineage_shares": {
+  "CM": 0.296,
+  "Endo": 0.2884,
+  "Epi": 0.1382,
+  "Cushion": 0.0986,
+  "Blood": 0.089,
+  "Other": 0.0724,
+  "Mac": 0.0174
+ },
+ "unmixed_cells": 807,
+ "thinning_info_matches_manifest": true,
+ "thinning_info": {
+  "share_of_molecules_kept": 0.85,
+  "libraries": [
+   "3"
+  ],
+  "cells_thinned": 11818,
+  "seed": 985,
+  "median_umi_before": 10384.5,
+  "median_umi_after": 8825.5,
+  "median_genes_detected_before": 3819.5,
+  "median_genes_detected_after": 3485.0
+ },
+ "fresh_rebuild_identical": true,
+ "unmixed_pattern_equals_thinned_source": true,
+ "unmixed_pattern_subset_of_original": true,
+ "unmixed_genes_detected_ratio_file_over_original": 0.90663349602318,
+ "median_umi_original_rows": 10750.0,
+ "median_umi_thinned_rows": 9136.5,
+ "umi_ratio_quantiles_5_50_95": [
+  0.8437527149915696,
+  0.8498840630054474,
+  0.8563585251569747
+ ],
+ "median_genes_detected_file": 3611.5,
+ "same_base_rows_as_round8": true,
+ "stand_in_rows_shared_with_round8": 2139,
+ "rows_shared_with_round8_total": 4889,
+ "median_genes_detected_round8": 3958.0,
+ "rows_identical_to_round8_file": 0,
+ "manifest_fields_differing_from_round8": [
+  "base",
+  "code_sha256",
+  "configuration",
+  "file",
+  "file_bytes",
+  "file_sha256",
+  "harmonisation",
+  "method",
+  "molecular_mixture",
+  "name",
+  "prediction_cells_sha256",
+  "provenance_sha256",
+  "real_cells",
+  "selfcheck_same_code_path",
+  "thinning",
+  "two_witness_shift",
+  "validation"
+ ],
+ "code_hashes_differing_from_round8": [
+  "round7_export.py"
+ ]
+}

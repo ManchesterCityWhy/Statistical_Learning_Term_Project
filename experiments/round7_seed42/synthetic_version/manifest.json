@@ -1,0 +1,485 @@
+{
+  "name": "round7_heartlib_f0.45_pos0_type_k20_dev0.5_trend0.4",
+  "method": "E10.5 heart-proper library in its natural composition, plus E14.5 Multiome nuclei re-sequenced at E10.5 depth, harmonised and moved back to the E10.5 cell-type means (share bwd); both parts moved by the two-witness developmental shift (share dev of the E10.5 -> E14.5 path) and the within-cell bulk trend (share of its five days)",
+  "configuration": {
+    "f": 0.45,
+    "pos": 0.0,
+    "fwd": 0.0,
+    "bwd": 1.0,
+    "harmonise": 1.0,
+    "mode": "min",
+    "level": "type",
+    "dev": 0.5,
+    "days_to_anchor": 4.0,
+    "previous_stage": "E9.5 (all cells)",
+    "bulk_trend_share": 0.4,
+    "real_share": 0.0,
+    "shared_forward_share": 0.0,
+    "two_witness_on": "lineage-specific part of the ratio",
+    "shift_mode": "scale",
+    "mixture_share": 0.0,
+    "mixture_low_gene_threshold_per_10k": null,
+    "mixture_partner_profile": null,
+    "anchor_form": "resample (k_prof = 20, multinomial at source-lineage depth)"
+  },
+  "seed": 42,
+  "cells_total": 5000,
+  "base_cells": 2750,
+  "stand_in_cells": 0,
+  "real_cells_total": 2750,
+  "anchor_cells": 2250,
+  "real_cells": {
+    "drawn_in_natural_composition": 2750,
+    "stand_ins_for_anchor_nuclei": 0,
+    "distinct_E10.5_rows": 2750,
+    "synthetic_nuclei": 2250,
+    "stand_in_celltype_shares": {},
+    "requested_celltype_shares": {},
+    "stand_ins_of_another_type_than_requested": 0,
+    "median_genes_detected_stand_ins": null,
+    "stand_in_lineage_shares": {},
+    "median_umi_of_stand_in_source_rows": null,
+    "all_real_cells_celltype_shares": {
+      "Epicardium": 0.1964,
+      "Blood": 0.1611,
+      "Endocardium-1": 0.1105,
+      "Endocardium-2": 0.1098,
+      "EndoMT Endocardium": 0.0607,
+      "RV-CM": 0.0578,
+      "LV-CM": 0.0571,
+      "Early VIC": 0.056,
+      "BEC": 0.0498,
+      "OFT-CM": 0.028,
+      "pSHF": 0.0218,
+      "AVC-CM": 0.0189,
+      "SV-CM": 0.0164,
+      "IFT-CM": 0.0135,
+      "pPHM": 0.0073,
+      "Macrophage": 0.0073,
+      "aPHM": 0.0065,
+      "Hepatocyte": 0.0058,
+      "Pericardium": 0.0051,
+      "ST": 0.0044,
+      "Surface Ectoderm": 0.0044,
+      "NCC": 0.0007,
+      "Gut Endoderm": 0.0007
+    },
+    "all_real_cells_lineage_shares": {
+      "Endo": 0.2702,
+      "Epi": 0.1964,
+      "CM": 0.1916,
+      "Blood": 0.1611,
+      "Cushion": 0.1167,
+      "Other": 0.0567,
+      "Mac": 0.0073
+    },
+    "median_umi_of_all_real_source_rows": 10375.0
+  },
+  "heart_libraries": [
+    "3"
+  ],
+  "base": {
+    "cells": 2750,
+    "library_shares": {
+      "3": 1.0
+    },
+    "celltype_shares": {
+      "Epicardium": 0.1964,
+      "Blood": 0.1611,
+      "Endocardium-1": 0.1105,
+      "Endocardium-2": 0.1098,
+      "EndoMT Endocardium": 0.0607,
+      "RV-CM": 0.0578,
+      "LV-CM": 0.0571,
+      "Early VIC": 0.056,
+      "BEC": 0.0498,
+      "OFT-CM": 0.028,
+      "pSHF": 0.0218,
+      "AVC-CM": 0.0189,
+      "SV-CM": 0.0164,
+      "IFT-CM": 0.0135,
+      "pPHM": 0.0073,
+      "Macrophage": 0.0073,
+      "aPHM": 0.0065,
+      "Hepatocyte": 0.0058,
+      "Pericardium": 0.0051,
+      "ST": 0.0044,
+      "Surface Ectoderm": 0.0044,
+      "NCC": 0.0007,
+      "Gut Endoderm": 0.0007
+    },
+    "lineage_shares": {
+      "Endo": 0.2702,
+      "Epi": 0.1964,
+      "CM": 0.1916,
+      "Blood": 0.1611,
+      "Cushion": 0.1167,
+      "Other": 0.0567,
+      "Mac": 0.0073
+    },
+    "median_umi_of_source_rows": 10375.0
+  },
+  "anchor": {
+    "lineage_shares": {
+      "CM": 0.428,
+      "Endo": 0.3124,
+      "Other": 0.0893,
+      "Cushion": 0.0738,
+      "Epi": 0.0658,
+      "Mac": 0.0298,
+      "Blood": 0.0009
+    },
+    "nearest_E10.5_celltype_shares": {
+      "LV-CM": 0.2876,
+      "Endocardium-2": 0.2351,
+      "OFT-CM": 0.0724,
+      "BEC": 0.0684,
+      "Epicardium": 0.0658,
+      "EndoMT Endocardium": 0.0627,
+      "pSHF": 0.0587,
+      "RV-CM": 0.0338,
+      "Macrophage": 0.0298,
+      "IFT-CM": 0.0218,
+      "Pericardium": 0.0178,
+      "Early VIC": 0.0111,
+      "ST": 0.0093,
+      "Endocardium-1": 0.0089,
+      "SV-CM": 0.0076,
+      "AVC-CM": 0.0049,
+      "Blood": 0.0009,
+      "pPHM": 0.0009,
+      "Gut Endoderm": 0.0009,
+      "NCC": 0.0009,
+      "aPHM": 0.0009
+    },
+    "median_umi_raw_nuclei": 2963.5,
+    "median_genes_detected_resequenced": 4129.0
+  },
+  "file": {
+    "lineage_shares_total": {
+      "CM": 0.298,
+      "Endo": 0.2892,
+      "Epi": 0.1376,
+      "Cushion": 0.0974,
+      "Blood": 0.089,
+      "Other": 0.0714,
+      "Mac": 0.0174
+    },
+    "median_genes_detected": 3958.0,
+    "median_genes_detected_base": 3809.5,
+    "median_genes_detected_real_cells": 3809.5,
+    "nonzero_fraction": 0.12148588508595323,
+    "distinct_rows": 5000,
+    "library_sum_min": 9999.999490837927,
+    "library_sum_max": 10000.00055679286
+  },
+  "harmonisation": {
+    "lineages": [
+      "CM",
+      "Endo",
+      "Cushion",
+      "Epi"
+    ],
+    "genes_with_shared_shift": 10629,
+    "genes_shifted_by_more_than_e^0.5": 2055,
+    "ribosomal_protein_genes_shifted_by_more_than_e^0.5": 83,
+    "anchor_lower_top15": {
+      "Hbb-bh1": 3.19,
+      "Xist": 2.9,
+      "Pakap.1": 2.37,
+      "Rps2": 2.2,
+      "Gm10260": 2.11,
+      "Eif5a": 2.04,
+      "Pdap1": 1.92,
+      "Hsp90ab1": 1.91,
+      "Rpl4": 1.86,
+      "Tuba1b": 1.79,
+      "Hspa8": 1.79,
+      "Ran": 1.78,
+      "Rpl27": 1.77,
+      "Ftl1": 1.76,
+      "Hba-x": 1.73
+    },
+    "anchor_higher_top15": {
+      "Hbb-bs": -4.35,
+      "Hbb-bt": -2.94,
+      "Ckm": -2.04,
+      "Pcdh9": -1.83,
+      "Rbfox1": -1.8,
+      "Magi2": -1.73,
+      "Mb": -1.72,
+      "Mgp": -1.64,
+      "Hba-a2": -1.61,
+      "March3": -1.59,
+      "Lncppara": -1.57,
+      "Sema5a": -1.57,
+      "Cacna1c": -1.47,
+      "Ror1": -1.43,
+      "Fabp4": -1.43
+    }
+  },
+  "two_witness_shift": {
+    "CM": {
+      "genes_moved": 8854,
+      "genes_abs_over_0.5": 636,
+      "up_top15": {
+        "Myh7b": 2.01,
+        "Ncam1": 2.0,
+        "Phldb2": 1.86,
+        "Hectd2os": 1.86,
+        "Hmcn1": 1.84,
+        "Akap6": 1.79,
+        "Zfp536": 1.78,
+        "Kcnq1": 1.63,
+        "Sntb1": 1.63,
+        "Garem1": 1.61,
+        "Nckap5": 1.55,
+        "Sorbs2": 1.54,
+        "Hey2": 1.52,
+        "Gas6": 1.51,
+        "Pde4b": 1.46
+      },
+      "down_top15": {
+        "Wnt2": -1.74,
+        "Krt8": -1.41,
+        "Lmod1": -1.41,
+        "Amph": -1.33,
+        "Cd24a": -1.32,
+        "Bcat1": -1.31,
+        "Dcaf12l1": -1.21,
+        "Armh4": -1.19,
+        "Hcn1": -1.16,
+        "Bex4": -1.15,
+        "Nrp2": -1.15,
+        "Mylpf": -1.07,
+        "Acta2": -1.06,
+        "Shisa2": -1.06,
+        "Unc5c": -1.05
+      }
+    },
+    "Endo": {
+      "genes_moved": 10192,
+      "genes_abs_over_0.5": 423,
+      "up_top15": {
+        "Pde3a": 2.22,
+        "Hmcn1": 2.17,
+        "Cav1": 1.85,
+        "Kcnc2": 1.62,
+        "Gucy1b1": 1.6,
+        "Col25a1": 1.58,
+        "Emp1": 1.51,
+        "Smoc1": 1.45,
+        "B130024G19Rik": 1.42,
+        "Dmd": 1.42,
+        "Nedd4l": 1.37,
+        "Eps8": 1.34,
+        "Adamts9": 1.34,
+        "Abtb2": 1.33,
+        "Clca3a1": 1.29
+      },
+      "down_top15": {
+        "Actg1": -1.46,
+        "Has2": -1.38,
+        "Gngt2": -1.34,
+        "Tkt": -1.25,
+        "Twist1": -1.14,
+        "Cd24a": -1.12,
+        "Msx1": -1.12,
+        "Serpinf1": -1.05,
+        "Ramp2": -1.01,
+        "Tyms": -0.99,
+        "Uhrf1": -0.98,
+        "Pappa": -0.98,
+        "Etv2": -0.97,
+        "Mogat2": -0.97,
+        "Actb": -0.93
+      }
+    },
+    "Epi": {
+      "genes_moved": 8827,
+      "genes_abs_over_0.5": 636,
+      "up_top15": {
+        "Pde7b": 2.11,
+        "Tafa2": 1.89,
+        "Col3a1": 1.88,
+        "Lama3": 1.87,
+        "Msln": 1.84,
+        "Bmp6": 1.82,
+        "Kcnmb2": 1.81,
+        "Cdon": 1.78,
+        "Sema6d": 1.76,
+        "C1qtnf7": 1.73,
+        "Muc16": 1.64,
+        "Limch1": 1.64,
+        "Adam33": 1.61,
+        "Il1rapl1": 1.59,
+        "Plscr2": 1.55
+      },
+      "down_top15": {
+        "Itga4": -3.01,
+        "Sox9": -1.55,
+        "6030498E09Rik": -1.39,
+        "Id2": -1.36,
+        "Lhx9": -1.22,
+        "Gm47283": -1.2,
+        "Bex1": -1.13,
+        "Gadd45g": -1.12,
+        "Enpp1": -1.12,
+        "Car4": -1.05,
+        "Bmp2": -1.02,
+        "Trip13": -1.0,
+        "Lin28b": -1.0,
+        "Med12l": -0.99,
+        "Srsf9": -0.99
+      }
+    }
+  },
+  "shared_forward_shift": null,
+  "molecular_mixture": null,
+  "input_sha256": {
+    "E10.5_RNA.h5ad": "974e04e7fe64fb96142f17994a9678d4cebd4f1868dec4de034eda4245b7dd6c"
+  },
+  "external": {
+    "anchor": {
+      "series": "GSE272154",
+      "sample": "GSM8394736 (RNA Wild Type e14.5 rep1)",
+      "stage": "E14.5",
+      "assay": "10x Multiome nuclei, Cell Ranger ARC 2.0.2, mm10",
+      "called_barcodes": 8482,
+      "cells_after_qc": 5481,
+      "genes_matched": 32245,
+      "genes_in_file": 32291,
+      "median_umi": 3059.0,
+      "median_genes": 1729.0,
+      "desoup": false,
+      "soup_fraction": null,
+      "qc": {
+        "min_umi": 1000,
+        "min_genes": 500,
+        "max_mito": 0.25
+      },
+      "sha256": {
+        "GSM8394736_Wildtype_raw_feature_bc_matrix.h5": "684f31c2f2fdbf3eb7207439f868a076d405462b65b34155219d0249a68f3a3a",
+        "GSM8394736_Wildtype_per_barcode_metrics.csv.gz": "2b6e2e5e4773067c5ced9bef0efb67c5dd72140c90bd11221334c88a852bf954"
+      }
+    },
+    "bulk_trend": {
+      "series": "GSE223237",
+      "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223237",
+      "samples": [
+        {
+          "accession": "GSM6943750",
+          "stage": "E9.5",
+          "file": "GSM6943750_E9_Rep1_counts.txt.gz",
+          "sha256": "1066de79865b42a680fe40496db5270295de5caf8ab85c976de1fdbab01f142a"
+        },
+        {
+          "accession": "GSM6943751",
+          "stage": "E9.5",
+          "file": "GSM6943751_E9_Rep2_counts.txt.gz",
+          "sha256": "6c2f06cf637c6df164c83062eef87c5ab6700598774746ae4ab17c73e3478068"
+        },
+        {
+          "accession": "GSM6943752",
+          "stage": "E9.5",
+          "file": "GSM6943752_E9_Rep3_counts.txt.gz",
+          "sha256": "fba43acf7f4bd7d12abda2eeb5569b64be12cefc22a8b6a48614cbac6c8cd21d"
+        },
+        {
+          "accession": "GSM6943761",
+          "stage": "E14.5",
+          "file": "GSM6943761_E14_Rep1_counts.txt.gz",
+          "sha256": "b9270401ca1ca36141b4fd5b727fe95e3828623b7f58c50554baaa9b47527932"
+        },
+        {
+          "accession": "GSM6943762",
+          "stage": "E14.5",
+          "file": "GSM6943762_E14_Rep2_counts.txt.gz",
+          "sha256": "c54ce395bfcfe10840fe54ef7d1f0f6ee08d88ba834633de64033cfeeb2b1433"
+        },
+        {
+          "accession": "GSM6943763",
+          "stage": "E14.5",
+          "file": "GSM6943763_E14_Rep3_counts.txt.gz",
+          "sha256": "22b70c87bfd3398b8354dffb97d4175a48460d9b87fc9be699979a1ce4920479"
+        }
+      ],
+      "symbol_map_source": "GSM6211349 E14.5 Cell Ranger gene table only",
+      "symbol_map_sha256": "86387317c0576b86b2693b88353a7c6be4affb53ae3100d2767f97aa6fd2d0f2"
+    }
+  },
+  "input_previous_stage_sha256": {
+    "E9.5_RNA.h5ad": "0296e0043842f944a663f3c11ac1542d1bbee733c1cd657bd56f75af65958361"
+  },
+  "code_sha256": {
+    "round7_export.py": "1e59b3c1882fc04196a69bc486cdd56ea3c589bec3f53361b38e86a4d39c6c32",
+    "round7_method.py": "b8b14c2a0cb8f5a1f018eb7c4e494aff863bb45e5d0c4613463f803c940503ff",
+    "round7_eval.py": "a39f8a6dc29d39e528f5616c4678266bbdb08d8593b44e2b9b02c4ace8c79b09",
+    "round7_probe.py": "12659e8c141177f062f34587280c6b2b6060333572f39744dbea4dd43a4f0901",
+    "round6_method.py": "0bcaac9f50db5fd1ceceb6408b6c8801c86aa60232c8a444b126b5c0dd3e2509",
+    "round6_anchor.py": "cd26cddc842b738c0851baedec20e7ef67411143c735181004e0b5d2da62a05e",
+    "round6_common.py": "1b001289f0555bb94f63150314c004f78600a2a9642e3bf37fd2392356a07389",
+    "round6_config.py": "f2addc2474cda661e3547bb108a5a793e260be507707e85b2352e5c8eafcb43d",
+    "round6_s1.py": "d953e506798609176d323112d5846e5de83e1eed26daaac93db40471fefbc7c4",
+    "round6_final.py": "68a2c1f5f8f807527c8c6b32bd2c204bf814d19b25b60dd1b45648214f54d765",
+    "round6_suite.py": "990f74c3c034b270d8ec6d29c794be2119d23f0afb4be52b2a5e4212f2486e8d",
+    "round5_anchor.py": "b137f30f675f9f9b055743a5b36fa145a572fdb1325699554492303f12af4f40",
+    "round5_common.py": "28a932b0008cda667dc8387c413fffc1345718d04c7591de7fabdf65dd2ef59d",
+    "round5_exp4.py": "acf7c8e77c88ac486af4d6115ec93b324abfc727052bb61fafadb4ad74582685",
+    "round5_exp2.py": "4c92b1c58cfb27a4d2b2f3fa02dadd76bf5dc7af6c2113bc5b322e91e4918ab1",
+    "round4_direction.py": "48d9b313ebacf62fb697cc00e3f8948a2083b4de5d059bb081171912fd725e32",
+    "bulk_trend.py": "d59132a9909820abac4f9770f201dafd5cc5437d78ed9464ee53ff5911112d06",
+    "geo_transport.py": "3e8d73a73fdd29ebdb8a1564e8d89eaa9c69fd16b5faf75378f885b121f151f3",
+    "../t1_pipeline/data.py": "28679fe71cbc31477cd35672224576efdb8c6fbe5fa20cf33147ca76af05c94f",
+    "../t1_pipeline/cli.py": "3d9086675c2a051ab87c529e2f0ca9788c967fa33d58a7aef9a041541b66df58",
+    "../t1_pipeline/evaluation.py": "786f3413662fc42a1dde35b3371e64d27e43d05909ccd05fd4898f6ccb6ae9b5",
+    "../t1_pipeline/model.py": "815c06be798dac8c6ef52f9cbf1cfedca9bf25f5990e61f26bfeb92c9b402c5d",
+    "../t1_pipeline/distribution.py": "7baed91c8960be7e6e0e74d97380588a633b0b5ddee43e69a0dea52d349c73f7"
+  },
+  "validation": {
+    "board": "T1:test",
+    "cells": 5000,
+    "genes": 32285,
+    "sha256": "7f45498535bfec373c8eb1c741f71911c5ad3214139da299bc087108378b09bc",
+    "bytes": 103099957,
+    "format_valid": true,
+    "normalization_verified": false
+  },
+  "board": {
+    "min_cells": 638,
+    "max_cells": 5118,
+    "n_genes": 32285
+  },
+  "prediction_cells_sha256": "56ff2c90bef28f7fa3f089b0846a12d7a8c11a6b354a23eafe539e5247640e05",
+  "file_sha256": "7f45498535bfec373c8eb1c741f71911c5ad3214139da299bc087108378b09bc",
+  "file_bytes": 103099957,
+  "status": "not_submitted",
+  "selfcheck_same_code_path": {
+    "f": 0.45,
+    "pos": 0.0,
+    "bwd": 1.0,
+    "export_build_equals_evaluation_cells": true,
+    "scenario_cells_sha256": "a7578e0506e70d3ddd86d620c3ccee330f3e85aa428cf8965ac6ba5fe9529377",
+    "heart/deep": {
+      "stored": 78.43802092915055,
+      "recomputed": 78.43803751667028,
+      "abs_diff": 1.6587519723998412e-05
+    },
+    "heart/mid": {
+      "stored": 77.43352088877108,
+      "recomputed": 77.43352299031714,
+      "abs_diff": 2.101546058952408e-06
+    },
+    "heart/shallow": {
+      "stored": 71.85710479749883,
+      "recomputed": 71.85709067595567,
+      "abs_diff": 1.4121543159717476e-05
+    },
+    "all/asis": {
+      "stored": 64.98468513443669,
+      "recomputed": 64.98467254823723,
+      "abs_diff": 1.258619946042927e-05
+    }
+  },
+  "provenance_sha256": "7bc0e5c4a3a4a47846881342f07b91b686b6a6c8d5125fe8e1daa8652925d127"
+}

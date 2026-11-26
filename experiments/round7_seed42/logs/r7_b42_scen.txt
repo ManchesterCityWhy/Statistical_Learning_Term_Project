@@ -1,0 +1,97 @@
+scenario pool 11486 27s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=R7h: file recipe (two-witness + trend) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.48  DES 0.746 DCS 0.903 MMD 0.839 CSS 0.803
+config=R7h: file recipe (two-witness + trend) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.53  DES 0.762 DCS 0.890 MMD 0.850 CSS 0.686
+config=R7h: file recipe (two-witness + trend) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.88  DES 0.689 DCS 0.832 MMD 0.797 CSS 0.597
+config=R7h: file recipe (two-witness + trend) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.09  DES 0.632 DCS 0.837 MMD 0.618 CSS 0.592
+config=R7h, shifts in count space scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  79.62  DES 0.731 DCS 0.893 MMD 0.821 CSS 0.719
+config=R7h, shifts in count space scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  79.34  DES 0.751 DCS 0.882 MMD 0.839 CSS 0.668
+config=R7h, shifts in count space scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.42  DES 0.677 DCS 0.829 MMD 0.793 CSS 0.598
+config=R7h, shifts in count space scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  65.85  DES 0.615 DCS 0.836 MMD 0.606 CSS 0.570
+config=whole ratio 1 + two-witness + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.20  DES 0.653 DCS 0.841 MMD 0.530 CSS 0.547
+config=whole ratio 1 + two-witness + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.86  DES 0.658 DCS 0.823 MMD 0.559 CSS 0.554
+config=whole ratio 1 + two-witness + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.55  DES 0.666 DCS 0.785 MMD 0.582 CSS 0.541
+config=whole ratio 1 + two-witness + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  58.87  DES 0.630 DCS 0.819 MMD 0.432 CSS 0.485
+config=whole ratio 1 + two-witness + trend, count space scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  59.63  DES 0.641 DCS 0.831 MMD 0.487 CSS 0.410
+config=whole ratio 1 + two-witness + trend, count space scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  61.66  DES 0.647 DCS 0.814 MMD 0.517 CSS 0.480
+config=whole ratio 1 + two-witness + trend, count space scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  62.57  DES 0.656 DCS 0.779 MMD 0.548 CSS 0.513
+config=whole ratio 1 + two-witness + trend, count space scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  56.17  DES 0.620 DCS 0.816 MMD 0.399 CSS 0.414
+config=whole ratio 1, count space scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  65.28  DES 0.660 DCS 0.834 MMD 0.568 CSS 0.546
+config=whole ratio 1, count space scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.99  DES 0.662 DCS 0.805 MMD 0.580 CSS 0.545
+config=whole ratio 1, count space scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  63.46  DES 0.647 DCS 0.767 MMD 0.582 CSS 0.533
+config=whole ratio 1, count space scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  59.51  DES 0.642 DCS 0.803 MMD 0.457 CSS 0.484
+config=R7h + trend x1.5 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  79.05  DES 0.710 DCS 0.884 MMD 0.802 CSS 0.758
+config=R7h + trend x1.5 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  78.49  DES 0.714 DCS 0.882 MMD 0.834 CSS 0.679
+config=R7h + trend x1.5 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.73  DES 0.673 DCS 0.833 MMD 0.803 CSS 0.600
+config=R7h + trend x1.5 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  65.73  DES 0.609 DCS 0.834 MMD 0.600 CSS 0.582
+config=R7h + trend x1.5, count space scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  74.90  DES 0.694 DCS 0.872 MMD 0.774 CSS 0.626
+config=R7h + trend x1.5, count space scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  76.40  DES 0.700 DCS 0.872 MMD 0.813 CSS 0.634
+config=R7h + trend x1.5, count space scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  72.83  DES 0.659 DCS 0.829 MMD 0.793 CSS 0.592
+config=R7h + trend x1.5, count space scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  63.92  DES 0.602 DCS 0.829 MMD 0.582 CSS 0.535
+config=R7h + trend x2, count space scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  70.08  DES 0.658 DCS 0.855 MMD 0.718 CSS 0.535
+config=R7h + trend x2, count space scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.52  DES 0.668 DCS 0.865 MMD 0.777 CSS 0.593
+config=R7h + trend x2, count space scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  71.92  DES 0.641 DCS 0.828 MMD 0.786 CSS 0.581
+config=R7h + trend x2, count space scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  61.53  DES 0.581 DCS 0.823 MMD 0.551 CSS 0.495
+done 78s
+scenario                                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                          
+base only                                             100.00      93.26          81.26     77.20
+R7h: file recipe (two-witness + trend)                 82.48      80.53          73.88     67.09
+R7h, shifts in count space                             79.62      79.34          73.42     65.85
+whole ratio 1 + two-witness + trend                    64.20      64.86          64.55     58.87
+whole ratio 1 + two-witness + trend, count space       59.63      61.66          62.57     56.17
+whole ratio 1, count space                             65.28      64.99          63.46     59.51
+R7h + trend x1.5                                       79.05      78.49          73.73     65.73
+R7h + trend x1.5, count space                          74.90      76.40          72.83     63.92
+R7h + trend x2, count space                            70.08      73.52          71.92     61.53
+skill_de_score
+scenario                                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                          
+base only                                              1.000      0.973          0.829     0.713
+R7h: file recipe (two-witness + trend)                 0.746      0.762          0.689     0.632
+R7h, shifts in count space                             0.731      0.751          0.677     0.615
+whole ratio 1 + two-witness + trend                    0.653      0.658          0.666     0.630
+whole ratio 1 + two-witness + trend, count space       0.641      0.647          0.656     0.620
+whole ratio 1, count space                             0.660      0.662          0.647     0.642
+R7h + trend x1.5                                       0.710      0.714          0.673     0.609
+R7h + trend x1.5, count space                          0.694      0.700          0.659     0.602
+R7h + trend x2, count space                            0.658      0.668          0.641     0.581
+skill_de_direction
+scenario                                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                          
+base only                                              1.000      0.962          0.876     0.879
+R7h: file recipe (two-witness + trend)                 0.903      0.890          0.832     0.837
+R7h, shifts in count space                             0.893      0.882          0.829     0.836
+whole ratio 1 + two-witness + trend                    0.841      0.823          0.785     0.819
+whole ratio 1 + two-witness + trend, count space       0.831      0.814          0.779     0.816
+whole ratio 1, count space                             0.834      0.805          0.767     0.803
+R7h + trend x1.5                                       0.884      0.882          0.833     0.834
+R7h + trend x1.5, count space                          0.872      0.872          0.829     0.829
+R7h + trend x2, count space                            0.855      0.865          0.828     0.823
+skill_mmd_u
+scenario                                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                          
+base only                                              1.000      0.964          0.855     0.761
+R7h: file recipe (two-witness + trend)                 0.839      0.850          0.797     0.618
+R7h, shifts in count space                             0.821      0.839          0.793     0.606
+whole ratio 1 + two-witness + trend                    0.530      0.559          0.582     0.432
+whole ratio 1 + two-witness + trend, count space       0.487      0.517          0.548     0.399
+whole ratio 1, count space                             0.568      0.580          0.582     0.457
+R7h + trend x1.5                                       0.802      0.834          0.803     0.600
+R7h + trend x1.5, count space                          0.774      0.813          0.793     0.582
+R7h + trend x2, count space                            0.718      0.777          0.786     0.551
+skill_variogram
+scenario                                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                          
+base only                                              1.000      0.798          0.650     0.729
+R7h: file recipe (two-witness + trend)                 0.803      0.686          0.597     0.592
+R7h, shifts in count space                             0.719      0.668          0.598     0.570
+whole ratio 1 + two-witness + trend                    0.547      0.554          0.541     0.485
+whole ratio 1 + two-witness + trend, count space       0.410      0.480          0.513     0.414
+whole ratio 1, count space                             0.546      0.545          0.533     0.484
+R7h + trend x1.5                                       0.758      0.679          0.600     0.582
+R7h + trend x1.5, count space                          0.626      0.634          0.592     0.535
+R7h + trend x2, count space                            0.535      0.593          0.581     0.495

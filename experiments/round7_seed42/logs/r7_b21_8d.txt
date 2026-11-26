@@ -1,0 +1,53 @@
+source E8.5: base pool 6077 cells, lineage shares CM 0.628, Endo 0.187, Epi 0.184; anchor lineage shares (by library-3 type) Blood 0.001, CM 0.421, Cushion 0.075, Endo 0.317, Epi 0.061, Mac 0.031, Other 0.094
+[A: library 3 without blood] target 1051 cells (median UMI 11193), lineage shares CM 0.219, Cushion 0.149, Endo 0.343, Epi 0.208, Mac 0.007, Other 0.074; anchor nuclei allowed 5481; base median UMI 12129  14s
+target=A: library 3 without blood config=base only f=0.0                55.42  DES 0.552 DCS 0.624 MMD 0.534 CSS 0.500
+target=A: library 3 without blood config=raw nuclei (round 6 form) f=0.3  62.78  DES 0.613 DCS 0.713 MMD 0.624 CSS 0.546
+target=A: library 3 without blood config=re-sequenced, moved back 1 (round 7 form) f=0.3  59.75  DES 0.579 DCS 0.694 MMD 0.566 CSS 0.548
+target=A: library 3 without blood config=re-sequenced, moved back 0.5 f=0.3  60.95  DES 0.589 DCS 0.704 MMD 0.579 CSS 0.563
+target=A: library 3 without blood config=re-sequenced, not moved back f=0.3  61.98  DES 0.599 DCS 0.709 MMD 0.594 CSS 0.573
+[B: shared lineages only] target 887 cells (median UMI 11107), lineage shares CM 0.259, Endo 0.406, Epi 0.247, Other 0.088; anchor nuclei allowed 4898; base median UMI 12129  39s
+target=B: shared lineages only config=base only f=0.0                   56.74  DES 0.559 DCS 0.635 MMD 0.555 CSS 0.514
+target=B: shared lineages only config=raw nuclei (round 6 form) f=0.3   64.65  DES 0.626 DCS 0.728 MMD 0.646 CSS 0.571
+target=B: shared lineages only config=re-sequenced, moved back 1 (round 7 form) f=0.3  61.22  DES 0.591 DCS 0.705 MMD 0.587 CSS 0.559
+target=B: shared lineages only config=re-sequenced, moved back 0.5 f=0.3  62.10  DES 0.595 DCS 0.714 MMD 0.597 CSS 0.573
+target=B: shared lineages only config=re-sequenced, not moved back f=0.3  63.17  DES 0.605 DCS 0.722 MMD 0.611 CSS 0.583
+target                                     A: library 3 without blood  B: shared lineages only
+config                                                                                        
+base only                                                       55.42                    56.74
+raw nuclei (round 6 form)                                       62.78                    64.65
+re-sequenced, moved back 1 (round 7 form)                       59.75                    61.22
+re-sequenced, moved back 0.5                                    60.95                    62.10
+re-sequenced, not moved back                                    61.98                    63.17
+skill_de_score
+target                                     A: library 3 without blood  B: shared lineages only
+config                                                                                        
+base only                                                       0.552                    0.559
+raw nuclei (round 6 form)                                       0.613                    0.626
+re-sequenced, moved back 1 (round 7 form)                       0.579                    0.591
+re-sequenced, moved back 0.5                                    0.589                    0.595
+re-sequenced, not moved back                                    0.599                    0.605
+skill_de_direction
+target                                     A: library 3 without blood  B: shared lineages only
+config                                                                                        
+base only                                                       0.624                    0.635
+raw nuclei (round 6 form)                                       0.713                    0.728
+re-sequenced, moved back 1 (round 7 form)                       0.694                    0.705
+re-sequenced, moved back 0.5                                    0.704                    0.714
+re-sequenced, not moved back                                    0.709                    0.722
+skill_mmd_u
+target                                     A: library 3 without blood  B: shared lineages only
+config                                                                                        
+base only                                                       0.534                    0.555
+raw nuclei (round 6 form)                                       0.624                    0.646
+re-sequenced, moved back 1 (round 7 form)                       0.566                    0.587
+re-sequenced, moved back 0.5                                    0.579                    0.597
+re-sequenced, not moved back                                    0.594                    0.611
+skill_variogram
+target                                     A: library 3 without blood  B: shared lineages only
+config                                                                                        
+base only                                                       0.500                    0.514
+raw nuclei (round 6 form)                                       0.546                    0.571
+re-sequenced, moved back 1 (round 7 form)                       0.548                    0.559
+re-sequenced, moved back 0.5                                    0.563                    0.573
+re-sequenced, not moved back                                    0.573                    0.583
+done 55s

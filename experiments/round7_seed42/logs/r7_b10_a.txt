@@ -1,0 +1,146 @@
+[suite] gen      ready    17s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] p8/deep  ready    28s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] p8/all   ready    38s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+[suite] 2d/deep  ready    50s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  52.24  DES 0.525 DCS 0.554 MMD 0.506 CSS 0.503
+config=base + trend x1 proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  55.64  DES 0.565 DCS 0.605 MMD 0.528 CSS 0.528
+config=base + trend x1.5 proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  55.74  DES 0.559 DCS 0.607 MMD 0.532 CSS 0.531
+config=anchor rho0.75 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  59.43  DES 0.598 DCS 0.637 MMD 0.579 CSS 0.560
+config=anchor rho0.75 + trend x0.5 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  60.68  DES 0.612 DCS 0.648 MMD 0.591 CSS 0.572
+config=anchor rho0.75 + trend x1 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  60.27  DES 0.584 DCS 0.647 MMD 0.597 CSS 0.578
+config=anchor rho0.75 + trend x1.5 proxy=gen split=development f=0.125 t=0.0 bwd=1.0 seed=42  60.12  DES 0.584 DCS 0.643 MMD 0.597 CSS 0.576
+config=anchor rho1 proxy=gen split=development f=0.1667 t=0.0 bwd=1.0 seed=42  59.96  DES 0.591 DCS 0.636 MMD 0.593 CSS 0.575
+config=anchor rho1 + trend x0.5 proxy=gen split=development f=0.1667 t=0.0 bwd=1.0 seed=42  61.44  DES 0.619 DCS 0.645 MMD 0.604 CSS 0.586
+config=anchor rho1 + trend x1 proxy=gen split=development f=0.1667 t=0.0 bwd=1.0 seed=42  61.28  DES 0.605 DCS 0.644 MMD 0.609 CSS 0.589
+config=anchor rho1 + trend x1.5 proxy=gen split=development f=0.1667 t=0.0 bwd=1.0 seed=42  60.97  DES 0.598 DCS 0.644 MMD 0.607 CSS 0.586
+config=base only proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+config=base + trend x1 proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  61.16  DES 0.588 DCS 0.703 MMD 0.607 CSS 0.534
+config=base + trend x1.5 proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  61.64  DES 0.594 DCS 0.708 MMD 0.611 CSS 0.538
+config=anchor rho0.75 proxy=p8/deep split=development f=0.15 t=0.0 bwd=1.0 seed=42  62.89  DES 0.596 DCS 0.724 MMD 0.612 CSS 0.577
+config=anchor rho0.75 + dev 1 proxy=p8/deep split=development f=0.15 t=0.0 bwd=1.0 seed=42  63.30  DES 0.598 DCS 0.728 MMD 0.618 CSS 0.580
+config=anchor rho0.75 + trend x0.5 proxy=p8/deep split=development f=0.15 t=0.0 bwd=1.0 seed=42  63.29  DES 0.595 DCS 0.731 MMD 0.618 CSS 0.581
+config=anchor rho0.75 + trend x1 proxy=p8/deep split=development f=0.15 t=0.0 bwd=1.0 seed=42  63.82  DES 0.603 DCS 0.736 MMD 0.622 CSS 0.585
+config=anchor rho0.75 + trend x1.5 proxy=p8/deep split=development f=0.15 t=0.0 bwd=1.0 seed=42  64.17  DES 0.605 DCS 0.739 MMD 0.626 CSS 0.589
+config=anchor rho0.75 + dev 1 + trend x1 proxy=p8/deep split=development f=0.15 t=0.0 bwd=1.0 seed=42  64.33  DES 0.608 DCS 0.741 MMD 0.628 CSS 0.588
+config=anchor rho1 proxy=p8/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  63.58  DES 0.603 DCS 0.732 MMD 0.620 CSS 0.580
+config=anchor rho1 + dev 1 proxy=p8/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  64.06  DES 0.610 DCS 0.736 MMD 0.625 CSS 0.583
+config=anchor rho1 + trend x0.5 proxy=p8/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  64.12  DES 0.610 DCS 0.738 MMD 0.625 CSS 0.583
+config=anchor rho1 + trend x1 proxy=p8/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  64.50  DES 0.611 DCS 0.743 MMD 0.630 CSS 0.587
+config=anchor rho1 + trend x1.5 proxy=p8/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  64.93  DES 0.616 DCS 0.747 MMD 0.635 CSS 0.590
+config=anchor rho1 + dev 1 + trend x1 proxy=p8/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  64.98  DES 0.617 DCS 0.747 MMD 0.636 CSS 0.591
+config=base only proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  58.48  DES 0.512 DCS 0.665 MMD 0.595 CSS 0.560
+config=base + trend x1 proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.14  DES 0.541 DCS 0.680 MMD 0.610 CSS 0.565
+config=base + trend x1.5 proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.69  DES 0.548 DCS 0.684 MMD 0.618 CSS 0.569
+config=anchor rho0.75 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  61.89  DES 0.549 DCS 0.721 MMD 0.618 CSS 0.580
+config=anchor rho0.75 + dev 1 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  62.17  DES 0.555 DCS 0.723 MMD 0.621 CSS 0.580
+config=anchor rho0.75 + trend x0.5 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  62.61  DES 0.561 DCS 0.727 MMD 0.626 CSS 0.581
+config=anchor rho0.75 + trend x1 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  63.09  DES 0.564 DCS 0.732 MMD 0.634 CSS 0.584
+config=anchor rho0.75 + trend x1.5 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  63.67  DES 0.574 DCS 0.734 MMD 0.641 CSS 0.587
+config=anchor rho0.75 + dev 1 + trend x1 proxy=p8/all split=development f=0.15 t=0.0 bwd=1.0 seed=42  63.38  DES 0.571 DCS 0.733 MMD 0.636 CSS 0.585
+config=anchor rho1 proxy=p8/all split=development f=0.2 t=0.0 bwd=1.0 seed=42  62.42  DES 0.557 DCS 0.730 MMD 0.622 CSS 0.578
+config=anchor rho1 + dev 1 proxy=p8/all split=development f=0.2 t=0.0 bwd=1.0 seed=42  62.80  DES 0.567 DCS 0.732 MMD 0.625 CSS 0.578
+config=anchor rho1 + trend x0.5 proxy=p8/all split=development f=0.2 t=0.0 bwd=1.0 seed=42  63.17  DES 0.572 DCS 0.735 MMD 0.630 CSS 0.579
+config=anchor rho1 + trend x1 proxy=p8/all split=development f=0.2 t=0.0 bwd=1.0 seed=42  63.78  DES 0.581 DCS 0.740 MMD 0.637 CSS 0.582
+config=anchor rho1 + trend x1.5 proxy=p8/all split=development f=0.2 t=0.0 bwd=1.0 seed=42  64.11  DES 0.581 DCS 0.742 MMD 0.644 CSS 0.586
+config=anchor rho1 + dev 1 + trend x1 proxy=p8/all split=development f=0.2 t=0.0 bwd=1.0 seed=42  63.95  DES 0.583 DCS 0.742 MMD 0.640 CSS 0.582
+config=base only proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  53.31  DES 0.514 DCS 0.614 MMD 0.526 CSS 0.466
+config=base + trend x1 proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  56.00  DES 0.550 DCS 0.643 MMD 0.546 CSS 0.488
+config=base + trend x1.5 proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  56.72  DES 0.554 DCS 0.651 MMD 0.554 CSS 0.498
+config=anchor rho0.75 proxy=2d/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  57.97  DES 0.553 DCS 0.683 MMD 0.557 CSS 0.518
+config=anchor rho0.75 + trend x0.5 proxy=2d/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  59.21  DES 0.567 DCS 0.696 MMD 0.568 CSS 0.529
+config=anchor rho0.75 + trend x1 proxy=2d/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  60.29  DES 0.581 DCS 0.706 MMD 0.577 CSS 0.540
+config=anchor rho0.75 + trend x1.5 proxy=2d/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  60.87  DES 0.584 DCS 0.710 MMD 0.584 CSS 0.549
+config=anchor rho1 proxy=2d/deep split=development f=0.3333 t=0.0 bwd=1.0 seed=42  59.45  DES 0.559 DCS 0.696 MMD 0.574 CSS 0.542
+config=anchor rho1 + trend x0.5 proxy=2d/deep split=development f=0.3333 t=0.0 bwd=1.0 seed=42  60.70  DES 0.573 DCS 0.710 MMD 0.585 CSS 0.554
+config=anchor rho1 + trend x1 proxy=2d/deep split=development f=0.3333 t=0.0 bwd=1.0 seed=42  61.63  DES 0.584 DCS 0.716 MMD 0.594 CSS 0.564
+config=anchor rho1 + trend x1.5 proxy=2d/deep split=development f=0.3333 t=0.0 bwd=1.0 seed=42  62.13  DES 0.587 DCS 0.720 MMD 0.601 CSS 0.572
+done 252s
+proxy                                gen  p8/deep  p8/all  2d/deep
+config                                                            
+base only                          52.24    60.22   58.48    53.31
+base + trend x1                    55.64    61.16   60.14    56.00
+base + trend x1.5                  55.74    61.64   60.69    56.72
+anchor rho0.75                     59.43    62.89   61.89    57.97
+anchor rho0.75 + trend x0.5        60.68    63.29   62.61    59.21
+anchor rho0.75 + trend x1          60.27    63.82   63.09    60.29
+anchor rho0.75 + trend x1.5        60.12    64.17   63.67    60.87
+anchor rho1                        59.96    63.58   62.42    59.45
+anchor rho1 + trend x0.5           61.44    64.12   63.17    60.70
+anchor rho1 + trend x1             61.28    64.50   63.78    61.63
+anchor rho1 + trend x1.5           60.97    64.93   64.11    62.13
+anchor rho0.75 + dev 1               NaN    63.30   62.17      NaN
+anchor rho0.75 + dev 1 + trend x1    NaN    64.33   63.38      NaN
+anchor rho1 + dev 1                  NaN    64.06   62.80      NaN
+anchor rho1 + dev 1 + trend x1       NaN    64.98   63.95      NaN
+skill_de_score
+proxy                                gen  p8/deep  p8/all  2d/deep
+config                                                            
+base only                          0.525    0.581   0.512    0.514
+base + trend x1                    0.565    0.588   0.541    0.550
+base + trend x1.5                  0.559    0.594   0.548    0.554
+anchor rho0.75                     0.598    0.596   0.549    0.553
+anchor rho0.75 + trend x0.5        0.612    0.595   0.561    0.567
+anchor rho0.75 + trend x1          0.584    0.603   0.564    0.581
+anchor rho0.75 + trend x1.5        0.584    0.605   0.574    0.584
+anchor rho1                        0.591    0.603   0.557    0.559
+anchor rho1 + trend x0.5           0.619    0.610   0.572    0.573
+anchor rho1 + trend x1             0.605    0.611   0.581    0.584
+anchor rho1 + trend x1.5           0.598    0.616   0.581    0.587
+anchor rho0.75 + dev 1               NaN    0.598   0.555      NaN
+anchor rho0.75 + dev 1 + trend x1    NaN    0.608   0.571      NaN
+anchor rho1 + dev 1                  NaN    0.610   0.567      NaN
+anchor rho1 + dev 1 + trend x1       NaN    0.617   0.583      NaN
+skill_de_direction
+proxy                                gen  p8/deep  p8/all  2d/deep
+config                                                            
+base only                          0.554    0.690   0.665    0.614
+base + trend x1                    0.605    0.703   0.680    0.643
+base + trend x1.5                  0.607    0.708   0.684    0.651
+anchor rho0.75                     0.637    0.724   0.721    0.683
+anchor rho0.75 + trend x0.5        0.648    0.731   0.727    0.696
+anchor rho0.75 + trend x1          0.647    0.736   0.732    0.706
+anchor rho0.75 + trend x1.5        0.643    0.739   0.734    0.710
+anchor rho1                        0.636    0.732   0.730    0.696
+anchor rho1 + trend x0.5           0.645    0.738   0.735    0.710
+anchor rho1 + trend x1             0.644    0.743   0.740    0.716
+anchor rho1 + trend x1.5           0.644    0.747   0.742    0.720
+anchor rho0.75 + dev 1               NaN    0.728   0.723      NaN
+anchor rho0.75 + dev 1 + trend x1    NaN    0.741   0.733      NaN
+anchor rho1 + dev 1                  NaN    0.736   0.732      NaN
+anchor rho1 + dev 1 + trend x1       NaN    0.747   0.742      NaN
+skill_mmd_u
+proxy                                gen  p8/deep  p8/all  2d/deep
+config                                                            
+base only                          0.506    0.597   0.595    0.526
+base + trend x1                    0.528    0.607   0.610    0.546
+base + trend x1.5                  0.532    0.611   0.618    0.554
+anchor rho0.75                     0.579    0.612   0.618    0.557
+anchor rho0.75 + trend x0.5        0.591    0.618   0.626    0.568
+anchor rho0.75 + trend x1          0.597    0.622   0.634    0.577
+anchor rho0.75 + trend x1.5        0.597    0.626   0.641    0.584
+anchor rho1                        0.593    0.620   0.622    0.574
+anchor rho1 + trend x0.5           0.604    0.625   0.630    0.585
+anchor rho1 + trend x1             0.609    0.630   0.637    0.594
+anchor rho1 + trend x1.5           0.607    0.635   0.644    0.601
+anchor rho0.75 + dev 1               NaN    0.618   0.621      NaN
+anchor rho0.75 + dev 1 + trend x1    NaN    0.628   0.636      NaN
+anchor rho1 + dev 1                  NaN    0.625   0.625      NaN
+anchor rho1 + dev 1 + trend x1       NaN    0.636   0.640      NaN
+skill_variogram
+proxy                                gen  p8/deep  p8/all  2d/deep
+config                                                            
+base only                          0.503    0.527   0.560    0.466
+base + trend x1                    0.528    0.534   0.565    0.488
+base + trend x1.5                  0.531    0.538   0.569    0.498
+anchor rho0.75                     0.560    0.577   0.580    0.518
+anchor rho0.75 + trend x0.5        0.572    0.581   0.581    0.529
+anchor rho0.75 + trend x1          0.578    0.585   0.584    0.540
+anchor rho0.75 + trend x1.5        0.576    0.589   0.587    0.549
+anchor rho1                        0.575    0.580   0.578    0.542
+anchor rho1 + trend x0.5           0.586    0.583   0.579    0.554
+anchor rho1 + trend x1             0.589    0.587   0.582    0.564
+anchor rho1 + trend x1.5           0.586    0.590   0.586    0.572
+anchor rho0.75 + dev 1               NaN    0.580   0.580      NaN
+anchor rho0.75 + dev 1 + trend x1    NaN    0.588   0.585      NaN
+anchor rho1 + dev 1                  NaN    0.583   0.578      NaN
+anchor rho1 + dev 1 + trend x1       NaN    0.591   0.582      NaN

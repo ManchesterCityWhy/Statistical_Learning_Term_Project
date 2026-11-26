@@ -1,0 +1,14 @@
+library 3 11818 free of h1 10813 truth pool 3604 file pool 7209 12s
+file K0: genes median 3949.5, CM 0.291 Endo 0.280 Cushion 0.108 Epi 0.130 Blood 0.096 Mac 0.017 Other 0.078 25s
+thinned x0.85: median depth 10384 -> 8826, median detected genes 3820 -> 3485
+file depth0.85: genes median 3603.0, CM 0.291 Endo 0.281 Cushion 0.109 Epi 0.130 Blood 0.096 Mac 0.017 Other 0.076 46s
+thinned x0.7: median depth 10384 -> 7263, median detected genes 3820 -> 3107
+file depth0.70: genes median 3212.0, CM 0.291 Endo 0.280 Cushion 0.110 Epi 0.130 Blood 0.096 Mac 0.017 Other 0.076 71s
+[K0                    ] D 0.00534 (se 0.00024)  h1-if-true  72.49  de_score 0.726 de_direction 0.819 mmd_u 0.740 variogram 0.583  | blood 0.092 CM 0.262 genes 3936  | files: K0 99.56  depth0.85 98.79  depth0.70 95.81  131s
+thinned x0.92: median depth 10384 -> 9553, median detected genes 3820 -> 3645
+[depth0.92             ] D 0.00403 (se 0.00013)  h1-if-true  74.02  de_score 0.729 de_direction 0.826 mmd_u 0.750 variogram 0.632  | blood 0.092 CM 0.263 genes 3746  | files: K0 99.52  depth0.85 99.43  depth0.70 97.21  202s
+[depth0.85             ] D 0.00335 (se 0.00019)  h1-if-true  75.07  de_score 0.727 de_direction 0.830 mmd_u 0.754 variogram 0.676  | blood 0.092 CM 0.265 genes 3580  | files: K0 99.11  depth0.85 99.50  depth0.70 98.29  262s
+thinned x0.78: median depth 10384 -> 8103, median detected genes 3820 -> 3316
+[depth0.78             ] D 0.00401 (se 0.00031)  h1-if-true  76.69  de_score 0.725 de_direction 0.837 mmd_u 0.767 variogram 0.733  | blood 0.092 CM 0.263 genes 3406  | files: K0 98.39  depth0.85 99.48  depth0.70 99.28  333s
+[depth0.70             ] D 0.00650 (se 0.00043)  h1-if-true  78.63  de_score 0.733 de_direction 0.846 mmd_u 0.778 variogram 0.790  | blood 0.092 CM 0.260 genes 3188  | files: K0 96.95  depth0.85 98.70  depth0.70 99.56  388s
+done 388s

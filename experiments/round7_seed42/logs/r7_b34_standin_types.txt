@@ -1,0 +1,39 @@
+E9.5 -> E10.5 library 3 CM done: cells 500 types ['AVC-CM', 'IFT-CM', 'LV-CM', 'OFT-CM', 'RV-CM', 'SV-CM'] shares [0.09, 0.06, 0.29, 0.16, 0.31, 0.09]
+E9.5 -> E10.5 library 3 Endo done: cells 500 types ['BEC', 'Endocardium-1', 'Endocardium-2'] shares [0.18, 0.43, 0.39]
+E9.5 -> E10.5 library 3 Epi done: cells 500 types ['Epicardium'] shares [1.0]
+E8.5 -> E9.5 CM done: cells 500 types ['AVC-CM', 'IFT-CM', 'OFT/RV-CM', 'SV-CM', 'V-CM'] shares [0.07, 0.13, 0.35, 0.23, 0.23]
+E8.5 -> E9.5 Endo done: cells 500 types ['BEC', 'Endocardium'] shares [0.17, 0.83]
+E8.5 -> E9.5 Epi done: cells 307 types ['Proepicardium'] shares [1.0]
+                   pair lineage   n  types                                              stand_in   score   DES   DCS   MMD   CSS
+E9.5 -> E10.5 library 3      CM 500      6                  target stage itself (held-out third) 100.000 1.000 1.000 1.000 1.000
+E9.5 -> E10.5 library 3      CM 500      6  (i) real cells of the earlier stage, aligned by type  94.285 0.957 0.923 0.959 0.928
+E9.5 -> E10.5 library 3      CM 500      6 (ii) synthetic nuclei (round-7 form), aligned by type  83.872 0.876 0.805 0.821 0.860
+E9.5 -> E10.5 library 3    Endo 500      3                  target stage itself (held-out third)  99.946 0.998 1.000 1.000 1.000
+E9.5 -> E10.5 library 3    Endo 500      3  (i) real cells of the earlier stage, aligned by type  94.641 0.955 0.927 0.963 0.935
+E9.5 -> E10.5 library 3    Endo 500      3 (ii) synthetic nuclei (round-7 form), aligned by type  82.034 0.858 0.836 0.744 0.869
+E9.5 -> E10.5 library 3     Epi 500      1                  target stage itself (held-out third)  99.356 0.990 0.990 0.995 1.000
+E9.5 -> E10.5 library 3     Epi 500      1  (i) real cells of the earlier stage, aligned by type  87.294 0.901 0.881 0.864 0.842
+E9.5 -> E10.5 library 3     Epi 500      1 (ii) synthetic nuclei (round-7 form), aligned by type  77.637 0.862 0.799 0.645 0.838
+           E8.5 -> E9.5      CM 500      5                  target stage itself (held-out third)  99.444 0.986 0.995 0.998 1.000
+           E8.5 -> E9.5      CM 500      5  (i) real cells of the earlier stage, aligned by type  94.400 0.955 0.922 0.954 0.943
+           E8.5 -> E9.5      CM 500      5 (ii) synthetic nuclei (round-7 form), aligned by type  73.692 0.813 0.713 0.695 0.735
+           E8.5 -> E9.5    Endo 500      2                  target stage itself (held-out third)  99.874 1.000 0.997 0.999 0.999
+           E8.5 -> E9.5    Endo 500      2  (i) real cells of the earlier stage, aligned by type  92.248 0.974 0.953 0.831 0.958
+           E8.5 -> E9.5    Endo 500      2 (ii) synthetic nuclei (round-7 form), aligned by type  76.061 0.866 0.789 0.608 0.823
+           E8.5 -> E9.5     Epi 307      1                  target stage itself (held-out third)  96.850 0.971 0.938 0.991 0.970
+           E8.5 -> E9.5     Epi 307      1  (i) real cells of the earlier stage, aligned by type  75.112 0.832 0.801 0.681 0.693
+           E8.5 -> E9.5     Epi 307      1 (ii) synthetic nuclei (round-7 form), aligned by type  65.679 0.818 0.707 0.465 0.679
+
+(i) minus (ii) by lineage:
+pair                     lineage
+E9.5 -> E10.5 library 3  CM         10.41
+                         Endo       12.61
+                         Epi         9.66
+E8.5 -> E9.5             CM         20.71
+                         Endo       16.19
+                         Epi         9.43
+
+mean over the three lineages:
+pair
+E9.5 -> E10.5 library 3    10.89
+E8.5 -> E9.5               15.44

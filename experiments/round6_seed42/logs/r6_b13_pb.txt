@@ -1,0 +1,81 @@
+[suite] p8/deep  ready    12s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] p8/all   ready    22s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+[suite] D/raw    ready    31s  floor mmd 0.1004 vario 0.00409 | ceiling des 0.881 dcs 0.844 mmd 0.0026 vario 0.00016 | n_up 204 n_dn 234
+[suite] D/dm     ready    41s  floor mmd 0.1223 vario 0.01100 | ceiling des 0.804 dcs 0.787 mmd 0.0058 vario 0.00017 | n_up 101 n_dn 637
+config=R5 (round-5 file) proxy=p8/deep split=development f=0.15 seed=42  77.70  DES 0.726 DCS 0.804 MMD 0.790 CSS 0.789
+config=R6 (candidate) proxy=p8/deep split=development f=0.15 seed=42    67.38  DES 0.628 DCS 0.748 MMD 0.662 CSS 0.657
+config=R6 raw anchor proxy=p8/deep split=development f=0.15 seed=42     68.48  DES 0.640 DCS 0.765 MMD 0.671 CSS 0.662
+config=R6 base only proxy=p8/deep split=development f=0.0 seed=42       60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+config=R6 base, all libraries proxy=p8/deep split=development f=0.15 seed=42  67.68  DES 0.639 DCS 0.735 MMD 0.653 CSS 0.687
+config=R5 base only proxy=p8/deep split=development f=0.0 seed=42       72.29  DES 0.679 DCS 0.750 MMD 0.731 CSS 0.732
+config=R5 base, harmonised anchor proxy=p8/deep split=development f=0.15 seed=42  77.12  DES 0.722 DCS 0.797 MMD 0.780 CSS 0.787
+config=R5 (round-5 file) proxy=p8/all split=development f=0.15 seed=42  77.28  DES 0.696 DCS 0.818 MMD 0.804 CSS 0.765
+config=R6 (candidate) proxy=p8/all split=development f=0.15 seed=42     69.65  DES 0.642 DCS 0.760 MMD 0.686 CSS 0.701
+config=R6 raw anchor proxy=p8/all split=development f=0.15 seed=42      71.21  DES 0.671 DCS 0.777 MMD 0.695 CSS 0.708
+config=R6 base only proxy=p8/all split=development f=0.0 seed=42        58.48  DES 0.512 DCS 0.665 MMD 0.595 CSS 0.560
+config=R6 base, all libraries proxy=p8/all split=development f=0.15 seed=42  69.65  DES 0.642 DCS 0.760 MMD 0.686 CSS 0.701
+config=R5 base only proxy=p8/all split=development f=0.0 seed=42        68.76  DES 0.620 DCS 0.747 MMD 0.721 CSS 0.649
+config=R5 base, harmonised anchor proxy=p8/all split=development f=0.15 seed=42  76.52  DES 0.688 DCS 0.807 MMD 0.794 CSS 0.765
+config=R5 (round-5 file) proxy=D/raw split=development f=0.0 seed=42    56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+config=R6 (candidate) proxy=D/raw split=development f=0.0 seed=42       61.94  DES 0.654 DCS 0.740 MMD 0.674 CSS 0.344
+config=R6 raw anchor proxy=D/raw split=development f=0.0 seed=42        61.94  DES 0.654 DCS 0.740 MMD 0.674 CSS 0.344
+config=R6 base only proxy=D/raw split=development f=0.0 seed=42         61.94  DES 0.654 DCS 0.740 MMD 0.674 CSS 0.344
+config=R6 base, all libraries proxy=D/raw split=development f=0.0 seed=42  53.19  DES 0.576 DCS 0.644 MMD 0.526 CSS 0.345
+config=R5 base only proxy=D/raw split=development f=0.0 seed=42         56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+config=R5 base, harmonised anchor proxy=D/raw split=development f=0.0 seed=42  56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+config=R5 (round-5 file) proxy=D/dm split=development f=0.0 seed=42     72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+config=R6 (candidate) proxy=D/dm split=development f=0.0 seed=42        79.02  DES 0.647 DCS 0.807 MMD 0.828 CSS 0.892
+config=R6 raw anchor proxy=D/dm split=development f=0.0 seed=42         79.02  DES 0.647 DCS 0.807 MMD 0.828 CSS 0.892
+config=R6 base only proxy=D/dm split=development f=0.0 seed=42          79.02  DES 0.647 DCS 0.807 MMD 0.828 CSS 0.892
+config=R6 base, all libraries proxy=D/dm split=development f=0.0 seed=42  65.94  DES 0.536 DCS 0.677 MMD 0.635 CSS 0.828
+config=R5 base only proxy=D/dm split=development f=0.0 seed=42          72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+config=R5 base, harmonised anchor proxy=D/dm split=development f=0.0 seed=42  72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+proxy                       p8/deep  p8/all  D/raw   D/dm
+config                                                   
+R5 (round-5 file)             77.70   77.28  56.97  72.32
+R6 (candidate)                67.38   69.65  61.94  79.02
+R6 raw anchor                 68.48   71.21  61.94  79.02
+R6 base only                  60.22   58.48  61.94  79.02
+R6 base, all libraries        67.68   69.65  53.19  65.94
+R5 base only                  72.29   68.76  56.97  72.32
+R5 base, harmonised anchor    77.12   76.52  56.97  72.32
+skill_de_score
+proxy                       p8/deep  p8/all  D/raw   D/dm
+config                                                   
+R5 (round-5 file)             0.726   0.696  0.619  0.590
+R6 (candidate)                0.628   0.642  0.654  0.647
+R6 raw anchor                 0.640   0.671  0.654  0.647
+R6 base only                  0.581   0.512  0.654  0.647
+R6 base, all libraries        0.639   0.642  0.576  0.536
+R5 base only                  0.679   0.620  0.619  0.590
+R5 base, harmonised anchor    0.722   0.688  0.619  0.590
+skill_de_direction
+proxy                       p8/deep  p8/all  D/raw   D/dm
+config                                                   
+R5 (round-5 file)             0.804   0.818  0.695  0.741
+R6 (candidate)                0.748   0.760  0.740  0.807
+R6 raw anchor                 0.765   0.777  0.740  0.807
+R6 base only                  0.690   0.665  0.740  0.807
+R6 base, all libraries        0.735   0.760  0.644  0.677
+R5 base only                  0.750   0.747  0.695  0.741
+R5 base, harmonised anchor    0.797   0.807  0.695  0.741
+skill_mmd_u
+proxy                       p8/deep  p8/all  D/raw   D/dm
+config                                                   
+R5 (round-5 file)             0.790   0.804  0.585  0.733
+R6 (candidate)                0.662   0.686  0.674  0.828
+R6 raw anchor                 0.671   0.695  0.674  0.828
+R6 base only                  0.597   0.595  0.674  0.828
+R6 base, all libraries        0.653   0.686  0.526  0.635
+R5 base only                  0.731   0.721  0.585  0.733
+R5 base, harmonised anchor    0.780   0.794  0.585  0.733
+skill_variogram
+proxy                       p8/deep  p8/all  D/raw   D/dm
+config                                                   
+R5 (round-5 file)             0.789   0.765  0.328  0.853
+R6 (candidate)                0.657   0.701  0.344  0.892
+R6 raw anchor                 0.662   0.708  0.344  0.892
+R6 base only                  0.527   0.560  0.344  0.892
+R6 base, all libraries        0.687   0.701  0.345  0.828
+R5 base only                  0.732   0.649  0.328  0.853
+R5 base, harmonised anchor    0.787   0.765  0.328  0.853

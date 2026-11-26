@@ -1,0 +1,77 @@
+free library-3 cells without blood 5654, E9.5 heart cells 7972 (median UMI 12634), target 1051 cells (median UMI 11193)  16s
+w=0.0 config=base only f=0.0                                            63.82  DES 0.615 DCS 0.705 MMD 0.625 CSS 0.604
+w=0.0 config=raw nuclei f=0.45                                          67.00  DES 0.673 DCS 0.771 MMD 0.673 CSS 0.535
+w=0.0 config=re-sequenced, moved back 1 f=0.45                          68.11  DES 0.640 DCS 0.767 MMD 0.657 CSS 0.661
+w=0.0 config=nuclei replaced by real cells of the assigned type, share 0.5 f=0.45  66.65  DES 0.634 DCS 0.747 MMD 0.648 CSS 0.634
+w=0.0 config=nuclei replaced by real cells of the assigned type, share 1 f=0.45  64.02  DES 0.619 DCS 0.700 MMD 0.633 CSS 0.602
+w 0 done 30s
+w=0.2 config=base only f=0.0                                            72.37  DES 0.678 DCS 0.785 MMD 0.722 CSS 0.706
+w=0.2 config=raw nuclei f=0.45                                          70.12  DES 0.713 DCS 0.801 MMD 0.708 CSS 0.551
+w=0.2 config=re-sequenced, moved back 1 f=0.45                          80.44  DES 0.761 DCS 0.854 MMD 0.799 CSS 0.805
+w=0.2 config=nuclei replaced by real cells of the assigned type, share 0.5 f=0.45  81.07  DES 0.761 DCS 0.870 MMD 0.807 CSS 0.805
+w=0.2 config=nuclei replaced by real cells of the assigned type, share 1 f=0.45  79.10  DES 0.738 DCS 0.847 MMD 0.795 CSS 0.782
+w 0.2 done 44s
+w=0.4 config=base only f=0.0                                            81.76  DES 0.764 DCS 0.868 MMD 0.827 CSS 0.806
+w=0.4 config=raw nuclei f=0.45                                          72.33  DES 0.737 DCS 0.821 MMD 0.735 CSS 0.566
+w=0.4 config=re-sequenced, moved back 1 f=0.45                          85.14  DES 0.817 DCS 0.881 MMD 0.851 CSS 0.858
+w=0.4 config=nuclei replaced by real cells of the assigned type, share 0.5 f=0.45  86.86  DES 0.826 DCS 0.912 MMD 0.866 CSS 0.872
+w=0.4 config=nuclei replaced by real cells of the assigned type, share 1 f=0.45  86.60  DES 0.821 DCS 0.910 MMD 0.867 CSS 0.866
+w 0.4 done 56s
+w=0.6 config=base only f=0.0                                            91.68  DES 0.883 DCS 0.942 MMD 0.928 CSS 0.911
+w=0.6 config=raw nuclei f=0.45                                          73.62  DES 0.755 DCS 0.838 MMD 0.747 CSS 0.568
+w=0.6 config=re-sequenced, moved back 1 f=0.45                          88.36  DES 0.859 DCS 0.905 MMD 0.888 CSS 0.883
+w=0.6 config=nuclei replaced by real cells of the assigned type, share 0.5 f=0.45  90.20  DES 0.866 DCS 0.937 MMD 0.903 CSS 0.902
+w=0.6 config=nuclei replaced by real cells of the assigned type, share 1 f=0.45  91.15  DES 0.874 DCS 0.947 MMD 0.914 CSS 0.910
+w 0.6 done 69s
+w=0.8 config=base only f=0.0                                            98.96  DES 0.992 DCS 0.995 MMD 0.989 CSS 0.979
+w=0.8 config=raw nuclei f=0.45                                          74.89  DES 0.779 DCS 0.853 MMD 0.757 CSS 0.569
+w=0.8 config=re-sequenced, moved back 1 f=0.45                          91.60  DES 0.906 DCS 0.925 MMD 0.919 CSS 0.913
+w=0.8 config=nuclei replaced by real cells of the assigned type, share 0.5 f=0.45  93.82  DES 0.917 DCS 0.956 MMD 0.941 CSS 0.938
+w=0.8 config=nuclei replaced by real cells of the assigned type, share 1 f=0.45  95.24  DES 0.927 DCS 0.977 MMD 0.954 CSS 0.950
+w 0.8 done 81s
+w=1.0 config=base only f=0.0                                           100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+w=1.0 config=raw nuclei f=0.45                                          75.02  DES 0.792 DCS 0.862 MMD 0.751 CSS 0.558
+w=1.0 config=re-sequenced, moved back 1 f=0.45                          93.08  DES 0.927 DCS 0.931 MMD 0.936 CSS 0.927
+w=1.0 config=nuclei replaced by real cells of the assigned type, share 0.5 f=0.45  95.98  DES 0.942 DCS 0.972 MMD 0.963 CSS 0.962
+w=1.0 config=nuclei replaced by real cells of the assigned type, share 1 f=0.45  97.45  DES 0.949 DCS 0.991 MMD 0.978 CSS 0.979
+w 1 done 94s
+w                                                                0.0    0.2    0.4    0.6    0.8     1.0
+config                                                                                                  
+base only                                                      63.82  72.37  81.76  91.68  98.96  100.00
+raw nuclei                                                     67.00  70.12  72.33  73.62  74.89   75.02
+re-sequenced, moved back 1                                     68.11  80.44  85.14  88.36  91.60   93.08
+nuclei replaced by real cells of the assigned type, share 0.5  66.65  81.07  86.86  90.20  93.82   95.98
+nuclei replaced by real cells of the assigned type, share 1    64.02  79.10  86.60  91.15  95.24   97.45
+skill_de_score
+w                                                                0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                                 
+base only                                                      0.615  0.678  0.764  0.883  0.992  1.000
+raw nuclei                                                     0.673  0.713  0.737  0.755  0.779  0.792
+re-sequenced, moved back 1                                     0.640  0.761  0.817  0.859  0.906  0.927
+nuclei replaced by real cells of the assigned type, share 0.5  0.634  0.761  0.826  0.866  0.917  0.942
+nuclei replaced by real cells of the assigned type, share 1    0.619  0.738  0.821  0.874  0.927  0.949
+skill_de_direction
+w                                                                0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                                 
+base only                                                      0.705  0.785  0.868  0.942  0.995  1.000
+raw nuclei                                                     0.771  0.801  0.821  0.838  0.853  0.862
+re-sequenced, moved back 1                                     0.767  0.854  0.881  0.905  0.925  0.931
+nuclei replaced by real cells of the assigned type, share 0.5  0.747  0.870  0.912  0.937  0.956  0.972
+nuclei replaced by real cells of the assigned type, share 1    0.700  0.847  0.910  0.947  0.977  0.991
+skill_mmd_u
+w                                                                0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                                 
+base only                                                      0.625  0.722  0.827  0.928  0.989  1.000
+raw nuclei                                                     0.673  0.708  0.735  0.747  0.757  0.751
+re-sequenced, moved back 1                                     0.657  0.799  0.851  0.888  0.919  0.936
+nuclei replaced by real cells of the assigned type, share 0.5  0.648  0.807  0.866  0.903  0.941  0.963
+nuclei replaced by real cells of the assigned type, share 1    0.633  0.795  0.867  0.914  0.954  0.978
+skill_variogram
+w                                                                0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                                 
+base only                                                      0.604  0.706  0.806  0.911  0.979  1.000
+raw nuclei                                                     0.535  0.551  0.566  0.568  0.569  0.558
+re-sequenced, moved back 1                                     0.661  0.805  0.858  0.883  0.913  0.927
+nuclei replaced by real cells of the assigned type, share 0.5  0.634  0.805  0.872  0.902  0.938  0.962
+nuclei replaced by real cells of the assigned type, share 1    0.602  0.782  0.866  0.910  0.950  0.979
+done 94s

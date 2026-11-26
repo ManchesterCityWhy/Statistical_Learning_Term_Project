@@ -1,0 +1,66 @@
+target without blood: 1051 cells, median UMI 11192.9990234375 | with blood 10367.0 | base median UMI 14228.5 | depth q10 target-nb / target / base [7061.99951171875, 4875.2, 8138.0] 20s
+base=heart-nb natural f=0.0 form=raw                                    63.20  DES 0.613 DCS 0.704 MMD 0.619 CSS 0.584
+base=heart-nb natural f=0.1 form=raw                                    67.28  DES 0.641 DCS 0.743 MMD 0.666 CSS 0.634
+base=heart-nb natural f=0.1 form=pooled                                 66.42  DES 0.638 DCS 0.743 MMD 0.654 CSS 0.613
+base=heart-nb natural f=0.1 form=pooled back                            65.56  DES 0.630 DCS 0.736 MMD 0.642 CSS 0.607
+base=heart-nb natural f=0.2 form=raw                                    69.82  DES 0.662 DCS 0.772 MMD 0.692 CSS 0.662
+base=heart-nb natural f=0.2 form=pooled                                 68.80  DES 0.654 DCS 0.770 MMD 0.678 CSS 0.642
+base=heart-nb natural f=0.2 form=pooled back                            67.28  DES 0.634 DCS 0.761 MMD 0.656 CSS 0.636
+base=heart-nb natural f=0.3 form=raw                                    70.93  DES 0.681 DCS 0.786 MMD 0.709 CSS 0.651
+base=heart-nb natural f=0.3 form=pooled                                 70.56  DES 0.680 DCS 0.782 MMD 0.700 CSS 0.651
+base=heart-nb natural f=0.3 form=pooled back                            69.16  DES 0.656 DCS 0.776 MMD 0.676 CSS 0.653
+base=heart-nb oracle f=0.0 form=raw                                     73.21  DES 0.698 DCS 0.748 MMD 0.751 CSS 0.727
+base=heart-nb oracle f=0.1 form=raw                                     78.89  DES 0.755 DCS 0.798 MMD 0.806 CSS 0.794
+base=heart-nb oracle f=0.1 form=pooled                                  77.27  DES 0.732 DCS 0.794 MMD 0.791 CSS 0.770
+base=heart-nb oracle f=0.1 form=pooled back                             76.49  DES 0.725 DCS 0.786 MMD 0.781 CSS 0.765
+base=heart-nb oracle f=0.2 form=raw                                     80.58  DES 0.768 DCS 0.822 MMD 0.826 CSS 0.803
+base=heart-nb oracle f=0.2 form=pooled                                  78.64  DES 0.747 DCS 0.812 MMD 0.803 CSS 0.780
+base=heart-nb oracle f=0.2 form=pooled back                             77.79  DES 0.734 DCS 0.807 MMD 0.789 CSS 0.780
+base=heart-nb oracle f=0.3 form=raw                                     78.82  DES 0.757 DCS 0.820 MMD 0.817 CSS 0.745
+base=heart-nb oracle f=0.3 form=pooled                                  78.26  DES 0.750 DCS 0.813 MMD 0.804 CSS 0.753
+base=heart-nb oracle f=0.3 form=pooled back                             78.10  DES 0.745 DCS 0.813 MMD 0.793 CSS 0.768
+base=heart natural | target WITH blood f=0.0 form=raw                   60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+base=heart natural | target WITH blood f=0.1 form=raw                   65.73  DES 0.626 DCS 0.734 MMD 0.650 CSS 0.613
+base=heart natural | target WITH blood f=0.1 form=pooled                63.61  DES 0.611 DCS 0.732 MMD 0.630 CSS 0.558
+base=heart natural | target WITH blood f=0.1 form=pooled back           62.80  DES 0.602 DCS 0.724 MMD 0.618 CSS 0.555
+base=heart natural | target WITH blood f=0.2 form=raw                   68.90  DES 0.646 DCS 0.761 MMD 0.678 CSS 0.668
+base=heart natural | target WITH blood f=0.2 form=pooled                65.16  DES 0.627 DCS 0.748 MMD 0.646 CSS 0.571
+base=heart natural | target WITH blood f=0.2 form=pooled back           63.88  DES 0.609 DCS 0.739 MMD 0.627 CSS 0.569
+base=heart natural | target WITH blood f=0.3 form=raw                   69.99  DES 0.659 DCS 0.774 MMD 0.692 CSS 0.671
+base=heart natural | target WITH blood f=0.3 form=pooled                65.74  DES 0.644 DCS 0.756 MMD 0.656 CSS 0.553
+base=heart natural | target WITH blood f=0.3 form=pooled back           64.57  DES 0.624 DCS 0.751 MMD 0.634 CSS 0.560
+f                                                0.0    0.1    0.2    0.3
+base                              form                                   
+heart-nb natural                  raw          63.20  67.28  69.82  70.93
+                                  pooled         NaN  66.42  68.80  70.56
+                                  pooled back    NaN  65.56  67.28  69.16
+heart-nb oracle                   raw          73.21  78.89  80.58  78.82
+                                  pooled         NaN  77.27  78.64  78.26
+                                  pooled back    NaN  76.49  77.79  78.10
+heart natural | target WITH blood raw          60.22  65.73  68.90  69.99
+                                  pooled         NaN  63.61  65.16  65.74
+                                  pooled back    NaN  62.80  63.88  64.57
+skill_mmd_u
+f                                                0.0    0.1    0.2    0.3
+base                              form                                   
+heart-nb natural                  raw          0.619  0.666  0.692  0.709
+                                  pooled         NaN  0.654  0.678  0.700
+                                  pooled back    NaN  0.642  0.656  0.676
+heart-nb oracle                   raw          0.751  0.806  0.826  0.817
+                                  pooled         NaN  0.791  0.803  0.804
+                                  pooled back    NaN  0.781  0.789  0.793
+heart natural | target WITH blood raw          0.597  0.650  0.678  0.692
+                                  pooled         NaN  0.630  0.646  0.656
+                                  pooled back    NaN  0.618  0.627  0.634
+skill_variogram
+f                                                0.0    0.1    0.2    0.3
+base                              form                                   
+heart-nb natural                  raw          0.584  0.634  0.662  0.651
+                                  pooled         NaN  0.613  0.642  0.651
+                                  pooled back    NaN  0.607  0.636  0.653
+heart-nb oracle                   raw          0.727  0.794  0.803  0.745
+                                  pooled         NaN  0.770  0.780  0.753
+                                  pooled back    NaN  0.765  0.780  0.768
+heart natural | target WITH blood raw          0.527  0.613  0.668  0.671
+                                  pooled         NaN  0.558  0.571  0.553
+                                  pooled back    NaN  0.555  0.569  0.560

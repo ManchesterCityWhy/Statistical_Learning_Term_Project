@@ -1,0 +1,164 @@
+{
+  "name": "round5_anchor0.375_all_h1",
+  "method": "round-4 direction-imposed deconvolution cells from E10.5 + E14.5 Multiome anchor nuclei",
+  "pool": "all",
+  "pool_cells": 24979,
+  "h": 1.0,
+  "deconv_strength": 3.0,
+  "bulk_strength": 3.0,
+  "round4_weights": {
+    "bulk": -0.48592635027583775,
+    "deconv": 0.8311397285098777
+  },
+  "anchor_fraction": 0.375,
+  "base_cells": 2000,
+  "anchor_cells": 1200,
+  "seed": 42,
+  "input_sha256": {
+    "E10.5_RNA.h5ad": "974e04e7fe64fb96142f17994a9678d4cebd4f1868dec4de034eda4245b7dd6c"
+  },
+  "external": {
+    "bulk_trend": {
+      "series": "GSE223237",
+      "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223237",
+      "samples": [
+        {
+          "accession": "GSM6943750",
+          "stage": "E9.5",
+          "file": "GSM6943750_E9_Rep1_counts.txt.gz",
+          "sha256": "1066de79865b42a680fe40496db5270295de5caf8ab85c976de1fdbab01f142a"
+        },
+        {
+          "accession": "GSM6943751",
+          "stage": "E9.5",
+          "file": "GSM6943751_E9_Rep2_counts.txt.gz",
+          "sha256": "6c2f06cf637c6df164c83062eef87c5ab6700598774746ae4ab17c73e3478068"
+        },
+        {
+          "accession": "GSM6943752",
+          "stage": "E9.5",
+          "file": "GSM6943752_E9_Rep3_counts.txt.gz",
+          "sha256": "fba43acf7f4bd7d12abda2eeb5569b64be12cefc22a8b6a48614cbac6c8cd21d"
+        },
+        {
+          "accession": "GSM6943761",
+          "stage": "E14.5",
+          "file": "GSM6943761_E14_Rep1_counts.txt.gz",
+          "sha256": "b9270401ca1ca36141b4fd5b727fe95e3828623b7f58c50554baaa9b47527932"
+        },
+        {
+          "accession": "GSM6943762",
+          "stage": "E14.5",
+          "file": "GSM6943762_E14_Rep2_counts.txt.gz",
+          "sha256": "c54ce395bfcfe10840fe54ef7d1f0f6ee08d88ba834633de64033cfeeb2b1433"
+        },
+        {
+          "accession": "GSM6943763",
+          "stage": "E14.5",
+          "file": "GSM6943763_E14_Rep3_counts.txt.gz",
+          "sha256": "22b70c87bfd3398b8354dffb97d4175a48460d9b87fc9be699979a1ce4920479"
+        }
+      ],
+      "symbol_map_source": "GSM6211349 E14.5 Cell Ranger gene table only",
+      "symbol_map_sha256": "86387317c0576b86b2693b88353a7c6be4affb53ae3100d2767f97aa6fd2d0f2"
+    },
+    "anchor": {
+      "series": "GSE272154",
+      "sample": "GSM8394736 (RNA Wild Type e14.5 rep1)",
+      "stage": "E14.5",
+      "assay": "10x Multiome nuclei, Cell Ranger ARC 2.0.2, mm10",
+      "called_barcodes": 8482,
+      "cells_after_qc": 5481,
+      "genes_matched": 32245,
+      "genes_in_file": 32291,
+      "median_umi": 3059.0,
+      "median_genes": 1729.0,
+      "desoup": false,
+      "soup_fraction": null,
+      "qc": {
+        "min_umi": 1000,
+        "min_genes": 500,
+        "max_mito": 0.25
+      },
+      "sha256": {
+        "GSM8394736_Wildtype_raw_feature_bc_matrix.h5": "684f31c2f2fdbf3eb7207439f868a076d405462b65b34155219d0249a68f3a3a",
+        "GSM8394736_Wildtype_per_barcode_metrics.csv.gz": "2b6e2e5e4773067c5ced9bef0efb67c5dd72140c90bd11221334c88a852bf954"
+      }
+    }
+  },
+  "validation": {
+    "board": "T1:test",
+    "cells": 3200,
+    "genes": 32285,
+    "sha256": "7855b636c13b7de3661f3588096cdaabebe34bd088a15599dce06251e7997ee0",
+    "bytes": 40469392,
+    "format_valid": true,
+    "normalization_verified": false
+  },
+  "nonzero_fraction": 0.08276305753445873,
+  "nonzero_fraction_base": 0.09138991791853802,
+  "library_min": 9007.107381365038,
+  "library_max": 10370.240554081322,
+  "regression_check": {
+    "corr_pseudobulk_with_round4_file": 1.0,
+    "max_abs_pseudobulk_diff_base_vs_round4_file": 0.0
+  },
+  "status": "recommended_not_submitted",
+  "selection": {
+    "rule": "replace round4 only if proxy confirmation beats round4 (61.53) by >= 1.0 and the raw setting does not collapse",
+    "anchor_fraction_rule": "best fraction on development ~0.75-0.9 x elapsed-time fraction (0.15 at 1/5, 0.25-0.30 at 1/3); test uses 0.75 x 0.5 = 0.375",
+    "local_scores_copy_last_50": {
+      "depth_matched_proxy": {
+        "development": {
+          "round4": 63.06,
+          "round5_f0.15": 68.31
+        },
+        "confirmation": {
+          "round4": 61.53,
+          "round5_f0.15": 67.42
+        }
+      },
+      "raw": {
+        "development": {
+          "round4": 60.7,
+          "round5_f0.15": 69.68
+        },
+        "confirmation": {
+          "round4": 59.92,
+          "round5_f0.15": 69.47
+        }
+      },
+      "target_library3_only": {
+        "development": {
+          "round4": 64.65,
+          "round5_f0.15": 69.89
+        },
+        "confirmation": {
+          "round4": 64.85,
+          "round5_f0.15": 70.07
+        }
+      },
+      "reference_E8.5_target_all": {
+        "development": {
+          "round4": 68.71,
+          "round5_f0.15": 77.04
+        },
+        "confirmation": {
+          "round4": 67.43,
+          "round5_f0.15": 76.32
+        }
+      },
+      "reference_E8.5_target_library3": {
+        "development": {
+          "round4": 72.15,
+          "round5_f0.15": 76.98
+        },
+        "confirmation": {
+          "round4": 71.98,
+          "round5_f0.15": 76.89
+        }
+      }
+    },
+    "note": "local calibrated scores, not leaderboard scores; the 0.375 test fraction itself cannot be validated locally"
+  }
+}

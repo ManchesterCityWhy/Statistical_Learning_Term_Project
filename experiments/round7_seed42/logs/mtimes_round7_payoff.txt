@@ -1,0 +1,6 @@
+total 36
+drwxr-xr-x  2 andreib180 andreib180 4096 2026-11-26 08:58:22.545534345 +0800 .
+drwxr-xr-x 35 andreib180 andreib180 4096 2026-11-26 10:06:32.254590459 +0800 ..
+-rw-r--r--  1 andreib180 andreib180 4218 2026-11-26 08:14:59.261412649 +0800 payoff.csv
+-rw-r--r--  1 andreib180 andreib180 6569 2026-11-26 08:45:13.830290282 +0800 payoff_half.csv
+-rw-r--r--  1 andreib180 andreib180 8892 2026-11-26 08:58:22.545534345 +0800 payoff_recipes.csv

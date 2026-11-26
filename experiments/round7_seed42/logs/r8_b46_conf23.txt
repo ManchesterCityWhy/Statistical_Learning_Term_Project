@@ -1,0 +1,155 @@
+[suite] gen      ready    12s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] p8/deep  ready    19s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] p8/all   ready    26s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] 2d/deep  ready    32s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    39s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=11 two_witness=False trend_days=0.0  52.78  DES 0.509 DCS 0.589 MMD 0.507 CSS 0.506
+config=R7h: file recipe (two-witness + trend) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  61.79  DES 0.600 DCS 0.683 MMD 0.606 CSS 0.578
+config=all real, no mixture proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  61.79  DES 0.600 DCS 0.676 MMD 0.620 CSS 0.564
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  61.85  DES 0.600 DCS 0.682 MMD 0.615 CSS 0.568
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  62.01  DES 0.606 DCS 0.682 MMD 0.614 CSS 0.569
+config=all real + low genes below 0.3, share 0.7 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  61.86  DES 0.606 DCS 0.681 MMD 0.613 CSS 0.565
+config=all real + low genes below 0.3, share 1 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  60.98  DES 0.582 DCS 0.680 MMD 0.609 CSS 0.558
+config=all real + low genes below 0.1, share 1 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  61.60  DES 0.594 DCS 0.682 MMD 0.616 CSS 0.562
+config=all synthetic (round-7 first file) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  61.20  DES 0.606 DCS 0.670 MMD 0.593 CSS 0.576
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=23 two_witness=False trend_days=0.0  52.72  DES 0.500 DCS 0.591 MMD 0.509 CSS 0.508
+config=R7h: file recipe (two-witness + trend) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  62.10  DES 0.600 DCS 0.684 MMD 0.611 CSS 0.585
+config=all real, no mixture proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  61.68  DES 0.588 DCS 0.680 MMD 0.619 CSS 0.572
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  61.93  DES 0.594 DCS 0.687 MMD 0.613 CSS 0.575
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  61.91  DES 0.594 DCS 0.686 MMD 0.613 CSS 0.576
+config=all real + low genes below 0.3, share 0.7 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  61.85  DES 0.600 DCS 0.683 MMD 0.611 CSS 0.571
+config=all real + low genes below 0.3, share 1 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  61.39  DES 0.594 DCS 0.683 MMD 0.608 CSS 0.563
+config=all real + low genes below 0.1, share 1 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  61.65  DES 0.588 DCS 0.687 MMD 0.614 CSS 0.568
+config=all synthetic (round-7 first file) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  61.56  DES 0.606 DCS 0.675 MMD 0.596 CSS 0.583
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=11 two_witness=False trend_days=0.0  61.40  DES 0.586 DCS 0.697 MMD 0.612 CSS 0.548
+config=R7h: file recipe (two-witness + trend) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  63.99  DES 0.611 DCS 0.732 MMD 0.629 CSS 0.578
+config=all real, no mixture proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  62.96  DES 0.604 DCS 0.713 MMD 0.624 CSS 0.567
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  64.13  DES 0.615 DCS 0.740 MMD 0.626 CSS 0.574
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  64.14  DES 0.614 DCS 0.740 MMD 0.626 CSS 0.574
+config=all real + low genes below 0.3, share 0.7 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  64.23  DES 0.616 DCS 0.743 MMD 0.626 CSS 0.573
+config=all real + low genes below 0.3, share 1 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  64.31  DES 0.618 DCS 0.748 MMD 0.627 CSS 0.568
+config=all real + low genes below 0.1, share 1 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  63.68  DES 0.607 DCS 0.735 MMD 0.625 CSS 0.569
+config=all synthetic (round-7 first file) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  64.98  DES 0.621 DCS 0.746 MMD 0.632 CSS 0.591
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=23 two_witness=False trend_days=0.0  61.55  DES 0.583 DCS 0.698 MMD 0.613 CSS 0.557
+config=R7h: file recipe (two-witness + trend) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  63.93  DES 0.612 DCS 0.734 MMD 0.626 CSS 0.574
+config=all real, no mixture proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  62.59  DES 0.603 DCS 0.713 MMD 0.621 CSS 0.554
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  63.54  DES 0.607 DCS 0.739 MMD 0.622 CSS 0.560
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  63.61  DES 0.608 DCS 0.740 MMD 0.623 CSS 0.561
+config=all real + low genes below 0.3, share 0.7 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  63.60  DES 0.607 DCS 0.742 MMD 0.623 CSS 0.559
+config=all real + low genes below 0.3, share 1 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  63.69  DES 0.609 DCS 0.746 MMD 0.624 CSS 0.555
+config=all real + low genes below 0.1, share 1 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  63.25  DES 0.606 DCS 0.734 MMD 0.621 CSS 0.556
+config=all synthetic (round-7 first file) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  64.61  DES 0.618 DCS 0.747 MMD 0.630 CSS 0.579
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=11 two_witness=False trend_days=0.0  57.33  DES 0.502 DCS 0.655 MMD 0.588 CSS 0.539
+config=R7h: file recipe (two-witness + trend) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  60.67  DES 0.543 DCS 0.708 MMD 0.617 CSS 0.545
+config=all real, no mixture proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  59.69  DES 0.535 DCS 0.685 MMD 0.613 CSS 0.542
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  60.34  DES 0.539 DCS 0.704 MMD 0.614 CSS 0.542
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  60.36  DES 0.539 DCS 0.705 MMD 0.614 CSS 0.542
+config=all real + low genes below 0.3, share 0.7 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  60.46  DES 0.541 DCS 0.707 MMD 0.614 CSS 0.542
+config=all real + low genes below 0.3, share 1 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  60.61  DES 0.543 DCS 0.711 MMD 0.615 CSS 0.540
+config=all real + low genes below 0.1, share 1 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  60.28  DES 0.538 DCS 0.703 MMD 0.614 CSS 0.542
+config=all synthetic (round-7 first file) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=11 two_witness=True trend_days=1.0  62.15  DES 0.567 DCS 0.726 MMD 0.623 CSS 0.557
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=23 two_witness=False trend_days=0.0  57.54  DES 0.491 DCS 0.656 MMD 0.589 CSS 0.560
+config=R7h: file recipe (two-witness + trend) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  59.83  DES 0.529 DCS 0.700 MMD 0.608 CSS 0.542
+config=all real, no mixture proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  58.54  DES 0.519 DCS 0.673 MMD 0.600 CSS 0.537
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  59.26  DES 0.525 DCS 0.693 MMD 0.602 CSS 0.538
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  59.32  DES 0.525 DCS 0.695 MMD 0.602 CSS 0.538
+config=all real + low genes below 0.3, share 0.7 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  59.43  DES 0.527 DCS 0.698 MMD 0.602 CSS 0.537
+config=all real + low genes below 0.3, share 1 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  59.58  DES 0.527 DCS 0.703 MMD 0.603 CSS 0.536
+config=all real + low genes below 0.1, share 1 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  59.17  DES 0.522 DCS 0.693 MMD 0.601 CSS 0.537
+config=all synthetic (round-7 first file) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=23 two_witness=True trend_days=1.0  61.22  DES 0.546 DCS 0.720 MMD 0.616 CSS 0.555
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=11 two_witness=False trend_days=0.0  52.90  DES 0.514 DCS 0.613 MMD 0.517 CSS 0.461
+config=R7h: file recipe (two-witness + trend) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  59.23  DES 0.572 DCS 0.693 MMD 0.568 CSS 0.528
+config=all real, no mixture proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  57.07  DES 0.556 DCS 0.654 MMD 0.560 CSS 0.502
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  58.84  DES 0.565 DCS 0.699 MMD 0.564 CSS 0.515
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  58.89  DES 0.565 DCS 0.701 MMD 0.564 CSS 0.516
+config=all real + low genes below 0.3, share 0.7 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  58.88  DES 0.565 DCS 0.704 MMD 0.565 CSS 0.511
+config=all real + low genes below 0.3, share 1 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  58.82  DES 0.565 DCS 0.707 MMD 0.566 CSS 0.502
+config=all real + low genes below 0.1, share 1 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  58.34  DES 0.561 DCS 0.693 MMD 0.563 CSS 0.505
+config=all synthetic (round-7 first file) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  60.15  DES 0.577 DCS 0.714 MMD 0.572 CSS 0.536
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=23 two_witness=False trend_days=0.0  53.92  DES 0.516 DCS 0.619 MMD 0.534 CSS 0.476
+config=R7h: file recipe (two-witness + trend) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  59.51  DES 0.570 DCS 0.691 MMD 0.577 CSS 0.533
+config=all real, no mixture proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  57.66  DES 0.559 DCS 0.653 MMD 0.569 CSS 0.514
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  59.49  DES 0.569 DCS 0.700 MMD 0.573 CSS 0.527
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  59.53  DES 0.570 DCS 0.700 MMD 0.574 CSS 0.528
+config=all real + low genes below 0.3, share 0.7 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  59.53  DES 0.568 DCS 0.705 MMD 0.575 CSS 0.524
+config=all real + low genes below 0.3, share 1 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  59.46  DES 0.568 DCS 0.709 MMD 0.576 CSS 0.513
+config=all real + low genes below 0.1, share 1 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  58.90  DES 0.563 DCS 0.693 MMD 0.573 CSS 0.517
+config=all synthetic (round-7 first file) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  60.78  DES 0.579 DCS 0.714 MMD 0.583 CSS 0.548
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=11 two_witness=False trend_days=0.0  47.49  DES 0.384 DCS 0.524 MMD 0.497 CSS 0.493
+config=R7h: file recipe (two-witness + trend) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  57.68  DES 0.528 DCS 0.682 MMD 0.569 CSS 0.518
+config=all real, no mixture proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  54.85  DES 0.503 DCS 0.623 MMD 0.558 CSS 0.498
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  56.16  DES 0.508 DCS 0.662 MMD 0.563 CSS 0.502
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  56.14  DES 0.507 DCS 0.662 MMD 0.563 CSS 0.502
+config=all real + low genes below 0.3, share 0.7 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  56.44  DES 0.510 DCS 0.669 MMD 0.564 CSS 0.501
+config=all real + low genes below 0.3, share 1 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  56.62  DES 0.511 DCS 0.674 MMD 0.566 CSS 0.499
+config=all real + low genes below 0.1, share 1 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  56.00  DES 0.504 DCS 0.662 MMD 0.562 CSS 0.500
+config=all synthetic (round-7 first file) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=11 two_witness=False trend_days=1.0  59.18  DES 0.539 DCS 0.707 MMD 0.578 CSS 0.534
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=23 two_witness=False trend_days=0.0  47.90  DES 0.393 DCS 0.525 MMD 0.500 CSS 0.497
+config=R7h: file recipe (two-witness + trend) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  57.30  DES 0.522 DCS 0.671 MMD 0.567 CSS 0.522
+config=all real, no mixture proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  54.71  DES 0.507 DCS 0.615 MMD 0.556 CSS 0.498
+config=candidate: all real + low genes below 0.3, share 0.5 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  56.06  DES 0.512 DCS 0.657 MMD 0.560 CSS 0.502
+config=all real + low genes below 0.3, share 0.5, measured molecules only proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  56.05  DES 0.512 DCS 0.655 MMD 0.561 CSS 0.502
+config=all real + low genes below 0.3, share 0.7 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  56.33  DES 0.515 DCS 0.662 MMD 0.562 CSS 0.501
+config=all real + low genes below 0.3, share 1 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  56.60  DES 0.520 DCS 0.668 MMD 0.564 CSS 0.500
+config=all real + low genes below 0.1, share 1 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  55.98  DES 0.511 DCS 0.656 MMD 0.560 CSS 0.501
+config=all synthetic (round-7 first file) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=23 two_witness=False trend_days=1.0  58.71  DES 0.535 DCS 0.698 MMD 0.574 CSS 0.534
+done 346s
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           52.75    61.48   57.44    53.41   47.70
+R7h: file recipe (two-witness + trend)                              61.95    63.96   60.25    59.37   57.49
+all real, no mixture                                                61.74    62.78   59.11    57.37   54.78
+candidate: all real + low genes below 0.3, share 0.5                61.89    63.83   59.80    59.16   56.11
+all real + low genes below 0.3, share 0.5, measured molecules only  61.96    63.87   59.84    59.21   56.09
+all real + low genes below 0.3, share 0.7                           61.85    63.91   59.95    59.21   56.39
+all real + low genes below 0.3, share 1                             61.18    64.00   60.09    59.14   56.61
+all real + low genes below 0.1, share 1                             61.62    63.46   59.72    58.62   55.99
+all synthetic (round-7 first file)                                  61.38    64.79   61.69    60.46   58.95
+skill_de_score
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           0.504    0.584   0.497    0.515   0.389
+R7h: file recipe (two-witness + trend)                              0.600    0.612   0.536    0.571   0.525
+all real, no mixture                                                0.594    0.603   0.527    0.557   0.505
+candidate: all real + low genes below 0.3, share 0.5                0.597    0.611   0.532    0.567   0.510
+all real + low genes below 0.3, share 0.5, measured molecules only  0.600    0.611   0.532    0.568   0.510
+all real + low genes below 0.3, share 0.7                           0.603    0.611   0.534    0.566   0.513
+all real + low genes below 0.3, share 1                             0.588    0.613   0.535    0.566   0.515
+all real + low genes below 0.1, share 1                             0.591    0.607   0.530    0.562   0.508
+all synthetic (round-7 first file)                                  0.606    0.619   0.556    0.578   0.537
+skill_de_direction
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           0.590    0.698   0.655    0.616   0.525
+R7h: file recipe (two-witness + trend)                              0.683    0.733   0.704    0.692   0.676
+all real, no mixture                                                0.678    0.713   0.679    0.654   0.619
+candidate: all real + low genes below 0.3, share 0.5                0.685    0.739   0.699    0.700   0.659
+all real + low genes below 0.3, share 0.5, measured molecules only  0.684    0.740   0.700    0.701   0.659
+all real + low genes below 0.3, share 0.7                           0.682    0.743   0.703    0.705   0.666
+all real + low genes below 0.3, share 1                             0.681    0.747   0.707    0.708   0.671
+all real + low genes below 0.1, share 1                             0.684    0.734   0.698    0.693   0.659
+all synthetic (round-7 first file)                                  0.672    0.747   0.723    0.714   0.702
+skill_mmd_u
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           0.508    0.613   0.588    0.525   0.498
+R7h: file recipe (two-witness + trend)                              0.608    0.627   0.612    0.573   0.568
+all real, no mixture                                                0.619    0.622   0.607    0.564   0.557
+candidate: all real + low genes below 0.3, share 0.5                0.614    0.624   0.608    0.569   0.562
+all real + low genes below 0.3, share 0.5, measured molecules only  0.614    0.624   0.608    0.569   0.562
+all real + low genes below 0.3, share 0.7                           0.612    0.625   0.608    0.570   0.563
+all real + low genes below 0.3, share 1                             0.609    0.625   0.609    0.571   0.565
+all real + low genes below 0.1, share 1                             0.615    0.623   0.607    0.568   0.561
+all synthetic (round-7 first file)                                  0.594    0.631   0.620    0.577   0.576
+skill_variogram
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           0.507    0.553   0.550    0.468   0.495
+R7h: file recipe (two-witness + trend)                              0.581    0.576   0.544    0.531   0.520
+all real, no mixture                                                0.568    0.560   0.539    0.508   0.498
+candidate: all real + low genes below 0.3, share 0.5                0.572    0.567   0.540    0.521   0.502
+all real + low genes below 0.3, share 0.5, measured molecules only  0.572    0.568   0.540    0.522   0.502
+all real + low genes below 0.3, share 0.7                           0.568    0.566   0.539    0.517   0.501
+all real + low genes below 0.3, share 1                             0.560    0.562   0.538    0.507   0.499
+all real + low genes below 0.1, share 1                             0.565    0.563   0.540    0.511   0.500
+all synthetic (round-7 first file)                                  0.580    0.585   0.556    0.542   0.534

@@ -1,0 +1,17 @@
+[test] f0.3 dev0                                        D 0.00421 (se 0.00014)  h1-if-true  72.07  de_score 0.703 de_direction 0.832 mmd_u 0.726 variogram 0.595  verbatim-if-true 74.30
+[test] f0.3 dev0.5                                      D 0.00386 (se 0.00013)  h1-if-true  73.11  de_score 0.701 de_direction 0.824 mmd_u 0.754 variogram 0.618  verbatim-if-true 73.77
+[test] f0.375 dev0                                      D 0.00465 (se 0.00021)  h1-if-true  70.00  de_score 0.693 de_direction 0.815 mmd_u 0.700 variogram 0.566  verbatim-if-true 71.52
+[test] f0.375 dev0.5                                    D 0.00353 (se 0.00009)  h1-if-true  70.99  de_score 0.686 de_direction 0.808 mmd_u 0.727 variogram 0.591  verbatim-if-true 71.44
+[test] ref composition only tc0.3                       D 0.01017 (se 0.00035)  h1-if-true  67.63  de_score 0.686 de_direction 0.834 mmd_u 0.657 variogram 0.497  verbatim-if-true 72.32
+[test] ref composition only tc0.45                      D 0.01402 (se 0.00102)  h1-if-true  65.23  de_score 0.676 de_direction 0.818 mmd_u 0.623 variogram 0.460  verbatim-if-true 69.03
+
+=== test
+                                  D  D_seed_se  probe_total  skill_de_score  skill_de_direction  skill_mmd_u  skill_variogram  extra_total
+recipe                                                                                                                                    
+f0.375 dev0.5                0.0035     0.0001      70.9893          0.6860              0.8079       0.7274           0.5909      71.4447
+f0.3 dev0.5                  0.0039     0.0001      73.1071          0.7009              0.8245       0.7537           0.6180      73.7746
+f0.3 dev0                    0.0042     0.0001      72.0674          0.7027              0.8322       0.7265           0.5951      74.3032
+f0.375 dev0                  0.0046     0.0002      70.0037          0.6932              0.8145       0.6998           0.5658      71.5207
+ref composition only tc0.3   0.0102     0.0004      67.6318          0.6862              0.8336       0.6567           0.4969      72.3204
+ref composition only tc0.45  0.0140     0.0010      65.2264          0.6756              0.8183       0.6227           0.4599      69.0312
+done 329s

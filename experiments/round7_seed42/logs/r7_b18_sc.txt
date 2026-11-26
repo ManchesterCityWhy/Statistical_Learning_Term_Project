@@ -1,0 +1,115 @@
+scenario pool 11486 41s
+config=base only scenario=heart/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  99.84  DES 1.000 DCS 1.000 MMD 0.995 CSS 1.000
+config=base only scenario=heart/mid split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  92.89  DES 0.950 DCS 0.974 MMD 0.956 CSS 0.805
+config=base only scenario=heart/shallow split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  81.11  DES 0.832 DCS 0.876 MMD 0.845 CSS 0.653
+config=base only scenario=all/asis split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42  77.73  DES 0.700 DCS 0.876 MMD 0.787 CSS 0.735
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/deep split=confirmation f=0.2 t=0.0 bwd=0.0 seed=42  88.78  DES 0.872 DCS 0.950 MMD 0.914 CSS 0.791
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/mid split=confirmation f=0.2 t=0.0 bwd=0.0 seed=42  92.67  DES 0.886 DCS 0.963 MMD 0.948 CSS 0.900
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/shallow split=confirmation f=0.2 t=0.0 bwd=0.0 seed=42  85.87  DES 0.867 DCS 0.884 MMD 0.898 CSS 0.758
+config=round 6 file (raw anchor, rho 0.4) scenario=all/asis split=confirmation f=0.2 t=0.0 bwd=0.0 seed=42  79.65  DES 0.685 DCS 0.888 MMD 0.801 CSS 0.814
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/deep split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  74.11  DES 0.768 DCS 0.873 MMD 0.735 CSS 0.551
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/mid split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  81.75  DES 0.772 DCS 0.896 MMD 0.798 CSS 0.806
+config=round 6 first version (raw anchor, rho 0.75) scenario=heart/shallow split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  80.55  DES 0.762 DCS 0.855 MMD 0.819 CSS 0.777
+config=round 6 first version (raw anchor, rho 0.75) scenario=all/asis split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  73.60  DES 0.679 DCS 0.867 MMD 0.682 CSS 0.724
+config=raw anchor rho 0.9; two-witness + trend on the base only scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  66.56  DES 0.724 DCS 0.848 MMD 0.615 CSS 0.441
+config=raw anchor rho 0.9; two-witness + trend on the base only scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  75.11  DES 0.740 DCS 0.875 MMD 0.685 CSS 0.709
+config=raw anchor rho 0.9; two-witness + trend on the base only scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  76.87  DES 0.740 DCS 0.840 MMD 0.742 CSS 0.755
+config=raw anchor rho 0.9; two-witness + trend on the base only scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  67.33  DES 0.651 DCS 0.854 MMD 0.574 CSS 0.624
+config=raw anchor rho 0.75; two-witness + trend on the base only scenario=heart/deep split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  70.76  DES 0.743 DCS 0.865 MMD 0.678 CSS 0.511
+config=raw anchor rho 0.75; two-witness + trend on the base only scenario=heart/mid split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  78.58  DES 0.741 DCS 0.889 MMD 0.752 CSS 0.764
+config=raw anchor rho 0.75; two-witness + trend on the base only scenario=heart/shallow split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  79.33  DES 0.762 DCS 0.848 MMD 0.795 CSS 0.760
+config=raw anchor rho 0.75; two-witness + trend on the base only scenario=all/asis split=confirmation f=0.375 t=0.0 bwd=0.0 seed=42  70.13  DES 0.649 DCS 0.863 MMD 0.628 CSS 0.675
+config=R7 (final): moved back 1 scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  79.48  DES 0.761 DCS 0.877 MMD 0.789 CSS 0.744
+config=R7 (final): moved back 1 scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  78.40  DES 0.779 DCS 0.870 MMD 0.801 CSS 0.656
+config=R7 (final): moved back 1 scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  72.07  DES 0.699 DCS 0.811 MMD 0.756 CSS 0.582
+config=R7 (final): moved back 1 scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=42  64.97  DES 0.608 DCS 0.823 MMD 0.599 CSS 0.560
+config=R7, moved back 0.75, position-consistent shifts scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=0.75 seed=42  79.81  DES 0.772 DCS 0.878 MMD 0.787 CSS 0.748
+config=R7, moved back 0.75, position-consistent shifts scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=0.75 seed=42  77.82  DES 0.792 DCS 0.863 MMD 0.787 CSS 0.643
+config=R7, moved back 0.75, position-consistent shifts scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=0.75 seed=42  70.97  DES 0.699 DCS 0.802 MMD 0.735 CSS 0.571
+config=R7, moved back 0.75, position-consistent shifts scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=0.75 seed=42  64.83  DES 0.612 DCS 0.821 MMD 0.598 CSS 0.554
+config=R7, moved back 0.5, position-consistent shifts scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=0.5 seed=42  80.03  DES 0.800 DCS 0.874 MMD 0.775 CSS 0.747
+config=R7, moved back 0.5, position-consistent shifts scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=0.5 seed=42  76.76  DES 0.790 DCS 0.854 MMD 0.766 CSS 0.634
+config=R7, moved back 0.5, position-consistent shifts scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=0.5 seed=42  70.06  DES 0.703 DCS 0.794 MMD 0.712 CSS 0.563
+config=R7, moved back 0.5, position-consistent shifts scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=0.5 seed=42  64.52  DES 0.612 DCS 0.817 MMD 0.593 CSS 0.551
+config=R7, moved back 0.25, position-consistent shifts scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=0.25 seed=42  76.94  DES 0.778 DCS 0.859 MMD 0.735 CSS 0.698
+config=R7, moved back 0.25, position-consistent shifts scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=0.25 seed=42  74.45  DES 0.774 DCS 0.841 MMD 0.730 CSS 0.609
+config=R7, moved back 0.25, position-consistent shifts scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=0.25 seed=42  68.75  DES 0.699 DCS 0.786 MMD 0.686 CSS 0.552
+config=R7, moved back 0.25, position-consistent shifts scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=0.25 seed=42  63.63  DES 0.620 DCS 0.813 MMD 0.572 CSS 0.531
+config=R7, moved back 0, position-consistent shifts scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  73.74  DES 0.752 DCS 0.847 MMD 0.693 CSS 0.649
+config=R7, moved back 0, position-consistent shifts scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  72.60  DES 0.768 DCS 0.833 MMD 0.694 CSS 0.588
+config=R7, moved back 0, position-consistent shifts scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  67.92  DES 0.705 DCS 0.782 MMD 0.662 CSS 0.544
+config=R7, moved back 0, position-consistent shifts scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=0.0 seed=42  62.75  DES 0.627 DCS 0.813 MMD 0.550 CSS 0.513
+config=R7, moved back 0.5, no shift on the anchor scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=0.5 seed=42  80.03  DES 0.800 DCS 0.874 MMD 0.775 CSS 0.747
+config=R7, moved back 0.5, no shift on the anchor scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=0.5 seed=42  76.76  DES 0.790 DCS 0.854 MMD 0.766 CSS 0.634
+config=R7, moved back 0.5, no shift on the anchor scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=0.5 seed=42  70.06  DES 0.703 DCS 0.794 MMD 0.712 CSS 0.563
+config=R7, moved back 0.5, no shift on the anchor scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=0.5 seed=42  64.52  DES 0.612 DCS 0.817 MMD 0.593 CSS 0.551
+done 147s
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       99.84      92.89          81.11     77.73
+round 6 file (raw anchor, rho 0.4)                              88.78      92.67          85.87     79.65
+round 6 first version (raw anchor, rho 0.75)                    74.11      81.75          80.55     73.60
+raw anchor rho 0.9; two-witness + trend on the base only        66.56      75.11          76.87     67.33
+raw anchor rho 0.75; two-witness + trend on the base only       70.76      78.58          79.33     70.13
+R7 (final): moved back 1                                        79.48      78.40          72.07     64.97
+R7, moved back 0.75, position-consistent shifts                 79.81      77.82          70.97     64.83
+R7, moved back 0.5, position-consistent shifts                  80.03      76.76          70.06     64.52
+R7, moved back 0.25, position-consistent shifts                 76.94      74.45          68.75     63.63
+R7, moved back 0, position-consistent shifts                    73.74      72.60          67.92     62.75
+R7, moved back 0.5, no shift on the anchor                      80.03      76.76          70.06     64.52
+skill_de_score
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       1.000      0.950          0.832     0.700
+round 6 file (raw anchor, rho 0.4)                              0.872      0.886          0.867     0.685
+round 6 first version (raw anchor, rho 0.75)                    0.768      0.772          0.762     0.679
+raw anchor rho 0.9; two-witness + trend on the base only        0.724      0.740          0.740     0.651
+raw anchor rho 0.75; two-witness + trend on the base only       0.743      0.741          0.762     0.649
+R7 (final): moved back 1                                        0.761      0.779          0.699     0.608
+R7, moved back 0.75, position-consistent shifts                 0.772      0.792          0.699     0.612
+R7, moved back 0.5, position-consistent shifts                  0.800      0.790          0.703     0.612
+R7, moved back 0.25, position-consistent shifts                 0.778      0.774          0.699     0.620
+R7, moved back 0, position-consistent shifts                    0.752      0.768          0.705     0.627
+R7, moved back 0.5, no shift on the anchor                      0.800      0.790          0.703     0.612
+skill_de_direction
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       1.000      0.974          0.876     0.876
+round 6 file (raw anchor, rho 0.4)                              0.950      0.963          0.884     0.888
+round 6 first version (raw anchor, rho 0.75)                    0.873      0.896          0.855     0.867
+raw anchor rho 0.9; two-witness + trend on the base only        0.848      0.875          0.840     0.854
+raw anchor rho 0.75; two-witness + trend on the base only       0.865      0.889          0.848     0.863
+R7 (final): moved back 1                                        0.877      0.870          0.811     0.823
+R7, moved back 0.75, position-consistent shifts                 0.878      0.863          0.802     0.821
+R7, moved back 0.5, position-consistent shifts                  0.874      0.854          0.794     0.817
+R7, moved back 0.25, position-consistent shifts                 0.859      0.841          0.786     0.813
+R7, moved back 0, position-consistent shifts                    0.847      0.833          0.782     0.813
+R7, moved back 0.5, no shift on the anchor                      0.874      0.854          0.794     0.817
+skill_mmd_u
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       0.995      0.956          0.845     0.787
+round 6 file (raw anchor, rho 0.4)                              0.914      0.948          0.898     0.801
+round 6 first version (raw anchor, rho 0.75)                    0.735      0.798          0.819     0.682
+raw anchor rho 0.9; two-witness + trend on the base only        0.615      0.685          0.742     0.574
+raw anchor rho 0.75; two-witness + trend on the base only       0.678      0.752          0.795     0.628
+R7 (final): moved back 1                                        0.789      0.801          0.756     0.599
+R7, moved back 0.75, position-consistent shifts                 0.787      0.787          0.735     0.598
+R7, moved back 0.5, position-consistent shifts                  0.775      0.766          0.712     0.593
+R7, moved back 0.25, position-consistent shifts                 0.735      0.730          0.686     0.572
+R7, moved back 0, position-consistent shifts                    0.693      0.694          0.662     0.550
+R7, moved back 0.5, no shift on the anchor                      0.775      0.766          0.712     0.593
+skill_variogram
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       1.000      0.805          0.653     0.735
+round 6 file (raw anchor, rho 0.4)                              0.791      0.900          0.758     0.814
+round 6 first version (raw anchor, rho 0.75)                    0.551      0.806          0.777     0.724
+raw anchor rho 0.9; two-witness + trend on the base only        0.441      0.709          0.755     0.624
+raw anchor rho 0.75; two-witness + trend on the base only       0.511      0.764          0.760     0.675
+R7 (final): moved back 1                                        0.744      0.656          0.582     0.560
+R7, moved back 0.75, position-consistent shifts                 0.748      0.643          0.571     0.554
+R7, moved back 0.5, position-consistent shifts                  0.747      0.634          0.563     0.551
+R7, moved back 0.25, position-consistent shifts                 0.698      0.609          0.552     0.531
+R7, moved back 0, position-consistent shifts                    0.649      0.588          0.544     0.513
+R7, moved back 0.5, no shift on the anchor                      0.747      0.634          0.563     0.551

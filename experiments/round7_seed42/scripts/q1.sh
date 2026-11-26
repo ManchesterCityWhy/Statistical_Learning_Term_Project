@@ -1,0 +1,1 @@
+cd ~/statlearn_real && sed -i 's/\r$//' /mnt/d/statlearn/r8/*.py && cp /mnt/d/statlearn/r8/comp_libs.py experiments/r8_comp_libs.py && ~/statlearn_venv/bin/python -W ignore -m experiments.r8_comp_libs 2>&1 | tail -40

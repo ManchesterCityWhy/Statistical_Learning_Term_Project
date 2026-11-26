@@ -1,0 +1,178 @@
+scenario pool 11486 48s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=back-resample rho0.4 k3 scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  95.15  DES 0.930 DCS 0.977 MMD 0.961 CSS 0.933
+config=back-resample rho0.4 k3 scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  93.32  DES 0.942 DCS 0.954 MMD 0.961 CSS 0.855
+config=back-resample rho0.4 k3 scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  83.64  DES 0.855 DCS 0.877 MMD 0.879 CSS 0.699
+config=back-resample rho0.4 k3 scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  76.79  DES 0.686 DCS 0.877 MMD 0.748 CSS 0.764
+config=back-resample rho0.4 k5 scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  96.06  DES 0.938 DCS 0.980 MMD 0.966 CSS 0.956
+config=back-resample rho0.4 k5 scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  92.19  DES 0.942 DCS 0.945 MMD 0.952 CSS 0.823
+config=back-resample rho0.4 k5 scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  81.62  DES 0.826 DCS 0.869 MMD 0.859 CSS 0.673
+config=back-resample rho0.4 k5 scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  75.17  DES 0.672 DCS 0.869 MMD 0.733 CSS 0.732
+config=back-resample rho0.4 k10 scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  96.46  DES 0.944 DCS 0.979 MMD 0.969 CSS 0.967
+config=back-resample rho0.4 k10 scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  91.20  DES 0.948 DCS 0.935 MMD 0.942 CSS 0.793
+config=back-resample rho0.4 k10 scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  80.08  DES 0.812 DCS 0.861 MMD 0.842 CSS 0.651
+config=back-resample rho0.4 k10 scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  73.73  DES 0.659 DCS 0.863 MMD 0.720 CSS 0.703
+config=back-resample rho0.4 k20 scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  96.45  DES 0.941 DCS 0.978 MMD 0.970 CSS 0.969
+config=back-resample rho0.4 k20 scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  90.44  DES 0.939 DCS 0.934 MMD 0.936 CSS 0.777
+config=back-resample rho0.4 k20 scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  79.50  DES 0.812 DCS 0.857 MMD 0.833 CSS 0.639
+config=back-resample rho0.4 k20 scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  73.22  DES 0.659 DCS 0.863 MMD 0.713 CSS 0.689
+config=back-resample rho0.4 k10 type scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  96.98  DES 0.949 DCS 0.981 MMD 0.977 CSS 0.970
+config=back-resample rho0.4 k10 type scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  91.82  DES 0.954 DCS 0.940 MMD 0.951 CSS 0.797
+config=back-resample rho0.4 k10 type scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  80.47  DES 0.814 DCS 0.862 MMD 0.850 CSS 0.653
+config=back-resample rho0.4 k10 type scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  74.34  DES 0.666 DCS 0.866 MMD 0.729 CSS 0.708
+config=back-resample rho0.4 k5 type scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  96.40  DES 0.941 DCS 0.981 MMD 0.974 CSS 0.958
+config=back-resample rho0.4 k5 type scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  93.00  DES 0.961 DCS 0.947 MMD 0.960 CSS 0.826
+config=back-resample rho0.4 k5 type scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  82.17  DES 0.837 DCS 0.870 MMD 0.866 CSS 0.675
+config=back-resample rho0.4 k5 type scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  75.48  DES 0.670 DCS 0.871 MMD 0.741 CSS 0.737
+config=back-resample rho0.4 k10 median scenario=heart/deep split=development f=0.2 t=0.0 bwd=1.0 seed=42  96.59  DES 0.941 DCS 0.982 MMD 0.969 CSS 0.971
+config=back-resample rho0.4 k10 median scenario=heart/mid split=development f=0.2 t=0.0 bwd=1.0 seed=42  91.31  DES 0.951 DCS 0.936 MMD 0.941 CSS 0.795
+config=back-resample rho0.4 k10 median scenario=heart/shallow split=development f=0.2 t=0.0 bwd=1.0 seed=42  80.13  DES 0.816 DCS 0.861 MMD 0.840 CSS 0.651
+config=back-resample rho0.4 k10 median scenario=all/asis split=development f=0.2 t=0.0 bwd=1.0 seed=42  73.65  DES 0.659 DCS 0.862 MMD 0.718 CSS 0.705
+config=back-resample rho0.75 k3 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  85.18  DES 0.803 DCS 0.920 MMD 0.864 CSS 0.810
+config=back-resample rho0.75 k3 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  87.10  DES 0.844 DCS 0.911 MMD 0.888 CSS 0.828
+config=back-resample rho0.75 k3 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  80.26  DES 0.784 DCS 0.853 MMD 0.842 CSS 0.704
+config=back-resample rho0.75 k3 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  73.43  DES 0.670 DCS 0.859 MMD 0.685 CSS 0.734
+config=back-resample rho0.75 k5 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  87.14  DES 0.820 DCS 0.922 MMD 0.880 CSS 0.860
+config=back-resample rho0.75 k5 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  85.73  DES 0.849 DCS 0.898 MMD 0.881 CSS 0.781
+config=back-resample rho0.75 k5 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  77.36  DES 0.752 DCS 0.840 MMD 0.813 CSS 0.659
+config=back-resample rho0.75 k5 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  71.29  DES 0.653 DCS 0.848 MMD 0.667 CSS 0.688
+config=back-resample rho0.75 k10 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  88.08  DES 0.835 DCS 0.922 MMD 0.887 CSS 0.878
+config=back-resample rho0.75 k10 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  83.77  DES 0.834 DCS 0.888 MMD 0.868 CSS 0.733
+config=back-resample rho0.75 k10 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  75.28  DES 0.744 DCS 0.828 MMD 0.786 CSS 0.620
+config=back-resample rho0.75 k10 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  69.27  DES 0.636 DCS 0.840 MMD 0.650 CSS 0.643
+config=back-resample rho0.75 k20 scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  88.12  DES 0.837 DCS 0.921 MMD 0.887 CSS 0.878
+config=back-resample rho0.75 k20 scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  82.83  DES 0.834 DCS 0.883 MMD 0.859 CSS 0.707
+config=back-resample rho0.75 k20 scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  74.09  DES 0.733 DCS 0.824 MMD 0.771 CSS 0.601
+config=back-resample rho0.75 k20 scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  68.15  DES 0.628 DCS 0.836 MMD 0.639 CSS 0.619
+config=back-resample rho0.75 k10 type scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  88.79  DES 0.837 DCS 0.924 MMD 0.903 CSS 0.885
+config=back-resample rho0.75 k10 type scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  84.33  DES 0.830 DCS 0.890 MMD 0.885 CSS 0.740
+config=back-resample rho0.75 k10 type scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  76.00  DES 0.751 DCS 0.829 MMD 0.801 CSS 0.624
+config=back-resample rho0.75 k10 type scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  69.78  DES 0.632 DCS 0.840 MMD 0.666 CSS 0.650
+config=back-resample rho0.75 k5 type scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  87.87  DES 0.826 DCS 0.924 MMD 0.895 CSS 0.864
+config=back-resample rho0.75 k5 type scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  86.09  DES 0.839 DCS 0.900 MMD 0.896 CSS 0.786
+config=back-resample rho0.75 k5 type scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  78.28  DES 0.769 DCS 0.842 MMD 0.826 CSS 0.662
+config=back-resample rho0.75 k5 type scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  71.99  DES 0.657 DCS 0.850 MMD 0.682 CSS 0.693
+config=back-resample rho0.75 k10 median scenario=heart/deep split=development f=0.375 t=0.0 bwd=1.0 seed=42  88.77  DES 0.848 DCS 0.923 MMD 0.891 CSS 0.888
+config=back-resample rho0.75 k10 median scenario=heart/mid split=development f=0.375 t=0.0 bwd=1.0 seed=42  84.07  DES 0.839 DCS 0.890 MMD 0.870 CSS 0.737
+config=back-resample rho0.75 k10 median scenario=heart/shallow split=development f=0.375 t=0.0 bwd=1.0 seed=42  75.18  DES 0.738 DCS 0.829 MMD 0.785 CSS 0.622
+config=back-resample rho0.75 k10 median scenario=all/asis split=development f=0.375 t=0.0 bwd=1.0 seed=42  69.16  DES 0.634 DCS 0.837 MMD 0.649 CSS 0.646
+config=back-resample rho0.2 k10 scenario=heart/deep split=development f=0.1 t=0.0 bwd=1.0 seed=42  99.56  DES 0.988 DCS 1.000 MMD 0.998 CSS 0.997
+config=back-resample rho0.2 k10 scenario=heart/mid split=development f=0.1 t=0.0 bwd=1.0 seed=42  93.43  DES 0.980 DCS 0.957 MMD 0.964 CSS 0.804
+config=back-resample rho0.2 k10 scenario=heart/shallow split=development f=0.1 t=0.0 bwd=1.0 seed=42  81.87  DES 0.848 DCS 0.875 MMD 0.857 CSS 0.655
+config=back-resample rho0.2 k10 scenario=all/asis split=development f=0.1 t=0.0 bwd=1.0 seed=42  75.62  DES 0.684 DCS 0.873 MMD 0.741 CSS 0.724
+config=back-resample rho0.6 k10 scenario=heart/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42  91.93  DES 0.874 DCS 0.951 MMD 0.927 CSS 0.926
+config=back-resample rho0.6 k10 scenario=heart/mid split=development f=0.3 t=0.0 bwd=1.0 seed=42  86.54  DES 0.874 DCS 0.910 MMD 0.897 CSS 0.752
+config=back-resample rho0.6 k10 scenario=heart/shallow split=development f=0.3 t=0.0 bwd=1.0 seed=42  77.13  DES 0.780 DCS 0.840 MMD 0.802 CSS 0.628
+config=back-resample rho0.6 k10 scenario=all/asis split=development f=0.3 t=0.0 bwd=1.0 seed=42  70.81  DES 0.644 DCS 0.847 MMD 0.675 CSS 0.665
+config=back-resample rho0.9 k10 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  85.25  DES 0.817 DCS 0.904 MMD 0.849 CSS 0.837
+config=back-resample rho0.9 k10 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  81.25  DES 0.807 DCS 0.875 MMD 0.833 CSS 0.712
+config=back-resample rho0.9 k10 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.51  DES 0.723 DCS 0.818 MMD 0.759 CSS 0.611
+config=back-resample rho0.9 k10 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.48  DES 0.628 DCS 0.833 MMD 0.619 CSS 0.619
+done 167s
+scenario                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                          
+base only                             100.00      93.26          81.26     77.20
+back-resample rho0.4 k3                95.15      93.32          83.64     76.79
+back-resample rho0.4 k5                96.06      92.19          81.62     75.17
+back-resample rho0.4 k10               96.46      91.20          80.08     73.73
+back-resample rho0.4 k20               96.45      90.44          79.50     73.22
+back-resample rho0.4 k10 type          96.98      91.82          80.47     74.34
+back-resample rho0.4 k5 type           96.40      93.00          82.17     75.48
+back-resample rho0.4 k10 median        96.59      91.31          80.13     73.65
+back-resample rho0.75 k3               85.18      87.10          80.26     73.43
+back-resample rho0.75 k5               87.14      85.73          77.36     71.29
+back-resample rho0.75 k10              88.08      83.77          75.28     69.27
+back-resample rho0.75 k20              88.12      82.83          74.09     68.15
+back-resample rho0.75 k10 type         88.79      84.33          76.00     69.78
+back-resample rho0.75 k5 type          87.87      86.09          78.28     71.99
+back-resample rho0.75 k10 median       88.77      84.07          75.18     69.16
+back-resample rho0.2 k10               99.56      93.43          81.87     75.62
+back-resample rho0.6 k10               91.93      86.54          77.13     70.81
+back-resample rho0.9 k10               85.25      81.25          73.51     67.48
+skill_de_score
+scenario                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                          
+base only                              1.000      0.973          0.829     0.713
+back-resample rho0.4 k3                0.930      0.942          0.855     0.686
+back-resample rho0.4 k5                0.938      0.942          0.826     0.672
+back-resample rho0.4 k10               0.944      0.948          0.812     0.659
+back-resample rho0.4 k20               0.941      0.939          0.812     0.659
+back-resample rho0.4 k10 type          0.949      0.954          0.814     0.666
+back-resample rho0.4 k5 type           0.941      0.961          0.837     0.670
+back-resample rho0.4 k10 median        0.941      0.951          0.816     0.659
+back-resample rho0.75 k3               0.803      0.844          0.784     0.670
+back-resample rho0.75 k5               0.820      0.849          0.752     0.653
+back-resample rho0.75 k10              0.835      0.834          0.744     0.636
+back-resample rho0.75 k20              0.837      0.834          0.733     0.628
+back-resample rho0.75 k10 type         0.837      0.830          0.751     0.632
+back-resample rho0.75 k5 type          0.826      0.839          0.769     0.657
+back-resample rho0.75 k10 median       0.848      0.839          0.738     0.634
+back-resample rho0.2 k10               0.988      0.980          0.848     0.684
+back-resample rho0.6 k10               0.874      0.874          0.780     0.644
+back-resample rho0.9 k10               0.817      0.807          0.723     0.628
+skill_de_direction
+scenario                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                          
+base only                              1.000      0.962          0.876     0.879
+back-resample rho0.4 k3                0.977      0.954          0.877     0.877
+back-resample rho0.4 k5                0.980      0.945          0.869     0.869
+back-resample rho0.4 k10               0.979      0.935          0.861     0.863
+back-resample rho0.4 k20               0.978      0.934          0.857     0.863
+back-resample rho0.4 k10 type          0.981      0.940          0.862     0.866
+back-resample rho0.4 k5 type           0.981      0.947          0.870     0.871
+back-resample rho0.4 k10 median        0.982      0.936          0.861     0.862
+back-resample rho0.75 k3               0.920      0.911          0.853     0.859
+back-resample rho0.75 k5               0.922      0.898          0.840     0.848
+back-resample rho0.75 k10              0.922      0.888          0.828     0.840
+back-resample rho0.75 k20              0.921      0.883          0.824     0.836
+back-resample rho0.75 k10 type         0.924      0.890          0.829     0.840
+back-resample rho0.75 k5 type          0.924      0.900          0.842     0.850
+back-resample rho0.75 k10 median       0.923      0.890          0.829     0.837
+back-resample rho0.2 k10               1.000      0.957          0.875     0.873
+back-resample rho0.6 k10               0.951      0.910          0.840     0.847
+back-resample rho0.9 k10               0.904      0.875          0.818     0.833
+skill_mmd_u
+scenario                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                          
+base only                              1.000      0.964          0.855     0.761
+back-resample rho0.4 k3                0.961      0.961          0.879     0.748
+back-resample rho0.4 k5                0.966      0.952          0.859     0.733
+back-resample rho0.4 k10               0.969      0.942          0.842     0.720
+back-resample rho0.4 k20               0.970      0.936          0.833     0.713
+back-resample rho0.4 k10 type          0.977      0.951          0.850     0.729
+back-resample rho0.4 k5 type           0.974      0.960          0.866     0.741
+back-resample rho0.4 k10 median        0.969      0.941          0.840     0.718
+back-resample rho0.75 k3               0.864      0.888          0.842     0.685
+back-resample rho0.75 k5               0.880      0.881          0.813     0.667
+back-resample rho0.75 k10              0.887      0.868          0.786     0.650
+back-resample rho0.75 k20              0.887      0.859          0.771     0.639
+back-resample rho0.75 k10 type         0.903      0.885          0.801     0.666
+back-resample rho0.75 k5 type          0.895      0.896          0.826     0.682
+back-resample rho0.75 k10 median       0.891      0.870          0.785     0.649
+back-resample rho0.2 k10               0.998      0.964          0.857     0.741
+back-resample rho0.6 k10               0.927      0.897          0.802     0.675
+back-resample rho0.9 k10               0.849      0.833          0.759     0.619
+skill_variogram
+scenario                          heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                          
+base only                              1.000      0.798          0.650     0.729
+back-resample rho0.4 k3                0.933      0.855          0.699     0.764
+back-resample rho0.4 k5                0.956      0.823          0.673     0.732
+back-resample rho0.4 k10               0.967      0.793          0.651     0.703
+back-resample rho0.4 k20               0.969      0.777          0.639     0.689
+back-resample rho0.4 k10 type          0.970      0.797          0.653     0.708
+back-resample rho0.4 k5 type           0.958      0.826          0.675     0.737
+back-resample rho0.4 k10 median        0.971      0.795          0.651     0.705
+back-resample rho0.75 k3               0.810      0.828          0.704     0.734
+back-resample rho0.75 k5               0.860      0.781          0.659     0.688
+back-resample rho0.75 k10              0.878      0.733          0.620     0.643
+back-resample rho0.75 k20              0.878      0.707          0.601     0.619
+back-resample rho0.75 k10 type         0.885      0.740          0.624     0.650
+back-resample rho0.75 k5 type          0.864      0.786          0.662     0.693
+back-resample rho0.75 k10 median       0.888      0.737          0.622     0.646
+back-resample rho0.2 k10               0.997      0.804          0.655     0.724
+back-resample rho0.6 k10               0.926      0.752          0.628     0.665
+back-resample rho0.9 k10               0.837      0.712          0.611     0.619

@@ -1,0 +1,17 @@
+[test] f0.3 pos0                                        D 0.00432 (se 0.00022)  h1-if-true  71.57  de_score 0.700 de_direction 0.828 mmd_u 0.721 variogram 0.586  verbatim-if-true 74.28
+[test] f0.3 pos0.25                                     D 0.00446 (se 0.00009)  h1-if-true  72.03  de_score 0.702 de_direction 0.817 mmd_u 0.742 variogram 0.589  verbatim-if-true 74.08
+[test] f0.3 pos0.5                                      D 0.00413 (se 0.00010)  h1-if-true  72.12  de_score 0.694 de_direction 0.806 mmd_u 0.755 variogram 0.598  verbatim-if-true 73.49
+[test] f0.45 pos0                                       D 0.00428 (se 0.00017)  h1-if-true  69.68  de_score 0.685 de_direction 0.807 mmd_u 0.701 variogram 0.568  verbatim-if-true 71.15
+[test] f0.45 pos0.25                                    D 0.00415 (se 0.00013)  h1-if-true  69.97  de_score 0.684 de_direction 0.798 mmd_u 0.717 variogram 0.571  verbatim-if-true 71.22
+[test] f0.45 pos0.5                                     D 0.00376 (se 0.00013)  h1-if-true  70.10  de_score 0.683 de_direction 0.785 mmd_u 0.728 variogram 0.579  verbatim-if-true 70.49
+
+=== test
+                    D  D_seed_se  probe_total  skill_de_score  skill_de_direction  skill_mmd_u  skill_variogram  extra_total
+recipe                                                                                                                      
+f0.45 pos0.5   0.0038     0.0001      70.0970          0.6827              0.7847       0.7276           0.5791      70.4913
+f0.3 pos0.5    0.0041     0.0001      72.1175          0.6937              0.8060       0.7552           0.5984      73.4861
+f0.45 pos0.25  0.0042     0.0001      69.9656          0.6838              0.7976       0.7173           0.5705      71.2180
+f0.3 pos0      0.0043     0.0002      71.5664          0.6999              0.8279       0.7215           0.5864      74.2761
+f0.45 pos0     0.0043     0.0002      69.6827          0.6851              0.8070       0.7008           0.5679      71.1492
+f0.3 pos0.25   0.0045     0.0001      72.0316          0.7019              0.8171       0.7423           0.5893      74.0805
+done 301s

@@ -1,0 +1,85 @@
+source E9.5: base cells 7972, median UMI raw 14228 -> depth-matched 12634; target without blood 1075 cells, median UMI 11550  39s
+base=depth-matched base config=base only f=0.0                          62.86  DES 0.608 DCS 0.699 MMD 0.612 CSS 0.592
+base=depth-matched base config=round 6 form, rho 0.4 f=0.08             65.91  DES 0.626 DCS 0.730 MMD 0.648 CSS 0.628
+base=depth-matched base config=round 6 form, rho 0.75 f=0.15            68.38  DES 0.651 DCS 0.756 MMD 0.677 CSS 0.645
+base=depth-matched base config=round 6 form, rho 0.9 f=0.18             68.46  DES 0.653 DCS 0.763 MMD 0.672 CSS 0.645
+base=depth-matched base config=round 7 form, rho 0.4 f=0.08             64.09  DES 0.612 DCS 0.719 MMD 0.623 CSS 0.607
+base=depth-matched base config=round 7 form, rho 0.75 f=0.15            65.26  DES 0.621 DCS 0.733 MMD 0.633 CSS 0.622
+base=depth-matched base config=round 7 form, rho 0.9 f=0.18             65.24  DES 0.619 DCS 0.738 MMD 0.629 CSS 0.623
+base=depth-matched base config=round 7 form, rho 0.9 + trend f=0.18     66.47  DES 0.631 DCS 0.752 MMD 0.639 CSS 0.636
+base=depth-matched base config=round 7 candidate (rho 0.9 + two-witness + trend) f=0.18  67.17  DES 0.638 DCS 0.758 MMD 0.646 CSS 0.645
+base=depth-matched base config=round 6 form, rho 0.75 + trend f=0.15    69.37  DES 0.660 DCS 0.767 MMD 0.685 CSS 0.657
+base=released base config=base only f=0.0                               62.68  DES 0.609 DCS 0.699 MMD 0.611 CSS 0.583
+base=released base config=round 6 form, rho 0.4 f=0.08                  65.93  DES 0.627 DCS 0.730 MMD 0.648 CSS 0.629
+base=released base config=round 6 form, rho 0.75 f=0.15                 68.64  DES 0.652 DCS 0.757 MMD 0.677 CSS 0.654
+base=released base config=round 6 form, rho 0.9 f=0.18                  68.66  DES 0.652 DCS 0.763 MMD 0.673 CSS 0.654
+base=released base config=round 7 form, rho 0.4 f=0.08                  63.84  DES 0.609 DCS 0.718 MMD 0.622 CSS 0.600
+base=released base config=round 7 form, rho 0.75 f=0.15                 65.13  DES 0.620 DCS 0.733 MMD 0.632 CSS 0.617
+base=released base config=round 7 form, rho 0.9 f=0.18                  65.17  DES 0.621 DCS 0.738 MMD 0.629 CSS 0.617
+base=released base config=round 7 form, rho 0.9 + trend f=0.18          66.37  DES 0.631 DCS 0.752 MMD 0.639 CSS 0.630
+base=released base config=round 7 candidate (rho 0.9 + two-witness + trend) f=0.18  66.98  DES 0.636 DCS 0.758 MMD 0.646 CSS 0.637
+base=released base config=round 6 form, rho 0.75 + trend f=0.15         69.65  DES 0.660 DCS 0.769 MMD 0.686 CSS 0.667
+base                                               depth-matched base  released base
+config                                                                              
+base only                                                       62.86          62.68
+round 6 form, rho 0.4                                           65.91          65.93
+round 6 form, rho 0.75                                          68.38          68.64
+round 6 form, rho 0.9                                           68.46          68.66
+round 7 form, rho 0.4                                           64.09          63.84
+round 7 form, rho 0.75                                          65.26          65.13
+round 7 form, rho 0.9                                           65.24          65.17
+round 7 form, rho 0.9 + trend                                   66.47          66.37
+round 7 candidate (rho 0.9 + two-witness + trend)               67.17          66.98
+round 6 form, rho 0.75 + trend                                  69.37          69.65
+skill_de_score
+base                                               depth-matched base  released base
+config                                                                              
+base only                                                       0.608          0.609
+round 6 form, rho 0.4                                           0.626          0.627
+round 6 form, rho 0.75                                          0.651          0.652
+round 6 form, rho 0.9                                           0.653          0.652
+round 7 form, rho 0.4                                           0.612          0.609
+round 7 form, rho 0.75                                          0.621          0.620
+round 7 form, rho 0.9                                           0.619          0.621
+round 7 form, rho 0.9 + trend                                   0.631          0.631
+round 7 candidate (rho 0.9 + two-witness + trend)               0.638          0.636
+round 6 form, rho 0.75 + trend                                  0.660          0.660
+skill_de_direction
+base                                               depth-matched base  released base
+config                                                                              
+base only                                                       0.699          0.699
+round 6 form, rho 0.4                                           0.730          0.730
+round 6 form, rho 0.75                                          0.756          0.757
+round 6 form, rho 0.9                                           0.763          0.763
+round 7 form, rho 0.4                                           0.719          0.718
+round 7 form, rho 0.75                                          0.733          0.733
+round 7 form, rho 0.9                                           0.738          0.738
+round 7 form, rho 0.9 + trend                                   0.752          0.752
+round 7 candidate (rho 0.9 + two-witness + trend)               0.758          0.758
+round 6 form, rho 0.75 + trend                                  0.767          0.769
+skill_mmd_u
+base                                               depth-matched base  released base
+config                                                                              
+base only                                                       0.612          0.611
+round 6 form, rho 0.4                                           0.648          0.648
+round 6 form, rho 0.75                                          0.677          0.677
+round 6 form, rho 0.9                                           0.672          0.673
+round 7 form, rho 0.4                                           0.623          0.622
+round 7 form, rho 0.75                                          0.633          0.632
+round 7 form, rho 0.9                                           0.629          0.629
+round 7 form, rho 0.9 + trend                                   0.639          0.639
+round 7 candidate (rho 0.9 + two-witness + trend)               0.646          0.646
+round 6 form, rho 0.75 + trend                                  0.685          0.686
+skill_variogram
+base                                               depth-matched base  released base
+config                                                                              
+base only                                                       0.592          0.583
+round 6 form, rho 0.4                                           0.628          0.629
+round 6 form, rho 0.75                                          0.645          0.654
+round 6 form, rho 0.9                                           0.645          0.654
+round 7 form, rho 0.4                                           0.607          0.600
+round 7 form, rho 0.75                                          0.622          0.617
+round 7 form, rho 0.9                                           0.623          0.617
+round 7 form, rho 0.9 + trend                                   0.636          0.630
+round 7 candidate (rho 0.9 + two-witness + trend)               0.645          0.637
+round 6 form, rho 0.75 + trend                                  0.657          0.667

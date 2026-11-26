@@ -1,0 +1,17 @@
+total 128
+drwxr-xr-x  2 andreib180 andreib180 4096 2026-11-26 08:42:57.060822790 +0800 .
+drwxr-xr-x 35 andreib180 andreib180 4096 2026-11-26 10:06:32.254590459 +0800 ..
+-rw-r--r--  1 andreib180 andreib180 7078 2026-11-26 07:21:47.498600116 +0800 scores_confirmation.csv
+-rw-r--r--  1 andreib180 andreib180 7032 2026-11-26 07:21:46.334599728 +0800 scores_development.csv
+-rw-r--r--  1 andreib180 andreib180 8590 2026-11-26 07:50:26.974566841 +0800 scores_k_f0.45_confirmation.csv
+-rw-r--r--  1 andreib180 andreib180 8571 2026-11-26 07:50:22.911091299 +0800 scores_k_f0.45_development.csv
+-rw-r--r--  1 andreib180 andreib180 7342 2026-11-26 08:37:20.994664081 +0800 scores_real_f0.45_confirmation.csv
+-rw-r--r--  1 andreib180 andreib180 7337 2026-11-26 08:44:27.880281791 +0800 scores_real_f0.45_confirmation_asis_seed42.csv
+-rw-r--r--  1 andreib180 andreib180 7353 2026-11-26 08:42:26.740560266 +0800 scores_real_f0.45_confirmation_noblood_seed11.csv
+-rw-r--r--  1 andreib180 andreib180 7353 2026-11-26 08:42:22.596568966 +0800 scores_real_f0.45_confirmation_noblood_seed7.csv
+-rw-r--r--  1 andreib180 andreib180 7303 2026-11-26 08:37:16.895910832 +0800 scores_real_f0.45_development.csv
+-rw-r--r--  1 andreib180 andreib180 7327 2026-11-26 08:44:23.678648688 +0800 scores_real_f0.45_development_asis_seed42.csv
+-rw-r--r--  1 andreib180 andreib180 7308 2026-11-26 08:42:25.268785578 +0800 scores_real_f0.45_development_noblood_seed11.csv
+-rw-r--r--  1 andreib180 andreib180 7338 2026-11-26 08:42:21.030867006 +0800 scores_real_f0.45_development_noblood_seed7.csv
+-rw-r--r--  1 andreib180 andreib180 7044 2026-11-26 07:43:26.012337767 +0800 scores_tilt_f0.45_confirmation.csv
+-rw-r--r--  1 andreib180 andreib180 7008 2026-11-26 07:43:20.983517608 +0800 scores_tilt_f0.45_development.csv

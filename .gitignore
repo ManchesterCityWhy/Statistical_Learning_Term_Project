@@ -52,8 +52,10 @@ htmlcov/
 /predictions/
 /outputs/
 /runs/
+/specs/
 /wandb/
 .cache/
+provenance.npz
 *.h5ad
 *.h5
 *.hdf5

@@ -1,0 +1,5 @@
+total 20
+drwxr-xr-x  2 andreib180 andreib180 4096 2026-11-26 08:29:49.705059537 +0800 .
+drwxr-xr-x 35 andreib180 andreib180 4096 2026-11-26 10:06:32.254590459 +0800 ..
+-rw-r--r--  1 andreib180 andreib180 4909 2026-11-26 08:24:34.655969090 +0800 standin.csv
+-rw-r--r--  1 andreib180 andreib180 3016 2026-11-26 08:29:49.705059537 +0800 standin_types.csv

@@ -1,0 +1,340 @@
+{
+ "E8.5": {
+  "cells": 16787,
+  "heart_lineage_share_%": 37.79,
+  "libraries": {
+   "1": {
+    "cells": 9996,
+    "heart_lineage_share_%": 37.22,
+    "median_umi": 11010.0,
+    "lineage_shares_%": {
+     "CM": 22.52,
+     "Endo": 6.62,
+     "Cushion": 0.0,
+     "Epi": 6.55,
+     "Blood": 1.53,
+     "Mac": 0.0,
+     "Other": 62.78
+    },
+    "share_among_heart_lineage_cells_%": {
+     "CM": 60.49,
+     "Endo": 17.79,
+     "Epi": 17.6,
+     "Blood": 4.11
+    }
+   },
+   "2": {
+    "cells": 6791,
+    "heart_lineage_share_%": 38.61,
+    "median_umi": 10628.0,
+    "lineage_shares_%": {
+     "CM": 23.09,
+     "Endo": 7.02,
+     "Cushion": 0.0,
+     "Epi": 6.83,
+     "Blood": 1.66,
+     "Mac": 0.0,
+     "Other": 61.39
+    },
+    "share_among_heart_lineage_cells_%": {
+     "CM": 59.8,
+     "Endo": 18.19,
+     "Epi": 17.7,
+     "Blood": 4.31
+    }
+   }
+  },
+  "share_among_heart_lineage_cells_%": {
+   "CM": 60.21,
+   "Endo": 17.96,
+   "Epi": 17.64,
+   "Blood": 4.19
+  }
+ },
+ "E9.5": {
+  "cells": 17057,
+  "heart_lineage_share_%": 47.99,
+  "libraries": {
+   "1": {
+    "cells": 6291,
+    "heart_lineage_share_%": 47.13,
+    "median_umi": 11390.0,
+    "lineage_shares_%": {
+     "CM": 29.92,
+     "Endo": 10.35,
+     "Cushion": 0.0,
+     "Epi": 5.42,
+     "Blood": 1.45,
+     "Mac": 0.0,
+     "Other": 52.87
+    },
+    "share_among_heart_lineage_cells_%": {
+     "CM": 63.47,
+     "Endo": 21.96,
+     "Epi": 11.5,
+     "Blood": 3.07
+    }
+   },
+   "2": {
+    "cells": 10766,
+    "heart_lineage_share_%": 48.49,
+    "median_umi": 10921.5,
+    "lineage_shares_%": {
+     "CM": 31.4,
+     "Endo": 10.91,
+     "Cushion": 0.0,
+     "Epi": 5.03,
+     "Blood": 1.13,
+     "Mac": 0.0,
+     "Other": 51.51
+    },
+    "share_among_heart_lineage_cells_%": {
+     "CM": 64.77,
+     "Endo": 22.51,
+     "Epi": 10.38,
+     "Blood": 2.34
+    }
+   }
+  },
+  "share_among_heart_lineage_cells_%": {
+   "CM": 64.3,
+   "Endo": 22.31,
+   "Epi": 10.79,
+   "Blood": 2.6
+  }
+ },
+ "E10.5": {
+  "cells": 24979,
+  "heart_lineage_share_%": 68.73,
+  "libraries": {
+   "1": {
+    "cells": 8957,
+    "heart_lineage_share_%": 47.15,
+    "median_umi": 3833.0,
+    "lineage_shares_%": {
+     "CM": 8.59,
+     "Endo": 8.83,
+     "Cushion": 7.39,
+     "Epi": 7.19,
+     "Blood": 12.97,
+     "Mac": 2.18,
+     "Other": 52.85
+    },
+    "share_among_heart_lineage_cells_%": {
+     "Blood": 27.52,
+     "Endo": 18.73,
+     "CM": 18.21,
+     "Cushion": 15.68,
+     "Epi": 15.25,
+     "Mac": 4.62
+    }
+   },
+   "2": {
+    "cells": 4204,
+    "heart_lineage_share_%": 42.89,
+    "median_umi": 6435.5,
+    "lineage_shares_%": {
+     "CM": 11.2,
+     "Endo": 5.8,
+     "Cushion": 4.69,
+     "Epi": 3.4,
+     "Blood": 16.86,
+     "Mac": 0.93,
+     "Other": 57.11
+    },
+    "share_among_heart_lineage_cells_%": {
+     "Blood": 39.32,
+     "CM": 26.12,
+     "Endo": 13.53,
+     "Cushion": 10.93,
+     "Epi": 7.93,
+     "Mac": 2.16
+    }
+   },
+   "3": {
+    "cells": 11818,
+    "heart_lineage_share_%": 94.27,
+    "median_umi": 10384.5,
+    "lineage_shares_%": {
+     "CM": 18.73,
+     "Endo": 26.57,
+     "Cushion": 12.83,
+     "Epi": 18.96,
+     "Blood": 16.47,
+     "Mac": 0.71,
+     "Other": 5.73
+    },
+    "share_among_heart_lineage_cells_%": {
+     "Endo": 28.18,
+     "Epi": 20.11,
+     "CM": 19.86,
+     "Blood": 17.48,
+     "Cushion": 13.61,
+     "Mac": 0.75
+    }
+   }
+  },
+  "share_among_heart_lineage_cells_%": {
+   "Endo": 24.32,
+   "Blood": 22.24,
+   "CM": 20.11,
+   "Epi": 17.64,
+   "Cushion": 13.83,
+   "Mac": 1.85
+  }
+ },
+ "anchor": {
+  "nuclei": 5481,
+  "median_umi": 3058.999755859375,
+  "lineage_shares_%_nearest_library3_type": {
+   "CM": 42.09,
+   "Endo": 31.69,
+   "Cushion": 7.48,
+   "Epi": 6.15,
+   "Blood": 0.07,
+   "Mac": 3.08,
+   "Other": 9.43
+  },
+  "nearest_library3_type_%": {
+   "LV-CM": 28.99,
+   "Endocardium-2": 23.65,
+   "BEC": 7.06,
+   "OFT-CM": 6.6,
+   "pSHF": 6.35,
+   "Epicardium": 6.15,
+   "EndoMT Endocardium": 6.09,
+   "RV-CM": 3.21,
+   "Macrophage": 3.08,
+   "IFT-CM": 2.08,
+   "Pericardium": 1.79,
+   "Early VIC": 1.39,
+   "ST": 1.04,
+   "Endocardium-1": 0.99,
+   "SV-CM": 0.75,
+   "AVC-CM": 0.46,
+   "NCC": 0.13,
+   "Blood": 0.07,
+   "aPHM": 0.05,
+   "pPHM": 0.04,
+   "Gut Endoderm": 0.04
+  }
+ },
+ "round5_file": {
+  "base_cells": 2000,
+  "anchor_nuclei": 1200,
+  "anchor_share_%": 37.5,
+  "base_library_shares_%": {
+   "3": 50.25,
+   "1": 33.25,
+   "2": 16.5
+  },
+  "base_median_umi": 6973.50048828125,
+  "base_celltype_shares_%": {
+   "Endocardium-2": 20.9,
+   "Blood": 18.8,
+   "Pericardium": 16.15,
+   "Epicardium": 10.6,
+   "RV-CM": 9.4,
+   "Macrophage": 8.8,
+   "Early VIC": 5.25,
+   "NCC": 3.85,
+   "ST": 3.55,
+   "SV-CM": 2.25,
+   "AVC-CM": 0.45
+  },
+  "base_lineage_shares_%": {
+   "CM": 12.1,
+   "Endo": 20.9,
+   "Cushion": 5.25,
+   "Epi": 10.6,
+   "Blood": 18.8,
+   "Mac": 8.8,
+   "Other": 23.55
+  },
+  "anchor_lineage_shares_%": {
+   "CM": 43.92,
+   "Endo": 29.92,
+   "Cushion": 7.58,
+   "Epi": 6.83,
+   "Blood": 0.08,
+   "Mac": 3.5,
+   "Other": 8.17
+  },
+  "anchor_median_umi": 3026.0,
+  "whole_file_lineage_shares_%": {
+   "CM": 24.03,
+   "Endo": 24.28,
+   "Cushion": 6.12,
+   "Epi": 9.19,
+   "Blood": 11.78,
+   "Mac": 6.81,
+   "Other": 17.78
+  },
+  "base_celltypes_present": 11,
+  "celltypes_in_stage": 23
+ },
+ "round6_file": {
+  "base_cells": 3200,
+  "anchor_nuclei": 800,
+  "anchor_share_%": 20.0,
+  "base_library_shares_%": {
+   "3": 100.0
+  },
+  "base_median_umi": 10377.5,
+  "base_celltype_shares_%": {
+   "Epicardium": 19.59,
+   "Blood": 16.09,
+   "Endocardium-1": 11.19,
+   "Endocardium-2": 10.94,
+   "EndoMT Endocardium": 6.12,
+   "Early VIC": 5.75,
+   "RV-CM": 5.66,
+   "LV-CM": 5.56,
+   "BEC": 4.97,
+   "OFT-CM": 2.78,
+   "pSHF": 2.22,
+   "AVC-CM": 1.94,
+   "SV-CM": 1.62,
+   "IFT-CM": 1.22,
+   "Macrophage": 0.81,
+   "pPHM": 0.75,
+   "aPHM": 0.69,
+   "Hepatocyte": 0.53,
+   "ST": 0.53,
+   "Pericardium": 0.47,
+   "Surface Ectoderm": 0.44,
+   "NCC": 0.06,
+   "Gut Endoderm": 0.06
+  },
+  "base_lineage_shares_%": {
+   "CM": 18.78,
+   "Endo": 27.09,
+   "Cushion": 11.88,
+   "Epi": 19.59,
+   "Blood": 16.09,
+   "Mac": 0.81,
+   "Other": 5.75
+  },
+  "anchor_lineage_shares_%": {
+   "CM": 41.75,
+   "Endo": 31.75,
+   "Cushion": 7.38,
+   "Epi": 7.0,
+   "Blood": 0.0,
+   "Mac": 3.0,
+   "Other": 9.12
+  },
+  "anchor_median_umi": 2950.5,
+  "whole_file_lineage_shares_%": {
+   "CM": 23.38,
+   "Endo": 28.02,
+   "Cushion": 10.97,
+   "Epi": 17.08,
+   "Blood": 12.88,
+   "Mac": 1.25,
+   "Other": 6.42
+  },
+  "base_celltypes_present": 23,
+  "celltypes_in_stage": 23
+ }
+}

@@ -1,0 +1,70 @@
+[suite] gen      ready    12s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] p8/deep  ready    19s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] p8/all   ready    25s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+[suite] 2d/deep  ready    33s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] 2d/all   ready    40s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42  52.24  DES 0.525 DCS 0.554 MMD 0.506 CSS 0.503
+config=R7 candidate, k_prof 3 proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42  59.64  DES 0.598 DCS 0.634 MMD 0.595 CSS 0.549
+config=R7 candidate, k_prof 5 proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42  60.35  DES 0.591 DCS 0.643 MMD 0.599 CSS 0.576
+config=R7 candidate, k_prof 10 proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42  61.45  DES 0.612 DCS 0.648 MMD 0.605 CSS 0.590
+config=R7 candidate, k_prof 20 proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42  61.68  DES 0.612 DCS 0.653 MMD 0.606 CSS 0.594
+config=base only proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+config=R7 candidate, k_prof 3 proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=42  67.19  DES 0.635 DCS 0.755 MMD 0.656 CSS 0.637
+config=R7 candidate, k_prof 5 proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=42  66.20  DES 0.629 DCS 0.752 MMD 0.646 CSS 0.615
+config=R7 candidate, k_prof 10 proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=42  65.31  DES 0.625 DCS 0.747 MMD 0.638 CSS 0.594
+config=R7 candidate, k_prof 20 proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=42  64.72  DES 0.620 DCS 0.745 MMD 0.633 CSS 0.581
+config=base only proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  58.48  DES 0.512 DCS 0.665 MMD 0.595 CSS 0.560
+config=R7 candidate, k_prof 3 proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=42  67.19  DES 0.615 DCS 0.752 MMD 0.668 CSS 0.649
+config=R7 candidate, k_prof 5 proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=42  65.31  DES 0.592 DCS 0.746 MMD 0.652 CSS 0.616
+config=R7 candidate, k_prof 10 proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=42  63.79  DES 0.579 DCS 0.739 MMD 0.638 CSS 0.585
+config=R7 candidate, k_prof 20 proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=42  62.92  DES 0.571 DCS 0.733 MMD 0.632 CSS 0.568
+config=base only proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  53.31  DES 0.514 DCS 0.614 MMD 0.526 CSS 0.466
+config=R7 candidate, k_prof 3 proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42  62.95  DES 0.601 DCS 0.717 MMD 0.603 CSS 0.596
+config=R7 candidate, k_prof 5 proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42  61.78  DES 0.589 DCS 0.714 MMD 0.591 CSS 0.574
+config=R7 candidate, k_prof 10 proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42  60.78  DES 0.585 DCS 0.713 MMD 0.579 CSS 0.548
+config=R7 candidate, k_prof 20 proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42  60.04  DES 0.578 DCS 0.710 MMD 0.573 CSS 0.532
+config=base only proxy=2d/all split=development f=0.0 t=0.0 bwd=0.0 seed=42  48.44  DES 0.407 DCS 0.527 MMD 0.502 CSS 0.502
+config=R7 candidate, k_prof 3 proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=42  65.48  DES 0.610 DCS 0.721 MMD 0.637 CSS 0.654
+config=R7 candidate, k_prof 5 proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=42  63.15  DES 0.590 DCS 0.713 MMD 0.616 CSS 0.606
+config=R7 candidate, k_prof 10 proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=42  61.04  DES 0.567 DCS 0.706 MMD 0.598 CSS 0.563
+config=R7 candidate, k_prof 20 proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=42  60.04  DES 0.561 DCS 0.702 MMD 0.588 CSS 0.540
+done 123s
+proxy                      gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                          
+base only                52.24    60.22   58.48    53.31   48.44
+R7 candidate, k_prof 3   59.64    67.19   67.19    62.95   65.48
+R7 candidate, k_prof 5   60.35    66.20   65.31    61.78   63.15
+R7 candidate, k_prof 10  61.45    65.31   63.79    60.78   61.04
+R7 candidate, k_prof 20  61.68    64.72   62.92    60.04   60.04
+skill_de_score
+proxy                      gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                          
+base only                0.525    0.581   0.512    0.514   0.407
+R7 candidate, k_prof 3   0.598    0.635   0.615    0.601   0.610
+R7 candidate, k_prof 5   0.591    0.629   0.592    0.589   0.590
+R7 candidate, k_prof 10  0.612    0.625   0.579    0.585   0.567
+R7 candidate, k_prof 20  0.612    0.620   0.571    0.578   0.561
+skill_de_direction
+proxy                      gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                          
+base only                0.554    0.690   0.665    0.614   0.527
+R7 candidate, k_prof 3   0.634    0.755   0.752    0.717   0.721
+R7 candidate, k_prof 5   0.643    0.752   0.746    0.714   0.713
+R7 candidate, k_prof 10  0.648    0.747   0.739    0.713   0.706
+R7 candidate, k_prof 20  0.653    0.745   0.733    0.710   0.702
+skill_mmd_u
+proxy                      gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                          
+base only                0.506    0.597   0.595    0.526   0.502
+R7 candidate, k_prof 3   0.595    0.656   0.668    0.603   0.637
+R7 candidate, k_prof 5   0.599    0.646   0.652    0.591   0.616
+R7 candidate, k_prof 10  0.605    0.638   0.638    0.579   0.598
+R7 candidate, k_prof 20  0.606    0.633   0.632    0.573   0.588
+skill_variogram
+proxy                      gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                          
+base only                0.503    0.527   0.560    0.466   0.502
+R7 candidate, k_prof 3   0.549    0.637   0.649    0.596   0.654
+R7 candidate, k_prof 5   0.576    0.615   0.616    0.574   0.606
+R7 candidate, k_prof 10  0.590    0.594   0.585    0.548   0.563
+R7 candidate, k_prof 20  0.594    0.581   0.568    0.532   0.540

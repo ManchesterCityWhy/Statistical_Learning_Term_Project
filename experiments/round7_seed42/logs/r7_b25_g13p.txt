@@ -1,0 +1,90 @@
+[suite] gen      ready    12s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] p8/deep  ready    18s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] p8/all   ready    25s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+[suite] 2d/deep  ready    31s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] 2d/all   ready    38s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  52.24  DES 0.525 DCS 0.554 MMD 0.506 CSS 0.503
+config=base, a share of its cells thinned to the anchor depth (no anchor) proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  50.37  DES 0.505 DCS 0.535 MMD 0.517 CSS 0.444
+config=raw nuclei proxy=gen split=development f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  54.02  DES 0.542 DCS 0.598 MMD 0.559 CSS 0.438
+config=re-sequenced at source depth, moved back 1 proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  60.09  DES 0.598 DCS 0.641 MMD 0.588 CSS 0.574
+config=re-sequenced at source depth, not moved back proxy=gen split=development f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  57.13  DES 0.578 DCS 0.610 MMD 0.545 CSS 0.553
+config=re-sequenced at the nuclei's own depth, moved back 1 proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  56.52  DES 0.578 DCS 0.608 MMD 0.577 CSS 0.478
+config=re-sequenced at the nuclei's own depth, not moved back proxy=gen split=development f=0.15 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  55.11  DES 0.578 DCS 0.596 MMD 0.542 CSS 0.475
+config=base only proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+config=base, a share of its cells thinned to the anchor depth (no anchor) proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  61.95  DES 0.587 DCS 0.691 MMD 0.613 CSS 0.581
+config=raw nuclei proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  68.63  DES 0.641 DCS 0.759 MMD 0.676 CSS 0.667
+config=re-sequenced at source depth, moved back 1 proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  63.17  DES 0.599 DCS 0.730 MMD 0.618 CSS 0.570
+config=re-sequenced at source depth, not moved back proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  64.67  DES 0.617 DCS 0.742 MMD 0.636 CSS 0.580
+config=re-sequenced at the nuclei's own depth, moved back 1 proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  64.97  DES 0.608 DCS 0.727 MMD 0.637 CSS 0.625
+config=re-sequenced at the nuclei's own depth, not moved back proxy=p8/deep split=development f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  66.68  DES 0.626 DCS 0.744 MMD 0.654 CSS 0.641
+config=base only proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  58.48  DES 0.512 DCS 0.665 MMD 0.595 CSS 0.560
+config=base, a share of its cells thinned to the anchor depth (no anchor) proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  61.90  DES 0.527 DCS 0.676 MMD 0.630 CSS 0.645
+config=raw nuclei proxy=p8/all split=development f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  71.14  DES 0.656 DCS 0.771 MMD 0.700 CSS 0.723
+config=re-sequenced at source depth, moved back 1 proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  61.20  DES 0.540 DCS 0.721 MMD 0.613 CSS 0.564
+config=re-sequenced at source depth, not moved back proxy=p8/all split=development f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  63.03  DES 0.570 DCS 0.741 MMD 0.631 CSS 0.567
+config=re-sequenced at the nuclei's own depth, moved back 1 proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  65.32  DES 0.565 DCS 0.731 MMD 0.648 CSS 0.673
+config=re-sequenced at the nuclei's own depth, not moved back proxy=p8/all split=development f=0.18 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  67.50  DES 0.598 DCS 0.751 MMD 0.669 CSS 0.684
+config=base only proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  53.31  DES 0.514 DCS 0.614 MMD 0.526 CSS 0.466
+config=base, a share of its cells thinned to the anchor depth (no anchor) proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  55.53  DES 0.524 DCS 0.620 MMD 0.553 CSS 0.518
+config=raw nuclei proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  63.78  DES 0.603 DCS 0.713 MMD 0.629 CSS 0.600
+config=re-sequenced at source depth, moved back 1 proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  57.57  DES 0.545 DCS 0.687 MMD 0.553 CSS 0.511
+config=re-sequenced at source depth, not moved back proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  59.82  DES 0.575 DCS 0.704 MMD 0.578 CSS 0.526
+config=re-sequenced at the nuclei's own depth, moved back 1 proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  59.26  DES 0.555 DCS 0.678 MMD 0.578 CSS 0.554
+config=re-sequenced at the nuclei's own depth, not moved back proxy=2d/deep split=development f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  61.48  DES 0.578 DCS 0.695 MMD 0.601 CSS 0.581
+config=base only proxy=2d/all split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  48.44  DES 0.407 DCS 0.527 MMD 0.502 CSS 0.502
+config=base, a share of its cells thinned to the anchor depth (no anchor) proxy=2d/all split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  54.30  DES 0.454 DCS 0.550 MMD 0.558 CSS 0.623
+config=raw nuclei proxy=2d/all split=development f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  68.27  DES 0.617 DCS 0.724 MMD 0.668 CSS 0.735
+config=re-sequenced at source depth, moved back 1 proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  57.15  DES 0.511 DCS 0.688 MMD 0.556 CSS 0.525
+config=re-sequenced at source depth, not moved back proxy=2d/all split=development f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  59.09  DES 0.557 DCS 0.699 MMD 0.571 CSS 0.528
+config=re-sequenced at the nuclei's own depth, moved back 1 proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=0.0  62.59  DES 0.558 DCS 0.689 MMD 0.604 CSS 0.665
+config=re-sequenced at the nuclei's own depth, not moved back proxy=2d/all split=development f=0.3 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  64.41  DES 0.580 DCS 0.703 MMD 0.622 CSS 0.685
+done 156s
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           52.24    60.22   58.48    53.31   48.44
+base, a share of its cells thinned to the anchor depth (no anchor)  50.37    61.95   61.90    55.53   54.30
+raw nuclei                                                          54.02    68.63   71.14    63.78   68.27
+re-sequenced at source depth, moved back 1                          60.09    63.17   61.20    57.57   57.15
+re-sequenced at source depth, not moved back                        57.13    64.67   63.03    59.82   59.09
+re-sequenced at the nuclei's own depth, moved back 1                56.52    64.97   65.32    59.26   62.59
+re-sequenced at the nuclei's own depth, not moved back              55.11    66.68   67.50    61.48   64.41
+skill_de_score
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           0.525    0.581   0.512    0.514   0.407
+base, a share of its cells thinned to the anchor depth (no anchor)  0.505    0.587   0.527    0.524   0.454
+raw nuclei                                                          0.542    0.641   0.656    0.603   0.617
+re-sequenced at source depth, moved back 1                          0.598    0.599   0.540    0.545   0.511
+re-sequenced at source depth, not moved back                        0.578    0.617   0.570    0.575   0.557
+re-sequenced at the nuclei's own depth, moved back 1                0.578    0.608   0.565    0.555   0.558
+re-sequenced at the nuclei's own depth, not moved back              0.578    0.626   0.598    0.578   0.580
+skill_de_direction
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           0.554    0.690   0.665    0.614   0.527
+base, a share of its cells thinned to the anchor depth (no anchor)  0.535    0.691   0.676    0.620   0.550
+raw nuclei                                                          0.598    0.759   0.771    0.713   0.724
+re-sequenced at source depth, moved back 1                          0.641    0.730   0.721    0.687   0.688
+re-sequenced at source depth, not moved back                        0.610    0.742   0.741    0.704   0.699
+re-sequenced at the nuclei's own depth, moved back 1                0.608    0.727   0.731    0.678   0.689
+re-sequenced at the nuclei's own depth, not moved back              0.596    0.744   0.751    0.695   0.703
+skill_mmd_u
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           0.506    0.597   0.595    0.526   0.502
+base, a share of its cells thinned to the anchor depth (no anchor)  0.517    0.613   0.630    0.553   0.558
+raw nuclei                                                          0.559    0.676   0.700    0.629   0.668
+re-sequenced at source depth, moved back 1                          0.588    0.618   0.613    0.553   0.556
+re-sequenced at source depth, not moved back                        0.545    0.636   0.631    0.578   0.571
+re-sequenced at the nuclei's own depth, moved back 1                0.577    0.637   0.648    0.578   0.604
+re-sequenced at the nuclei's own depth, not moved back              0.542    0.654   0.669    0.601   0.622
+skill_variogram
+proxy                                                                 gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                                     
+base only                                                           0.503    0.527   0.560    0.466   0.502
+base, a share of its cells thinned to the anchor depth (no anchor)  0.444    0.581   0.645    0.518   0.623
+raw nuclei                                                          0.438    0.667   0.723    0.600   0.735
+re-sequenced at source depth, moved back 1                          0.574    0.570   0.564    0.511   0.525
+re-sequenced at source depth, not moved back                        0.553    0.580   0.567    0.526   0.528
+re-sequenced at the nuclei's own depth, moved back 1                0.478    0.625   0.673    0.554   0.665
+re-sequenced at the nuclei's own depth, not moved back              0.475    0.641   0.684    0.581   0.685

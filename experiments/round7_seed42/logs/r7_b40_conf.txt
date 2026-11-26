@@ -1,0 +1,170 @@
+[suite] gen      ready    14s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] p8/deep  ready    19s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] p8/all   ready    24s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] 2d/deep  ready    30s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    36s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  51.79  DES 0.509 DCS 0.552 MMD 0.506 CSS 0.504
+config=R7h: file recipe (two-witness + trend) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.09  DES 0.594 DCS 0.658 MMD 0.610 CSS 0.575
+config=R7h without two-witness (trend only) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.09  DES 0.594 DCS 0.658 MMD 0.610 CSS 0.575
+config=R8 forward 0.5 guarded + trend proxy=gen split=confirmation f=0.15 t=0.0833 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.55  DES 0.594 DCS 0.656 MMD 0.596 CSS 0.572
+config=R8 forward 1 guarded + trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.53  DES 0.582 DCS 0.647 MMD 0.582 CSS 0.568
+config=R8 forward 1 unguarded + trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.92  DES 0.588 DCS 0.651 MMD 0.585 CSS 0.570
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=gen split=confirmation f=0.15 t=0.0833 bwd=1.0 seed=42 two_witness=False trend_days=0.0  58.09  DES 0.570 DCS 0.626 MMD 0.574 CSS 0.549
+config=R8 forward 1 whole ratio guarded, no trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=0.0  56.58  DES 0.559 DCS 0.608 MMD 0.554 CSS 0.539
+config=R8 forward 1 guarded + two-witness + trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.53  DES 0.582 DCS 0.647 MMD 0.582 CSS 0.568
+config=round 6 file (raw anchor, rho 0.4) proxy=gen split=confirmation f=0.0667 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  55.49  DES 0.553 DCS 0.589 MMD 0.550 CSS 0.520
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  52.97  DES 0.500 DCS 0.595 MMD 0.516 CSS 0.506
+config=R7h: file recipe (two-witness + trend) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.53  DES 0.582 DCS 0.683 MMD 0.614 CSS 0.575
+config=R7h without two-witness (trend only) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.53  DES 0.582 DCS 0.683 MMD 0.614 CSS 0.575
+config=R8 forward 0.5 guarded + trend proxy=gen split=confirmation f=0.15 t=0.0833 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.00  DES 0.582 DCS 0.678 MMD 0.601 CSS 0.574
+config=R8 forward 1 guarded + trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.40  DES 0.582 DCS 0.673 MMD 0.587 CSS 0.572
+config=R8 forward 1 unguarded + trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.74  DES 0.588 DCS 0.676 MMD 0.590 CSS 0.572
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=gen split=confirmation f=0.15 t=0.0833 bwd=1.0 seed=7 two_witness=False trend_days=0.0  58.83  DES 0.564 DCS 0.650 MMD 0.579 CSS 0.555
+config=R8 forward 1 whole ratio guarded, no trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=0.0  57.66  DES 0.559 DCS 0.639 MMD 0.558 CSS 0.548
+config=R8 forward 1 guarded + two-witness + trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.40  DES 0.582 DCS 0.673 MMD 0.587 CSS 0.572
+config=round 6 file (raw anchor, rho 0.4) proxy=gen split=confirmation f=0.0667 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  55.26  DES 0.528 DCS 0.617 MMD 0.552 CSS 0.504
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  60.34  DES 0.579 DCS 0.690 MMD 0.597 CSS 0.534
+config=R7h: file recipe (two-witness + trend) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.21  DES 0.614 DCS 0.734 MMD 0.631 CSS 0.579
+config=R7h without two-witness (trend only) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  63.55  DES 0.603 DCS 0.729 MMD 0.626 CSS 0.574
+config=R8 forward 0.5 guarded + trend proxy=p8/deep split=confirmation f=0.18 t=0.1 bwd=1.0 seed=42 two_witness=False trend_days=1.0  64.04  DES 0.613 DCS 0.733 MMD 0.628 CSS 0.577
+config=R8 forward 1 guarded + trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=False trend_days=1.0  64.40  DES 0.619 DCS 0.738 MMD 0.629 CSS 0.580
+config=R8 forward 1 unguarded + trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=False trend_days=1.0  64.30  DES 0.618 DCS 0.736 MMD 0.628 CSS 0.580
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=p8/deep split=confirmation f=0.18 t=0.1 bwd=1.0 seed=42 two_witness=False trend_days=0.0  64.78  DES 0.631 DCS 0.739 MMD 0.635 CSS 0.573
+config=R8 forward 1 whole ratio guarded, no trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=False trend_days=0.0  65.74  DES 0.650 DCS 0.750 MMD 0.640 CSS 0.578
+config=R8 forward 1 guarded + two-witness + trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.93  DES 0.627 DCS 0.742 MMD 0.634 CSS 0.584
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/deep split=confirmation f=0.08 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  64.97  DES 0.617 DCS 0.727 MMD 0.641 CSS 0.608
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  60.52  DES 0.577 DCS 0.694 MMD 0.599 CSS 0.539
+config=R7h: file recipe (two-witness + trend) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.0  63.71  DES 0.610 DCS 0.731 MMD 0.627 CSS 0.570
+config=R7h without two-witness (trend only) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  63.10  DES 0.601 DCS 0.725 MMD 0.621 CSS 0.566
+config=R8 forward 0.5 guarded + trend proxy=p8/deep split=confirmation f=0.18 t=0.1 bwd=1.0 seed=7 two_witness=False trend_days=1.0  63.58  DES 0.611 DCS 0.730 MMD 0.623 CSS 0.568
+config=R8 forward 1 guarded + trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=False trend_days=1.0  63.97  DES 0.618 DCS 0.735 MMD 0.624 CSS 0.571
+config=R8 forward 1 unguarded + trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=False trend_days=1.0  63.88  DES 0.616 DCS 0.735 MMD 0.623 CSS 0.571
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=p8/deep split=confirmation f=0.18 t=0.1 bwd=1.0 seed=7 two_witness=False trend_days=0.0  64.36  DES 0.629 DCS 0.736 MMD 0.631 CSS 0.565
+config=R8 forward 1 whole ratio guarded, no trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=False trend_days=0.0  65.31  DES 0.648 DCS 0.746 MMD 0.635 CSS 0.570
+config=R8 forward 1 guarded + two-witness + trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=True trend_days=1.0  64.47  DES 0.624 DCS 0.740 MMD 0.629 CSS 0.575
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/deep split=confirmation f=0.08 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  64.20  DES 0.609 DCS 0.722 MMD 0.632 CSS 0.598
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  57.53  DES 0.495 DCS 0.656 MMD 0.587 CSS 0.558
+config=R7h: file recipe (two-witness + trend) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  60.76  DES 0.535 DCS 0.710 MMD 0.618 CSS 0.557
+config=R7h without two-witness (trend only) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.54  DES 0.532 DCS 0.707 MMD 0.615 CSS 0.556
+config=R8 forward 0.5 guarded + trend proxy=p8/all split=confirmation f=0.18 t=0.1 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.70  DES 0.536 DCS 0.710 MMD 0.615 CSS 0.555
+config=R8 forward 1 guarded + trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.03  DES 0.546 DCS 0.714 MMD 0.615 CSS 0.554
+config=R8 forward 1 unguarded + trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.94  DES 0.545 DCS 0.712 MMD 0.614 CSS 0.555
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=p8/all split=confirmation f=0.18 t=0.1 bwd=1.0 seed=42 two_witness=False trend_days=0.0  61.53  DES 0.568 DCS 0.709 MMD 0.619 CSS 0.551
+config=R8 forward 1 whole ratio guarded, no trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=False trend_days=0.0  63.70  DES 0.622 DCS 0.721 MMD 0.635 CSS 0.554
+config=R8 forward 1 guarded + two-witness + trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=True trend_days=1.0  61.33  DES 0.553 DCS 0.715 MMD 0.618 CSS 0.555
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/all split=confirmation f=0.08 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  64.05  DES 0.575 DCS 0.714 MMD 0.639 CSS 0.633
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  57.07  DES 0.492 DCS 0.650 MMD 0.585 CSS 0.548
+config=R7h: file recipe (two-witness + trend) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.0  60.68  DES 0.545 DCS 0.703 MMD 0.615 CSS 0.552
+config=R7h without two-witness (trend only) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.26  DES 0.535 DCS 0.700 MMD 0.612 CSS 0.551
+config=R8 forward 0.5 guarded + trend proxy=p8/all split=confirmation f=0.18 t=0.1 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.54  DES 0.542 DCS 0.706 MMD 0.612 CSS 0.550
+config=R8 forward 1 guarded + trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.92  DES 0.555 DCS 0.709 MMD 0.612 CSS 0.549
+config=R8 forward 1 unguarded + trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.74  DES 0.550 DCS 0.707 MMD 0.611 CSS 0.549
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=p8/all split=confirmation f=0.18 t=0.1 bwd=1.0 seed=7 two_witness=False trend_days=0.0  61.27  DES 0.572 DCS 0.702 MMD 0.616 CSS 0.546
+config=R8 forward 1 whole ratio guarded, no trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=False trend_days=0.0  63.33  DES 0.624 DCS 0.714 MMD 0.631 CSS 0.548
+config=R8 forward 1 guarded + two-witness + trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=True trend_days=1.0  61.15  DES 0.558 DCS 0.711 MMD 0.614 CSS 0.550
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/all split=confirmation f=0.08 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  63.80  DES 0.581 DCS 0.707 MMD 0.639 CSS 0.622
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  53.39  DES 0.514 DCS 0.615 MMD 0.525 CSS 0.470
+config=R7h: file recipe (two-witness + trend) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.10  DES 0.570 DCS 0.694 MMD 0.568 CSS 0.523
+config=R7h without two-witness (trend only) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.10  DES 0.570 DCS 0.694 MMD 0.568 CSS 0.523
+config=R8 forward 0.5 guarded + trend proxy=2d/deep split=confirmation f=0.3 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.72  DES 0.579 DCS 0.702 MMD 0.570 CSS 0.530
+config=R8 forward 1 guarded + trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.20  DES 0.586 DCS 0.707 MMD 0.571 CSS 0.536
+config=R8 forward 1 unguarded + trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.00  DES 0.584 DCS 0.706 MMD 0.569 CSS 0.534
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=2d/deep split=confirmation f=0.3 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=0.0  59.67  DES 0.596 DCS 0.698 MMD 0.567 CSS 0.515
+config=R8 forward 1 whole ratio guarded, no trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=0.0  59.73  DES 0.603 DCS 0.707 MMD 0.553 CSS 0.519
+config=R8 forward 1 guarded + two-witness + trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.20  DES 0.586 DCS 0.707 MMD 0.571 CSS 0.536
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/deep split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  59.71  DES 0.565 DCS 0.681 MMD 0.582 CSS 0.555
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  53.20  DES 0.514 DCS 0.616 MMD 0.522 CSS 0.465
+config=R7h: file recipe (two-witness + trend) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.49  DES 0.574 DCS 0.694 MMD 0.574 CSS 0.530
+config=R7h without two-witness (trend only) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.49  DES 0.574 DCS 0.694 MMD 0.574 CSS 0.530
+config=R8 forward 0.5 guarded + trend proxy=2d/deep split=confirmation f=0.3 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.09  DES 0.581 DCS 0.703 MMD 0.576 CSS 0.536
+config=R8 forward 1 guarded + trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.57  DES 0.589 DCS 0.709 MMD 0.576 CSS 0.542
+config=R8 forward 1 unguarded + trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.26  DES 0.584 DCS 0.705 MMD 0.574 CSS 0.540
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=2d/deep split=confirmation f=0.3 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=0.0  59.88  DES 0.596 DCS 0.698 MMD 0.571 CSS 0.521
+config=R8 forward 1 whole ratio guarded, no trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=0.0  60.00  DES 0.607 DCS 0.706 MMD 0.556 CSS 0.526
+config=R8 forward 1 guarded + two-witness + trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.57  DES 0.589 DCS 0.709 MMD 0.576 CSS 0.542
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/deep split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  59.05  DES 0.565 DCS 0.673 MMD 0.576 CSS 0.540
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  48.13  DES 0.395 DCS 0.526 MMD 0.502 CSS 0.502
+config=R7h: file recipe (two-witness + trend) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.34  DES 0.539 DCS 0.683 MMD 0.577 CSS 0.524
+config=R7h without two-witness (trend only) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.34  DES 0.539 DCS 0.683 MMD 0.577 CSS 0.524
+config=R8 forward 0.5 guarded + trend proxy=2d/all split=confirmation f=0.3 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.43  DES 0.542 DCS 0.686 MMD 0.575 CSS 0.524
+config=R8 forward 1 guarded + trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.69  DES 0.547 DCS 0.691 MMD 0.575 CSS 0.525
+config=R8 forward 1 unguarded + trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.50  DES 0.543 DCS 0.689 MMD 0.573 CSS 0.525
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=2d/all split=confirmation f=0.3 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=0.0  59.40  DES 0.599 DCS 0.677 MMD 0.575 CSS 0.512
+config=R8 forward 1 whole ratio guarded, no trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=0.0  61.11  DES 0.631 DCS 0.682 MMD 0.597 CSS 0.518
+config=R8 forward 1 guarded + two-witness + trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.69  DES 0.547 DCS 0.691 MMD 0.575 CSS 0.525
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/all split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  63.30  DES 0.622 DCS 0.715 MMD 0.587 CSS 0.615
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  48.14  DES 0.387 DCS 0.531 MMD 0.505 CSS 0.503
+config=R7h: file recipe (two-witness + trend) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  57.77  DES 0.525 DCS 0.672 MMD 0.577 CSS 0.527
+config=R7h without two-witness (trend only) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  57.77  DES 0.525 DCS 0.672 MMD 0.577 CSS 0.527
+config=R8 forward 0.5 guarded + trend proxy=2d/all split=confirmation f=0.3 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  58.08  DES 0.534 DCS 0.677 MMD 0.575 CSS 0.527
+config=R8 forward 1 guarded + trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  58.25  DES 0.535 DCS 0.682 MMD 0.575 CSS 0.528
+config=R8 forward 1 unguarded + trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  58.07  DES 0.534 DCS 0.678 MMD 0.573 CSS 0.528
+config=R8 forward 0.5 whole ratio guarded, no trend proxy=2d/all split=confirmation f=0.3 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=0.0  58.64  DES 0.575 DCS 0.670 MMD 0.574 CSS 0.515
+config=R8 forward 1 whole ratio guarded, no trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=0.0  60.76  DES 0.618 DCS 0.679 MMD 0.596 CSS 0.522
+config=R8 forward 1 guarded + two-witness + trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  58.25  DES 0.535 DCS 0.682 MMD 0.575 CSS 0.528
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/all split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  61.98  DES 0.589 DCS 0.682 MMD 0.591 CSS 0.624
+done 285s
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     52.38    60.43   57.30    53.29   48.14
+R7h: file recipe (two-witness + trend)        61.31    63.96   60.72    59.30   58.05
+R7h without two-witness (trend only)          61.31    63.32   60.40    59.30   58.05
+R8 forward 0.5 guarded + trend                60.78    63.81   60.62    59.90   58.26
+R8 forward 1 guarded + trend                  59.97    64.18   60.98    60.38   58.47
+R8 forward 1 unguarded + trend                60.33    64.09   60.84    60.13   58.29
+R8 forward 0.5 whole ratio guarded, no trend  58.46    64.57   61.40    59.78   59.02
+R8 forward 1 whole ratio guarded, no trend    57.12    65.53   63.51    59.87   60.93
+R8 forward 1 guarded + two-witness + trend    59.97    64.70   61.24    60.38   58.47
+round 6 file (raw anchor, rho 0.4)            55.37    64.58   63.92    59.38   62.64
+skill_de_score
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.504    0.578   0.493    0.514   0.391
+R7h: file recipe (two-witness + trend)        0.588    0.612   0.540    0.572   0.532
+R7h without two-witness (trend only)          0.588    0.602   0.533    0.572   0.532
+R8 forward 0.5 guarded + trend                0.588    0.612   0.539    0.580   0.538
+R8 forward 1 guarded + trend                  0.582    0.618   0.550    0.588   0.541
+R8 forward 1 unguarded + trend                0.588    0.617   0.548    0.584   0.538
+R8 forward 0.5 whole ratio guarded, no trend  0.567    0.630   0.570    0.596   0.587
+R8 forward 1 whole ratio guarded, no trend    0.559    0.649   0.623    0.605   0.625
+R8 forward 1 guarded + two-witness + trend    0.582    0.626   0.556    0.588   0.541
+round 6 file (raw anchor, rho 0.4)            0.541    0.613   0.578    0.565   0.605
+skill_de_direction
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.574    0.692   0.653    0.615   0.529
+R7h: file recipe (two-witness + trend)        0.670    0.732   0.706    0.694   0.678
+R7h without two-witness (trend only)          0.670    0.727   0.704    0.694   0.678
+R8 forward 0.5 guarded + trend                0.667    0.731   0.708    0.702   0.682
+R8 forward 1 guarded + trend                  0.660    0.736   0.711    0.708   0.687
+R8 forward 1 unguarded + trend                0.664    0.736   0.709    0.706   0.684
+R8 forward 0.5 whole ratio guarded, no trend  0.638    0.738   0.706    0.698   0.674
+R8 forward 1 whole ratio guarded, no trend    0.624    0.748   0.718    0.706   0.681
+R8 forward 1 guarded + two-witness + trend    0.660    0.741   0.713    0.708   0.687
+round 6 file (raw anchor, rho 0.4)            0.603    0.724   0.711    0.677   0.698
+skill_mmd_u
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.511    0.598   0.586    0.524   0.503
+R7h: file recipe (two-witness + trend)        0.612    0.629   0.616    0.571   0.577
+R7h without two-witness (trend only)          0.612    0.624   0.614    0.571   0.577
+R8 forward 0.5 guarded + trend                0.599    0.625   0.613    0.573   0.575
+R8 forward 1 guarded + trend                  0.584    0.627   0.614    0.574   0.575
+R8 forward 1 unguarded + trend                0.588    0.625   0.613    0.571   0.573
+R8 forward 0.5 whole ratio guarded, no trend  0.576    0.633   0.617    0.569   0.575
+R8 forward 1 whole ratio guarded, no trend    0.556    0.637   0.633    0.555   0.597
+R8 forward 1 guarded + two-witness + trend    0.584    0.631   0.616    0.574   0.575
+round 6 file (raw anchor, rho 0.4)            0.551    0.637   0.639    0.579   0.589
+skill_variogram
+proxy                                           gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                               
+base only                                     0.505    0.537   0.553    0.467   0.502
+R7h: file recipe (two-witness + trend)        0.575    0.574   0.554    0.527   0.526
+R7h without two-witness (trend only)          0.575    0.570   0.554    0.527   0.526
+R8 forward 0.5 guarded + trend                0.573    0.573   0.552    0.533   0.525
+R8 forward 1 guarded + trend                  0.570    0.576   0.552    0.539   0.527
+R8 forward 1 unguarded + trend                0.571    0.575   0.552    0.537   0.527
+R8 forward 0.5 whole ratio guarded, no trend  0.552    0.569   0.549    0.518   0.513
+R8 forward 1 whole ratio guarded, no trend    0.544    0.574   0.551    0.523   0.520
+R8 forward 1 guarded + two-witness + trend    0.570    0.580   0.552    0.539   0.527
+round 6 file (raw anchor, rho 0.4)            0.512    0.603   0.627    0.548   0.619

@@ -1,0 +1,70 @@
+truth pool 3939 recipe pool 7879 | nuclei 2192 3289
+recipes built {'round 7, all synthetic': 5000, 'round 7, half real (the file)': 5000, "round 6 file's recipe": 4000, 'library 3 as it is': 5000}
+T0 done
+T1 done
+T2 done
+T3 done
+T4 done
+recipe                                        round 7, all synthetic  round 7, half real (the file)  round 6 file's recipe  library 3 as it is
+truth                                                                                                                                         
+library 3 as it is                                             81.43                          85.52                  90.77               99.67
+real cells, expression moved                                   90.45                          93.94                  90.91               93.56
+real cells, composition moved (0.45)                           83.49                          88.70                  84.83               92.91
+real cells, composition and expression moved                   93.99                          97.74                  85.86               86.99
+all-synthetic round-7 construction                             99.76                          99.16                  86.43               81.84
+round 7, half real (the file) minus round 7, all synthetic:
+                                              mean   std
+truth                                                   
+library 3 as it is                            4.09  0.21
+real cells, expression moved                  3.49  0.21
+real cells, composition moved (0.45)          5.21  0.08
+real cells, composition and expression moved  3.75  0.32
+all-synthetic round-7 construction           -0.60  0.10
+round 7, half real (the file) minus round 6 file's recipe:
+                                               mean   std
+truth                                                    
+library 3 as it is                            -5.25  2.19
+real cells, expression moved                   3.03  2.23
+real cells, composition moved (0.45)           3.87  1.37
+real cells, composition and expression moved  11.88  0.73
+all-synthetic round-7 construction            12.73  0.45
+round 7, all synthetic minus round 6 file's recipe:
+                                               mean   std
+truth                                                    
+library 3 as it is                            -9.34  1.98
+real cells, expression moved                  -0.46  2.14
+real cells, composition moved (0.45)          -1.34  1.30
+real cells, composition and expression moved   8.13  0.87
+all-synthetic round-7 construction            13.33  0.55
+DES
+recipe                                        round 7, all synthetic  round 7, half real (the file)  round 6 file's recipe  library 3 as it is
+truth                                                                                                                                         
+library 3 as it is                                             0.770                          0.779                  0.874               1.000
+real cells, expression moved                                   0.875                          0.903                  0.820               0.842
+real cells, composition moved (0.45)                           0.813                          0.828                  0.853               0.898
+real cells, composition and expression moved                   0.939                          0.970                  0.801               0.767
+all-synthetic round-7 construction                             1.000                          0.999                  0.816               0.763
+DCS
+recipe                                        round 7, all synthetic  round 7, half real (the file)  round 6 file's recipe  library 3 as it is
+truth                                                                                                                                         
+library 3 as it is                                             0.920                          0.952                  0.997               1.000
+real cells, expression moved                                   0.968                          0.997                  0.991               1.000
+real cells, composition moved (0.45)                           0.949                          0.989                  0.969               0.998
+real cells, composition and expression moved                   0.978                          1.000                  0.947               0.944
+all-synthetic round-7 construction                             1.000                          1.000                  0.943               0.874
+MMD
+recipe                                        round 7, all synthetic  round 7, half real (the file)  round 6 file's recipe  library 3 as it is
+truth                                                                                                                                         
+library 3 as it is                                             0.801                          0.849                  0.913               0.989
+real cells, expression moved                                   0.891                          0.920                  0.935               0.946
+real cells, composition moved (0.45)                           0.810                          0.872                  0.842               0.906
+real cells, composition and expression moved                   0.929                          0.963                  0.889               0.887
+all-synthetic round-7 construction                             0.992                          0.979                  0.882               0.822
+CSS
+recipe                                        round 7, all synthetic  round 7, half real (the file)  round 6 file's recipe  library 3 as it is
+truth                                                                                                                                         
+library 3 as it is                                             0.757                          0.839                  0.830               1.000
+real cells, expression moved                                   0.883                          0.943                  0.880               0.956
+real cells, composition moved (0.45)                           0.757                          0.857                  0.701               0.917
+real cells, composition and expression moved                   0.910                          0.979                  0.775               0.881
+all-synthetic round-7 construction                             1.000                          0.990                  0.800               0.812

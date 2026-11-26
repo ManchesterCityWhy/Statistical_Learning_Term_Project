@@ -1,0 +1,6 @@
+total 93388
+drwxr-xr-x  2 andreib180 andreib180     4096 2026-11-26 15:06:34.149132427 +0800 .
+drwxr-xr-x 25 andreib180 andreib180     4096 2026-11-26 15:05:30.706534928 +0800 ..
+-rw-r--r--  1 andreib180 andreib180 95491702 2026-11-26 15:06:20.842355547 +0800 E12.5_prediction.h5ad
+-rw-r--r--  1 andreib180 andreib180    16540 2026-11-26 15:06:34.149132427 +0800 manifest.json
+-rw-r--r--  1 andreib180 andreib180    99304 2026-11-26 15:06:34.149132427 +0800 provenance.npz

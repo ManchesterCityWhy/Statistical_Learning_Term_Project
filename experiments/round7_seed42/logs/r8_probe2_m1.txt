@@ -1,0 +1,9 @@
+library 3 11818 free of h1 10813 truth pool 3604 file pool 7209 12s
+file K0: genes median 3949.5, CM 0.291 Endo 0.280 Cushion 0.108 Epi 0.130 Blood 0.096 Mac 0.017 Other 0.078 25s
+file mix0.35: genes median 3974.5, CM 0.291 Endo 0.280 Cushion 0.108 Epi 0.130 Blood 0.096 Mac 0.017 Other 0.078 33s
+file mix0.5: genes median 4012.0, CM 0.291 Endo 0.280 Cushion 0.108 Epi 0.130 Blood 0.096 Mac 0.017 Other 0.078 41s
+file mix0.75: genes median 4055.0, CM 0.291 Endo 0.280 Cushion 0.108 Epi 0.130 Blood 0.096 Mac 0.017 Other 0.078 50s
+[mix0                  ] D 0.00565 (se 0.00016)  h1-if-true  72.54  de_score 0.721 de_direction 0.834 mmd_u 0.736 variogram 0.580  | blood 0.092 CM 0.262 genes 3847  | files: K0 98.43  mix0.35 97.03  mix0.5 94.49  mix0.75 90.34  100s
+[K0                    ] D 0.00534 (se 0.00024)  h1-if-true  72.49  de_score 0.726 de_direction 0.819 mmd_u 0.740 variogram 0.583  | blood 0.092 CM 0.262 genes 3936  | files: K0 99.56  mix0.35 99.53  mix0.5 98.83  mix0.75 96.20  161s
+[mix0.35               ] D 0.00490 (se 0.00026)  h1-if-true  72.08  de_score 0.721 de_direction 0.808 mmd_u 0.739 variogram 0.584  | blood 0.092 CM 0.262 genes 3962  | files: K0 99.29  mix0.35 99.54  mix0.5 99.41  mix0.75 97.69  225s
+done 225s

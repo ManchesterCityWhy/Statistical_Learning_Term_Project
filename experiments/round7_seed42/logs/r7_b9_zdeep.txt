@@ -1,0 +1,28 @@
+probe library shares {'1': 0.319, '2': 0.166, '3': 0.515}
+[zero/heart/deep] probe actual 71.03  de_score 0.722 de_direction 0.825 mmd_u 0.716 variogram 0.543 45s
+[zero/heart/deep] f0.3 dev0                                     actual  93.94  D 0.00053  probe-if-true  69.99
+[zero/heart/deep] f0.3 dev0.5                                   actual  90.45  D 0.00118  probe-if-true  71.10
+[zero/heart/deep] f0.375 dev0                                   actual  89.86  D 0.00080  probe-if-true  69.14
+[zero/heart/deep] f0.375 dev0.5                                 actual  86.46  D 0.00114  probe-if-true  70.31
+[zero/heart/deep] f0.45 dev0                                    actual  86.94  D 0.00099  probe-if-true  69.41
+[zero/heart/deep] f0.45 dev0.5                                  actual  83.35  D 0.00174  probe-if-true  70.21
+[zero/heart/deep] f0.6 dev0                                     actual  81.07  D 0.00172  probe-if-true  68.29
+[zero/heart/deep] f0.6 dev0.5                                   actual  77.35  D 0.00203  probe-if-true  69.19
+[zero/heart/deep] ref composition only tc0.3                    actual  98.48  D 0.00297  probe-if-true  66.06
+[zero/heart/deep] ref composition only tc0.45                   actual  95.10  D 0.00761  probe-if-true  63.03
+
+=== zero/heart/deep
+                              actual       D  D_seed_se  probe_total  skill_de_score  skill_de_direction  skill_mmd_u  skill_variogram
+recipe                                                                                                                                
+f0.3 dev0                    93.9368  0.0005     0.0000      69.9893          0.6871              0.8074       0.7086           0.5685
+f0.375 dev0                  89.8562  0.0008     0.0001      69.1371          0.6790              0.7970       0.7001           0.5616
+f0.45 dev0                   86.9432  0.0010     0.0000      69.4087          0.6805              0.7895       0.7050           0.5754
+f0.375 dev0.5                86.4587  0.0011     0.0001      70.3065          0.6771              0.7931       0.7287           0.5844
+f0.3 dev0.5                  90.4504  0.0012     0.0001      71.1035          0.6813              0.8022       0.7388           0.5926
+f0.45 dev0.5                 83.3517  0.0017     0.0002      70.2082          0.6686              0.7860       0.7296           0.5978
+f0.6 dev0                    81.0708  0.0017     0.0002      68.2895          0.6704              0.7700       0.6949           0.5718
+f0.6 dev0.5                  77.3458  0.0020     0.0001      69.1850          0.6688              0.7669       0.7149           0.5922
+ref composition only tc0.3   98.4848  0.0030     0.0005      66.0581          0.6722              0.8108       0.6432           0.4844
+ref composition only tc0.45  95.0960  0.0076     0.0004      63.0269          0.6596              0.7928       0.5986           0.4381
+rule picks 'f0.3 dev0': actual 93.94, rank 1/8, best 93.94, regret 0.00, median 86.70; Spearman(actual, D) = -0.833
+done 490s

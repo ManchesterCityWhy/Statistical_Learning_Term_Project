@@ -1,0 +1,172 @@
+[suite] 2d/deep  ready    12s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+config=base only proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42  53.31  DES 0.514 DCS 0.614 MMD 0.526 CSS 0.466
+config=R6b mix rho.4 proxy=2d/deep split=development f=0.1333 t=0.0 bwd=0.0 seed=42  59.63  DES 0.563 DCS 0.679 MMD 0.582 CSS 0.555
+config=R6v1 mix rho.75 proxy=2d/deep split=development f=0.25 t=0.0 bwd=0.0 seed=42  63.30  DES 0.597 DCS 0.711 MMD 0.621 CSS 0.598
+config=mix rho1 proxy=2d/deep split=development f=0.3333 t=0.0 bwd=0.0 seed=42  64.75  DES 0.609 DCS 0.722 MMD 0.644 CSS 0.608
+config=bwd1 rho0.4 proxy=2d/deep split=development f=0.1333 t=0.0 bwd=1.0 seed=42  59.00  DES 0.558 DCS 0.670 MMD 0.577 CSS 0.551
+config=bwd.5 rho0.4 proxy=2d/deep split=development f=0.1333 t=0.0 bwd=0.5 seed=42  59.31  DES 0.561 DCS 0.675 MMD 0.579 CSS 0.553
+config=bwd1 rho0.75 proxy=2d/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  62.55  DES 0.589 DCS 0.703 MMD 0.614 CSS 0.592
+config=bwd.5 rho0.75 proxy=2d/deep split=development f=0.25 t=0.0 bwd=0.5 seed=42  62.97  DES 0.592 DCS 0.708 MMD 0.618 CSS 0.596
+config=bwd1 rho1 proxy=2d/deep split=development f=0.3333 t=0.0 bwd=1.0 seed=42  64.13  DES 0.605 DCS 0.713 MMD 0.637 CSS 0.603
+config=bwd.5 rho1 proxy=2d/deep split=development f=0.3333 t=0.0 bwd=0.5 seed=42  64.56  DES 0.608 DCS 0.719 MMD 0.641 CSS 0.607
+config=fwd only t0.5 proxy=2d/deep split=development f=0.0 t=0.1667 bwd=0.0 seed=42  54.03  DES 0.523 DCS 0.624 MMD 0.531 CSS 0.471
+config=fwd only t1 proxy=2d/deep split=development f=0.0 t=0.3333 bwd=0.0 seed=42  54.72  DES 0.531 DCS 0.633 MMD 0.535 CSS 0.477
+config=fwd only t1.5 proxy=2d/deep split=development f=0.0 t=0.5 bwd=0.0 seed=42  55.37  DES 0.540 DCS 0.642 MMD 0.538 CSS 0.484
+config=interp rho0.4 t0.5 proxy=2d/deep split=development f=0.1333 t=0.1667 bwd=0.8333 seed=42  59.81  DES 0.568 DCS 0.681 MMD 0.581 CSS 0.558
+config=interp rho0.4 t1 proxy=2d/deep split=development f=0.1333 t=0.3333 bwd=0.6667 seed=42  60.39  DES 0.573 DCS 0.690 MMD 0.584 CSS 0.565
+config=interp rho0.75 t0.5 proxy=2d/deep split=development f=0.25 t=0.1667 bwd=0.8333 seed=42  63.14  DES 0.597 DCS 0.709 MMD 0.616 CSS 0.599
+config=interp rho0.75 t1 proxy=2d/deep split=development f=0.25 t=0.3333 bwd=0.6667 seed=42  63.49  DES 0.603 DCS 0.714 MMD 0.616 CSS 0.604
+config=interp rho1 t0.5 proxy=2d/deep split=development f=0.3333 t=0.1667 bwd=0.8333 seed=42  64.53  DES 0.607 DCS 0.718 MMD 0.639 CSS 0.611
+config=interp rho1 t1 proxy=2d/deep split=development f=0.3333 t=0.3333 bwd=0.6667 seed=42  64.87  DES 0.615 DCS 0.722 MMD 0.638 CSS 0.614
+config=interp rho.75 t1 pool3 proxy=2d/deep split=development f=0.25 t=0.3333 bwd=0.6667 seed=42  60.59  DES 0.586 DCS 0.706 MMD 0.580 CSS 0.544
+config=interp rho.75 t1 poolM proxy=2d/deep split=development f=0.25 t=0.3333 bwd=0.6667 seed=42  59.20  DES 0.576 DCS 0.701 MMD 0.568 CSS 0.511
+config=mix rho.75 poolM proxy=2d/deep split=development f=0.25 t=0.0 bwd=0.0 seed=42  60.09  DES 0.581 DCS 0.705 MMD 0.588 CSS 0.516
+config=bwd1 rho.75 poolM proxy=2d/deep split=development f=0.25 t=0.0 bwd=1.0 seed=42  58.54  DES 0.562 DCS 0.692 MMD 0.566 CSS 0.512
+config=interp rho.75 t1 median proxy=2d/deep split=development f=0.25 t=0.3333 bwd=0.6667 seed=42  62.57  DES 0.586 DCS 0.704 MMD 0.611 CSS 0.600
+config=interp rho.75 t1 type proxy=2d/deep split=development f=0.25 t=0.3333 bwd=0.6667 seed=42  63.41  DES 0.602 DCS 0.714 MMD 0.614 CSS 0.604
+config=interp rho.75 t1 h0 proxy=2d/deep split=development f=0.25 t=0.3333 bwd=0.6667 seed=42  64.51  DES 0.617 DCS 0.726 MMD 0.629 CSS 0.604
+done 62s
+proxy                    2d/deep
+config                          
+base only                  53.31
+R6b mix rho.4              59.63
+R6v1 mix rho.75            63.30
+mix rho1                   64.75
+bwd1 rho0.4                59.00
+bwd.5 rho0.4               59.31
+bwd1 rho0.75               62.55
+bwd.5 rho0.75              62.97
+bwd1 rho1                  64.13
+bwd.5 rho1                 64.56
+fwd only t0.5              54.03
+fwd only t1                54.72
+fwd only t1.5              55.37
+interp rho0.4 t0.5         59.81
+interp rho0.4 t1           60.39
+interp rho0.75 t0.5        63.14
+interp rho0.75 t1          63.49
+interp rho1 t0.5           64.53
+interp rho1 t1             64.87
+interp rho.75 t1 pool3     60.59
+interp rho.75 t1 poolM     59.20
+mix rho.75 poolM           60.09
+bwd1 rho.75 poolM          58.54
+interp rho.75 t1 median    62.57
+interp rho.75 t1 type      63.41
+interp rho.75 t1 h0        64.51
+skill_de_score
+proxy                    2d/deep
+config                          
+base only                  0.514
+R6b mix rho.4              0.563
+R6v1 mix rho.75            0.597
+mix rho1                   0.609
+bwd1 rho0.4                0.558
+bwd.5 rho0.4               0.561
+bwd1 rho0.75               0.589
+bwd.5 rho0.75              0.592
+bwd1 rho1                  0.605
+bwd.5 rho1                 0.608
+fwd only t0.5              0.523
+fwd only t1                0.531
+fwd only t1.5              0.540
+interp rho0.4 t0.5         0.568
+interp rho0.4 t1           0.573
+interp rho0.75 t0.5        0.597
+interp rho0.75 t1          0.603
+interp rho1 t0.5           0.607
+interp rho1 t1             0.615
+interp rho.75 t1 pool3     0.586
+interp rho.75 t1 poolM     0.576
+mix rho.75 poolM           0.581
+bwd1 rho.75 poolM          0.562
+interp rho.75 t1 median    0.586
+interp rho.75 t1 type      0.602
+interp rho.75 t1 h0        0.617
+skill_de_direction
+proxy                    2d/deep
+config                          
+base only                  0.614
+R6b mix rho.4              0.679
+R6v1 mix rho.75            0.711
+mix rho1                   0.722
+bwd1 rho0.4                0.670
+bwd.5 rho0.4               0.675
+bwd1 rho0.75               0.703
+bwd.5 rho0.75              0.708
+bwd1 rho1                  0.713
+bwd.5 rho1                 0.719
+fwd only t0.5              0.624
+fwd only t1                0.633
+fwd only t1.5              0.642
+interp rho0.4 t0.5         0.681
+interp rho0.4 t1           0.690
+interp rho0.75 t0.5        0.709
+interp rho0.75 t1          0.714
+interp rho1 t0.5           0.718
+interp rho1 t1             0.722
+interp rho.75 t1 pool3     0.706
+interp rho.75 t1 poolM     0.701
+mix rho.75 poolM           0.705
+bwd1 rho.75 poolM          0.692
+interp rho.75 t1 median    0.704
+interp rho.75 t1 type      0.714
+interp rho.75 t1 h0        0.726
+skill_mmd_u
+proxy                    2d/deep
+config                          
+base only                  0.526
+R6b mix rho.4              0.582
+R6v1 mix rho.75            0.621
+mix rho1                   0.644
+bwd1 rho0.4                0.577
+bwd.5 rho0.4               0.579
+bwd1 rho0.75               0.614
+bwd.5 rho0.75              0.618
+bwd1 rho1                  0.637
+bwd.5 rho1                 0.641
+fwd only t0.5              0.531
+fwd only t1                0.535
+fwd only t1.5              0.538
+interp rho0.4 t0.5         0.581
+interp rho0.4 t1           0.584
+interp rho0.75 t0.5        0.616
+interp rho0.75 t1          0.616
+interp rho1 t0.5           0.639
+interp rho1 t1             0.638
+interp rho.75 t1 pool3     0.580
+interp rho.75 t1 poolM     0.568
+mix rho.75 poolM           0.588
+bwd1 rho.75 poolM          0.566
+interp rho.75 t1 median    0.611
+interp rho.75 t1 type      0.614
+interp rho.75 t1 h0        0.629
+skill_variogram
+proxy                    2d/deep
+config                          
+base only                  0.466
+R6b mix rho.4              0.555
+R6v1 mix rho.75            0.598
+mix rho1                   0.608
+bwd1 rho0.4                0.551
+bwd.5 rho0.4               0.553
+bwd1 rho0.75               0.592
+bwd.5 rho0.75              0.596
+bwd1 rho1                  0.603
+bwd.5 rho1                 0.607
+fwd only t0.5              0.471
+fwd only t1                0.477
+fwd only t1.5              0.484
+interp rho0.4 t0.5         0.558
+interp rho0.4 t1           0.565
+interp rho0.75 t0.5        0.599
+interp rho0.75 t1          0.604
+interp rho1 t0.5           0.611
+interp rho1 t1             0.614
+interp rho.75 t1 pool3     0.544
+interp rho.75 t1 poolM     0.511
+mix rho.75 poolM           0.516
+bwd1 rho.75 poolM          0.512
+interp rho.75 t1 median    0.600
+interp rho.75 t1 type      0.604
+interp rho.75 t1 h0        0.604

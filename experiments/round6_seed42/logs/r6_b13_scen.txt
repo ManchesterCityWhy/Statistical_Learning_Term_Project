@@ -1,0 +1,78 @@
+scenario pool 11486 cells; library shares {'1': 0.359, '2': 0.168, '3': 0.473} 41s
+config=R5 (round-5 file) scenario=heart/deep split=development f=0.375 seed=42  59.62  DES 0.636 DCS 0.795 MMD 0.560 CSS 0.352
+config=R5 (round-5 file) scenario=heart/mid split=development f=0.375 seed=42  67.61  DES 0.632 DCS 0.815 MMD 0.621 CSS 0.641
+config=R5 (round-5 file) scenario=heart/shallow split=development f=0.375 seed=42  73.29  DES 0.669 DCS 0.807 MMD 0.694 CSS 0.778
+config=R5 (round-5 file) scenario=all/asis split=development f=0.375 seed=42  66.63  DES 0.663 DCS 0.860 MMD 0.557 CSS 0.592
+config=R6 (candidate) scenario=heart/deep split=development f=0.375 seed=42  73.72  DES 0.734 DCS 0.878 MMD 0.740 CSS 0.561
+config=R6 (candidate) scenario=heart/mid split=development f=0.375 seed=42  81.02  DES 0.755 DCS 0.890 MMD 0.797 CSS 0.799
+config=R6 (candidate) scenario=heart/shallow split=development f=0.375 seed=42  80.46  DES 0.761 DCS 0.857 MMD 0.818 CSS 0.772
+config=R6 (candidate) scenario=all/asis split=development f=0.375 seed=42  72.41  DES 0.672 DCS 0.870 MMD 0.655 CSS 0.711
+config=R6 raw anchor scenario=heart/deep split=development f=0.375 seed=42  68.00  DES 0.679 DCS 0.852 MMD 0.659 CSS 0.497
+config=R6 raw anchor scenario=heart/mid split=development f=0.375 seed=42  74.08  DES 0.681 DCS 0.859 MMD 0.706 CSS 0.721
+config=R6 raw anchor scenario=heart/shallow split=development f=0.375 seed=42  76.00  DES 0.740 DCS 0.831 MMD 0.734 CSS 0.735
+config=R6 raw anchor scenario=all/asis split=development f=0.375 seed=42  67.73  DES 0.650 DCS 0.854 MMD 0.577 CSS 0.639
+config=R6 base only scenario=heart/deep split=development f=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=R6 base only scenario=heart/mid split=development f=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=R6 base only scenario=heart/shallow split=development f=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=R6 base only scenario=all/asis split=development f=0.0 seed=42   77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=R6 base, all libraries scenario=heart/deep split=development f=0.375 seed=42  64.52  DES 0.675 DCS 0.804 MMD 0.645 CSS 0.409
+config=R6 base, all libraries scenario=heart/mid split=development f=0.375 seed=42  74.36  DES 0.682 DCS 0.837 MMD 0.716 CSS 0.745
+config=R6 base, all libraries scenario=heart/shallow split=development f=0.375 seed=42  78.49  DES 0.688 DCS 0.832 MMD 0.786 CSS 0.845
+config=R6 base, all libraries scenario=all/asis split=development f=0.375 seed=42  75.65  DES 0.703 DCS 0.894 MMD 0.711 CSS 0.719
+config=R5 base only scenario=heart/deep split=development f=0.0 seed=42  75.24  DES 0.724 DCS 0.842 MMD 0.792 CSS 0.615
+config=R5 base only scenario=heart/mid split=development f=0.0 seed=42  84.25  DES 0.723 DCS 0.890 MMD 0.862 CSS 0.904
+config=R5 base only scenario=heart/shallow split=development f=0.0 seed=42  83.23  DES 0.715 DCS 0.880 MMD 0.886 CSS 0.839
+config=R5 base only scenario=all/asis split=development f=0.0 seed=42   90.28  DES 0.817 DCS 0.977 MMD 0.888 CSS 0.939
+config=R5 base, harmonised anchor scenario=heart/deep split=development f=0.375 seed=42  63.63  DES 0.678 DCS 0.812 MMD 0.621 CSS 0.388
+config=R5 base, harmonised anchor scenario=heart/mid split=development f=0.375 seed=42  73.18  DES 0.679 DCS 0.845 MMD 0.696 CSS 0.711
+config=R5 base, harmonised anchor scenario=heart/shallow split=development f=0.375 seed=42  78.27  DES 0.701 DCS 0.837 MMD 0.776 CSS 0.828
+config=R5 base, harmonised anchor scenario=all/asis split=development f=0.375 seed=42  71.89  DES 0.691 DCS 0.886 MMD 0.640 CSS 0.664
+scenario                    heart/deep  heart/mid  heart/shallow  all/asis  expected  heart only
+config                                                                                          
+R5 (round-5 file)                59.62      67.61          73.29     66.63     64.49       63.95
+R6 (candidate)                   73.72      81.02          80.46     72.41     75.70       76.53
+R6 raw anchor                    68.00      74.08          76.00     67.73     70.20       70.82
+R6 base only                    100.00      93.26          81.26     77.20     91.36       94.91
+R6 base, all libraries           64.52      74.36          78.49     75.65     70.55       69.28
+R5 base only                     75.24      84.25          83.23     90.28     80.97       78.64
+R5 base, harmonised anchor       63.63      73.18          78.27     71.89     69.15       68.47
+skill_de_score
+scenario                    heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                    
+R5 (round-5 file)                0.636      0.632          0.669     0.663
+R6 (candidate)                   0.734      0.755          0.761     0.672
+R6 raw anchor                    0.679      0.681          0.740     0.650
+R6 base only                     1.000      0.973          0.829     0.713
+R6 base, all libraries           0.675      0.682          0.688     0.703
+R5 base only                     0.724      0.723          0.715     0.817
+R5 base, harmonised anchor       0.678      0.679          0.701     0.691
+skill_de_direction
+scenario                    heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                    
+R5 (round-5 file)                0.795      0.815          0.807     0.860
+R6 (candidate)                   0.878      0.890          0.857     0.870
+R6 raw anchor                    0.852      0.859          0.831     0.854
+R6 base only                     1.000      0.962          0.876     0.879
+R6 base, all libraries           0.804      0.837          0.832     0.894
+R5 base only                     0.842      0.890          0.880     0.977
+R5 base, harmonised anchor       0.812      0.845          0.837     0.886
+skill_mmd_u
+scenario                    heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                    
+R5 (round-5 file)                0.560      0.621          0.694     0.557
+R6 (candidate)                   0.740      0.797          0.818     0.655
+R6 raw anchor                    0.659      0.706          0.734     0.577
+R6 base only                     1.000      0.964          0.855     0.761
+R6 base, all libraries           0.645      0.716          0.786     0.711
+R5 base only                     0.792      0.862          0.886     0.888
+R5 base, harmonised anchor       0.621      0.696          0.776     0.640
+skill_variogram
+scenario                    heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                    
+R5 (round-5 file)                0.352      0.641          0.778     0.592
+R6 (candidate)                   0.561      0.799          0.772     0.711
+R6 raw anchor                    0.497      0.721          0.735     0.639
+R6 base only                     1.000      0.798          0.650     0.729
+R6 base, all libraries           0.409      0.745          0.845     0.719
+R5 base only                     0.615      0.904          0.839     0.939
+R5 base, harmonised anchor       0.388      0.711          0.828     0.664

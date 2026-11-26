@@ -1,0 +1,120 @@
+{
+  "selected_on_development": "s5_ess0.15_b3",
+  "split": "reused runs/expanded_seed42/indices.npz",
+  "seed": 42,
+  "external": {
+    "series": "GSE223237",
+    "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223237",
+    "samples": [
+      {
+        "accession": "GSM6943750",
+        "stage": "E9.5",
+        "file": "GSM6943750_E9_Rep1_counts.txt.gz",
+        "sha256": "1066de79865b42a680fe40496db5270295de5caf8ab85c976de1fdbab01f142a"
+      },
+      {
+        "accession": "GSM6943751",
+        "stage": "E9.5",
+        "file": "GSM6943751_E9_Rep2_counts.txt.gz",
+        "sha256": "6c2f06cf637c6df164c83062eef87c5ab6700598774746ae4ab17c73e3478068"
+      },
+      {
+        "accession": "GSM6943752",
+        "stage": "E9.5",
+        "file": "GSM6943752_E9_Rep3_counts.txt.gz",
+        "sha256": "fba43acf7f4bd7d12abda2eeb5569b64be12cefc22a8b6a48614cbac6c8cd21d"
+      },
+      {
+        "accession": "GSM6943761",
+        "stage": "E14.5",
+        "file": "GSM6943761_E14_Rep1_counts.txt.gz",
+        "sha256": "b9270401ca1ca36141b4fd5b727fe95e3828623b7f58c50554baaa9b47527932"
+      },
+      {
+        "accession": "GSM6943762",
+        "stage": "E14.5",
+        "file": "GSM6943762_E14_Rep2_counts.txt.gz",
+        "sha256": "c54ce395bfcfe10840fe54ef7d1f0f6ee08d88ba834633de64033cfeeb2b1433"
+      },
+      {
+        "accession": "GSM6943763",
+        "stage": "E14.5",
+        "file": "GSM6943763_E14_Rep3_counts.txt.gz",
+        "sha256": "22b70c87bfd3398b8354dffb97d4175a48460d9b87fc9be699979a1ce4920479"
+      }
+    ],
+    "symbol_map_source": "GSM6211349 E14.5 Cell Ranger gene table only",
+    "symbol_map_sha256": "86387317c0576b86b2693b88353a7c6be4affb53ae3100d2767f97aa6fd2d0f2"
+  },
+  "selected_type_mass_of_weights": {
+    "AVC-CM": 0.034020431666267684,
+    "BEC": 0.004745316139924625,
+    "Blood": 0.01192696349996982,
+    "Endocardium": 0.12201029125152371,
+    "Epithelium": 0.0197740018853425,
+    "Foregut": 0.03623738629682369,
+    "Hepatocyte": 0.0675334448216852,
+    "IFT-CM": 0.02449713525069935,
+    "NCC": 0.002163827946361764,
+    "NCC-derived": 0.056789164073689,
+    "OFT/RV-CM": 0.0808368192431014,
+    "Pericardium": 0.050209319768677624,
+    "Proepicardium": 0.030509207650632482,
+    "ST": 0.09948044080379162,
+    "SV-CM": 0.06690380484687461,
+    "Surface Ectoderm": 0.027104132098027773,
+    "V-CM": 0.07354902582009576,
+    "aPHM": 0.011873262151014898,
+    "aSHF": 0.03942879257637198,
+    "pPHM": 0.10827582280655793,
+    "pSHF": 0.03213140940256675
+  },
+  "selected_type_share_of_sampled_rows": {
+    "AVC-CM": 0.03048065650644783,
+    "BEC": 0.006447831184056272,
+    "Blood": 0.016998827667057445,
+    "Endocardium": 0.1283704572098476,
+    "Epithelium": 0.01817116060961313,
+    "Foregut": 0.04630715123094959,
+    "Hepatocyte": 0.06740914419695193,
+    "IFT-CM": 0.025205158264947247,
+    "NCC": 0.0005861664712778429,
+    "NCC-derived": 0.04806565064478312,
+    "OFT/RV-CM": 0.09026963657678781,
+    "Pericardium": 0.047479484173505275,
+    "Proepicardium": 0.028722157092614303,
+    "ST": 0.09026963657678781,
+    "SV-CM": 0.07209847596717468,
+    "Surface Ectoderm": 0.02403282532239156,
+    "V-CM": 0.06740914419695193,
+    "aPHM": 0.01817116060961313,
+    "aSHF": 0.04220398593200469,
+    "pPHM": 0.10140679953106682,
+    "pSHF": 0.029894490035169988
+  },
+  "source_type_share": {
+    "AVC-CM": 0.01911238787594536,
+    "BEC": 0.015887905258838014,
+    "Blood": 0.01248754177170663,
+    "Endocardium": 0.09116491762912587,
+    "Epithelium": 0.013660080905200211,
+    "Foregut": 0.05106407926364542,
+    "Hepatocyte": 0.06976607844286803,
+    "IFT-CM": 0.04045260010552852,
+    "NCC": 0.0027554669637099138,
+    "NCC-derived": 0.03640734009497567,
+    "OFT/RV-CM": 0.10728733071466261,
+    "Pericardium": 0.05258838013718708,
+    "Proepicardium": 0.05176760274374157,
+    "ST": 0.05153309491704285,
+    "SV-CM": 0.0746321158468664,
+    "Surface Ectoderm": 0.032479333997772177,
+    "V-CM": 0.06706923843583279,
+    "aPHM": 0.013249692208477458,
+    "aSHF": 0.061558304508412966,
+    "pPHM": 0.07000058626956675,
+    "pSHF": 0.0650759219088937
+  },
+  "adoption_rule": "use for E12.5 only if its confirmation score beats round 2's 59.79 by >= 0.5",
+  "note": "E10.5 truth scores the predictions only; weights use E9.5 cells and the bulk trend."
+}

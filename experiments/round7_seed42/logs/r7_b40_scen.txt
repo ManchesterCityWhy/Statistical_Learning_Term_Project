@@ -1,0 +1,106 @@
+scenario pool 11486 28s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=R7h: file recipe (two-witness + trend) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.48  DES 0.746 DCS 0.903 MMD 0.839 CSS 0.803
+config=R7h: file recipe (two-witness + trend) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.53  DES 0.762 DCS 0.890 MMD 0.850 CSS 0.686
+config=R7h: file recipe (two-witness + trend) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.88  DES 0.689 DCS 0.832 MMD 0.797 CSS 0.597
+config=R7h: file recipe (two-witness + trend) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.09  DES 0.632 DCS 0.837 MMD 0.618 CSS 0.592
+config=R7h without two-witness (trend only) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  85.35  DES 0.772 DCS 0.913 MMD 0.874 CSS 0.850
+config=R7h without two-witness (trend only) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.00  DES 0.766 DCS 0.898 MMD 0.877 CSS 0.704
+config=R7h without two-witness (trend only) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  74.92  DES 0.704 DCS 0.838 MMD 0.811 CSS 0.603
+config=R7h without two-witness (trend only) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.65  DES 0.613 DCS 0.836 MMD 0.641 CSS 0.611
+config=R8 forward 0.5 guarded + trend scenario=heart/deep split=development f=0.45 t=0.25 bwd=1.0 seed=42  82.76  DES 0.748 DCS 0.902 MMD 0.838 CSS 0.818
+config=R8 forward 0.5 guarded + trend scenario=heart/mid split=development f=0.45 t=0.25 bwd=1.0 seed=42  79.54  DES 0.753 DCS 0.880 MMD 0.839 CSS 0.679
+config=R8 forward 0.5 guarded + trend scenario=heart/shallow split=development f=0.45 t=0.25 bwd=1.0 seed=42  72.90  DES 0.689 DCS 0.823 MMD 0.778 CSS 0.589
+config=R8 forward 0.5 guarded + trend scenario=all/asis split=development f=0.45 t=0.25 bwd=1.0 seed=42  67.21  DES 0.628 DCS 0.836 MMD 0.625 CSS 0.594
+config=R8 forward 1 guarded + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  79.53  DES 0.740 DCS 0.884 MMD 0.782 CSS 0.774
+config=R8 forward 1 guarded + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  76.58  DES 0.734 DCS 0.861 MMD 0.786 CSS 0.656
+config=R8 forward 1 guarded + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  70.87  DES 0.674 DCS 0.811 MMD 0.739 CSS 0.578
+config=R8 forward 1 guarded + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  66.23  DES 0.634 DCS 0.834 MMD 0.600 CSS 0.577
+config=R8 forward 1 unguarded + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  81.65  DES 0.746 DCS 0.898 MMD 0.811 CSS 0.811
+config=R8 forward 1 unguarded + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  78.60  DES 0.747 DCS 0.874 MMD 0.815 CSS 0.681
+config=R8 forward 1 unguarded + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  72.01  DES 0.673 DCS 0.820 MMD 0.762 CSS 0.591
+config=R8 forward 1 unguarded + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  66.88  DES 0.626 DCS 0.836 MMD 0.614 CSS 0.596
+config=R8 forward 0.5 whole ratio guarded, no trend scenario=heart/deep split=development f=0.45 t=0.25 bwd=1.0 seed=42  80.11  DES 0.740 DCS 0.890 MMD 0.784 CSS 0.792
+config=R8 forward 0.5 whole ratio guarded, no trend scenario=heart/mid split=development f=0.45 t=0.25 bwd=1.0 seed=42  75.99  DES 0.755 DCS 0.849 MMD 0.768 CSS 0.644
+config=R8 forward 0.5 whole ratio guarded, no trend scenario=heart/shallow split=development f=0.45 t=0.25 bwd=1.0 seed=42  70.21  DES 0.706 DCS 0.795 MMD 0.712 CSS 0.566
+config=R8 forward 0.5 whole ratio guarded, no trend scenario=all/asis split=development f=0.45 t=0.25 bwd=1.0 seed=42  65.71  DES 0.646 DCS 0.820 MMD 0.589 CSS 0.570
+config=R8 forward 1 whole ratio guarded, no trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  68.90  DES 0.671 DCS 0.845 MMD 0.605 CSS 0.643
+config=R8 forward 1 whole ratio guarded, no trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  67.10  DES 0.673 DCS 0.813 MMD 0.612 CSS 0.579
+config=R8 forward 1 whole ratio guarded, no trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.61  DES 0.655 DCS 0.771 MMD 0.606 CSS 0.540
+config=R8 forward 1 whole ratio guarded, no trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  61.04  DES 0.646 DCS 0.805 MMD 0.482 CSS 0.515
+config=R8 forward 1 guarded + two-witness + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  75.75  DES 0.705 DCS 0.876 MMD 0.730 CSS 0.716
+config=R8 forward 1 guarded + two-witness + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  74.42  DES 0.710 DCS 0.858 MMD 0.747 CSS 0.640
+config=R8 forward 1 guarded + two-witness + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  70.43  DES 0.683 DCS 0.811 MMD 0.719 CSS 0.576
+config=R8 forward 1 guarded + two-witness + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.83  DES 0.630 DCS 0.835 MMD 0.567 CSS 0.560
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/deep split=development f=0.2 t=0.0 bwd=0.0 seed=42  88.45  DES 0.835 DCS 0.952 MMD 0.921 CSS 0.808
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/mid split=development f=0.2 t=0.0 bwd=0.0 seed=42  92.21  DES 0.880 DCS 0.952 MMD 0.952 CSS 0.893
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/shallow split=development f=0.2 t=0.0 bwd=0.0 seed=42  86.05  DES 0.869 DCS 0.886 MMD 0.903 CSS 0.754
+config=round 6 file (raw anchor, rho 0.4) scenario=all/asis split=development f=0.2 t=0.0 bwd=0.0 seed=42  79.16  DES 0.703 DCS 0.889 MMD 0.774 CSS 0.806
+done 74s
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                         100.00      93.26          81.26     77.20
+R7h: file recipe (two-witness + trend)             82.48      80.53          73.88     67.09
+R7h without two-witness (trend only)               85.35      82.00          74.92     67.65
+R8 forward 0.5 guarded + trend                     82.76      79.54          72.90     67.21
+R8 forward 1 guarded + trend                       79.53      76.58          70.87     66.23
+R8 forward 1 unguarded + trend                     81.65      78.60          72.01     66.88
+R8 forward 0.5 whole ratio guarded, no trend       80.11      75.99          70.21     65.71
+R8 forward 1 whole ratio guarded, no trend         68.90      67.10          64.61     61.04
+R8 forward 1 guarded + two-witness + trend         75.75      74.42          70.43     64.83
+round 6 file (raw anchor, rho 0.4)                 88.45      92.21          86.05     79.16
+skill_de_score
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.973          0.829     0.713
+R7h: file recipe (two-witness + trend)             0.746      0.762          0.689     0.632
+R7h without two-witness (trend only)               0.772      0.766          0.704     0.613
+R8 forward 0.5 guarded + trend                     0.748      0.753          0.689     0.628
+R8 forward 1 guarded + trend                       0.740      0.734          0.674     0.634
+R8 forward 1 unguarded + trend                     0.746      0.747          0.673     0.626
+R8 forward 0.5 whole ratio guarded, no trend       0.740      0.755          0.706     0.646
+R8 forward 1 whole ratio guarded, no trend         0.671      0.673          0.655     0.646
+R8 forward 1 guarded + two-witness + trend         0.705      0.710          0.683     0.630
+round 6 file (raw anchor, rho 0.4)                 0.835      0.880          0.869     0.703
+skill_de_direction
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.962          0.876     0.879
+R7h: file recipe (two-witness + trend)             0.903      0.890          0.832     0.837
+R7h without two-witness (trend only)               0.913      0.898          0.838     0.836
+R8 forward 0.5 guarded + trend                     0.902      0.880          0.823     0.836
+R8 forward 1 guarded + trend                       0.884      0.861          0.811     0.834
+R8 forward 1 unguarded + trend                     0.898      0.874          0.820     0.836
+R8 forward 0.5 whole ratio guarded, no trend       0.890      0.849          0.795     0.820
+R8 forward 1 whole ratio guarded, no trend         0.845      0.813          0.771     0.805
+R8 forward 1 guarded + two-witness + trend         0.876      0.858          0.811     0.835
+round 6 file (raw anchor, rho 0.4)                 0.952      0.952          0.886     0.889
+skill_mmd_u
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.964          0.855     0.761
+R7h: file recipe (two-witness + trend)             0.839      0.850          0.797     0.618
+R7h without two-witness (trend only)               0.874      0.877          0.811     0.641
+R8 forward 0.5 guarded + trend                     0.838      0.839          0.778     0.625
+R8 forward 1 guarded + trend                       0.782      0.786          0.739     0.600
+R8 forward 1 unguarded + trend                     0.811      0.815          0.762     0.614
+R8 forward 0.5 whole ratio guarded, no trend       0.784      0.768          0.712     0.589
+R8 forward 1 whole ratio guarded, no trend         0.605      0.612          0.606     0.482
+R8 forward 1 guarded + two-witness + trend         0.730      0.747          0.719     0.567
+round 6 file (raw anchor, rho 0.4)                 0.921      0.952          0.903     0.774
+skill_variogram
+scenario                                      heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                      
+base only                                          1.000      0.798          0.650     0.729
+R7h: file recipe (two-witness + trend)             0.803      0.686          0.597     0.592
+R7h without two-witness (trend only)               0.850      0.704          0.603     0.611
+R8 forward 0.5 guarded + trend                     0.818      0.679          0.589     0.594
+R8 forward 1 guarded + trend                       0.774      0.656          0.578     0.577
+R8 forward 1 unguarded + trend                     0.811      0.681          0.591     0.596
+R8 forward 0.5 whole ratio guarded, no trend       0.792      0.644          0.566     0.570
+R8 forward 1 whole ratio guarded, no trend         0.643      0.579          0.540     0.515
+R8 forward 1 guarded + two-witness + trend         0.716      0.640          0.576     0.560
+round 6 file (raw anchor, rho 0.4)                 0.808      0.893          0.754     0.806

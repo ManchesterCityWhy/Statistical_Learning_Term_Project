@@ -1,0 +1,23 @@
+D/raw ready 24s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.10041688792800137, 'variogram': 0.004085718188434839} ceiling {'de_score': 0.8808864265927978, 'de_direction': 0.8437938672693329, 'mmd_u': 0.002641306921387909, 'variogram': 0.00015725322009529918}
+proxy=D/raw base=natural:lib12 split=development                        53.19  DES 0.576 DCS 0.644 MMD 0.526 CSS 0.345
+proxy=D/raw base=heart-natural:lib12 split=development                  61.94  DES 0.654 DCS 0.740 MMD 0.674 CSS 0.344
+proxy=D/raw base=r2:lib12 split=development                             56.05  DES 0.627 DCS 0.702 MMD 0.552 CSS 0.313
+proxy=D/raw base=r4:lib12 split=development                             56.97  DES 0.619 DCS 0.695 MMD 0.585 CSS 0.328
+proxy=D/raw base=r2:heart12 split=development                           54.71  DES 0.625 DCS 0.734 MMD 0.519 CSS 0.259
+proxy=D/raw base=r4:heart12 split=development                           56.42  DES 0.626 DCS 0.725 MMD 0.570 CSS 0.277
+D/dm ready 37s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.12234941763320592, 'variogram': 0.010999706573784351} ceiling {'de_score': 0.8035714285714286, 'de_direction': 0.7867642190770054, 'mmd_u': 0.005750524529424794, 'variogram': 0.00016824498015921563}
+proxy=D/dm base=natural:lib12 split=development                         65.94  DES 0.536 DCS 0.677 MMD 0.635 CSS 0.828
+proxy=D/dm base=heart-natural:lib12 split=development                   79.02  DES 0.647 DCS 0.807 MMD 0.828 CSS 0.892
+proxy=D/dm base=r2:lib12 split=development                              72.21  DES 0.602 DCS 0.750 MMD 0.719 CSS 0.842
+proxy=D/dm base=r4:lib12 split=development                              72.32  DES 0.590 DCS 0.741 MMD 0.733 CSS 0.853
+proxy=D/dm base=r2:heart12 split=development                            72.55  DES 0.640 DCS 0.795 MMD 0.690 CSS 0.799
+proxy=D/dm base=r4:heart12 split=development                            73.73  DES 0.633 DCS 0.785 MMD 0.727 CSS 0.824
+proxy                D/raw   D/dm
+base                             
+natural:lib12        53.19  65.94
+heart-natural:lib12  61.94  79.02
+r2:lib12             56.05  72.21
+r4:lib12             56.97  72.32
+r2:heart12           54.71  72.55
+r4:heart12           56.42  73.73
+lineage shares of the target (library 3): {'CM': 0.184, 'Endo': 0.288, 'Cushion': 0.126, 'Epi': 0.175, 'Blood': 0.159, 'Mac': 0.006, 'Other': 0.062}

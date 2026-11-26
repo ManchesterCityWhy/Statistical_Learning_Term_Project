@@ -1,0 +1,265 @@
+[suite] p8/deep  ready    11s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] p8/all   ready    19s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+base=nat f=0.0 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  59.73  DES 0.559 DCS 0.655 MMD 0.585 CSS 0.591
+base=nat f=0.0 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  61.24  DES 0.570 DCS 0.672 MMD 0.601 CSS 0.608
+base=nat f=0.0 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  61.77  DES 0.567 DCS 0.676 MMD 0.611 CSS 0.618
+base=nat f=0.0 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  61.18  DES 0.559 DCS 0.676 MMD 0.605 CSS 0.608
+base=nat f=0.15 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  67.68  DES 0.639 DCS 0.735 MMD 0.653 CSS 0.687
+base=nat f=0.15 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  68.27  DES 0.635 DCS 0.738 MMD 0.665 CSS 0.700
+base=nat f=0.15 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  67.93  DES 0.621 DCS 0.731 MMD 0.671 CSS 0.701
+base=nat f=0.15 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  65.69  DES 0.590 DCS 0.720 MMD 0.653 CSS 0.667
+base=nat f=0.15 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  67.10  DES 0.634 DCS 0.728 MMD 0.646 CSS 0.683
+base=nat f=0.2 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  68.80  DES 0.644 DCS 0.745 MMD 0.671 CSS 0.698
+base=nat f=0.2 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  69.42  DES 0.646 DCS 0.748 MMD 0.681 CSS 0.707
+base=nat f=0.2 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  69.06  DES 0.633 DCS 0.743 MMD 0.685 CSS 0.706
+base=nat f=0.2 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  66.50  DES 0.600 DCS 0.729 MMD 0.664 CSS 0.667
+base=nat f=0.2 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  68.32  DES 0.644 DCS 0.739 MMD 0.662 CSS 0.693
+base=nat f=0.25 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  69.46  DES 0.654 DCS 0.749 MMD 0.681 CSS 0.698
+base=nat f=0.25 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  69.78  DES 0.647 DCS 0.753 MMD 0.689 CSS 0.706
+base=nat f=0.25 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  69.55  DES 0.642 DCS 0.749 MMD 0.691 CSS 0.702
+base=nat f=0.25 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  66.91  DES 0.610 DCS 0.735 MMD 0.669 CSS 0.662
+base=nat f=0.25 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  68.82  DES 0.647 DCS 0.744 MMD 0.672 CSS 0.694
+base=nat f=0.3 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  69.80  DES 0.661 DCS 0.751 MMD 0.687 CSS 0.694
+base=nat f=0.3 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  70.12  DES 0.658 DCS 0.755 MMD 0.694 CSS 0.699
+base=nat f=0.3 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  69.62  DES 0.644 DCS 0.753 MMD 0.694 CSS 0.692
+base=nat f=0.3 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  67.18  DES 0.624 DCS 0.740 MMD 0.670 CSS 0.649
+base=nat f=0.3 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  69.12  DES 0.651 DCS 0.747 MMD 0.679 CSS 0.691
+base=nat f=0.375 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  68.85  DES 0.653 DCS 0.751 MMD 0.688 CSS 0.655
+base=nat f=0.375 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  69.11  DES 0.652 DCS 0.757 MMD 0.691 CSS 0.657
+base=nat f=0.375 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  68.83  DES 0.652 DCS 0.755 MMD 0.689 CSS 0.648
+base=nat f=0.375 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  66.52  DES 0.633 DCS 0.746 MMD 0.663 CSS 0.608
+base=nat f=0.375 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  68.55  DES 0.651 DCS 0.750 MMD 0.681 CSS 0.656
+base=oracle f=0.0 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  74.33  DES 0.705 DCS 0.758 MMD 0.775 CSS 0.726
+base=oracle f=0.0 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  76.48  DES 0.724 DCS 0.779 MMD 0.802 CSS 0.744
+base=oracle f=0.0 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  76.90  DES 0.711 DCS 0.784 MMD 0.817 CSS 0.751
+base=oracle f=0.0 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  74.36  DES 0.666 DCS 0.777 MMD 0.795 CSS 0.722
+base=oracle f=0.15 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  79.93  DES 0.741 DCS 0.813 MMD 0.823 CSS 0.819
+base=oracle f=0.15 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  81.15  DES 0.750 DCS 0.824 MMD 0.842 CSS 0.828
+base=oracle f=0.15 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  81.10  DES 0.747 DCS 0.821 MMD 0.848 CSS 0.822
+base=oracle f=0.15 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  77.08  DES 0.691 DCS 0.804 MMD 0.814 CSS 0.764
+base=oracle f=0.15 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  79.49  DES 0.740 DCS 0.808 MMD 0.816 CSS 0.816
+base=oracle f=0.2 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  80.61  DES 0.751 DCS 0.822 MMD 0.828 CSS 0.822
+base=oracle f=0.2 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  81.34  DES 0.753 DCS 0.829 MMD 0.842 CSS 0.827
+base=oracle f=0.2 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  80.91  DES 0.747 DCS 0.824 MMD 0.844 CSS 0.816
+base=oracle f=0.2 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  76.49  DES 0.690 DCS 0.807 MMD 0.803 CSS 0.749
+base=oracle f=0.2 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  80.07  DES 0.750 DCS 0.815 MMD 0.819 CSS 0.819
+base=oracle f=0.25 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  79.81  DES 0.742 DCS 0.820 MMD 0.823 CSS 0.803
+base=oracle f=0.25 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  80.57  DES 0.750 DCS 0.827 MMD 0.835 CSS 0.806
+base=oracle f=0.25 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  79.97  DES 0.736 DCS 0.825 MMD 0.835 CSS 0.794
+base=oracle f=0.25 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  76.18  DES 0.699 DCS 0.809 MMD 0.796 CSS 0.730
+base=oracle f=0.25 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  79.45  DES 0.744 DCS 0.814 MMD 0.816 CSS 0.802
+base=oracle f=0.3 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  78.77  DES 0.732 DCS 0.819 MMD 0.812 CSS 0.782
+base=oracle f=0.3 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  79.20  DES 0.735 DCS 0.824 MMD 0.819 CSS 0.782
+base=oracle f=0.3 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  78.60  DES 0.726 DCS 0.823 MMD 0.817 CSS 0.768
+base=oracle f=0.3 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  75.18  DES 0.702 DCS 0.808 MMD 0.777 CSS 0.705
+base=oracle f=0.3 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  78.70  DES 0.738 DCS 0.817 MMD 0.806 CSS 0.784
+base=oracle f=0.375 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  76.09  DES 0.722 DCS 0.813 MMD 0.785 CSS 0.707
+base=oracle f=0.375 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  76.21  DES 0.721 DCS 0.818 MMD 0.789 CSS 0.704
+base=oracle f=0.375 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  75.65  DES 0.717 DCS 0.817 MMD 0.784 CSS 0.690
+base=oracle f=0.375 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  72.60  DES 0.696 DCS 0.808 MMD 0.744 CSS 0.635
+base=oracle f=0.375 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  76.46  DES 0.735 DCS 0.814 MMD 0.783 CSS 0.713
+base=heart f=0.0 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+base=heart f=0.0 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  61.64  DES 0.594 DCS 0.708 MMD 0.611 CSS 0.538
+base=heart f=0.0 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  62.25  DES 0.595 DCS 0.715 MMD 0.620 CSS 0.545
+base=heart f=0.0 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  61.63  DES 0.583 DCS 0.716 MMD 0.612 CSS 0.540
+base=heart f=0.15 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  67.38  DES 0.628 DCS 0.748 MMD 0.662 CSS 0.657
+base=heart f=0.15 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  68.13  DES 0.631 DCS 0.757 MMD 0.671 CSS 0.665
+base=heart f=0.15 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  68.02  DES 0.622 DCS 0.757 MMD 0.675 CSS 0.665
+base=heart f=0.15 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  66.22  DES 0.606 DCS 0.748 MMD 0.656 CSS 0.635
+base=heart f=0.15 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  67.03  DES 0.625 DCS 0.742 MMD 0.658 CSS 0.655
+base=heart f=0.2 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  68.90  DES 0.646 DCS 0.761 MMD 0.678 CSS 0.668
+base=heart f=0.2 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  69.37  DES 0.642 DCS 0.768 MMD 0.687 CSS 0.675
+base=heart f=0.2 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  69.22  DES 0.638 DCS 0.766 MMD 0.689 CSS 0.672
+base=heart f=0.2 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  67.04  DES 0.614 DCS 0.755 MMD 0.669 CSS 0.637
+base=heart f=0.2 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  68.27  DES 0.633 DCS 0.754 MMD 0.675 CSS 0.667
+base=heart f=0.25 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  70.04  DES 0.652 DCS 0.774 MMD 0.692 CSS 0.682
+base=heart f=0.25 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  70.54  DES 0.657 DCS 0.778 MMD 0.698 CSS 0.686
+base=heart f=0.25 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  70.35  DES 0.656 DCS 0.776 MMD 0.698 CSS 0.681
+base=heart f=0.25 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  67.81  DES 0.627 DCS 0.765 MMD 0.674 CSS 0.641
+base=heart f=0.25 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  69.54  DES 0.641 DCS 0.769 MMD 0.688 CSS 0.682
+base=heart f=0.3 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  69.99  DES 0.659 DCS 0.774 MMD 0.692 CSS 0.671
+base=heart f=0.3 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  70.26  DES 0.657 DCS 0.778 MMD 0.697 CSS 0.673
+base=heart f=0.3 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  70.13  DES 0.660 DCS 0.777 MMD 0.696 CSS 0.666
+base=heart f=0.3 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  67.74  DES 0.637 DCS 0.766 MMD 0.672 CSS 0.626
+base=heart f=0.3 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  69.48  DES 0.646 DCS 0.769 MMD 0.689 CSS 0.672
+base=heart f=0.375 mode=min trend=0.0 proxy=p8/deep split=development elapsed=0.2  69.63  DES 0.662 DCS 0.779 MMD 0.688 CSS 0.648
+base=heart f=0.375 mode=min trend=1.5 proxy=p8/deep split=development elapsed=0.2  69.71  DES 0.658 DCS 0.783 MMD 0.690 CSS 0.649
+base=heart f=0.375 mode=min trend=3.0 proxy=p8/deep split=development elapsed=0.2  69.37  DES 0.655 DCS 0.783 MMD 0.687 CSS 0.640
+base=heart f=0.375 mode=min trend=6.0 proxy=p8/deep split=development elapsed=0.2  67.25  DES 0.643 DCS 0.773 MMD 0.661 CSS 0.601
+base=heart f=0.375 mode=median trend=0.0 proxy=p8/deep split=development elapsed=0.2  69.20  DES 0.649 DCS 0.773 MMD 0.687 CSS 0.652
+base=nat f=0.0 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  58.48  DES 0.512 DCS 0.665 MMD 0.595 CSS 0.560
+base=nat f=0.0 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  60.69  DES 0.548 DCS 0.684 MMD 0.618 CSS 0.569
+base=nat f=0.0 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  61.90  DES 0.558 DCS 0.691 MMD 0.636 CSS 0.579
+base=nat f=0.0 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  62.55  DES 0.552 DCS 0.696 MMD 0.650 CSS 0.592
+base=nat f=0.15 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  69.65  DES 0.642 DCS 0.760 MMD 0.686 CSS 0.701
+base=nat f=0.15 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  70.27  DES 0.640 DCS 0.761 MMD 0.704 CSS 0.706
+base=nat f=0.15 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  70.22  DES 0.623 DCS 0.756 MMD 0.717 CSS 0.711
+base=nat f=0.15 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  69.07  DES 0.596 DCS 0.745 MMD 0.714 CSS 0.706
+base=nat f=0.15 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  69.07  DES 0.635 DCS 0.750 MMD 0.681 CSS 0.700
+base=nat f=0.2 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  71.86  DES 0.661 DCS 0.777 MMD 0.708 CSS 0.733
+base=nat f=0.2 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  72.30  DES 0.657 DCS 0.776 MMD 0.724 CSS 0.737
+base=nat f=0.2 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  72.41  DES 0.653 DCS 0.771 MMD 0.734 CSS 0.739
+base=nat f=0.2 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  70.53  DES 0.611 DCS 0.757 MMD 0.725 CSS 0.728
+base=nat f=0.2 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  71.27  DES 0.652 DCS 0.768 MMD 0.703 CSS 0.734
+base=nat f=0.25 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  73.21  DES 0.675 DCS 0.784 MMD 0.721 CSS 0.755
+base=nat f=0.25 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  73.71  DES 0.675 DCS 0.786 MMD 0.735 CSS 0.757
+base=nat f=0.25 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  73.57  DES 0.667 DCS 0.780 MMD 0.742 CSS 0.757
+base=nat f=0.25 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  71.33  DES 0.622 DCS 0.765 MMD 0.728 CSS 0.741
+base=nat f=0.25 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  72.71  DES 0.665 DCS 0.776 MMD 0.717 CSS 0.758
+base=nat f=0.3 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  74.08  DES 0.671 DCS 0.789 MMD 0.730 CSS 0.785
+base=nat f=0.3 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  74.83  DES 0.684 DCS 0.792 MMD 0.740 CSS 0.786
+base=nat f=0.3 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  74.59  DES 0.677 DCS 0.787 MMD 0.745 CSS 0.783
+base=nat f=0.3 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  72.05  DES 0.631 DCS 0.772 MMD 0.726 CSS 0.760
+base=nat f=0.3 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  74.01  DES 0.672 DCS 0.783 MMD 0.726 CSS 0.791
+base=nat f=0.375 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  74.27  DES 0.674 DCS 0.792 MMD 0.729 CSS 0.788
+base=nat f=0.375 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  74.72  DES 0.681 DCS 0.797 MMD 0.735 CSS 0.785
+base=nat f=0.375 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  74.40  DES 0.677 DCS 0.794 MMD 0.736 CSS 0.778
+base=nat f=0.375 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  72.18  DES 0.652 DCS 0.782 MMD 0.712 CSS 0.749
+base=nat f=0.375 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  74.52  DES 0.675 DCS 0.790 MMD 0.730 CSS 0.800
+base=oracle f=0.0 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  67.41  DES 0.607 DCS 0.741 MMD 0.707 CSS 0.625
+base=oracle f=0.0 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  70.06  DES 0.645 DCS 0.764 MMD 0.738 CSS 0.635
+base=oracle f=0.0 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  71.04  DES 0.641 DCS 0.767 MMD 0.764 CSS 0.646
+base=oracle f=0.0 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  70.77  DES 0.608 DCS 0.764 MMD 0.777 CSS 0.659
+base=oracle f=0.15 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  76.23  DES 0.684 DCS 0.817 MMD 0.789 CSS 0.751
+base=oracle f=0.15 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  77.46  DES 0.696 DCS 0.823 MMD 0.812 CSS 0.757
+base=oracle f=0.15 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  77.72  DES 0.690 DCS 0.817 MMD 0.827 CSS 0.761
+base=oracle f=0.15 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  75.91  DES 0.652 DCS 0.801 MMD 0.817 CSS 0.754
+base=oracle f=0.15 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  75.79  DES 0.678 DCS 0.812 MMD 0.783 CSS 0.752
+base=oracle f=0.2 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  78.29  DES 0.699 DCS 0.829 MMD 0.807 CSS 0.794
+base=oracle f=0.2 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  79.50  DES 0.718 DCS 0.834 MMD 0.826 CSS 0.797
+base=oracle f=0.2 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  79.26  DES 0.704 DCS 0.826 MMD 0.836 CSS 0.797
+base=oracle f=0.2 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  76.86  DES 0.662 DCS 0.811 MMD 0.815 CSS 0.779
+base=oracle f=0.2 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  78.03  DES 0.699 DCS 0.824 MMD 0.801 CSS 0.796
+base=oracle f=0.25 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  78.85  DES 0.691 DCS 0.835 MMD 0.812 CSS 0.817
+base=oracle f=0.25 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  80.11  DES 0.720 DCS 0.839 MMD 0.827 CSS 0.817
+base=oracle f=0.25 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  79.84  DES 0.710 DCS 0.832 MMD 0.833 CSS 0.814
+base=oracle f=0.25 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  77.23  DES 0.672 DCS 0.816 MMD 0.808 CSS 0.789
+base=oracle f=0.25 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  78.98  DES 0.698 DCS 0.834 MMD 0.808 CSS 0.822
+base=oracle f=0.3 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  79.17  DES 0.702 DCS 0.836 MMD 0.807 CSS 0.824
+base=oracle f=0.3 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  80.03  DES 0.720 DCS 0.841 MMD 0.818 CSS 0.823
+base=oracle f=0.3 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  79.52  DES 0.704 DCS 0.837 MMD 0.822 CSS 0.817
+base=oracle f=0.3 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  76.98  DES 0.678 DCS 0.820 MMD 0.792 CSS 0.788
+base=oracle f=0.3 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  79.21  DES 0.698 DCS 0.837 MMD 0.806 CSS 0.833
+base=oracle f=0.375 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  77.79  DES 0.690 DCS 0.831 MMD 0.784 CSS 0.812
+base=oracle f=0.375 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  78.27  DES 0.702 DCS 0.835 MMD 0.789 CSS 0.808
+base=oracle f=0.375 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  78.06  DES 0.705 DCS 0.835 MMD 0.787 CSS 0.798
+base=oracle f=0.375 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  75.45  DES 0.681 DCS 0.825 MMD 0.752 CSS 0.762
+base=oracle f=0.375 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  78.28  DES 0.688 DCS 0.834 MMD 0.789 CSS 0.828
+base=heart f=0.0 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  51.41  DES 0.490 DCS 0.644 MMD 0.488 CSS 0.422
+base=heart f=0.0 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  52.98  DES 0.522 DCS 0.662 MMD 0.496 CSS 0.425
+base=heart f=0.0 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  53.88  DES 0.537 DCS 0.672 MMD 0.502 CSS 0.430
+base=heart f=0.0 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  54.83  DES 0.556 DCS 0.682 MMD 0.503 CSS 0.439
+base=heart f=0.15 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  59.93  DES 0.568 DCS 0.705 MMD 0.566 CSS 0.555
+base=heart f=0.15 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  60.88  DES 0.588 DCS 0.715 MMD 0.572 CSS 0.556
+base=heart f=0.15 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  61.09  DES 0.588 DCS 0.719 MMD 0.574 CSS 0.558
+base=heart f=0.15 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  60.91  DES 0.593 DCS 0.721 MMD 0.565 CSS 0.556
+base=heart f=0.15 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  59.65  DES 0.563 DCS 0.699 MMD 0.566 CSS 0.556
+base=heart f=0.2 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  61.88  DES 0.583 DCS 0.721 MMD 0.589 CSS 0.581
+base=heart f=0.2 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  62.71  DES 0.603 DCS 0.728 MMD 0.594 CSS 0.581
+base=heart f=0.2 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  62.81  DES 0.603 DCS 0.730 MMD 0.595 CSS 0.581
+base=heart f=0.2 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  62.27  DES 0.601 DCS 0.732 MMD 0.582 CSS 0.575
+base=heart f=0.2 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  61.52  DES 0.575 DCS 0.714 MMD 0.589 CSS 0.583
+base=heart f=0.25 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  63.88  DES 0.602 DCS 0.737 MMD 0.606 CSS 0.610
+base=heart f=0.25 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  64.44  DES 0.617 DCS 0.742 MMD 0.609 CSS 0.609
+base=heart f=0.25 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  64.48  DES 0.620 DCS 0.743 MMD 0.609 CSS 0.607
+base=heart f=0.25 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  63.50  DES 0.610 DCS 0.743 MMD 0.591 CSS 0.596
+base=heart f=0.25 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  63.62  DES 0.595 DCS 0.730 MMD 0.607 CSS 0.614
+base=heart f=0.3 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  64.93  DES 0.611 DCS 0.745 MMD 0.614 CSS 0.629
+base=heart f=0.3 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  65.27  DES 0.621 DCS 0.749 MMD 0.616 CSS 0.627
+base=heart f=0.3 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  65.31  DES 0.625 DCS 0.751 MMD 0.615 CSS 0.624
+base=heart f=0.3 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  64.32  DES 0.621 DCS 0.749 MMD 0.596 CSS 0.609
+base=heart f=0.3 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  64.61  DES 0.600 DCS 0.737 MMD 0.617 CSS 0.635
+base=heart f=0.375 mode=min trend=0.0 proxy=p8/all split=development elapsed=0.2  66.49  DES 0.622 DCS 0.764 MMD 0.623 CSS 0.657
+base=heart f=0.375 mode=min trend=1.5 proxy=p8/all split=development elapsed=0.2  66.90  DES 0.638 DCS 0.767 MMD 0.623 CSS 0.653
+base=heart f=0.375 mode=min trend=3.0 proxy=p8/all split=development elapsed=0.2  66.71  DES 0.638 DCS 0.768 MMD 0.620 CSS 0.647
+base=heart f=0.375 mode=min trend=6.0 proxy=p8/all split=development elapsed=0.2  65.51  DES 0.636 DCS 0.765 MMD 0.598 CSS 0.628
+base=heart f=0.375 mode=median trend=0.0 proxy=p8/all split=development elapsed=0.2  66.46  DES 0.615 DCS 0.756 MMD 0.629 CSS 0.667
+proxy                      p8/deep  p8/all
+base   mode   trend f                     
+nat    min    0.0   0.000    59.73   58.48
+                    0.150    67.68   69.65
+                    0.200    68.80   71.86
+                    0.250    69.46   73.21
+                    0.300    69.80   74.08
+                    0.375    68.85   74.27
+              1.5   0.000    61.24   60.69
+                    0.150    68.27   70.27
+                    0.200    69.42   72.30
+                    0.250    69.78   73.71
+                    0.300    70.12   74.83
+                    0.375    69.11   74.72
+              3.0   0.000    61.77   61.90
+                    0.150    67.93   70.22
+                    0.200    69.06   72.41
+                    0.250    69.55   73.57
+                    0.300    69.62   74.59
+                    0.375    68.83   74.40
+              6.0   0.000    61.18   62.55
+                    0.150    65.69   69.07
+                    0.200    66.50   70.53
+                    0.250    66.91   71.33
+                    0.300    67.18   72.05
+                    0.375    66.52   72.18
+       median 0.0   0.150    67.10   69.07
+                    0.200    68.32   71.27
+                    0.250    68.82   72.71
+                    0.300    69.12   74.01
+                    0.375    68.55   74.52
+oracle min    0.0   0.000    74.33   67.41
+                    0.150    79.93   76.23
+                    0.200    80.61   78.29
+                    0.250    79.81   78.85
+                    0.300    78.77   79.17
+                    0.375    76.09   77.79
+              1.5   0.000    76.48   70.06
+                    0.150    81.15   77.46
+                    0.200    81.34   79.50
+                    0.250    80.57   80.11
+                    0.300    79.20   80.03
+                    0.375    76.21   78.27
+              3.0   0.000    76.90   71.04
+                    0.150    81.10   77.72
+                    0.200    80.91   79.26
+                    0.250    79.97   79.84
+                    0.300    78.60   79.52
+                    0.375    75.65   78.06
+              6.0   0.000    74.36   70.77
+                    0.150    77.08   75.91
+                    0.200    76.49   76.86
+                    0.250    76.18   77.23
+                    0.300    75.18   76.98
+                    0.375    72.60   75.45
+       median 0.0   0.150    79.49   75.79
+                    0.200    80.07   78.03
+                    0.250    79.45   78.98
+                    0.300    78.70   79.21
+                    0.375    76.46   78.28
+heart  min    0.0   0.000    60.22   51.41
+                    0.150    67.38   59.93
+                    0.200    68.90   61.88
+                    0.250    70.04   63.88
+                    0.300    69.99   64.93
+                    0.375    69.63   66.49
+              1.5   0.000    61.64   52.98
+                    0.150    68.13   60.88
+                    0.200    69.37   62.71
+                    0.250    70.54   64.44
+                    0.300    70.26   65.27
+                    0.375    69.71   66.90
+              3.0   0.000    62.25   53.88
+                    0.150    68.02   61.09
+                    0.200    69.22   62.81
+                    0.250    70.35   64.48
+                    0.300    70.13   65.31
+                    0.375    69.37   66.71
+              6.0   0.000    61.63   54.83
+                    0.150    66.22   60.91
+                    0.200    67.04   62.27
+                    0.250    67.81   63.50
+                    0.300    67.74   64.32
+                    0.375    67.25   65.51
+       median 0.0   0.150    67.03   59.65
+                    0.200    68.27   61.52
+                    0.250    69.54   63.62
+                    0.300    69.48   64.61
+                    0.375    69.20   66.46

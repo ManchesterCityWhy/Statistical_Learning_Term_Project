@@ -1,0 +1,80 @@
+scenario pool 11486 cells; library shares {'1': 0.359, '2': 0.168, '3': 0.473} 31s
+config=R5 (round-5 file) scenario=heart/deep split=development f=0.375 seed=42  59.62  DES 0.636 DCS 0.795 MMD 0.560 CSS 0.352
+config=R5 (round-5 file) scenario=heart/mid split=development f=0.375 seed=42  67.61  DES 0.632 DCS 0.815 MMD 0.621 CSS 0.641
+config=R5 (round-5 file) scenario=heart/shallow split=development f=0.375 seed=42  73.29  DES 0.669 DCS 0.807 MMD 0.694 CSS 0.778
+config=R5 (round-5 file) scenario=all/asis split=development f=0.375 seed=42  66.63  DES 0.663 DCS 0.860 MMD 0.557 CSS 0.592
+config=R6 (candidate) scenario=heart/deep split=development f=0.375 seed=42  73.72  DES 0.734 DCS 0.878 MMD 0.740 CSS 0.561
+config=R6 (candidate) scenario=heart/mid split=development f=0.375 seed=42  81.02  DES 0.755 DCS 0.890 MMD 0.797 CSS 0.799
+config=R6 (candidate) scenario=heart/shallow split=development f=0.375 seed=42  80.46  DES 0.761 DCS 0.857 MMD 0.818 CSS 0.772
+config=R6 (candidate) scenario=all/asis split=development f=0.375 seed=42  72.41  DES 0.672 DCS 0.870 MMD 0.655 CSS 0.711
+config=R5 (round-5 file) scenario=heart/deep split=development f=0.375 seed=1  59.62  DES 0.633 DCS 0.793 MMD 0.559 CSS 0.360
+config=R5 (round-5 file) scenario=heart/mid split=development f=0.375 seed=1  67.55  DES 0.632 DCS 0.812 MMD 0.618 CSS 0.645
+config=R5 (round-5 file) scenario=heart/shallow split=development f=0.375 seed=1  72.75  DES 0.663 DCS 0.801 MMD 0.689 CSS 0.774
+config=R5 (round-5 file) scenario=all/asis split=development f=0.375 seed=1  66.98  DES 0.672 DCS 0.860 MMD 0.557 CSS 0.598
+config=R6 (candidate) scenario=heart/deep split=development f=0.375 seed=1  74.20  DES 0.738 DCS 0.883 MMD 0.748 CSS 0.562
+config=R6 (candidate) scenario=heart/mid split=development f=0.375 seed=1  81.69  DES 0.768 DCS 0.896 MMD 0.803 CSS 0.799
+config=R6 (candidate) scenario=heart/shallow split=development f=0.375 seed=1  80.73  DES 0.769 DCS 0.858 MMD 0.820 CSS 0.773
+config=R6 (candidate) scenario=all/asis split=development f=0.375 seed=1  73.19  DES 0.681 DCS 0.876 MMD 0.665 CSS 0.715
+config=R5 (round-5 file) scenario=heart/deep split=development f=0.375 seed=2  59.44  DES 0.637 DCS 0.791 MMD 0.556 CSS 0.353
+config=R5 (round-5 file) scenario=heart/mid split=development f=0.375 seed=2  67.54  DES 0.633 DCS 0.811 MMD 0.617 CSS 0.645
+config=R5 (round-5 file) scenario=heart/shallow split=development f=0.375 seed=2  73.11  DES 0.662 DCS 0.802 MMD 0.695 CSS 0.784
+config=R5 (round-5 file) scenario=all/asis split=development f=0.375 seed=2  67.05  DES 0.670 DCS 0.861 MMD 0.561 CSS 0.598
+config=R6 (candidate) scenario=heart/deep split=development f=0.375 seed=2  74.62  DES 0.743 DCS 0.885 MMD 0.748 CSS 0.574
+config=R6 (candidate) scenario=heart/mid split=development f=0.375 seed=2  81.58  DES 0.764 DCS 0.898 MMD 0.803 CSS 0.797
+config=R6 (candidate) scenario=heart/shallow split=development f=0.375 seed=2  80.74  DES 0.776 DCS 0.858 MMD 0.820 CSS 0.763
+config=R6 (candidate) scenario=all/asis split=development f=0.375 seed=2  72.92  DES 0.686 DCS 0.871 MMD 0.659 CSS 0.711
+config=R5 (round-5 file) scenario=heart/deep split=development f=0.375 seed=3  59.80  DES 0.635 DCS 0.792 MMD 0.562 CSS 0.364
+config=R5 (round-5 file) scenario=heart/mid split=development f=0.375 seed=3  67.84  DES 0.636 DCS 0.811 MMD 0.622 CSS 0.649
+config=R5 (round-5 file) scenario=heart/shallow split=development f=0.375 seed=3  73.10  DES 0.672 DCS 0.801 MMD 0.694 CSS 0.774
+config=R5 (round-5 file) scenario=all/asis split=development f=0.375 seed=3  67.00  DES 0.668 DCS 0.858 MMD 0.561 CSS 0.602
+config=R6 (candidate) scenario=heart/deep split=development f=0.375 seed=3  73.57  DES 0.734 DCS 0.879 MMD 0.739 CSS 0.553
+config=R6 (candidate) scenario=heart/mid split=development f=0.375 seed=3  80.89  DES 0.756 DCS 0.891 MMD 0.793 CSS 0.795
+config=R6 (candidate) scenario=heart/shallow split=development f=0.375 seed=3  80.42  DES 0.767 DCS 0.855 MMD 0.813 CSS 0.774
+config=R6 (candidate) scenario=all/asis split=development f=0.375 seed=3  72.79  DES 0.681 DCS 0.872 MMD 0.657 CSS 0.712
+config=R5 (round-5 file) scenario=heart/deep split=development f=0.375 seed=4  60.05  DES 0.632 DCS 0.797 MMD 0.563 CSS 0.372
+config=R5 (round-5 file) scenario=heart/mid split=development f=0.375 seed=4  68.06  DES 0.635 DCS 0.815 MMD 0.623 CSS 0.656
+config=R5 (round-5 file) scenario=heart/shallow split=development f=0.375 seed=4  73.10  DES 0.672 DCS 0.802 MMD 0.693 CSS 0.773
+config=R5 (round-5 file) scenario=all/asis split=development f=0.375 seed=4  67.32  DES 0.670 DCS 0.861 MMD 0.562 CSS 0.610
+config=R6 (candidate) scenario=heart/deep split=development f=0.375 seed=4  73.72  DES 0.740 DCS 0.875 MMD 0.742 CSS 0.554
+config=R6 (candidate) scenario=heart/mid split=development f=0.375 seed=4  81.36  DES 0.760 DCS 0.893 MMD 0.798 CSS 0.804
+config=R6 (candidate) scenario=heart/shallow split=development f=0.375 seed=4  80.72  DES 0.765 DCS 0.857 MMD 0.818 CSS 0.782
+config=R6 (candidate) scenario=all/asis split=development f=0.375 seed=4  72.97  DES 0.679 DCS 0.872 MMD 0.660 CSS 0.719
+resampling sd over seeds [42, 1, 2, 3, 4]
+                        mean                                         std                                 
+scenario          heart/deep heart/mid heart/shallow all/asis heart/deep heart/mid heart/shallow all/asis
+config                                                                                                   
+R5 (round-5 file)      59.71     67.72         73.07    66.99       0.23      0.22          0.19     0.25
+R6 (candidate)         73.97     81.31         80.61    72.86       0.44      0.35          0.16     0.29
+difference R6 (candidate) - R5 (round-5 file) per seed:
+scenario  all/asis  heart/deep  heart/mid  heart/shallow
+seed                                                    
+1             6.21       14.58      14.14           7.98
+2             5.87       15.18      14.04           7.63
+3             5.79       13.77      13.06           7.31
+4             5.65       13.66      13.30           7.62
+42            5.78       14.10      13.40           7.17
+sd {'all/asis': 0.21, 'heart/deep': 0.63, 'heart/mid': 0.48, 'heart/shallow': 0.32}
+scenario           heart/deep  heart/mid  heart/shallow  all/asis  expected  heart only
+config                                                                                 
+R5 (round-5 file)       59.71      67.72          73.07     66.99     64.58       63.98
+R6 (candidate)          73.97      81.31          80.61     72.86     75.98       76.76
+skill_de_score
+scenario           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                           
+R5 (round-5 file)       0.635      0.634          0.667     0.669
+R6 (candidate)          0.738      0.761          0.768     0.680
+skill_de_direction
+scenario           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                           
+R5 (round-5 file)       0.794      0.813          0.802     0.860
+R6 (candidate)          0.880      0.894          0.857     0.872
+skill_mmd_u
+scenario           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                           
+R5 (round-5 file)       0.560      0.620          0.693     0.559
+R6 (candidate)          0.743      0.799          0.818     0.659
+skill_variogram
+scenario           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                           
+R5 (round-5 file)       0.360      0.647          0.777     0.600
+R6 (candidate)          0.561      0.799          0.773     0.714

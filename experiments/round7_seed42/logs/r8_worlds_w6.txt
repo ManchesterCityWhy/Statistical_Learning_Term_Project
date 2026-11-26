@@ -1,0 +1,82 @@
+files built 11
+T0 library 3 as it is done
+T1 expression moved (round-7 shifts) done
+T2 composition moved (0.45) done
+T3 composition + round-7 shifts done
+S25c7 shared 0.25 + composition + round-7 shifts done
+M20c7 mixture 0.2 + composition + round-7 shifts done
+T4 all-synthetic round-7 construction done
+L50 low genes 0.5 done
+L25c7 low genes 0.25 + composition + round-7 shifts done
+L50c7 low genes 0.5 + composition + round-7 shifts done
+L100c7 low genes 1 + composition + round-7 shifts done
+L50c7a low genes 0.5 (measured molecules) + composition + round-7 shifts done
+w                                                     T0    T1    T2    T3  S25c7  M20c7    T4   L50  L25c7  L50c7  L100c7  L50c7a
+file                                                                                                                              
+B: library 3 as it is                               99.9  94.2  94.3  87.8   85.2   80.3  82.0  96.5   85.2   81.8    75.8    81.9
+A20: 20% raw nuclei, shared correction              92.0  92.0  86.4  86.5   88.3   85.6  86.3  90.2   85.7   83.3    78.4    83.3
+A40: 40% raw nuclei, no correction                  68.9  74.7  65.7  72.2   79.4   83.2  79.6  71.4   74.2   74.2    73.0    74.2
+R7h: file recipe                                    85.0  93.6  88.7  97.4   96.8   94.9  98.8  85.0   97.1   93.9    86.1    93.9
+R7 all synthetic                                    80.7  90.0  83.1  93.0   94.9   95.9  99.1  82.7   94.2   92.3    86.2    92.2
+R7 all real                                         88.1  95.4  92.0  99.6   96.9   92.3  94.9  85.8   98.3   93.5    84.5    93.6
+candidate: all real + low genes 0.25                85.1  93.5  88.7  97.9   95.6   94.0  95.9  87.7   99.5   98.2    90.7    98.2
+all real + low genes 0.25, measured molecules only  85.2  93.5  88.8  98.1   95.7   93.9  96.0  87.7   99.4   98.1    90.4    98.1
+all real + low genes 0.35                           83.7  92.1  87.0  96.7   94.3   93.6  95.4  87.6   99.3   98.9    92.4    98.8
+all real + low genes 0.5                            81.6  90.0  84.5  93.9   92.3   93.0  94.4  87.0   98.3   99.1    94.7    99.1
+all real + low genes 0.5, below 0.1                 85.6  93.6  89.5  98.5   95.7   92.6  95.5  87.0   98.9   96.1    88.4    96.2
+DES
+w                                                      T0    T1    T2     T3  S25c7  M20c7    T4    L50  L25c7  L50c7  L100c7  L50c7a
+file                                                                                                                                 
+B: library 3 as it is                               100.0  85.1  91.8   77.4   74.3   72.4  75.2  100.0   76.0   73.5    69.7    73.5
+A20: 20% raw nuclei, shared correction               88.1  82.7  85.7   78.5   82.0   79.7  79.7   87.4   77.0   74.7    72.3    74.8
+A40: 40% raw nuclei, no correction                   69.2  69.7  69.4   70.7   79.2   82.4  75.2   69.5   71.3   70.4    68.6    70.4
+R7h: file recipe                                     78.2  91.1  82.6   96.2   93.8   90.3  98.9   78.0   94.4   90.5    82.4    90.4
+R7 all synthetic                                     76.5  88.0  81.2   91.9   92.7   91.1  98.7   76.0   91.0   87.9    81.7    88.0
+R7 all real                                          78.6  92.2  83.5  100.0   92.6   88.1  95.0   79.2   97.4   92.2    82.4    92.1
+candidate: all real + low genes 0.25                 77.8  90.8  82.0   97.3   90.4   89.3  93.8   78.8   99.9   96.9    88.0    96.9
+all real + low genes 0.25, measured molecules only   77.8  90.8  82.0   97.9   90.6   89.1  94.0   78.8   99.5   96.7    87.1    96.7
+all real + low genes 0.35                            77.3  89.6  80.9   96.5   88.5   88.3  92.2   78.3   99.0   98.2    90.1    98.0
+all real + low genes 0.5                             75.6  87.5  79.9   93.1   86.6   87.5  90.3   77.1   96.8   98.7    94.0    98.7
+all real + low genes 0.5, below 0.1                  78.2  91.1  82.5   98.3   91.5   88.2  94.0   78.8   98.0   93.9    85.2    94.2
+DCS
+w                                                      T0     T1     T2     T3  S25c7  M20c7     T4   L50  L25c7  L50c7  L100c7  L50c7a
+file                                                                                                                                   
+B: library 3 as it is                               100.0  100.0  100.0   95.0   94.2   89.1   87.2  92.4   89.9   84.9    77.5    84.7
+A20: 20% raw nuclei, shared correction               99.7   99.4   96.9   94.5   95.3   94.4   93.2  94.6   93.4   89.6    82.7    89.4
+A40: 40% raw nuclei, no correction                   88.1   89.7   87.6   88.0   91.0   95.5   93.2  91.0   91.0   89.5    84.6    89.3
+R7h: file recipe                                     94.8   99.4   98.5  100.0  100.0   99.9   99.7  91.7  100.0   96.2    87.5    95.9
+R7 all synthetic                                     91.2   95.9   94.1   97.2   98.8   99.9  100.0  92.6   99.4   96.9    89.8    96.5
+R7 all real                                          97.1  100.0  100.0  100.0  100.0   97.0   95.0  88.2   99.5   92.9    83.4    92.7
+candidate: all real + low genes 0.25                 92.6   97.8   96.8  100.0  100.0   99.8   98.6  93.8  100.0   99.8    91.1    99.6
+all real + low genes 0.25, measured molecules only   92.6   97.8   96.7  100.0  100.0   99.7   98.7  93.9  100.0   99.8    91.2    99.6
+all real + low genes 0.35                            90.9   96.1   94.8   98.7   98.7   99.1   98.5  94.4  100.0  100.0    92.9   100.0
+all real + low genes 0.5                             88.6   93.7   92.0   95.8   96.0   97.8   97.7  94.6  100.0  100.0    94.8   100.0
+all real + low genes 0.5, below 0.1                  91.7   96.7   96.3   99.9   99.0   97.6   97.9  92.0  100.0   97.7    89.8    97.5
+MMD
+w                                                     T0    T1    T2    T3  S25c7  M20c7    T4   L50  L25c7  L50c7  L100c7  L50c7a
+file                                                                                                                              
+B: library 3 as it is                               99.8  95.4  92.9  89.8   85.7   80.9  82.8  99.1   88.8   86.7    80.7    86.9
+A20: 20% raw nuclei, shared correction              92.8  94.5  86.6  90.1   90.4   86.7  88.2  93.1   90.0   88.5    83.2    88.6
+A40: 40% raw nuclei, no correction                  65.3  75.5  60.3  72.6   81.9   84.0  81.4  68.1   74.3   75.4    75.7    75.5
+R7h: file recipe                                    85.5  92.5  88.1  96.6   95.7   94.7  97.9  86.9   97.0   95.5    89.1    95.6
+R7 all synthetic                                    80.7  89.8  81.1  92.6   94.6   96.1  98.3  82.7   93.6   92.9    88.0    92.9
+R7 all real                                         89.5  94.8  92.4  98.7   95.8   92.7  94.6  90.1   98.4   96.3    88.8    96.4
+candidate: all real + low genes 0.25                87.6  93.7  90.1  97.6   95.5   93.6  95.2  89.9   98.6   97.7    92.4    97.7
+all real + low genes 0.25, measured molecules only  87.7  93.8  90.1  97.6   95.5   93.6  95.2  89.9   98.6   97.6    92.3    97.7
+all real + low genes 0.35                           86.9  93.3  89.2  97.1   95.3   93.9  95.3  89.7   98.6   98.0    93.5    98.0
+all real + low genes 0.5                            85.8  92.7  87.9  96.4   95.0   94.2  95.4  89.3   98.4   98.3    94.7    98.3
+all real + low genes 0.5, below 0.1                 88.5  94.2  91.2  98.1   95.6   93.0  94.9  90.1   98.6   97.1    91.0    97.2
+CSS
+w                                                      T0    T1    T2     T3  S25c7  M20c7    T4   L50  L25c7  L50c7  L100c7  L50c7a
+file                                                                                                                                
+B: library 3 as it is                               100.0  96.6  92.1   88.9   86.8   78.2  82.7  93.2   85.5   80.9    74.1    81.3
+A20: 20% raw nuclei, shared correction               86.0  90.7  73.8   81.1   84.5   80.2  83.0  84.1   80.5   78.1    73.7    78.3
+A40: 40% raw nuclei, no correction                   50.0  61.1  41.8   53.8   61.6   67.5  65.3  54.4   56.5   58.2    60.0    58.1
+R7h: file recipe                                     80.5  90.9  84.8   97.1   98.1   94.9  98.9  82.6   97.1   93.0    84.5    93.3
+R7 all synthetic                                     73.0  85.3  74.5   89.7   93.5   96.6  99.7  78.5   92.7   91.0    84.9    91.1
+R7 all real                                          86.5  94.7  92.1  100.0   99.7   91.0  95.1  84.4   97.8   91.8    82.0    92.3
+candidate: all real + low genes 0.25                 81.0  90.9  85.0   96.6   96.8   93.4  96.3  87.8  100.0   98.6    90.8    98.7
+all real + low genes 0.25, measured molecules only   81.4  91.2  85.5   96.9   97.0   93.2  96.3  87.8  100.0   98.4    90.5    98.6
+all real + low genes 0.35                            78.1  88.5  81.3   93.7   94.5   93.2  95.6  87.7  100.0   99.6    93.1    99.6
+all real + low genes 0.5                             73.8  84.6  75.8   88.9   90.6   92.0  93.7  86.5   97.9   99.8    95.6    99.7
+all real + low genes 0.5, below 0.1                  82.7  91.7  87.2   97.6   97.0   91.5  95.1  86.2   99.0   95.5    87.0    95.7

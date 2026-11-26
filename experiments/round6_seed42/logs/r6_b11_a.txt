@@ -1,0 +1,256 @@
+[suite] gen      ready    12s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] 2d/deep  ready    18s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] 2d/all   ready    24s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+gen tilted lineages ['CM', 'Endo', 'Epi'] anchor share by rule 0.125
+base=nat f=0.0 beta=0.0 gamma=0.0 proxy=gen split=development           53.48  DES 0.510 DCS 0.593 MMD 0.523 CSS 0.511
+base=nat f=0.0 beta=0.5 gamma=0.0 proxy=gen split=development           50.79  DES 0.515 DCS 0.553 MMD 0.477 CSS 0.489
+base=nat f=0.0 beta=1.0 gamma=0.0 proxy=gen split=development           47.62  DES 0.510 DCS 0.524 MMD 0.424 CSS 0.452
+base=nat f=0.0 beta=2.0 gamma=0.0 proxy=gen split=development           44.55  DES 0.505 DCS 0.505 MMD 0.369 CSS 0.411
+base=nat f=0.125 beta=0.0 gamma=0.0 proxy=gen split=development         56.25  DES 0.536 DCS 0.633 MMD 0.583 CSS 0.476
+base=nat f=0.125 beta=0.0 gamma=1.0 proxy=gen split=development         56.71  DES 0.547 DCS 0.636 MMD 0.584 CSS 0.480
+base=nat f=0.125 beta=0.0 gamma=2.0 proxy=gen split=development         56.22  DES 0.547 DCS 0.632 MMD 0.580 CSS 0.466
+base=nat f=0.125 beta=0.5 gamma=0.0 proxy=gen split=development         54.07  DES 0.542 DCS 0.611 MMD 0.536 CSS 0.458
+base=nat f=0.125 beta=0.5 gamma=1.0 proxy=gen split=development         54.39  DES 0.547 DCS 0.614 MMD 0.537 CSS 0.463
+base=nat f=0.125 beta=0.5 gamma=2.0 proxy=gen split=development         54.10  DES 0.553 DCS 0.612 MMD 0.533 CSS 0.449
+base=nat f=0.125 beta=1.0 gamma=0.0 proxy=gen split=development         51.51  DES 0.536 DCS 0.594 MMD 0.483 CSS 0.439
+base=nat f=0.125 beta=1.0 gamma=1.0 proxy=gen split=development         51.75  DES 0.542 DCS 0.594 MMD 0.483 CSS 0.444
+base=nat f=0.125 beta=1.0 gamma=2.0 proxy=gen split=development         51.34  DES 0.542 DCS 0.591 MMD 0.480 CSS 0.432
+base=nat f=0.125 beta=2.0 gamma=0.0 proxy=gen split=development         48.48  DES 0.531 DCS 0.573 MMD 0.426 CSS 0.406
+base=nat f=0.125 beta=2.0 gamma=1.0 proxy=gen split=development         48.53  DES 0.531 DCS 0.571 MMD 0.426 CSS 0.410
+base=nat f=0.125 beta=2.0 gamma=2.0 proxy=gen split=development         48.15  DES 0.531 DCS 0.568 MMD 0.424 CSS 0.399
+base=nat f=0.375 beta=0.0 gamma=0.0 proxy=gen split=development         43.61  DES 0.547 DCS 0.616 MMD 0.360 CSS 0.186
+base=nat f=0.375 beta=0.0 gamma=1.0 proxy=gen split=development         44.27  DES 0.547 DCS 0.621 MMD 0.377 CSS 0.187
+base=nat f=0.375 beta=0.0 gamma=2.0 proxy=gen split=development         44.70  DES 0.553 DCS 0.621 MMD 0.383 CSS 0.193
+base=nat f=0.375 beta=0.5 gamma=0.0 proxy=gen split=development         43.35  DES 0.553 DCS 0.610 MMD 0.351 CSS 0.187
+base=nat f=0.375 beta=0.5 gamma=1.0 proxy=gen split=development         43.87  DES 0.547 DCS 0.616 MMD 0.367 CSS 0.189
+base=nat f=0.375 beta=0.5 gamma=2.0 proxy=gen split=development         44.17  DES 0.547 DCS 0.616 MMD 0.373 CSS 0.195
+base=nat f=0.375 beta=1.0 gamma=0.0 proxy=gen split=development         42.82  DES 0.553 DCS 0.605 MMD 0.338 CSS 0.185
+base=nat f=0.375 beta=1.0 gamma=1.0 proxy=gen split=development         43.12  DES 0.542 DCS 0.610 MMD 0.353 CSS 0.187
+base=nat f=0.375 beta=1.0 gamma=2.0 proxy=gen split=development         43.57  DES 0.547 DCS 0.611 MMD 0.359 CSS 0.192
+base=nat f=0.375 beta=2.0 gamma=0.0 proxy=gen split=development         41.85  DES 0.547 DCS 0.598 MMD 0.320 CSS 0.181
+base=nat f=0.375 beta=2.0 gamma=1.0 proxy=gen split=development         42.20  DES 0.542 DCS 0.600 MMD 0.333 CSS 0.183
+base=nat f=0.375 beta=2.0 gamma=2.0 proxy=gen split=development         42.51  DES 0.542 DCS 0.602 MMD 0.338 CSS 0.189
+base=oracle f=0.0 beta=0.0 gamma=0.0 proxy=gen split=development        60.28  DES 0.542 DCS 0.659 MMD 0.634 CSS 0.562
+base=oracle f=0.0 beta=0.5 gamma=0.0 proxy=gen split=development        58.51  DES 0.542 DCS 0.643 MMD 0.592 CSS 0.556
+base=oracle f=0.0 beta=1.0 gamma=0.0 proxy=gen split=development        54.84  DES 0.553 DCS 0.601 MMD 0.522 CSS 0.516
+base=oracle f=0.0 beta=2.0 gamma=0.0 proxy=gen split=development        51.07  DES 0.542 DCS 0.560 MMD 0.459 CSS 0.488
+base=oracle f=0.125 beta=0.0 gamma=0.0 proxy=gen split=development      60.64  DES 0.542 DCS 0.673 MMD 0.665 CSS 0.516
+base=oracle f=0.125 beta=0.0 gamma=1.0 proxy=gen split=development      60.76  DES 0.536 DCS 0.673 MMD 0.670 CSS 0.522
+base=oracle f=0.125 beta=0.0 gamma=2.0 proxy=gen split=development      60.53  DES 0.542 DCS 0.671 MMD 0.667 CSS 0.510
+base=oracle f=0.125 beta=0.5 gamma=0.0 proxy=gen split=development      59.63  DES 0.571 DCS 0.659 MMD 0.625 CSS 0.506
+base=oracle f=0.125 beta=0.5 gamma=1.0 proxy=gen split=development      59.82  DES 0.565 DCS 0.662 MMD 0.629 CSS 0.514
+base=oracle f=0.125 beta=0.5 gamma=2.0 proxy=gen split=development      59.36  DES 0.559 DCS 0.660 MMD 0.627 CSS 0.503
+base=oracle f=0.125 beta=1.0 gamma=0.0 proxy=gen split=development      56.65  DES 0.565 DCS 0.633 MMD 0.564 CSS 0.489
+base=oracle f=0.125 beta=1.0 gamma=1.0 proxy=gen split=development      57.01  DES 0.565 DCS 0.635 MMD 0.568 CSS 0.498
+base=oracle f=0.125 beta=1.0 gamma=2.0 proxy=gen split=development      56.90  DES 0.571 DCS 0.634 MMD 0.567 CSS 0.488
+base=oracle f=0.125 beta=2.0 gamma=0.0 proxy=gen split=development      53.42  DES 0.565 DCS 0.607 MMD 0.498 CSS 0.458
+base=oracle f=0.125 beta=2.0 gamma=1.0 proxy=gen split=development      53.67  DES 0.565 DCS 0.606 MMD 0.501 CSS 0.468
+base=oracle f=0.125 beta=2.0 gamma=2.0 proxy=gen split=development      53.09  DES 0.553 DCS 0.603 MMD 0.501 CSS 0.459
+base=oracle f=0.375 beta=0.0 gamma=0.0 proxy=gen split=development      44.39  DES 0.547 DCS 0.634 MMD 0.368 CSS 0.191
+base=oracle f=0.375 beta=0.0 gamma=1.0 proxy=gen split=development      45.23  DES 0.553 DCS 0.637 MMD 0.387 CSS 0.193
+base=oracle f=0.375 beta=0.0 gamma=2.0 proxy=gen split=development      45.43  DES 0.547 DCS 0.638 MMD 0.394 CSS 0.199
+base=oracle f=0.375 beta=0.5 gamma=0.0 proxy=gen split=development      44.24  DES 0.559 DCS 0.627 MMD 0.361 CSS 0.188
+base=oracle f=0.375 beta=0.5 gamma=1.0 proxy=gen split=development      44.65  DES 0.547 DCS 0.630 MMD 0.380 CSS 0.191
+base=oracle f=0.375 beta=0.5 gamma=2.0 proxy=gen split=development      45.14  DES 0.553 DCS 0.631 MMD 0.387 CSS 0.197
+base=oracle f=0.375 beta=1.0 gamma=0.0 proxy=gen split=development      43.58  DES 0.559 DCS 0.616 MMD 0.348 CSS 0.188
+base=oracle f=0.375 beta=1.0 gamma=1.0 proxy=gen split=development      44.01  DES 0.547 DCS 0.621 MMD 0.366 CSS 0.191
+base=oracle f=0.375 beta=1.0 gamma=2.0 proxy=gen split=development      44.53  DES 0.553 DCS 0.623 MMD 0.373 CSS 0.198
+base=oracle f=0.375 beta=2.0 gamma=0.0 proxy=gen split=development      42.60  DES 0.559 DCS 0.606 MMD 0.325 CSS 0.186
+base=oracle f=0.375 beta=2.0 gamma=1.0 proxy=gen split=development      43.24  DES 0.559 DCS 0.610 MMD 0.341 CSS 0.188
+base=oracle f=0.375 beta=2.0 gamma=2.0 proxy=gen split=development      43.48  DES 0.553 DCS 0.613 MMD 0.348 CSS 0.195
+2d/deep tilted lineages ['CM', 'Endo', 'Epi'] anchor share by rule 0.25
+base=nat f=0.0 beta=0.0 gamma=0.0 proxy=2d/deep split=development       50.37  DES 0.463 DCS 0.540 MMD 0.509 CSS 0.502
+base=nat f=0.0 beta=0.5 gamma=0.0 proxy=2d/deep split=development       49.05  DES 0.448 DCS 0.519 MMD 0.496 CSS 0.499
+base=nat f=0.0 beta=1.0 gamma=0.0 proxy=2d/deep split=development       48.06  DES 0.449 DCS 0.504 MMD 0.482 CSS 0.489
+base=nat f=0.0 beta=2.0 gamma=0.0 proxy=2d/deep split=development       47.17  DES 0.449 DCS 0.496 MMD 0.466 CSS 0.479
+base=nat f=0.25 beta=0.0 gamma=0.0 proxy=2d/deep split=development      64.05  DES 0.619 DCS 0.695 MMD 0.617 CSS 0.635
+base=nat f=0.25 beta=0.0 gamma=1.0 proxy=2d/deep split=development      64.10  DES 0.621 DCS 0.699 MMD 0.616 CSS 0.632
+base=nat f=0.25 beta=0.0 gamma=2.0 proxy=2d/deep split=development      63.80  DES 0.616 DCS 0.696 MMD 0.614 CSS 0.629
+base=nat f=0.25 beta=0.5 gamma=0.0 proxy=2d/deep split=development      63.24  DES 0.613 DCS 0.688 MMD 0.605 CSS 0.628
+base=nat f=0.25 beta=0.5 gamma=1.0 proxy=2d/deep split=development      63.20  DES 0.611 DCS 0.692 MMD 0.604 CSS 0.626
+base=nat f=0.25 beta=0.5 gamma=2.0 proxy=2d/deep split=development      63.00  DES 0.608 DCS 0.691 MMD 0.602 CSS 0.623
+base=nat f=0.25 beta=1.0 gamma=0.0 proxy=2d/deep split=development      62.36  DES 0.604 DCS 0.680 MMD 0.593 CSS 0.623
+base=nat f=0.25 beta=1.0 gamma=1.0 proxy=2d/deep split=development      62.40  DES 0.606 DCS 0.684 MMD 0.591 CSS 0.621
+base=nat f=0.25 beta=1.0 gamma=2.0 proxy=2d/deep split=development      62.12  DES 0.599 DCS 0.683 MMD 0.590 CSS 0.618
+base=nat f=0.25 beta=2.0 gamma=0.0 proxy=2d/deep split=development      60.96  DES 0.589 DCS 0.667 MMD 0.576 CSS 0.614
+base=nat f=0.25 beta=2.0 gamma=1.0 proxy=2d/deep split=development      60.99  DES 0.590 DCS 0.671 MMD 0.575 CSS 0.611
+base=nat f=0.25 beta=2.0 gamma=2.0 proxy=2d/deep split=development      60.77  DES 0.586 DCS 0.670 MMD 0.573 CSS 0.609
+base=nat f=0.375 beta=0.0 gamma=0.0 proxy=2d/deep split=development     64.26  DES 0.615 DCS 0.704 MMD 0.637 CSS 0.609
+base=nat f=0.375 beta=0.0 gamma=1.0 proxy=2d/deep split=development     64.65  DES 0.621 DCS 0.708 MMD 0.641 CSS 0.610
+base=nat f=0.375 beta=0.0 gamma=2.0 proxy=2d/deep split=development     64.54  DES 0.620 DCS 0.705 MMD 0.638 CSS 0.613
+base=nat f=0.375 beta=0.5 gamma=0.0 proxy=2d/deep split=development     63.79  DES 0.611 DCS 0.699 MMD 0.629 CSS 0.609
+base=nat f=0.375 beta=0.5 gamma=1.0 proxy=2d/deep split=development     64.20  DES 0.617 DCS 0.704 MMD 0.632 CSS 0.611
+base=nat f=0.375 beta=0.5 gamma=2.0 proxy=2d/deep split=development     64.15  DES 0.616 DCS 0.703 MMD 0.630 CSS 0.614
+base=nat f=0.375 beta=1.0 gamma=0.0 proxy=2d/deep split=development     63.22  DES 0.609 DCS 0.694 MMD 0.618 CSS 0.604
+base=nat f=0.375 beta=1.0 gamma=1.0 proxy=2d/deep split=development     63.61  DES 0.613 DCS 0.701 MMD 0.621 CSS 0.606
+base=nat f=0.375 beta=1.0 gamma=2.0 proxy=2d/deep split=development     63.52  DES 0.612 DCS 0.698 MMD 0.619 CSS 0.610
+base=nat f=0.375 beta=2.0 gamma=0.0 proxy=2d/deep split=development     62.33  DES 0.604 DCS 0.686 MMD 0.604 CSS 0.597
+base=nat f=0.375 beta=2.0 gamma=1.0 proxy=2d/deep split=development     62.72  DES 0.608 DCS 0.693 MMD 0.607 CSS 0.598
+base=nat f=0.375 beta=2.0 gamma=2.0 proxy=2d/deep split=development     62.60  DES 0.605 DCS 0.691 MMD 0.605 CSS 0.602
+base=oracle f=0.0 beta=0.0 gamma=0.0 proxy=2d/deep split=development    63.11  DES 0.594 DCS 0.653 MMD 0.659 CSS 0.608
+base=oracle f=0.0 beta=0.5 gamma=0.0 proxy=2d/deep split=development    62.69  DES 0.602 DCS 0.645 MMD 0.648 CSS 0.603
+base=oracle f=0.0 beta=1.0 gamma=0.0 proxy=2d/deep split=development    62.29  DES 0.602 DCS 0.642 MMD 0.637 CSS 0.605
+base=oracle f=0.0 beta=2.0 gamma=0.0 proxy=2d/deep split=development    61.07  DES 0.591 DCS 0.635 MMD 0.618 CSS 0.595
+base=oracle f=0.25 beta=0.0 gamma=0.0 proxy=2d/deep split=development   71.42  DES 0.658 DCS 0.743 MMD 0.735 CSS 0.717
+base=oracle f=0.25 beta=0.0 gamma=1.0 proxy=2d/deep split=development   71.44  DES 0.658 DCS 0.744 MMD 0.735 CSS 0.718
+base=oracle f=0.25 beta=0.0 gamma=2.0 proxy=2d/deep split=development   71.17  DES 0.655 DCS 0.741 MMD 0.733 CSS 0.714
+base=oracle f=0.25 beta=0.5 gamma=0.0 proxy=2d/deep split=development   70.89  DES 0.654 DCS 0.738 MMD 0.726 CSS 0.714
+base=oracle f=0.25 beta=0.5 gamma=1.0 proxy=2d/deep split=development   71.00  DES 0.656 DCS 0.740 MMD 0.727 CSS 0.715
+base=oracle f=0.25 beta=0.5 gamma=2.0 proxy=2d/deep split=development   70.77  DES 0.655 DCS 0.737 MMD 0.725 CSS 0.711
+base=oracle f=0.25 beta=1.0 gamma=0.0 proxy=2d/deep split=development   70.54  DES 0.661 DCS 0.734 MMD 0.716 CSS 0.710
+base=oracle f=0.25 beta=1.0 gamma=1.0 proxy=2d/deep split=development   70.57  DES 0.657 DCS 0.737 MMD 0.716 CSS 0.711
+base=oracle f=0.25 beta=1.0 gamma=2.0 proxy=2d/deep split=development   70.33  DES 0.656 DCS 0.733 MMD 0.715 CSS 0.708
+base=oracle f=0.25 beta=2.0 gamma=0.0 proxy=2d/deep split=development   69.64  DES 0.650 DCS 0.730 MMD 0.702 CSS 0.705
+base=oracle f=0.25 beta=2.0 gamma=1.0 proxy=2d/deep split=development   69.73  DES 0.649 DCS 0.731 MMD 0.703 CSS 0.706
+base=oracle f=0.25 beta=2.0 gamma=2.0 proxy=2d/deep split=development   69.62  DES 0.651 DCS 0.728 MMD 0.702 CSS 0.704
+base=oracle f=0.375 beta=0.0 gamma=0.0 proxy=2d/deep split=development  70.10  DES 0.655 DCS 0.750 MMD 0.723 CSS 0.664
+base=oracle f=0.375 beta=0.0 gamma=1.0 proxy=2d/deep split=development  70.45  DES 0.656 DCS 0.753 MMD 0.729 CSS 0.667
+base=oracle f=0.375 beta=0.0 gamma=2.0 proxy=2d/deep split=development  70.49  DES 0.652 DCS 0.754 MMD 0.728 CSS 0.674
+base=oracle f=0.375 beta=0.5 gamma=0.0 proxy=2d/deep split=development  69.71  DES 0.651 DCS 0.747 MMD 0.717 CSS 0.663
+base=oracle f=0.375 beta=0.5 gamma=1.0 proxy=2d/deep split=development  70.18  DES 0.655 DCS 0.750 MMD 0.723 CSS 0.667
+base=oracle f=0.375 beta=0.5 gamma=2.0 proxy=2d/deep split=development  70.26  DES 0.651 DCS 0.752 MMD 0.722 CSS 0.675
+base=oracle f=0.375 beta=1.0 gamma=0.0 proxy=2d/deep split=development  69.11  DES 0.646 DCS 0.743 MMD 0.708 CSS 0.658
+base=oracle f=0.375 beta=1.0 gamma=1.0 proxy=2d/deep split=development  69.58  DES 0.651 DCS 0.747 MMD 0.714 CSS 0.661
+base=oracle f=0.375 beta=1.0 gamma=2.0 proxy=2d/deep split=development  69.75  DES 0.649 DCS 0.749 MMD 0.714 CSS 0.669
+base=oracle f=0.375 beta=2.0 gamma=0.0 proxy=2d/deep split=development  68.50  DES 0.642 DCS 0.739 MMD 0.698 CSS 0.652
+base=oracle f=0.375 beta=2.0 gamma=1.0 proxy=2d/deep split=development  68.93  DES 0.643 DCS 0.743 MMD 0.704 CSS 0.657
+base=oracle f=0.375 beta=2.0 gamma=2.0 proxy=2d/deep split=development  69.26  DES 0.649 DCS 0.744 MMD 0.705 CSS 0.665
+2d/all tilted lineages ['CM', 'Endo', 'Epi'] anchor share by rule 0.25
+base=nat f=0.0 beta=0.0 gamma=0.0 proxy=2d/all split=development        49.07  DES 0.414 DCS 0.541 MMD 0.506 CSS 0.500
+base=nat f=0.0 beta=0.5 gamma=0.0 proxy=2d/all split=development        48.46  DES 0.410 DCS 0.533 MMD 0.496 CSS 0.500
+base=nat f=0.0 beta=1.0 gamma=0.0 proxy=2d/all split=development        47.82  DES 0.413 DCS 0.523 MMD 0.484 CSS 0.496
+base=nat f=0.0 beta=2.0 gamma=0.0 proxy=2d/all split=development        47.37  DES 0.418 DCS 0.518 MMD 0.470 CSS 0.493
+base=nat f=0.25 beta=0.0 gamma=0.0 proxy=2d/all split=development       67.25  DES 0.620 DCS 0.722 MMD 0.652 CSS 0.708
+base=nat f=0.25 beta=0.0 gamma=1.0 proxy=2d/all split=development       68.05  DES 0.629 DCS 0.731 MMD 0.654 CSS 0.721
+base=nat f=0.25 beta=0.0 gamma=2.0 proxy=2d/all split=development       67.88  DES 0.626 DCS 0.727 MMD 0.653 CSS 0.723
+base=nat f=0.25 beta=0.5 gamma=0.0 proxy=2d/all split=development       66.46  DES 0.607 DCS 0.721 MMD 0.644 CSS 0.698
+base=nat f=0.25 beta=0.5 gamma=1.0 proxy=2d/all split=development       67.42  DES 0.622 DCS 0.730 MMD 0.646 CSS 0.712
+base=nat f=0.25 beta=0.5 gamma=2.0 proxy=2d/all split=development       67.47  DES 0.623 DCS 0.731 MMD 0.645 CSS 0.714
+base=nat f=0.25 beta=1.0 gamma=0.0 proxy=2d/all split=development       65.97  DES 0.600 DCS 0.718 MMD 0.633 CSS 0.702
+base=nat f=0.25 beta=1.0 gamma=1.0 proxy=2d/all split=development       66.88  DES 0.614 DCS 0.727 MMD 0.635 CSS 0.716
+base=nat f=0.25 beta=1.0 gamma=2.0 proxy=2d/all split=development       66.94  DES 0.614 DCS 0.729 MMD 0.634 CSS 0.718
+base=nat f=0.25 beta=2.0 gamma=0.0 proxy=2d/all split=development       65.13  DES 0.591 DCS 0.712 MMD 0.619 CSS 0.700
+base=nat f=0.25 beta=2.0 gamma=1.0 proxy=2d/all split=development       65.92  DES 0.600 DCS 0.721 MMD 0.621 CSS 0.713
+base=nat f=0.25 beta=2.0 gamma=2.0 proxy=2d/all split=development       66.18  DES 0.609 DCS 0.721 MMD 0.620 CSS 0.716
+base=nat f=0.375 beta=0.0 gamma=0.0 proxy=2d/all split=development      69.28  DES 0.622 DCS 0.732 MMD 0.681 CSS 0.750
+base=nat f=0.375 beta=0.0 gamma=1.0 proxy=2d/all split=development      70.48  DES 0.633 DCS 0.741 MMD 0.690 CSS 0.770
+base=nat f=0.375 beta=0.0 gamma=2.0 proxy=2d/all split=development      70.51  DES 0.632 DCS 0.741 MMD 0.689 CSS 0.776
+base=nat f=0.375 beta=0.5 gamma=0.0 proxy=2d/all split=development      69.12  DES 0.623 DCS 0.730 MMD 0.676 CSS 0.750
+base=nat f=0.375 beta=0.5 gamma=1.0 proxy=2d/all split=development      70.30  DES 0.631 DCS 0.742 MMD 0.685 CSS 0.771
+base=nat f=0.375 beta=0.5 gamma=2.0 proxy=2d/all split=development      70.39  DES 0.631 DCS 0.742 MMD 0.684 CSS 0.778
+base=nat f=0.375 beta=1.0 gamma=0.0 proxy=2d/all split=development      68.77  DES 0.617 DCS 0.729 MMD 0.669 CSS 0.752
+base=nat f=0.375 beta=1.0 gamma=1.0 proxy=2d/all split=development      70.14  DES 0.631 DCS 0.743 MMD 0.678 CSS 0.773
+base=nat f=0.375 beta=1.0 gamma=2.0 proxy=2d/all split=development      70.07  DES 0.623 DCS 0.743 MMD 0.677 CSS 0.780
+base=nat f=0.375 beta=2.0 gamma=0.0 proxy=2d/all split=development      68.08  DES 0.604 DCS 0.727 MMD 0.658 CSS 0.752
+base=nat f=0.375 beta=2.0 gamma=1.0 proxy=2d/all split=development      69.63  DES 0.625 DCS 0.742 MMD 0.667 CSS 0.773
+base=nat f=0.375 beta=2.0 gamma=2.0 proxy=2d/all split=development      69.66  DES 0.621 DCS 0.742 MMD 0.666 CSS 0.780
+base=oracle f=0.0 beta=0.0 gamma=0.0 proxy=2d/all split=development     57.78  DES 0.514 DCS 0.621 MMD 0.610 CSS 0.555
+base=oracle f=0.0 beta=0.5 gamma=0.0 proxy=2d/all split=development     57.38  DES 0.512 DCS 0.617 MMD 0.601 CSS 0.556
+base=oracle f=0.0 beta=1.0 gamma=0.0 proxy=2d/all split=development     56.83  DES 0.511 DCS 0.615 MMD 0.590 CSS 0.548
+base=oracle f=0.0 beta=2.0 gamma=0.0 proxy=2d/all split=development     56.63  DES 0.508 DCS 0.616 MMD 0.580 CSS 0.557
+base=oracle f=0.25 beta=0.0 gamma=0.0 proxy=2d/all split=development    71.80  DES 0.640 DCS 0.749 MMD 0.736 CSS 0.750
+base=oracle f=0.25 beta=0.0 gamma=1.0 proxy=2d/all split=development    72.40  DES 0.645 DCS 0.754 MMD 0.738 CSS 0.764
+base=oracle f=0.25 beta=0.0 gamma=2.0 proxy=2d/all split=development    72.10  DES 0.635 DCS 0.754 MMD 0.736 CSS 0.765
+base=oracle f=0.25 beta=0.5 gamma=0.0 proxy=2d/all split=development    71.54  DES 0.645 DCS 0.748 MMD 0.729 CSS 0.743
+base=oracle f=0.25 beta=0.5 gamma=1.0 proxy=2d/all split=development    71.89  DES 0.640 DCS 0.752 MMD 0.731 CSS 0.758
+base=oracle f=0.25 beta=0.5 gamma=2.0 proxy=2d/all split=development    71.86  DES 0.638 DCS 0.753 MMD 0.730 CSS 0.759
+base=oracle f=0.25 beta=1.0 gamma=0.0 proxy=2d/all split=development    71.42  DES 0.644 DCS 0.747 MMD 0.721 CSS 0.752
+base=oracle f=0.25 beta=1.0 gamma=1.0 proxy=2d/all split=development    71.80  DES 0.642 DCS 0.750 MMD 0.723 CSS 0.766
+base=oracle f=0.25 beta=1.0 gamma=2.0 proxy=2d/all split=development    71.67  DES 0.638 DCS 0.749 MMD 0.722 CSS 0.767
+base=oracle f=0.25 beta=2.0 gamma=0.0 proxy=2d/all split=development    70.71  DES 0.635 DCS 0.744 MMD 0.710 CSS 0.747
+base=oracle f=0.25 beta=2.0 gamma=1.0 proxy=2d/all split=development    71.29  DES 0.638 DCS 0.748 MMD 0.713 CSS 0.762
+base=oracle f=0.25 beta=2.0 gamma=2.0 proxy=2d/all split=development    71.21  DES 0.637 DCS 0.746 MMD 0.712 CSS 0.764
+base=oracle f=0.375 beta=0.0 gamma=0.0 proxy=2d/all split=development   72.82  DES 0.646 DCS 0.761 MMD 0.738 CSS 0.775
+base=oracle f=0.375 beta=0.0 gamma=1.0 proxy=2d/all split=development   73.85  DES 0.653 DCS 0.768 MMD 0.748 CSS 0.795
+base=oracle f=0.375 beta=0.0 gamma=2.0 proxy=2d/all split=development   74.09  DES 0.653 DCS 0.771 MMD 0.748 CSS 0.803
+base=oracle f=0.375 beta=0.5 gamma=0.0 proxy=2d/all split=development   72.59  DES 0.644 DCS 0.759 MMD 0.734 CSS 0.774
+base=oracle f=0.375 beta=0.5 gamma=1.0 proxy=2d/all split=development   73.77  DES 0.653 DCS 0.768 MMD 0.745 CSS 0.795
+base=oracle f=0.375 beta=0.5 gamma=2.0 proxy=2d/all split=development   74.06  DES 0.653 DCS 0.772 MMD 0.745 CSS 0.803
+base=oracle f=0.375 beta=1.0 gamma=0.0 proxy=2d/all split=development   72.37  DES 0.641 DCS 0.759 MMD 0.730 CSS 0.773
+base=oracle f=0.375 beta=1.0 gamma=1.0 proxy=2d/all split=development   73.71  DES 0.654 DCS 0.770 MMD 0.741 CSS 0.794
+base=oracle f=0.375 beta=1.0 gamma=2.0 proxy=2d/all split=development   73.97  DES 0.654 DCS 0.772 MMD 0.741 CSS 0.803
+base=oracle f=0.375 beta=2.0 gamma=0.0 proxy=2d/all split=development   71.97  DES 0.636 DCS 0.759 MMD 0.721 CSS 0.773
+base=oracle f=0.375 beta=2.0 gamma=1.0 proxy=2d/all split=development   73.35  DES 0.649 DCS 0.771 MMD 0.732 CSS 0.795
+base=oracle f=0.375 beta=2.0 gamma=2.0 proxy=2d/all split=development   73.60  DES 0.649 DCS 0.772 MMD 0.733 CSS 0.804
+proxy                      gen  2d/deep  2d/all
+base   f     beta gamma                        
+nat    0.000 0.0  0.0    53.48    50.37   49.07
+             0.5  0.0    50.79    49.05   48.46
+             1.0  0.0    47.62    48.06   47.82
+             2.0  0.0    44.55    47.17   47.37
+       0.125 0.0  0.0    56.25      NaN     NaN
+                  1.0    56.71      NaN     NaN
+                  2.0    56.22      NaN     NaN
+             0.5  0.0    54.07      NaN     NaN
+                  1.0    54.39      NaN     NaN
+                  2.0    54.10      NaN     NaN
+             1.0  0.0    51.51      NaN     NaN
+                  1.0    51.75      NaN     NaN
+                  2.0    51.34      NaN     NaN
+             2.0  0.0    48.48      NaN     NaN
+                  1.0    48.53      NaN     NaN
+                  2.0    48.15      NaN     NaN
+       0.375 0.0  0.0    43.61    64.26   69.28
+                  1.0    44.27    64.65   70.48
+                  2.0    44.70    64.54   70.51
+             0.5  0.0    43.35    63.79   69.12
+                  1.0    43.87    64.20   70.30
+                  2.0    44.17    64.15   70.39
+             1.0  0.0    42.82    63.22   68.77
+                  1.0    43.12    63.61   70.14
+                  2.0    43.57    63.52   70.07
+             2.0  0.0    41.85    62.33   68.08
+                  1.0    42.20    62.72   69.63
+                  2.0    42.51    62.60   69.66
+       0.250 0.0  0.0      NaN    64.05   67.25
+                  1.0      NaN    64.10   68.05
+                  2.0      NaN    63.80   67.88
+             0.5  0.0      NaN    63.24   66.46
+                  1.0      NaN    63.20   67.42
+                  2.0      NaN    63.00   67.47
+             1.0  0.0      NaN    62.36   65.97
+                  1.0      NaN    62.40   66.88
+                  2.0      NaN    62.12   66.94
+             2.0  0.0      NaN    60.96   65.13
+                  1.0      NaN    60.99   65.92
+                  2.0      NaN    60.77   66.18
+oracle 0.000 0.0  0.0    60.28    63.11   57.78
+             0.5  0.0    58.51    62.69   57.38
+             1.0  0.0    54.84    62.29   56.83
+             2.0  0.0    51.07    61.07   56.63
+       0.125 0.0  0.0    60.64      NaN     NaN
+                  1.0    60.76      NaN     NaN
+                  2.0    60.53      NaN     NaN
+             0.5  0.0    59.63      NaN     NaN
+                  1.0    59.82      NaN     NaN
+                  2.0    59.36      NaN     NaN
+             1.0  0.0    56.65      NaN     NaN
+                  1.0    57.01      NaN     NaN
+                  2.0    56.90      NaN     NaN
+             2.0  0.0    53.42      NaN     NaN
+                  1.0    53.67      NaN     NaN
+                  2.0    53.09      NaN     NaN
+       0.375 0.0  0.0    44.39    70.10   72.82
+                  1.0    45.23    70.45   73.85
+                  2.0    45.43    70.49   74.09
+             0.5  0.0    44.24    69.71   72.59
+                  1.0    44.65    70.18   73.77
+                  2.0    45.14    70.26   74.06
+             1.0  0.0    43.58    69.11   72.37
+                  1.0    44.01    69.58   73.71
+                  2.0    44.53    69.75   73.97
+             2.0  0.0    42.60    68.50   71.97
+                  1.0    43.24    68.93   73.35
+                  2.0    43.48    69.26   73.60
+       0.250 0.0  0.0      NaN    71.42   71.80
+                  1.0      NaN    71.44   72.40
+                  2.0      NaN    71.17   72.10
+             0.5  0.0      NaN    70.89   71.54
+                  1.0      NaN    71.00   71.89
+                  2.0      NaN    70.77   71.86
+             1.0  0.0      NaN    70.54   71.42
+                  1.0      NaN    70.57   71.80
+                  2.0      NaN    70.33   71.67
+             2.0  0.0      NaN    69.64   70.71
+                  1.0      NaN    69.73   71.29
+                  2.0      NaN    69.62   71.21

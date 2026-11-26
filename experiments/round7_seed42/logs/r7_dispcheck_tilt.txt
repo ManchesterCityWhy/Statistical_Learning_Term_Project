@@ -1,0 +1,71 @@
+genes used 10342 explained variance of 30 PCs 0.254
+
+=== re-sequenced, moved back 1, k_prof 20, tilt 0
+              type   n  trace_real  trace_syn  trace_ratio  nn_real  nn_syn  nn_ratio  centroid_distance  genes_real  genes_syn
+             LV-CM 284      100.48      67.58         0.67     5.96    3.42      0.57               5.22      4331.0     4262.0
+     Endocardium-2 300      136.80      68.45         0.50     7.56    3.98      0.53               3.59      3584.0     3725.0
+        Epicardium 148      136.01      56.08         0.41     8.07    3.13      0.39               3.98      4347.0     4376.0
+EndoMT Endocardium 141      131.70      70.87         0.54     7.89    3.80      0.48               4.51      3971.0     4148.0
+               BEC 154      165.53      77.73         0.47     8.57    4.05      0.47               4.83      3556.5     3903.0
+            OFT-CM 134      202.96      43.96         0.22     8.38    3.86      0.46               6.22      3764.5     4633.0
+median trace ratio 0.48, median nn ratio 0.48
+
+=== re-sequenced, moved back 1, k_prof 20, tilt 0.5
+              type   n  trace_real  trace_syn  trace_ratio  nn_real  nn_syn  nn_ratio  centroid_distance  genes_real  genes_syn
+             LV-CM 284      100.48      74.81         0.74     5.96    3.72      0.62               5.19      4331.0     4264.0
+     Endocardium-2 300      139.18      75.92         0.55     7.48    4.28      0.57               3.54      3584.0     3727.0
+        Epicardium 148      133.48      63.22         0.47     7.88    3.62      0.46               3.93      4347.0     4380.0
+EndoMT Endocardium 141      127.53      76.55         0.60     7.82    4.28      0.55               3.48      3971.0     4208.0
+               BEC 154      167.46      86.87         0.52     8.75    4.62      0.53               4.07      3556.5     3933.5
+            OFT-CM 134      202.96      48.55         0.24     8.38    4.31      0.51               6.13      3764.5     4640.0
+median trace ratio 0.53, median nn ratio 0.54
+
+=== re-sequenced, moved back 1, k_prof 20, tilt 1
+              type   n  trace_real  trace_syn  trace_ratio  nn_real  nn_syn  nn_ratio  centroid_distance  genes_real  genes_syn
+             LV-CM 284      100.48      78.78         0.78     5.96    4.24      0.71               4.82      4331.0     4293.0
+     Endocardium-2 300      130.43      85.19         0.65     7.35    5.03      0.68               3.24      3584.0     3763.0
+        Epicardium 148      137.73      72.21         0.52     8.23    4.05      0.49               3.40      4347.0     4391.0
+EndoMT Endocardium 141      124.10      84.94         0.68     7.94    5.15      0.65               3.66      3971.0     4212.0
+               BEC 154      166.99      97.31         0.58     8.78    5.46      0.62               3.64      3556.5     3955.5
+            OFT-CM 134      202.96      59.88         0.30     8.38    4.80      0.57               5.48      3764.5     4672.0
+median trace ratio 0.62, median nn ratio 0.64
+
+=== re-sequenced, moved back 1, k_prof 20, tilt 1.5
+              type   n  trace_real  trace_syn  trace_ratio  nn_real  nn_syn  nn_ratio  centroid_distance  genes_real  genes_syn
+             LV-CM 284      100.48      88.27         0.88     5.96    4.80      0.80               4.85      4331.0     4302.0
+     Endocardium-2 300      131.68      97.42         0.74     7.44    5.70      0.77               3.02      3584.0     3798.0
+        Epicardium 148      134.35      83.60         0.62     7.85    4.62      0.59               3.32      4347.0     4429.5
+EndoMT Endocardium 141      125.19      97.49         0.78     7.93    5.98      0.75               4.00      3971.0     4264.0
+               BEC 154      163.32     111.11         0.68     8.76    6.10      0.70               3.44      3556.5     3964.5
+            OFT-CM 134      202.96      69.14         0.34     8.38    5.63      0.67               5.09      3764.5     4666.0
+median trace ratio 0.71, median nn ratio 0.73
+
+=== re-sequenced, moved back 1, k_prof 20, tilt 2
+              type   n  trace_real  trace_syn  trace_ratio  nn_real  nn_syn  nn_ratio  centroid_distance  genes_real  genes_syn
+             LV-CM 284      100.48     100.56         1.00     5.96    5.26      0.88               4.12      4331.0     4316.0
+     Endocardium-2 300      133.24     105.38         0.79     7.38    6.25      0.85               3.05      3584.0     3791.0
+        Epicardium 148      138.74      96.60         0.70     7.90    5.27      0.67               3.39      4347.0     4452.5
+EndoMT Endocardium 141      124.58     110.50         0.89     7.86    6.39      0.81               3.29      3971.0     4309.0
+               BEC 154      162.90     123.11         0.76     8.74    6.61      0.76               3.41      3556.5     3981.0
+            OFT-CM 134      202.96      81.10         0.40     8.38    6.34      0.76               4.92      3764.5     4672.0
+median trace ratio 0.77, median nn ratio 0.78
+
+=== re-sequenced, moved back 1, k_prof 20, tilt 3
+              type   n  trace_real  trace_syn  trace_ratio  nn_real  nn_syn  nn_ratio  centroid_distance  genes_real  genes_syn
+             LV-CM 284      100.48     115.26         1.15     5.96    6.17      1.03               4.65      4331.0     4353.0
+     Endocardium-2 300      137.22     133.08         0.97     7.39    7.49      1.01               3.28      3584.0     3834.0
+        Epicardium 148      132.27     124.05         0.94     8.02    6.42      0.80               3.63      4347.0     4513.5
+EndoMT Endocardium 141      117.22     137.16         1.17     7.84    7.63      0.97               3.98      3971.0     4366.0
+               BEC 154      168.82     155.99         0.92     8.77    8.19      0.93               4.07      3556.5     4061.5
+            OFT-CM 134      202.96     111.17         0.55     8.38    7.46      0.89               4.25      3764.5     4702.0
+median trace ratio 0.95, median nn ratio 0.95
+
+summary (median over cell types):
+                                                 trace_ratio  nn_ratio  centroid_distance  genes_syn
+form                                                                                                
+re-sequenced, moved back 1, k_prof 20, tilt 0           0.48      0.48               4.67     4205.0
+re-sequenced, moved back 1, k_prof 20, tilt 0.5         0.53      0.54               4.00     4236.0
+re-sequenced, moved back 1, k_prof 20, tilt 1           0.62      0.64               3.65     4252.5
+re-sequenced, moved back 1, k_prof 20, tilt 1.5         0.71      0.73               3.72     4283.0
+re-sequenced, moved back 1, k_prof 20, tilt 2           0.77      0.78               3.40     4312.5
+re-sequenced, moved back 1, k_prof 20, tilt 3           0.95      0.95               4.02     4359.5

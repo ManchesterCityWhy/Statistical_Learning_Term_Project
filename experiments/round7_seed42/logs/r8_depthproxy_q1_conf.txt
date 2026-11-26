@@ -1,0 +1,185 @@
+[suite] gen      ready    11s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] p8/deep  ready    19s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] p8/all   ready    25s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] 2d/deep  ready    32s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    40s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+config=R7h proxy=gen split=confirmation seed=11 thin=1.0                61.79  DES 0.600 DCS 0.683 MMD 0.606 CSS 0.578
+config=R8 (mix 0.25) proxy=gen split=confirmation seed=11 thin=1.0      61.86  DES 0.600 DCS 0.682 MMD 0.615 CSS 0.568
+config=mix 0.25 thin fixed 0.85 proxy=gen split=confirmation seed=11 thin=0.85  60.99  DES 0.600 DCS 0.675 MMD 0.600 CSS 0.555
+config=mix 0.25 thin per2d 0.85 proxy=gen split=confirmation seed=11 thin=0.922  61.95  DES 0.606 DCS 0.681 MMD 0.609 CSS 0.576
+config=mix 0.35 proxy=gen split=confirmation seed=11 thin=1.0           61.71  DES 0.600 DCS 0.681 MMD 0.613 CSS 0.565
+config=mix 0.35 thin fixed 0.85 proxy=gen split=confirmation seed=11 thin=0.85  60.71  DES 0.594 DCS 0.674 MMD 0.598 CSS 0.554
+config=mix 0.5 proxy=gen split=confirmation seed=11 thin=1.0            60.97  DES 0.582 DCS 0.679 MMD 0.609 CSS 0.558
+config=mix 0.5 thin fixed 0.85 proxy=gen split=confirmation seed=11 thin=0.85  60.24  DES 0.588 DCS 0.669 MMD 0.594 CSS 0.550
+config=mix 0.5 thin per2d 0.85 proxy=gen split=confirmation seed=11 thin=0.922  61.06  DES 0.588 DCS 0.677 MMD 0.603 CSS 0.567
+config=mix 0.75 proxy=gen split=confirmation seed=11 thin=1.0           60.50  DES 0.588 DCS 0.675 MMD 0.604 CSS 0.541
+config=mix 0.75 thin fixed 0.85 proxy=gen split=confirmation seed=11 thin=0.85  59.52  DES 0.582 DCS 0.663 MMD 0.588 CSS 0.538
+config=R7h proxy=gen split=confirmation seed=23 thin=1.0                62.10  DES 0.600 DCS 0.684 MMD 0.611 CSS 0.585
+config=R8 (mix 0.25) proxy=gen split=confirmation seed=23 thin=1.0      61.93  DES 0.594 DCS 0.687 MMD 0.613 CSS 0.575
+config=mix 0.25 thin fixed 0.85 proxy=gen split=confirmation seed=23 thin=0.85  61.01  DES 0.594 DCS 0.677 MMD 0.600 CSS 0.561
+config=mix 0.25 thin per2d 0.85 proxy=gen split=confirmation seed=23 thin=0.922  61.75  DES 0.594 DCS 0.683 MMD 0.607 CSS 0.582
+config=mix 0.35 proxy=gen split=confirmation seed=23 thin=1.0           61.85  DES 0.600 DCS 0.683 MMD 0.611 CSS 0.571
+config=mix 0.35 thin fixed 0.85 proxy=gen split=confirmation seed=23 thin=0.85  60.72  DES 0.588 DCS 0.676 MMD 0.598 CSS 0.560
+config=mix 0.5 proxy=gen split=confirmation seed=23 thin=1.0            61.39  DES 0.594 DCS 0.683 MMD 0.608 CSS 0.563
+config=mix 0.5 thin fixed 0.85 proxy=gen split=confirmation seed=23 thin=0.85  60.56  DES 0.594 DCS 0.671 MMD 0.595 CSS 0.556
+config=mix 0.5 thin per2d 0.85 proxy=gen split=confirmation seed=23 thin=0.922  61.12  DES 0.588 DCS 0.677 MMD 0.601 CSS 0.573
+config=mix 0.75 proxy=gen split=confirmation seed=23 thin=1.0           60.40  DES 0.582 DCS 0.676 MMD 0.602 CSS 0.545
+config=mix 0.75 thin fixed 0.85 proxy=gen split=confirmation seed=23 thin=0.85  59.67  DES 0.582 DCS 0.665 MMD 0.589 CSS 0.542
+config=R7h proxy=p8/deep split=confirmation seed=11 thin=1.0            63.99  DES 0.611 DCS 0.732 MMD 0.629 CSS 0.578
+config=R8 (mix 0.25) proxy=p8/deep split=confirmation seed=11 thin=1.0  64.13  DES 0.615 DCS 0.740 MMD 0.626 CSS 0.574
+config=mix 0.25 thin fixed 0.85 proxy=p8/deep split=confirmation seed=11 thin=0.85  64.85  DES 0.613 DCS 0.739 MMD 0.629 CSS 0.609
+config=mix 0.25 thin per2d 0.85 proxy=p8/deep split=confirmation seed=11 thin=0.922  64.54  DES 0.614 DCS 0.740 MMD 0.627 CSS 0.593
+config=mix 0.35 proxy=p8/deep split=confirmation seed=11 thin=1.0       64.23  DES 0.616 DCS 0.743 MMD 0.626 CSS 0.573
+config=mix 0.35 thin fixed 0.85 proxy=p8/deep split=confirmation seed=11 thin=0.85  65.03  DES 0.614 DCS 0.744 MMD 0.629 CSS 0.609
+config=mix 0.5 proxy=p8/deep split=confirmation seed=11 thin=1.0        64.31  DES 0.618 DCS 0.748 MMD 0.627 CSS 0.568
+config=mix 0.5 thin fixed 0.85 proxy=p8/deep split=confirmation seed=11 thin=0.85  65.11  DES 0.617 DCS 0.747 MMD 0.630 CSS 0.607
+config=mix 0.5 thin per2d 0.85 proxy=p8/deep split=confirmation seed=11 thin=0.922  64.70  DES 0.616 DCS 0.747 MMD 0.628 CSS 0.589
+config=mix 0.75 proxy=p8/deep split=confirmation seed=11 thin=1.0       63.94  DES 0.613 DCS 0.746 MMD 0.628 CSS 0.557
+config=mix 0.75 thin fixed 0.85 proxy=p8/deep split=confirmation seed=11 thin=0.85  64.88  DES 0.614 DCS 0.748 MMD 0.630 CSS 0.597
+config=R7h proxy=p8/deep split=confirmation seed=23 thin=1.0            63.93  DES 0.612 DCS 0.734 MMD 0.626 CSS 0.574
+config=R8 (mix 0.25) proxy=p8/deep split=confirmation seed=23 thin=1.0  63.54  DES 0.607 DCS 0.739 MMD 0.622 CSS 0.560
+config=mix 0.25 thin fixed 0.85 proxy=p8/deep split=confirmation seed=23 thin=0.85  64.56  DES 0.608 DCS 0.741 MMD 0.626 CSS 0.601
+config=mix 0.25 thin per2d 0.85 proxy=p8/deep split=confirmation seed=23 thin=0.922  64.07  DES 0.609 DCS 0.740 MMD 0.624 CSS 0.581
+config=mix 0.35 proxy=p8/deep split=confirmation seed=23 thin=1.0       63.60  DES 0.607 DCS 0.742 MMD 0.623 CSS 0.559
+config=mix 0.35 thin fixed 0.85 proxy=p8/deep split=confirmation seed=23 thin=0.85  64.72  DES 0.612 DCS 0.744 MMD 0.627 CSS 0.601
+config=mix 0.5 proxy=p8/deep split=confirmation seed=23 thin=1.0        63.69  DES 0.609 DCS 0.746 MMD 0.624 CSS 0.555
+config=mix 0.5 thin fixed 0.85 proxy=p8/deep split=confirmation seed=23 thin=0.85  64.79  DES 0.612 DCS 0.748 MMD 0.627 CSS 0.598
+config=mix 0.5 thin per2d 0.85 proxy=p8/deep split=confirmation seed=23 thin=0.922  64.19  DES 0.609 DCS 0.747 MMD 0.626 CSS 0.576
+config=mix 0.75 proxy=p8/deep split=confirmation seed=23 thin=1.0       63.46  DES 0.611 DCS 0.745 MMD 0.624 CSS 0.542
+config=mix 0.75 thin fixed 0.85 proxy=p8/deep split=confirmation seed=23 thin=0.85  64.56  DES 0.611 DCS 0.748 MMD 0.628 CSS 0.587
+config=R7h proxy=p8/all split=confirmation seed=11 thin=1.0             60.67  DES 0.543 DCS 0.708 MMD 0.617 CSS 0.545
+config=R8 (mix 0.25) proxy=p8/all split=confirmation seed=11 thin=1.0   60.34  DES 0.539 DCS 0.704 MMD 0.614 CSS 0.542
+config=mix 0.25 thin fixed 0.85 proxy=p8/all split=confirmation seed=11 thin=0.85  62.31  DES 0.538 DCS 0.715 MMD 0.627 CSS 0.608
+config=mix 0.25 thin per2d 0.85 proxy=p8/all split=confirmation seed=11 thin=0.922  61.33  DES 0.538 DCS 0.710 MMD 0.621 CSS 0.575
+config=mix 0.35 proxy=p8/all split=confirmation seed=11 thin=1.0        60.46  DES 0.541 DCS 0.707 MMD 0.614 CSS 0.542
+config=mix 0.35 thin fixed 0.85 proxy=p8/all split=confirmation seed=11 thin=0.85  62.50  DES 0.541 DCS 0.719 MMD 0.627 CSS 0.608
+config=mix 0.5 proxy=p8/all split=confirmation seed=11 thin=1.0         60.61  DES 0.543 DCS 0.711 MMD 0.615 CSS 0.540
+config=mix 0.5 thin fixed 0.85 proxy=p8/all split=confirmation seed=11 thin=0.85  62.61  DES 0.543 DCS 0.722 MMD 0.628 CSS 0.607
+config=mix 0.5 thin per2d 0.85 proxy=p8/all split=confirmation seed=11 thin=0.922  61.57  DES 0.541 DCS 0.717 MMD 0.622 CSS 0.574
+config=mix 0.75 proxy=p8/all split=confirmation seed=11 thin=1.0        60.71  DES 0.544 DCS 0.716 MMD 0.616 CSS 0.537
+config=mix 0.75 thin fixed 0.85 proxy=p8/all split=confirmation seed=11 thin=0.85  62.77  DES 0.547 DCS 0.726 MMD 0.629 CSS 0.604
+config=R7h proxy=p8/all split=confirmation seed=23 thin=1.0             59.83  DES 0.529 DCS 0.700 MMD 0.608 CSS 0.542
+config=R8 (mix 0.25) proxy=p8/all split=confirmation seed=23 thin=1.0   59.26  DES 0.525 DCS 0.693 MMD 0.602 CSS 0.538
+config=mix 0.25 thin fixed 0.85 proxy=p8/all split=confirmation seed=23 thin=0.85  61.14  DES 0.527 DCS 0.701 MMD 0.613 CSS 0.601
+config=mix 0.25 thin per2d 0.85 proxy=p8/all split=confirmation seed=23 thin=0.922  60.23  DES 0.526 DCS 0.698 MMD 0.608 CSS 0.570
+config=mix 0.35 proxy=p8/all split=confirmation seed=23 thin=1.0        59.43  DES 0.527 DCS 0.698 MMD 0.602 CSS 0.537
+config=mix 0.35 thin fixed 0.85 proxy=p8/all split=confirmation seed=23 thin=0.85  61.33  DES 0.529 DCS 0.706 MMD 0.614 CSS 0.601
+config=mix 0.5 proxy=p8/all split=confirmation seed=23 thin=1.0         59.58  DES 0.527 DCS 0.703 MMD 0.603 CSS 0.536
+config=mix 0.5 thin fixed 0.85 proxy=p8/all split=confirmation seed=23 thin=0.85  61.50  DES 0.530 DCS 0.712 MMD 0.615 CSS 0.601
+config=mix 0.5 thin per2d 0.85 proxy=p8/all split=confirmation seed=23 thin=0.922  60.58  DES 0.529 DCS 0.708 MMD 0.609 CSS 0.569
+config=mix 0.75 proxy=p8/all split=confirmation seed=23 thin=1.0        59.66  DES 0.528 DCS 0.706 MMD 0.604 CSS 0.533
+config=mix 0.75 thin fixed 0.85 proxy=p8/all split=confirmation seed=23 thin=0.85  61.73  DES 0.537 DCS 0.714 MMD 0.616 CSS 0.598
+config=R7h proxy=2d/deep split=confirmation seed=11 thin=1.0            59.23  DES 0.572 DCS 0.693 MMD 0.568 CSS 0.528
+config=R8 (mix 0.25) proxy=2d/deep split=confirmation seed=11 thin=1.0  58.84  DES 0.565 DCS 0.699 MMD 0.564 CSS 0.515
+config=mix 0.25 thin fixed 0.85 proxy=2d/deep split=confirmation seed=11 thin=0.85  59.79  DES 0.567 DCS 0.702 MMD 0.569 CSS 0.550
+config=mix 0.25 thin per2d 0.85 proxy=2d/deep split=confirmation seed=11 thin=0.85  59.79  DES 0.567 DCS 0.702 MMD 0.569 CSS 0.550
+config=mix 0.35 proxy=2d/deep split=confirmation seed=11 thin=1.0       58.88  DES 0.565 DCS 0.704 MMD 0.565 CSS 0.511
+config=mix 0.35 thin fixed 0.85 proxy=2d/deep split=confirmation seed=11 thin=0.85  59.98  DES 0.570 DCS 0.707 MMD 0.570 CSS 0.547
+config=mix 0.5 proxy=2d/deep split=confirmation seed=11 thin=1.0        58.82  DES 0.565 DCS 0.707 MMD 0.566 CSS 0.502
+config=mix 0.5 thin fixed 0.85 proxy=2d/deep split=confirmation seed=11 thin=0.85  59.81  DES 0.568 DCS 0.707 MMD 0.571 CSS 0.539
+config=mix 0.5 thin per2d 0.85 proxy=2d/deep split=confirmation seed=11 thin=0.85  59.81  DES 0.568 DCS 0.707 MMD 0.571 CSS 0.539
+config=mix 0.75 proxy=2d/deep split=confirmation seed=11 thin=1.0       58.36  DES 0.561 DCS 0.708 MMD 0.568 CSS 0.480
+config=mix 0.75 thin fixed 0.85 proxy=2d/deep split=confirmation seed=11 thin=0.85  59.29  DES 0.562 DCS 0.709 MMD 0.572 CSS 0.516
+config=R7h proxy=2d/deep split=confirmation seed=23 thin=1.0            59.51  DES 0.570 DCS 0.691 MMD 0.577 CSS 0.533
+config=R8 (mix 0.25) proxy=2d/deep split=confirmation seed=23 thin=1.0  59.49  DES 0.569 DCS 0.700 MMD 0.573 CSS 0.527
+config=mix 0.25 thin fixed 0.85 proxy=2d/deep split=confirmation seed=23 thin=0.85  60.27  DES 0.569 DCS 0.702 MMD 0.577 CSS 0.558
+config=mix 0.25 thin per2d 0.85 proxy=2d/deep split=confirmation seed=23 thin=0.85  60.27  DES 0.569 DCS 0.702 MMD 0.577 CSS 0.558
+config=mix 0.35 proxy=2d/deep split=confirmation seed=23 thin=1.0       59.53  DES 0.568 DCS 0.705 MMD 0.575 CSS 0.524
+config=mix 0.35 thin fixed 0.85 proxy=2d/deep split=confirmation seed=23 thin=0.85  60.32  DES 0.567 DCS 0.707 MMD 0.578 CSS 0.556
+config=mix 0.5 proxy=2d/deep split=confirmation seed=23 thin=1.0        59.46  DES 0.568 DCS 0.709 MMD 0.576 CSS 0.513
+config=mix 0.5 thin fixed 0.85 proxy=2d/deep split=confirmation seed=23 thin=0.85  60.24  DES 0.566 DCS 0.710 MMD 0.579 CSS 0.548
+config=mix 0.5 thin per2d 0.85 proxy=2d/deep split=confirmation seed=23 thin=0.85  60.24  DES 0.566 DCS 0.710 MMD 0.579 CSS 0.548
+config=mix 0.75 proxy=2d/deep split=confirmation seed=23 thin=1.0       58.99  DES 0.566 DCS 0.709 MMD 0.578 CSS 0.490
+config=mix 0.75 thin fixed 0.85 proxy=2d/deep split=confirmation seed=23 thin=0.85  59.71  DES 0.562 DCS 0.710 MMD 0.581 CSS 0.525
+config=R7h proxy=2d/all split=confirmation seed=11 thin=1.0             57.68  DES 0.528 DCS 0.682 MMD 0.569 CSS 0.518
+config=R8 (mix 0.25) proxy=2d/all split=confirmation seed=11 thin=1.0   56.17  DES 0.508 DCS 0.662 MMD 0.563 CSS 0.502
+config=mix 0.25 thin fixed 0.85 proxy=2d/all split=confirmation seed=11 thin=0.85  57.86  DES 0.513 DCS 0.669 MMD 0.572 CSS 0.557
+config=mix 0.25 thin per2d 0.85 proxy=2d/all split=confirmation seed=11 thin=0.85  57.86  DES 0.513 DCS 0.669 MMD 0.572 CSS 0.557
+config=mix 0.35 proxy=2d/all split=confirmation seed=11 thin=1.0        56.43  DES 0.510 DCS 0.669 MMD 0.564 CSS 0.501
+config=mix 0.35 thin fixed 0.85 proxy=2d/all split=confirmation seed=11 thin=0.85  58.21  DES 0.517 DCS 0.676 MMD 0.574 CSS 0.557
+config=mix 0.5 proxy=2d/all split=confirmation seed=11 thin=1.0         56.59  DES 0.510 DCS 0.674 MMD 0.566 CSS 0.499
+config=mix 0.5 thin fixed 0.85 proxy=2d/all split=confirmation seed=11 thin=0.85  58.34  DES 0.517 DCS 0.680 MMD 0.576 CSS 0.556
+config=mix 0.5 thin per2d 0.85 proxy=2d/all split=confirmation seed=11 thin=0.85  58.34  DES 0.517 DCS 0.680 MMD 0.576 CSS 0.556
+config=mix 0.75 proxy=2d/all split=confirmation seed=11 thin=1.0        56.92  DES 0.516 DCS 0.681 MMD 0.569 CSS 0.495
+config=mix 0.75 thin fixed 0.85 proxy=2d/all split=confirmation seed=11 thin=0.85  58.56  DES 0.520 DCS 0.686 MMD 0.579 CSS 0.552
+config=R7h proxy=2d/all split=confirmation seed=23 thin=1.0             57.30  DES 0.522 DCS 0.671 MMD 0.567 CSS 0.522
+config=R8 (mix 0.25) proxy=2d/all split=confirmation seed=23 thin=1.0   56.06  DES 0.512 DCS 0.657 MMD 0.560 CSS 0.502
+config=mix 0.25 thin fixed 0.85 proxy=2d/all split=confirmation seed=23 thin=0.85  57.79  DES 0.514 DCS 0.664 MMD 0.571 CSS 0.561
+config=mix 0.25 thin per2d 0.85 proxy=2d/all split=confirmation seed=23 thin=0.85  57.79  DES 0.514 DCS 0.664 MMD 0.571 CSS 0.561
+config=mix 0.35 proxy=2d/all split=confirmation seed=23 thin=1.0        56.33  DES 0.515 DCS 0.662 MMD 0.562 CSS 0.501
+config=mix 0.35 thin fixed 0.85 proxy=2d/all split=confirmation seed=23 thin=0.85  58.06  DES 0.516 DCS 0.671 MMD 0.572 CSS 0.561
+config=mix 0.5 proxy=2d/all split=confirmation seed=23 thin=1.0         56.60  DES 0.520 DCS 0.668 MMD 0.564 CSS 0.500
+config=mix 0.5 thin fixed 0.85 proxy=2d/all split=confirmation seed=23 thin=0.85  58.28  DES 0.518 DCS 0.677 MMD 0.574 CSS 0.560
+config=mix 0.5 thin per2d 0.85 proxy=2d/all split=confirmation seed=23 thin=0.85  58.28  DES 0.518 DCS 0.677 MMD 0.574 CSS 0.560
+config=mix 0.75 proxy=2d/all split=confirmation seed=23 thin=1.0        56.75  DES 0.519 DCS 0.674 MMD 0.567 CSS 0.495
+config=mix 0.75 thin fixed 0.85 proxy=2d/all split=confirmation seed=23 thin=0.85  58.37  DES 0.516 DCS 0.682 MMD 0.577 CSS 0.555
+done 579s
+proxy                       gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                           
+R7h                       61.95    63.96   60.25    59.37   57.49
+R8 (mix 0.25)             61.89    63.83   59.80    59.16   56.12
+mix 0.25 thin fixed 0.85  61.00    64.70   61.72    60.03   57.82
+mix 0.25 thin per2d 0.85  61.85    64.30   60.78    60.03   57.82
+mix 0.35                  61.78    63.91   59.95    59.21   56.38
+mix 0.35 thin fixed 0.85  60.72    64.88   61.91    60.15   58.13
+mix 0.5                   61.18    64.00   60.09    59.14   56.60
+mix 0.5 thin fixed 0.85   60.40    64.95   62.05    60.02   58.31
+mix 0.5 thin per2d 0.85   61.09    64.44   61.08    60.02   58.31
+mix 0.75                  60.45    63.70   60.18    58.68   56.84
+mix 0.75 thin fixed 0.85  59.60    64.72   62.25    59.50   58.46
+skill_de_score
+proxy                       gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                           
+R7h                       0.600    0.612   0.536    0.571   0.525
+R8 (mix 0.25)             0.597    0.611   0.532    0.567   0.510
+mix 0.25 thin fixed 0.85  0.597    0.611   0.533    0.568   0.513
+mix 0.25 thin per2d 0.85  0.600    0.611   0.532    0.568   0.513
+mix 0.35                  0.600    0.611   0.534    0.566   0.513
+mix 0.35 thin fixed 0.85  0.591    0.613   0.535    0.569   0.517
+mix 0.5                   0.588    0.613   0.535    0.566   0.515
+mix 0.5 thin fixed 0.85   0.591    0.614   0.536    0.567   0.518
+mix 0.5 thin per2d 0.85   0.588    0.613   0.535    0.567   0.518
+mix 0.75                  0.585    0.612   0.536    0.564   0.518
+mix 0.75 thin fixed 0.85  0.582    0.613   0.542    0.562   0.518
+skill_de_direction
+proxy                       gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                           
+R7h                       0.683    0.733   0.704    0.692   0.676
+R8 (mix 0.25)             0.685    0.739   0.699    0.700   0.659
+mix 0.25 thin fixed 0.85  0.676    0.740   0.708    0.702   0.667
+mix 0.25 thin per2d 0.85  0.682    0.740   0.704    0.702   0.667
+mix 0.35                  0.682    0.743   0.703    0.705   0.666
+mix 0.35 thin fixed 0.85  0.675    0.744   0.713    0.707   0.674
+mix 0.5                   0.681    0.747   0.707    0.708   0.671
+mix 0.5 thin fixed 0.85   0.670    0.747   0.717    0.709   0.678
+mix 0.5 thin per2d 0.85   0.677    0.747   0.712    0.709   0.678
+mix 0.75                  0.675    0.746   0.711    0.708   0.678
+mix 0.75 thin fixed 0.85  0.664    0.748   0.720    0.710   0.684
+skill_mmd_u
+proxy                       gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                           
+R7h                       0.608    0.627   0.612    0.573   0.568
+R8 (mix 0.25)             0.614    0.624   0.608    0.569   0.562
+mix 0.25 thin fixed 0.85  0.600    0.627   0.620    0.573   0.572
+mix 0.25 thin per2d 0.85  0.608    0.626   0.614    0.573   0.572
+mix 0.35                  0.612    0.625   0.608    0.570   0.563
+mix 0.35 thin fixed 0.85  0.598    0.628   0.621    0.574   0.573
+mix 0.5                   0.609    0.625   0.609    0.571   0.565
+mix 0.5 thin fixed 0.85   0.594    0.629   0.621    0.575   0.575
+mix 0.5 thin per2d 0.85   0.602    0.627   0.616    0.575   0.575
+mix 0.75                  0.603    0.626   0.610    0.573   0.568
+mix 0.75 thin fixed 0.85  0.589    0.629   0.622    0.576   0.578
+skill_variogram
+proxy                       gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                           
+R7h                       0.581    0.576   0.544    0.531   0.520
+R8 (mix 0.25)             0.572    0.567   0.540    0.521   0.502
+mix 0.25 thin fixed 0.85  0.558    0.605   0.605    0.554   0.559
+mix 0.25 thin per2d 0.85  0.579    0.587   0.573    0.554   0.559
+mix 0.35                  0.568    0.566   0.539    0.517   0.501
+mix 0.35 thin fixed 0.85  0.557    0.605   0.605    0.552   0.559
+mix 0.5                   0.560    0.562   0.538    0.507   0.499
+mix 0.5 thin fixed 0.85   0.553    0.602   0.604    0.543   0.558
+mix 0.5 thin per2d 0.85   0.570    0.582   0.571    0.543   0.558
+mix 0.75                  0.543    0.549   0.535    0.485   0.495
+mix 0.75 thin fixed 0.85  0.540    0.592   0.601    0.521   0.554

@@ -1,4 +1,20 @@
-# T1 竞赛实验进展（2026-11-24）
+# T1 实验归档与复现
+
+先读[期末报告](../reports/final/T1_最终报告.pdf)和[第二次官方提交复盘](../reports/final/T1_第二次提交复盘.md)。这里按实验轮次索引代码和结果。候选文档里的推荐顺序及预估分数保留提交前口径，两次正式成绩见[仓库首页](../README.md#官方测试成绩)。
+
+| 轮次 | 核心方法或分析 | 代码、评分与记录 |
+| --- | --- | --- |
+| 1 | 复制基线、均值平移、PCA、保零外推、bulk 趋势和单细胞迁移 | [评分与清单](archive/2026-11-24/README.md) · [复现命令](#第一轮2026-11-24) |
+| 2 | bulk 趋势及带岭惩罚的非负最小二乘反卷积 | [说明与评分表](round2_seed42/README.md) · [第一次正式提交 h1 清单](round2_seed42/prediction_h1_manifest.json) |
+| 3 | 细胞级熵平衡重加权、组成与表达的已知真值分析 | [熵平衡评分](round3_seed42/round3_scores.csv) · [已知真值分析评分](round3_seed42/oracle_scores.csv) · [复现命令](#第三轮与上限分解) |
+| 4 | 方向回归与测序深度对齐 | [方向回归脚本](round4_direction.py) · [后续对照与方向分数](round5_seed42/README.md) |
+| 5 | 同平台 E14.5 心脏细胞核作为发育参照 | [说明](round5_seed42/README.md) · [评分表](round5_seed42/scores/) |
+| 6 | E10.5 心脏文库作为基底、校正 E14.5 参照 | [说明](round6_seed42/README.md) · [评分表](round6_seed42/scores/) · [运行日志](round6_seed42/logs/) |
+| 7 | 比较 E14.5 重采样比例与不同表达位移 | [说明](round7_seed42/README.md) · [评分表](round7_seed42/scores/) · [运行日志](round7_seed42/logs/) |
+| 8 | 用 E10.5 真实细胞作为替身，补入部分低表达基因信号 | [说明](round8_seed42/README.md) · [评分与日志归档](round7_seed42/) · [导出清单](round8_seed42/manifest.json) |
+| 9 | 在第八轮方案上对源细胞的分子计数抽稀 | [说明](round9_seed42/README.md) · [评分与日志归档](round7_seed42/) · [第二次正式提交清单](round9_seed42/manifest.json) |
+
+## 第一轮（2026-11-24）
 
 [逐次实验评分与运行归档](archive/2026-11-24/README.md) · [中期报告公开版](../reports/T1_中期报告_公开版.pdf)
 
@@ -56,3 +72,19 @@ data/external/GSE150817/perinatal_heart.h5ad
 ```
 
 候选的训练/生成步骤、输入文件校验值及配置见输出目录内的 manifest。代码开发、调试和结果汇总使用了 Codex 辅助，实验记录供组员复核。原始矩阵、评价子集和预测文件存放在授权的本地环境。
+
+## 第三轮与上限分解
+
+现有记录中，熵平衡选中的配置 `s5_ess0.15_b3` 在选模集得 57.53 分，复核集得 56.50 分，低于第二轮 59.79 分，未用于正式提交。已知真值分析在复核集上的结果见[期末报告](../reports/final/T1_最终报告.pdf)和[原始评分表](round3_seed42/oracle_scores.csv)。
+
+两个脚本都复用第二轮的细胞划分 `runs/expanded_seed42/indices.npz`（缺失时按第二轮的随机调用顺序重建），分数可以和 `round2_seed42/` 直接比较。若本地还有 `runs/composition_refined_seed42/sampled_rows.npz`，脚本会先重算第二轮最佳模型，应得到选模集 60.50、复核集 59.79，用来确认环境一致。
+
+```bash
+python -m pytest tests/test_round3.py -q
+python -m experiments.oracle_decomposition --with-confirmation   # 输出 runs/oracle_decomposition_seed42/
+python -m experiments.round3_balance benchmark                   # 输出 runs/round3_balance_seed42/
+python -m experiments.round3_balance export --config-name <选模集第一名> --h 1
+```
+
+- `oracle_decomposition` 的每个条件都使用 E10.5 真值（取自不参与任何评价的细胞），只回答“如果知道真实组成或真实表达变化，最多能得多少分”，**不得作为预测提交**。
+- `round3_balance` 在 E9.5 细胞上求熵平衡权重：权重是对 30 个细胞状态主成分的指数倾斜，岭系数由“相对有效样本量不低于 0.5、0.3 或 0.15”反解。只按选模集挑选，前三名在第一复核集上各评一次。事先约定：第一复核集超过第二轮的 59.79 至少 0.5 分才用于 E12.5。

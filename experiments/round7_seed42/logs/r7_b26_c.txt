@@ -1,0 +1,77 @@
+free library-3 cells without blood 5654, E9.5 heart cells 7972 (median UMI 12634), target 1075 cells (median UMI 11550)  16s
+w=0.0 config=base only f=0.0                                            63.20  DES 0.608 DCS 0.700 MMD 0.617 CSS 0.600
+w=0.0 config=base, 18% of the cells thinned to the anchor depth f=0.0   63.46  DES 0.615 DCS 0.699 MMD 0.624 CSS 0.594
+w=0.0 config=raw nuclei f=0.18                                          69.71  DES 0.664 DCS 0.768 MMD 0.693 CSS 0.656
+w=0.0 config=re-sequenced, moved back 1 f=0.18                          66.12  DES 0.632 DCS 0.740 MMD 0.642 CSS 0.628
+w=0.0 config=re-sequenced, not moved back f=0.18                        68.12  DES 0.644 DCS 0.758 MMD 0.667 CSS 0.653
+w 0 done 26s
+w=0.2 config=base only f=0.0                                            71.48  DES 0.668 DCS 0.779 MMD 0.710 CSS 0.699
+w=0.2 config=base, 18% of the cells thinned to the anchor depth f=0.0   71.33  DES 0.675 DCS 0.775 MMD 0.714 CSS 0.682
+w=0.2 config=raw nuclei f=0.18                                          76.80  DES 0.731 DCS 0.829 MMD 0.769 CSS 0.737
+w=0.2 config=re-sequenced, moved back 1 f=0.18                          76.10  DES 0.711 DCS 0.831 MMD 0.749 CSS 0.755
+w=0.2 config=re-sequenced, not moved back f=0.18                        76.59  DES 0.716 DCS 0.830 MMD 0.759 CSS 0.758
+w 0.2 done 38s
+w=0.4 config=base only f=0.0                                            80.66  DES 0.749 DCS 0.862 MMD 0.814 CSS 0.798
+w=0.4 config=base, 18% of the cells thinned to the anchor depth f=0.0   79.91  DES 0.755 DCS 0.853 MMD 0.814 CSS 0.764
+w=0.4 config=raw nuclei f=0.18                                          83.54  DES 0.798 DCS 0.882 MMD 0.852 CSS 0.799
+w=0.4 config=re-sequenced, moved back 1 f=0.18                          83.82  DES 0.785 DCS 0.892 MMD 0.840 CSS 0.835
+w=0.4 config=re-sequenced, not moved back f=0.18                        84.06  DES 0.789 DCS 0.891 MMD 0.845 CSS 0.835
+w 0.4 done 48s
+w=0.6 config=base only f=0.0                                            90.26  DES 0.862 DCS 0.933 MMD 0.912 CSS 0.901
+w=0.6 config=base, 18% of the cells thinned to the anchor depth f=0.0   88.88  DES 0.866 DCS 0.917 MMD 0.906 CSS 0.856
+w=0.6 config=raw nuclei f=0.18                                          88.93  DES 0.856 DCS 0.925 MMD 0.909 CSS 0.857
+w=0.6 config=re-sequenced, moved back 1 f=0.18                          90.61  DES 0.865 DCS 0.939 MMD 0.906 CSS 0.915
+w=0.6 config=re-sequenced, not moved back f=0.18                        90.16  DES 0.858 DCS 0.933 MMD 0.905 CSS 0.911
+w 0.6 done 57s
+w=0.8 config=base only f=0.0                                            97.57  DES 0.967 DCS 0.988 MMD 0.976 CSS 0.971
+w=0.8 config=base, 18% of the cells thinned to the anchor depth f=0.0   95.33  DES 0.952 DCS 0.966 MMD 0.967 CSS 0.918
+w=0.8 config=raw nuclei f=0.18                                          91.93  DES 0.893 DCS 0.949 MMD 0.943 CSS 0.879
+w=0.8 config=re-sequenced, moved back 1 f=0.18                          95.49  DES 0.935 DCS 0.974 MMD 0.953 CSS 0.959
+w=0.8 config=re-sequenced, not moved back f=0.18                        93.91  DES 0.906 DCS 0.959 MMD 0.944 CSS 0.949
+w 0.8 done 67s
+w=1.0 config=base only f=0.0                                            99.92  DES 1.000 DCS 1.000 MMD 0.997 CSS 1.000
+w=1.0 config=base, 18% of the cells thinned to the anchor depth f=0.0   98.25  DES 0.998 DCS 0.994 MMD 0.987 CSS 0.941
+w=1.0 config=raw nuclei f=0.18                                          93.40  DES 0.915 DCS 0.965 MMD 0.959 CSS 0.882
+w=1.0 config=re-sequenced, moved back 1 f=0.18                          99.07  DES 1.000 DCS 0.993 MMD 0.984 CSS 0.987
+w=1.0 config=re-sequenced, not moved back f=0.18                        96.06  DES 0.943 DCS 0.973 MMD 0.964 CSS 0.964
+w 1 done 77s
+w                                                     0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                      
+base only                                           63.20  71.48  80.66  90.26  97.57  99.92
+base, 18% of the cells thinned to the anchor depth  63.46  71.33  79.91  88.88  95.33  98.25
+raw nuclei                                          69.71  76.80  83.54  88.93  91.93  93.40
+re-sequenced, moved back 1                          66.12  76.10  83.82  90.61  95.49  99.07
+re-sequenced, not moved back                        68.12  76.59  84.06  90.16  93.91  96.06
+skill_de_score
+w                                                     0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                      
+base only                                           0.608  0.668  0.749  0.862  0.967  1.000
+base, 18% of the cells thinned to the anchor depth  0.615  0.675  0.755  0.866  0.952  0.998
+raw nuclei                                          0.664  0.731  0.798  0.856  0.893  0.915
+re-sequenced, moved back 1                          0.632  0.711  0.785  0.865  0.935  1.000
+re-sequenced, not moved back                        0.644  0.716  0.789  0.858  0.906  0.943
+skill_de_direction
+w                                                     0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                      
+base only                                           0.700  0.779  0.862  0.933  0.988  1.000
+base, 18% of the cells thinned to the anchor depth  0.699  0.775  0.853  0.917  0.966  0.994
+raw nuclei                                          0.768  0.829  0.882  0.925  0.949  0.965
+re-sequenced, moved back 1                          0.740  0.831  0.892  0.939  0.974  0.993
+re-sequenced, not moved back                        0.758  0.830  0.891  0.933  0.959  0.973
+skill_mmd_u
+w                                                     0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                      
+base only                                           0.617  0.710  0.814  0.912  0.976  0.997
+base, 18% of the cells thinned to the anchor depth  0.624  0.714  0.814  0.906  0.967  0.987
+raw nuclei                                          0.693  0.769  0.852  0.909  0.943  0.959
+re-sequenced, moved back 1                          0.642  0.749  0.840  0.906  0.953  0.984
+re-sequenced, not moved back                        0.667  0.759  0.845  0.905  0.944  0.964
+skill_variogram
+w                                                     0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                      
+base only                                           0.600  0.699  0.798  0.901  0.971  1.000
+base, 18% of the cells thinned to the anchor depth  0.594  0.682  0.764  0.856  0.918  0.941
+raw nuclei                                          0.656  0.737  0.799  0.857  0.879  0.882
+re-sequenced, moved back 1                          0.628  0.755  0.835  0.915  0.959  0.987
+re-sequenced, not moved back                        0.653  0.758  0.835  0.911  0.949  0.964
+done 77s

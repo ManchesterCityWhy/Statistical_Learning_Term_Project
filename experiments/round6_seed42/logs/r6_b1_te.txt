@@ -1,0 +1,70 @@
+te/raw ready 50s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.46103235672467086, 'variogram': 0.03726236894726753} ceiling {'de_score': 0.9228630993745657, 'de_direction': 0.8816465773126663, 'mmd_u': 0.01073101323452797, 'variogram': 0.00022650744358543307} n_up 778 n_dn 1753
+proxy=te/raw base=natural:all f=0.0 split=development                   64.04  DES 0.646 DCS 0.693 MMD 0.587 CSS 0.648
+proxy=te/raw base=natural:all f=0.375 split=development                 84.81  DES 0.882 DCS 0.893 MMD 0.794 CSS 0.830
+proxy=te/raw base=natural:lib12 f=0.0 split=development                 61.51  DES 0.617 DCS 0.629 MMD 0.571 CSS 0.661
+proxy=te/raw base=natural:lib12 f=0.375 split=development               83.40  DES 0.870 DCS 0.858 MMD 0.781 CSS 0.839
+proxy=te/raw base=natural:lib3 f=0.0 split=development                  61.29  DES 0.592 DCS 0.689 MMD 0.581 CSS 0.592
+proxy=te/raw base=natural:lib3 f=0.375 split=development                82.11  DES 0.819 DCS 0.877 MMD 0.793 CSS 0.795
+proxy=te/raw base=natural:heart_all f=0.0 split=development             63.22  DES 0.610 DCS 0.689 MMD 0.599 CSS 0.639
+proxy=te/raw base=natural:heart_all f=0.375 split=development           83.33  DES 0.831 DCS 0.878 MMD 0.804 CSS 0.824
+proxy=te/raw base=natural:heart_lib3 f=0.0 split=development            60.96  DES 0.581 DCS 0.685 MMD 0.582 CSS 0.593
+proxy=te/raw base=natural:heart_lib3 f=0.375 split=development          81.83  DES 0.810 DCS 0.871 MMD 0.796 CSS 0.797
+proxy=te/raw base=r2:all f=0.0 split=development                        66.25  DES 0.640 DCS 0.707 MMD 0.630 CSS 0.684
+proxy=te/raw base=r2:all f=0.375 split=development                      84.68  DES 0.838 DCS 0.877 MMD 0.825 CSS 0.853
+proxy=te/raw base=r4:all f=0.0 split=development                        66.10  DES 0.651 DCS 0.711 MMD 0.621 CSS 0.671
+proxy=te/raw base=r4:all f=0.375 split=development                      85.17  DES 0.859 DCS 0.888 MMD 0.820 CSS 0.846
+proxy=te/raw base=r2:lib3 f=0.0 split=development                       63.33  DES 0.601 DCS 0.695 MMD 0.613 CSS 0.628
+proxy=te/raw base=r2:lib3 f=0.375 split=development                     81.95  DES 0.785 DCS 0.861 MMD 0.814 CSS 0.818
+proxy=te/raw base=r4:lib3 f=0.0 split=development                       63.41  DES 0.613 DCS 0.702 MMD 0.605 CSS 0.620
+proxy=te/raw base=r4:lib3 f=0.375 split=development                     82.84  DES 0.819 DCS 0.874 MMD 0.809 CSS 0.813
+proxy=te/raw base=r2:heart_all f=0.0 split=development                  64.75  DES 0.610 DCS 0.686 MMD 0.628 CSS 0.676
+proxy=te/raw base=r2:heart_all f=0.375 split=development                83.02  DES 0.792 DCS 0.860 MMD 0.825 CSS 0.848
+proxy=te/raw base=r4:heart_all f=0.0 split=development                  64.72  DES 0.621 DCS 0.691 MMD 0.621 CSS 0.664
+proxy=te/raw base=r4:heart_all f=0.375 split=development                83.84  DES 0.822 DCS 0.872 MMD 0.822 CSS 0.841
+proxy=te/raw base=natural:lib3+bulk3 f=0.0 split=development            62.01  DES 0.590 DCS 0.692 MMD 0.593 CSS 0.609
+proxy=te/raw base=natural:lib3+bulk3 f=0.375 split=development          81.67  DES 0.795 DCS 0.865 MMD 0.801 CSS 0.806
+proxy=te/raw base=natural:lib3+bulk6 f=0.0 split=development            62.67  DES 0.586 DCS 0.681 MMD 0.609 CSS 0.637
+proxy=te/raw base=natural:lib3+bulk6 f=0.375 split=development          80.95  DES 0.761 DCS 0.845 MMD 0.811 CSS 0.824
+te/dm ready 79s floor {'de_score': 0.0, 'de_direction': 0.0, 'mmd_u': 0.4188864422035021, 'variogram': 0.023794621229171753} ceiling {'de_score': 0.9340727048675291, 'de_direction': 0.8880684983243305, 'mmd_u': 0.01073101323452797, 'variogram': 0.00022650744358543307} n_up 1202 n_dn 1057
+proxy=te/dm base=natural:all f=0.0 split=development                    63.26  DES 0.668 DCS 0.712 MMD 0.567 CSS 0.588
+proxy=te/dm base=natural:all f=0.375 split=development                  84.43  DES 0.895 DCS 0.915 MMD 0.779 CSS 0.790
+proxy=te/dm base=natural:lib12 f=0.0 split=development                  59.03  DES 0.627 DCS 0.646 MMD 0.533 CSS 0.560
+proxy=te/dm base=natural:lib12 f=0.375 split=development                81.95  DES 0.875 DCS 0.885 MMD 0.751 CSS 0.770
+proxy=te/dm base=natural:lib3 f=0.0 split=development                   60.76  DES 0.614 DCS 0.685 MMD 0.571 CSS 0.557
+proxy=te/dm base=natural:lib3 f=0.375 split=development                 82.12  DES 0.839 DCS 0.887 MMD 0.786 CSS 0.770
+proxy=te/dm base=natural:heart_all f=0.0 split=development              62.65  DES 0.640 DCS 0.700 MMD 0.581 CSS 0.587
+proxy=te/dm base=natural:heart_all f=0.375 split=development            83.28  DES 0.852 DCS 0.899 MMD 0.791 CSS 0.789
+proxy=te/dm base=natural:heart_lib3 f=0.0 split=development             60.59  DES 0.611 DCS 0.680 MMD 0.572 CSS 0.557
+proxy=te/dm base=natural:heart_lib3 f=0.375 split=development           81.99  DES 0.834 DCS 0.883 MMD 0.788 CSS 0.771
+proxy=te/dm base=r2:all f=0.0 split=development                         64.88  DES 0.660 DCS 0.719 MMD 0.599 CSS 0.622
+proxy=te/dm base=r2:all f=0.375 split=development                       84.19  DES 0.852 DCS 0.901 MMD 0.803 CSS 0.814
+proxy=te/dm base=r4:all f=0.0 split=development                         65.10  DES 0.676 DCS 0.727 MMD 0.594 CSS 0.611
+proxy=te/dm base=r4:all f=0.375 split=development                       84.73  DES 0.873 DCS 0.911 MMD 0.800 CSS 0.807
+proxy=te/dm base=r2:lib3 f=0.0 split=development                        62.97  DES 0.629 DCS 0.699 MMD 0.597 CSS 0.593
+proxy=te/dm base=r2:lib3 f=0.375 split=development                      82.38  DES 0.818 DCS 0.879 MMD 0.803 CSS 0.794
+proxy=te/dm base=r4:lib3 f=0.0 split=development                        63.07  DES 0.638 DCS 0.708 MMD 0.590 CSS 0.585
+proxy=te/dm base=r4:lib3 f=0.375 split=development                      82.95  DES 0.838 DCS 0.891 MMD 0.798 CSS 0.789
+proxy=te/dm base=r2:heart_all f=0.0 split=development                   63.99  DES 0.638 DCS 0.705 MMD 0.604 CSS 0.615
+proxy=te/dm base=r2:heart_all f=0.375 split=development                 83.24  DES 0.829 DCS 0.887 MMD 0.807 CSS 0.808
+proxy=te/dm base=r4:heart_all f=0.0 split=development                   64.13  DES 0.648 DCS 0.713 MMD 0.599 CSS 0.606
+proxy=te/dm base=r4:heart_all f=0.375 split=development                 83.87  DES 0.850 DCS 0.899 MMD 0.804 CSS 0.802
+proxy=te/dm base=natural:lib3+bulk3 f=0.0 split=development             61.76  DES 0.621 DCS 0.695 MMD 0.580 CSS 0.574
+proxy=te/dm base=natural:lib3+bulk3 f=0.375 split=development           81.93  DES 0.820 DCS 0.882 MMD 0.791 CSS 0.781
+proxy=te/dm base=natural:lib3+bulk6 f=0.0 split=development             62.14  DES 0.616 DCS 0.687 MMD 0.589 CSS 0.595
+proxy=te/dm base=natural:lib3+bulk6 f=0.375 split=development           81.38  DES 0.795 DCS 0.868 MMD 0.797 CSS 0.795
+proxy              te/raw         te/dm       
+f                   0.000  0.375  0.000  0.375
+base                                          
+natural:all         64.04  84.81  63.26  84.43
+natural:lib12       61.51  83.40  59.03  81.95
+natural:lib3        61.29  82.11  60.76  82.12
+natural:heart_all   63.22  83.33  62.65  83.28
+natural:heart_lib3  60.96  81.83  60.59  81.99
+r2:all              66.25  84.68  64.88  84.19
+r4:all              66.10  85.17  65.10  84.73
+r2:lib3             63.33  81.95  62.97  82.38
+r4:lib3             63.41  82.84  63.07  82.95
+r2:heart_all        64.75  83.02  63.99  83.24
+r4:heart_all        64.72  83.84  64.13  83.87
+natural:lib3+bulk3  62.01  81.67  61.76  81.93
+natural:lib3+bulk6  62.67  80.95  62.14  81.38

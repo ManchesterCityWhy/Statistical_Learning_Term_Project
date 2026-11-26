@@ -1,0 +1,10 @@
+total 408
+drwxr-xr-x  2 andreib180 andreib180  4096 2026-11-26 11:15:49.264117624 +0800 .
+drwxr-xr-x 35 andreib180 andreib180  4096 2026-11-26 10:06:32.254590459 +0800 ..
+-rw-r--r--  1 andreib180 andreib180 41505 2026-11-26 10:06:32.254590459 +0800 worlds_w1.csv
+-rw-r--r--  1 andreib180 andreib180 63388 2026-11-26 10:18:18.931710510 +0800 worlds_w2.csv
+-rw-r--r--  1 andreib180 andreib180 65163 2026-11-26 10:43:34.866443261 +0800 worlds_w3.csv
+-rw-r--r--  1 andreib180 andreib180 59610 2026-11-26 10:42:41.823137681 +0800 worlds_w4.csv
+-rw-r--r--  1 andreib180 andreib180 63041 2026-11-26 11:03:07.299156593 +0800 worlds_w5.csv
+-rw-r--r--  1 andreib180 andreib180 63704 2026-11-26 11:10:23.282233955 +0800 worlds_w6.csv
+-rw-r--r--  1 andreib180 andreib180 40567 2026-11-26 11:15:49.264117624 +0800 worlds_w7.csv
