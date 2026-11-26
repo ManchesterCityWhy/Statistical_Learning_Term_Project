@@ -1,0 +1,185 @@
+[suite] gen      ready    11s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] p8/deep  ready    18s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] p8/all   ready    25s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+[suite] 2d/deep  ready    31s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] 2d/all   ready    37s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  52.24  DES 0.525 DCS 0.554 MMD 0.506 CSS 0.503
+config=R7h: file recipe (two-witness + trend) proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.98  DES 0.598 DCS 0.667 MMD 0.617 CSS 0.593
+config=R7h + shared part 0.1 proxy=gen split=development f=0.15 t=0.0167 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.92  DES 0.591 DCS 0.670 MMD 0.619 CSS 0.592
+config=R7h + shared part 0.2 proxy=gen split=development f=0.15 t=0.0333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.91  DES 0.591 DCS 0.668 MMD 0.619 CSS 0.593
+config=R7h + shared part 0.35 proxy=gen split=development f=0.15 t=0.0583 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.89  DES 0.591 DCS 0.666 MMD 0.620 CSS 0.593
+config=R7h + shared part 0.5 proxy=gen split=development f=0.15 t=0.0833 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.80  DES 0.591 DCS 0.662 MMD 0.621 CSS 0.592
+config=R7h + shared part 0.75 proxy=gen split=development f=0.15 t=0.125 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.48  DES 0.584 DCS 0.662 MMD 0.618 CSS 0.590
+config=R7h + shared part 1 proxy=gen split=development f=0.15 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.97  DES 0.578 DCS 0.657 MMD 0.612 CSS 0.587
+config=R7h + whole ratio 0.1 proxy=gen split=development f=0.15 t=0.0167 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.71  DES 0.591 DCS 0.665 MMD 0.616 CSS 0.591
+config=R7h + whole ratio 0.2 proxy=gen split=development f=0.15 t=0.0333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.86  DES 0.598 DCS 0.666 MMD 0.615 CSS 0.592
+config=R7h + whole ratio 0.35 proxy=gen split=development f=0.15 t=0.0583 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.85  DES 0.605 DCS 0.664 MMD 0.611 CSS 0.591
+config=base only proxy=gen split=development f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  53.24  DES 0.510 DCS 0.593 MMD 0.519 CSS 0.506
+config=R7h: file recipe (two-witness + trend) proxy=gen split=development f=0.15 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.50  DES 0.591 DCS 0.686 MMD 0.626 CSS 0.589
+config=R7h + shared part 0.1 proxy=gen split=development f=0.15 t=0.0167 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.56  DES 0.591 DCS 0.686 MMD 0.628 CSS 0.590
+config=R7h + shared part 0.2 proxy=gen split=development f=0.15 t=0.0333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.63  DES 0.591 DCS 0.686 MMD 0.629 CSS 0.592
+config=R7h + shared part 0.35 proxy=gen split=development f=0.15 t=0.0583 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.86  DES 0.598 DCS 0.686 MMD 0.630 CSS 0.593
+config=R7h + shared part 0.5 proxy=gen split=development f=0.15 t=0.0833 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.99  DES 0.605 DCS 0.685 MMD 0.630 CSS 0.593
+config=R7h + shared part 0.75 proxy=gen split=development f=0.15 t=0.125 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.54  DES 0.591 DCS 0.684 MMD 0.627 CSS 0.593
+config=R7h + shared part 1 proxy=gen split=development f=0.15 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.27  DES 0.591 DCS 0.682 MMD 0.622 CSS 0.589
+config=R7h + whole ratio 0.1 proxy=gen split=development f=0.15 t=0.0167 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.51  DES 0.591 DCS 0.686 MMD 0.626 CSS 0.591
+config=R7h + whole ratio 0.2 proxy=gen split=development f=0.15 t=0.0333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.63  DES 0.598 DCS 0.685 MMD 0.624 CSS 0.591
+config=R7h + whole ratio 0.35 proxy=gen split=development f=0.15 t=0.0583 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.35  DES 0.591 DCS 0.684 MMD 0.621 CSS 0.592
+config=base only proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  60.22  DES 0.581 DCS 0.690 MMD 0.597 CSS 0.527
+config=R7h: file recipe (two-witness + trend) proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.00  DES 0.616 DCS 0.732 MMD 0.631 CSS 0.568
+config=R7h + shared part 0.1 proxy=p8/deep split=development f=0.18 t=0.02 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.49  DES 0.626 DCS 0.736 MMD 0.635 CSS 0.570
+config=R7h + shared part 0.2 proxy=p8/deep split=development f=0.18 t=0.04 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.88  DES 0.633 DCS 0.739 MMD 0.639 CSS 0.571
+config=R7h + shared part 0.35 proxy=p8/deep split=development f=0.18 t=0.07 bwd=1.0 seed=42 two_witness=True trend_days=1.0  65.39  DES 0.641 DCS 0.744 MMD 0.644 CSS 0.572
+config=R7h + shared part 0.5 proxy=p8/deep split=development f=0.18 t=0.1 bwd=1.0 seed=42 two_witness=True trend_days=1.0  65.70  DES 0.642 DCS 0.749 MMD 0.648 CSS 0.573
+config=R7h + shared part 0.75 proxy=p8/deep split=development f=0.18 t=0.15 bwd=1.0 seed=42 two_witness=True trend_days=1.0  66.12  DES 0.650 DCS 0.753 MMD 0.652 CSS 0.574
+config=R7h + shared part 1 proxy=p8/deep split=development f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=True trend_days=1.0  66.20  DES 0.649 DCS 0.756 MMD 0.653 CSS 0.574
+config=R7h + whole ratio 0.1 proxy=p8/deep split=development f=0.18 t=0.02 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.57  DES 0.627 DCS 0.737 MMD 0.635 CSS 0.570
+config=R7h + whole ratio 0.2 proxy=p8/deep split=development f=0.18 t=0.04 bwd=1.0 seed=42 two_witness=True trend_days=1.0  65.00  DES 0.635 DCS 0.741 MMD 0.639 CSS 0.571
+config=R7h + whole ratio 0.35 proxy=p8/deep split=development f=0.18 t=0.07 bwd=1.0 seed=42 two_witness=True trend_days=1.0  65.49  DES 0.641 DCS 0.747 MMD 0.644 CSS 0.573
+config=base only proxy=p8/deep split=development f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  60.41  DES 0.580 DCS 0.692 MMD 0.599 CSS 0.532
+config=R7h: file recipe (two-witness + trend) proxy=p8/deep split=development f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.0  63.46  DES 0.611 DCS 0.728 MMD 0.627 CSS 0.559
+config=R7h + shared part 0.1 proxy=p8/deep split=development f=0.18 t=0.02 bwd=1.0 seed=7 two_witness=True trend_days=1.0  63.98  DES 0.621 DCS 0.732 MMD 0.631 CSS 0.561
+config=R7h + shared part 0.2 proxy=p8/deep split=development f=0.18 t=0.04 bwd=1.0 seed=7 two_witness=True trend_days=1.0  64.35  DES 0.627 DCS 0.736 MMD 0.635 CSS 0.562
+config=R7h + shared part 0.35 proxy=p8/deep split=development f=0.18 t=0.07 bwd=1.0 seed=7 two_witness=True trend_days=1.0  64.78  DES 0.633 DCS 0.740 MMD 0.639 CSS 0.563
+config=R7h + shared part 0.5 proxy=p8/deep split=development f=0.18 t=0.1 bwd=1.0 seed=7 two_witness=True trend_days=1.0  65.27  DES 0.643 DCS 0.744 MMD 0.643 CSS 0.564
+config=R7h + shared part 0.75 proxy=p8/deep split=development f=0.18 t=0.15 bwd=1.0 seed=7 two_witness=True trend_days=1.0  65.67  DES 0.647 DCS 0.750 MMD 0.647 CSS 0.566
+config=R7h + shared part 1 proxy=p8/deep split=development f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=True trend_days=1.0  65.70  DES 0.643 DCS 0.753 MMD 0.649 CSS 0.566
+config=R7h + whole ratio 0.1 proxy=p8/deep split=development f=0.18 t=0.02 bwd=1.0 seed=7 two_witness=True trend_days=1.0  64.04  DES 0.623 DCS 0.733 MMD 0.631 CSS 0.561
+config=R7h + whole ratio 0.2 proxy=p8/deep split=development f=0.18 t=0.04 bwd=1.0 seed=7 two_witness=True trend_days=1.0  64.53  DES 0.632 DCS 0.737 MMD 0.635 CSS 0.563
+config=R7h + whole ratio 0.35 proxy=p8/deep split=development f=0.18 t=0.07 bwd=1.0 seed=7 two_witness=True trend_days=1.0  65.06  DES 0.641 DCS 0.743 MMD 0.639 CSS 0.564
+config=base only proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  58.48  DES 0.512 DCS 0.665 MMD 0.595 CSS 0.560
+config=R7h: file recipe (two-witness + trend) proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  61.80  DES 0.555 DCS 0.717 MMD 0.628 CSS 0.558
+config=R7h + shared part 0.1 proxy=p8/all split=development f=0.18 t=0.02 bwd=1.0 seed=42 two_witness=True trend_days=1.0  62.16  DES 0.563 DCS 0.719 MMD 0.631 CSS 0.559
+config=R7h + shared part 0.2 proxy=p8/all split=development f=0.18 t=0.04 bwd=1.0 seed=42 two_witness=True trend_days=1.0  62.53  DES 0.570 DCS 0.722 MMD 0.635 CSS 0.559
+config=R7h + shared part 0.35 proxy=p8/all split=development f=0.18 t=0.07 bwd=1.0 seed=42 two_witness=True trend_days=1.0  63.31  DES 0.592 DCS 0.725 MMD 0.640 CSS 0.560
+config=R7h + shared part 0.5 proxy=p8/all split=development f=0.18 t=0.1 bwd=1.0 seed=42 two_witness=True trend_days=1.0  63.88  DES 0.605 DCS 0.727 MMD 0.645 CSS 0.561
+config=R7h + shared part 0.75 proxy=p8/all split=development f=0.18 t=0.15 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.63  DES 0.621 DCS 0.730 MMD 0.654 CSS 0.562
+config=R7h + shared part 1 proxy=p8/all split=development f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=True trend_days=1.0  65.24  DES 0.632 DCS 0.734 MMD 0.661 CSS 0.564
+config=R7h + whole ratio 0.1 proxy=p8/all split=development f=0.18 t=0.02 bwd=1.0 seed=42 two_witness=True trend_days=1.0  62.23  DES 0.565 DCS 0.720 MMD 0.631 CSS 0.558
+config=R7h + whole ratio 0.2 proxy=p8/all split=development f=0.18 t=0.04 bwd=1.0 seed=42 two_witness=True trend_days=1.0  62.72  DES 0.578 DCS 0.722 MMD 0.635 CSS 0.559
+config=R7h + whole ratio 0.35 proxy=p8/all split=development f=0.18 t=0.07 bwd=1.0 seed=42 two_witness=True trend_days=1.0  63.39  DES 0.594 DCS 0.726 MMD 0.640 CSS 0.559
+config=base only proxy=p8/all split=development f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  58.07  DES 0.513 DCS 0.658 MMD 0.593 CSS 0.550
+config=R7h: file recipe (two-witness + trend) proxy=p8/all split=development f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.0  61.68  DES 0.564 DCS 0.711 MMD 0.624 CSS 0.553
+config=R7h + shared part 0.1 proxy=p8/all split=development f=0.18 t=0.02 bwd=1.0 seed=7 two_witness=True trend_days=1.0  62.11  DES 0.574 DCS 0.715 MMD 0.628 CSS 0.553
+config=R7h + shared part 0.2 proxy=p8/all split=development f=0.18 t=0.04 bwd=1.0 seed=7 two_witness=True trend_days=1.0  62.48  DES 0.583 DCS 0.715 MMD 0.632 CSS 0.554
+config=R7h + shared part 0.35 proxy=p8/all split=development f=0.18 t=0.07 bwd=1.0 seed=7 two_witness=True trend_days=1.0  63.07  DES 0.596 DCS 0.719 MMD 0.637 CSS 0.554
+config=R7h + shared part 0.5 proxy=p8/all split=development f=0.18 t=0.1 bwd=1.0 seed=7 two_witness=True trend_days=1.0  63.69  DES 0.611 DCS 0.722 MMD 0.642 CSS 0.555
+config=R7h + shared part 0.75 proxy=p8/all split=development f=0.18 t=0.15 bwd=1.0 seed=7 two_witness=True trend_days=1.0  64.47  DES 0.629 DCS 0.725 MMD 0.650 CSS 0.556
+config=R7h + shared part 1 proxy=p8/all split=development f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=True trend_days=1.0  65.04  DES 0.638 DCS 0.729 MMD 0.657 CSS 0.558
+config=R7h + whole ratio 0.1 proxy=p8/all split=development f=0.18 t=0.02 bwd=1.0 seed=7 two_witness=True trend_days=1.0  62.07  DES 0.572 DCS 0.715 MMD 0.628 CSS 0.553
+config=R7h + whole ratio 0.2 proxy=p8/all split=development f=0.18 t=0.04 bwd=1.0 seed=7 two_witness=True trend_days=1.0  62.63  DES 0.587 DCS 0.718 MMD 0.631 CSS 0.553
+config=R7h + whole ratio 0.35 proxy=p8/all split=development f=0.18 t=0.07 bwd=1.0 seed=7 two_witness=True trend_days=1.0  63.24  DES 0.603 DCS 0.720 MMD 0.636 CSS 0.554
+config=base only proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  53.31  DES 0.514 DCS 0.614 MMD 0.526 CSS 0.466
+config=R7h: file recipe (two-witness + trend) proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.86  DES 0.568 DCS 0.691 MMD 0.569 CSS 0.517
+config=R7h + shared part 0.1 proxy=2d/deep split=development f=0.3 t=0.0333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.52  DES 0.580 DCS 0.698 MMD 0.574 CSS 0.519
+config=R7h + shared part 0.2 proxy=2d/deep split=development f=0.3 t=0.0667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.11  DES 0.592 DCS 0.703 MMD 0.578 CSS 0.521
+config=R7h + shared part 0.35 proxy=2d/deep split=development f=0.3 t=0.1167 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.57  DES 0.596 DCS 0.710 MMD 0.582 CSS 0.524
+config=R7h + shared part 0.5 proxy=2d/deep split=development f=0.3 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.91  DES 0.603 DCS 0.713 MMD 0.584 CSS 0.525
+config=R7h + shared part 0.75 proxy=2d/deep split=development f=0.3 t=0.25 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.89  DES 0.599 DCS 0.718 MMD 0.581 CSS 0.526
+config=R7h + shared part 1 proxy=2d/deep split=development f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.68  DES 0.601 DCS 0.720 MMD 0.573 CSS 0.524
+config=R7h + whole ratio 0.1 proxy=2d/deep split=development f=0.3 t=0.0333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.61  DES 0.581 DCS 0.699 MMD 0.574 CSS 0.520
+config=R7h + whole ratio 0.2 proxy=2d/deep split=development f=0.3 t=0.0667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.17  DES 0.590 DCS 0.705 MMD 0.578 CSS 0.523
+config=R7h + whole ratio 0.35 proxy=2d/deep split=development f=0.3 t=0.1167 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.72  DES 0.599 DCS 0.711 MMD 0.582 CSS 0.526
+config=base only proxy=2d/deep split=development f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  53.11  DES 0.513 DCS 0.614 MMD 0.524 CSS 0.461
+config=R7h: file recipe (two-witness + trend) proxy=2d/deep split=development f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.23  DES 0.571 DCS 0.690 MMD 0.574 CSS 0.523
+config=R7h + shared part 0.1 proxy=2d/deep split=development f=0.3 t=0.0333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.94  DES 0.585 DCS 0.697 MMD 0.579 CSS 0.525
+config=R7h + shared part 0.2 proxy=2d/deep split=development f=0.3 t=0.0667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.44  DES 0.592 DCS 0.703 MMD 0.584 CSS 0.528
+config=R7h + shared part 0.35 proxy=2d/deep split=development f=0.3 t=0.1167 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.89  DES 0.597 DCS 0.709 MMD 0.588 CSS 0.530
+config=R7h + shared part 0.5 proxy=2d/deep split=development f=0.3 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.18  DES 0.602 DCS 0.713 MMD 0.589 CSS 0.532
+config=R7h + shared part 0.75 proxy=2d/deep split=development f=0.3 t=0.25 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.23  DES 0.603 DCS 0.716 MMD 0.587 CSS 0.533
+config=R7h + shared part 1 proxy=2d/deep split=development f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.11  DES 0.607 DCS 0.718 MMD 0.578 CSS 0.531
+config=R7h + whole ratio 0.1 proxy=2d/deep split=development f=0.3 t=0.0333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.02  DES 0.584 DCS 0.700 MMD 0.580 CSS 0.527
+config=R7h + whole ratio 0.2 proxy=2d/deep split=development f=0.3 t=0.0667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.64  DES 0.596 DCS 0.706 MMD 0.584 CSS 0.529
+config=R7h + whole ratio 0.35 proxy=2d/deep split=development f=0.3 t=0.1167 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.03  DES 0.599 DCS 0.712 MMD 0.587 CSS 0.533
+config=base only proxy=2d/all split=development f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  48.44  DES 0.407 DCS 0.527 MMD 0.502 CSS 0.502
+config=R7h: file recipe (two-witness + trend) proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.85  DES 0.553 DCS 0.684 MMD 0.581 CSS 0.524
+config=R7h + shared part 0.1 proxy=2d/all split=development f=0.3 t=0.0333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.46  DES 0.565 DCS 0.687 MMD 0.588 CSS 0.525
+config=R7h + shared part 0.2 proxy=2d/all split=development f=0.3 t=0.0667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.96  DES 0.577 DCS 0.689 MMD 0.594 CSS 0.526
+config=R7h + shared part 0.35 proxy=2d/all split=development f=0.3 t=0.1167 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.77  DES 0.594 DCS 0.691 MMD 0.603 CSS 0.528
+config=R7h + shared part 0.5 proxy=2d/all split=development f=0.3 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.31  DES 0.603 DCS 0.693 MMD 0.611 CSS 0.529
+config=R7h + shared part 0.75 proxy=2d/all split=development f=0.3 t=0.25 bwd=1.0 seed=42 two_witness=False trend_days=1.0  62.00  DES 0.612 DCS 0.695 MMD 0.623 CSS 0.532
+config=R7h + shared part 1 proxy=2d/all split=development f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  62.57  DES 0.621 DCS 0.694 MMD 0.633 CSS 0.535
+config=R7h + whole ratio 0.1 proxy=2d/all split=development f=0.3 t=0.0333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.44  DES 0.564 DCS 0.688 MMD 0.588 CSS 0.525
+config=R7h + whole ratio 0.2 proxy=2d/all split=development f=0.3 t=0.0667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.07  DES 0.581 DCS 0.689 MMD 0.593 CSS 0.526
+config=R7h + whole ratio 0.35 proxy=2d/all split=development f=0.3 t=0.1167 bwd=1.0 seed=42 two_witness=False trend_days=1.0  60.78  DES 0.595 DCS 0.693 MMD 0.602 CSS 0.527
+config=base only proxy=2d/all split=development f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  48.56  DES 0.400 DCS 0.534 MMD 0.505 CSS 0.503
+config=R7h: file recipe (two-witness + trend) proxy=2d/all split=development f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  58.43  DES 0.541 DCS 0.677 MMD 0.581 CSS 0.528
+config=R7h + shared part 0.1 proxy=2d/all split=development f=0.3 t=0.0333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.19  DES 0.558 DCS 0.682 MMD 0.587 CSS 0.528
+config=R7h + shared part 0.2 proxy=2d/all split=development f=0.3 t=0.0667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.65  DES 0.567 DCS 0.684 MMD 0.593 CSS 0.529
+config=R7h + shared part 0.35 proxy=2d/all split=development f=0.3 t=0.1167 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.56  DES 0.588 DCS 0.688 MMD 0.601 CSS 0.531
+config=R7h + shared part 0.5 proxy=2d/all split=development f=0.3 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.27  DES 0.602 DCS 0.692 MMD 0.609 CSS 0.532
+config=R7h + shared part 0.75 proxy=2d/all split=development f=0.3 t=0.25 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.15  DES 0.620 DCS 0.693 MMD 0.621 CSS 0.535
+config=R7h + shared part 1 proxy=2d/all split=development f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.54  DES 0.620 DCS 0.694 MMD 0.631 CSS 0.538
+config=R7h + whole ratio 0.1 proxy=2d/all split=development f=0.3 t=0.0333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.25  DES 0.560 DCS 0.683 MMD 0.587 CSS 0.528
+config=R7h + whole ratio 0.2 proxy=2d/all split=development f=0.3 t=0.0667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.85  DES 0.574 DCS 0.686 MMD 0.592 CSS 0.529
+config=R7h + whole ratio 0.35 proxy=2d/all split=development f=0.3 t=0.1167 bwd=1.0 seed=7 two_witness=False trend_days=1.0  60.52  DES 0.587 DCS 0.688 MMD 0.601 CSS 0.530
+done 406s
+proxy                                     gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                         
+base only                               52.74    60.32   58.28    53.21   48.50
+R7h: file recipe (two-witness + trend)  62.24    63.73   61.74    59.04   58.64
+R7h + shared part 0.1                   62.24    64.23   62.14    59.73   59.32
+R7h + shared part 0.2                   62.27    64.61   62.51    60.28   59.80
+R7h + shared part 0.35                  62.37    65.09   63.19    60.73   60.67
+R7h + shared part 0.5                   62.39    65.48   63.78    61.04   61.29
+R7h + shared part 0.75                  62.01    65.89   64.55    61.06   62.07
+R7h + shared part 1                     61.62    65.95   65.14    60.89   62.56
+R7h + whole ratio 0.1                   62.11    64.31   62.15    59.82   59.34
+R7h + whole ratio 0.2                   62.25    64.77   62.68    60.41   59.96
+R7h + whole ratio 0.35                  62.10    65.28   63.32    60.87   60.65
+skill_de_score
+proxy                                     gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                         
+base only                               0.518    0.581   0.513    0.513   0.403
+R7h: file recipe (two-witness + trend)  0.594    0.613   0.560    0.569   0.547
+R7h + shared part 0.1                   0.591    0.624   0.568    0.582   0.562
+R7h + shared part 0.2                   0.591    0.630   0.577    0.592   0.572
+R7h + shared part 0.35                  0.594    0.637   0.594    0.597   0.591
+R7h + shared part 0.5                   0.598    0.643   0.608    0.602   0.602
+R7h + shared part 0.75                  0.588    0.648   0.625    0.601   0.616
+R7h + shared part 1                     0.584    0.646   0.635    0.604   0.620
+R7h + whole ratio 0.1                   0.591    0.625   0.569    0.583   0.562
+R7h + whole ratio 0.2                   0.598    0.633   0.583    0.593   0.577
+R7h + whole ratio 0.35                  0.598    0.641   0.599    0.599   0.591
+skill_de_direction
+proxy                                     gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                         
+base only                               0.573    0.691   0.662    0.614   0.531
+R7h: file recipe (two-witness + trend)  0.677    0.730   0.714    0.691   0.680
+R7h + shared part 0.1                   0.678    0.734   0.717    0.697   0.685
+R7h + shared part 0.2                   0.677    0.737   0.718    0.703   0.686
+R7h + shared part 0.35                  0.676    0.742   0.722    0.710   0.690
+R7h + shared part 0.5                   0.673    0.747   0.724    0.713   0.693
+R7h + shared part 0.75                  0.673    0.752   0.728    0.717   0.694
+R7h + shared part 1                     0.669    0.754   0.731    0.719   0.694
+R7h + whole ratio 0.1                   0.676    0.735   0.717    0.699   0.686
+R7h + whole ratio 0.2                   0.675    0.739   0.720    0.706   0.688
+R7h + whole ratio 0.35                  0.674    0.745   0.723    0.711   0.691
+skill_mmd_u
+proxy                                     gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                         
+base only                               0.512    0.598   0.594    0.525   0.504
+R7h: file recipe (two-witness + trend)  0.622    0.629   0.626    0.572   0.581
+R7h + shared part 0.1                   0.623    0.633   0.630    0.577   0.588
+R7h + shared part 0.2                   0.624    0.637   0.633    0.581   0.593
+R7h + shared part 0.35                  0.625    0.642   0.639    0.585   0.602
+R7h + shared part 0.5                   0.625    0.646   0.644    0.587   0.610
+R7h + shared part 0.75                  0.623    0.650   0.652    0.584   0.622
+R7h + shared part 1                     0.617    0.651   0.659    0.575   0.632
+R7h + whole ratio 0.1                   0.621    0.633   0.629    0.577   0.587
+R7h + whole ratio 0.2                   0.619    0.637   0.633    0.581   0.593
+R7h + whole ratio 0.35                  0.616    0.642   0.638    0.584   0.601
+skill_variogram
+proxy                                     gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                         
+base only                               0.505    0.529   0.555    0.464   0.502
+R7h: file recipe (two-witness + trend)  0.591    0.564   0.556    0.520   0.526
+R7h + shared part 0.1                   0.591    0.565   0.556    0.522   0.527
+R7h + shared part 0.2                   0.592    0.566   0.557    0.524   0.527
+R7h + shared part 0.35                  0.593    0.567   0.557    0.527   0.529
+R7h + shared part 0.5                   0.592    0.569   0.558    0.528   0.530
+R7h + shared part 0.75                  0.591    0.570   0.559    0.529   0.533
+R7h + shared part 1                     0.588    0.570   0.561    0.527   0.536
+R7h + whole ratio 0.1                   0.591    0.565   0.556    0.523   0.527
+R7h + whole ratio 0.2                   0.592    0.567   0.556    0.526   0.527
+R7h + whole ratio 0.35                  0.592    0.568   0.556    0.530   0.528

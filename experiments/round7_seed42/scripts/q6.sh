@@ -1,0 +1,1 @@
+cd ~/statlearn_real && sed -i 's/\r$//' /mnt/d/statlearn/r8/*.py && cp /mnt/d/statlearn/r8/r8_activation.py experiments/r8_activation.py && OMP_NUM_THREADS=4 ~/statlearn_venv/bin/python -W ignore -m experiments.r8_activation 2>&1 | tail -32

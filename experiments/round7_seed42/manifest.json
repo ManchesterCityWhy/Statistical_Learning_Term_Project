@@ -14,11 +14,19 @@
     "previous_stage": "E9.5 (all cells)",
     "bulk_trend_share": 0.4,
     "real_share": 0.5,
+    "shared_forward_share": 0.0,
+    "two_witness_on": "lineage-specific part of the ratio",
+    "shift_mode": "scale",
+    "mixture_share": 0.0,
+    "mixture_low_gene_threshold_per_10k": null,
+    "mixture_partner_profile": null,
     "anchor_form": "resample (k_prof = 20, multinomial at source-lineage depth)"
   },
   "seed": 42,
   "cells_total": 5000,
-  "base_cells": 3875,
+  "base_cells": 2750,
+  "stand_in_cells": 1125,
+  "real_cells_total": 3875,
   "anchor_cells": 1125,
   "real_cells": {
     "drawn_in_natural_composition": 2750,
@@ -371,6 +379,8 @@
       }
     }
   },
+  "shared_forward_shift": null,
+  "molecular_mixture": null,
   "input_sha256": {
     "E10.5_RNA.h5ad": "974e04e7fe64fb96142f17994a9678d4cebd4f1868dec4de034eda4245b7dd6c"
   },
@@ -447,9 +457,9 @@
     "E9.5_RNA.h5ad": "0296e0043842f944a663f3c11ac1542d1bbee733c1cd657bd56f75af65958361"
   },
   "code_sha256": {
-    "round7_export.py": "df3dad0e53c251658747912b0d5c438df1da8b720cda5acfa69dbc06acec7fdb",
-    "round7_method.py": "260273b8a2a239adbbd9348d3bfed9f3fdb99fed56426f4487bb1f0146fdf89e",
-    "round7_eval.py": "58c0afb01b9305625ea0fac2df169ec026b4726eaa572655721872747f712087",
+    "round7_export.py": "e41bc9ecd0fa88a21bf6118cb653b25286d29023863785af1021c750b74d033c",
+    "round7_method.py": "b8b14c2a0cb8f5a1f018eb7c4e494aff863bb45e5d0c4613463f803c940503ff",
+    "round7_eval.py": "a39f8a6dc29d39e528f5616c4678266bbdb08d8593b44e2b9b02c4ace8c79b09",
     "round7_probe.py": "12659e8c141177f062f34587280c6b2b6060333572f39744dbea4dd43a4f0901",
     "round6_method.py": "0bcaac9f50db5fd1ceceb6408b6c8801c86aa60232c8a444b126b5c0dd3e2509",
     "round6_anchor.py": "cd26cddc842b738c0851baedec20e7ef67411143c735181004e0b5d2da62a05e",
@@ -515,5 +525,6 @@
       "recomputed": 67.09380874370157,
       "abs_diff": 0.0
     }
-  }
+  },
+  "provenance_sha256": "7fd6990a02b7344eb67777cfa398fb4ae17d09018d604d323943575286cc6876"
 }

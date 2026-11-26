@@ -1,0 +1,155 @@
+[suite] gen      ready    13s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] p8/deep  ready    19s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] p8/all   ready    25s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] 2d/deep  ready    32s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    38s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  51.79  DES 0.509 DCS 0.552 MMD 0.506 CSS 0.504
+config=R7h: file recipe (two-witness + trend) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.09  DES 0.594 DCS 0.658 MMD 0.610 CSS 0.575
+config=R7h, shifts in count space proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.16  DES 0.588 DCS 0.658 MMD 0.613 CSS 0.581
+config=whole ratio 1 + two-witness + trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.22  DES 0.576 DCS 0.628 MMD 0.570 CSS 0.551
+config=whole ratio 1 + two-witness + trend, count space proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=1.0  57.68  DES 0.570 DCS 0.627 MMD 0.565 CSS 0.540
+config=whole ratio 1, count space proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=42 two_witness=False trend_days=0.0  56.21  DES 0.559 DCS 0.604 MMD 0.549 CSS 0.534
+config=R7h + trend x1.5 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.5  61.34  DES 0.600 DCS 0.655 MMD 0.614 CSS 0.577
+config=R7h + trend x1.5, count space proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.5  61.06  DES 0.594 DCS 0.655 MMD 0.614 CSS 0.570
+config=R7h + trend x2, count space proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=2.0  60.11  DES 0.594 DCS 0.649 MMD 0.607 CSS 0.542
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  52.97  DES 0.500 DCS 0.595 MMD 0.516 CSS 0.506
+config=R7h: file recipe (two-witness + trend) proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.53  DES 0.582 DCS 0.683 MMD 0.614 CSS 0.575
+config=R7h, shifts in count space proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.67  DES 0.582 DCS 0.682 MMD 0.617 CSS 0.579
+config=whole ratio 1 + two-witness + trend proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.79  DES 0.594 DCS 0.660 MMD 0.575 CSS 0.559
+config=whole ratio 1 + two-witness + trend, count space proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.16  DES 0.588 DCS 0.656 MMD 0.570 CSS 0.548
+config=whole ratio 1, count space proxy=gen split=confirmation f=0.15 t=0.1667 bwd=1.0 seed=7 two_witness=False trend_days=0.0  57.32  DES 0.559 DCS 0.636 MMD 0.554 CSS 0.543
+config=R7h + trend x1.5 proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.5  62.00  DES 0.594 DCS 0.683 MMD 0.618 CSS 0.576
+config=R7h + trend x1.5, count space proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.5  61.60  DES 0.588 DCS 0.680 MMD 0.620 CSS 0.566
+config=R7h + trend x2, count space proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=2.0  60.60  DES 0.588 DCS 0.676 MMD 0.611 CSS 0.535
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  60.34  DES 0.579 DCS 0.690 MMD 0.597 CSS 0.534
+config=R7h: file recipe (two-witness + trend) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.21  DES 0.614 DCS 0.734 MMD 0.631 CSS 0.579
+config=R7h, shifts in count space proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.63  DES 0.615 DCS 0.737 MMD 0.633 CSS 0.591
+config=whole ratio 1 + two-witness + trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=True trend_days=1.0  66.87  DES 0.662 DCS 0.761 MMD 0.650 CSS 0.590
+config=whole ratio 1 + two-witness + trend, count space proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=True trend_days=1.0  67.61  DES 0.663 DCS 0.768 MMD 0.651 CSS 0.615
+config=whole ratio 1, count space proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=False trend_days=0.0  66.41  DES 0.651 DCS 0.756 MMD 0.640 CSS 0.602
+config=R7h + trend x1.5 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.5  64.75  DES 0.623 DCS 0.739 MMD 0.636 CSS 0.583
+config=R7h + trend x1.5, count space proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.5  65.09  DES 0.622 DCS 0.740 MMD 0.638 CSS 0.596
+config=R7h + trend x2, count space proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=2.0  65.19  DES 0.617 DCS 0.744 MMD 0.641 CSS 0.597
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  60.52  DES 0.577 DCS 0.694 MMD 0.599 CSS 0.539
+config=R7h: file recipe (two-witness + trend) proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.0  63.71  DES 0.610 DCS 0.731 MMD 0.627 CSS 0.570
+config=R7h, shifts in count space proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.0  64.15  DES 0.611 DCS 0.734 MMD 0.628 CSS 0.583
+config=whole ratio 1 + two-witness + trend proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=True trend_days=1.0  66.52  DES 0.661 DCS 0.760 MMD 0.645 CSS 0.582
+config=whole ratio 1 + two-witness + trend, count space proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=True trend_days=1.0  67.31  DES 0.665 DCS 0.765 MMD 0.646 CSS 0.609
+config=whole ratio 1, count space proxy=p8/deep split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=False trend_days=0.0  65.97  DES 0.649 DCS 0.752 MMD 0.636 CSS 0.594
+config=R7h + trend x1.5 proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.5  64.23  DES 0.618 DCS 0.735 MMD 0.631 CSS 0.574
+config=R7h + trend x1.5, count space proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.5  64.56  DES 0.617 DCS 0.736 MMD 0.633 CSS 0.587
+config=R7h + trend x2, count space proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=2.0  64.72  DES 0.614 DCS 0.741 MMD 0.636 CSS 0.589
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  57.53  DES 0.495 DCS 0.656 MMD 0.587 CSS 0.558
+config=R7h: file recipe (two-witness + trend) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  60.76  DES 0.535 DCS 0.710 MMD 0.618 CSS 0.557
+config=R7h, shifts in count space proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.0  61.34  DES 0.539 DCS 0.713 MMD 0.621 CSS 0.572
+config=whole ratio 1 + two-witness + trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=True trend_days=1.0  64.94  DES 0.638 DCS 0.730 MMD 0.651 CSS 0.561
+config=whole ratio 1 + two-witness + trend, count space proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=True trend_days=1.0  66.06  DES 0.648 DCS 0.735 MMD 0.658 CSS 0.587
+config=whole ratio 1, count space proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=42 two_witness=False trend_days=0.0  64.54  DES 0.631 DCS 0.726 MMD 0.639 CSS 0.571
+config=R7h + trend x1.5 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.5  61.25  DES 0.540 DCS 0.713 MMD 0.624 CSS 0.560
+config=R7h + trend x1.5, count space proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=1.5  61.84  DES 0.543 DCS 0.716 MMD 0.628 CSS 0.577
+config=R7h + trend x2, count space proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=42 two_witness=True trend_days=2.0  62.26  DES 0.548 DCS 0.716 MMD 0.634 CSS 0.581
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  57.07  DES 0.492 DCS 0.650 MMD 0.585 CSS 0.548
+config=R7h: file recipe (two-witness + trend) proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.0  60.68  DES 0.545 DCS 0.703 MMD 0.615 CSS 0.552
+config=R7h, shifts in count space proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.0  61.15  DES 0.546 DCS 0.705 MMD 0.618 CSS 0.566
+config=whole ratio 1 + two-witness + trend proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=True trend_days=1.0  64.63  DES 0.642 DCS 0.724 MMD 0.646 CSS 0.555
+config=whole ratio 1 + two-witness + trend, count space proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=True trend_days=1.0  65.74  DES 0.651 DCS 0.729 MMD 0.654 CSS 0.582
+config=whole ratio 1, count space proxy=p8/all split=confirmation f=0.18 t=0.2 bwd=1.0 seed=7 two_witness=False trend_days=0.0  64.20  DES 0.633 DCS 0.719 MMD 0.635 CSS 0.567
+config=R7h + trend x1.5 proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.5  61.25  DES 0.553 DCS 0.708 MMD 0.621 CSS 0.555
+config=R7h + trend x1.5, count space proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=1.5  61.73  DES 0.551 DCS 0.711 MMD 0.625 CSS 0.571
+config=R7h + trend x2, count space proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=7 two_witness=True trend_days=2.0  62.10  DES 0.555 DCS 0.712 MMD 0.631 CSS 0.574
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  53.39  DES 0.514 DCS 0.615 MMD 0.525 CSS 0.470
+config=R7h: file recipe (two-witness + trend) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.10  DES 0.570 DCS 0.694 MMD 0.568 CSS 0.523
+config=R7h, shifts in count space proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  59.59  DES 0.572 DCS 0.696 MMD 0.570 CSS 0.539
+config=whole ratio 1 + two-witness + trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.25  DES 0.617 DCS 0.726 MMD 0.563 CSS 0.539
+config=whole ratio 1 + two-witness + trend, count space proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  61.31  DES 0.618 DCS 0.731 MMD 0.556 CSS 0.546
+config=whole ratio 1, count space proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=0.0  59.92  DES 0.604 DCS 0.710 MMD 0.547 CSS 0.533
+config=R7h + trend x1.5 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.5  59.77  DES 0.576 DCS 0.698 MMD 0.575 CSS 0.533
+config=R7h + trend x1.5, count space proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.5  60.10  DES 0.574 DCS 0.701 MMD 0.577 CSS 0.545
+config=R7h + trend x2, count space proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=2.0  60.14  DES 0.576 DCS 0.702 MMD 0.580 CSS 0.540
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  53.20  DES 0.514 DCS 0.616 MMD 0.522 CSS 0.465
+config=R7h: file recipe (two-witness + trend) proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.49  DES 0.574 DCS 0.694 MMD 0.574 CSS 0.530
+config=R7h, shifts in count space proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  59.98  DES 0.574 DCS 0.696 MMD 0.576 CSS 0.546
+config=whole ratio 1 + two-witness + trend proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.50  DES 0.618 DCS 0.724 MMD 0.567 CSS 0.546
+config=whole ratio 1 + two-witness + trend, count space proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  61.59  DES 0.620 DCS 0.729 MMD 0.559 CSS 0.554
+config=whole ratio 1, count space proxy=2d/deep split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=0.0  60.15  DES 0.606 DCS 0.708 MMD 0.550 CSS 0.540
+config=R7h + trend x1.5 proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.5  60.24  DES 0.581 DCS 0.700 MMD 0.581 CSS 0.539
+config=R7h + trend x1.5, count space proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.5  60.65  DES 0.582 DCS 0.702 MMD 0.583 CSS 0.552
+config=R7h + trend x2, count space proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=2.0  60.57  DES 0.578 DCS 0.703 MMD 0.587 CSS 0.548
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=42 two_witness=False trend_days=0.0  48.13  DES 0.395 DCS 0.526 MMD 0.502 CSS 0.502
+config=R7h: file recipe (two-witness + trend) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.34  DES 0.539 DCS 0.683 MMD 0.577 CSS 0.524
+config=R7h, shifts in count space proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.0  58.53  DES 0.526 DCS 0.681 MMD 0.582 CSS 0.545
+config=whole ratio 1 + two-witness + trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  62.81  DES 0.635 DCS 0.698 MMD 0.626 CSS 0.535
+config=whole ratio 1 + two-witness + trend, count space proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=1.0  63.59  DES 0.625 DCS 0.703 MMD 0.635 CSS 0.567
+config=whole ratio 1, count space proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=42 two_witness=False trend_days=0.0  61.77  DES 0.634 DCS 0.685 MMD 0.602 CSS 0.537
+config=R7h + trend x1.5 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.5  58.49  DES 0.525 DCS 0.681 MMD 0.590 CSS 0.533
+config=R7h + trend x1.5, count space proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=1.5  58.83  DES 0.518 DCS 0.678 MMD 0.596 CSS 0.553
+config=R7h + trend x2, count space proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=42 two_witness=False trend_days=2.0  59.05  DES 0.516 DCS 0.676 MMD 0.606 CSS 0.553
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=7 two_witness=False trend_days=0.0  48.14  DES 0.387 DCS 0.531 MMD 0.505 CSS 0.503
+config=R7h: file recipe (two-witness + trend) proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  57.77  DES 0.525 DCS 0.672 MMD 0.577 CSS 0.527
+config=R7h, shifts in count space proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.0  58.29  DES 0.521 DCS 0.673 MMD 0.582 CSS 0.549
+config=whole ratio 1 + two-witness + trend proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  62.68  DES 0.629 DCS 0.696 MMD 0.625 CSS 0.539
+config=whole ratio 1 + two-witness + trend, count space proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=1.0  63.51  DES 0.624 DCS 0.699 MMD 0.634 CSS 0.570
+config=whole ratio 1, count space proxy=2d/all split=confirmation f=0.3 t=0.3333 bwd=1.0 seed=7 two_witness=False trend_days=0.0  61.35  DES 0.619 DCS 0.682 MMD 0.601 CSS 0.539
+config=R7h + trend x1.5 proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.5  58.27  DES 0.520 DCS 0.674 MMD 0.590 CSS 0.536
+config=R7h + trend x1.5, count space proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=1.5  58.70  DES 0.510 DCS 0.676 MMD 0.596 CSS 0.558
+config=R7h + trend x2, count space proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=7 two_witness=False trend_days=2.0  58.91  DES 0.507 DCS 0.675 MMD 0.607 CSS 0.557
+done 458s
+proxy                                               gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                   
+base only                                         52.38    60.43   57.30    53.29   48.14
+R7h: file recipe (two-witness + trend)            61.31    63.96   60.72    59.30   58.05
+R7h, shifts in count space                        61.42    64.39   61.24    59.78   58.41
+whole ratio 1 + two-witness + trend               59.01    66.69   64.79    61.38   62.74
+whole ratio 1 + two-witness + trend, count space  58.42    67.46   65.90    61.45   63.55
+whole ratio 1, count space                        56.76    66.19   64.37    60.04   61.56
+R7h + trend x1.5                                  61.67    64.49   61.25    60.01   58.38
+R7h + trend x1.5, count space                     61.33    64.83   61.79    60.38   58.77
+R7h + trend x2, count space                       60.36    64.96   62.18    60.36   58.98
+skill_de_score
+proxy                                               gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                   
+base only                                         0.504    0.578   0.493    0.514   0.391
+R7h: file recipe (two-witness + trend)            0.588    0.612   0.540    0.572   0.532
+R7h, shifts in count space                        0.585    0.613   0.542    0.573   0.524
+whole ratio 1 + two-witness + trend               0.585    0.661   0.640    0.618   0.632
+whole ratio 1 + two-witness + trend, count space  0.579    0.664   0.650    0.619   0.625
+whole ratio 1, count space                        0.559    0.650   0.632    0.605   0.627
+R7h + trend x1.5                                  0.597    0.620   0.547    0.579   0.522
+R7h + trend x1.5, count space                     0.591    0.619   0.547    0.578   0.514
+R7h + trend x2, count space                       0.591    0.615   0.552    0.577   0.512
+skill_de_direction
+proxy                                               gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                   
+base only                                         0.574    0.692   0.653    0.615   0.529
+R7h: file recipe (two-witness + trend)            0.670    0.732   0.706    0.694   0.678
+R7h, shifts in count space                        0.670    0.735   0.709    0.696   0.677
+whole ratio 1 + two-witness + trend               0.644    0.760   0.727    0.725   0.697
+whole ratio 1 + two-witness + trend, count space  0.642    0.767   0.732    0.730   0.701
+whole ratio 1, count space                        0.620    0.754   0.723    0.709   0.683
+R7h + trend x1.5                                  0.669    0.737   0.710    0.699   0.677
+R7h + trend x1.5, count space                     0.668    0.738   0.713    0.702   0.677
+R7h + trend x2, count space                       0.662    0.742   0.714    0.703   0.675
+skill_mmd_u
+proxy                                               gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                   
+base only                                         0.511    0.598   0.586    0.524   0.503
+R7h: file recipe (two-witness + trend)            0.612    0.629   0.616    0.571   0.577
+R7h, shifts in count space                        0.615    0.631   0.619    0.573   0.582
+whole ratio 1 + two-witness + trend               0.573    0.648   0.648    0.565   0.626
+whole ratio 1 + two-witness + trend, count space  0.567    0.648   0.656    0.558   0.635
+whole ratio 1, count space                        0.551    0.638   0.637    0.549   0.601
+R7h + trend x1.5                                  0.616    0.633   0.623    0.578   0.590
+R7h + trend x1.5, count space                     0.617    0.635   0.626    0.580   0.596
+R7h + trend x2, count space                       0.609    0.639   0.633    0.583   0.607
+skill_variogram
+proxy                                               gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                   
+base only                                         0.505    0.537   0.553    0.467   0.502
+R7h: file recipe (two-witness + trend)            0.575    0.574   0.554    0.527   0.526
+R7h, shifts in count space                        0.580    0.587   0.569    0.543   0.547
+whole ratio 1 + two-witness + trend               0.555    0.586   0.558    0.543   0.537
+whole ratio 1 + two-witness + trend, count space  0.544    0.612   0.585    0.550   0.569
+whole ratio 1, count space                        0.538    0.598   0.569    0.537   0.538
+R7h + trend x1.5                                  0.577    0.578   0.557    0.536   0.535
+R7h + trend x1.5, count space                     0.568    0.592   0.574    0.549   0.555
+R7h + trend x2, count space                       0.538    0.593   0.578    0.544   0.555

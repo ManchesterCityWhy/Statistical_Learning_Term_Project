@@ -1,0 +1,115 @@
+scenario pool 11486 32s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=R7h: file recipe (two-witness + trend) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.48  DES 0.746 DCS 0.903 MMD 0.839 CSS 0.803
+config=R7h: file recipe (two-witness + trend) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.53  DES 0.762 DCS 0.890 MMD 0.850 CSS 0.686
+config=R7h: file recipe (two-witness + trend) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.88  DES 0.689 DCS 0.832 MMD 0.797 CSS 0.597
+config=R7h: file recipe (two-witness + trend) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.09  DES 0.632 DCS 0.837 MMD 0.618 CSS 0.592
+config=R7h + shared part 0.1 scenario=heart/deep split=development f=0.45 t=0.05 bwd=1.0 seed=42  81.43  DES 0.733 DCS 0.902 MMD 0.825 CSS 0.791
+config=R7h + shared part 0.1 scenario=heart/mid split=development f=0.45 t=0.05 bwd=1.0 seed=42  79.96  DES 0.766 DCS 0.885 MMD 0.837 CSS 0.678
+config=R7h + shared part 0.1 scenario=heart/shallow split=development f=0.45 t=0.05 bwd=1.0 seed=42  73.74  DES 0.701 DCS 0.828 MMD 0.789 CSS 0.593
+config=R7h + shared part 0.1 scenario=all/asis split=development f=0.45 t=0.05 bwd=1.0 seed=42  66.61  DES 0.628 DCS 0.837 MMD 0.609 CSS 0.586
+config=R7h + shared part 0.2 scenario=heart/deep split=development f=0.45 t=0.1 bwd=1.0 seed=42  80.43  DES 0.726 DCS 0.900 MMD 0.808 CSS 0.776
+config=R7h + shared part 0.2 scenario=heart/mid split=development f=0.45 t=0.1 bwd=1.0 seed=42  78.78  DES 0.749 DCS 0.880 MMD 0.822 CSS 0.670
+config=R7h + shared part 0.2 scenario=heart/shallow split=development f=0.45 t=0.1 bwd=1.0 seed=42  73.32  DES 0.703 DCS 0.824 MMD 0.779 CSS 0.589
+config=R7h + shared part 0.2 scenario=all/asis split=development f=0.45 t=0.1 bwd=1.0 seed=42  66.38  DES 0.636 DCS 0.838 MMD 0.599 CSS 0.578
+config=R7h + shared part 0.35 scenario=heart/deep split=development f=0.45 t=0.175 bwd=1.0 seed=42  78.76  DES 0.718 DCS 0.895 MMD 0.779 CSS 0.753
+config=R7h + shared part 0.35 scenario=heart/mid split=development f=0.45 t=0.175 bwd=1.0 seed=42  77.22  DES 0.736 DCS 0.872 MMD 0.796 CSS 0.657
+config=R7h + shared part 0.35 scenario=heart/shallow split=development f=0.45 t=0.175 bwd=1.0 seed=42  72.51  DES 0.701 DCS 0.818 MMD 0.763 CSS 0.583
+config=R7h + shared part 0.35 scenario=all/asis split=development f=0.45 t=0.175 bwd=1.0 seed=42  65.75  DES 0.642 DCS 0.835 MMD 0.582 CSS 0.568
+config=R7h + shared part 0.5 scenario=heart/deep split=development f=0.45 t=0.25 bwd=1.0 seed=42  77.02  DES 0.713 DCS 0.889 MMD 0.748 CSS 0.727
+config=R7h + shared part 0.5 scenario=heart/mid split=development f=0.45 t=0.25 bwd=1.0 seed=42  75.45  DES 0.717 DCS 0.864 MMD 0.768 CSS 0.644
+config=R7h + shared part 0.5 scenario=heart/shallow split=development f=0.45 t=0.25 bwd=1.0 seed=42  71.46  DES 0.692 DCS 0.812 MMD 0.744 CSS 0.577
+config=R7h + shared part 0.5 scenario=all/asis split=development f=0.45 t=0.25 bwd=1.0 seed=42  64.97  DES 0.644 DCS 0.832 MMD 0.564 CSS 0.557
+config=R7h + shared part 0.75 scenario=heart/deep split=development f=0.45 t=0.375 bwd=1.0 seed=42  73.62  DES 0.690 DCS 0.880 MMD 0.693 CSS 0.680
+config=R7h + shared part 0.75 scenario=heart/mid split=development f=0.45 t=0.375 bwd=1.0 seed=42  72.49  DES 0.687 DCS 0.856 MMD 0.717 CSS 0.621
+config=R7h + shared part 0.75 scenario=heart/shallow split=development f=0.45 t=0.375 bwd=1.0 seed=42  69.85  DES 0.683 DCS 0.805 MMD 0.709 CSS 0.568
+config=R7h + shared part 0.75 scenario=all/asis split=development f=0.45 t=0.375 bwd=1.0 seed=42  63.43  DES 0.642 DCS 0.829 MMD 0.530 CSS 0.538
+config=R7h + shared part 1 scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  70.20  DES 0.669 DCS 0.870 MMD 0.637 CSS 0.630
+config=R7h + shared part 1 scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  69.67  DES 0.667 DCS 0.845 MMD 0.664 CSS 0.598
+config=R7h + shared part 1 scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  68.12  DES 0.674 DCS 0.798 MMD 0.671 CSS 0.559
+config=R7h + shared part 1 scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  61.63  DES 0.634 DCS 0.823 MMD 0.495 CSS 0.518
+config=R7h + whole ratio 0.1 scenario=heart/deep split=development f=0.45 t=0.05 bwd=1.0 seed=42  80.99  DES 0.734 DCS 0.900 MMD 0.816 CSS 0.783
+config=R7h + whole ratio 0.1 scenario=heart/mid split=development f=0.45 t=0.05 bwd=1.0 seed=42  79.36  DES 0.760 DCS 0.882 MMD 0.828 CSS 0.673
+config=R7h + whole ratio 0.1 scenario=heart/shallow split=development f=0.45 t=0.05 bwd=1.0 seed=42  73.31  DES 0.697 DCS 0.826 MMD 0.782 CSS 0.590
+config=R7h + whole ratio 0.1 scenario=all/asis split=development f=0.45 t=0.05 bwd=1.0 seed=42  66.52  DES 0.632 DCS 0.837 MMD 0.605 CSS 0.582
+config=R7h + whole ratio 0.2 scenario=heart/deep split=development f=0.45 t=0.1 bwd=1.0 seed=42  79.25  DES 0.721 DCS 0.894 MMD 0.789 CSS 0.760
+config=R7h + whole ratio 0.2 scenario=heart/mid split=development f=0.45 t=0.1 bwd=1.0 seed=42  77.69  DES 0.743 DCS 0.873 MMD 0.803 CSS 0.660
+config=R7h + whole ratio 0.2 scenario=heart/shallow split=development f=0.45 t=0.1 bwd=1.0 seed=42  72.43  DES 0.693 DCS 0.820 MMD 0.764 CSS 0.584
+config=R7h + whole ratio 0.2 scenario=all/asis split=development f=0.45 t=0.1 bwd=1.0 seed=42  66.02  DES 0.638 DCS 0.837 MMD 0.590 CSS 0.571
+config=R7h + whole ratio 0.35 scenario=heart/deep split=development f=0.45 t=0.175 bwd=1.0 seed=42  76.63  DES 0.710 DCS 0.886 MMD 0.743 CSS 0.723
+config=R7h + whole ratio 0.35 scenario=heart/mid split=development f=0.45 t=0.175 bwd=1.0 seed=42  75.07  DES 0.716 DCS 0.863 MMD 0.760 CSS 0.640
+config=R7h + whole ratio 0.35 scenario=heart/shallow split=development f=0.45 t=0.175 bwd=1.0 seed=42  71.08  DES 0.692 DCS 0.811 MMD 0.734 CSS 0.574
+config=R7h + whole ratio 0.35 scenario=all/asis split=development f=0.45 t=0.175 bwd=1.0 seed=42  64.90  DES 0.640 DCS 0.834 MMD 0.564 CSS 0.556
+done 111s
+scenario                                heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                
+base only                                   100.00      93.26          81.26     77.20
+R7h: file recipe (two-witness + trend)       82.48      80.53          73.88     67.09
+R7h + shared part 0.1                        81.43      79.96          73.74     66.61
+R7h + shared part 0.2                        80.43      78.78          73.32     66.38
+R7h + shared part 0.35                       78.76      77.22          72.51     65.75
+R7h + shared part 0.5                        77.02      75.45          71.46     64.97
+R7h + shared part 0.75                       73.62      72.49          69.85     63.43
+R7h + shared part 1                          70.20      69.67          68.12     61.63
+R7h + whole ratio 0.1                        80.99      79.36          73.31     66.52
+R7h + whole ratio 0.2                        79.25      77.69          72.43     66.02
+R7h + whole ratio 0.35                       76.63      75.07          71.08     64.90
+skill_de_score
+scenario                                heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                
+base only                                    1.000      0.973          0.829     0.713
+R7h: file recipe (two-witness + trend)       0.746      0.762          0.689     0.632
+R7h + shared part 0.1                        0.733      0.766          0.701     0.628
+R7h + shared part 0.2                        0.726      0.749          0.703     0.636
+R7h + shared part 0.35                       0.718      0.736          0.701     0.642
+R7h + shared part 0.5                        0.713      0.717          0.692     0.644
+R7h + shared part 0.75                       0.690      0.687          0.683     0.642
+R7h + shared part 1                          0.669      0.667          0.674     0.634
+R7h + whole ratio 0.1                        0.734      0.760          0.697     0.632
+R7h + whole ratio 0.2                        0.721      0.743          0.693     0.638
+R7h + whole ratio 0.35                       0.710      0.716          0.692     0.640
+skill_de_direction
+scenario                                heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                
+base only                                    1.000      0.962          0.876     0.879
+R7h: file recipe (two-witness + trend)       0.903      0.890          0.832     0.837
+R7h + shared part 0.1                        0.902      0.885          0.828     0.837
+R7h + shared part 0.2                        0.900      0.880          0.824     0.838
+R7h + shared part 0.35                       0.895      0.872          0.818     0.835
+R7h + shared part 0.5                        0.889      0.864          0.812     0.832
+R7h + shared part 0.75                       0.880      0.856          0.805     0.829
+R7h + shared part 1                          0.870      0.845          0.798     0.823
+R7h + whole ratio 0.1                        0.900      0.882          0.826     0.837
+R7h + whole ratio 0.2                        0.894      0.873          0.820     0.837
+R7h + whole ratio 0.35                       0.886      0.863          0.811     0.834
+skill_mmd_u
+scenario                                heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                
+base only                                    1.000      0.964          0.855     0.761
+R7h: file recipe (two-witness + trend)       0.839      0.850          0.797     0.618
+R7h + shared part 0.1                        0.825      0.837          0.789     0.609
+R7h + shared part 0.2                        0.808      0.822          0.779     0.599
+R7h + shared part 0.35                       0.779      0.796          0.763     0.582
+R7h + shared part 0.5                        0.748      0.768          0.744     0.564
+R7h + shared part 0.75                       0.693      0.717          0.709     0.530
+R7h + shared part 1                          0.637      0.664          0.671     0.495
+R7h + whole ratio 0.1                        0.816      0.828          0.782     0.605
+R7h + whole ratio 0.2                        0.789      0.803          0.764     0.590
+R7h + whole ratio 0.35                       0.743      0.760          0.734     0.564
+skill_variogram
+scenario                                heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                
+base only                                    1.000      0.798          0.650     0.729
+R7h: file recipe (two-witness + trend)       0.803      0.686          0.597     0.592
+R7h + shared part 0.1                        0.791      0.678          0.593     0.586
+R7h + shared part 0.2                        0.776      0.670          0.589     0.578
+R7h + shared part 0.35                       0.753      0.657          0.583     0.568
+R7h + shared part 0.5                        0.727      0.644          0.577     0.557
+R7h + shared part 0.75                       0.680      0.621          0.568     0.538
+R7h + shared part 1                          0.630      0.598          0.559     0.518
+R7h + whole ratio 0.1                        0.783      0.673          0.590     0.582
+R7h + whole ratio 0.2                        0.760      0.660          0.584     0.571
+R7h + whole ratio 0.35                       0.723      0.640          0.574     0.556

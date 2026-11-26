@@ -35,12 +35,13 @@ TEST_ELAPSED = 0.5
 
 
 def C(name, rho_f=0.0, rho_t=0.0, bwd=0.0, h=1.0, mode="min", level="lineage", pool_k=1, deep=False, base="heart", rho_dev=0.0, k_prof=10, rho_tc=None, days_trend=0.0,
-      a_shift=None, tilt=0.0, rho_thin=0.0, depth_from="source", real_share=0.0):
+      a_shift=None, tilt=0.0, rho_thin=0.0, depth_from="source", real_share=0.0, fwd_kind="d", shift_mode="scale", dev_kind="dev", rho_mix=0.0, mix_guard=True, mix_k=20, mix_low=None):
     """a_shift: share of the developmental shifts (two-witness, trend) the anchor nuclei receive. None = predict7's
     default (1 when moved back completely, else 0); "pos" = position-consistent: nuclei left at position 1 - bwd on
     the source -> anchor path get only what is still missing up to the target position (the elapsed share)."""
     return dict(name=name, rho_f=rho_f, rho_t=rho_t, bwd=bwd, h=h, mode=mode, level=level, pool_k=pool_k, deep=deep, base=base, rho_dev=rho_dev, k_prof=k_prof,
-                rho_tc=rho_tc, days_trend=days_trend, a_shift=a_shift, tilt=tilt, rho_thin=rho_thin, depth_from=depth_from, real_share=real_share)
+                rho_tc=rho_tc, days_trend=days_trend, a_shift=a_shift, tilt=tilt, rho_thin=rho_thin, depth_from=depth_from, real_share=real_share,
+                fwd_kind=fwd_kind, shift_mode=shift_mode, dev_kind=dev_kind, rho_mix=rho_mix, mix_guard=mix_guard, mix_k=mix_k, mix_low=mix_low)
 
 
 def grid(name):
@@ -173,6 +174,112 @@ def grid(name):
               C("R7 with half of the nuclei replaced by real cells", real_share=.5, **kw),
               C("R7 with all nuclei replaced by real cells", real_share=1.0, **kw),
               C("round 6 file (raw anchor, rho 0.4)", rho_f=.4)]
+    elif name == "g15":   # round 8: the base (and the nuclei moved back to it) moved forward along the anchor / source log-ratio of
+        # their cell type, only in genes the type expresses itself; position = rho_t x elapsed (rho_t 1 = the target's position)
+        kw = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5)
+        g += [C("base only"),
+              C("R7h: file recipe (two-witness + trend)", rho_dev=1.0, days_trend=1.0, **kw),
+              C("R7h without two-witness (trend only)", days_trend=1.0, **kw),
+              C("R8 forward 0.5 guarded + trend", rho_t=.5, fwd_kind="dg", days_trend=1.0, **kw),
+              C("R8 forward 1 guarded + trend", rho_t=1.0, fwd_kind="dg", days_trend=1.0, **kw),
+              C("R8 forward 1 unguarded + trend", rho_t=1.0, fwd_kind="d", days_trend=1.0, **kw),
+              C("R8 forward 0.5 whole ratio guarded, no trend", rho_t=.5, fwd_kind="dr", **kw),
+              C("R8 forward 1 whole ratio guarded, no trend", rho_t=1.0, fwd_kind="dr", **kw),
+              C("R8 forward 1 guarded + two-witness + trend", rho_t=1.0, fwd_kind="dg", rho_dev=1.0, days_trend=1.0, **kw),
+              C("round 6 file (raw anchor, rho 0.4)", rho_f=.4)]
+    elif name == "g16":   # round 8, second look: forward shift along the WHOLE guarded ratio (dr), its shared part alone (dc), and the
+        # persistence-calibrated ratio (dm, needs a previous stage); with / without the round-7 shifts
+        kw = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5)
+        g += [C("base only"),
+              C("R7h: file recipe (two-witness + trend)", rho_dev=1.0, days_trend=1.0, **kw),
+              C("whole ratio 1, no other shift", rho_t=1.0, fwd_kind="dr", **kw),
+              C("whole ratio 0.5 + two-witness + trend", rho_t=.5, fwd_kind="dr", rho_dev=1.0, days_trend=1.0, **kw),
+              C("whole ratio 1 + two-witness + trend", rho_t=1.0, fwd_kind="dr", rho_dev=1.0, days_trend=1.0, **kw),
+              C("whole ratio 1 + trend", rho_t=1.0, fwd_kind="dr", days_trend=1.0, **kw),
+              C("whole ratio 1 + two-witness", rho_t=1.0, fwd_kind="dr", rho_dev=1.0, **kw),
+              C("whole ratio 1.5, no other shift", rho_t=1.5, fwd_kind="dr", **kw),
+              C("shared part 1 + two-witness + trend", rho_t=1.0, fwd_kind="dc", rho_dev=1.0, days_trend=1.0, **kw),
+              C("calibrated ratio 1 + two-witness + trend", rho_t=1.0, fwd_kind="dm", rho_dev=1.0, days_trend=1.0, **kw),
+              C("calibrated ratio 1 + trend", rho_t=1.0, fwd_kind="dm", days_trend=1.0, **kw),
+              C("whole ratio 1 + two-witness + trend, all nuclei real", rho_t=1.0, fwd_kind="dr", rho_dev=1.0, days_trend=1.0, **{**kw, "real_share": 1.0}),
+              C("whole ratio 1 + two-witness + trend, all nuclei synthetic", rho_t=1.0, fwd_kind="dr", rho_dev=1.0, days_trend=1.0, **{**kw, "real_share": 0.0})]
+    elif name == "g18":   # round 8: dose series of the forward shift along the shared part (dc) / the whole ratio (dr), on top of R7h
+        kw = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5, rho_dev=1.0, days_trend=1.0)
+        g += [C("base only"), C("R7h: file recipe (two-witness + trend)", **kw)]
+        g += [C(f"R7h + shared part {t:g}", rho_t=t, fwd_kind="dc", **kw) for t in (.1, .2, .35, .5, .75, 1.0)]
+        g += [C(f"R7h + whole ratio {t:g}", rho_t=t, fwd_kind="dr", **kw) for t in (.1, .2, .35)]
+    elif name == "g20":   # round 8: molecular mixture. Every real cell gives up a share rho_mix x elapsed of its molecules for
+        # molecules of an anchor nucleus of its cell type. "all real": the added cells are real stand-ins only (no synthetic nucleus)
+        half = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5, rho_dev=1.0, days_trend=1.0)
+        real = {**half, "real_share": 1.0}
+        g += [C("base only"), C("R7h: file recipe (two-witness + trend)", **half),
+              C("all real, no mixture", **real)]
+        g += [C(f"all real + mixture {m:g}", rho_mix=m, **real) for m in (.2, .4, .6, 1.0)]
+        g += [C(f"half real + mixture {m:g}", rho_mix=m, **half) for m in (.2, .4)]
+        g += [C(f"all real + mixture {m:g}, measured molecules only", rho_mix=m, mix_k="auto", **real) for m in (.2, .4, .6)]
+        g += [C("all real + mixture 0.4, no guard", rho_mix=.4, mix_guard=False, **real),
+              C("all real + mixture 0.4, no other shift", rho_mix=.4, rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=1.0),
+              C("base + mixture 0.4 (no added cells, no other shift)", rho_mix=.4, level="type")]
+    elif name == "g24":   # round 8, confirmation of the smaller-dose candidates (new seeds)
+        half = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5, rho_dev=1.0, days_trend=1.0)
+        real = {**half, "real_share": 1.0}
+        g += [C("base only"), C("R7h: file recipe (two-witness + trend)", **half),
+              C("all real, no mixture", **real),
+              C("all real + low genes below 0.3, share 0.3", rho_mix=.3, mix_low=.3, **real),
+              C("file recipe + low genes below 0.3 on its real cells, share 0.3", rho_mix=.3, mix_low=.3, **half),
+              C("all real + low genes below 0.3, share 0.4", rho_mix=.4, mix_low=.3, **real)]
+    elif name == "g23":   # round 8, confirmation of the candidate of 10:53: all added cells real + low-gene mixture, new seeds
+        half = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5, rho_dev=1.0, days_trend=1.0)
+        real = {**half, "real_share": 1.0}
+        g += [C("base only"), C("R7h: file recipe (two-witness + trend)", **half),
+              C("all real, no mixture", **real),
+              C("candidate: all real + low genes below 0.3, share 0.5", rho_mix=.5, mix_low=.3, **real),
+              C("all real + low genes below 0.3, share 0.5, measured molecules only", rho_mix=.5, mix_low=.3, mix_k="auto", **real),
+              C("all real + low genes below 0.3, share 0.7", rho_mix=.7, mix_low=.3, **real),
+              C("all real + low genes below 0.3, share 1", rho_mix=1.0, mix_low=.3, **real),
+              C("all real + low genes below 0.1, share 1", rho_mix=1.0, mix_low=.1, **real),
+              C("all synthetic (round-7 first file)", **{**half, "real_share": 0.0})]
+    elif name == "g22":   # round 8, confirmation runs (new seeds) of the candidates that passed the first rule
+        half = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5, rho_dev=1.0, days_trend=1.0)
+        g += [C("base only"), C("R7h: file recipe (two-witness + trend)", **half),
+              C("half real + new genes below 0.3, share 1", rho_mix=1.0, mix_low=.3, **half),
+              C("half real + new genes below 0.3, share 0.5", rho_mix=.5, mix_low=.3, **half),
+              C("half real + new genes below 0.1, share 1", rho_mix=1.0, mix_low=.1, **half),
+              C("all synthetic (round-7 first file)", **{**half, "real_share": 0.0}),
+              C("all real, no mixture", **{**half, "real_share": 1.0})]
+    elif name == "g21":   # round 8: "new genes only". Real cells keep their molecules and receive anchor molecules only for genes
+        # their cell type has below `mix_low` counts per 10k in the source stage (share rho_mix x elapsed of the anchor level)
+        half = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5, rho_dev=1.0, days_trend=1.0)
+        real = {**half, "real_share": 1.0}
+        g += [C("base only"), C("R7h: file recipe (two-witness + trend)", **half),
+              C("all synthetic (round-7 first file)", **{**half, "real_share": 0.0}), C("all real, no mixture", **real)]
+        for low in (.1, .3, 1.0):
+            g += [C(f"all real + new genes below {low:g}, share 1", rho_mix=1.0, mix_low=low, **real)]
+        g += [C("all real + new genes below 0.3, share 0.5", rho_mix=.5, mix_low=.3, **real),
+              C("all real + new genes below 0.3, share 2", rho_mix=2.0, mix_low=.3, **real),
+              C("all real + new genes below 0.3, share 1, measured molecules only", rho_mix=1.0, mix_low=.3, mix_k="auto", **real),
+              C("all real + new genes below 0.3, share 1, no guard", rho_mix=1.0, mix_low=.3, mix_guard=False, **real),
+              C("half real + new genes below 0.3, share 1", rho_mix=1.0, mix_low=.3, **half),
+              C("base + new genes below 0.3, share 1 (no added cells, no other shift)", rho_mix=1.0, mix_low=.3, level="type")]
+    elif name == "g19":   # round 8: the two-witness rule on the whole ratio (devw) instead of its lineage-specific part (dev)
+        kw = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5, days_trend=1.0)
+        g += [C("base only"), C("R7h: file recipe (two-witness + trend)", rho_dev=1.0, **kw),
+              C("R7h with the two-witness rule on the whole ratio", rho_dev=1.0, dev_kind="devw", **kw),
+              C("the same, rho_dev 0.5", rho_dev=.5, dev_kind="devw", **kw),
+              C("the same, rho_dev 1.5", rho_dev=1.5, dev_kind="devw", **kw),
+              C("the same + shared part 0.2", rho_dev=1.0, dev_kind="devw", rho_t=.2, fwd_kind="dc", **kw),
+              C("R7h + shared part 0.2", rho_dev=1.0, rho_t=.2, fwd_kind="dc", **kw)]
+    elif name == "g17":   # round 8: the same shifts applied in count space (molecules removed / added) instead of scaling
+        kw = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, real_share=.5)
+        g += [C("base only"),
+              C("R7h: file recipe (two-witness + trend)", rho_dev=1.0, days_trend=1.0, **kw),
+              C("R7h, shifts in count space", rho_dev=1.0, days_trend=1.0, shift_mode="counts", **kw),
+              C("whole ratio 1 + two-witness + trend", rho_t=1.0, fwd_kind="dr", rho_dev=1.0, days_trend=1.0, **kw),
+              C("whole ratio 1 + two-witness + trend, count space", rho_t=1.0, fwd_kind="dr", rho_dev=1.0, days_trend=1.0, shift_mode="counts", **kw),
+              C("whole ratio 1, count space", rho_t=1.0, fwd_kind="dr", shift_mode="counts", **kw),
+              C("R7h + trend x1.5", rho_dev=1.0, days_trend=1.5, **kw),
+              C("R7h + trend x1.5, count space", rho_dev=1.0, days_trend=1.5, shift_mode="counts", **kw),
+              C("R7h + trend x2, count space", rho_dev=1.0, days_trend=2.0, shift_mode="counts", **kw)]
     elif name == "g13":   # ANALYSIS: do the E10.5-target proxies reward shallow cells as such? No developmental shifts.
         rs = dict(rho_f=.9, pool_k="resample", level="type", k_prof=20)
         g += [C("base only"),
@@ -224,7 +331,7 @@ def cells_of(cfg, source, pool, anchor, elapsed, heart_target, target_shares=Non
             from experiments.bulk_trend import load_trend
             TREND["trend"] = load_trend(board_spec("T1:val")[1])[0]
         tkw = dict(trend=TREND["trend"], trend_share=cfg["days_trend"] * elapsed * days_to_anchor / 5.0)
-    dkw = dict(prev=prev, days_to_anchor=days_to_anchor, dev=cfg.get("rho_dev", 0.0) * elapsed) if cfg.get("rho_dev") else {}
+    dkw = dict(prev=prev, days_to_anchor=days_to_anchor, dev=cfg.get("rho_dev", 0.0) * elapsed) if (cfg.get("rho_dev") or cfg.get("fwd_kind") == "dm") else {}
     a_shift = cfg.get("a_shift")
     if a_shift == "pos":      # what the nuclei still lack up to the target position `elapsed`, as a share of the base's shift
         a_shift = float(np.clip((bwd - (1.0 - elapsed)) / elapsed, 0.0, 1.0))
@@ -238,7 +345,8 @@ def cells_of(cfg, source, pool, anchor, elapsed, heart_target, target_shares=Non
     cells = predict7(source, main, anchor, n, f, fwd=t, bwd=bwd if f > 0 else 0.0, harmonise=cfg["h"], mode=cfg["mode"],
                      level=cfg["level"], pool_k=cfg["pool_k"], anchor_rows=anchor_subset(anchor, source, main, cfg),
                      shares=shares, seed=seed, k_prof=cfg.get("k_prof", 10), anchor_shift=a_shift, tilt=cfg.get("tilt", 0.0),
-                     depth_from=cfg.get("depth_from", "source"), real_share=cfg.get("real_share", 0.0),
+                     depth_from=cfg.get("depth_from", "source"), real_share=cfg.get("real_share", 0.0), fwd_kind=cfg.get("fwd_kind", "d"), shift_mode=cfg.get("shift_mode", "scale"), dev_kind=cfg.get("dev_kind", "dev"),
+                     mix=cfg.get("rho_mix", 0.0) * elapsed, mix_guard=cfg.get("mix_guard", True), mix_k=cfg.get("mix_k", 20), mix_low=cfg.get("mix_low"),
                      return_info=bool(cfg.get("rho_thin")), **dkw, **tkw)
     if cfg.get("rho_thin"):
         # analysis only (g13): a share rho_thin x elapsed of the base cells is thinned to the anchor's depth distribution
@@ -296,8 +404,10 @@ def main():
             days = 5.0 if is_e9 else 6.0
             for seed in seeds:
                 for cfg in cfgs:
+                    if cfg.get("fwd_kind") == "dm" and prev is None:
+                        continue                           # the calibrated ratio needs a previous stage
                     if cfg.get("rho_dev") and prev is None:
-                        if args.grid not in ("g7", "g8", "g9", "g10", "g11", "g12", "g14"):
+                        if args.grid not in ("g7", "g8", "g9", "g10", "g11", "g12", "g14", "g15", "g16", "g17", "g18", "g19", "g20", "g21", "g22", "g23", "g24"):
                             continue
                         cfg = {**cfg, "rho_dev": 0.0}      # no previous stage for this source: the two-witness shift is unavailable
                     cells, f, t, bwd = cells_of(cfg, p.source, p.pool, anchor, p.elapsed, p.heart_target, p.target_shares, seed=seed,

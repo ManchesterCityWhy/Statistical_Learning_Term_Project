@@ -1,0 +1,169 @@
+scenario pool 11486 31s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=R7h: file recipe (two-witness + trend) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.48  DES 0.746 DCS 0.903 MMD 0.839 CSS 0.803
+config=R7h: file recipe (two-witness + trend) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.53  DES 0.762 DCS 0.890 MMD 0.850 CSS 0.686
+config=R7h: file recipe (two-witness + trend) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.88  DES 0.689 DCS 0.832 MMD 0.797 CSS 0.597
+config=R7h: file recipe (two-witness + trend) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.09  DES 0.632 DCS 0.837 MMD 0.618 CSS 0.592
+config=all real, no mixture scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  85.62  DES 0.752 DCS 0.925 MMD 0.880 CSS 0.865
+config=all real, no mixture scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.99  DES 0.772 DCS 0.908 MMD 0.888 CSS 0.717
+config=all real, no mixture scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  75.51  DES 0.697 DCS 0.846 MMD 0.825 CSS 0.610
+config=all real, no mixture scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  68.42  DES 0.626 DCS 0.835 MMD 0.649 CSS 0.621
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.96  DES 0.745 DCS 0.888 MMD 0.863 CSS 0.812
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  81.12  DES 0.770 DCS 0.875 MMD 0.876 CSS 0.686
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  74.54  DES 0.701 DCS 0.821 MMD 0.819 CSS 0.596
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.44  DES 0.622 DCS 0.830 MMD 0.641 CSS 0.596
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  83.05  DES 0.745 DCS 0.889 MMD 0.864 CSS 0.815
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  81.16  DES 0.770 DCS 0.874 MMD 0.876 CSS 0.687
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  74.60  DES 0.703 DCS 0.820 MMD 0.820 CSS 0.596
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.48  DES 0.624 DCS 0.828 MMD 0.641 CSS 0.597
+config=all real + low genes below 0.3, share 0.7 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  81.76  DES 0.740 DCS 0.874 MMD 0.857 CSS 0.785
+config=all real + low genes below 0.3, share 0.7 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.35  DES 0.768 DCS 0.862 MMD 0.872 CSS 0.673
+config=all real + low genes below 0.3, share 0.7 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  74.17  DES 0.701 DCS 0.813 MMD 0.817 CSS 0.590
+config=all real + low genes below 0.3, share 0.7 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  66.98  DES 0.622 DCS 0.824 MMD 0.638 CSS 0.585
+config=all real + low genes below 0.3, share 1 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  79.78  DES 0.729 DCS 0.852 MMD 0.847 CSS 0.742
+config=all real + low genes below 0.3, share 1 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  79.07  DES 0.760 DCS 0.844 MMD 0.865 CSS 0.651
+config=all real + low genes below 0.3, share 1 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.57  DES 0.701 DCS 0.799 MMD 0.815 CSS 0.581
+config=all real + low genes below 0.3, share 1 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  66.20  DES 0.622 DCS 0.813 MMD 0.633 CSS 0.566
+config=all real + low genes below 0.1, share 1 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  83.39  DES 0.746 DCS 0.880 MMD 0.871 CSS 0.830
+config=all real + low genes below 0.1, share 1 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  81.53  DES 0.770 DCS 0.870 MMD 0.884 CSS 0.700
+config=all real + low genes below 0.1, share 1 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  74.81  DES 0.701 DCS 0.817 MMD 0.826 CSS 0.604
+config=all real + low genes below 0.1, share 1 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.86  DES 0.628 DCS 0.823 MMD 0.648 CSS 0.608
+config=all synthetic (round-7 first file) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  78.44  DES 0.734 DCS 0.876 MMD 0.789 CSS 0.726
+config=all synthetic (round-7 first file) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  77.43  DES 0.756 DCS 0.861 MMD 0.802 CSS 0.646
+config=all synthetic (round-7 first file) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  71.86  DES 0.688 DCS 0.812 MMD 0.760 CSS 0.579
+config=all synthetic (round-7 first file) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  64.98  DES 0.632 DCS 0.830 MMD 0.579 CSS 0.553
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=11  99.92  DES 0.997 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=11  93.29  DES 0.980 DCS 0.961 MMD 0.962 CSS 0.795
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=11  81.10  DES 0.831 DCS 0.876 MMD 0.849 CSS 0.648
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=11  76.53  DES 0.703 DCS 0.873 MMD 0.754 CSS 0.726
+config=R7h: file recipe (two-witness + trend) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=11  82.24  DES 0.738 DCS 0.903 MMD 0.836 CSS 0.808
+config=R7h: file recipe (two-witness + trend) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=11  80.72  DES 0.772 DCS 0.886 MMD 0.849 CSS 0.690
+config=R7h: file recipe (two-witness + trend) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=11  74.19  DES 0.700 DCS 0.832 MMD 0.797 CSS 0.599
+config=R7h: file recipe (two-witness + trend) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=11  66.98  DES 0.630 DCS 0.836 MMD 0.615 CSS 0.594
+config=all real, no mixture scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=11  85.20  DES 0.743 DCS 0.925 MMD 0.873 CSS 0.865
+config=all real, no mixture scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=11  83.18  DES 0.775 DCS 0.911 MMD 0.886 CSS 0.723
+config=all real, no mixture scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=11  76.13  DES 0.709 DCS 0.850 MMD 0.829 CSS 0.614
+config=all real, no mixture scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=11  68.17  DES 0.618 DCS 0.833 MMD 0.646 CSS 0.625
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=11  82.57  DES 0.738 DCS 0.886 MMD 0.857 CSS 0.813
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=11  81.16  DES 0.768 DCS 0.876 MMD 0.874 CSS 0.691
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=11  75.17  DES 0.715 DCS 0.825 MMD 0.822 CSS 0.600
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=11  67.12  DES 0.615 DCS 0.826 MMD 0.637 CSS 0.599
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=11  82.67  DES 0.740 DCS 0.885 MMD 0.858 CSS 0.816
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=11  81.21  DES 0.768 DCS 0.876 MMD 0.875 CSS 0.693
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=11  75.11  DES 0.712 DCS 0.824 MMD 0.823 CSS 0.600
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=11  67.14  DES 0.615 DCS 0.825 MMD 0.638 CSS 0.601
+config=all real + low genes below 0.3, share 0.7 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=11  81.47  DES 0.738 DCS 0.872 MMD 0.851 CSS 0.786
+config=all real + low genes below 0.3, share 0.7 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=11  80.27  DES 0.762 DCS 0.863 MMD 0.870 CSS 0.677
+config=all real + low genes below 0.3, share 0.7 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=11  74.62  DES 0.710 DCS 0.815 MMD 0.821 CSS 0.593
+config=all real + low genes below 0.3, share 0.7 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=11  66.70  DES 0.615 DCS 0.822 MMD 0.634 CSS 0.587
+config=all real + low genes below 0.3, share 1 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=11  79.48  DES 0.724 DCS 0.850 MMD 0.841 CSS 0.745
+config=all real + low genes below 0.3, share 1 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=11  79.08  DES 0.758 DCS 0.843 MMD 0.863 CSS 0.657
+config=all real + low genes below 0.3, share 1 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=11  74.04  DES 0.712 DCS 0.800 MMD 0.818 CSS 0.585
+config=all real + low genes below 0.3, share 1 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=11  65.92  DES 0.615 DCS 0.811 MMD 0.630 CSS 0.570
+config=all real + low genes below 0.1, share 1 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=11  82.86  DES 0.736 DCS 0.877 MMD 0.864 CSS 0.830
+config=all real + low genes below 0.1, share 1 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=11  81.62  DES 0.772 DCS 0.869 MMD 0.882 CSS 0.705
+config=all real + low genes below 0.1, share 1 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=11  75.31  DES 0.712 DCS 0.819 MMD 0.830 CSS 0.607
+config=all real + low genes below 0.1, share 1 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=11  67.48  DES 0.618 DCS 0.819 MMD 0.644 CSS 0.611
+config=all synthetic (round-7 first file) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=11  78.61  DES 0.734 DCS 0.878 MMD 0.789 CSS 0.731
+config=all synthetic (round-7 first file) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=11  77.87  DES 0.770 DCS 0.863 MMD 0.803 CSS 0.648
+config=all synthetic (round-7 first file) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=11  71.96  DES 0.689 DCS 0.813 MMD 0.761 CSS 0.579
+config=all synthetic (round-7 first file) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=11  64.76  DES 0.622 DCS 0.829 MMD 0.580 CSS 0.554
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=23 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=23  94.25  DES 1.000 DCS 0.964 MMD 0.968 CSS 0.806
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=23  81.64  DES 0.837 DCS 0.877 MMD 0.856 CSS 0.655
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=23  76.36  DES 0.700 DCS 0.872 MMD 0.749 CSS 0.729
+config=R7h: file recipe (two-witness + trend) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=23  82.84  DES 0.746 DCS 0.909 MMD 0.842 CSS 0.810
+config=R7h: file recipe (two-witness + trend) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=23  80.93  DES 0.770 DCS 0.890 MMD 0.853 CSS 0.690
+config=R7h: file recipe (two-witness + trend) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=23  74.01  DES 0.689 DCS 0.833 MMD 0.800 CSS 0.599
+config=R7h: file recipe (two-witness + trend) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=23  67.25  DES 0.624 DCS 0.843 MMD 0.622 CSS 0.596
+config=all real, no mixture scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=23  86.02  DES 0.752 DCS 0.932 MMD 0.884 CSS 0.871
+config=all real, no mixture scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=23  83.52  DES 0.779 DCS 0.912 MMD 0.894 CSS 0.722
+config=all real, no mixture scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=23  75.97  DES 0.703 DCS 0.848 MMD 0.831 CSS 0.613
+config=all real, no mixture scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=23  68.89  DES 0.628 DCS 0.839 MMD 0.655 CSS 0.627
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=23  83.37  DES 0.746 DCS 0.894 MMD 0.867 CSS 0.819
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=23  81.58  DES 0.772 DCS 0.880 MMD 0.881 CSS 0.691
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=23  75.05  DES 0.709 DCS 0.824 MMD 0.825 CSS 0.599
+config=candidate: all real + low genes below 0.3, share 0.5 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=23  67.81  DES 0.620 DCS 0.835 MMD 0.646 CSS 0.602
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=23  83.46  DES 0.748 DCS 0.892 MMD 0.867 CSS 0.822
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=23  81.66  DES 0.777 DCS 0.877 MMD 0.882 CSS 0.692
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=23  75.11  DES 0.710 DCS 0.824 MMD 0.826 CSS 0.599
+config=all real + low genes below 0.3, share 0.5, measured molecules only scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=23  67.77  DES 0.620 DCS 0.832 MMD 0.647 CSS 0.603
+config=all real + low genes below 0.3, share 0.7 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=23  82.23  DES 0.746 DCS 0.878 MMD 0.860 CSS 0.791
+config=all real + low genes below 0.3, share 0.7 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=23  80.72  DES 0.768 DCS 0.866 MMD 0.877 CSS 0.678
+config=all real + low genes below 0.3, share 0.7 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=23  74.73  DES 0.712 DCS 0.815 MMD 0.823 CSS 0.593
+config=all real + low genes below 0.3, share 0.7 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=23  67.31  DES 0.620 DCS 0.828 MMD 0.643 CSS 0.590
+config=all real + low genes below 0.3, share 1 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=23  80.41  DES 0.740 DCS 0.857 MMD 0.850 CSS 0.750
+config=all real + low genes below 0.3, share 1 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=23  79.46  DES 0.760 DCS 0.848 MMD 0.870 CSS 0.657
+config=all real + low genes below 0.3, share 1 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=23  74.08  DES 0.709 DCS 0.802 MMD 0.820 CSS 0.585
+config=all real + low genes below 0.3, share 1 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=23  66.57  DES 0.620 DCS 0.818 MMD 0.638 CSS 0.573
+config=all real + low genes below 0.1, share 1 scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=23  83.82  DES 0.748 DCS 0.887 MMD 0.874 CSS 0.835
+config=all real + low genes below 0.1, share 1 scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=23  82.05  DES 0.777 DCS 0.874 MMD 0.890 CSS 0.705
+config=all real + low genes below 0.1, share 1 scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=23  75.24  DES 0.706 DCS 0.820 MMD 0.832 CSS 0.607
+config=all real + low genes below 0.1, share 1 scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=23  68.23  DES 0.626 DCS 0.828 MMD 0.653 CSS 0.614
+config=all synthetic (round-7 first file) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=23  78.52  DES 0.736 DCS 0.880 MMD 0.787 CSS 0.726
+config=all synthetic (round-7 first file) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=23  77.70  DES 0.762 DCS 0.864 MMD 0.802 CSS 0.649
+config=all synthetic (round-7 first file) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=23  71.94  DES 0.686 DCS 0.813 MMD 0.761 CSS 0.581
+config=all synthetic (round-7 first file) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=23  65.30  DES 0.638 DCS 0.832 MMD 0.581 CSS 0.556
+done 174s
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                99.97      93.60          81.34     76.70
+R7h: file recipe (two-witness + trend)                                   82.52      80.73          74.03     67.11
+all real, no mixture                                                     85.61      83.23          75.87     68.49
+candidate: all real + low genes below 0.3, share 0.5                     82.97      81.29          74.92     67.46
+all real + low genes below 0.3, share 0.5, measured molecules only       83.06      81.34          74.94     67.46
+all real + low genes below 0.3, share 0.7                                81.82      80.45          74.50     67.00
+all real + low genes below 0.3, share 1                                  79.89      79.20          73.90     66.23
+all real + low genes below 0.1, share 1                                  83.35      81.73          75.12     67.86
+all synthetic (round-7 first file)                                       78.52      77.67          71.92     65.02
+skill_de_score
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                0.999      0.984          0.832     0.705
+R7h: file recipe (two-witness + trend)                                   0.744      0.768          0.693     0.629
+all real, no mixture                                                     0.749      0.775          0.703     0.624
+candidate: all real + low genes below 0.3, share 0.5                     0.743      0.770          0.708     0.619
+all real + low genes below 0.3, share 0.5, measured molecules only       0.744      0.772          0.708     0.620
+all real + low genes below 0.3, share 0.7                                0.741      0.766          0.708     0.619
+all real + low genes below 0.3, share 1                                  0.731      0.760          0.707     0.619
+all real + low genes below 0.1, share 1                                  0.744      0.773          0.706     0.624
+all synthetic (round-7 first file)                                       0.735      0.763          0.688     0.631
+skill_de_direction
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                1.000      0.962          0.876     0.875
+R7h: file recipe (two-witness + trend)                                   0.905      0.889          0.832     0.839
+all real, no mixture                                                     0.927      0.910          0.848     0.836
+candidate: all real + low genes below 0.3, share 0.5                     0.889      0.877          0.823     0.830
+all real + low genes below 0.3, share 0.5, measured molecules only       0.889      0.876          0.823     0.828
+all real + low genes below 0.3, share 0.7                                0.874      0.863          0.814     0.825
+all real + low genes below 0.3, share 1                                  0.853      0.845          0.801     0.814
+all real + low genes below 0.1, share 1                                  0.882      0.871          0.818     0.823
+all synthetic (round-7 first file)                                       0.878      0.863          0.813     0.830
+skill_mmd_u
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                1.000      0.965          0.853     0.755
+R7h: file recipe (two-witness + trend)                                   0.839      0.851          0.798     0.618
+all real, no mixture                                                     0.879      0.889          0.828     0.650
+candidate: all real + low genes below 0.3, share 0.5                     0.862      0.877          0.822     0.641
+all real + low genes below 0.3, share 0.5, measured molecules only       0.863      0.878          0.823     0.642
+all real + low genes below 0.3, share 0.7                                0.856      0.873          0.820     0.638
+all real + low genes below 0.3, share 1                                  0.846      0.866          0.818     0.634
+all real + low genes below 0.1, share 1                                  0.870      0.885          0.829     0.648
+all synthetic (round-7 first file)                                       0.788      0.802          0.761     0.580
+skill_variogram
+scenario                                                            heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                            
+base only                                                                1.000      0.800          0.651     0.728
+R7h: file recipe (two-witness + trend)                                   0.807      0.689          0.598     0.594
+all real, no mixture                                                     0.867      0.721          0.613     0.625
+candidate: all real + low genes below 0.3, share 0.5                     0.815      0.689          0.598     0.599
+all real + low genes below 0.3, share 0.5, measured molecules only       0.818      0.691          0.599     0.600
+all real + low genes below 0.3, share 0.7                                0.787      0.676          0.592     0.587
+all real + low genes below 0.3, share 1                                  0.745      0.655          0.584     0.569
+all real + low genes below 0.1, share 1                                  0.832      0.704          0.606     0.611
+all synthetic (round-7 first file)                                       0.728      0.648          0.580     0.554

@@ -1,0 +1,133 @@
+scenario pool 11486 29s
+config=base only scenario=heart/deep split=development f=0.0 t=0.0 bwd=0.0 seed=42 100.00  DES 1.000 DCS 1.000 MMD 1.000 CSS 1.000
+config=base only scenario=heart/mid split=development f=0.0 t=0.0 bwd=0.0 seed=42  93.26  DES 0.973 DCS 0.962 MMD 0.964 CSS 0.798
+config=base only scenario=heart/shallow split=development f=0.0 t=0.0 bwd=0.0 seed=42  81.26  DES 0.829 DCS 0.876 MMD 0.855 CSS 0.650
+config=base only scenario=all/asis split=development f=0.0 t=0.0 bwd=0.0 seed=42  77.20  DES 0.713 DCS 0.879 MMD 0.761 CSS 0.729
+config=R7h: file recipe (two-witness + trend) scenario=heart/deep split=development f=0.45 t=0.0 bwd=1.0 seed=42  82.48  DES 0.746 DCS 0.903 MMD 0.839 CSS 0.803
+config=R7h: file recipe (two-witness + trend) scenario=heart/mid split=development f=0.45 t=0.0 bwd=1.0 seed=42  80.53  DES 0.762 DCS 0.890 MMD 0.850 CSS 0.686
+config=R7h: file recipe (two-witness + trend) scenario=heart/shallow split=development f=0.45 t=0.0 bwd=1.0 seed=42  73.88  DES 0.689 DCS 0.832 MMD 0.797 CSS 0.597
+config=R7h: file recipe (two-witness + trend) scenario=all/asis split=development f=0.45 t=0.0 bwd=1.0 seed=42  67.09  DES 0.632 DCS 0.837 MMD 0.618 CSS 0.592
+config=whole ratio 1, no other shift scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  68.90  DES 0.671 DCS 0.845 MMD 0.605 CSS 0.643
+config=whole ratio 1, no other shift scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  67.10  DES 0.673 DCS 0.813 MMD 0.612 CSS 0.579
+config=whole ratio 1, no other shift scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.61  DES 0.655 DCS 0.771 MMD 0.606 CSS 0.540
+config=whole ratio 1, no other shift scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  61.04  DES 0.646 DCS 0.805 MMD 0.482 CSS 0.515
+config=whole ratio 0.5 + two-witness + trend scenario=heart/deep split=development f=0.45 t=0.25 bwd=1.0 seed=42  73.79  DES 0.700 DCS 0.875 MMD 0.692 CSS 0.682
+config=whole ratio 0.5 + two-witness + trend scenario=heart/mid split=development f=0.45 t=0.25 bwd=1.0 seed=42  72.61  DES 0.702 DCS 0.852 MMD 0.713 CSS 0.619
+config=whole ratio 0.5 + two-witness + trend scenario=heart/shallow split=development f=0.45 t=0.25 bwd=1.0 seed=42  69.61  DES 0.689 DCS 0.803 MMD 0.700 CSS 0.565
+config=whole ratio 0.5 + two-witness + trend scenario=all/asis split=development f=0.45 t=0.25 bwd=1.0 seed=42  63.37  DES 0.632 DCS 0.830 MMD 0.535 CSS 0.539
+config=whole ratio 1 + two-witness + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.20  DES 0.653 DCS 0.841 MMD 0.530 CSS 0.547
+config=whole ratio 1 + two-witness + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.86  DES 0.658 DCS 0.823 MMD 0.559 CSS 0.554
+config=whole ratio 1 + two-witness + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.55  DES 0.666 DCS 0.785 MMD 0.582 CSS 0.541
+config=whole ratio 1 + two-witness + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  58.87  DES 0.630 DCS 0.819 MMD 0.432 CSS 0.485
+config=whole ratio 1 + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  66.84  DES 0.660 DCS 0.844 MMD 0.577 CSS 0.597
+config=whole ratio 1 + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  66.37  DES 0.658 DCS 0.820 MMD 0.600 CSS 0.571
+config=whole ratio 1 + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  65.31  DES 0.665 DCS 0.779 MMD 0.612 CSS 0.543
+config=whole ratio 1 + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  60.11  DES 0.632 DCS 0.813 MMD 0.464 CSS 0.503
+config=whole ratio 1 + two-witness scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  66.04  DES 0.657 DCS 0.840 MMD 0.559 CSS 0.592
+config=whole ratio 1 + two-witness scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  65.50  DES 0.667 DCS 0.813 MMD 0.574 CSS 0.564
+config=whole ratio 1 + two-witness scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  63.94  DES 0.656 DCS 0.775 MMD 0.580 CSS 0.538
+config=whole ratio 1 + two-witness scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  59.75  DES 0.642 DCS 0.809 MMD 0.450 CSS 0.499
+config=whole ratio 1.5, no other shift scenario=heart/deep split=development f=0.45 t=0.75 bwd=1.0 seed=42  60.02  DES 0.631 DCS 0.815 MMD 0.460 CSS 0.504
+config=whole ratio 1.5, no other shift scenario=heart/mid split=development f=0.45 t=0.75 bwd=1.0 seed=42  60.22  DES 0.631 DCS 0.790 MMD 0.478 CSS 0.517
+config=whole ratio 1.5, no other shift scenario=heart/shallow split=development f=0.45 t=0.75 bwd=1.0 seed=42  60.26  DES 0.638 DCS 0.756 MMD 0.502 CSS 0.518
+config=whole ratio 1.5, no other shift scenario=all/asis split=development f=0.45 t=0.75 bwd=1.0 seed=42  56.57  DES 0.640 DCS 0.796 MMD 0.382 CSS 0.461
+config=shared part 1 + two-witness + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  70.20  DES 0.669 DCS 0.870 MMD 0.637 CSS 0.630
+config=shared part 1 + two-witness + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  69.67  DES 0.667 DCS 0.845 MMD 0.664 CSS 0.598
+config=shared part 1 + two-witness + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  68.12  DES 0.674 DCS 0.798 MMD 0.671 CSS 0.559
+config=shared part 1 + two-witness + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  61.63  DES 0.634 DCS 0.823 MMD 0.495 CSS 0.518
+config=calibrated ratio 1 + two-witness + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  75.54  DES 0.705 DCS 0.882 MMD 0.724 CSS 0.708
+config=calibrated ratio 1 + two-witness + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  74.38  DES 0.712 DCS 0.859 MMD 0.746 CSS 0.636
+config=calibrated ratio 1 + two-witness + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  70.94  DES 0.693 DCS 0.810 MMD 0.728 CSS 0.575
+config=calibrated ratio 1 + two-witness + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  64.27  DES 0.628 DCS 0.832 MMD 0.557 CSS 0.553
+config=calibrated ratio 1 + trend scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  78.87  DES 0.721 DCS 0.889 MMD 0.778 CSS 0.763
+config=calibrated ratio 1 + trend scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  76.42  DES 0.723 DCS 0.863 MMD 0.790 CSS 0.653
+config=calibrated ratio 1 + trend scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  71.83  DES 0.695 DCS 0.811 MMD 0.754 CSS 0.578
+config=calibrated ratio 1 + trend scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  65.98  DES 0.642 DCS 0.831 MMD 0.591 CSS 0.571
+config=whole ratio 1 + two-witness + trend, all nuclei real scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  69.18  DES 0.658 DCS 0.877 MMD 0.586 CSS 0.661
+config=whole ratio 1 + two-witness + trend, all nuclei real scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  68.90  DES 0.668 DCS 0.849 MMD 0.615 CSS 0.626
+config=whole ratio 1 + two-witness + trend, all nuclei real scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  67.45  DES 0.676 DCS 0.802 MMD 0.632 CSS 0.577
+config=whole ratio 1 + two-witness + trend, all nuclei real scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  61.99  DES 0.636 DCS 0.830 MMD 0.476 CSS 0.552
+config=whole ratio 1 + two-witness + trend, all nuclei synthetic scenario=heart/deep split=development f=0.45 t=0.5 bwd=1.0 seed=42  59.61  DES 0.645 DCS 0.812 MMD 0.476 CSS 0.445
+config=whole ratio 1 + two-witness + trend, all nuclei synthetic scenario=heart/mid split=development f=0.45 t=0.5 bwd=1.0 seed=42  60.87  DES 0.649 DCS 0.797 MMD 0.503 CSS 0.482
+config=whole ratio 1 + two-witness + trend, all nuclei synthetic scenario=heart/shallow split=development f=0.45 t=0.5 bwd=1.0 seed=42  61.59  DES 0.660 DCS 0.765 MMD 0.531 CSS 0.501
+config=whole ratio 1 + two-witness + trend, all nuclei synthetic scenario=all/asis split=development f=0.45 t=0.5 bwd=1.0 seed=42  55.63  DES 0.622 DCS 0.804 MMD 0.387 CSS 0.418
+done 94s
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                      100.00      93.26          81.26     77.20
+R7h: file recipe (two-witness + trend)                          82.48      80.53          73.88     67.09
+whole ratio 1, no other shift                                   68.90      67.10          64.61     61.04
+whole ratio 0.5 + two-witness + trend                           73.79      72.61          69.61     63.37
+whole ratio 1 + two-witness + trend                             64.20      64.86          64.55     58.87
+whole ratio 1 + trend                                           66.84      66.37          65.31     60.11
+whole ratio 1 + two-witness                                     66.04      65.50          63.94     59.75
+whole ratio 1.5, no other shift                                 60.02      60.22          60.26     56.57
+shared part 1 + two-witness + trend                             70.20      69.67          68.12     61.63
+calibrated ratio 1 + two-witness + trend                        75.54      74.38          70.94     64.27
+calibrated ratio 1 + trend                                      78.87      76.42          71.83     65.98
+whole ratio 1 + two-witness + trend, all nuclei real            69.18      68.90          67.45     61.99
+whole ratio 1 + two-witness + trend, all nuclei synthetic       59.61      60.87          61.59     55.63
+skill_de_score
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       1.000      0.973          0.829     0.713
+R7h: file recipe (two-witness + trend)                          0.746      0.762          0.689     0.632
+whole ratio 1, no other shift                                   0.671      0.673          0.655     0.646
+whole ratio 0.5 + two-witness + trend                           0.700      0.702          0.689     0.632
+whole ratio 1 + two-witness + trend                             0.653      0.658          0.666     0.630
+whole ratio 1 + trend                                           0.660      0.658          0.665     0.632
+whole ratio 1 + two-witness                                     0.657      0.667          0.656     0.642
+whole ratio 1.5, no other shift                                 0.631      0.631          0.638     0.640
+shared part 1 + two-witness + trend                             0.669      0.667          0.674     0.634
+calibrated ratio 1 + two-witness + trend                        0.705      0.712          0.693     0.628
+calibrated ratio 1 + trend                                      0.721      0.723          0.695     0.642
+whole ratio 1 + two-witness + trend, all nuclei real            0.658      0.668          0.676     0.636
+whole ratio 1 + two-witness + trend, all nuclei synthetic       0.645      0.649          0.660     0.622
+skill_de_direction
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       1.000      0.962          0.876     0.879
+R7h: file recipe (two-witness + trend)                          0.903      0.890          0.832     0.837
+whole ratio 1, no other shift                                   0.845      0.813          0.771     0.805
+whole ratio 0.5 + two-witness + trend                           0.875      0.852          0.803     0.830
+whole ratio 1 + two-witness + trend                             0.841      0.823          0.785     0.819
+whole ratio 1 + trend                                           0.844      0.820          0.779     0.813
+whole ratio 1 + two-witness                                     0.840      0.813          0.775     0.809
+whole ratio 1.5, no other shift                                 0.815      0.790          0.756     0.796
+shared part 1 + two-witness + trend                             0.870      0.845          0.798     0.823
+calibrated ratio 1 + two-witness + trend                        0.882      0.859          0.810     0.832
+calibrated ratio 1 + trend                                      0.889      0.863          0.811     0.831
+whole ratio 1 + two-witness + trend, all nuclei real            0.877      0.849          0.802     0.830
+whole ratio 1 + two-witness + trend, all nuclei synthetic       0.812      0.797          0.765     0.804
+skill_mmd_u
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       1.000      0.964          0.855     0.761
+R7h: file recipe (two-witness + trend)                          0.839      0.850          0.797     0.618
+whole ratio 1, no other shift                                   0.605      0.612          0.606     0.482
+whole ratio 0.5 + two-witness + trend                           0.692      0.713          0.700     0.535
+whole ratio 1 + two-witness + trend                             0.530      0.559          0.582     0.432
+whole ratio 1 + trend                                           0.577      0.600          0.612     0.464
+whole ratio 1 + two-witness                                     0.559      0.574          0.580     0.450
+whole ratio 1.5, no other shift                                 0.460      0.478          0.502     0.382
+shared part 1 + two-witness + trend                             0.637      0.664          0.671     0.495
+calibrated ratio 1 + two-witness + trend                        0.724      0.746          0.728     0.557
+calibrated ratio 1 + trend                                      0.778      0.790          0.754     0.591
+whole ratio 1 + two-witness + trend, all nuclei real            0.586      0.615          0.632     0.476
+whole ratio 1 + two-witness + trend, all nuclei synthetic       0.476      0.503          0.531     0.387
+skill_variogram
+scenario                                                   heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                                   
+base only                                                       1.000      0.798          0.650     0.729
+R7h: file recipe (two-witness + trend)                          0.803      0.686          0.597     0.592
+whole ratio 1, no other shift                                   0.643      0.579          0.540     0.515
+whole ratio 0.5 + two-witness + trend                           0.682      0.619          0.565     0.539
+whole ratio 1 + two-witness + trend                             0.547      0.554          0.541     0.485
+whole ratio 1 + trend                                           0.597      0.571          0.543     0.503
+whole ratio 1 + two-witness                                     0.592      0.564          0.538     0.499
+whole ratio 1.5, no other shift                                 0.504      0.517          0.518     0.461
+shared part 1 + two-witness + trend                             0.630      0.598          0.559     0.518
+calibrated ratio 1 + two-witness + trend                        0.708      0.636          0.575     0.553
+calibrated ratio 1 + trend                                      0.763      0.653          0.578     0.571
+whole ratio 1 + two-witness + trend, all nuclei real            0.661      0.626          0.577     0.552
+whole ratio 1 + two-witness + trend, all nuclei synthetic       0.445      0.482          0.501     0.418
