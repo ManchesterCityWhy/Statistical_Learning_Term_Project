@@ -1,6 +1,6 @@
-total 668
-drwxr-xr-x  2 andreib180 andreib180  4096 2026-11-26 07:33:22.222317125 +0800 .
-drwxr-xr-x 33 andreib180 andreib180  4096 2026-11-26 08:14:59.261412649 +0800 ..
+total 780
+drwxr-xr-x  2 andreib180 andreib180  4096 2026-11-26 08:47:29.094055223 +0800 .
+drwxr-xr-x 34 andreib180 andreib180  4096 2026-11-26 08:24:34.651825649 +0800 ..
 -rw-r--r--  1 andreib180 andreib180 11822 2026-11-26 06:03:43.370745841 +0800 proxy_g10_confirmation_conf.csv
 -rw-r--r--  1 andreib180 andreib180 11864 2026-11-26 06:03:38.750021582 +0800 proxy_g10_development_dev.csv
 -rw-r--r--  1 andreib180 andreib180 15890 2026-11-26 06:12:48.348542817 +0800 proxy_g11_confirmation_conf.csv
@@ -11,6 +11,8 @@ drwxr-xr-x 33 andreib180 andreib180  4096 2026-11-26 08:14:59.261412649 +0800 ..
 -rw-r--r--  1 andreib180 andreib180  6764 2026-11-26 07:17:41.991961757 +0800 proxy_g12_development_devB.csv
 -rw-r--r--  1 andreib180 andreib180 26388 2026-11-26 07:38:42.595391375 +0800 proxy_g12_development_seeds.csv
 -rw-r--r--  1 andreib180 andreib180 10133 2026-11-26 07:17:46.459037801 +0800 proxy_g13_development_dev.csv
+-rw-r--r--  1 andreib180 andreib180 27766 2026-11-26 08:35:36.705971491 +0800 proxy_g14_confirmation_conf14.csv
+-rw-r--r--  1 andreib180 andreib180 27709 2026-11-26 08:35:36.734834002 +0800 proxy_g14_development_dev14.csv
 -rw-r--r--  1 andreib180 andreib180  6755 2026-11-26 04:36:38.499056918 +0800 proxy_g1_development_2d.csv
 -rw-r--r--  1 andreib180 andreib180  6712 2026-11-26 04:36:39.053036797 +0800 proxy_g1_development_gen.csv
 -rw-r--r--  1 andreib180 andreib180  6632 2026-11-26 04:36:34.011838041 +0800 proxy_g1_development_p8.csv
@@ -40,6 +42,9 @@ drwxr-xr-x 33 andreib180 andreib180  4096 2026-11-26 08:14:59.261412649 +0800 ..
 -rw-r--r--  1 andreib180 andreib180  5209 2026-11-26 07:11:07.277611789 +0800 scen_g12_development.csv
 -rw-r--r--  1 andreib180 andreib180 20513 2026-11-26 07:36:08.574060349 +0800 scen_g12_development_seeds.csv
 -rw-r--r--  1 andreib180 andreib180  7827 2026-11-26 07:16:55.553667373 +0800 scen_g13_development.csv
+-rw-r--r--  1 andreib180 andreib180 21650 2026-11-26 08:33:55.309701625 +0800 scen_g14_confirmation_conf14.csv
+-rw-r--r--  1 andreib180 andreib180  5480 2026-11-26 08:47:50.879166335 +0800 scen_g14_development.csv
+-rw-r--r--  1 andreib180 andreib180 21532 2026-11-26 08:33:50.663758728 +0800 scen_g14_development_dev14.csv
 -rw-r--r--  1 andreib180 andreib180 26371 2026-11-26 04:37:33.958805023 +0800 scen_g1_development.csv
 -rw-r--r--  1 andreib180 andreib180 20614 2026-11-26 04:59:54.056049699 +0800 scen_g2_development.csv
 -rw-r--r--  1 andreib180 andreib180 17345 2026-11-26 05:15:37.113316594 +0800 scen_g3_development.csv

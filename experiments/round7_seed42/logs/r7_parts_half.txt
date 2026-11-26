@@ -1,0 +1,13 @@
+cells sha256 cab9f34441c5e9fb435bb83b6d0e5a0824ea6a4549389106cbd04b65631e9980
+         drawn base  real stand-ins  synthetic nuclei  file
+CM             19.2            43.5              42.1  29.8
+Endo           27.0            30.3              32.2  28.9
+Cushion        11.7             8.0               6.8   9.7
+Epi            19.6             6.6               6.6  13.8
+Blood          16.1             0.2               0.0   8.9
+Mac             0.7             2.9               3.0   1.7
+Other           5.7             8.5               9.3   7.1
+{'drawn base': 2750, 'real stand-ins': 1125, 'synthetic nuclei': 1125}
+median genes detected: 3809.5 3957.0 4131.0 3915.0
+median UMI of source rows: drawn base 10375.0 stand-ins 11614.0 | raw nuclei picked (synthetic) 3102.0 | nuclei represented by stand-ins 2888.0
+stand-in types: {'LV-CM': 338, 'Endocardium-2': 259, 'Epicardium': 74, 'OFT-CM': 73, 'EndoMT Endocardium': 72, 'BEC': 72, 'pSHF': 61, 'RV-CM': 35, 'Macrophage': 33, 'IFT-CM': 28, 'Pericardium': 19, 'Early VIC': 18, 'ST': 13, 'Endocardium-1': 10, 'SV-CM': 10, 'AVC-CM': 5, 'Blood': 2, 'Gut Endoderm': 2, 'NCC': 1}

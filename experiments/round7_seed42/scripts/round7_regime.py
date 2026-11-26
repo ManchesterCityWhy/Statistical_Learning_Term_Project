@@ -41,11 +41,17 @@ def main():
     parser.add_argument("--split", default="development", choices=("development", "confirmation"))
     parser.add_argument("--share", type=float, default=F, help="share of anchor nuclei (0.18 = the proxy-like share of the first run, 0.45 = the test's)")
     parser.add_argument("--tilt", default="", help="comma-separated tilt strengths: scores the re-sequenced, moved-back form with each (separate table)")
+    parser.add_argument("--seed", type=int, default=SEED, help="seed of every random draw of this run (default: the project seed)")
+    parser.add_argument("--target", default="noblood", choices=("noblood", "asis"), help="library 3 without blood (default) or as it is")
+    parser.add_argument("--real", default="", help="comma-separated shares of the nuclei replaced by real cells of the assigned type (separate table)")
     parser.add_argument("--kprofs", default="", help="comma-separated neighbourhood sizes: scores the re-sequenced, moved-back form with each (separate table)")
     args = parser.parse_args()
     f_share = args.share
+    seed0 = args.seed
+    with_blood = args.target == "asis"
     tilts = [float(t) for t in args.tilt.split(",")] if args.tilt else []
     kprofs = [int(k) for k in args.kprofs.split(",")] if args.kprofs else []
+    reals = [float(r) for r in args.real.split(",")] if args.real else []
     a, b = ("development", "ceiling") if args.split == "development" else ("confirmation", "confirmation_ceiling")
     _, genes = board_spec("T1:val")
     ax, _ = load_anchor(genes, verbose=False)
@@ -58,15 +64,15 @@ def main():
     lib3 = np.flatnonzero(e10.lib == "3")
     used = np.concatenate([np.asarray(v) for v in h3.values()])
     free = np.setdiff1d(lib3, used)
-    free = free[e10.labels[free] != "Blood"]
-    nb = lambda rows: rows[e10.labels[rows] != "Blood"]
+    free = free if with_blood else free[e10.labels[free] != "Blood"]
+    nb = (lambda rows: rows) if with_blood else (lambda rows: rows[e10.labels[rows] != "Blood"])
     ta, tb = nb(h3[a]), nb(h3[b])
     ev = FastEval(ref, e10.dense(ta), e10.dense(tb))
     # depth-matched E9.5 heart cells (every lineage thinned to the depth distribution of the same lineage in library 3 without blood)
-    pool9 = np.flatnonzero(np.isin(e9.labels, list(HEART)) & (e9.labels != "Blood"))
-    lib3_nb = lib3[e10.labels[lib3] != "Blood"]
+    pool9 = np.flatnonzero(np.isin(e9.labels, list(HEART)) & ((e9.labels != "Blood") | with_blood))
+    lib3_nb = lib3 if with_blood else lib3[e10.labels[lib3] != "Blood"]
     lin_t, depth_t, lin_9 = lineage_of(e10.labels[lib3_nb]), depth_of(e10.X[lib3_nb]), lineage_of(e9.labels)
-    rng = np.random.default_rng(SEED)
+    rng = np.random.default_rng(seed0)
     blocks, labels = [], []
     for lin in np.unique(lin_9[pool9]):
         rows = pool9[lin_9[pool9] == lin]
@@ -76,12 +82,14 @@ def main():
     x9, lab9 = sparse.vstack(blocks, format="csr"), np.concatenate(labels)
     print(f"free library-3 cells without blood {len(free)}, E9.5 heart cells {x9.shape[0]} (median UMI {np.median(depth_of(x9)):.0f}),"
           f" target {len(ta)} cells (median UMI {np.median(depth_of(e10.X[ta])):.0f})  {time.time() - t0:.0f}s", flush=True)
-    fname = f"scores_k_f{f_share:g}_{args.split}.csv" if kprofs else (f"scores_tilt_f{f_share:g}_{args.split}.csv" if tilts else f"scores_{args.split}.csv")
+    fname = f"scores_real_f{f_share:g}_{args.split}.csv" if reals else f"scores_k_f{f_share:g}_{args.split}.csv" if kprofs else (f"scores_tilt_f{f_share:g}_{args.split}.csv" if tilts else f"scores_{args.split}.csv")
+    if with_blood or seed0 != SEED:
+        fname = fname.replace(".csv", f"_{args.target}_seed{seed0}.csv")
     log = Log(REAL / "runs" / "round7_regime" / fname)
     rs = dict(pool_k="resample", level="type", k_prof=20)
     for w in (0.0, 0.2, 0.4, 0.6, 0.8, 1.0):
         # one combined source: w x POOL target-like cells, (1 - w) x POOL depth-matched E9.5 cells
-        r = np.random.default_rng(SEED + int(round(w * 100)))
+        r = np.random.default_rng(seed0 + int(round(w * 100)))
         n10 = int(round(w * POOL))
         i10 = np.sort(r.choice(len(free), n10, replace=False)) if n10 else np.array([], dtype=int)
         i9 = np.sort(r.choice(x9.shape[0], POOL - n10, replace=False)) if POOL - n10 else np.array([], dtype=int)
@@ -97,12 +105,14 @@ def main():
                 ("re-sequenced, moved back 1", f_share, dict(bwd=1.0, **rs)), ("re-sequenced, not moved back", f_share, dict(bwd=0.0, **rs))]
         if tilts:
             cfgs = [cfgs[0], cfgs[2], cfgs[3]] + [(f"re-sequenced, moved back 1, tilt {t:g}", f_share, dict(bwd=1.0, tilt=t, **rs)) for t in tilts]
+        if reals:
+            cfgs = [cfgs[0], cfgs[2], cfgs[3]] + [(f"nuclei replaced by real cells of the assigned type, share {r:g}", f_share, dict(bwd=1.0, real_share=r, **rs)) for r in reals]
         if kprofs:
             cfgs = [cfgs[0], cfgs[2]] + [(f"re-sequenced, moved back 1, k_prof {k}", f_share, dict(bwd=1.0, pool_k="resample", level="type", k_prof=k)) for k in kprofs]
         for name, f, kw in cfgs:
-            cells, info = predict7(src, pool, anchor, N, f, seed=SEED, return_info=True, **kw)
+            cells, info = predict7(src, pool, anchor, N, f, seed=seed0, return_info=True, **kw)
             if "thinned" in name:
-                r2 = np.random.default_rng(SEED + 7)
+                r2 = np.random.default_rng(seed0 + 7)
                 rows = info["base_rows"]
                 sub = np.sort(r2.choice(len(rows), int(round(f_share * N)), replace=False))
                 cells[sub] = thin_rows(src.X[rows[sub]], r2.choice(anchor.depth, len(sub), replace=True), r2).toarray()

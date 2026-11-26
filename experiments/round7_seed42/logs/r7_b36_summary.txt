@@ -1,0 +1,72 @@
+
+## scores_real_f0.45_confirmation_asis_seed42.csv
+w                                                                0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                                 
+base only                                                      60.92  71.14  80.06  89.78  96.55  99.93
+raw nuclei                                                     67.61  70.52  72.12  73.85  74.26  74.25
+re-sequenced, moved back 1                                     64.97  75.72  81.17  85.05  87.98  89.84
+nuclei replaced by real cells of the assigned type, share 0.5  63.58  77.33  83.10  87.39  90.35  92.97
+nuclei replaced by real cells of the assigned type, share 1    61.20  75.17  82.45  87.99  92.14  95.17
+  base-only 77 (w 0.331): synthetic 79.30; half real +1.82; all real +0.65
+  base-only 79 (w 0.376): synthetic 80.52; half real +1.89; all real +1.06
+  base-only 81 (w 0.419): synthetic 81.55; half real +1.96; all real +1.44
+
+## scores_real_f0.45_confirmation_noblood_seed11.csv
+w                                                                0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                                 
+base only                                                      62.82  71.83  80.27  91.89  97.55  99.96
+raw nuclei                                                     67.08  70.38  72.73  74.16  74.70  75.28
+re-sequenced, moved back 1                                     67.57  79.38  84.67  87.31  89.76  91.91
+nuclei replaced by real cells of the assigned type, share 0.5  66.11  80.42  85.78  88.96  91.60  94.22
+nuclei replaced by real cells of the assigned type, share 1    63.14  78.24  85.55  89.88  92.85  95.67
+  base-only 77 (w 0.323): synthetic 82.62; half real +1.08; all real +0.10
+  base-only 79 (w 0.370): synthetic 83.87; half real +1.10; all real +0.57
+  base-only 81 (w 0.413): synthetic 84.83; half real +1.15; all real +0.99
+
+## scores_real_f0.45_confirmation_noblood_seed7.csv
+w                                                                0.0    0.2    0.4    0.6    0.8    1.0
+config                                                                                                 
+base only                                                      63.62  71.81  80.03  89.51  97.04  99.87
+raw nuclei                                                     67.87  70.57  71.86  73.51  75.22  75.24
+re-sequenced, moved back 1                                     68.52  79.19  82.12  86.12  90.00  91.37
+nuclei replaced by real cells of the assigned type, share 0.5  67.33  80.54  83.42  87.39  92.34  93.92
+nuclei replaced by real cells of the assigned type, share 1    64.41  78.50  83.85  88.44  93.56  95.56
+  base-only 77 (w 0.326): synthetic 81.04; half real +1.31; all real +0.84
+  base-only 79 (w 0.375): synthetic 81.76; half real +1.30; all real +1.43
+  base-only 81 (w 0.420): synthetic 82.53; half real +1.29; all real +1.79
+
+## scores_real_f0.45_development_asis_seed42.csv
+w                                                                0.0    0.2    0.4    0.6    0.8     1.0
+config                                                                                                  
+base only                                                      60.84  71.28  80.21  90.16  96.90  100.00
+raw nuclei                                                     67.69  70.54  72.19  73.94  74.23   74.30
+re-sequenced, moved back 1                                     64.74  75.42  80.93  84.76  87.41   89.32
+nuclei replaced by real cells of the assigned type, share 0.5  63.45  77.04  82.76  87.39  89.94   92.69
+nuclei replaced by real cells of the assigned type, share 1    61.15  75.06  82.36  88.04  92.17   95.04
+  base-only 77 (w 0.328): synthetic 78.95; half real +1.76; all real +0.79
+  base-only 79 (w 0.373): synthetic 80.18; half real +1.81; all real +1.20
+  base-only 81 (w 0.416): synthetic 81.23; half real +1.90; all real +1.58
+
+## scores_real_f0.45_development_noblood_seed11.csv
+w                                                                0.0    0.2    0.4    0.6    0.8     1.0
+config                                                                                                  
+base only                                                      63.33  72.72  81.48  93.15  99.05  100.00
+raw nuclei                                                     67.25  70.76  73.05  74.34  74.97   75.36
+re-sequenced, moved back 1                                     68.13  80.68  85.76  88.79  91.20   93.27
+nuclei replaced by real cells of the assigned type, share 0.5  66.72  81.67  87.20  90.60  93.31   96.22
+nuclei replaced by real cells of the assigned type, share 1    63.69  79.44  87.01  91.77  94.73   97.65
+  base-only 77 (w 0.298): synthetic 83.16; half real +1.21; all real -0.02
+  base-only 79 (w 0.343): synthetic 84.32; half real +1.31; all real +0.55
+  base-only 81 (w 0.389): synthetic 85.48; half real +1.41; all real +1.11
+
+## scores_real_f0.45_development_noblood_seed7.csv
+w                                                                0.0    0.2    0.4    0.6    0.8     1.0
+config                                                                                                  
+base only                                                      64.19  72.55  80.87  90.85  98.67  100.00
+raw nuclei                                                     68.09  70.98  72.11  73.81  75.36   75.41
+re-sequenced, moved back 1                                     69.19  80.44  83.33  87.50  91.67   92.58
+nuclei replaced by real cells of the assigned type, share 0.5  67.94  81.76  84.76  88.80  93.87   95.33
+nuclei replaced by real cells of the assigned type, share 1    65.07  79.63  85.19  89.99  95.38   97.30
+  base-only 77 (w 0.307): synthetic 81.99; half real +1.38; all real +0.62
+  base-only 79 (w 0.355): synthetic 82.68; half real +1.40; all real +1.26
+  base-only 81 (w 0.403): synthetic 83.39; half real +1.42; all real +1.87

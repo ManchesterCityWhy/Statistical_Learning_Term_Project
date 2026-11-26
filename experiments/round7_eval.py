@@ -35,12 +35,12 @@ TEST_ELAPSED = 0.5
 
 
 def C(name, rho_f=0.0, rho_t=0.0, bwd=0.0, h=1.0, mode="min", level="lineage", pool_k=1, deep=False, base="heart", rho_dev=0.0, k_prof=10, rho_tc=None, days_trend=0.0,
-      a_shift=None, tilt=0.0, rho_thin=0.0, depth_from="source"):
+      a_shift=None, tilt=0.0, rho_thin=0.0, depth_from="source", real_share=0.0):
     """a_shift: share of the developmental shifts (two-witness, trend) the anchor nuclei receive. None = predict7's
     default (1 when moved back completely, else 0); "pos" = position-consistent: nuclei left at position 1 - bwd on
     the source -> anchor path get only what is still missing up to the target position (the elapsed share)."""
     return dict(name=name, rho_f=rho_f, rho_t=rho_t, bwd=bwd, h=h, mode=mode, level=level, pool_k=pool_k, deep=deep, base=base, rho_dev=rho_dev, k_prof=k_prof,
-                rho_tc=rho_tc, days_trend=days_trend, a_shift=a_shift, tilt=tilt, rho_thin=rho_thin, depth_from=depth_from)
+                rho_tc=rho_tc, days_trend=days_trend, a_shift=a_shift, tilt=tilt, rho_thin=rho_thin, depth_from=depth_from, real_share=real_share)
 
 
 def grid(name):
@@ -165,6 +165,14 @@ def grid(name):
         g += [C("base only"),
               C("R7 (final): tilt 0", **kw), C("R7 + tilt 1.5", tilt=1.5, **kw), C("R7 + tilt 3", tilt=3.0, **kw),
               C("round 6 first version (raw anchor, rho 0.75)", rho_f=.75)]
+    elif name == "g14":   # the synthetic nuclei of the final configuration replaced by real source cells of the assigned cell
+        # types (real_share 1: all of them, 0.5: every second one); same cell-type composition, same shifts
+        kw = dict(rho_f=.9, bwd=1.0, pool_k="resample", level="type", k_prof=20, rho_dev=1.0, days_trend=1.0)
+        g += [C("base only"),
+              C("R7 (final): synthetic nuclei", **kw),
+              C("R7 with half of the nuclei replaced by real cells", real_share=.5, **kw),
+              C("R7 with all nuclei replaced by real cells", real_share=1.0, **kw),
+              C("round 6 file (raw anchor, rho 0.4)", rho_f=.4)]
     elif name == "g13":   # ANALYSIS: do the E10.5-target proxies reward shallow cells as such? No developmental shifts.
         rs = dict(rho_f=.9, pool_k="resample", level="type", k_prof=20)
         g += [C("base only"),
@@ -230,7 +238,8 @@ def cells_of(cfg, source, pool, anchor, elapsed, heart_target, target_shares=Non
     cells = predict7(source, main, anchor, n, f, fwd=t, bwd=bwd if f > 0 else 0.0, harmonise=cfg["h"], mode=cfg["mode"],
                      level=cfg["level"], pool_k=cfg["pool_k"], anchor_rows=anchor_subset(anchor, source, main, cfg),
                      shares=shares, seed=seed, k_prof=cfg.get("k_prof", 10), anchor_shift=a_shift, tilt=cfg.get("tilt", 0.0),
-                     depth_from=cfg.get("depth_from", "source"), return_info=bool(cfg.get("rho_thin")), **dkw, **tkw)
+                     depth_from=cfg.get("depth_from", "source"), real_share=cfg.get("real_share", 0.0),
+                     return_info=bool(cfg.get("rho_thin")), **dkw, **tkw)
     if cfg.get("rho_thin"):
         # analysis only (g13): a share rho_thin x elapsed of the base cells is thinned to the anchor's depth distribution
         # (binomial thinning of the cell's own counts; no anchor expression enters). Only for configurations without shifts.
@@ -288,7 +297,7 @@ def main():
             for seed in seeds:
                 for cfg in cfgs:
                     if cfg.get("rho_dev") and prev is None:
-                        if args.grid not in ("g7", "g8", "g9", "g10", "g11", "g12"):
+                        if args.grid not in ("g7", "g8", "g9", "g10", "g11", "g12", "g14"):
                             continue
                         cfg = {**cfg, "rho_dev": 0.0}      # no previous stage for this source: the two-witness shift is unavailable
                     cells, f, t, bwd = cells_of(cfg, p.source, p.pool, anchor, p.elapsed, p.heart_target, p.target_shares, seed=seed,

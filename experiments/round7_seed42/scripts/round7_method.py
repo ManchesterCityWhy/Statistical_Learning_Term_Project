@@ -300,10 +300,43 @@ def _factors(keys_type, keys_lineage, d, sign_strength, n_genes):
     return out
 
 
+def _real_standins(source, pool, used, types, rng):
+    """One real source cell for every requested cell type: drawn without replacement from the pool cells of that type
+    that are not used yet; if a type runs out, from unused cells of the same lineage; only then with replacement."""
+    pool = np.asarray(pool)
+    free = np.setdiff1d(pool, used)
+    labels = source.labels[free]
+    lin = lineage_of(labels)
+    types = np.asarray(types)
+    out = np.empty(len(types), dtype=np.int64)
+    taken = np.zeros(len(free), dtype=bool)
+    order = rng.permutation(len(types))
+    pending = []
+    for t in np.unique(types):
+        want = order[types[order] == t]
+        have = rng.permutation(np.flatnonzero((labels == t) & ~taken))
+        m = min(len(want), len(have))
+        out[want[:m]] = free[have[:m]]
+        taken[have[:m]] = True
+        pending += list(want[m:])
+    for i in pending:
+        lineage = lineage_of(np.array([types[i]]))[0]
+        have = np.flatnonzero((lin == lineage) & ~taken)
+        if len(have):
+            j = rng.choice(have)
+            out[i] = free[j]
+            taken[j] = True
+        else:
+            cand = pool[source.labels[pool] == types[i]]
+            cand = cand if len(cand) else pool[lineage_of(source.labels[pool]) == lineage]
+            out[i] = rng.choice(cand if len(cand) else pool)
+    return out
+
+
 def predict7(source, pool, anchor, n_total, f, *, fwd=0.0, bwd=0.0, harmonise=1.0, mode="min", level="lineage",
              pool_k=1, anchor_rows=None, shares=None, seed=SEED, context_pool=None, return_info=False,
              prev=None, days_to_anchor=4.0, dev=0.0, k_prof=10, trend=None, trend_share=0.0, anchor_shift=None, tilt=0.0,
-             depth_from="source"):
+             depth_from="source", real_share=0.0):
     """Cells of the prediction (float32, n_total x genes): shifted base cells first, shifted anchor nuclei last.
 
     pool          source rows the base is drawn from (uniformly, or to lineage `shares`)
@@ -311,6 +344,10 @@ def predict7(source, pool, anchor, n_total, f, *, fwd=0.0, bwd=0.0, harmonise=1.
     dev, trend_share  developmental shifts of the BASE cells (two-witness shift, within-cell bulk trend)
     tilt          strength of the individual low-rank deviation restored in re-sequenced nuclei (see Anchor7.resampled)
     depth_from    "source" (default: depth of a source cell of the same lineage) or "anchor" (the nucleus's own depth; analysis only)
+    real_share    share of the picked anchor nuclei that are NOT synthesised but replaced by a real source cell of the cell
+                  type the nucleus is assigned to (see _real_standins). These cells are part of the base from then on: they
+                  receive the developmental shifts like every base cell. 0 = round-7 file, 1 = no synthetic nucleus at all;
+                  the cell-type composition of the result is the same for every value.
     anchor_shift  share of those two shifts that the anchor nuclei receive as well. Default: 1 if the nuclei were
                   moved back completely (bwd = 1: they sit at the source's means, like the base, and move with it),
                   0 otherwise (nuclei that keep E14.5 expression are not pushed further forward).
@@ -318,10 +355,22 @@ def predict7(source, pool, anchor, n_total, f, *, fwd=0.0, bwd=0.0, harmonise=1.
     rng = np.random.default_rng(seed)
     k = int(round(n_total * f))
     rows = draw_base(source, pool, n_total - k, rng, shares)
-    cells = source.dense(rows)
-    need_ctx = bool(k and (harmonise or bwd or pool_k == "resample")) or bool(fwd) or bool(dev)
+    need_ctx = bool(k and (harmonise or bwd or pool_k == "resample" or real_share)) or bool(fwd) or bool(dev)
     ckw = dict(prev=prev, days_to_anchor=days_to_anchor) if dev else {}
     ctx = anchor.context(source, pool if context_pool is None else context_pool, mode, level, **ckw) if need_ctx else None
+    picked_given, stand_for, n_base = None, np.array([], dtype=int), len(rows)
+    if k and real_share:
+        # the nuclei are picked exactly as in the synthetic case (the generator is in the same state: nothing else
+        # draws from it between the base and the nuclei); a share of them is then represented by real source cells
+        candidates = np.arange(anchor.x.shape[0]) if anchor_rows is None else np.asarray(anchor_rows)
+        picked_all = np.sort(candidates[rng.choice(len(candidates), k, replace=False)])
+        r2 = np.random.default_rng(seed + 10007)
+        take = np.sort(r2.choice(k, int(round(real_share * k)), replace=False))
+        stand_for = picked_all[take]
+        rows = np.concatenate([rows, _real_standins(source, pool, rows, ctx["near"][stand_for], r2)])
+        picked_given = picked_all[np.setdiff1d(np.arange(k), take)]
+        k = len(picked_given)
+    cells = source.dense(rows)
     n_genes = cells.shape[1]
     if fwd:
         labels = source.labels[rows]
@@ -337,8 +386,11 @@ def predict7(source, pool, anchor, n_total, f, *, fwd=0.0, bwd=0.0, harmonise=1.
         cells = apply_trend(cells, trend, trend_share, False, seed)
     picked = np.array([], dtype=int)
     if k:
-        candidates = np.arange(anchor.x.shape[0]) if anchor_rows is None else np.asarray(anchor_rows)
-        picked = np.sort(candidates[rng.choice(len(candidates), k, replace=False)])
+        if picked_given is None:
+            candidates = np.arange(anchor.x.shape[0]) if anchor_rows is None else np.asarray(anchor_rows)
+            picked = np.sort(candidates[rng.choice(len(candidates), k, replace=False)])
+        else:
+            picked = picked_given
         cpool = pool if context_pool is None else context_pool
         if pool_k == "resample":
             ctx = anchor.context(source, cpool, mode, level, **ckw)
@@ -376,5 +428,5 @@ def predict7(source, pool, anchor, n_total, f, *, fwd=0.0, bwd=0.0, harmonise=1.
             nuclei = apply_trend(nuclei, trend, trend_share * a_shift, False, seed)
         cells = np.vstack([cells, nuclei])
     if return_info:
-        return cells, {"base_rows": rows, "anchor_rows": picked, "f": float(f)}
+        return cells, {"base_rows": rows, "anchor_rows": picked, "f": float(f), "n_drawn_base": n_base, "stand_in_for": stand_for}
     return cells

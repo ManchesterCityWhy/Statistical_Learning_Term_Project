@@ -37,7 +37,8 @@ from t1_pipeline.data import board_spec, file_hash, validate_prediction, write_j
 CODE = ("round7_export.py", "round7_method.py", "round7_eval.py", "round7_probe.py", "round6_method.py", "round6_anchor.py",
         "round6_common.py", "round6_config.py", "round6_s1.py", "round6_final.py", "round6_suite.py", "round5_anchor.py", "round5_common.py",
         "round5_exp4.py", "round5_exp2.py", "round4_direction.py", "bulk_trend.py", "geo_transport.py",
-        "../t1_pipeline/data.py", "../t1_pipeline/cli.py", "../t1_pipeline/evaluation.py")
+        "../t1_pipeline/data.py", "../t1_pipeline/cli.py", "../t1_pipeline/evaluation.py", "../t1_pipeline/model.py",
+        "../t1_pipeline/distribution.py")
 
 
 def cells_hash(cells):
@@ -45,7 +46,7 @@ def cells_hash(cells):
 
 
 def build(source, ax, f, pos, n, seed=SEED, return_info=False, level="type", dev=0.0, prev=None, days=4.0, trend=None, trend_share=0.0, k_prof=10,
-          pool=None):
+          pool=None, real_share=0.0):
     """The exported configuration. A fresh Anchor7 every call, so nothing is read from a cache of another call.
 
     pool: source rows that may be used (default: all). The export uses all of E10.5; the same-code-path check calls
@@ -58,7 +59,7 @@ def build(source, ax, f, pos, n, seed=SEED, return_info=False, level="type", dev
     main = pool[np.isin(source.lib[pool], libs)]
     dkw = dict(prev=prev, days_to_anchor=days, dev=dev) if dev else {}
     out = predict7(source, main, anchor, n, f, fwd=pos, bwd=1.0 - pos, harmonise=1.0, pool_k="resample" if f > 0 else 1,
-                   level=level, seed=seed, return_info=True, trend=trend, trend_share=trend_share, k_prof=k_prof, **dkw)
+                   level=level, seed=seed, return_info=True, trend=trend, trend_share=trend_share, k_prof=k_prof, real_share=real_share, **dkw)
     if return_info:
         return out[0], out[1], anchor, main, libs, dkw
     return out[0]
@@ -73,11 +74,13 @@ def main():
     parser.add_argument("--dev", type=float, default=0.0, help="two-witness developmental shift, share of the E10.5 -> E14.5 path")
     parser.add_argument("--k-prof", type=int, default=10, help="number of nearest anchor nuclei pooled into the profile a nucleus is re-sequenced from")
     parser.add_argument("--trend", type=float, default=0.0, help="within-cell bulk trend, share of the five-day E9.5 -> E14.5 bulk interval (two days = 0.4)")
+    parser.add_argument("--real-share", type=float, default=0.0, help="share of the picked anchor nuclei represented by a real E10.5 cell of the assigned cell type (1 = no synthetic nucleus)")
     parser.add_argument("--name", default="")
     parser.add_argument("--selfcheck", default="", help="scenario table of round7_eval (development) holding this configuration")
     parser.add_argument("--selfcheck-config", default="")
     args = parser.parse_args()
-    name = args.name or f"round7_heartlib_f{args.f:g}_pos{args.pos:g}_{args.level}_k{args.k_prof}_dev{args.dev:g}_trend{args.trend:g}"
+    name = args.name or (f"round7_heartlib_f{args.f:g}_pos{args.pos:g}_{args.level}_k{args.k_prof}_dev{args.dev:g}_trend{args.trend:g}"
+                         + (f"_real{args.real_share:g}" if args.real_share else ""))
     out = REAL / "predictions" / name
     out.mkdir(parents=True, exist_ok=False)
     spec, genes = board_spec("T1:test")
@@ -90,7 +93,7 @@ def main():
     if args.trend:
         from experiments.bulk_trend import load_trend
         trend, bulk_info = load_trend(genes)
-    kw = dict(level=args.level, dev=args.dev, prev=prev, days=4.0, trend=trend, trend_share=args.trend, k_prof=args.k_prof)
+    kw = dict(level=args.level, dev=args.dev, prev=prev, days=4.0, trend=trend, trend_share=args.trend, k_prof=args.k_prof, real_share=args.real_share)
     pred, info, anchor, main, libs, dkw = build(source, ax, args.f, args.pos, args.cells, return_info=True, **kw)
     again = build(source, ax, args.f, args.pos, args.cells, **kw)
     assert np.array_equal(pred, again), "the export is not deterministic (two builds in this process differ)"
@@ -103,7 +106,9 @@ def main():
     assert np.isfinite(pred).all() and (pred >= 0).all()
     library = np.expm1(pred.astype(np.float64)).sum(axis=1)
     rows, picked = info["base_rows"], info["anchor_rows"]
-    n_base = len(rows)
+    n_base = len(rows)                       # all real E10.5 cells: the drawn base and the real stand-ins
+    n_drawn = int(info["n_drawn_base"])      # the base drawn in the natural composition
+    stand_for = info["stand_in_for"]         # anchor nuclei whose assigned cell type a real stand-in cell represents
     ckw = {k: v for k, v in dkw.items() if k != "dev"}
     ctx = anchor.context(source, main, "min", args.level, **ckw)
     genes_detected = (pred > 0).sum(axis=1)
@@ -118,24 +123,41 @@ def main():
         "method": "E10.5 heart-proper library in its natural composition, plus E14.5 Multiome nuclei re-sequenced at E10.5 depth, "
                   "harmonised and moved back to the E10.5 cell-type means (share bwd); both parts moved by the two-witness "
                   "developmental shift (share dev of the E10.5 -> E14.5 path) and the within-cell bulk trend (share of its five days)"
+                  + ("; a share real_share of the nuclei is not synthesised but represented by a real E10.5 cell of the assigned cell type "
+                     "(same cell-type composition; with real_share = 1 the file holds real E10.5 cells only)" if args.real_share else "")
                   + ("; base additionally moved forward along the lineage log-ratio (pos > 0)" if args.pos else ""),
         "configuration": {"f": args.f, "pos": args.pos, "fwd": args.pos, "bwd": 1.0 - args.pos, "harmonise": 1.0, "mode": "min",
                           "level": args.level, "dev": args.dev, "days_to_anchor": 4.0, "previous_stage": "E9.5 (all cells)" if args.dev else None,
-                          "bulk_trend_share": args.trend,
+                          "bulk_trend_share": args.trend, "real_share": args.real_share,
                           "anchor_form": f"resample (k_prof = {args.k_prof}, multinomial at source-lineage depth)"},
         "seed": SEED, "cells_total": int(len(pred)), "base_cells": int(n_base), "anchor_cells": int(len(picked)),
+        "real_cells": {"drawn_in_natural_composition": n_drawn, "stand_ins_for_anchor_nuclei": int(n_base - n_drawn),
+                       "distinct_E10.5_rows": int(len(np.unique(rows))), "synthetic_nuclei": int(len(picked)),
+                       "stand_in_celltype_shares": pd.Series(source.labels[rows[n_drawn:]]).value_counts(normalize=True).round(4).to_dict(),
+                       "requested_celltype_shares": pd.Series(ctx["near"][stand_for]).value_counts(normalize=True).round(4).to_dict() if len(stand_for) else {},
+                       "stand_ins_of_another_type_than_requested": int((source.labels[rows[n_drawn:]] != ctx["near"][stand_for]).sum()) if len(stand_for) else 0,
+                       "median_genes_detected_stand_ins": float(np.median(genes_detected[n_drawn:n_base])) if n_base > n_drawn else None,
+                       "stand_in_lineage_shares": pd.Series(lin_base[n_drawn:]).value_counts(normalize=True).round(4).to_dict(),
+                       "median_umi_of_stand_in_source_rows": float(np.median(depth_of(source.X[rows[n_drawn:]]))) if n_base > n_drawn else None,
+                       "all_real_cells_celltype_shares": pd.Series(source.labels[rows]).value_counts(normalize=True).round(4).to_dict(),
+                       "all_real_cells_lineage_shares": pd.Series(lin_base).value_counts(normalize=True).round(4).to_dict(),
+                       "median_umi_of_all_real_source_rows": float(np.median(depth_of(source.X[rows])))},
         "heart_libraries": libs,
-        "base": {"library_shares": pd.Series(source.lib[rows]).value_counts(normalize=True).round(4).to_dict(),
-                 "celltype_shares": pd.Series(source.labels[rows]).value_counts(normalize=True).round(4).to_dict(),
-                 "lineage_shares": pd.Series(lin_base).value_counts(normalize=True).round(4).to_dict(),
-                 "median_umi_of_source_rows": float(np.median(depth_of(source.X[rows])))},
+        # "base" = the cells drawn in the natural composition (rows 0 .. n_drawn - 1 of the file); the real stand-ins, if
+        # any, are described under "real_cells" (rows n_drawn .. n_base - 1)
+        "base": {"cells": n_drawn,
+                 "library_shares": pd.Series(source.lib[rows[:n_drawn]]).value_counts(normalize=True).round(4).to_dict(),
+                 "celltype_shares": pd.Series(source.labels[rows[:n_drawn]]).value_counts(normalize=True).round(4).to_dict(),
+                 "lineage_shares": pd.Series(lin_base[:n_drawn]).value_counts(normalize=True).round(4).to_dict(),
+                 "median_umi_of_source_rows": float(np.median(depth_of(source.X[rows[:n_drawn]])))},
         "anchor": {"lineage_shares": pd.Series(lin_anchor).value_counts(normalize=True).round(4).to_dict(),
                    "nearest_E10.5_celltype_shares": pd.Series(ctx["near"][picked]).value_counts(normalize=True).round(4).to_dict(),
                    "median_umi_raw_nuclei": float(np.median(anchor.depth[picked])) if len(picked) else None,
                    "median_genes_detected_resequenced": float(np.median(genes_detected[n_base:])) if len(picked) else None},
         "file": {"lineage_shares_total": total_lineage,
                  "median_genes_detected": float(np.median(genes_detected)),
-                 "median_genes_detected_base": float(np.median(genes_detected[:n_base])),
+                 "median_genes_detected_base": float(np.median(genes_detected[:n_drawn])),
+                 "median_genes_detected_real_cells": float(np.median(genes_detected[:n_base])),
                  "nonzero_fraction": float((pred > 0).mean()), "distinct_rows": int(len(np.unique(pred, axis=0))),
                  "library_sum_min": float(library.min()), "library_sum_max": float(library.max())},
         "harmonisation": {"lineages": ctx["used"], "genes_with_shared_shift": int((c != 0).sum()),
@@ -163,7 +185,7 @@ def main():
         stored = stored[stored["config"] == args.selfcheck_config].set_index("scenario")["score"]
         e10, pool, _, evs = scenario_setup("development", genes)
         cfg = C(args.selfcheck_config, rho_f=args.f / .5, rho_t=args.pos / .5, bwd="interp", pool_k="resample", level=args.level, rho_dev=args.dev / .5,
-                days_trend=args.trend * 5.0 / 2.0, k_prof=args.k_prof)
+                days_trend=args.trend * 5.0 / 2.0, k_prof=args.k_prof, real_share=args.real_share)
         cells, f, t, bwd = cells_of(cfg, e10, pool, Anchor7(ax), .5, True, prev=prev, days_to_anchor=4.0)
         # the export's own `build`, given the scenario pool and the evaluation's cell count, must return the very cells
         # the evaluation built and scored

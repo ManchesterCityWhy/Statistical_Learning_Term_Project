@@ -1,0 +1,51 @@
+E9.5 -> E10.5 library 3 CM done, cells per set 500 | earlier-stage cells available 1500 | nuclei of the lineage 2354
+E9.5 -> E10.5 library 3 Endo done, cells per set 500 | earlier-stage cells available 1500 | nuclei of the lineage 1701
+E9.5 -> E10.5 library 3 Epi done, cells per set 500 | earlier-stage cells available 883 | nuclei of the lineage 346
+E8.5 -> E9.5 CM done, cells per set 500 | earlier-stage cells available 1500 | nuclei of the lineage 2542
+E8.5 -> E9.5 Endo done, cells per set 500 | earlier-stage cells available 1139 | nuclei of the lineage 1735
+E8.5 -> E9.5 Epi done, cells per set 261 | earlier-stage cells available 783 | nuclei of the lineage 310
+                   pair lineage   n                                      stand_in   score   DES   DCS   MMD   CSS  genes
+E9.5 -> E10.5 library 3      CM 500          target stage itself (held-out third) 100.000 1.000 1.000 1.000 1.000 4144.5
+E9.5 -> E10.5 library 3      CM 500  (i) real cells of the earlier stage, aligned  94.069 0.953 0.933 0.948 0.924 4261.0
+E9.5 -> E10.5 library 3      CM 500          the same, not aligned (thinned only)  80.907 0.779 0.817 0.824 0.815 4261.0
+E9.5 -> E10.5 library 3      CM 500 (ii) synthetic nuclei (round-7 form), aligned  78.954 0.856 0.803 0.690 0.839 4247.0
+E9.5 -> E10.5 library 3      CM 500           raw anchor nuclei (harmonised only)  50.880 0.612 0.651 0.431 0.319 1807.5
+E9.5 -> E10.5 library 3    Endo 500          target stage itself (held-out third) 100.000 1.000 1.000 1.000 1.000 3689.5
+E9.5 -> E10.5 library 3    Endo 500  (i) real cells of the earlier stage, aligned  93.536 0.949 0.919 0.943 0.927 3689.5
+E9.5 -> E10.5 library 3    Endo 500          the same, not aligned (thinned only)  77.732 0.738 0.778 0.780 0.821 3689.5
+E9.5 -> E10.5 library 3    Endo 500 (ii) synthetic nuclei (round-7 form), aligned  82.096 0.897 0.858 0.681 0.890 3756.0
+E9.5 -> E10.5 library 3    Endo 500           raw anchor nuclei (harmonised only)  59.716 0.714 0.750 0.489 0.422 1897.0
+E9.5 -> E10.5 library 3     Epi 500          target stage itself (held-out third)  99.746 0.999 1.000 0.992 1.000 4294.5
+E9.5 -> E10.5 library 3     Epi 500  (i) real cells of the earlier stage, aligned  87.428 0.901 0.886 0.866 0.838 4170.0
+E9.5 -> E10.5 library 3     Epi 500          the same, not aligned (thinned only)  66.392 0.672 0.702 0.616 0.677 4170.0
+E9.5 -> E10.5 library 3     Epi 500 (ii) synthetic nuclei (round-7 form), aligned  77.794 0.866 0.799 0.647 0.837 4386.0
+E9.5 -> E10.5 library 3     Epi 500           raw anchor nuclei (harmonised only)  49.732 0.662 0.673 0.350 0.294 1685.0
+           E8.5 -> E9.5      CM 500          target stage itself (held-out third)  99.914 1.000 1.000 0.999 0.997 4616.5
+           E8.5 -> E9.5      CM 500  (i) real cells of the earlier stage, aligned  92.434 0.939 0.930 0.901 0.934 4491.0
+           E8.5 -> E9.5      CM 500          the same, not aligned (thinned only)  83.139 0.786 0.833 0.861 0.842 4491.0
+           E8.5 -> E9.5      CM 500 (ii) synthetic nuclei (round-7 form), aligned  69.670 0.820 0.725 0.567 0.700 4734.5
+           E8.5 -> E9.5      CM 500           raw anchor nuclei (harmonised only)  42.275 0.578 0.585 0.325 0.174 1757.5
+           E8.5 -> E9.5    Endo 500          target stage itself (held-out third)  99.917 1.000 0.997 1.000 1.000 4083.0
+           E8.5 -> E9.5    Endo 500  (i) real cells of the earlier stage, aligned  90.759 0.943 0.940 0.832 0.936 4108.0
+           E8.5 -> E9.5    Endo 500          the same, not aligned (thinned only)  81.488 0.823 0.859 0.750 0.846 4108.0
+           E8.5 -> E9.5    Endo 500 (ii) synthetic nuclei (round-7 form), aligned  76.339 0.870 0.792 0.604 0.834 4111.5
+           E8.5 -> E9.5    Endo 500           raw anchor nuclei (harmonised only)  47.363 0.629 0.651 0.342 0.256 1675.5
+           E8.5 -> E9.5     Epi 261          target stage itself (held-out third)  99.720 0.996 1.000 0.994 1.000 4453.0
+           E8.5 -> E9.5     Epi 261  (i) real cells of the earlier stage, aligned  75.248 0.842 0.805 0.674 0.691 3748.0
+           E8.5 -> E9.5     Epi 261          the same, not aligned (thinned only)  54.161 0.598 0.613 0.448 0.522 3748.0
+           E8.5 -> E9.5     Epi 261 (ii) synthetic nuclei (round-7 form), aligned  65.505 0.818 0.713 0.455 0.679 4473.0
+           E8.5 -> E9.5     Epi 261           raw anchor nuclei (harmonised only)  39.387 0.581 0.581 0.235 0.164 1677.0
+
+(i) minus (ii) by lineage:
+pair                     lineage
+E9.5 -> E10.5 library 3  CM         15.11
+                         Endo       11.44
+                         Epi         9.63
+E8.5 -> E9.5             CM         22.76
+                         Endo       14.42
+                         Epi         9.74
+
+mean over the three lineages:
+pair
+E9.5 -> E10.5 library 3    12.06
+E8.5 -> E9.5               15.64

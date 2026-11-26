@@ -1,0 +1,121 @@
+scenario pool 11486 39s
+config=base only scenario=heart/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1  99.49  DES 1.000 DCS 1.000 MMD 0.992 CSS 0.986
+config=base only scenario=heart/mid split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1  93.29  DES 0.947 DCS 0.975 MMD 0.957 CSS 0.827
+config=base only scenario=heart/shallow split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1  81.70  DES 0.836 DCS 0.877 MMD 0.848 CSS 0.670
+config=base only scenario=all/asis split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1  77.73  DES 0.689 DCS 0.873 MMD 0.785 CSS 0.755
+config=R7 (final): synthetic nuclei scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  78.84  DES 0.759 DCS 0.873 MMD 0.781 CSS 0.730
+config=R7 (final): synthetic nuclei scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  77.15  DES 0.762 DCS 0.865 MMD 0.791 CSS 0.637
+config=R7 (final): synthetic nuclei scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  71.11  DES 0.688 DCS 0.806 MMD 0.746 CSS 0.568
+config=R7 (final): synthetic nuclei scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  64.30  DES 0.608 DCS 0.817 MMD 0.593 CSS 0.543
+config=R7 with half of the nuclei replaced by real cells scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  82.99  DES 0.767 DCS 0.902 MMD 0.833 CSS 0.815
+config=R7 with half of the nuclei replaced by real cells scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  80.90  DES 0.788 DCS 0.892 MMD 0.843 CSS 0.681
+config=R7 with half of the nuclei replaced by real cells scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  73.23  DES 0.690 DCS 0.825 MMD 0.786 CSS 0.589
+config=R7 with half of the nuclei replaced by real cells scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  66.41  DES 0.603 DCS 0.826 MMD 0.633 CSS 0.584
+config=R7 with all nuclei replaced by real cells scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  86.05  DES 0.780 DCS 0.920 MMD 0.872 CSS 0.869
+config=R7 with all nuclei replaced by real cells scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  83.35  DES 0.792 DCS 0.911 MMD 0.881 CSS 0.717
+config=R7 with all nuclei replaced by real cells scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  75.34  DES 0.709 DCS 0.838 MMD 0.816 CSS 0.608
+config=R7 with all nuclei replaced by real cells scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=1  67.63  DES 0.592 DCS 0.822 MMD 0.665 CSS 0.617
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/deep split=confirmation f=0.2 t=0.0 bwd=0.0 seed=1  88.58  DES 0.872 DCS 0.948 MMD 0.911 CSS 0.789
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/mid split=confirmation f=0.2 t=0.0 bwd=0.0 seed=1  91.87  DES 0.884 DCS 0.961 MMD 0.937 CSS 0.882
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/shallow split=confirmation f=0.2 t=0.0 bwd=0.0 seed=1  84.20  DES 0.834 DCS 0.878 MMD 0.883 CSS 0.746
+config=round 6 file (raw anchor, rho 0.4) scenario=all/asis split=confirmation f=0.2 t=0.0 bwd=0.0 seed=1  78.50  DES 0.681 DCS 0.884 MMD 0.782 CSS 0.796
+config=base only scenario=heart/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2  99.17  DES 0.990 DCS 1.000 MMD 0.990 CSS 0.985
+config=base only scenario=heart/mid split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2  93.18  DES 0.941 DCS 0.980 MMD 0.956 CSS 0.825
+config=base only scenario=heart/shallow split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2  81.93  DES 0.843 DCS 0.881 MMD 0.849 CSS 0.669
+config=base only scenario=all/asis split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2  77.93  DES 0.700 DCS 0.879 MMD 0.781 CSS 0.750
+config=R7 (final): synthetic nuclei scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  79.53  DES 0.768 DCS 0.878 MMD 0.784 CSS 0.742
+config=R7 (final): synthetic nuclei scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  78.46  DES 0.781 DCS 0.870 MMD 0.798 CSS 0.661
+config=R7 (final): synthetic nuclei scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  72.06  DES 0.696 DCS 0.812 MMD 0.755 CSS 0.585
+config=R7 (final): synthetic nuclei scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  64.91  DES 0.607 DCS 0.821 MMD 0.598 CSS 0.564
+config=R7 with half of the nuclei replaced by real cells scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  83.48  DES 0.774 DCS 0.907 MMD 0.834 CSS 0.821
+config=R7 with half of the nuclei replaced by real cells scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  81.80  DES 0.796 DCS 0.900 MMD 0.847 CSS 0.700
+config=R7 with half of the nuclei replaced by real cells scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  74.24  DES 0.706 DCS 0.832 MMD 0.792 CSS 0.602
+config=R7 with half of the nuclei replaced by real cells scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  66.91  DES 0.603 DCS 0.830 MMD 0.636 CSS 0.600
+config=R7 with all nuclei replaced by real cells scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  86.33  DES 0.786 DCS 0.926 MMD 0.870 CSS 0.872
+config=R7 with all nuclei replaced by real cells scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  83.90  DES 0.800 DCS 0.918 MMD 0.881 CSS 0.726
+config=R7 with all nuclei replaced by real cells scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  75.76  DES 0.716 DCS 0.843 MMD 0.817 CSS 0.614
+config=R7 with all nuclei replaced by real cells scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=2  67.80  DES 0.592 DCS 0.826 MMD 0.662 CSS 0.625
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/deep split=confirmation f=0.2 t=0.0 bwd=0.0 seed=2  88.73  DES 0.874 DCS 0.945 MMD 0.910 CSS 0.798
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/mid split=confirmation f=0.2 t=0.0 bwd=0.0 seed=2  91.50  DES 0.871 DCS 0.956 MMD 0.938 CSS 0.883
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/shallow split=confirmation f=0.2 t=0.0 bwd=0.0 seed=2  84.54  DES 0.847 DCS 0.877 MMD 0.885 CSS 0.744
+config=round 6 file (raw anchor, rho 0.4) scenario=all/asis split=confirmation f=0.2 t=0.0 bwd=0.0 seed=2  79.06  DES 0.683 DCS 0.887 MMD 0.791 CSS 0.804
+config=base only scenario=heart/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3  99.59  DES 1.000 DCS 1.000 MMD 0.995 CSS 0.988
+config=base only scenario=heart/mid split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3  93.53  DES 0.956 DCS 0.972 MMD 0.960 CSS 0.826
+config=base only scenario=heart/shallow split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3  81.79  DES 0.843 DCS 0.873 MMD 0.850 CSS 0.669
+config=base only scenario=all/asis split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3  77.99  DES 0.685 DCS 0.879 MMD 0.791 CSS 0.759
+config=R7 (final): synthetic nuclei scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  80.27  DES 0.772 DCS 0.881 MMD 0.793 CSS 0.757
+config=R7 (final): synthetic nuclei scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  78.96  DES 0.786 DCS 0.872 MMD 0.804 CSS 0.670
+config=R7 (final): synthetic nuclei scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  72.25  DES 0.699 DCS 0.811 MMD 0.757 CSS 0.590
+config=R7 (final): synthetic nuclei scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  65.44  DES 0.612 DCS 0.824 MMD 0.602 CSS 0.574
+config=R7 with half of the nuclei replaced by real cells scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  84.31  DES 0.778 DCS 0.914 MMD 0.843 CSS 0.835
+config=R7 with half of the nuclei replaced by real cells scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  82.54  DES 0.802 DCS 0.902 MMD 0.852 CSS 0.719
+config=R7 with half of the nuclei replaced by real cells scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  74.75  DES 0.716 DCS 0.831 MMD 0.793 CSS 0.615
+config=R7 with half of the nuclei replaced by real cells scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  67.68  DES 0.608 DCS 0.834 MMD 0.642 CSS 0.619
+config=R7 with all nuclei replaced by real cells scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  87.38  DES 0.788 DCS 0.935 MMD 0.882 CSS 0.893
+config=R7 with all nuclei replaced by real cells scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  84.78  DES 0.809 DCS 0.920 MMD 0.889 CSS 0.745
+config=R7 with all nuclei replaced by real cells scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  76.08  DES 0.716 DCS 0.844 MMD 0.819 CSS 0.625
+config=R7 with all nuclei replaced by real cells scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=3  68.79  DES 0.602 DCS 0.830 MMD 0.670 CSS 0.645
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/deep split=confirmation f=0.2 t=0.0 bwd=0.0 seed=3  89.69  DES 0.881 DCS 0.955 MMD 0.918 CSS 0.812
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/mid split=confirmation f=0.2 t=0.0 bwd=0.0 seed=3  91.93  DES 0.884 DCS 0.957 MMD 0.942 CSS 0.882
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/shallow split=confirmation f=0.2 t=0.0 bwd=0.0 seed=3  84.18  DES 0.841 DCS 0.876 MMD 0.882 CSS 0.740
+config=round 6 file (raw anchor, rho 0.4) scenario=all/asis split=confirmation f=0.2 t=0.0 bwd=0.0 seed=3  78.97  DES 0.689 DCS 0.887 MMD 0.787 CSS 0.798
+config=base only scenario=heart/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4  98.84  DES 0.987 DCS 1.000 MMD 0.989 CSS 0.975
+config=base only scenario=heart/mid split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4  93.67  DES 0.947 DCS 0.980 MMD 0.959 CSS 0.836
+config=base only scenario=heart/shallow split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4  82.22  DES 0.838 DCS 0.884 MMD 0.854 CSS 0.678
+config=base only scenario=all/asis split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4  78.09  DES 0.685 DCS 0.881 MMD 0.787 CSS 0.766
+config=R7 (final): synthetic nuclei scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  80.03  DES 0.759 DCS 0.880 MMD 0.801 CSS 0.751
+config=R7 (final): synthetic nuclei scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  78.73  DES 0.774 DCS 0.874 MMD 0.815 CSS 0.654
+config=R7 (final): synthetic nuclei scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  72.37  DES 0.696 DCS 0.813 MMD 0.769 CSS 0.578
+config=R7 (final): synthetic nuclei scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  65.58  DES 0.613 DCS 0.826 MMD 0.614 CSS 0.558
+config=R7 with half of the nuclei replaced by real cells scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  84.13  DES 0.784 DCS 0.907 MMD 0.845 CSS 0.826
+config=R7 with half of the nuclei replaced by real cells scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  82.12  DES 0.792 DCS 0.902 MMD 0.859 CSS 0.701
+config=R7 with half of the nuclei replaced by real cells scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  74.88  DES 0.714 DCS 0.835 MMD 0.804 CSS 0.602
+config=R7 with half of the nuclei replaced by real cells scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  67.58  DES 0.612 DCS 0.833 MMD 0.648 CSS 0.600
+config=R7 with all nuclei replaced by real cells scenario=heart/deep split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  86.83  DES 0.782 DCS 0.928 MMD 0.882 CSS 0.882
+config=R7 with all nuclei replaced by real cells scenario=heart/mid split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  84.53  DES 0.806 DCS 0.922 MMD 0.893 CSS 0.727
+config=R7 with all nuclei replaced by real cells scenario=heart/shallow split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  76.43  DES 0.725 DCS 0.847 MMD 0.829 CSS 0.613
+config=R7 with all nuclei replaced by real cells scenario=all/asis split=confirmation f=0.45 t=0.0 bwd=1.0 seed=4  68.88  DES 0.605 DCS 0.834 MMD 0.679 CSS 0.627
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/deep split=confirmation f=0.2 t=0.0 bwd=0.0 seed=4  88.32  DES 0.874 DCS 0.942 MMD 0.907 CSS 0.786
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/mid split=confirmation f=0.2 t=0.0 bwd=0.0 seed=4  91.51  DES 0.869 DCS 0.954 MMD 0.937 CSS 0.890
+config=round 6 file (raw anchor, rho 0.4) scenario=heart/shallow split=confirmation f=0.2 t=0.0 bwd=0.0 seed=4  84.72  DES 0.845 DCS 0.877 MMD 0.887 CSS 0.752
+config=round 6 file (raw anchor, rho 0.4) scenario=all/asis split=confirmation f=0.2 t=0.0 bwd=0.0 seed=4  79.48  DES 0.694 DCS 0.885 MMD 0.794 CSS 0.809
+done 178s
+scenario                                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                           
+base only                                               99.27      93.42          81.91     77.93
+R7 (final): synthetic nuclei                            79.67      78.32          71.95     65.05
+R7 with half of the nuclei replaced by real cells       83.73      81.84          74.27     67.14
+R7 with all nuclei replaced by real cells               86.65      84.14          75.90     68.28
+round 6 file (raw anchor, rho 0.4)                      88.83      91.70          84.41     79.00
+skill_de_score
+scenario                                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                           
+base only                                               0.994      0.948          0.840     0.690
+R7 (final): synthetic nuclei                            0.765      0.776          0.695     0.610
+R7 with half of the nuclei replaced by real cells       0.776      0.794          0.706     0.607
+R7 with all nuclei replaced by real cells               0.784      0.802          0.716     0.598
+round 6 file (raw anchor, rho 0.4)                      0.875      0.877          0.842     0.687
+skill_de_direction
+scenario                                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                           
+base only                                               1.000      0.977          0.879     0.878
+R7 (final): synthetic nuclei                            0.878      0.870          0.811     0.822
+R7 with half of the nuclei replaced by real cells       0.907      0.899          0.831     0.831
+R7 with all nuclei replaced by real cells               0.927      0.918          0.843     0.828
+round 6 file (raw anchor, rho 0.4)                      0.947      0.957          0.877     0.886
+skill_mmd_u
+scenario                                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                           
+base only                                               0.991      0.958          0.850     0.786
+R7 (final): synthetic nuclei                            0.790      0.802          0.757     0.602
+R7 with half of the nuclei replaced by real cells       0.839      0.850          0.794     0.640
+R7 with all nuclei replaced by real cells               0.876      0.886          0.820     0.669
+round 6 file (raw anchor, rho 0.4)                      0.912      0.939          0.885     0.788
+skill_variogram
+scenario                                           heart/deep  heart/mid  heart/shallow  all/asis
+config                                                                                           
+base only                                               0.983      0.828          0.671     0.758
+R7 (final): synthetic nuclei                            0.745      0.655          0.581     0.560
+R7 with half of the nuclei replaced by real cells       0.824      0.700          0.602     0.601
+R7 with all nuclei replaced by real cells               0.879      0.729          0.615     0.629
+round 6 file (raw anchor, rho 0.4)                      0.796      0.885          0.745     0.802

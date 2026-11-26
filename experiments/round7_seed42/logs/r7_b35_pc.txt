@@ -1,0 +1,145 @@
+[suite] gen      ready    12s  floor mmd 0.0275 vario 0.00115 | ceiling des 0.877 dcs 0.726 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 32
+[suite] p8/deep  ready    19s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] p8/all   ready    27s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+[suite] 2d/deep  ready    35s  floor mmd 0.1511 vario 0.00619 | ceiling des 0.893 dcs 0.871 mmd 0.0021 vario 0.00018 | n_up 313 n_dn 392
+[suite] 2d/all   ready    42s  floor mmd 0.1283 vario 0.00735 | ceiling des 0.839 dcs 0.820 mmd 0.0046 vario 0.00016 | n_up 130 n_dn 513
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  52.46  DES 0.504 DCS 0.584 MMD 0.505 CSS 0.504
+config=R7 (final): synthetic nuclei proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  61.15  DES 0.606 DCS 0.669 MMD 0.594 CSS 0.571
+config=R7 with half of the nuclei replaced by real cells proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  62.11  DES 0.613 DCS 0.682 MMD 0.610 CSS 0.572
+config=R7 with all nuclei replaced by real cells proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  61.77  DES 0.606 DCS 0.677 MMD 0.616 CSS 0.560
+config=round 6 file (raw anchor, rho 0.4) proxy=gen split=confirmation f=0.0667 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  56.08  DES 0.553 DCS 0.618 MMD 0.551 CSS 0.514
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  53.48  DES 0.514 DCS 0.597 MMD 0.519 CSS 0.508
+config=R7 (final): synthetic nuclei proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  61.91  DES 0.600 DCS 0.679 MMD 0.610 CSS 0.583
+config=R7 with half of the nuclei replaced by real cells proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  62.46  DES 0.594 DCS 0.690 MMD 0.624 CSS 0.583
+config=R7 with all nuclei replaced by real cells proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  62.25  DES 0.588 DCS 0.686 MMD 0.634 CSS 0.569
+config=round 6 file (raw anchor, rho 0.4) proxy=gen split=confirmation f=0.0667 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  56.72  DES 0.543 DCS 0.625 MMD 0.567 CSS 0.524
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  52.34  DES 0.509 DCS 0.581 MMD 0.500 CSS 0.505
+config=R7 (final): synthetic nuclei proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  61.44  DES 0.600 DCS 0.675 MMD 0.601 CSS 0.577
+config=R7 with half of the nuclei replaced by real cells proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  61.54  DES 0.588 DCS 0.680 MMD 0.612 CSS 0.574
+config=R7 with all nuclei replaced by real cells proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  61.62  DES 0.588 DCS 0.679 MMD 0.624 CSS 0.562
+config=round 6 file (raw anchor, rho 0.4) proxy=gen split=confirmation f=0.0667 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  55.73  DES 0.528 DCS 0.623 MMD 0.553 CSS 0.519
+config=base only proxy=gen split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  54.69  DES 0.523 DCS 0.608 MMD 0.531 CSS 0.525
+config=R7 (final): synthetic nuclei proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  62.30  DES 0.606 DCS 0.679 MMD 0.613 CSS 0.590
+config=R7 with half of the nuclei replaced by real cells proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  62.85  DES 0.600 DCS 0.689 MMD 0.629 CSS 0.588
+config=R7 with all nuclei replaced by real cells proxy=gen split=confirmation f=0.15 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  62.85  DES 0.594 DCS 0.687 MMD 0.641 CSS 0.580
+config=round 6 file (raw anchor, rho 0.4) proxy=gen split=confirmation f=0.0667 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  57.37  DES 0.548 DCS 0.636 MMD 0.579 CSS 0.519
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  60.31  DES 0.576 DCS 0.688 MMD 0.598 CSS 0.539
+config=R7 (final): synthetic nuclei proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=1 two_witness=True trend_days=1.0  64.17  DES 0.613 DCS 0.744 MMD 0.628 CSS 0.572
+config=R7 with half of the nuclei replaced by real cells proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=1 two_witness=True trend_days=1.0  63.32  DES 0.605 DCS 0.730 MMD 0.624 CSS 0.561
+config=R7 with all nuclei replaced by real cells proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=1 two_witness=True trend_days=1.0  62.08  DES 0.595 DCS 0.708 MMD 0.618 CSS 0.548
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/deep split=confirmation f=0.08 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  63.94  DES 0.614 DCS 0.719 MMD 0.628 CSS 0.589
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  61.01  DES 0.581 DCS 0.695 MMD 0.607 CSS 0.545
+config=R7 (final): synthetic nuclei proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=2 two_witness=True trend_days=1.0  64.53  DES 0.617 DCS 0.745 MMD 0.630 CSS 0.581
+config=R7 with half of the nuclei replaced by real cells proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=2 two_witness=True trend_days=1.0  63.62  DES 0.609 DCS 0.730 MMD 0.625 CSS 0.569
+config=R7 with all nuclei replaced by real cells proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=2 two_witness=True trend_days=1.0  62.68  DES 0.601 DCS 0.714 MMD 0.623 CSS 0.557
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/deep split=confirmation f=0.08 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  64.46  DES 0.608 DCS 0.725 MMD 0.637 CSS 0.600
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  59.74  DES 0.574 DCS 0.688 MMD 0.591 CSS 0.523
+config=R7 (final): synthetic nuclei proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=3 two_witness=True trend_days=1.0  64.49  DES 0.615 DCS 0.744 MMD 0.629 CSS 0.581
+config=R7 with half of the nuclei replaced by real cells proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=3 two_witness=True trend_days=1.0  63.58  DES 0.607 DCS 0.729 MMD 0.627 CSS 0.567
+config=R7 with all nuclei replaced by real cells proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=3 two_witness=True trend_days=1.0  62.56  DES 0.602 DCS 0.710 MMD 0.621 CSS 0.556
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/deep split=confirmation f=0.08 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  63.90  DES 0.607 DCS 0.722 MMD 0.628 CSS 0.593
+config=base only proxy=p8/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  59.97  DES 0.577 DCS 0.691 MMD 0.595 CSS 0.521
+config=R7 (final): synthetic nuclei proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=4 two_witness=True trend_days=1.0  64.53  DES 0.614 DCS 0.747 MMD 0.632 CSS 0.577
+config=R7 with half of the nuclei replaced by real cells proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=4 two_witness=True trend_days=1.0  63.78  DES 0.607 DCS 0.732 MMD 0.628 CSS 0.573
+config=R7 with all nuclei replaced by real cells proxy=p8/deep split=confirmation f=0.18 t=0.0 bwd=1.0 seed=4 two_witness=True trend_days=1.0  62.54  DES 0.597 DCS 0.713 MMD 0.623 CSS 0.555
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/deep split=confirmation f=0.08 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  64.53  DES 0.610 DCS 0.724 MMD 0.637 CSS 0.604
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  58.11  DES 0.502 DCS 0.665 MMD 0.594 CSS 0.557
+config=R7 (final): synthetic nuclei proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=1 two_witness=True trend_days=1.0  62.50  DES 0.560 DCS 0.731 MMD 0.627 CSS 0.570
+config=R7 with half of the nuclei replaced by real cells proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=1 two_witness=True trend_days=1.0  60.94  DES 0.538 DCS 0.711 MMD 0.618 CSS 0.558
+config=R7 with all nuclei replaced by real cells proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=1 two_witness=True trend_days=1.0  59.43  DES 0.527 DCS 0.682 MMD 0.609 CSS 0.547
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/all split=confirmation f=0.08 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  64.53  DES 0.589 DCS 0.720 MMD 0.646 CSS 0.621
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  56.99  DES 0.490 DCS 0.650 MMD 0.588 CSS 0.543
+config=R7 (final): synthetic nuclei proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=2 two_witness=True trend_days=1.0  61.45  DES 0.556 DCS 0.720 MMD 0.618 CSS 0.551
+config=R7 with half of the nuclei replaced by real cells proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=2 two_witness=True trend_days=1.0  60.20  DES 0.542 DCS 0.700 MMD 0.612 CSS 0.540
+config=R7 with all nuclei replaced by real cells proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=2 two_witness=True trend_days=1.0  58.57  DES 0.524 DCS 0.673 MMD 0.603 CSS 0.528
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/all split=confirmation f=0.08 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  63.58  DES 0.569 DCS 0.707 MMD 0.641 CSS 0.623
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  56.28  DES 0.480 DCS 0.644 MMD 0.578 CSS 0.542
+config=R7 (final): synthetic nuclei proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=3 two_witness=True trend_days=1.0  60.86  DES 0.541 DCS 0.717 MMD 0.613 CSS 0.551
+config=R7 with half of the nuclei replaced by real cells proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=3 two_witness=True trend_days=1.0  59.64  DES 0.527 DCS 0.697 MMD 0.605 CSS 0.544
+config=R7 with all nuclei replaced by real cells proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=3 two_witness=True trend_days=1.0  58.07  DES 0.513 DCS 0.668 MMD 0.597 CSS 0.531
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/all split=confirmation f=0.08 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  62.69  DES 0.557 DCS 0.700 MMD 0.631 CSS 0.617
+config=base only proxy=p8/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  58.45  DES 0.504 DCS 0.666 MMD 0.601 CSS 0.559
+config=R7 (final): synthetic nuclei proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=4 two_witness=True trend_days=1.0  62.79  DES 0.558 DCS 0.731 MMD 0.635 CSS 0.576
+config=R7 with half of the nuclei replaced by real cells proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=4 two_witness=True trend_days=1.0  61.54  DES 0.548 DCS 0.711 MMD 0.626 CSS 0.563
+config=R7 with all nuclei replaced by real cells proxy=p8/all split=confirmation f=0.18 t=0.0 bwd=1.0 seed=4 two_witness=True trend_days=1.0  60.37  DES 0.542 DCS 0.687 MMD 0.622 CSS 0.550
+config=round 6 file (raw anchor, rho 0.4) proxy=p8/all split=confirmation f=0.08 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  65.10  DES 0.590 DCS 0.719 MMD 0.653 CSS 0.639
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  53.11  DES 0.513 DCS 0.612 MMD 0.523 CSS 0.464
+config=R7 (final): synthetic nuclei proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  60.20  DES 0.581 DCS 0.710 MMD 0.574 CSS 0.536
+config=R7 with half of the nuclei replaced by real cells proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  58.94  DES 0.569 DCS 0.689 MMD 0.568 CSS 0.523
+config=R7 with all nuclei replaced by real cells proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  57.16  DES 0.558 DCS 0.652 MMD 0.562 CSS 0.504
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/deep split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  59.57  DES 0.570 DCS 0.678 MMD 0.582 CSS 0.547
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  53.50  DES 0.515 DCS 0.617 MMD 0.527 CSS 0.469
+config=R7 (final): synthetic nuclei proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  60.79  DES 0.580 DCS 0.715 MMD 0.581 CSS 0.549
+config=R7 with half of the nuclei replaced by real cells proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  59.54  DES 0.572 DCS 0.693 MMD 0.576 CSS 0.533
+config=R7 with all nuclei replaced by real cells proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  57.66  DES 0.558 DCS 0.657 MMD 0.568 CSS 0.512
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/deep split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  59.05  DES 0.568 DCS 0.674 MMD 0.573 CSS 0.541
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  53.27  DES 0.514 DCS 0.614 MMD 0.523 CSS 0.470
+config=R7 (final): synthetic nuclei proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  60.90  DES 0.582 DCS 0.715 MMD 0.584 CSS 0.546
+config=R7 with half of the nuclei replaced by real cells proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  59.88  DES 0.578 DCS 0.696 MMD 0.582 CSS 0.529
+config=R7 with all nuclei replaced by real cells proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  57.89  DES 0.563 DCS 0.657 MMD 0.572 CSS 0.512
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/deep split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  59.87  DES 0.570 DCS 0.677 MMD 0.584 CSS 0.558
+config=base only proxy=2d/deep split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  53.44  DES 0.513 DCS 0.617 MMD 0.527 CSS 0.470
+config=R7 (final): synthetic nuclei proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  60.53  DES 0.582 DCS 0.714 MMD 0.580 CSS 0.536
+config=R7 with half of the nuclei replaced by real cells proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  59.51  DES 0.574 DCS 0.693 MMD 0.577 CSS 0.525
+config=R7 with all nuclei replaced by real cells proxy=2d/deep split=confirmation f=0.3 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  57.61  DES 0.562 DCS 0.656 MMD 0.569 CSS 0.504
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/deep split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  59.97  DES 0.572 DCS 0.682 MMD 0.588 CSS 0.549
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  47.74  DES 0.382 DCS 0.530 MMD 0.499 CSS 0.498
+config=R7 (final): synthetic nuclei proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  59.22  DES 0.536 DCS 0.703 MMD 0.580 CSS 0.541
+config=R7 with half of the nuclei replaced by real cells proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  57.86  DES 0.527 DCS 0.678 MMD 0.575 CSS 0.523
+config=R7 with all nuclei replaced by real cells proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=1 two_witness=False trend_days=1.0  54.95  DES 0.505 DCS 0.620 MMD 0.559 CSS 0.502
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/all split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=1 two_witness=False trend_days=0.0  61.92  DES 0.599 DCS 0.688 MMD 0.585 CSS 0.609
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  47.57  DES 0.384 DCS 0.522 MMD 0.499 CSS 0.497
+config=R7 (final): synthetic nuclei proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  59.17  DES 0.535 DCS 0.702 MMD 0.581 CSS 0.540
+config=R7 with half of the nuclei replaced by real cells proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  57.58  DES 0.521 DCS 0.675 MMD 0.572 CSS 0.526
+config=R7 with all nuclei replaced by real cells proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=2 two_witness=False trend_days=1.0  54.68  DES 0.500 DCS 0.616 MMD 0.557 CSS 0.504
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/all split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=2 two_witness=False trend_days=0.0  61.37  DES 0.584 DCS 0.682 MMD 0.585 CSS 0.608
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  47.42  DES 0.380 DCS 0.521 MMD 0.497 CSS 0.499
+config=R7 (final): synthetic nuclei proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  59.15  DES 0.540 DCS 0.702 MMD 0.579 CSS 0.537
+config=R7 with half of the nuclei replaced by real cells proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  57.51  DES 0.521 DCS 0.676 MMD 0.570 CSS 0.523
+config=R7 with all nuclei replaced by real cells proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=3 two_witness=False trend_days=1.0  55.19  DES 0.508 DCS 0.625 MMD 0.560 CSS 0.504
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/all split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=3 two_witness=False trend_days=0.0  61.73  DES 0.590 DCS 0.677 MMD 0.585 CSS 0.626
+config=base only proxy=2d/all split=confirmation f=0.0 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  48.05  DES 0.388 DCS 0.529 MMD 0.503 CSS 0.502
+config=R7 (final): synthetic nuclei proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  59.50  DES 0.546 DCS 0.703 MMD 0.581 CSS 0.543
+config=R7 with half of the nuclei replaced by real cells proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  57.77  DES 0.523 DCS 0.677 MMD 0.572 CSS 0.529
+config=R7 with all nuclei replaced by real cells proxy=2d/all split=confirmation f=0.3 t=0.0 bwd=1.0 seed=4 two_witness=False trend_days=1.0  54.97  DES 0.503 DCS 0.618 MMD 0.560 CSS 0.508
+config=round 6 file (raw anchor, rho 0.4) proxy=2d/all split=confirmation f=0.1333 t=0.0 bwd=0.0 seed=4 two_witness=False trend_days=0.0  62.10  DES 0.594 DCS 0.684 MMD 0.590 CSS 0.622
+done 286s
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          53.24    60.26   57.46    53.33   47.69
+R7 (final): synthetic nuclei                       61.70    64.43   61.90    60.60   59.26
+R7 with half of the nuclei replaced by real cells  62.24    63.58   60.58    59.47   57.68
+R7 with all nuclei replaced by real cells          62.12    62.47   59.11    57.58   54.95
+round 6 file (raw anchor, rho 0.4)                 56.48    64.21   63.98    59.61   61.78
+skill_de_score
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          0.512    0.577   0.494    0.514   0.383
+R7 (final): synthetic nuclei                       0.603    0.615   0.554    0.581   0.539
+R7 with half of the nuclei replaced by real cells  0.599    0.607   0.539    0.573   0.523
+R7 with all nuclei replaced by real cells          0.594    0.599   0.526    0.560   0.504
+round 6 file (raw anchor, rho 0.4)                 0.543    0.610   0.576    0.570   0.592
+skill_de_direction
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          0.593    0.690   0.656    0.615   0.526
+R7 (final): synthetic nuclei                       0.675    0.745   0.725    0.714   0.703
+R7 with half of the nuclei replaced by real cells  0.685    0.730   0.705    0.693   0.676
+R7 with all nuclei replaced by real cells          0.682    0.711   0.677    0.655   0.620
+round 6 file (raw anchor, rho 0.4)                 0.626    0.723   0.712    0.678   0.683
+skill_mmd_u
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          0.514    0.598   0.590    0.525   0.500
+R7 (final): synthetic nuclei                       0.604    0.630   0.623    0.580   0.580
+R7 with half of the nuclei replaced by real cells  0.619    0.626   0.615    0.576   0.573
+R7 with all nuclei replaced by real cells          0.629    0.621   0.608    0.568   0.559
+round 6 file (raw anchor, rho 0.4)                 0.563    0.633   0.643    0.582   0.586
+skill_variogram
+proxy                                                gen  p8/deep  p8/all  2d/deep  2d/all
+config                                                                                    
+base only                                          0.510    0.532   0.550    0.468   0.499
+R7 (final): synthetic nuclei                       0.580    0.578   0.562    0.542   0.540
+R7 with half of the nuclei replaced by real cells  0.579    0.568   0.551    0.527   0.526
+R7 with all nuclei replaced by real cells          0.568    0.554   0.539    0.508   0.504
+round 6 file (raw anchor, rho 0.4)                 0.519    0.597   0.625    0.549   0.617
