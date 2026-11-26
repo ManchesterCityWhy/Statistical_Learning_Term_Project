@@ -1,0 +1,13 @@
+scenario pool 11486 probe library shares {'1': 0.319, '2': 0.166, '3': 0.515} 41s
+[heart/deep] probe actual 71.03  de_score 0.722 de_direction 0.825 mmd_u 0.716 variogram 0.543 42s
+[heart/deep] K0                     actual  83.70 (0.768 0.889 0.858 0.826)  D 0.00055 (se 0.00024)  probe-if-true 0.712 0.803 0.747 0.568  91s
+[heart/deep] depth0.85              actual  82.96 (0.768 0.880 0.846 0.819)  D 0.00384 (se 0.00088)  probe-if-true 0.722 0.815 0.767 0.667  149s
+[heart/deep] depth0.70              actual  80.39 (0.772 0.867 0.823 0.736)  D 0.01301 (se 0.00169)  probe-if-true 0.730 0.830 0.788 0.783  208s
+[heart/deep] depth0.55              actual  74.58 (0.765 0.841 0.770 0.567)  D 0.02355 (se 0.00133)  probe-if-true 0.737 0.841 0.814 0.864  268s
+[heart/deep] plain                  actual  99.84 (1.000 1.000 0.995 1.000)  D 0.00027 (se 0.00028)  probe-if-true 0.695 0.822 0.701 0.554  294s
+[heart/deep] plain0.85              actual  98.00 (1.000 0.993 0.983 0.934)  D 0.00401 (se 0.00078)  probe-if-true 0.688 0.839 0.731 0.678  320s
+[heart/deep] plain0.70              actual  92.85 (0.997 0.952 0.954 0.775)  D 0.01545 (se 0.00171)  probe-if-true 0.682 0.855 0.769 0.808  347s
+[heart/deep] plain0.55              actual  84.28 (0.960 0.890 0.894 0.561)  D 0.02534 (se 0.00145)  probe-if-true 0.674 0.866 0.815 0.871  372s
+[heart/mid] probe actual 80.26  de_score 0.676 de_direction 0.871 mmd_u 0.810 variogram 0.865 374s
+[heart/mid] K0                     actual  82.10 (0.798 0.885 0.871 0.694)  D 0.02030 (se 0.00161)  probe-if-true 0.712 0.803 0.747 0.568  408s
+[heart/mid] depth0.85              actual  84.46 (0.802 0.895 0.880 0.781)  D 0.00972 (se 0.00110)  probe-if-true 0.722 0.815 0.767 0.667  439s

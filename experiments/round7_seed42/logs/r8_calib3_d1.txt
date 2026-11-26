@@ -1,0 +1,26 @@
+pseudo source: heart library 6823 free of the probe 5936 40s
+[p8s/deep] probe actual 69.76  de_score 0.681 de_direction 0.743 mmd_u 0.717 variogram 0.631 47s
+[p8s/deep] depth1 mix0          actual  64.32 (0.611 0.718 0.641 0.593)  D 0.03144 (se 0.00052)  probe-if-true 0.610 0.721 0.514 0.334  76s
+[p8s/deep] depth1 mix0.25       actual  65.30 (0.616 0.744 0.643 0.601)  D 0.02944 (se 0.00054)  probe-if-true 0.614 0.725 0.520 0.344  122s
+[p8s/deep] depth1 mix0.5        actual  65.34 (0.615 0.749 0.644 0.596)  D 0.02723 (se 0.00051)  probe-if-true 0.616 0.718 0.528 0.355  168s
+[p8s/deep] depth1 mix0.75       actual  65.09 (0.612 0.750 0.644 0.585)  D 0.02518 (se 0.00045)  probe-if-true 0.614 0.709 0.537 0.367  214s
+[p8s/deep] depth1 mix1          actual  64.64 (0.608 0.747 0.645 0.571)  D 0.02319 (se 0.00038)  probe-if-true 0.617 0.701 0.545 0.378  250s
+[p8s/deep] depth0.85 mix0       actual  64.71 (0.611 0.718 0.643 0.609)  D 0.02942 (se 0.00059)  probe-if-true 0.610 0.727 0.518 0.347  283s
+[p8s/deep] depth0.85 mix0.25    actual  65.61 (0.613 0.744 0.644 0.618)  D 0.02751 (se 0.00058)  probe-if-true 0.615 0.732 0.525 0.355  320s
+[p8s/deep] depth0.85 mix0.5     actual  65.74 (0.614 0.750 0.645 0.615)  D 0.02537 (se 0.00052)  probe-if-true 0.615 0.724 0.533 0.367  359s
+[p8s/deep] depth0.85 mix0.75    actual  65.47 (0.610 0.750 0.646 0.605)  D 0.02353 (se 0.00048)  probe-if-true 0.613 0.714 0.541 0.378  396s
+[p8s/deep] depth0.85 mix1       actual  65.04 (0.607 0.747 0.646 0.591)  D 0.02171 (se 0.00036)  probe-if-true 0.612 0.705 0.550 0.389  434s
+[p8s/deep] depth0.7 mix0        actual  65.20 (0.616 0.719 0.644 0.626)  D 0.02580 (se 0.00030)  probe-if-true 0.611 0.738 0.525 0.371  470s
+[p8s/deep] depth0.7 mix0.25     actual  66.20 (0.619 0.745 0.645 0.637)  D 0.02425 (se 0.00029)  probe-if-true 0.613 0.741 0.532 0.379  505s
+[p8s/deep] depth0.7 mix0.5      actual  66.30 (0.618 0.751 0.646 0.635)  D 0.02250 (se 0.00026)  probe-if-true 0.612 0.732 0.539 0.389  541s
+[p8s/deep] depth0.7 mix0.75     actual  66.04 (0.615 0.750 0.646 0.626)  D 0.02072 (se 0.00026)  probe-if-true 0.613 0.721 0.547 0.399  572s
+[p8s/deep] depth0.7 mix1        actual  65.62 (0.613 0.746 0.646 0.613)  D 0.01934 (se 0.00015)  probe-if-true 0.609 0.711 0.555 0.409  606s
+[p8s/deep] f0.6                 actual  64.61 (0.609 0.737 0.637 0.592)  D 0.02854 (se 0.00073)  probe-if-true 0.616 0.731 0.526 0.345  642s
+[p8s/deep] f0.2                 actual  64.03 (0.608 0.737 0.629 0.577)  D 0.02971 (se 0.00014)  probe-if-true 0.610 0.721 0.516 0.347  674s
+[p8s/deep] trend0.2             actual  64.69 (0.605 0.740 0.638 0.596)  D 0.03386 (se 0.00062)  probe-if-true 0.599 0.717 0.502 0.331  706s
+[p8s/deep] trend0.8             actual  65.85 (0.618 0.750 0.650 0.607)  D 0.02141 (se 0.00042)  probe-if-true 0.649 0.737 0.558 0.371  739s
+[p8s/deep] R7h                  actual  65.67 (0.623 0.741 0.649 0.606)  D 0.02855 (se 0.00036)  probe-if-true 0.616 0.727 0.526 0.345  768s
+[p8s/deep] depth0.55 mix0.25    actual  66.41 (0.617 0.743 0.647 0.650)  D 0.01962 (se 0.00060)  probe-if-true 0.616 0.748 0.540 0.418  809s
+[p8s/deep] depth0.55 mix0.5     actual  66.68 (0.619 0.750 0.648 0.651)  D 0.01818 (se 0.00048)  probe-if-true 0.619 0.738 0.547 0.425  841s
+[p8s/deep] smallest D: 'depth0.55 mix0.5' actual 66.68; best actual 66.68 ('depth0.55 mix0.5'); K0 actual 65.30; Spearman(actual, D) -0.687
+done 841s

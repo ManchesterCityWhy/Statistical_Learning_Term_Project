@@ -1,0 +1,37 @@
+[suite] gen      ready    13s  floor mmd 0.0285 vario 0.00113 | ceiling des 0.825 dcs 0.741 mmd 0.0031 vario 0.00014 | n_up 35 n_dn 29
+[suite] p8/deep  ready    21s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] p8/all   ready    28s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+[suite] 2d/deep  ready    35s  floor mmd 0.1506 vario 0.00608 | ceiling des 0.893 dcs 0.869 mmd 0.0026 vario 0.00016 | n_up 300 n_dn 386
+[suite] 2d/all   ready    41s  floor mmd 0.1242 vario 0.00718 | ceiling des 0.856 dcs 0.812 mmd 0.0034 vario 0.00017 | n_up 119 n_dn 481
+config=R7h proxy=gen split=development seed=42 thin=1.0                 61.98  DES 0.598 DCS 0.667 MMD 0.617 CSS 0.593
+config=R8 proxy=gen split=development seed=42 thin=1.0                  61.88  DES 0.591 DCS 0.668 MMD 0.622 CSS 0.588
+config=R8 thin per2d 0.92 proxy=gen split=development seed=42 thin=0.9592  61.52  DES 0.584 DCS 0.664 MMD 0.619 CSS 0.587
+config=R8 thin per2d 0.85 proxy=gen split=development seed=42 thin=0.922  61.56  DES 0.598 DCS 0.661 MMD 0.615 CSS 0.582
+config=R8 thin per2d 0.70 proxy=gen split=development seed=42 thin=0.8367  59.72  DES 0.584 DCS 0.651 MMD 0.603 CSS 0.538
+config=R8 thin fixed 0.85 proxy=gen split=development seed=42 thin=0.85  59.93  DES 0.584 DCS 0.648 MMD 0.606 CSS 0.547
+config=R8 thin fixed 0.70 proxy=gen split=development seed=42 thin=0.7  54.98  DES 0.591 DCS 0.612 MMD 0.564 CSS 0.399
+config=R7h proxy=gen split=development seed=7 thin=1.0                  62.50  DES 0.591 DCS 0.686 MMD 0.626 CSS 0.589
+config=R8 proxy=gen split=development seed=7 thin=1.0                   62.51  DES 0.598 DCS 0.684 MMD 0.627 CSS 0.583
+config=R8 thin per2d 0.92 proxy=gen split=development seed=7 thin=0.9592  62.40  DES 0.598 DCS 0.683 MMD 0.625 CSS 0.581
+config=R8 thin per2d 0.85 proxy=gen split=development seed=7 thin=0.922  62.02  DES 0.598 DCS 0.681 MMD 0.620 CSS 0.572
+config=R8 thin per2d 0.70 proxy=gen split=development seed=7 thin=0.8367  60.68  DES 0.605 DCS 0.676 MMD 0.608 CSS 0.521
+config=R8 thin fixed 0.85 proxy=gen split=development seed=7 thin=0.85  60.67  DES 0.598 DCS 0.674 MMD 0.609 CSS 0.530
+config=R8 thin fixed 0.70 proxy=gen split=development seed=7 thin=0.7   55.50  DES 0.584 DCS 0.647 MMD 0.568 CSS 0.384
+config=R7h proxy=p8/deep split=development seed=42 thin=1.0             64.00  DES 0.616 DCS 0.732 MMD 0.631 CSS 0.568
+config=R8 proxy=p8/deep split=development seed=42 thin=1.0              63.78  DES 0.614 DCS 0.737 MMD 0.626 CSS 0.561
+config=R8 thin per2d 0.92 proxy=p8/deep split=development seed=42 thin=0.9592  64.10  DES 0.616 DCS 0.738 MMD 0.627 CSS 0.571
+config=R8 thin per2d 0.85 proxy=p8/deep split=development seed=42 thin=0.922  64.36  DES 0.616 DCS 0.739 MMD 0.628 CSS 0.583
+config=R8 thin per2d 0.70 proxy=p8/deep split=development seed=42 thin=0.8367  64.94  DES 0.615 DCS 0.739 MMD 0.632 CSS 0.607
+config=R8 thin fixed 0.85 proxy=p8/deep split=development seed=42 thin=0.85  64.81  DES 0.616 DCS 0.740 MMD 0.629 CSS 0.602
+config=R8 thin fixed 0.70 proxy=p8/deep split=development seed=42 thin=0.7  65.52  DES 0.615 DCS 0.738 MMD 0.634 CSS 0.634
+config=R7h proxy=p8/deep split=development seed=7 thin=1.0              63.46  DES 0.611 DCS 0.728 MMD 0.627 CSS 0.559
+config=R8 proxy=p8/deep split=development seed=7 thin=1.0               63.21  DES 0.606 DCS 0.734 MMD 0.623 CSS 0.551
+config=R8 thin per2d 0.92 proxy=p8/deep split=development seed=7 thin=0.9592  63.50  DES 0.605 DCS 0.736 MMD 0.624 CSS 0.563
+config=R8 thin per2d 0.85 proxy=p8/deep split=development seed=7 thin=0.922  63.83  DES 0.607 DCS 0.736 MMD 0.626 CSS 0.573
+config=R8 thin per2d 0.70 proxy=p8/deep split=development seed=7 thin=0.8367  64.62  DES 0.615 DCS 0.737 MMD 0.629 CSS 0.598
+config=R8 thin fixed 0.85 proxy=p8/deep split=development seed=7 thin=0.85  64.30  DES 0.607 DCS 0.738 MMD 0.627 CSS 0.594
+config=R8 thin fixed 0.70 proxy=p8/deep split=development seed=7 thin=0.7  65.23  DES 0.611 DCS 0.738 MMD 0.631 CSS 0.628
+config=R7h proxy=p8/all split=development seed=42 thin=1.0              61.80  DES 0.555 DCS 0.717 MMD 0.628 CSS 0.558
+config=R8 proxy=p8/all split=development seed=42 thin=1.0               60.80  DES 0.545 DCS 0.711 MMD 0.618 CSS 0.543
+config=R8 thin per2d 0.92 proxy=p8/all split=development seed=42 thin=0.9592  61.28  DES 0.545 DCS 0.714 MMD 0.622 CSS 0.559
+config=R8 thin per2d 0.85 proxy=p8/all split=development seed=42 thin=0.922  61.82  DES 0.548 DCS 0.715 MMD 0.625 CSS 0.575

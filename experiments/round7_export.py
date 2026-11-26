@@ -28,7 +28,7 @@ import numpy as np
 import pandas as pd
 
 from experiments.round5_anchor import load_anchor
-from experiments.round6_common import REAL, SEED, Mem, depth_of, lineage_of
+from experiments.round6_common import REAL, SEED, Mem, depth_of, lineage_of, thin_rows
 from experiments.round6_config import heart_libraries
 from experiments.round7_method import Anchor7, predict7
 from t1_pipeline.cli import make_prediction_file
@@ -43,6 +43,33 @@ CODE = ("round7_export.py", "round7_method.py", "round7_eval.py", "round7_probe.
 
 def cells_hash(cells):
     return hashlib.sha256(np.ascontiguousarray(cells, dtype=np.float32).tobytes()).hexdigest()
+
+
+THIN_SEED = 985
+
+
+def thinned_source(source, share, libs=("3",), seed=THIN_SEED):
+    """A copy of the source stage in which every cell of the given libraries keeps each of its molecules with probability
+    `share` (binomial thinning of the UMI counts, then log1p of counts per 10k again). share = 1 returns the source itself.
+    Round 8, afternoon of 11-26: the cells of the E12.5 sample are assumed to be somewhat sparser than E10.5 library 3."""
+    if share >= 1.0:
+        return source, None
+    import copy
+    from scipy import sparse
+    rows = np.flatnonzero(np.isin(source.lib, list(libs)))
+    other = np.setdiff1d(np.arange(source.n_cells), rows)
+    x = source.X[rows]
+    depth = depth_of(x)
+    t = thin_rows(x, share * depth, np.random.default_rng(seed))
+    back = np.empty(source.n_cells, dtype=np.int64)
+    back[np.concatenate([other, rows])] = np.arange(source.n_cells)
+    out = copy.copy(source)
+    out.X = sparse.vstack([source.X[other], t]).tocsr()[back].astype(np.float32).tocsr()
+    after = depth_of(out.X[rows])
+    info = {"share_of_molecules_kept": share, "libraries": list(libs), "cells_thinned": int(len(rows)), "seed": seed,
+            "median_umi_before": float(np.median(depth)), "median_umi_after": float(np.median(after)),
+            "median_genes_detected_before": float(np.median(np.diff(x.indptr))), "median_genes_detected_after": float(np.median(np.diff(out.X[rows].indptr)))}
+    return out, info
 
 
 def build(source, ax, f, pos, n, seed=SEED, return_info=False, level="type", dev=0.0, prev=None, days=4.0, trend=None, trend_share=0.0, k_prof=10,
@@ -86,6 +113,7 @@ def main():
     parser.add_argument("--mix", type=float, default=0.0, help="molecular mixture: share of a real cell's molecules replaced by molecules of an anchor nucleus of its cell type (round 8)")
     parser.add_argument("--mix-low", type=float, default=None, help="confine the mixture to genes the cell type has below this many counts per 10k at E10.5")
     parser.add_argument("--mix-k", default="20", help="anchor nuclei pooled into the partner profile, or 'auto' (measured molecules only)")
+    parser.add_argument("--thin", type=float, default=1.0, help="share of its molecules every cell of the heart library keeps before the recipe runs (binomial thinning; 1 = no thinning)")
     parser.add_argument("--name", default="")
     parser.add_argument("--selfcheck", default="", help="scenario table of round7_eval (development) holding this configuration")
     parser.add_argument("--selfcheck-config", default="")
@@ -93,13 +121,15 @@ def main():
     name = args.name or (f"round7_heartlib_f{args.f:g}_pos{args.pos:g}_{args.level}_k{args.k_prof}_dev{args.dev:g}_trend{args.trend:g}"
                          + (f"_real{args.real_share:g}" if args.real_share else "") + (f"_shared{args.shared:g}" if args.shared else "")
                          + ("_devw" if args.dev_kind == "devw" else "") + ("_counts" if args.shift_mode == "counts" else "")
-                         + (f"_mix{args.mix:g}" + (f"low{args.mix_low:g}" if args.mix_low is not None else "") + (f"k{args.mix_k}" if args.mix_k != "20" else "") if args.mix else ""))
+                         + (f"_mix{args.mix:g}" + (f"low{args.mix_low:g}" if args.mix_low is not None else "") + (f"k{args.mix_k}" if args.mix_k != "20" else "") if args.mix else "")
+                         + (f"_thin{args.thin:g}" if args.thin < 1.0 else ""))
     out = REAL / "predictions" / name
     out.mkdir(parents=True, exist_ok=False)
     spec, genes = board_spec("T1:test")
     assert genes == board_spec("T1:val")[1]
     ax, anchor_info = load_anchor(genes)
     source = Mem(REAL / "data/T1/E10.5_RNA.h5ad", genes)
+    source, thin_info = thinned_source(source, args.thin)
     previous = Mem(REAL / "data/T1/E9.5_RNA.h5ad", genes) if args.dev else None
     prev = (previous, np.arange(previous.n_cells)) if args.dev else None
     trend, bulk_info = (None, None)
@@ -164,13 +194,16 @@ def main():
                      + ("for the genes its cell type has below `mix_low` counts per 10k at E10.5, " if args.mix_low is not None else "")
                      + "the cell keeps each of its molecules with probability 1 - mix and receives anchor molecules at the rate mix x depth x "
                        "(share of the gene in the partner's profile); genes whose mean in the cell type is below one twentieth of the largest "
-                       "lineage mean at E10.5 (mostly markers of other lineages) are removed from the profile first and are not received" if args.mix else ""),
+                       "lineage mean at E10.5 (mostly markers of other lineages) are removed from the profile first and are not received" if args.mix else "")
+                  + ("; before all of this, every cell of the heart library is thinned: each of its molecules is kept with probability `thin` "
+                     "(the E12.5 cells are assumed to be somewhat sparser than E10.5 library 3)" if args.thin < 1.0 else ""),
         "configuration": {"f": args.f, "pos": args.pos, "fwd": args.pos, "bwd": 1.0 - args.pos, "harmonise": 1.0, "mode": "min",
                           "level": args.level, "dev": args.dev, "days_to_anchor": 4.0, "previous_stage": "E9.5 (all cells)" if args.dev else None,
                           "bulk_trend_share": args.trend, "real_share": args.real_share, "shared_forward_share": args.shared,
                           "two_witness_on": {"dev": "lineage-specific part of the ratio", "devw": "whole ratio"}[args.dev_kind], "shift_mode": args.shift_mode,
                           "mixture_share": args.mix, "mixture_low_gene_threshold_per_10k": args.mix_low, "mixture_partner_profile": args.mix_k if args.mix else None,
-                          "anchor_form": f"resample (k_prof = {args.k_prof}, multinomial at source-lineage depth)"},
+                          "anchor_form": f"resample (k_prof = {args.k_prof}, multinomial at source-lineage depth)",
+                          **({"thin": args.thin} if args.thin < 1.0 else {})},
         "seed": SEED, "cells_total": int(len(pred)), "base_cells": int(n_drawn), "stand_in_cells": int(n_base - n_drawn),
         "real_cells_total": int(n_base), "anchor_cells": int(len(picked)),
         "real_cells": {"drawn_in_natural_composition": n_drawn, "stand_ins_for_anchor_nuclei": int(n_base - n_drawn),
@@ -215,6 +248,7 @@ def main():
                                   "genes_moved_by_lineage_or_type": {k: int((v != 0).sum()) for k, v in ctx["dc"].items() if not k.startswith("type:")},
                                   "median_abs_log_factor_where_moved": float(np.median(np.abs(args.shared * c[c != 0])))} if args.shared else None),
         "molecular_mixture": mixture,
+        **({"thinning": thin_info} if thin_info is not None else {}),
         "input_sha256": {"E10.5_RNA.h5ad": file_hash(source.path)},
         "external": {"anchor": anchor_info, "bulk_trend": bulk_info if args.trend else "not used by this configuration"},
         "input_previous_stage_sha256": {"E9.5_RNA.h5ad": file_hash(previous.path)} if args.dev else None,
